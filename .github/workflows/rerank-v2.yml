@@ -13,6 +13,7 @@ on:
       - "scripts/sync_exact_trim_specs.py"
       - "scripts/sync_exact_trim_specs_strict.py"
       - "scripts/sync_exact_trim_specs_resilient.py"
+      - "scripts/sync_exact_trim_specs_autohome.py"
       - "scripts/rerank_composite.py"
       - "scripts/filters.py"
       - "scripts/tests/**"
@@ -44,6 +45,18 @@ jobs:
         with:
           python-version: "3.12"
 
+      - name: Prepare AutoHome exact-trim sources
+        shell: bash
+        run: |
+          python -m pip install --disable-pip-version-check zstandard
+          mkdir -p .external
+          git clone --quiet --depth 1 --filter=blob:none --no-checkout --branch main \
+            https://github.com/swoiow/autohome.git .external/autohome-main
+          git clone --quiet --depth 1 --filter=blob:none --no-checkout --branch vaults \
+            https://github.com/swoiow/autohome.git .external/autohome-vaults
+          echo "AutoHome current files: $(git -C .external/autohome-main ls-tree -r --name-only HEAD data | grep -c '\.csv$')"
+          echo "AutoHome historical snapshots: $(git -C .external/autohome-vaults ls-tree -r --name-only HEAD vaults | grep -c 'data\.vault$')"
+
       - name: Validate existing exact-trim source JSON
         shell: bash
         run: |
@@ -52,7 +65,13 @@ jobs:
             python -m json.tool "$f" >/dev/null
           done
 
+      - name: Run AutoHome exact-trim sync tests
+        run: python scripts/tests/test_autohome_sync.py
+
       - name: Sync exact trims for complete filtered inventory
+        env:
+          AUTOHOME_MAIN_REPO: .external/autohome-main
+          AUTOHOME_VAULTS_REPO: .external/autohome-vaults
         run: python scripts/sync_exact_trim_specs_strict.py
 
       - name: Validate synced exact-trim source JSON
