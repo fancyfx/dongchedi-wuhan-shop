@@ -341,6 +341,14 @@ function renderShell() {
       </div>
       <div class="sub">${esc(shop)}（shop_id ${esc(meta?.shop_id || '118608')}） · 硬筛：${esc(filters)}</div>
       <div class="sort-rule">${esc(weightText)}</div>
+      <div class="data-links">
+        <span>原始数据（给 LLM / 下载）：</span>
+        <a href="/data/" target="_blank" rel="noopener noreferrer">数据目录</a>
+        <a href="/data/listings-ranked.json" target="_blank" rel="noopener noreferrer">全量 JSON</a>
+        <a href="/data/meta.json" target="_blank" rel="noopener noreferrer">meta</a>
+        <a href="/data/owner-reviews-by-series.json" target="_blank" rel="noopener noreferrer">口碑库</a>
+        <a href="/llms.txt" target="_blank" rel="noopener noreferrer">llms.txt</a>
+      </div>
     </header>
 
     <section class="stats" id="stats">

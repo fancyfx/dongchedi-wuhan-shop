@@ -1,0 +1,36 @@
+# 武汉店二手车看板 · 原始数据（供 LLM / 程序读取）
+
+本站是个人抓取的非官方看板，不是懂车帝官方服务。
+
+## 站点
+- 看板 UI: https://dongchedi-wuhan-dashboard.vercel.app/
+- 本说明: https://dongchedi-wuhan-dashboard.vercel.app/llms.txt
+
+## 公开 JSON（CORS *）
+- 全量已排序车源（主数据集）: https://dongchedi-wuhan-dashboard.vercel.app/data/listings-ranked.json
+- 元信息与筛条件/权重: https://dongchedi-wuhan-dashboard.vercel.app/data/meta.json
+- 短名单: https://dongchedi-wuhan-dashboard.vercel.app/data/shortlist-ranked.json
+- 按车系口碑库: https://dongchedi-wuhan-dashboard.vercel.app/data/owner-reviews-by-series.json
+
+## 硬筛（入库）
+- 店: 懂车帝汽车商城·武汉店 shop_id=118608
+- 价格 ≤6 万；里程 ≤10 万公里；车龄 ≤10 年
+- 角标须含「直营」
+- 排除短续航纯电（续航≤300km 或微型代步纯电车系）；插混/增程与续航>300 纯电保留
+
+## 综合总得分
+total_score = 0.40*config_norm + 0.25*space_norm + 0.15*fuel_norm + 0.15*price_score + 0.05*suv_score
+- config：公开参配特征（非标题档位词），再 min-max
+- price_score：越便宜越高，clip((6-price_wan)/6*100,0,100)
+- rank：全场按 total_score 的得分排名（1 最好）
+
+## listings-ranked.json 单车主要字段
+- identity: sku, title, series, brand, manufacturer, shop_id, detail_url, rank, total_score
+- listing: price, price_type, plate_year, model_year, mileage_wan, city, badges, tags, year
+- scores: sort_scores.{config_norm,space_norm,fuel_norm,price_score,suv_score,total_score,is_suv,...}
+- specs / detailed_config: 公开参配（动力、尺寸、features、source_url）
+- owner_reviews: summary, pros[], cons[]（缺点）, sources[], found
+- evaluation: 短评
+
+## 分析建议
+请优先读取 meta.json 了解权重与筛选，再读 listings-ranked.json 做排序/对比；口碑缺点看 owner_reviews.cons。封面图路径: /images/{sku}.jpg
