@@ -33,11 +33,11 @@
   "captured_at": "2026-11-02T16:39:04.628239+08:00",
   "viewport": "390x844",
   "user_agent": "WeChat MicroMessenger iPhone (API + attempted page emulation; CDP UA override blocked)",
-  "sort_preference": "v2_fixed_anchor_total_score",
-  "notes": "算法版本 v2.2.0。固定锚点评分；能源场景 no_home_charging；油价92=8.0/95=8.5，家用电=0.8；分期价+0.5万不确定性；前30条核验参数已覆盖；series_year_tier高级配置置null；短名单为过滤后按V2总分排序前30。",
-  "sort_method": "ranking_v2_fixed_anchors",
-  "ranked_at": "2026-11-02T21:43:44+08:00",
-  "ranked_count": 140,
+  "sort_preference": "v2_fixed_anchor_total_score_exact_trim_only",
+  "notes": "算法版本 v2.2.0。仅 exact-trim 且配置覆盖率>=60%的车辆参与评分；评分车辆 25，数据异常/待补全 115。缺详细配置、空间、价格、里程、车龄或能耗任一关键数据时不再给中性分，统一进入数据异常 Tab。",
+  "sort_method": "ranking_v2_fixed_anchors_with_hard_data_gate",
+  "ranked_at": "2026-11-02T23:13:47+08:00",
+  "ranked_count": 25,
   "sort_weights": {
     "price": 0.15,
     "config": 0.3,
@@ -48,7 +48,7 @@
     "body_preference": 0.05,
     "data_quality": 0.05
   },
-  "sort_formula": "total = 0.15*price + 0.30*config + 0.15*operating_cost + 0.20*space + 0.05*age + 0.05*mileage + 0.05*body_preference + 0.05*data_quality; fixed anchors (no cohort min-max); operating_cost from energy_cost_yuan_100km; finance display +0.5万 reserve when price_type=分期",
+  "sort_formula": "eligible only: exact-trim config coverage>=60%, valid price/mileage/age/space/energy; total = 0.15*price + 0.30*config + 0.15*operating_cost + 0.20*space + 0.05*age + 0.05*mileage + 0.05*body_preference + 0.05*data_quality; fixed anchors (no cohort min-max)",
   "manufacturer_coverage": {
     "total": 146,
     "inferred_count": 3,
@@ -157,7 +157,7 @@
   "filtered_count": 140,
   "excluded_short_range_bev_count": 0,
   "excluded_short_range_bev": [],
-  "filter_pipeline": "shop_id=118608 → price≤6 → mileage≤10万km → age≤10年 → exclude_short_range_bev; before=140 after=140",
+  "filter_pipeline": "shop_id=118608 → hard filters → exact-trim/data-quality gate; source=140 filtered=140 ranked=25 data_issues=115",
   "config_scoring": {
     "method": "real_specs",
     "forbidden": "title_tier_word_heuristic",
@@ -210,5 +210,12 @@
   "cash_price_note": "列表 product_price 常为分期券后价；看板与排序一律用详情 sku_price 现金价。原65辆分期+3辆券后已回写；现金价>6万的6辆已排除。",
   "excluded_over_budget_cash_count": 6,
   "excluded_over_budget_cash_file": "data/excluded-over-budget-cash.json",
-  "price_refresh_file": "data/price-refresh-detail.json"
+  "price_refresh_file": "data/price-refresh-detail.json",
+  "data_issue_count": 115,
+  "data_quality_policy": {
+    "exact_trim_only": true,
+    "min_config_coverage": 0.6,
+    "unscored_message": "详细配置数据不足",
+    "issues_file": "data/data-issues.json"
+  }
 }
