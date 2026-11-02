@@ -1,7 +1,7 @@
 """V2 score weights, anchors, energy prices, finance reserve."""
 from __future__ import annotations
 
-SCORE_VERSION = "v2.1.0"
+SCORE_VERSION = "v2.2.0"
 
 WEIGHTS = {
     "price": 0.15,
@@ -16,7 +16,7 @@ WEIGHTS = {
 
 BUDGET = {
     "hard_max_wan": 6.0,
-    "full_price_score_wan": 3.0,  # <=3万 -> 100
+    "full_price_score_wan": 3.0,
 }
 
 FINANCE = {
@@ -34,9 +34,7 @@ ENERGY = {
     "real_world_min_n": 20,
 }
 
-# Config point table (max ~104)
 CONFIG_POINTS = {
-    # safety + ADAS ~60
     "airbags_6plus": 8,
     "esp": 3,
     "aeb": 10,
@@ -49,7 +47,6 @@ CONFIG_POINTS = {
     "camera_360": 6,
     "radar_front_rear": 3,
     "auto_park": 3,
-    # comfort ~24
     "power_driver_seat": 2,
     "power_passenger_seat": 2,
     "seat_heating": 3,
@@ -61,7 +58,6 @@ CONFIG_POINTS = {
     "rear_ac_vents": 2,
     "dual_zone_climate": 2,
     "leather_seats": 1,
-    # cabin ~20
     "full_lcd_cluster": 3,
     "screen_12plus": 3,
     "phone_link": 2,
@@ -71,7 +67,7 @@ CONFIG_POINTS = {
     "hud": 3,
     "chip_8155": 3,
 }
-CONFIG_POINTS_MAX = sum(CONFIG_POINTS.values())  # 104
+CONFIG_POINTS_MAX = sum(CONFIG_POINTS.values())
 
 MILEAGE_POINTS = [
     (0, 100),
@@ -147,7 +143,8 @@ SPACE_WEIGHTS = {
     "trunk": 0.15,
 }
 
-# Advanced features that must be null when match_level != exact
+# Legacy list retained for scraper sanitization only. Ranking V3 does not
+# inherit approximate configuration; exact-trim V3 data is authoritative.
 ADVANCED_FEATURE_KEYS = (
     "aeb",
     "fcw",
