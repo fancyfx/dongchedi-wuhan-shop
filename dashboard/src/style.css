@@ -423,10 +423,19 @@ a {
   background: linear-gradient(135deg, #3dd6c6, #5b8cff);
   color: #041018;
   font-weight: 700;
-  font-size: 14px;
-  padding: 4px 10px;
+  font-size: 13px;
+  padding: 5px 10px;
   border-radius: 999px;
   box-shadow: var(--shadow);
+  display: inline-flex;
+  align-items: baseline;
+  gap: 6px;
+  line-height: 1.1;
+}
+.score-badge-pts {
+  font-size: 12px;
+  font-weight: 600;
+  opacity: 0.85;
 }
 
 .pill.manu {

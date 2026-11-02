@@ -203,7 +203,8 @@ function filtered(): Listing[] {
   return rows
 }
 
-function cardHtml(item: Listing, rank: number): string {
+function cardHtml(item: Listing): string {
+  const scoreRank = item.rank ?? 0
   const badges = item.badges || []
   const tags = (item.tags || []).slice(0, 4)
   const isSuv = !!item.sort_scores?.is_suv
@@ -294,7 +295,7 @@ function cardHtml(item: Listing, rank: number): string {
         onerror="this.style.display='none'; this.nextElementSibling.style.display='grid';" />
       <div class="placeholder" style="display:none">暂无封面</div>
       <div class="badges">${badgeHtml}</div>
-      <div class="score-badge">${total.toFixed(1)}</div>
+      <div class="score-badge">#${scoreRank}<span class="score-badge-pts">${total.toFixed(1)}</span></div>
     </div>
     <div class="body">
       <div class="manu-line">${esc(manu)}${esc(brand)}</div>
@@ -309,7 +310,7 @@ function cardHtml(item: Listing, rank: number): string {
       ${evalHtml}
       ${reviewHtml}
       <div class="footer-row">
-        <span class="score">#${rank} ${esc(scoreText)}</span>
+        <span class="score">得分排名 #${scoreRank} · ${esc(scoreText)}</span>
         <a class="btn-link" href="${esc(item.detail_url)}" target="_blank" rel="noopener noreferrer">详情</a>
       </div>
     </div>
@@ -449,7 +450,7 @@ function renderList() {
     grid.innerHTML = `<div class="empty">没有符合条件的车源，试试放宽筛选。</div>`
     return
   }
-  grid.innerHTML = rows.map((item, i) => cardHtml(item, i + 1)).join('')
+  grid.innerHTML = rows.map((item) => cardHtml(item)).join('')
 }
 
 async function boot() {
