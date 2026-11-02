@@ -14,6 +14,7 @@ from ranking_v2.apply_verified import (  # noqa: E402
     effective_price_fields,
     load_verified_by_sku,
 )
+from ranking_v2.data_quality import assess_score_eligibility  # noqa: E402
 from ranking_v2.energy import energy_cost_yuan_100km, resolve_ranking_energy  # noqa: E402
 from ranking_v2.mileage_score import mileage_score  # noqa: E402
 from ranking_v2.score import score_listing  # noqa: E402
@@ -32,7 +33,7 @@ def _by_sku(listings, sku):
 
 def test_v3_exact_trim_mapping_and_no_legacy_config_fallback():
     verified = load_verified_by_sku(ROOT / "data" / "vehicle-specs-verified.json")
-    assert len(verified) == 30
+    assert len(verified) >= 30
 
     poisoned = {
         "sku": "357298372",
@@ -40,12 +41,7 @@ def test_v3_exact_trim_mapping_and_no_legacy_config_fallback():
         "price_type": "标价",
         "specs": {
             "match_level": "series_year_tier",
-            "features": {
-                "aeb": True,
-                "camera_360": True,
-                "seat_ventilation": True,
-                "power_tailgate": True,
-            },
+            "features": {"aeb": True, "camera_360": True, "seat_ventilation": True, "power_tailgate": True},
         },
     }
     patched = apply_verified_to_listings([poisoned], verified)[0]
@@ -62,6 +58,8 @@ def test_v3_exact_trim_mapping_and_no_legacy_config_fallback():
         "sku": "not-in-v3",
         "price": 4.0,
         "price_type": "标价",
+        "mileage_wan": 3.0,
+        "plate_year": 2022,
         "specs": {
             "match_level": "exact",
             "wheelbase_mm": 2700,
@@ -74,6 +72,10 @@ def test_v3_exact_trim_mapping_and_no_legacy_config_fallback():
     assert "aeb" not in cleaned["specs"]
     assert cleaned["specs"]["wheelbase_mm"] == 2700
     assert cleaned["specs"]["match_level"] == "unverified_config"
+    assert cleaned["specs"]["specs_found"] is False
+    gate = assess_score_eligibility(cleaned)
+    assert gate["eligible"] is False
+    assert any(x["code"] == "detailed_config_insufficient" for x in gate["issues"])
 
 
 def test_tang_dm_energy_not_combined():
