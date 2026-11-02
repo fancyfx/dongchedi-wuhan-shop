@@ -1,0 +1,107 @@
+name: Recalculate vehicle ranking
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - "data/vehicle-specs-verified.json"
+      - "data/specs/**"
+      - "scripts/ranking_v2/**"
+      - "scripts/rerank_v2.py"
+      - "scripts/rerank_composite.py"
+      - "scripts/filters.py"
+      - "scripts/tests/**"
+      - ".github/workflows/rerank-v2.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: rerank-v2-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  rerank:
+    name: Test, recalculate and publish ranking data
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Validate exact-trim source JSON
+        shell: bash
+        run: |
+          python -m json.tool data/vehicle-specs-verified.json >/dev/null
+          for f in data/specs/exact-trims-*.json; do
+            python -m json.tool "$f" >/dev/null
+          done
+
+      - name: Recalculate V2 ranking
+        run: python scripts/rerank_v2.py
+
+      - name: Run ranking regression tests
+        run: python scripts/tests/test_ranking_v2.py
+
+      - name: Validate generated artifacts
+        shell: bash
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+
+          root = Path('.')
+          meta = json.loads((root / 'data/meta.json').read_text(encoding='utf-8'))
+          ranked = json.loads((root / 'data/listings-ranked.json').read_text(encoding='utf-8'))
+          shortlist = json.loads((root / 'data/shortlist-ranked.json').read_text(encoding='utf-8'))
+
+          assert meta.get('score_version') == 'v2.2.0', meta.get('score_version')
+          assert ranked, 'ranked list is empty'
+          assert len(shortlist) <= 30, len(shortlist)
+          assert all(x.get('score_version') == 'v2.2.0' for x in ranked), 'mixed score versions'
+          assert [x.get('rank') for x in ranked] == list(range(1, len(ranked) + 1)), 'rank sequence broken'
+
+          print(f"validated ranked={len(ranked)} shortlist={len(shortlist)} score_version={meta.get('score_version')}")
+          PY
+
+      - name: Commit regenerated ranking artifacts
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add \
+            listings-ranked.json \
+            listings-filtered.json \
+            shortlist-ranked.json \
+            shortlist-cheapest.json \
+            data/listings-ranked.json \
+            data/listings-filtered.json \
+            data/shortlist-ranked.json \
+            data/shortlist-cheapest.json \
+            data/excluded-short-range-bev.json \
+            data/meta.json \
+            dashboard/public/data/listings-ranked.json \
+            dashboard/public/data/listings-filtered.json \
+            dashboard/public/data/shortlist-ranked.json \
+            dashboard/public/data/shortlist-cheapest.json \
+            dashboard/public/data/meta.json \
+            dashboard/public/data/vehicle-specs-verified.json
+
+          if git diff --cached --quiet; then
+            echo "No generated ranking changes to commit."
+            exit 0
+          fi
+
+          git commit -m "chore(data): recalculate rankings [skip ci]"
+          git push origin HEAD:main
