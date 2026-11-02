@@ -12,6 +12,7 @@ on:
       - "scripts/rerank_v2.py"
       - "scripts/sync_exact_trim_specs.py"
       - "scripts/sync_exact_trim_specs_strict.py"
+      - "scripts/sync_exact_trim_specs_resilient.py"
       - "scripts/rerank_composite.py"
       - "scripts/filters.py"
       - "scripts/tests/**"
@@ -150,4 +151,21 @@ jobs:
           fi
 
           git commit -m "chore(data): sync exact trims and recalculate rankings [skip ci]"
-          git push origin HEAD:main
+
+          # Main can advance while this relatively long sync runs. Rebase the
+          # generated-data commit instead of losing a successful calculation.
+          for attempt in 1 2 3; do
+            git fetch origin main
+            if ! git rebase origin/main; then
+              git rebase --abort || true
+              echo "::error::Generated artifacts conflict with newer main; refusing to overwrite them."
+              exit 1
+            fi
+            if git push origin HEAD:main; then
+              exit 0
+            fi
+            echo "main advanced during publish; retrying ($attempt/3)"
+          done
+
+          echo "::error::Could not publish generated ranking artifacts after 3 attempts."
+          exit 1
