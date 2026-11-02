@@ -436,3 +436,54 @@ a {
 }
 
 .cover { position: relative; }
+
+
+.specs {
+  font-size: 12px;
+  line-height: 1.5;
+  color: #b8d0ff;
+  background: rgba(91, 140, 255, 0.08);
+  border: 1px solid rgba(91, 140, 255, 0.28);
+  border-radius: 10px;
+  padding: 8px 10px;
+  margin-top: 6px;
+}
+.specs.muted { color: var(--muted); }
+.spec-hi {
+  margin-top: 4px;
+  font-size: 11px;
+  color: #9dffd8;
+}
+.review-summary { margin-bottom: 6px; }
+.pros {
+  font-size: 12px;
+  color: #a8e6cf;
+  margin: 4px 0;
+}
+.cons {
+  margin-top: 8px;
+  padding: 8px 10px;
+  border-radius: 10px;
+  background: rgba(255, 107, 107, 0.1);
+  border: 1px solid rgba(255, 107, 107, 0.35);
+  color: #ffc9c9;
+}
+.cons strong {
+  color: #ff8e8e;
+  display: block;
+  margin-bottom: 4px;
+}
+.cons ul {
+  margin: 0;
+  padding-left: 1.1em;
+}
+.cons li {
+  margin: 2px 0;
+  line-height: 1.45;
+}
+.cons.empty-cons {
+  background: rgba(255,255,255,0.03);
+  border-color: var(--border);
+  color: var(--muted);
+}
+.cons.empty-cons strong { color: var(--muted); display: inline; }

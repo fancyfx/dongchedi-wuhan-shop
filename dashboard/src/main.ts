@@ -17,8 +17,26 @@ type SortScores = {
 
 type OwnerReviews = {
   summary?: string
+  pros?: string[]
+  cons?: string[]
+  drawbacks?: string[]
   sources?: { title: string; url: string }[]
   found?: boolean
+  cons_note?: string
+}
+
+type Specs = {
+  specs_found?: boolean
+  specs_approx?: boolean
+  match_level?: string
+  powertrain_type?: string
+  engine?: string
+  wheelbase_mm?: number
+  seats?: number
+  body_type?: string
+  features?: Record<string, unknown>
+  source_url?: string
+  notes?: string
 }
 
 type Listing = {
@@ -42,6 +60,8 @@ type Listing = {
   rank?: number
   sort_scores?: SortScores
   owner_reviews?: OwnerReviews
+  specs?: Specs
+  detailed_config?: Specs
 }
 
 type Meta = {
@@ -212,16 +232,59 @@ function cardHtml(item: Listing, rank: number): string {
     ? `<div class="eval"><strong>评价</strong>：${esc(item.evaluation)}</div>`
     : ''
 
+  const specs = item.specs || item.detailed_config
+  let specsHtml = ''
+  if (specs?.specs_found) {
+    const bits = [
+      specs.powertrain_type || '',
+      specs.engine || '',
+      specs.wheelbase_mm ? `轴距${specs.wheelbase_mm}` : '',
+      specs.seats ? `${specs.seats}座` : '',
+      specs.body_type || '',
+      specs.specs_approx ? '近似档参配' : '精确参配',
+    ].filter(Boolean)
+    const feat = specs.features || {}
+    const highlights: string[] = []
+    if (feat.aeb) highlights.push('AEB')
+    if (feat.cruise) highlights.push(String(feat.cruise).slice(0, 16))
+    if (feat.camera_360) highlights.push('360影像')
+    if (feat.chip_8155) highlights.push('8155')
+    if (feat.l2) highlights.push('L2')
+    specsHtml = `<div class="specs"><strong>公开参配</strong>：${esc(bits.join(' · '))}${
+      highlights.length ? `<div class="spec-hi">${esc(highlights.slice(0, 5).join(' · '))}</div>` : ''
+    }</div>`
+  } else if (specs && specs.specs_found === false) {
+    specsHtml = `<div class="specs muted">公开参配未匹配</div>`
+  }
+
   const or = item.owner_reviews
   let reviewHtml = ''
-  if (or?.found && or.summary) {
+  if (or) {
     const links = (or.sources || [])
       .slice(0, 3)
       .map((s) => `<a href="${esc(s.url)}" target="_blank" rel="noopener noreferrer">${esc(s.title)}</a>`)
       .join(' · ')
-    reviewHtml = `<div class="review"><strong>车主口碑</strong>：${esc(or.summary)}${links ? `<div class="sources">${links}</div>` : ''}</div>`
-  } else if (or && or.found === false && or.summary && !or.summary.includes('短名单外')) {
-    reviewHtml = `<div class="review muted">${esc(or.summary)}</div>`
+    const pros = or.pros || []
+    const cons = or.cons || or.drawbacks || []
+    const summaryBit =
+      or.summary
+        ? `<div class="review-summary"><strong>车主口碑</strong>：${esc(or.summary)}</div>`
+        : ''
+    const prosBit =
+      pros.length
+        ? `<div class="pros"><strong>优点</strong>：${esc(pros.slice(0, 4).join('；'))}</div>`
+        : ''
+    const consBit = cons.length
+      ? `<div class="cons"><strong>缺点</strong><ul>${cons
+          .slice(0, 6)
+          .map((c) => `<li>${esc(c)}</li>`)
+          .join('')}</ul></div>`
+      : `<div class="cons empty-cons"><strong>缺点</strong>：${esc(or.cons_note || '暂无汇总缺点')}</div>`
+    if (or.found || summaryBit || prosBit || cons.length) {
+      reviewHtml = `<div class="review">${summaryBit}${prosBit}${consBit}${
+        links ? `<div class="sources">${links}</div>` : ''
+      }</div>`
+    }
   }
 
   return `
@@ -242,6 +305,7 @@ function cardHtml(item: Listing, rank: number): string {
         <div class="price-type">${esc(item.price_type || '标价')}</div>
       </div>
       <div class="tags">${tags.map((t) => `<span class="tag">${esc(t)}</span>`).join('')}</div>
+      ${specsHtml}
       ${evalHtml}
       ${reviewHtml}
       <div class="footer-row">
@@ -266,7 +330,7 @@ function renderShell() {
   const w = meta?.sort_weights
   const weightText = w
     ? `综合总分：配置${Math.round(w.config * 100)}% + 空间${Math.round(w.space * 100)}% + 油耗${Math.round(w.fuel * 100)}% + 价格${Math.round(w.price * 100)}% + SUV${Math.round(w.suv * 100)}%`
-    : '综合总分：配置35% + 空间25% + 油耗20% + 价格15% + SUV5%'
+    : '综合总分：配置40% + 空间25% + 油耗15% + 价格15% + SUV5%'
 
   app.innerHTML = `
     <header class="header">
@@ -331,7 +395,7 @@ function renderShell() {
 
     <div class="toolbar">
       <div id="result-count">显示 ${allStats.count} / ${listings.length} 辆</div>
-      <div>封面 images/{sku}.jpg · 口碑来自公开网页搜索 · 详情跳转懂车帝</div>
+      <div>封面 images/{sku}.jpg · 配置来自公开参配 · 口碑含缺点专节 · 详情跳转懂车帝</div>
     </div>
     <section class="grid" id="grid"></section>
   `

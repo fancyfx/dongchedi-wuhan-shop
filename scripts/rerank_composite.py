@@ -18,9 +18,9 @@ from filters import (  # noqa: E402
 
 SRC = ROOT / "data" / "listings-ranked.json"
 WEIGHTS = {
-    "config": 0.35,
+    "config": 0.40,
     "space": 0.25,
-    "fuel": 0.20,
+    "fuel": 0.15,
     "price": 0.15,
     "suv": 0.05,
 }
@@ -240,7 +240,7 @@ def main():
                 "total_score": total,
                 "weights": dict(WEIGHTS),
                 "note": (
-                    "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；"
+                    "综合总得分=config40%+space25%+fuel15%+price15%+suv5%；"
                     f"分项为过滤后集合(n={n})min-max归一化到0-100（price用(6-price)/6*100）；"
                     "卡片无完整参配，config/space/fuel 仍为标题启发式；"
                     f"已排除短续航纯电(≤{MAX_BEV_RANGE_KM}km/微型代步)"
@@ -299,7 +299,7 @@ def main():
     meta["sort_preference"] = "composite_total_score"
     meta["sort_weights"] = WEIGHTS
     meta["sort_formula"] = (
-        "total_score = 0.35*config_norm + 0.25*space_norm + 0.20*fuel_norm "
+        "total_score = 0.40*config_norm + 0.25*space_norm + 0.15*fuel_norm "
         "+ 0.15*price_score + 0.05*suv_score; "
         f"config/space/fuel = min-max(proxy) over filtered n={n}; "
         "price_score = clip((6-price_wan)/6*100,0,100); suv_score = 100 if SUV else 0"
@@ -307,7 +307,7 @@ def main():
     meta["notes"] = (
         "列表接口默认 sort=0。shortlist 为过滤后按综合总得分排序的前30辆。"
         "封面签名 URL 会过期，以 images/{sku}.jpg 为准。"
-        "综合总得分权重：高配35%＞空间25%＞油耗20%＞便宜15%＞SUV5%。"
+        "综合总得分权重：高配40%＞空间25%＞油耗15%＞便宜15%＞SUV5%。"
         "主机厂商由标题映射；车主口碑来自公开网页搜索（非详情页）。"
         f"硬筛另排除短续航纯电（≤{MAX_BEV_RANGE_KM}km 或微型代步车系），后续不入库。"
     )

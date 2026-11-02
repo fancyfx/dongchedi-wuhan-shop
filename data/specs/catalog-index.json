@@ -1,0 +1,1114 @@
+{
+  "唐DM 2018款 DM 2.0T 全时四驱智联创享型 7座 国V": {
+    "sku": "357215359",
+    "series": "唐DM",
+    "specs_found": true,
+    "specs_approx": false,
+    "match_level": "exact",
+    "source_url": "https://www.autohome.com.cn/news/201804/916443.html"
+  },
+  "长安UNI-T 2023款 第二代 1.5T 旗舰型": {
+    "sku": "357149730",
+    "series": "长安UNI-T",
+    "specs_found": true,
+    "specs_approx": false,
+    "match_level": "exact",
+    "source_url": "https://www.changan.com.cn/car/UNI-T-2nd/"
+  },
+  "宋Pro DM 2024款 DM-i 荣耀版 71km 领航型": {
+    "sku": "357052729",
+    "series": "宋Pro DM",
+    "specs_found": true,
+    "specs_approx": false,
+    "match_level": "exact",
+    "source_url": "https://www.autohome.com.cn/"
+  },
+  "逸动 2023款 PLUS畅享版 蓝鲸NE 1.4T GDI DCT尊贵型": {
+    "sku": "357220895",
+    "series": "逸动",
+    "specs_found": true,
+    "specs_approx": true,
+    "match_level": "series_year_tier",
+    "source_url": "https://www.autohome.com.cn/"
+  },
+  "锐程PLUS 2023款 1.5T DCT尊贵型": {
+    "sku": "357337443",
+    "series": "锐程PLUS",
+    "specs_found": true,
+    "specs_approx": true,
+    "match_level": "series_year_tier",
+    "source_url": "https://www.autohome.com.cn/"
+  },
+  "秦PLUS DM 2025款 智驾版 DM-i 55KM 领先型": {
+    "sku": "357228241",
+    "series": "秦PLUS DM",
+    "specs_found": true,
+    "specs_approx": false,
+    "match_level": "exact",
+    "source_url": "https://www.autohome.com.cn/"
+  },
+  "博瑞 2021款 1.8T 领航版": {
+    "sku": "357172812",
+    "series": "博瑞",
+    "specs_found": true,
+    "specs_approx": true,
+    "match_level": "series_year_tier",
+    "source_url": "https://www.autohome.com.cn/"
+  },
+  "星瑞 2023款 2.0T 尊贵型": {
+    "sku": "357156086",
+    "series": "星瑞",
+    "specs_found": true,
+    "specs_approx": true,
+    "match_level": "series_year_tier",
+    "source_url": "https://www.autohome.com.cn/"
+  },
+  "海豹06DM 2024款 DM-i 80KM尊贵型": {
+    "sku": "357140222",
+    "series": "海豹06DM",
+    "specs_found": true,
+    "specs_approx": false,
+    "match_level": "exact",
+    "source_url": "https://www.autohome.com.cn/"
+  },
+  "捷达VS5 2022款 280TSI 自动悦享版Pro": {
+    "sku": "356990772",
+    "series": "捷达VS5",
+    "specs_found": true,
+    "specs_approx": true,
+    "match_level": "series_year_tier",
+    "source_url": "https://www.autohome.com.cn/"
+  },
+  "长安UNI-V 2022款 1.5T 尊贵型": {
+    "sku": "357250772",
+    "series": "长安UNI-V",
+    "specs_found": true,
+    "specs_approx": true,
+    "match_level": "series_year_tier",
+    "source_url": "https://www.autohome.com.cn/"
+  },
+  "远景X6 2021款 PRO 1.4T 自动尊贵型": {
+    "sku": "357149711",
+    "series": "远景X6",
+    "specs_found": true,
+    "specs_approx": true,
+    "match_level": "series_year_tier",
+    "source_url": "https://www.autohome.com.cn/"
+  },
+  "逸达 2023款 1.5T GDI 自动旗舰型": {
+    "sku": "357014230",
+    "series": "逸达",
+    "specs_found": true,
+    "specs_approx": false,
+    "match_level": "exact",
+    "source_url": "https://www.autohome.com.cn/"
+  },
+  "魏牌 VV7 2020款 2.0T 超豪型": {
+    "sku": "356998318",
+    "series": "魏牌 VV7",
+    "specs_found": true,
+    "specs_approx": true,
+    "match_level": "series_year_tier",
+    "source_url": "https://www.autohome.com.cn/"
+  },
+  "逸动 2022款 PLUS 1.6L GDI 手动豪华型": {
+    "sku": "357211018",
+    "series": "逸动",
+    "specs_found": true,
+    "specs_approx": true,
+    "match_level": "series_year_tier",
+    "source_url": "https://www.autohome.com.cn/"
+  },
+  "伊兰特 2021款 1.5L CVT LUX尊贵版": {
+    "sku": "357252968",
+    "series": "伊兰特",
+    "specs_found": true,
+    "specs_approx": true,
+    "match_level": "series_year_tier",
+    "source_url": "https://www.autohome.com.cn/"
+  },
+  "哈弗H6 2021款 第三代 2.0T 自动两驱Max版": {
+    "sku": "357301752",
+    "series": "哈弗H6",
+    "specs_found": true,
+    "specs_approx": false,
+    "match_level": "exact",
+    "source_url": "https://www.autohome.com.cn/"
+  },
+  "长安UNI-T 2020款 1.5T 旗舰型": {
+    "sku": "357168649",
+    "series": "长安UNI-T",
+    "specs_found": true,
+    "specs_approx": false,
+    "match_level": "exact",
+    "source_url": "https://www.autohome.com.cn/"
+  },
+  "长安CS75 PLUS 2020款 2.0T 自动旗舰型": {
+    "sku": "356579334",
+    "series": "长安CS75 PLUS",
+    "specs_found": true,
+    "specs_approx": false,
+    "match_level": "exact",
+    "source_url": "https://www.autohome.com.cn/"
+  },
+  "秦PLUS DM 2024款 荣耀版 DM-i 55KM 领先型": {
+    "sku": "357211014",
+    "series": "秦PLUS DM",
+    "specs_found": true,
+    "specs_approx": false,
+    "match_level": "exact",
+    "source_url": "https://www.autohome.com.cn/"
+  },
+  "秦PLUS DM 2023款 DM-i 冠军版 120KM 领先型": {
+    "sku": "356773034",
+    "series": "秦PLUS DM",
+    "specs_found": true,
+    "specs_approx": false,
+    "match_level": "exact",
+    "source_url": "https://www.autohome.com.cn/"
+  },
+  "影豹 2023款 270T DCT J15版": {
+    "sku": "357250766",
+    "series": "影豹",
+    "specs_found": true,
+    "specs_approx": true,
+    "match_level": "series_year_tier",
+    "source_url": "https://www.autohome.com.cn/"
+  },
+  "轩逸 2022款 经典 1.6 XL CVT豪华版": {
+    "sku": "357192191",
+    "series": "轩逸",
+    "specs_found": true,
+    "specs_approx": true,
+    "match_level": "series_year_tier",
+    "source_url": "https://www.autohome.com.cn/"
+  },
+  "凌尚 2023款 2.0L 豪华版": {
+    "sku": "357036051",
+    "series": "凌尚",
+    "specs_found": true,
+    "specs_approx": true,
+    "match_level": "series_year_tier",
+    "source_url": "https://www.autohome.com.cn/"
+  },
+  "海鸥 2024款 荣耀版 305KM 活力版": {
+    "sku": "357211011",
+    "series": "海鸥",
+    "specs_found": true,
+    "specs_approx": true,
+    "match_level": "series_year_tier",
+    "source_url": "https://www.autohome.com.cn/"
+  },
+  "帝豪 2023款 第4代 冠军版 1.5L CVT豪华型": {
+    "sku": "357250770",
+    "series": "帝豪",
+    "specs_found": true,
+    "specs_approx": true,
+    "match_level": "series_year_tier",
+    "source_url": "https://www.autohome.com.cn/"
+  },
+  "缤越 2023款 1.5T DCT铂金版": {
+    "sku": "357100389",
+    "series": "缤越",
+    "specs_found": true,
+    "specs_approx": true,
+    "match_level": "series_year_tier",
+    "source_url": "https://www.autohome.com.cn/"
+  },
+  "缤越 2024款 1.5T DCT龙腾版": {
+    "sku": "357298372",
+    "series": "缤越",
+    "specs_found": true,
+    "specs_approx": true,
+    "match_level": "series_year_tier",
+    "source_url": "https://www.autohome.com.cn/"
+  },
+  "帝豪 2025款 第4代 1.5L CVT龙腾版": {
+    "sku": "357239398",
+    "series": "帝豪",
+    "specs_found": true,
+    "specs_approx": true,
+    "match_level": "series_year_tier",
+    "source_url": "https://www.autohome.com.cn/"
+  },
+  "荣威i5 2026款 1.5L CVT豪华版": {
+    "sku": "357097175",
+    "series": "荣威i5",
+    "specs_found": true,
+    "specs_approx": true,
+    "match_level": "series_year_tier",
+    "source_url": "https://www.autohome.com.cn/"
+  },
+  "传祺GS4 2021款 270T 自动智联科技版": {
+    "sku": "357211009",
+    "series": "传祺GS4",
+    "specs_found": true,
+    "specs_approx": true,
+    "match_level": "series_year_tier",
+    "source_url": "https://www.autohome.com.cn/"
+  },
+  "标致4008 2019款 360THP BLACKPACK黑曜版": {
+    "sku": "357291441",
+    "series": "标致4008",
+    "specs_found": true,
+    "specs_approx": true,
+    "match_level": "series_year_tier",
+    "source_url": "https://www.autohome.com.cn/"
+  },
+  "轩逸 2019款 1.6XV CVT智联尊享版 国VI": {
+    "sku": "357192192",
+    "series": "轩逸",
+    "specs_found": true,
+    "specs_approx": true,
+    "match_level": "series_year_tier",
+    "source_url": "https://www.autohome.com.cn/"
+  },
+  "逸动DT 2021款 1.6L 自动豪华型": {
+    "sku": "357250769",
+    "series": "逸动DT",
+    "specs_found": true,
+    "specs_approx": true,
+    "match_level": "series_year_tier",
+    "source_url": "https://www.autohome.com.cn/"
+  },
+  "长安CS75 PLUS 2021款 1.5T 自动豪华型": {
+    "sku": "357247792",
+    "series": "长安CS75 PLUS",
+    "specs_found": true,
+    "specs_approx": false,
+    "match_level": "exact",
+    "source_url": "https://www.autohome.com.cn/"
+  },
+  "YARIS L 致炫 2022款 致炫X 1.5L CVT领先PLUS版": {
+    "sku": "357178943",
+    "series": "YARIS L 致炫",
+    "specs_found": true,
+    "specs_approx": true,
+    "match_level": "series_year_tier",
+    "source_url": "https://www.autohome.com.cn/"
+  },
+  "MG5 2021款 180DVVT CVT青春豪华版": {
+    "sku": "357018303",
+    "series": "MG5",
+    "specs_found": true,
+    "specs_approx": true,
+    "match_level": "series_year_tier",
+    "source_url": "https://www.autohome.com.cn/"
+  },
+  "长安CS35 PLUS 2021款 蓝鲸NE 1.4T DCT豪华型": {
+    "sku": "357171771",
+    "series": "长安CS35 PLUS",
+    "specs_found": true,
+    "specs_approx": true,
+    "match_level": "series_year_tier",
+    "source_url": "https://www.autohome.com.cn/"
+  },
+  "长安欧尚X5 PLUS 2023款 1.5T DCT卓越型": {
+    "sku": "356811592",
+    "series": "长安欧尚X5 PLUS",
+    "specs_found": true,
+    "specs_approx": false,
+    "match_level": "exact",
+    "source_url": "https://www.autohome.com.cn/"
+  },
+  "海鸥 2025款 智驾版 305KM 活力版": {
+    "sku": "356845779",
+    "series": "海鸥",
+    "specs_found": true,
+    "specs_approx": false,
+    "match_level": "exact",
+    "source_url": "https://www.autohome.com.cn/"
+  },
+  "零跑T03 2023款 310轻享版": {
+    "sku": "356595514",
+    "series": "零跑T03",
+    "specs_found": true,
+    "specs_approx": true,
+    "match_level": "series_year_tier",
+    "source_url": "https://www.autohome.com.cn/"
+  },
+  "魏牌 VV5 2020款 1.5T 颜先锋": {
+    "sku": "357295571",
+    "series": "魏牌 VV5",
+    "specs_found": true,
+    "specs_approx": true,
+    "match_level": "series_year_tier",
+    "source_url": "https://www.autohome.com.cn/"
+  },
+  "博越 2020款 1.5TD 自动智联PRO": {
+    "sku": "357232750",
+    "series": "博越",
+    "specs_found": true,
+    "specs_approx": true,
+    "match_level": "series_year_tier",
+    "source_url": "https://www.autohome.com.cn/"
+  },
+  "零跑T03 2024款 310舒享版": {
+    "sku": "356796728",
+    "series": "零跑T03",
+    "specs_found": true,
+    "specs_approx": true,
+    "match_level": "series_year_tier",
+    "source_url": "https://www.autohome.com.cn/"
+  },
+  "零跑T03 2025款 310舒享版": {
+    "sku": "356796737",
+    "series": "零跑T03",
+    "specs_found": true,
+    "specs_approx": true,
+    "match_level": "series_year_tier",
+    "source_url": "https://www.autohome.com.cn/"
+  },
+  "领克06 2020款 1.5T 耀Halo": {
+    "sku": "357319061",
+    "series": "领克06",
+    "specs_found": true,
+    "specs_approx": true,
+    "match_level": "series_year_tier",
+    "source_url": "https://www.autohome.com.cn/"
+  },
+  "欧拉好猫 2021款 400km标准续航 维纳斯版 磷酸铁锂电池": {
+    "sku": "356651013",
+    "series": "欧拉好猫",
+    "specs_found": true,
+    "specs_approx": true,
+    "match_level": "series_year_tier",
+    "source_url": "https://www.autohome.com.cn/"
+  },
+  "柯迪亚克 2018款 改款 TSI330 7座两驱豪华优享版": {
+    "sku": "357334203",
+    "series": "柯迪亚克",
+    "specs_found": true,
+    "specs_approx": true,
+    "match_level": "series_year_tier",
+    "source_url": "https://www.autohome.com.cn/"
+  },
+  "魏牌 VV5 2017款 2.0T 超豪型": {
+    "sku": "357211013",
+    "series": "魏牌 VV5",
+    "specs_found": true,
+    "specs_approx": true,
+    "match_level": "series_year_tier",
+    "source_url": "https://www.autohome.com.cn/"
+  },
+  "魏牌 VV5 2017款 2.0T 旗舰型": {
+    "sku": "357149717",
+    "series": "魏牌 VV5",
+    "specs_found": true,
+    "specs_approx": true,
+    "match_level": "series_year_tier",
+    "source_url": "https://www.autohome.com.cn/"
+  },
+  "星瑞 2020款 2.0T 豪华型": {
+    "sku": "357289435",
+    "series": "星瑞",
+    "specs_found": true,
+    "specs_approx": true,
+    "match_level": "series_year_tier",
+    "source_url": "https://www.autohome.com.cn/"
+  },
+  "瑞虎8 2020款 改款 290TGDI 自动精英版": {
+    "sku": "356630207",
+    "series": "瑞虎8",
+    "specs_found": true,
+    "specs_approx": true,
+    "match_level": "series_year_tier",
+    "source_url": "https://www.autohome.com.cn/"
+  },
+  "锐界 2018款 EcoBoost 245 两驱豪锐型 7座 国V": {
+    "sku": "357211019",
+    "series": "锐界",
+    "specs_found": true,
+    "specs_approx": true,
+    "match_level": "series_year_tier",
+    "source_url": "https://www.autohome.com.cn/"
+  },
+  "捷达VS7 2020款 1.4T 自动悦享版": {
+    "sku": "356774603",
+    "series": "捷达VS7",
+    "specs_found": true,
+    "specs_approx": true,
+    "match_level": "series_year_tier",
+    "source_url": "https://www.autohome.com.cn/"
+  },
+  "传祺GS4 2017款 235T 手动两驱舒适版": {
+    "sku": "357001086",
+    "series": "传祺GS4",
+    "specs_found": true,
+    "specs_approx": true,
+    "match_level": "series_year_tier",
+    "source_url": "https://www.autohome.com.cn/"
+  },
+  "荣威i5 2022款 1.5L CVT安心版": {
+    "sku": "357307855",
+    "series": "荣威i5",
+    "specs_found": true,
+    "specs_approx": true,
+    "match_level": "series_year_tier",
+    "source_url": "https://www.autohome.com.cn/"
+  },
+  "星愿 2026款 310km 梦想版": {
+    "sku": "357261851",
+    "series": "星愿",
+    "specs_found": true,
+    "specs_approx": true,
+    "match_level": "series_year_tier",
+    "source_url": "https://www.autohome.com.cn/"
+  },
+  "帝豪GS 2018款 领潮版 1.4T 自动臻尚智联型": {
+    "sku": "356933838",
+    "series": "帝豪GS",
+    "specs_found": true,
+    "specs_approx": true,
+    "match_level": "series_year_tier",
+    "source_url": "https://www.autohome.com.cn/"
+  },
+  "哈弗H6 2021款 第二代 1.5T 自动都市版": {
+    "sku": "357204629",
+    "series": "哈弗H6",
+    "specs_found": true,
+    "specs_approx": false,
+    "match_level": "exact",
+    "source_url": "https://www.autohome.com.cn/"
+  },
+  "自由侠 2019款 220T 自动领先版": {
+    "sku": "357211030",
+    "series": "自由侠",
+    "specs_found": true,
+    "specs_approx": true,
+    "match_level": "series_year_tier",
+    "source_url": "https://www.autohome.com.cn/"
+  },
+  "天逸 C5 AIRCROSS 2017款 380THP 豪华型": {
+    "sku": "357275248",
+    "series": "天逸 C5 AIRCROSS",
+    "specs_found": true,
+    "specs_approx": true,
+    "match_level": "series_year_tier",
+    "source_url": "https://www.autohome.com.cn/"
+  },
+  "轩逸 2023款 1.6L CVT悦享版": {
+    "sku": "357211012",
+    "series": "轩逸",
+    "specs_found": true,
+    "specs_approx": true,
+    "match_level": "series_year_tier",
+    "source_url": "https://www.autohome.com.cn/"
+  },
+  "名图 2017款 1.8L 自动尊贵型DLX 国V": {
+    "sku": "357295564",
+    "series": "名图",
+    "specs_found": true,
+    "specs_approx": true,
+    "match_level": "series_year_tier",
+    "source_url": "https://www.autohome.com.cn/"
+  },
+  "君威 2021款 552T 精英型": {
+    "sku": "357152531",
+    "series": "君威",
+    "specs_found": true,
+    "specs_approx": true,
+    "match_level": "series_year_tier",
+    "source_url": "https://www.autohome.com.cn/"
+  },
+  "科鲁泽 2022款 320 自动悦享天窗版": {
+    "sku": "357151407",
+    "series": "科鲁泽",
+    "specs_found": true,
+    "specs_approx": true,
+    "match_level": "series_year_tier",
+    "source_url": "https://www.autohome.com.cn/"
+  },
+  "轩逸 2024款 改款三 经典 1.6L XE CVT舒适版": {
+    "sku": "357211017",
+    "series": "轩逸",
+    "specs_found": true,
+    "specs_approx": true,
+    "match_level": "series_year_tier",
+    "source_url": "https://www.autohome.com.cn/"
+  },
+  "现代ix35 2019款 2.0L 自动两驱智勇·畅享版 国V": {
+    "sku": "357171772",
+    "series": "现代ix35",
+    "specs_found": true,
+    "specs_approx": true,
+    "match_level": "series_year_tier",
+    "source_url": "https://www.autohome.com.cn/"
+  },
+  "领克02 2018款 1.5T DCT两驱劲Pro版 国V": {
+    "sku": "357232005",
+    "series": "领克02",
+    "specs_found": true,
+    "specs_approx": true,
+    "match_level": "series_year_tier",
+    "source_url": "https://www.autohome.com.cn/"
+  },
+  "迈锐宝XL 2021款 535T 自动锐动版": {
+    "sku": "357143231",
+    "series": "迈锐宝XL",
+    "specs_found": true,
+    "specs_approx": true,
+    "match_level": "series_year_tier",
+    "source_url": "https://www.autohome.com.cn/"
+  },
+  "迈锐宝XL 2022款 535T 自动锐动版": {
+    "sku": "357350759",
+    "series": "迈锐宝XL",
+    "specs_found": true,
+    "specs_approx": true,
+    "match_level": "series_year_tier",
+    "source_url": "https://www.autohome.com.cn/"
+  },
+  "雪铁龙C3-XR 2021款 190THP DCT致尚版": {
+    "sku": "356670011",
+    "series": "雪铁龙C3-XR",
+    "specs_found": true,
+    "specs_approx": true,
+    "match_level": "series_year_tier",
+    "source_url": "https://www.autohome.com.cn/"
+  },
+  "探界者 2017款 535T 自动四驱拓界版": {
+    "sku": "357072673",
+    "series": "探界者",
+    "specs_found": true,
+    "specs_approx": true,
+    "match_level": "series_year_tier",
+    "source_url": "https://www.autohome.com.cn/"
+  },
+  "欧拉白猫 2020款 360km标准型": {
+    "sku": "357228868",
+    "series": "欧拉白猫",
+    "specs_found": true,
+    "specs_approx": true,
+    "match_level": "series_year_tier",
+    "source_url": "https://www.autohome.com.cn/"
+  },
+  "荣威RX5 2016款 20T 两驱自动互联网智享版": {
+    "sku": "357158863",
+    "series": "荣威RX5",
+    "specs_found": true,
+    "specs_approx": true,
+    "match_level": "series_year_tier",
+    "source_url": "https://www.autohome.com.cn/"
+  },
+  "博越 2018款 1.8TD 自动两驱智联型4G互联版": {
+    "sku": "357349654",
+    "series": "博越",
+    "specs_found": true,
+    "specs_approx": true,
+    "match_level": "series_year_tier",
+    "source_url": "https://www.autohome.com.cn/"
+  },
+  "吉利几何E萤火虫 2024款 301KM 流光": {
+    "sku": "357002835",
+    "series": "吉利几何E萤火虫",
+    "specs_found": true,
+    "specs_approx": true,
+    "match_level": "series_year_tier",
+    "source_url": "https://www.autohome.com.cn/"
+  },
+  "卡罗拉 2021款 1.2T S-CVT精英版": {
+    "sku": "356856951",
+    "series": "卡罗拉",
+    "specs_found": true,
+    "specs_approx": true,
+    "match_level": "series_year_tier",
+    "source_url": "https://www.autohome.com.cn/"
+  },
+  "英朗 2021款 改款 典范 1.5L 自动精英型": {
+    "sku": "357236920",
+    "series": "英朗",
+    "specs_found": true,
+    "specs_approx": true,
+    "match_level": "series_year_tier",
+    "source_url": "https://www.autohome.com.cn/"
+  },
+  "逍客 2019款 2.0L CVT豪华版": {
+    "sku": "357192150",
+    "series": "逍客",
+    "specs_found": true,
+    "specs_approx": true,
+    "match_level": "series_year_tier",
+    "source_url": "https://www.autohome.com.cn/"
+  },
+  "捷达VS5 2019款 280TSI 自动悦享版": {
+    "sku": "357142040",
+    "series": "捷达VS5",
+    "specs_found": true,
+    "specs_approx": true,
+    "match_level": "series_year_tier",
+    "source_url": "https://www.autohome.com.cn/"
+  },
+  "迈锐宝XL 2018款 530T 自动锐逸版": {
+    "sku": "357088396",
+    "series": "迈锐宝XL",
+    "specs_found": true,
+    "specs_approx": true,
+    "match_level": "series_year_tier",
+    "source_url": "https://www.autohome.com.cn/"
+  },
+  "雪铁龙C3-XR 2015款 1.6L 自动先锋型": {
+    "sku": "357198641",
+    "series": "雪铁龙C3-XR",
+    "specs_found": true,
+    "specs_approx": true,
+    "match_level": "series_year_tier",
+    "source_url": "https://www.autohome.com.cn/"
+  },
+  "宝来 2020款 1.5L 自动时尚型": {
+    "sku": "357109426",
+    "series": "宝来",
+    "specs_found": true,
+    "specs_approx": true,
+    "match_level": "series_year_tier",
+    "source_url": "https://www.autohome.com.cn/"
+  },
+  "奕炫 2020款 230T 自动炫酷版": {
+    "sku": "357307243",
+    "series": "奕炫",
+    "specs_found": true,
+    "specs_approx": true,
+    "match_level": "series_year_tier",
+    "source_url": "https://www.autohome.com.cn/"
+  },
+  "传祺GS3 2022款 POWER 270T 自动劲享版": {
+    "sku": "357140248",
+    "series": "传祺GS3",
+    "specs_found": true,
+    "specs_approx": true,
+    "match_level": "series_year_tier",
+    "source_url": "https://www.autohome.com.cn/"
+  },
+  "魏牌 VV6 2021款 2.0T 两驱智享+": {
+    "sku": "357107727",
+    "series": "魏牌 VV6",
+    "specs_found": true,
+    "specs_approx": true,
+    "match_level": "series_year_tier",
+    "source_url": "https://www.autohome.com.cn/"
+  },
+  "长城大狗 2021款 1.5T 两驱 边牧-旺财版": {
+    "sku": "357355582",
+    "series": "长城大狗",
+    "specs_found": true,
+    "specs_approx": true,
+    "match_level": "series_year_tier",
+    "source_url": "https://www.autohome.com.cn/"
+  },
+  "奕炫 2021款 230T 自动追影骑士版": {
+    "sku": "357184721",
+    "series": "奕炫",
+    "specs_found": true,
+    "specs_approx": true,
+    "match_level": "series_year_tier",
+    "source_url": "https://www.autohome.com.cn/"
+  },
+  "昕锐 2020款 1.5L 自动舒适版": {
+    "sku": "356871818",
+    "series": "昕锐",
+    "specs_found": true,
+    "specs_approx": true,
+    "match_level": "series_year_tier",
+    "source_url": "https://www.autohome.com.cn/"
+  },
+  "傲跑 2020款 1.5L CVT潮流版": {
+    "sku": "356939164",
+    "series": "傲跑",
+    "specs_found": true,
+    "specs_approx": true,
+    "match_level": "series_year_tier",
+    "source_url": "https://www.autohome.com.cn/"
+  },
+  "奕炫 2023款 改款 1.5L 自动追风版": {
+    "sku": "357237949",
+    "series": "奕炫",
+    "specs_found": true,
+    "specs_approx": true,
+    "match_level": "series_year_tier",
+    "source_url": "https://www.autohome.com.cn/"
+  },
+  "奕炫 2020款 230T 自动炫目赛道骑士版": {
+    "sku": "357409941",
+    "series": "奕炫",
+    "specs_found": true,
+    "specs_approx": true,
+    "match_level": "series_year_tier",
+    "source_url": "https://www.autohome.com.cn/"
+  },
+  "科沃兹 2021款 325T 自动欣悦版": {
+    "sku": "356905902",
+    "series": "科沃兹",
+    "specs_found": true,
+    "specs_approx": true,
+    "match_level": "series_year_tier",
+    "source_url": "https://www.autohome.com.cn/"
+  },
+  "朗逸 2021款 280TSI DSG舒适版": {
+    "sku": "357015257",
+    "series": "朗逸",
+    "specs_found": true,
+    "specs_approx": true,
+    "match_level": "series_year_tier",
+    "source_url": "https://www.autohome.com.cn/"
+  },
+  "朗逸 2019款 1.5L 自动风尚版 国VI": {
+    "sku": "356829961",
+    "series": "朗逸",
+    "specs_found": true,
+    "specs_approx": true,
+    "match_level": "series_year_tier",
+    "source_url": "https://www.autohome.com.cn/"
+  },
+  "缤越 2019款 运动款 260T DCT游侠 国VI": {
+    "sku": "356670871",
+    "series": "缤越",
+    "specs_found": true,
+    "specs_approx": true,
+    "match_level": "series_year_tier",
+    "source_url": "https://www.autohome.com.cn/"
+  },
+  "途铠 2020款 280TSI DSG舒适版": {
+    "sku": "357149732",
+    "series": "途铠",
+    "specs_found": true,
+    "specs_approx": true,
+    "match_level": "series_year_tier",
+    "source_url": "https://www.autohome.com.cn/"
+  },
+  "科沃兹 2019款 320 自动欣享天窗版": {
+    "sku": "357166936",
+    "series": "科沃兹",
+    "specs_found": true,
+    "specs_approx": true,
+    "match_level": "series_year_tier",
+    "source_url": "https://www.autohome.com.cn/"
+  },
+  "途铠 2021款 1.5L 自动舒适版": {
+    "sku": "357208459",
+    "series": "途铠",
+    "specs_found": true,
+    "specs_approx": true,
+    "match_level": "series_year_tier",
+    "source_url": "https://www.autohome.com.cn/"
+  },
+  "欧蓝德 2018款 2.4L 四驱精英版 5座": {
+    "sku": "357192193",
+    "series": "欧蓝德",
+    "specs_found": true,
+    "specs_approx": true,
+    "match_level": "series_year_tier",
+    "source_url": "https://www.autohome.com.cn/"
+  },
+  "君越 2016款 28T 豪华型": {
+    "sku": "357350550",
+    "series": "君越",
+    "specs_found": true,
+    "specs_approx": true,
+    "match_level": "series_year_tier",
+    "source_url": "https://www.autohome.com.cn/"
+  },
+  "海鸥 2025款 405KM 飞翔版": {
+    "sku": "357204978",
+    "series": "海鸥",
+    "specs_found": true,
+    "specs_approx": true,
+    "match_level": "series_year_tier",
+    "source_url": "https://www.autohome.com.cn/"
+  },
+  "领克03 2019款 2.0TD 自动劲Pro版": {
+    "sku": "357127553",
+    "series": "领克03",
+    "specs_found": true,
+    "specs_approx": true,
+    "match_level": "series_year_tier",
+    "source_url": "https://www.autohome.com.cn/"
+  },
+  "奕炫GS 2020款 230T 自动越目版": {
+    "sku": "357228026",
+    "series": "奕炫GS",
+    "specs_found": true,
+    "specs_approx": true,
+    "match_level": "series_year_tier",
+    "source_url": "https://www.autohome.com.cn/"
+  },
+  "速腾 2017款 230TSI 自动舒适型": {
+    "sku": "356796725",
+    "series": "速腾",
+    "specs_found": true,
+    "specs_approx": true,
+    "match_level": "series_year_tier",
+    "source_url": "https://www.autohome.com.cn/"
+  },
+  "朗逸 2019款 启航 1.5L 自动风尚版 国VI": {
+    "sku": "356905845",
+    "series": "朗逸",
+    "specs_found": true,
+    "specs_approx": true,
+    "match_level": "series_year_tier",
+    "source_url": "https://www.autohome.com.cn/"
+  },
+  "逍客 2017款 2.0L CVT豪华版 国V": {
+    "sku": "357319139",
+    "series": "逍客",
+    "specs_found": true,
+    "specs_approx": true,
+    "match_level": "series_year_tier",
+    "source_url": "https://www.autohome.com.cn/"
+  },
+  "奔驰GLA 2018款 GLA 200 时尚型": {
+    "sku": "356902463",
+    "series": "奔驰GLA",
+    "specs_found": true,
+    "specs_approx": true,
+    "match_level": "series_year_tier",
+    "source_url": "https://www.autohome.com.cn/"
+  },
+  "奕炫 2024款 1.5L 自动劲速版": {
+    "sku": "357168539",
+    "series": "奕炫",
+    "specs_found": true,
+    "specs_approx": true,
+    "match_level": "series_year_tier",
+    "source_url": "https://www.autohome.com.cn/"
+  },
+  "奕泽IZOA 2021款 2.0L 奕享版": {
+    "sku": "357357693",
+    "series": "奕泽IZOA",
+    "specs_found": true,
+    "specs_approx": true,
+    "match_level": "series_year_tier",
+    "source_url": "https://www.autohome.com.cn/"
+  },
+  "远景X3 2021款 PRO 1.5L CVT尊贵型": {
+    "sku": "357230255",
+    "series": "远景X3",
+    "specs_found": true,
+    "specs_approx": false,
+    "match_level": "exact",
+    "source_url": "https://www.autohome.com.cn/"
+  },
+  "宝来 2023款 200TSI DSG智行PRO版": {
+    "sku": "356872119",
+    "series": "宝来",
+    "specs_found": true,
+    "specs_approx": true,
+    "match_level": "series_year_tier",
+    "source_url": "https://www.autohome.com.cn/"
+  },
+  "MG5 2026款 180DVVT 全球抢先版": {
+    "sku": "357184320",
+    "series": "MG5",
+    "specs_found": true,
+    "specs_approx": true,
+    "match_level": "series_year_tier",
+    "source_url": "https://www.autohome.com.cn/"
+  },
+  "卡罗拉 2021款 1.2T S-CVT先锋PLUS版": {
+    "sku": "357140215",
+    "series": "卡罗拉",
+    "specs_found": true,
+    "specs_approx": true,
+    "match_level": "series_year_tier",
+    "source_url": "https://www.autohome.com.cn/"
+  },
+  "奕泽IZOA 2018款 2.0L 奕驰版 国V": {
+    "sku": "357221753",
+    "series": "奕泽IZOA",
+    "specs_found": true,
+    "specs_approx": true,
+    "match_level": "series_year_tier",
+    "source_url": "https://www.autohome.com.cn/"
+  },
+  "天籁 2016款 改款 2.0L XL舒适版": {
+    "sku": "357265571",
+    "series": "天籁",
+    "specs_found": true,
+    "specs_approx": true,
+    "match_level": "series_year_tier",
+    "source_url": "https://www.autohome.com.cn/"
+  },
+  "英朗 2018款 18T 自动精英型": {
+    "sku": "357006776",
+    "series": "英朗",
+    "specs_found": true,
+    "specs_approx": true,
+    "match_level": "series_year_tier",
+    "source_url": "https://www.autohome.com.cn/"
+  },
+  "探歌 2018款 280TSI DSG两驱舒适型 国V": {
+    "sku": "357172826",
+    "series": "探歌",
+    "specs_found": true,
+    "specs_approx": true,
+    "match_level": "series_year_tier",
+    "source_url": "https://www.autohome.com.cn/"
+  },
+  "标致408 2022款 1.6T 追光版": {
+    "sku": "357160656",
+    "series": "标致408",
+    "specs_found": true,
+    "specs_approx": true,
+    "match_level": "series_year_tier",
+    "source_url": "https://www.autohome.com.cn/"
+  },
+  "帝豪GS 2018款 领潮版 1.4T 自动领尚智联型": {
+    "sku": "356892961",
+    "series": "帝豪GS",
+    "specs_found": true,
+    "specs_approx": true,
+    "match_level": "series_year_tier",
+    "source_url": "https://www.autohome.com.cn/"
+  },
+  "名图 2017款 1.8L 自动智能型GLS 国V": {
+    "sku": "357246284",
+    "series": "名图",
+    "specs_found": true,
+    "specs_approx": true,
+    "match_level": "series_year_tier",
+    "source_url": "https://www.autohome.com.cn/"
+  },
+  "卡罗拉 2017款 改款 1.2T S-CVT GL-i真皮版 国V": {
+    "sku": "357355671",
+    "series": "卡罗拉",
+    "specs_found": true,
+    "specs_approx": true,
+    "match_level": "series_year_tier",
+    "source_url": "https://www.autohome.com.cn/"
+  },
+  "宝来 2023款 200TSI DSG智行版": {
+    "sku": "357205109",
+    "series": "宝来",
+    "specs_found": true,
+    "specs_approx": true,
+    "match_level": "series_year_tier",
+    "source_url": "https://www.autohome.com.cn/"
+  },
+  "思域 2016款 220TURBO CVT豪华版": {
+    "sku": "357184176",
+    "series": "思域",
+    "specs_found": true,
+    "specs_approx": true,
+    "match_level": "series_year_tier",
+    "source_url": "https://www.autohome.com.cn/"
+  },
+  "领克03 2019款 1.5TD DCT劲版": {
+    "sku": "357100614",
+    "series": "领克03",
+    "specs_found": true,
+    "specs_approx": true,
+    "match_level": "series_year_tier",
+    "source_url": "https://www.autohome.com.cn/"
+  },
+  "飞度 2020款 1.5L CVT舒适版": {
+    "sku": "357279266",
+    "series": "飞度",
+    "specs_found": true,
+    "specs_approx": true,
+    "match_level": "series_year_tier",
+    "source_url": "https://www.autohome.com.cn/"
+  },
+  "高尔夫·嘉旅 2020款 280TSI 自动好奇型": {
+    "sku": "357228147",
+    "series": "高尔夫·嘉旅",
+    "specs_found": true,
+    "specs_approx": true,
+    "match_level": "series_year_tier",
+    "source_url": "https://www.autohome.com.cn/"
+  },
+  "帝豪GS 2019款 1.4T CVT雅 Pro 国VI": {
+    "sku": "357246142",
+    "series": "帝豪GS",
+    "specs_found": true,
+    "specs_approx": true,
+    "match_level": "series_year_tier",
+    "source_url": "https://www.autohome.com.cn/"
+  },
+  "马自达3 昂克赛拉 2016款 三厢 1.5L 自动舒适型": {
+    "sku": "357335080",
+    "series": "马自达3 昂克赛拉",
+    "specs_found": true,
+    "specs_approx": true,
+    "match_level": "series_year_tier",
+    "source_url": "https://www.autohome.com.cn/"
+  },
+  "捷达VA3 2021款 1.5L 自动向上人生版": {
+    "sku": "356998324",
+    "series": "捷达VA3",
+    "specs_found": true,
+    "specs_approx": true,
+    "match_level": "series_year_tier",
+    "source_url": "https://www.autohome.com.cn/"
+  },
+  "马自达3 昂克赛拉 2017款 两厢 2.0L 自动运动型 国V": {
+    "sku": "357166246",
+    "series": "马自达3 昂克赛拉",
+    "specs_found": true,
+    "specs_approx": true,
+    "match_level": "series_year_tier",
+    "source_url": "https://www.autohome.com.cn/"
+  },
+  "威驰FS 2017款 1.5L 手动锋驰版": {
+    "sku": "357263877",
+    "series": "威驰FS",
+    "specs_found": true,
+    "specs_approx": true,
+    "match_level": "series_year_tier",
+    "source_url": "https://www.autohome.com.cn/"
+  },
+  "奥迪A3 2019款 Sportback 35 TFSI 时尚型 国V": {
+    "sku": "357296089",
+    "series": "奥迪A3",
+    "specs_found": true,
+    "specs_approx": true,
+    "match_level": "series_year_tier",
+    "source_url": "https://www.autohome.com.cn/"
+  },
+  "骐达TIIDA 2016款 1.6L CVT智行版": {
+    "sku": "357410184",
+    "series": "骐达TIIDA",
+    "specs_found": true,
+    "specs_approx": true,
+    "match_level": "series_year_tier",
+    "source_url": "https://www.autohome.com.cn/"
+  },
+  "C-TREK蔚领 2018款 1.5L 自动舒适型": {
+    "sku": "357328438",
+    "series": "C-TREK蔚领",
+    "specs_found": true,
+    "specs_approx": true,
+    "match_level": "series_year_tier",
+    "source_url": "https://www.autohome.com.cn/"
+  },
+  "奥迪A3 2016款 Limousine 35 TFSI 领英型": {
+    "sku": "356881737",
+    "series": "奥迪A3",
+    "specs_found": true,
+    "specs_approx": true,
+    "match_level": "series_year_tier",
+    "source_url": "https://www.autohome.com.cn/"
+  },
+  "Polo 2018款 1.5L 自动安享型": {
+    "sku": "356868757",
+    "series": "Polo",
+    "specs_found": true,
+    "specs_approx": true,
+    "match_level": "series_year_tier",
+    "source_url": "https://www.autohome.com.cn/"
+  },
+  "飞度 2021款 1.5L CVT潮享版": {
+    "sku": "356865895",
+    "series": "飞度",
+    "specs_found": true,
+    "specs_approx": true,
+    "match_level": "series_year_tier",
+    "source_url": "https://www.autohome.com.cn/"
+  },
+  "甲壳虫 2018款 180TSI 宜乐型": {
+    "sku": "356587369",
+    "series": "甲壳虫",
+    "specs_found": true,
+    "specs_approx": true,
+    "match_level": "series_year_tier",
+    "source_url": "https://www.autohome.com.cn/"
+  }
+}
