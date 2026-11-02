@@ -14,6 +14,7 @@ on:
       - "scripts/sync_exact_trim_specs_strict.py"
       - "scripts/sync_exact_trim_specs_resilient.py"
       - "scripts/sync_exact_trim_specs_autohome.py"
+      - "scripts/autohome_exact_rules.py"
       - "scripts/rerank_composite.py"
       - "scripts/filters.py"
       - "scripts/tests/**"
@@ -50,11 +51,17 @@ jobs:
         run: |
           python -m pip install --disable-pip-version-check zstandard
           mkdir -p .external
-          git clone --quiet --depth 1 --filter=blob:none --no-checkout --branch main \
+          # Current data is checked out fully. The previous blob-filtered,
+          # no-checkout clone exposed an incomplete working data inventory on
+          # hosted runners and forced even 2025/2026 cars into old vaults.
+          git clone --quiet --depth 1 --branch main \
             https://github.com/swoiow/autohome.git .external/autohome-main
+          # Historical vaults are large binary blobs, so keep them lazy and
+          # fetch only the monthly snapshots selected by the synchronizer.
           git clone --quiet --depth 1 --filter=blob:none --no-checkout --branch vaults \
             https://github.com/swoiow/autohome.git .external/autohome-vaults
-          echo "AutoHome current files: $(git -C .external/autohome-main ls-tree -r --name-only HEAD data | grep -c '\.csv$')"
+          echo "AutoHome current files: $(find .external/autohome-main/data -maxdepth 1 -type f -name '*.csv' | wc -l)"
+          echo "AutoHome current commit: $(git -C .external/autohome-main rev-parse HEAD)"
           echo "AutoHome historical snapshots: $(git -C .external/autohome-vaults ls-tree -r --name-only HEAD vaults | grep -c 'data\.vault$')"
 
       - name: Validate existing exact-trim source JSON
@@ -66,7 +73,9 @@ jobs:
           done
 
       - name: Run AutoHome exact-trim sync tests
-        run: python scripts/tests/test_autohome_sync.py
+        run: |
+          python scripts/tests/test_autohome_sync.py
+          python scripts/tests/test_autohome_rules.py
 
       - name: Sync exact trims for complete filtered inventory
         env:
@@ -102,6 +111,7 @@ jobs:
           issues = json.loads((root / 'data/data-issues.json').read_text(encoding='utf-8'))
           filtered = json.loads((root / 'data/listings-filtered.json').read_text(encoding='utf-8'))
           shortlist = json.loads((root / 'data/shortlist-ranked.json').read_text(encoding='utf-8'))
+          report = json.loads((root / 'data/specs/exact-trim-sync-report.json').read_text(encoding='utf-8'))
 
           assert meta.get('score_version') == 'v2.2.0', meta.get('score_version')
           assert len(shortlist) <= 30, len(shortlist)
@@ -118,8 +128,21 @@ jobs:
           assert len(filtered) == len(ranked) + len(issues), (len(filtered), len(ranked), len(issues))
           assert meta.get('ranked_count') == len(ranked)
           assert meta.get('data_issue_count') == len(issues)
+          # Known false-positive regression: 18T automatic must never be mapped
+          # to AutoHome's 15T manual trim merely because titles look similar.
+          bad = [
+              r for r in report.get('rows', [])
+              if r.get('sku') == '357006776'
+              and r.get('status') == 'matched'
+              and '15T 手动' in str(r.get('matched_trim'))
+          ]
+          assert not bad, bad
 
-          print(f"validated filtered={len(filtered)} ranked={len(ranked)} issues={len(issues)} shortlist={len(shortlist)}")
+          print(
+              f"validated filtered={len(filtered)} ranked={len(ranked)} "
+              f"issues={len(issues)} shortlist={len(shortlist)} "
+              f"new_exact={report.get('newly_matched')}"
+          )
           PY
 
       - name: Set up Node
@@ -171,8 +194,6 @@ jobs:
 
           git commit -m "chore(data): sync exact trims and recalculate rankings [skip ci]"
 
-          # Main can advance while this relatively long sync runs. Rebase the
-          # generated-data commit instead of losing a successful calculation.
           for attempt in 1 2 3; do
             git fetch origin main
             if ! git rebase origin/main; then

@@ -90,11 +90,11 @@ def score_listing(item: dict[str, Any], today=None) -> dict[str, Any]:
     elif op.get("note"):
         warnings.append(op["note"])
 
-    if cfg["coverage"] < 0.4:
-        warnings.append("配置核验覆盖率低，配置分已向中性收缩")
-
-    if (specs.get("match_level") or "").lower() in ("series_year_tier", "series_year"):
-        warnings.append("match_level=series_year_tier：高级配置已置 null")
+    match_level = (specs.get("match_level") or "").lower()
+    if match_level == "unverified_config":
+        warnings.append("该车型尚未进入 V3 精确配置库，配置字段按未知处理")
+    elif cfg["coverage"] < 0.4:
+        warnings.append("精确车型配置核验覆盖率较低，配置分已向中性收缩")
 
     for issue in (specs.get("verification_issues") or [])[:2]:
         warnings.append(str(issue))
