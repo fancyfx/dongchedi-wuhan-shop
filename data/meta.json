@@ -36,7 +36,7 @@
   "sort_preference": "v2_fixed_anchor_total_score",
   "notes": "算法版本 v2.2.0。固定锚点评分；能源场景 no_home_charging；油价92=8.0/95=8.5，家用电=0.8；分期价+0.5万不确定性；前30条核验参数已覆盖；series_year_tier高级配置置null；短名单为过滤后按V2总分排序前30。",
   "sort_method": "ranking_v2_fixed_anchors",
-  "ranked_at": "2026-11-02T21:43:00+08:00",
+  "ranked_at": "2026-11-02T21:43:44+08:00",
   "ranked_count": 140,
   "sort_weights": {
     "price": 0.15,

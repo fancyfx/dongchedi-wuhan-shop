@@ -203,7 +203,7 @@
     "finance_reserve_wan": 0.5,
     "_age_years": 9.333333333333334,
     "score_version": "v2.2.0",
-    "score_v1": 57.2,
+    "score_v1": 61.5,
     "condition_gate": "PASS",
     "score_reasons": [
       "可比价格 2.69 万",
@@ -443,7 +443,7 @@
     "price_basis": "display",
     "_age_years": 4.333333333333333,
     "score_version": "v2.2.0",
-    "score_v1": 57.8,
+    "score_v1": 61.1,
     "condition_gate": "PASS",
     "score_reasons": [
       "可比价格 3.19 万",
@@ -685,7 +685,7 @@
     "price_basis": "display",
     "_age_years": 3.3333333333333335,
     "score_version": "v2.2.0",
-    "score_v1": 56.0,
+    "score_v1": 59.6,
     "condition_gate": "PASS",
     "score_reasons": [
       "可比价格 3.29 万",
@@ -1067,7 +1067,7 @@
     "price_basis": "display",
     "_age_years": 5.333333333333333,
     "score_version": "v2.2.0",
-    "score_v1": 59.0,
+    "score_v1": 59.6,
     "condition_gate": "PASS",
     "score_reasons": [
       "可比价格 5.19 万",
@@ -1309,7 +1309,7 @@
     "price_basis": "display",
     "_age_years": 8.333333333333334,
     "score_version": "v2.2.0",
-    "score_v1": 55.2,
+    "score_v1": 59.5,
     "condition_gate": "PASS",
     "score_reasons": [
       "可比价格 2.89 万",
@@ -1547,7 +1547,7 @@
     "price_basis": "display",
     "_age_years": 6.333333333333333,
     "score_version": "v2.2.0",
-    "score_v1": 55.7,
+    "score_v1": 59.3,
     "condition_gate": "PASS",
     "score_reasons": [
       "可比价格 2.79 万",
@@ -1788,7 +1788,7 @@
     "price_basis": "display",
     "_age_years": 5.333333333333333,
     "score_version": "v2.2.0",
-    "score_v1": 55.0,
+    "score_v1": 58.5,
     "condition_gate": "PASS",
     "score_reasons": [
       "可比价格 3.29 万",
@@ -2026,7 +2026,7 @@
     "price_basis": "display",
     "_age_years": 4.333333333333333,
     "score_version": "v2.2.0",
-    "score_v1": 54.4,
+    "score_v1": 58.5,
     "condition_gate": "PASS",
     "score_reasons": [
       "可比价格 3.39 万",
@@ -2267,7 +2267,7 @@
     "finance_reserve_wan": 0.5,
     "_age_years": 5.333333333333333,
     "score_version": "v2.2.0",
-    "score_v1": 54.6,
+    "score_v1": 58.2,
     "condition_gate": "PASS",
     "score_reasons": [
       "可比价格 2.99 万",
@@ -2509,7 +2509,7 @@
     "price_basis": "display",
     "_age_years": 10.333333333333334,
     "score_version": "v2.2.0",
-    "score_v1": 53.4,
+    "score_v1": 57.7,
     "condition_gate": "PASS",
     "score_reasons": [
       "可比价格 1.99 万",
@@ -2749,7 +2749,7 @@
     "price_basis": "display",
     "_age_years": 5.333333333333333,
     "score_version": "v2.2.0",
-    "score_v1": 54.1,
+    "score_v1": 57.7,
     "condition_gate": "PASS",
     "score_reasons": [
       "可比价格 2.99 万",
@@ -3107,7 +3107,7 @@
     "price_basis": "display",
     "_age_years": 3.3333333333333335,
     "score_version": "v2.2.0",
-    "score_v1": 64.5,
+    "score_v1": 57.7,
     "condition_gate": "PASS",
     "score_reasons": [
       "可比价格 4.98 万",
@@ -3348,7 +3348,7 @@
     "price_basis": "display",
     "_age_years": 8.333333333333334,
     "score_version": "v2.2.0",
-    "score_v1": 53.2,
+    "score_v1": 57.5,
     "condition_gate": "PASS",
     "score_reasons": [
       "可比价格 2.99 万",
@@ -3585,7 +3585,7 @@
     "price_basis": "display",
     "_age_years": 5.333333333333333,
     "score_version": "v2.2.0",
-    "score_v1": 54.0,
+    "score_v1": 57.5,
     "condition_gate": "PASS",
     "score_reasons": [
       "可比价格 3.69 万",
@@ -3827,7 +3827,7 @@
     "price_basis": "display",
     "_age_years": 5.333333333333333,
     "score_version": "v2.2.0",
-    "score_v1": 53.2,
+    "score_v1": 57.5,
     "condition_gate": "PASS",
     "score_reasons": [
       "可比价格 3.99 万",
@@ -4200,7 +4200,7 @@
     "price_basis": "display",
     "_age_years": 3.3333333333333335,
     "score_version": "v2.2.0",
-    "score_v1": 62.2,
+    "score_v1": 57.5,
     "condition_gate": "PASS",
     "score_reasons": [
       "可比价格 5.99 万",
@@ -4442,7 +4442,7 @@
     "price_basis": "display",
     "_age_years": 7.333333333333333,
     "score_version": "v2.2.0",
-    "score_v1": 53.0,
+    "score_v1": 57.3,
     "condition_gate": "PASS",
     "score_reasons": [
       "可比价格 3.19 万",
@@ -4684,7 +4684,7 @@
     "price_basis": "display",
     "_age_years": 3.3333333333333335,
     "score_version": "v2.2.0",
-    "score_v1": 53.6,
+    "score_v1": 57.2,
     "condition_gate": "PASS",
     "score_reasons": [
       "可比价格 3.49 万",
@@ -4924,7 +4924,7 @@
     "price_basis": "display",
     "_age_years": 3.3333333333333335,
     "score_version": "v2.2.0",
-    "score_v1": 53.5,
+    "score_v1": 57.1,
     "condition_gate": "PASS",
     "score_reasons": [
       "可比价格 3.69 万",
@@ -5166,7 +5166,7 @@
     "finance_reserve_wan": 0.5,
     "_age_years": 9.333333333333334,
     "score_version": "v2.2.0",
-    "score_v1": 52.6,
+    "score_v1": 57.0,
     "condition_gate": "PASS",
     "score_reasons": [
       "可比价格 3.99 万",
@@ -5404,7 +5404,7 @@
     "price_basis": "display",
     "_age_years": 8.333333333333334,
     "score_version": "v2.2.0",
-    "score_v1": 52.9,
+    "score_v1": 56.9,
     "condition_gate": "PASS",
     "score_reasons": [
       "可比价格 3.29 万",
@@ -5647,7 +5647,7 @@
     "price_basis": "display",
     "_age_years": 6.333333333333333,
     "score_version": "v2.2.0",
-    "score_v1": 47.5,
+    "score_v1": 56.7,
     "condition_gate": "PASS",
     "score_reasons": [
       "可比价格 4.39 万",
@@ -5889,7 +5889,7 @@
     "price_basis": "display",
     "_age_years": 5.333333333333333,
     "score_version": "v2.2.0",
-    "score_v1": 53.2,
+    "score_v1": 56.5,
     "condition_gate": "PASS",
     "score_reasons": [
       "可比价格 3.69 万",
@@ -6133,7 +6133,7 @@
     "price_basis": "display",
     "_age_years": 6.333333333333333,
     "score_version": "v2.2.0",
-    "score_v1": 51.8,
+    "score_v1": 56.1,
     "condition_gate": "PASS",
     "score_reasons": [
       "可比价格 3.29 万",
@@ -6510,7 +6510,7 @@
     "finance_reserve_wan": 0.5,
     "_age_years": 8.333333333333334,
     "score_version": "v2.2.0",
-    "score_v1": 56.6,
+    "score_v1": 56.0,
     "condition_gate": "PASS",
     "score_reasons": [
       "可比价格 5.19 万",
@@ -6894,7 +6894,7 @@
     "price_basis": "display",
     "_age_years": 5.333333333333333,
     "score_version": "v2.2.0",
-    "score_v1": 54.5,
+    "score_v1": 55.9,
     "condition_gate": "PASS",
     "score_reasons": [
       "可比价格 4.99 万",
@@ -7135,7 +7135,7 @@
     "price_basis": "display",
     "_age_years": 6.333333333333333,
     "score_version": "v2.2.0",
-    "score_v1": 52.1,
+    "score_v1": 55.8,
     "condition_gate": "PASS",
     "score_reasons": [
       "可比价格 3.89 万",
@@ -7375,7 +7375,7 @@
     "finance_reserve_wan": 0.5,
     "_age_years": 8.333333333333334,
     "score_version": "v2.2.0",
-    "score_v1": 51.8,
+    "score_v1": 55.7,
     "condition_gate": "PASS",
     "score_reasons": [
       "可比价格 3.68 万",
@@ -7614,7 +7614,7 @@
     "price_basis": "display",
     "_age_years": 8.333333333333334,
     "score_version": "v2.2.0",
-    "score_v1": 51.4,
+    "score_v1": 55.7,
     "condition_gate": "PASS",
     "score_reasons": [
       "可比价格 4.29 万",
@@ -7853,7 +7853,7 @@
     "price_basis": "display",
     "_age_years": 6.333333333333333,
     "score_version": "v2.2.0",
-    "score_v1": 51.4,
+    "score_v1": 55.6,
     "condition_gate": "PASS",
     "score_reasons": [
       "可比价格 4.69 万",
