@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Regression tests for ranking engine V2 (§18 of design doc)."""
+"""Regression tests for ranking engine V2 with exact-trim V3 config data."""
 from __future__ import annotations
 
 import json
@@ -13,7 +13,6 @@ from ranking_v2.apply_verified import (  # noqa: E402
     apply_verified_to_listings,
     effective_price_fields,
     load_verified_by_sku,
-    null_advanced_features,
 )
 from ranking_v2.energy import energy_cost_yuan_100km, resolve_ranking_energy  # noqa: E402
 from ranking_v2.mileage_score import mileage_score  # noqa: E402
@@ -31,17 +30,56 @@ def _by_sku(listings, sku):
     raise KeyError(sku)
 
 
+def test_v3_exact_trim_mapping_and_no_legacy_config_fallback():
+    verified = load_verified_by_sku(ROOT / "data" / "vehicle-specs-verified.json")
+    assert len(verified) == 30
+
+    poisoned = {
+        "sku": "357298372",
+        "price": 5.39,
+        "price_type": "标价",
+        "specs": {
+            "match_level": "series_year_tier",
+            "features": {
+                "aeb": True,
+                "camera_360": True,
+                "seat_ventilation": True,
+                "power_tailgate": True,
+            },
+        },
+    }
+    patched = apply_verified_to_listings([poisoned], verified)[0]
+    specs = patched["specs"]
+    feats = specs["features"]
+    assert specs["match_level"] == "exact_trim"
+    assert specs["configuration_source"] == "exact_trim_v3"
+    assert feats["aeb"] is False
+    assert feats["camera_360"] is False
+    assert feats["seat_ventilation"] is False
+    assert feats["power_tailgate"] is False
+
+    unknown = {
+        "sku": "not-in-v3",
+        "price": 4.0,
+        "price_type": "标价",
+        "specs": {
+            "match_level": "exact",
+            "wheelbase_mm": 2700,
+            "features": {"aeb": True, "seat_ventilation": True},
+            "aeb": True,
+        },
+    }
+    cleaned = apply_verified_to_listings([unknown], verified)[0]
+    assert cleaned["specs"]["features"] == {}
+    assert "aeb" not in cleaned["specs"]
+    assert cleaned["specs"]["wheelbase_mm"] == 2700
+    assert cleaned["specs"]["match_level"] == "unverified_config"
+
+
 def test_tang_dm_energy_not_combined():
     verified = load_verified_by_sku(ROOT / "data" / "vehicle-specs-verified.json")
     raw = _load_ranked()
-    # start from a minimal tang-like item if already reranked
-    item = None
-    for x in raw:
-        if x["sku"] == "357215359":
-            item = x
-            break
-    assert item is not None
-    # re-apply verified on a copy with poisoned combined fuel
+    item = _by_sku(raw, "357215359")
     poisoned = json.loads(json.dumps(item))
     poisoned.setdefault("specs", {})["fuel_l_100km"] = 1.8
     poisoned["specs"]["powertrain_type"] = "phev"
@@ -52,31 +90,18 @@ def test_tang_dm_energy_not_combined():
     assert abs(float(resolved["value"]) - 9.02) < 0.01
     cost = energy_cost_yuan_100km(patched["specs"])
     assert cost["energy_cost_yuan_100km"] is not None
-    assert cost["energy_cost_yuan_100km"] > 50  # 9.02*8 ≈ 72
+    assert cost["energy_cost_yuan_100km"] > 50
 
 
 def test_xingrui_cheaper_lower_mileage_wins():
-    """Doc §18 case2: same trim, A cheaper + lower mileage must beat B.
-
-    Live listings may differ on price_type (分期 vs 标价); the regression
-    equalizes price_type so only price/mileage individual differences remain,
-    matching "其他车型参数完全相同".
-    """
     verified = load_verified_by_sku(ROOT / "data" / "vehicle-specs-verified.json")
     raw = _load_ranked()
-    a = _by_sku(raw, "356994816")  # 5.39 / 7.43
-    b = _by_sku(raw, "357156086")  # 5.49 / 9.25
-    a = json.loads(json.dumps(a))
-    b = json.loads(json.dumps(b))
-    a["price"] = 5.39
-    a["mileage_wan"] = 7.43
-    a["price_type"] = "标价"
-    b["price"] = 5.49
-    b["mileage_wan"] = 9.25
-    b["price_type"] = "标价"
+    a = json.loads(json.dumps(_by_sku(raw, "356994816")))
+    b = json.loads(json.dumps(_by_sku(raw, "357156086")))
+    a["price"], a["mileage_wan"], a["price_type"] = 5.39, 7.43, "标价"
+    b["price"], b["mileage_wan"], b["price_type"] = 5.49, 9.25, "标价"
     a2 = apply_verified_to_listings([a], verified)[0]
     b2 = apply_verified_to_listings([b], verified)[0]
-    # verified JSON may reassert original price_type; force equal cash-list basis
     for it, price in ((a2, 5.39), (b2, 5.49)):
         it["price"] = price
         it["price_type"] = "标价"
@@ -90,36 +115,6 @@ def test_xingrui_cheaper_lower_mileage_wins():
 
 def test_mileage_score_low_beats_high():
     assert mileage_score(2.49) > mileage_score(7.0)
-
-
-def test_series_year_tier_advanced_features_null():
-    specs = {
-        "match_level": "series_year_tier",
-        "specs_found": True,
-        "features": {
-            "seat_ventilation": True,
-            "aeb": True,
-            "camera_360": True,
-            "l2": True,
-            "power_tailgate": True,
-        },
-    }
-    out = null_advanced_features(specs)
-    assert out["features"]["seat_ventilation"] is None
-    assert out["features"]["aeb"] is None
-    assert out["features"]["camera_360"] is None
-
-    verified = load_verified_by_sku(ROOT / "data" / "vehicle-specs-verified.json")
-    raw = _load_ranked()
-    # 博瑞 series_year_tier
-    item = _by_sku(raw, "357172812")
-    patched = apply_verified_to_listings([json.loads(json.dumps(item))], verified)[0]
-    feats = patched["specs"].get("features") or {}
-    # if match was series_year_tier, advanced must be null
-    if (item.get("specs") or {}).get("match_level") == "series_year_tier":
-        assert feats.get("seat_ventilation") is None
-        assert feats.get("aeb") is None
-        assert feats.get("camera_360") is None
 
 
 def test_phev_does_not_use_combined_for_cross_powertrain():
@@ -166,16 +161,14 @@ def test_95_costs_more_than_92():
 def test_binyue_2024_low_mileage_direction():
     verified = load_verified_by_sku(ROOT / "data" / "vehicle-specs-verified.json")
     raw = _load_ranked()
-    older = _by_sku(raw, "357100389")  # 2023 4.98万km
-    newer = _by_sku(raw, "357298372")  # 2024 1.22万km
+    older = _by_sku(raw, "357100389")
+    newer = _by_sku(raw, "357298372")
     a = apply_verified_to_listings([json.loads(json.dumps(older))], verified)[0]
     b = apply_verified_to_listings([json.loads(json.dumps(newer))], verified)[0]
     sa = score_listing(a)
     sb = score_listing(b)
-    # mileage+age should favor 2024 low-mileage; allow price difference
     assert sb["scores"]["mileage"] > sa["scores"]["mileage"]
     assert sb["scores"]["age"] >= sa["scores"]["age"]
-    # total may or may not win solely on that, but direction of those dims is required
     assert sb["scores"]["mileage"] - sa["scores"]["mileage"] > 10
 
 
@@ -191,10 +184,10 @@ def test_finance_reserve():
 
 def main():
     tests = [
+        test_v3_exact_trim_mapping_and_no_legacy_config_fallback,
         test_tang_dm_energy_not_combined,
         test_xingrui_cheaper_lower_mileage_wins,
         test_mileage_score_low_beats_high,
-        test_series_year_tier_advanced_features_null,
         test_phev_does_not_use_combined_for_cross_powertrain,
         test_95_costs_more_than_92,
         test_binyue_2024_low_mileage_direction,
