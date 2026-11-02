@@ -1,14 +1,22 @@
 #!/usr/bin/env python3
-"""Composite total_score re-rank + manufacturer + evaluation stubs."""
+"""Apply hard filters (incl. short-range BEV) + composite total_score re-rank."""
 from __future__ import annotations
 
 import json
 import re
+import sys
 from datetime import datetime, timezone, timedelta
 from pathlib import Path
 
 ROOT = Path("/workspace/dongchedi-wuhan-shop")
-SRC = ROOT / "listings-ranked.json"
+sys.path.insert(0, str(ROOT / "scripts"))
+from filters import (  # noqa: E402
+    FILTER_META,
+    MAX_BEV_RANGE_KM,
+    filter_listings,
+)
+
+SRC = ROOT / "data" / "listings-ranked.json"
 WEIGHTS = {
     "config": 0.35,
     "space": 0.25,
@@ -154,9 +162,34 @@ def build_evaluation(item: dict) -> str:
     return text
 
 
+def dump_json(path: Path, obj) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    with open(path, "w", encoding="utf-8") as f:
+        json.dump(obj, f, ensure_ascii=False, indent=2)
+        f.write("\n")
+
+
 def main():
-    with open(SRC, encoding="utf-8") as f:
-        listings = json.load(f)
+    # Prefer enriched ranked snapshot; fall back to filtered/loaded.
+    for candidate in (
+        ROOT / "data" / "listings-ranked.json",
+        ROOT / "listings-ranked.json",
+        ROOT / "data" / "listings-filtered.json",
+        ROOT / "listings-filtered.json",
+    ):
+        if candidate.exists():
+            src = candidate
+            break
+    else:
+        raise SystemExit("no listings source found")
+
+    with open(src, encoding="utf-8") as f:
+        raw = json.load(f)
+
+    # If source already filtered, also try to recover excluded from a full snapshot.
+    # Always re-apply filter for idempotency.
+    listings, excluded = filter_listings(raw)
+    n_before = len(raw)
 
     missing = []
     for item in listings:
@@ -180,6 +213,7 @@ def main():
     s_lo, s_hi = minmax(spaces)
     f_lo, f_hi = minmax(fuels)
 
+    n = len(listings)
     for item in listings:
         ss = item["sort_scores"]
         config_norm = round(norm(ss["config_proxy"], c_lo, c_hi), 2)
@@ -207,8 +241,9 @@ def main():
                 "weights": dict(WEIGHTS),
                 "note": (
                     "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；"
-                    "分项为全量min-max归一化到0-100（price用(6-price)/6*100）；"
-                    "卡片无完整参配，config/space/fuel 仍为标题启发式"
+                    f"分项为过滤后集合(n={n})min-max归一化到0-100（price用(6-price)/6*100）；"
+                    "卡片无完整参配，config/space/fuel 仍为标题启发式；"
+                    f"已排除短续航纯电(≤{MAX_BEV_RANGE_KM}km/微型代步)"
                 ),
             }
         )
@@ -234,16 +269,39 @@ def main():
     tz = timezone(timedelta(hours=8))
     now = datetime.now(tz).isoformat(timespec="seconds")
     shortlist = listings[:30]
+    cheapest = sorted(listings, key=lambda x: (float(x["price"]), -x.get("total_score", 0)))[:30]
 
     meta_path = ROOT / "data" / "meta.json"
     with open(meta_path, encoding="utf-8") as f:
         meta = json.load(f)
+
+    filters = dict(meta.get("filters") or {})
+    filters.update(
+        {
+            "price": "<=6万",
+            "price_param": "0,6",
+            "mileage": "<=10万公里",
+            "mileage_param": "0,10",
+            "vehicle_age": "<=10年",
+            "age_param": "0,10",
+            "plate_or_model_year": ">=2016",
+            "reference_year": 2026,
+            **FILTER_META,
+        }
+    )
+    meta["filters"] = filters
+    meta["price_filter"] = "<=6万"
+    meta["mileage_filter"] = "<=10万公里"
+    meta["age_filter"] = "<=10年 (上牌/款年>=2016)"
+    meta["bev_filter"] = FILTER_META["exclude_short_range_bev_desc"]
+    meta["exclude_short_range_bev"] = True
+    meta["max_bev_range_km"] = MAX_BEV_RANGE_KM
     meta["sort_preference"] = "composite_total_score"
     meta["sort_weights"] = WEIGHTS
     meta["sort_formula"] = (
         "total_score = 0.35*config_norm + 0.25*space_norm + 0.20*fuel_norm "
         "+ 0.15*price_score + 0.05*suv_score; "
-        "config/space/fuel = min-max(proxy) over 154; "
+        f"config/space/fuel = min-max(proxy) over filtered n={n}; "
         "price_score = clip((6-price_wan)/6*100,0,100); suv_score = 100 if SUV else 0"
     )
     meta["notes"] = (
@@ -251,38 +309,64 @@ def main():
         "封面签名 URL 会过期，以 images/{sku}.jpg 为准。"
         "综合总得分权重：高配35%＞空间25%＞油耗20%＞便宜15%＞SUV5%。"
         "主机厂商由标题映射；车主口碑来自公开网页搜索（非详情页）。"
+        f"硬筛另排除短续航纯电（≤{MAX_BEV_RANGE_KM}km 或微型代步车系），后续不入库。"
     )
     meta["sort_method"] = "composite_total_score_heuristic"
     meta["ranked_at"] = now
     meta["ranked_count"] = len(listings)
+    meta["filtered_count"] = len(listings)
+    meta["loaded_cards_shop_118608"] = meta.get("loaded_cards_shop_118608", n_before)
+    meta["passed_mileage_and_age"] = meta.get("passed_mileage_and_age", n_before)
+    meta["excluded_short_range_bev_count"] = len(excluded)
+    meta["excluded_short_range_bev"] = excluded
+    meta["filter_pipeline"] = (
+        f"shop_id=118608 → price≤6 → mileage≤10万km → age≤10年 → "
+        f"exclude_short_range_bev(max={MAX_BEV_RANGE_KM}km / micro series); "
+        f"before_bev_filter={n_before} after={n} excluded={len(excluded)}"
+    )
     meta["manufacturer_coverage"] = {
         "total": len(listings),
         "inferred_count": sum(1 for x in listings if x.get("manufacturer_inferred")),
         "inferred_titles": missing[:20],
     }
+    # Drop MINIEV from covered series list if present
+    covered = [
+        s
+        for s in (meta.get("owner_reviews_series_covered") or [])
+        if "MINIEV" not in s and "Lumin" not in s and "熊猫" not in s
+    ]
+    meta["owner_reviews_series_covered"] = covered
 
     for p in (ROOT / "listings-ranked.json", ROOT / "data" / "listings-ranked.json"):
-        with open(p, "w", encoding="utf-8") as f:
-            json.dump(listings, f, ensure_ascii=False, indent=2)
-            f.write("\n")
+        dump_json(p, listings)
+    for p in (ROOT / "listings-filtered.json", ROOT / "data" / "listings-filtered.json"):
+        dump_json(p, listings)
     for p in (ROOT / "shortlist-ranked.json", ROOT / "data" / "shortlist-ranked.json"):
-        with open(p, "w", encoding="utf-8") as f:
-            json.dump(shortlist, f, ensure_ascii=False, indent=2)
-            f.write("\n")
-    with open(meta_path, "w", encoding="utf-8") as f:
-        json.dump(meta, f, ensure_ascii=False, indent=2)
-        f.write("\n")
+        dump_json(p, shortlist)
+    for p in (ROOT / "shortlist-cheapest.json", ROOT / "data" / "shortlist-cheapest.json"):
+        dump_json(p, cheapest)
+    dump_json(ROOT / "data" / "excluded-short-range-bev.json", excluded)
+    dump_json(meta_path, meta)
 
+    print(f"SRC {src}")
+    print(f"BEFORE {n_before} AFTER {n} EXCLUDED {len(excluded)}")
+    print("EXCLUDED")
+    for e in excluded:
+        print(f" - {e['reason']:40} | {e['price']} | {e['title']}")
     print("TOP15")
     for x in listings[:15]:
+        rev = "Y" if (x.get("owner_reviews") or {}).get("found") else "N"
         print(
             f"{x['rank']:2} | {x['total_score']:5.1f} | {x['manufacturer']:14} | {x['brand']:10} | "
-            f"{x['price']:.2f}万 | {x['series']} | sku={x['sku']}"
+            f"{x['price']:.2f}万 | rev={rev} | {x['series']} | sku={x['sku']}"
         )
     print("INFERRED", len(missing))
     for t in missing:
         print(" -", t)
-    print("SERIES", json.dumps(list(dict.fromkeys(x["series"] for x in listings[:15])), ensure_ascii=False))
+    print(
+        "SERIES",
+        json.dumps(list(dict.fromkeys(x["series"] for x in listings[:15])), ensure_ascii=False),
+    )
 
 
 if __name__ == "__main__":

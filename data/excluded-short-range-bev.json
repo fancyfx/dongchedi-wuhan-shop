@@ -1,0 +1,66 @@
+[
+  {
+    "sku": "357170397",
+    "title": "五菱宏光MINIEV 2022款 GAMEBOY 200km 玩咖款 磷酸铁锂",
+    "price": 2.69,
+    "series": "五菱宏光MINIEV",
+    "reason": "pure_bev_range_200km_le_300",
+    "parsed_range_km": 200
+  },
+  {
+    "sku": "357219214",
+    "title": "五菱宏光MINIEV 2022款 自在款 磷酸铁锂",
+    "price": 2.09,
+    "series": "五菱宏光MINIEV",
+    "reason": "micro_city_bev_series_no_parsed_range",
+    "parsed_range_km": null
+  },
+  {
+    "sku": "357015976",
+    "title": "熊猫 2025款 210km 熊猫卡丁",
+    "price": 3.69,
+    "series": "熊猫",
+    "reason": "pure_bev_range_210km_le_300",
+    "parsed_range_km": 210
+  },
+  {
+    "sku": "356939503",
+    "title": "熊猫 2024款 200km 熊猫骑士",
+    "price": 3.09,
+    "series": "熊猫",
+    "reason": "pure_bev_range_200km_le_300",
+    "parsed_range_km": 200
+  },
+  {
+    "sku": "356751463",
+    "title": "长安Lumin 2023款 205km 香沁款",
+    "price": 3.09,
+    "series": "长安Lumin",
+    "reason": "pure_bev_range_205km_le_300",
+    "parsed_range_km": 205
+  },
+  {
+    "sku": "357402984",
+    "title": "五菱之光EV 2025款 进取型",
+    "price": 4.89,
+    "series": "五菱之光EV",
+    "reason": "micro_city_bev_series_no_parsed_range",
+    "parsed_range_km": null
+  },
+  {
+    "sku": "357152462",
+    "title": "长安Lumin 2022款 210km 香甜款",
+    "price": 2.59,
+    "series": "长安Lumin",
+    "reason": "pure_bev_range_210km_le_300",
+    "parsed_range_km": 210
+  },
+  {
+    "sku": "357160039",
+    "title": "五菱Air ev晴空 2022款 四座 进阶版",
+    "price": 3.99,
+    "series": "五菱Air ev晴空",
+    "reason": "micro_city_bev_series_no_parsed_range",
+    "parsed_range_km": null
+  }
+]

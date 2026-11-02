@@ -9,7 +9,10 @@
     "vehicle_age": "<=10年",
     "age_param": "0,10",
     "plate_or_model_year": ">=2016",
-    "reference_year": 2026
+    "reference_year": 2026,
+    "exclude_short_range_bev": true,
+    "max_bev_range_km": 300,
+    "exclude_short_range_bev_desc": "排除续航≤300km 的纯电，以及无法解析续航的微型/城市代步纯电（宏光MINIEV/Lumin/熊猫/之光EV/Air ev 等）；插混/增程与续航>300 纯电保留"
   },
   "price_filter": "<=6万",
   "mileage_filter": "<=10万公里",
@@ -29,10 +32,10 @@
   "viewport": "390x844",
   "user_agent": "WeChat MicroMessenger iPhone (API + attempted page emulation; CDP UA override blocked)",
   "sort_preference": "composite_total_score",
-  "notes": "列表接口默认 sort=0。shortlist 为过滤后按综合总得分排序的前30辆。封面签名 URL 会过期，以 images/{sku}.jpg 为准。综合总得分权重：高配35%＞空间25%＞油耗20%＞便宜15%＞SUV5%。主机厂商由标题映射；车主口碑来自公开网页搜索（非详情页）。",
+  "notes": "列表接口默认 sort=0。shortlist 为过滤后按综合总得分排序的前30辆。封面签名 URL 会过期，以 images/{sku}.jpg 为准。综合总得分权重：高配35%＞空间25%＞油耗20%＞便宜15%＞SUV5%。主机厂商由标题映射；车主口碑来自公开网页搜索（非详情页）。硬筛另排除短续航纯电（≤300km 或微型代步车系），后续不入库。",
   "sort_method": "composite_total_score_heuristic",
-  "ranked_at": "2026-11-02T18:26:26+08:00",
-  "ranked_count": 154,
+  "ranked_at": "2026-11-02T18:33:43+08:00",
+  "ranked_count": 146,
   "sort_weights": {
     "config": 0.35,
     "space": 0.25,
@@ -40,19 +43,20 @@
     "price": 0.15,
     "suv": 0.05
   },
-  "sort_formula": "total_score = 0.35*config_norm + 0.25*space_norm + 0.20*fuel_norm + 0.15*price_score + 0.05*suv_score; config/space/fuel = min-max(proxy) over 154; price_score = clip((6-price_wan)/6*100,0,100); suv_score = 100 if SUV else 0",
+  "sort_formula": "total_score = 0.35*config_norm + 0.25*space_norm + 0.20*fuel_norm + 0.15*price_score + 0.05*suv_score; config/space/fuel = min-max(proxy) over filtered n=146; price_score = clip((6-price_wan)/6*100,0,100); suv_score = 100 if SUV else 0",
   "manufacturer_coverage": {
-    "total": 154,
-    "inferred_count": 1,
+    "total": 146,
+    "inferred_count": 3,
     "inferred_titles": [
-      "自由侠 2019款 220T 自动领先版"
+      "自由侠 2019款 220T 自动领先版",
+      "昕锐 2020款 1.5L 自动舒适版",
+      "凌尚 2023款 2.0L 豪华版"
     ]
   },
   "owner_reviews_note": "短名单前15按车系网页搜索公开口碑（非懂车帝二手车详情页）；同车系复用摘要。",
   "owner_reviews_series_covered": [
     "唐DM",
     "长安欧尚X5 PLUS",
-    "五菱宏光MINIEV",
     "远景X3",
     "秦PLUS DM",
     "宋Pro DM",
@@ -60,6 +64,79 @@
     "长安UNI-T",
     "远景X6",
     "帝豪GS",
-    "哈弗H6"
-  ]
+    "哈弗H6",
+    "海鸥"
+  ],
+  "bev_filter": "排除续航≤300km 的纯电，以及无法解析续航的微型/城市代步纯电（宏光MINIEV/Lumin/熊猫/之光EV/Air ev 等）；插混/增程与续航>300 纯电保留",
+  "exclude_short_range_bev": true,
+  "max_bev_range_km": 300,
+  "filtered_count": 146,
+  "excluded_short_range_bev_count": 8,
+  "excluded_short_range_bev": [
+    {
+      "sku": "357170397",
+      "title": "五菱宏光MINIEV 2022款 GAMEBOY 200km 玩咖款 磷酸铁锂",
+      "price": 2.69,
+      "series": "五菱宏光MINIEV",
+      "reason": "pure_bev_range_200km_le_300",
+      "parsed_range_km": 200
+    },
+    {
+      "sku": "357219214",
+      "title": "五菱宏光MINIEV 2022款 自在款 磷酸铁锂",
+      "price": 2.09,
+      "series": "五菱宏光MINIEV",
+      "reason": "micro_city_bev_series_no_parsed_range",
+      "parsed_range_km": null
+    },
+    {
+      "sku": "357015976",
+      "title": "熊猫 2025款 210km 熊猫卡丁",
+      "price": 3.69,
+      "series": "熊猫",
+      "reason": "pure_bev_range_210km_le_300",
+      "parsed_range_km": 210
+    },
+    {
+      "sku": "356939503",
+      "title": "熊猫 2024款 200km 熊猫骑士",
+      "price": 3.09,
+      "series": "熊猫",
+      "reason": "pure_bev_range_200km_le_300",
+      "parsed_range_km": 200
+    },
+    {
+      "sku": "356751463",
+      "title": "长安Lumin 2023款 205km 香沁款",
+      "price": 3.09,
+      "series": "长安Lumin",
+      "reason": "pure_bev_range_205km_le_300",
+      "parsed_range_km": 205
+    },
+    {
+      "sku": "357402984",
+      "title": "五菱之光EV 2025款 进取型",
+      "price": 4.89,
+      "series": "五菱之光EV",
+      "reason": "micro_city_bev_series_no_parsed_range",
+      "parsed_range_km": null
+    },
+    {
+      "sku": "357152462",
+      "title": "长安Lumin 2022款 210km 香甜款",
+      "price": 2.59,
+      "series": "长安Lumin",
+      "reason": "pure_bev_range_210km_le_300",
+      "parsed_range_km": 210
+    },
+    {
+      "sku": "357160039",
+      "title": "五菱Air ev晴空 2022款 四座 进阶版",
+      "price": 3.99,
+      "series": "五菱Air ev晴空",
+      "reason": "micro_city_bev_series_no_parsed_range",
+      "parsed_range_km": null
+    }
+  ],
+  "filter_pipeline": "shop_id=118608 → price≤6 → mileage≤10万km → age≤10年 → exclude_short_range_bev(max=300km / micro series); before_bev_filter=154 after=146 excluded=8"
 }

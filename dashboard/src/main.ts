@@ -259,6 +259,9 @@ function renderShell() {
     meta?.price_filter || meta?.filters?.price || '≤6万',
     meta?.mileage_filter || meta?.filters?.mileage || '≤10万公里',
     meta?.age_filter || meta?.filters?.vehicle_age || '≤10年',
+    (meta as any)?.bev_filter ||
+      (meta?.filters as any)?.exclude_short_range_bev_desc ||
+      '排除短续航纯电(≤300km/微型代步)',
   ].join(' · ')
   const w = meta?.sort_weights
   const weightText = w

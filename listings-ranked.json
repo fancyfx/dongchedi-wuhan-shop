@@ -35,7 +35,7 @@
       "fuel_proxy": 9.0,
       "is_suv": true,
       "price": 4.99,
-      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为全量min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式",
+      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为过滤后集合(n=146)min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式；已排除短续航纯电(≤300km/微型代步)",
       "config_norm": 67.59,
       "space_norm": 100.0,
       "fuel_norm": 86.67,
@@ -112,7 +112,7 @@
       "fuel_proxy": 3.75,
       "is_suv": true,
       "price": 4.99,
-      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为全量min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式",
+      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为过滤后集合(n=146)min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式；已排除短续航纯电(≤300km/微型代步)",
       "config_norm": 80.27,
       "space_norm": 100.0,
       "fuel_norm": 16.67,
@@ -154,159 +154,6 @@
     "rank": 2
   },
   {
-    "sku": "357170397",
-    "title": "五菱宏光MINIEV 2022款 GAMEBOY 200km 玩咖款 磷酸铁锂",
-    "price": 2.69,
-    "price_type": "标价",
-    "prefix": "标价",
-    "extra": "直降1300元",
-    "extras": [
-      "直降1300元"
-    ],
-    "year": "2023年 / 1.50万公里 / 武汉",
-    "plate_year": 2023,
-    "model_year": 2022,
-    "mileage_wan": 1.5,
-    "city": "武汉",
-    "tags": [
-      "性价比合理",
-      "放心检8.1分",
-      "原版原漆",
-      "三电质保"
-    ],
-    "badges": [
-      "官方保",
-      "直营"
-    ],
-    "cover": "https://p3-dcd-sign.byteimg.com/tos-cn-i-f042mdwyw7/98c236bfb83b4fc68f91fda486d269f8~tplv-f042mdwyw7-original:800:0.image?lk3s=416a877a&x-expires=1796200601&x-signature=SrMaS7DlZvSEks5EURjV92D2bT4%3D&psm=motor.sophon.product",
-    "detail_url": "https://m.dcdapp.com/motor/feoffline/usedcar_detail/detail.html?sku_id=357170397&shop_id=118608",
-    "shop_id": "118608",
-    "image_file": "/workspace/dongchedi-wuhan-shop/images/357170397.jpg",
-    "banner": "",
-    "sort_scores": {
-      "config_proxy": 9.69,
-      "space_proxy": 5.0,
-      "fuel_proxy": 10.0,
-      "is_suv": true,
-      "price": 2.69,
-      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为全量min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式",
-      "config_norm": 50.78,
-      "space_norm": 50.0,
-      "fuel_norm": 100.0,
-      "price_score": 55.17,
-      "suv_score": 100.0,
-      "total_score": 63.5,
-      "weights": {
-        "config": 0.35,
-        "space": 0.25,
-        "fuel": 0.2,
-        "price": 0.15,
-        "suv": 0.05
-      }
-    },
-    "brand": "五菱",
-    "manufacturer": "上汽通用五菱",
-    "manufacturer_inferred": false,
-    "total_score": 63.5,
-    "evaluation": "配置代理分一般；油耗代理友好（纯电/混动或小排量）；里程低。",
-    "series": "五菱宏光MINIEV",
-    "owner_reviews": {
-      "summary": "城市短途代步口碑强：小巧好停、用车成本极低、起步轻快。短板是空间局促、隔音与高速稳定性差，部分车主反馈电池续航衰减或动力中断类问题，不适合当高速/长途主力。",
-      "sources": [
-        {
-          "title": "宏光MINIEV汽车之家口碑",
-          "url": "https://k.autohome.com.cn/5714?pvareaid=6863951"
-        },
-        {
-          "title": "宏光MINIEV车质网口碑",
-          "url": "https://www.12365auto.com/review/2875_0_0_1.shtml"
-        },
-        {
-          "title": "有驾车主点评宏光MINIEV",
-          "url": "https://www.yoojia.com/comment/s-1005714"
-        }
-      ],
-      "found": true
-    },
-    "rank": 3
-  },
-  {
-    "sku": "357219214",
-    "title": "五菱宏光MINIEV 2022款 自在款 磷酸铁锂",
-    "price": 2.09,
-    "price_type": "标价",
-    "prefix": "标价",
-    "extra": "限时物流补贴",
-    "extras": [
-      "限时物流补贴"
-    ],
-    "year": "2023年 / 2.01万公里 / 武汉",
-    "plate_year": 2023,
-    "model_year": 2022,
-    "mileage_wan": 2.01,
-    "city": "武汉",
-    "tags": [
-      "放心检8.4分",
-      "原版原漆",
-      "三电质保"
-    ],
-    "badges": [
-      "官方保",
-      "直营"
-    ],
-    "cover": "https://p3-dcd-sign.byteimg.com/tos-cn-i-f042mdwyw7/a0cf0c37fce8462aad28766b179cc1e9~tplv-resize:800:0.image?lk3s=416a877a&x-expires=1796200601&x-signature=Lk6JvGDetwPTAtPlk9O9x9CvNxs%3D&psm=motor.sophon.product",
-    "detail_url": "https://m.dcdapp.com/motor/feoffline/usedcar_detail/detail.html?sku_id=357219214&shop_id=118608",
-    "shop_id": "118608",
-    "image_file": "/workspace/dongchedi-wuhan-shop/images/357219214.jpg",
-    "banner": "",
-    "sort_scores": {
-      "config_proxy": 8.79,
-      "space_proxy": 5.0,
-      "fuel_proxy": 10.0,
-      "is_suv": true,
-      "price": 2.09,
-      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为全量min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式",
-      "config_norm": 44.68,
-      "space_norm": 50.0,
-      "fuel_norm": 100.0,
-      "price_score": 65.17,
-      "suv_score": 100.0,
-      "total_score": 62.9,
-      "weights": {
-        "config": 0.35,
-        "space": 0.25,
-        "fuel": 0.2,
-        "price": 0.15,
-        "suv": 0.05
-      }
-    },
-    "brand": "五菱",
-    "manufacturer": "上汽通用五菱",
-    "manufacturer_inferred": false,
-    "total_score": 62.9,
-    "evaluation": "配置代理分一般；油耗代理友好（纯电/混动或小排量）。",
-    "series": "五菱宏光MINIEV",
-    "owner_reviews": {
-      "summary": "城市短途代步口碑强：小巧好停、用车成本极低、起步轻快。短板是空间局促、隔音与高速稳定性差，部分车主反馈电池续航衰减或动力中断类问题，不适合当高速/长途主力。",
-      "sources": [
-        {
-          "title": "宏光MINIEV汽车之家口碑",
-          "url": "https://k.autohome.com.cn/5714?pvareaid=6863951"
-        },
-        {
-          "title": "宏光MINIEV车质网口碑",
-          "url": "https://www.12365auto.com/review/2875_0_0_1.shtml"
-        },
-        {
-          "title": "有驾车主点评宏光MINIEV",
-          "url": "https://www.yoojia.com/comment/s-1005714"
-        }
-      ],
-      "found": true
-    },
-    "rank": 4
-  },
-  {
     "sku": "357230255",
     "title": "远景X3 2021款 PRO 1.5L CVT尊贵型",
     "price": 3.99,
@@ -341,7 +188,7 @@
       "fuel_proxy": 5.0,
       "is_suv": true,
       "price": 3.99,
-      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为全量min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式",
+      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为过滤后集合(n=146)min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式；已排除短续航纯电(≤300km/微型代步)",
       "config_norm": 78.58,
       "space_norm": 58.33,
       "fuel_norm": 33.33,
@@ -380,7 +227,7 @@
       ],
       "found": true
     },
-    "rank": 5
+    "rank": 3
   },
   {
     "sku": "357228241",
@@ -420,7 +267,7 @@
       "fuel_proxy": 9.0,
       "is_suv": false,
       "price": 5.99,
-      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为全量min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式",
+      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为过滤后集合(n=146)min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式；已排除短续航纯电(≤300km/微型代步)",
       "config_norm": 100.0,
       "space_norm": 25.0,
       "fuel_norm": 86.67,
@@ -459,7 +306,7 @@
       ],
       "found": true
     },
-    "rank": 6
+    "rank": 4
   },
   {
     "sku": "357052729",
@@ -498,7 +345,7 @@
       "fuel_proxy": 9.0,
       "is_suv": true,
       "price": 5.99,
-      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为全量min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式",
+      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为过滤后集合(n=146)min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式；已排除短续航纯电(≤300km/微型代步)",
       "config_norm": 67.73,
       "space_norm": 50.0,
       "fuel_norm": 86.67,
@@ -537,7 +384,7 @@
       ],
       "found": true
     },
-    "rank": 7
+    "rank": 5
   },
   {
     "sku": "356579334",
@@ -574,7 +421,7 @@
       "fuel_proxy": 2.5,
       "is_suv": true,
       "price": 4.97,
-      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为全量min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式",
+      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为过滤后集合(n=146)min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式；已排除短续航纯电(≤300km/微型代步)",
       "config_norm": 86.17,
       "space_norm": 75.0,
       "fuel_norm": 0.0,
@@ -613,7 +460,7 @@
       ],
       "found": true
     },
-    "rank": 8
+    "rank": 6
   },
   {
     "sku": "357168649",
@@ -650,7 +497,7 @@
       "fuel_proxy": 3.75,
       "is_suv": true,
       "price": 4.99,
-      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为全量min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式",
+      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为过滤后集合(n=146)min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式；已排除短续航纯电(≤300km/微型代步)",
       "config_norm": 86.24,
       "space_norm": 58.33,
       "fuel_norm": 16.67,
@@ -689,7 +536,7 @@
       ],
       "found": true
     },
-    "rank": 9
+    "rank": 7
   },
   {
     "sku": "357149711",
@@ -725,7 +572,7 @@
       "fuel_proxy": 4.0,
       "is_suv": true,
       "price": 4.89,
-      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为全量min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式",
+      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为过滤后集合(n=146)min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式；已排除短续航纯电(≤300km/微型代步)",
       "config_norm": 81.56,
       "space_norm": 58.33,
       "fuel_norm": 20.0,
@@ -764,7 +611,7 @@
       ],
       "found": true
     },
-    "rank": 10
+    "rank": 8
   },
   {
     "sku": "357149730",
@@ -800,7 +647,7 @@
       "fuel_proxy": 3.75,
       "is_suv": true,
       "price": 5.99,
-      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为全量min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式",
+      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为过滤后集合(n=146)min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式；已排除短续航纯电(≤300km/微型代步)",
       "config_norm": 89.02,
       "space_norm": 58.33,
       "fuel_norm": 16.67,
@@ -839,7 +686,7 @@
       ],
       "found": true
     },
-    "rank": 11
+    "rank": 9
   },
   {
     "sku": "357211014",
@@ -878,7 +725,7 @@
       "fuel_proxy": 9.0,
       "is_suv": false,
       "price": 4.69,
-      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为全量min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式",
+      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为过滤后集合(n=146)min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式；已排除短续航纯电(≤300km/微型代步)",
       "config_norm": 77.42,
       "space_norm": 25.0,
       "fuel_norm": 86.67,
@@ -917,7 +764,7 @@
       ],
       "found": true
     },
-    "rank": 12
+    "rank": 10
   },
   {
     "sku": "357247792",
@@ -954,7 +801,7 @@
       "fuel_proxy": 3.75,
       "is_suv": true,
       "price": 5.39,
-      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为全量min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式",
+      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为过滤后集合(n=146)min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式；已排除短续航纯电(≤300km/微型代步)",
       "config_norm": 70.17,
       "space_norm": 75.0,
       "fuel_norm": 16.67,
@@ -993,7 +840,7 @@
       ],
       "found": true
     },
-    "rank": 13
+    "rank": 11
   },
   {
     "sku": "356933838",
@@ -1031,7 +878,7 @@
       "fuel_proxy": 4.0,
       "is_suv": true,
       "price": 2.49,
-      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为全量min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式",
+      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为过滤后集合(n=146)min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式；已排除短续航纯电(≤300km/微型代步)",
       "config_norm": 59.25,
       "space_norm": 58.33,
       "fuel_norm": 20.0,
@@ -1070,7 +917,7 @@
       ],
       "found": true
     },
-    "rank": 14
+    "rank": 12
   },
   {
     "sku": "357301752",
@@ -1106,7 +953,7 @@
       "fuel_proxy": 2.5,
       "is_suv": true,
       "price": 5.19,
-      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为全量min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式",
+      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为过滤后集合(n=146)min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式；已排除短续航纯电(≤300km/微型代步)",
       "config_norm": 88.68,
       "space_norm": 58.33,
       "fuel_norm": 0.0,
@@ -1145,7 +992,7 @@
       ],
       "found": true
     },
-    "rank": 15
+    "rank": 13
   },
   {
     "sku": "356845779",
@@ -1184,7 +1031,7 @@
       "fuel_proxy": 10.0,
       "is_suv": false,
       "price": 5.09,
-      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为全量min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式",
+      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为过滤后集合(n=146)min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式；已排除短续航纯电(≤300km/微型代步)",
       "config_norm": 86.78,
       "space_norm": 0.0,
       "fuel_norm": 100.0,
@@ -1206,11 +1053,24 @@
     "evaluation": "配置档位偏高（标题含顶配/高配词）；空间偏家用轿车级；油耗代理友好（纯电/混动或小排量）；价格 5.09 万接近预算上限。准新车龄。",
     "series": "海鸥",
     "owner_reviews": {
-      "summary": "短名单外未逐车检索口碑",
-      "sources": [],
-      "found": false
+      "summary": "城市代步口碑好：小巧好停、用车成本低、起步轻快；305 实际春秋约 220–280km、冬天/高速打折明显。短板是四座后备箱小、底盘偏硬、高速风噪胎噪，高速稳定性一般。",
+      "sources": [
+        {
+          "title": "海鸥2025款305km活力版车主口碑（汽车之家）",
+          "url": "https://k.autohome.com.cn/detail/view_01k7nj2cfq6mvk0e9n6cr00000.html"
+        },
+        {
+          "title": "海鸥口碑汇总（车质网）",
+          "url": "https://www.12365auto.com/review/3542_0_0_1.shtml"
+        },
+        {
+          "title": "海鸥2025款405km飞翔版用车感受（汽车之家）",
+          "url": "https://k.autohome.com.cn/detail/view_01jpejkge16mtkce9h6gvg0000.html"
+        }
+      ],
+      "found": true
     },
-    "rank": 16
+    "rank": 14
   },
   {
     "sku": "356892961",
@@ -1247,7 +1107,7 @@
       "fuel_proxy": 4.0,
       "is_suv": true,
       "price": 2.59,
-      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为全量min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式",
+      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为过滤后集合(n=146)min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式；已排除短续航纯电(≤300km/微型代步)",
       "config_norm": 57.83,
       "space_norm": 58.33,
       "fuel_norm": 20.0,
@@ -1269,11 +1129,24 @@
     "evaluation": "配置代理分一般；油耗代理偏低（较大排量燃油）；里程偏高需留意。",
     "series": "帝豪GS",
     "owner_reviews": {
-      "summary": "短名单外未逐车检索口碑",
-      "sources": [],
-      "found": false
+      "summary": "外观内饰配置性价比受认可，适合预算优先；后备箱小、隔音一般、动力偏肉。1.4T自动众测约8L；部分长里程车主提到干式双离合顿挫/故障与锈蚀，也有数万公里无大修案例，二手需重点试驾变速箱。",
+      "sources": [
+        {
+          "title": "小熊油耗：帝豪GS车系油耗",
+          "url": "https://www.xiaoxiongyouhao.com/chexiyh/3465.html"
+        },
+        {
+          "title": "帝豪GS车质网口碑",
+          "url": "https://www.12365auto.com/review/1915_0_0_1.shtml"
+        },
+        {
+          "title": "帝豪GS懂车帝口碑评分",
+          "url": "https://www.dongchedi.com/auto/series/score/740-x-S0-P17-x-1-x"
+        }
+      ],
+      "found": true
     },
-    "rank": 17
+    "rank": 15
   },
   {
     "sku": "356773034",
@@ -1314,7 +1187,7 @@
       "fuel_proxy": 9.0,
       "is_suv": false,
       "price": 4.89,
-      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为全量min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式",
+      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为过滤后集合(n=146)min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式；已排除短续航纯电(≤300km/微型代步)",
       "config_norm": 72.27,
       "space_norm": 25.0,
       "fuel_norm": 86.67,
@@ -1336,11 +1209,24 @@
     "evaluation": "配置代理分靠前（年款/配置词/检测分综合较好）；空间偏家用轿车级；油耗代理友好（纯电/混动或小排量）；价格 4.89 万接近预算上限。",
     "series": "秦PLUS DM",
     "owner_reviews": {
-      "summary": "短名单外未逐车检索口碑",
-      "sources": [],
-      "found": false
+      "summary": "亏电油耗多在3.7–4.0L/100km，市区电驱平顺、用车成本低，是高频好评点。通病是前轮吃胎偏磨（数万公里常见），另有高速风噪胎噪、悬架偏硬、车漆偏薄；长期车主称电池衰减不明显。",
+      "sources": [
+        {
+          "title": "秦PLUS汽车之家口碑",
+          "url": "https://k.autohome.com.cn/5964/stopselling/ge5/"
+        },
+        {
+          "title": "秦PLUS DM-i车主油耗挑战分享（爱卡）",
+          "url": "https://aikahao.xcar.com.cn/item/1666051.html"
+        },
+        {
+          "title": "用车4年：电池与前轮吃胎（腾讯新闻）",
+          "url": "https://news.qq.com/rain/a/20260207A052EA00"
+        }
+      ],
+      "found": true
     },
-    "rank": 18
+    "rank": 16
   },
   {
     "sku": "357246142",
@@ -1375,7 +1261,7 @@
       "fuel_proxy": 4.0,
       "is_suv": true,
       "price": 3.29,
-      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为全量min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式",
+      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为过滤后集合(n=146)min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式；已排除短续航纯电(≤300km/微型代步)",
       "config_norm": 58.85,
       "space_norm": 58.33,
       "fuel_norm": 20.0,
@@ -1397,11 +1283,24 @@
     "evaluation": "配置代理分一般；油耗代理偏低（较大排量燃油）。",
     "series": "帝豪GS",
     "owner_reviews": {
-      "summary": "短名单外未逐车检索口碑",
-      "sources": [],
-      "found": false
+      "summary": "外观内饰配置性价比受认可，适合预算优先；后备箱小、隔音一般、动力偏肉。1.4T自动众测约8L；部分长里程车主提到干式双离合顿挫/故障与锈蚀，也有数万公里无大修案例，二手需重点试驾变速箱。",
+      "sources": [
+        {
+          "title": "小熊油耗：帝豪GS车系油耗",
+          "url": "https://www.xiaoxiongyouhao.com/chexiyh/3465.html"
+        },
+        {
+          "title": "帝豪GS车质网口碑",
+          "url": "https://www.12365auto.com/review/1915_0_0_1.shtml"
+        },
+        {
+          "title": "帝豪GS懂车帝口碑评分",
+          "url": "https://www.dongchedi.com/auto/series/score/740-x-S0-P17-x-1-x"
+        }
+      ],
+      "found": true
     },
-    "rank": 19
+    "rank": 17
   },
   {
     "sku": "357211019",
@@ -1438,7 +1337,7 @@
       "fuel_proxy": 3.0,
       "is_suv": true,
       "price": 5.69,
-      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为全量min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式",
+      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为过滤后集合(n=146)min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式；已排除短续航纯电(≤300km/微型代步)",
       "config_norm": 52.14,
       "space_norm": 100.0,
       "fuel_norm": 6.67,
@@ -1464,7 +1363,7 @@
       "sources": [],
       "found": false
     },
-    "rank": 20
+    "rank": 18
   },
   {
     "sku": "357171771",
@@ -1500,7 +1399,7 @@
       "fuel_proxy": 4.0,
       "is_suv": true,
       "price": 4.59,
-      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为全量min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式",
+      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为过滤后集合(n=146)min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式；已排除短续航纯电(≤300km/微型代步)",
       "config_norm": 65.9,
       "space_norm": 58.33,
       "fuel_norm": 20.0,
@@ -1526,7 +1425,7 @@
       "sources": [],
       "found": false
     },
-    "rank": 21
+    "rank": 19
   },
   {
     "sku": "357149717",
@@ -1562,7 +1461,7 @@
       "fuel_proxy": 2.5,
       "is_suv": true,
       "price": 3.29,
-      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为全量min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式",
+      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为过滤后集合(n=146)min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式；已排除短续航纯电(≤300km/微型代步)",
       "config_norm": 67.93,
       "space_norm": 50.0,
       "fuel_norm": 0.0,
@@ -1588,7 +1487,7 @@
       "sources": [],
       "found": false
     },
-    "rank": 22
+    "rank": 20
   },
   {
     "sku": "357140222",
@@ -1626,7 +1525,7 @@
       "fuel_proxy": 9.0,
       "is_suv": false,
       "price": 5.99,
-      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为全量min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式",
+      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为过滤后集合(n=146)min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式；已排除短续航纯电(≤300km/微型代步)",
       "config_norm": 84.61,
       "space_norm": 0.0,
       "fuel_norm": 86.67,
@@ -1652,7 +1551,7 @@
       "sources": [],
       "found": false
     },
-    "rank": 23
+    "rank": 21
   },
   {
     "sku": "357192192",
@@ -1689,7 +1588,7 @@
       "fuel_proxy": 3.0,
       "is_suv": true,
       "price": 3.56,
-      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为全量min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式",
+      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为过滤后集合(n=146)min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式；已排除短续航纯电(≤300km/微型代步)",
       "config_norm": 62.37,
       "space_norm": 50.0,
       "fuel_norm": 6.67,
@@ -1715,7 +1614,7 @@
       "sources": [],
       "found": false
     },
-    "rank": 24
+    "rank": 22
   },
   {
     "sku": "357232750",
@@ -1752,7 +1651,7 @@
       "fuel_proxy": 3.75,
       "is_suv": true,
       "price": 4.49,
-      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为全量min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式",
+      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为过滤后集合(n=146)min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式；已排除短续航纯电(≤300km/微型代步)",
       "config_norm": 62.71,
       "space_norm": 50.0,
       "fuel_norm": 16.67,
@@ -1778,7 +1677,7 @@
       "sources": [],
       "found": false
     },
-    "rank": 25
+    "rank": 23
   },
   {
     "sku": "357211011",
@@ -1815,7 +1714,7 @@
       "fuel_proxy": 10.0,
       "is_suv": false,
       "price": 4.99,
-      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为全量min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式",
+      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为过滤后集合(n=146)min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式；已排除短续航纯电(≤300km/微型代步)",
       "config_norm": 62.71,
       "space_norm": 0.0,
       "fuel_norm": 100.0,
@@ -1837,11 +1736,24 @@
     "evaluation": "配置代理分一般；空间偏家用轿车级；油耗代理友好（纯电/混动或小排量）；价格 4.99 万接近预算上限。准新车龄。",
     "series": "海鸥",
     "owner_reviews": {
-      "summary": "短名单外未逐车检索口碑",
-      "sources": [],
-      "found": false
+      "summary": "城市代步口碑好：小巧好停、用车成本低、起步轻快；305 实际春秋约 220–280km、冬天/高速打折明显。短板是四座后备箱小、底盘偏硬、高速风噪胎噪，高速稳定性一般。",
+      "sources": [
+        {
+          "title": "海鸥2025款305km活力版车主口碑（汽车之家）",
+          "url": "https://k.autohome.com.cn/detail/view_01k7nj2cfq6mvk0e9n6cr00000.html"
+        },
+        {
+          "title": "海鸥口碑汇总（车质网）",
+          "url": "https://www.12365auto.com/review/3542_0_0_1.shtml"
+        },
+        {
+          "title": "海鸥2025款405km飞翔版用车感受（汽车之家）",
+          "url": "https://k.autohome.com.cn/detail/view_01jpejkge16mtkce9h6gvg0000.html"
+        }
+      ],
+      "found": true
     },
-    "rank": 26
+    "rank": 24
   },
   {
     "sku": "357204629",
@@ -1878,7 +1790,7 @@
       "fuel_proxy": 3.75,
       "is_suv": true,
       "price": 4.39,
-      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为全量min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式",
+      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为过滤后集合(n=146)min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式；已排除短续航纯电(≤300km/微型代步)",
       "config_norm": 50.1,
       "space_norm": 58.33,
       "fuel_norm": 16.67,
@@ -1900,11 +1812,24 @@
     "evaluation": "配置代理分一般；油耗代理偏低（较大排量燃油）；价格 4.39 万接近预算上限；里程低。",
     "series": "哈弗H6",
     "owner_reviews": {
-      "summary": "短名单外未逐车检索口碑",
-      "sources": [],
-      "found": false
+      "summary": "第三代2.0T Max：空间动力配置均衡，两驱Max众测综合约9.2L/100km。槽点含高速噪音、音响/车机体验一般；需警惕烧机油、电瓶亏电、异响及OTA后换挡异常等投诉，实车建议查机油消耗与电瓶状态。",
+      "sources": [
+        {
+          "title": "第三代H6 2.0T Max车主口碑（汽车之家）",
+          "url": "https://k.autohome.com.cn/detail/view_01frx3er636gr3ge9s6csg0000.html"
+        },
+        {
+          "title": "小熊油耗：第三代H6两驱Max众测9.20L",
+          "url": "https://www.xiaoxiongyouhao.com/modelyh/49472.html"
+        },
+        {
+          "title": "车质网哈弗H6投诉汇总",
+          "url": "https://www.12365auto.com/series/c-199-76-0.shtml"
+        }
+      ],
+      "found": true
     },
-    "rank": 27
+    "rank": 25
   },
   {
     "sku": "357220895",
@@ -1939,7 +1864,7 @@
       "fuel_proxy": 4.0,
       "is_suv": false,
       "price": 4.69,
-      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为全量min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式",
+      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为过滤后集合(n=146)min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式；已排除短续航纯电(≤300km/微型代步)",
       "config_norm": 85.76,
       "space_norm": 25.0,
       "fuel_norm": 20.0,
@@ -1965,7 +1890,7 @@
       "sources": [],
       "found": false
     },
-    "rank": 28
+    "rank": 26
   },
   {
     "sku": "356990772",
@@ -2002,7 +1927,7 @@
       "fuel_proxy": 3.0,
       "is_suv": true,
       "price": 5.69,
-      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为全量min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式",
+      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为过滤后集合(n=146)min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式；已排除短续航纯电(≤300km/微型代步)",
       "config_norm": 68.34,
       "space_norm": 50.0,
       "fuel_norm": 6.67,
@@ -2028,7 +1953,7 @@
       "sources": [],
       "found": false
     },
-    "rank": 29
+    "rank": 27
   },
   {
     "sku": "357192150",
@@ -2066,7 +1991,7 @@
       "fuel_proxy": 4.0,
       "is_suv": true,
       "price": 5.09,
-      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为全量min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式",
+      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为过滤后集合(n=146)min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式；已排除短续航纯电(≤300km/微型代步)",
       "config_norm": 56.41,
       "space_norm": 50.0,
       "fuel_norm": 20.0,
@@ -2092,7 +2017,7 @@
       "sources": [],
       "found": false
     },
-    "rank": 30
+    "rank": 28
   },
   {
     "sku": "356796737",
@@ -2133,7 +2058,7 @@
       "fuel_proxy": 10.0,
       "is_suv": false,
       "price": 3.89,
-      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为全量min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式",
+      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为过滤后集合(n=146)min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式；已排除短续航纯电(≤300km/微型代步)",
       "config_norm": 51.39,
       "space_norm": 0.0,
       "fuel_norm": 100.0,
@@ -2159,7 +2084,7 @@
       "sources": [],
       "found": false
     },
-    "rank": 31
+    "rank": 29
   },
   {
     "sku": "357211030",
@@ -2196,7 +2121,7 @@
       "fuel_proxy": 3.0,
       "is_suv": true,
       "price": 2.99,
-      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为全量min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式",
+      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为过滤后集合(n=146)min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式；已排除短续航纯电(≤300km/微型代步)",
       "config_norm": 48.41,
       "space_norm": 50.0,
       "fuel_norm": 6.67,
@@ -2222,7 +2147,7 @@
       "sources": [],
       "found": false
     },
-    "rank": 32
+    "rank": 30
   },
   {
     "sku": "357192193",
@@ -2259,7 +2184,7 @@
       "fuel_proxy": 3.2,
       "is_suv": true,
       "price": 4.29,
-      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为全量min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式",
+      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为过滤后集合(n=146)min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式；已排除短续航纯电(≤300km/微型代步)",
       "config_norm": 49.83,
       "space_norm": 50.0,
       "fuel_norm": 9.33,
@@ -2285,7 +2210,7 @@
       "sources": [],
       "found": false
     },
-    "rank": 33
+    "rank": 31
   },
   {
     "sku": "356939164",
@@ -2322,7 +2247,7 @@
       "fuel_proxy": 5.0,
       "is_suv": true,
       "price": 4.49,
-      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为全量min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式",
+      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为过滤后集合(n=146)min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式；已排除短续航纯电(≤300km/微型代步)",
       "config_norm": 31.32,
       "space_norm": 58.33,
       "fuel_norm": 33.33,
@@ -2348,7 +2273,7 @@
       "sources": [],
       "found": false
     },
-    "rank": 34
+    "rank": 32
   },
   {
     "sku": "357334203",
@@ -2385,7 +2310,7 @@
       "fuel_proxy": 3.0,
       "is_suv": false,
       "price": 5.39,
-      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为全量min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式",
+      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为过滤后集合(n=146)min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式；已排除短续航纯电(≤300km/微型代步)",
       "config_norm": 36.95,
       "space_norm": 100.0,
       "fuel_norm": 6.67,
@@ -2411,7 +2336,7 @@
       "sources": [],
       "found": false
     },
-    "rank": 35
+    "rank": 33
   },
   {
     "sku": "357208459",
@@ -2448,7 +2373,7 @@
       "fuel_proxy": 5.0,
       "is_suv": true,
       "price": 5.59,
-      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为全量min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式",
+      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为过滤后集合(n=146)min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式；已排除短续航纯电(≤300km/微型代步)",
       "config_norm": 44.0,
       "space_norm": 50.0,
       "fuel_norm": 33.33,
@@ -2474,7 +2399,7 @@
       "sources": [],
       "found": false
     },
-    "rank": 36
+    "rank": 34
   },
   {
     "sku": "357211018",
@@ -2512,7 +2437,7 @@
       "fuel_proxy": 3.5,
       "is_suv": false,
       "price": 2.89,
-      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为全量min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式",
+      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为过滤后集合(n=146)min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式；已排除短续航纯电(≤300km/微型代步)",
       "config_norm": 67.46,
       "space_norm": 25.0,
       "fuel_norm": 13.33,
@@ -2538,7 +2463,7 @@
       "sources": [],
       "found": false
     },
-    "rank": 37
+    "rank": 35
   },
   {
     "sku": "356796728",
@@ -2576,7 +2501,7 @@
       "fuel_proxy": 10.0,
       "is_suv": false,
       "price": 3.59,
-      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为全量min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式",
+      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为过滤后集合(n=146)min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式；已排除短续航纯电(≤300km/微型代步)",
       "config_norm": 40.75,
       "space_norm": 0.0,
       "fuel_norm": 100.0,
@@ -2602,7 +2527,7 @@
       "sources": [],
       "found": false
     },
-    "rank": 38
+    "rank": 36
   },
   {
     "sku": "356595514",
@@ -2641,7 +2566,7 @@
       "fuel_proxy": 10.0,
       "is_suv": false,
       "price": 3.16,
-      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为全量min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式",
+      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为过滤后集合(n=146)min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式；已排除短续航纯电(≤300km/微型代步)",
       "config_norm": 37.49,
       "space_norm": 0.0,
       "fuel_norm": 100.0,
@@ -2667,7 +2592,7 @@
       "sources": [],
       "found": false
     },
-    "rank": 39
+    "rank": 37
   },
   {
     "sku": "357261851",
@@ -2707,7 +2632,7 @@
       "fuel_proxy": 10.0,
       "is_suv": false,
       "price": 5.79,
-      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为全量min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式",
+      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为过滤后集合(n=146)min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式；已排除短续航纯电(≤300km/微型代步)",
       "config_norm": 56.0,
       "space_norm": 0.0,
       "fuel_norm": 100.0,
@@ -2733,134 +2658,7 @@
       "sources": [],
       "found": false
     },
-    "rank": 40
-  },
-  {
-    "sku": "357015976",
-    "title": "熊猫 2025款 210km 熊猫卡丁",
-    "price": 3.69,
-    "price_type": "标价",
-    "prefix": "标价",
-    "extra": "限时物流补贴",
-    "extras": [
-      "限时物流补贴"
-    ],
-    "year": "2025年 / 3.47万公里 / 武汉",
-    "plate_year": 2025,
-    "model_year": 2025,
-    "mileage_wan": 3.47,
-    "city": "武汉",
-    "tags": [
-      "性价比合理",
-      "放心检9.3分",
-      "三电质保"
-    ],
-    "badges": [
-      "官方保",
-      "直营"
-    ],
-    "cover": "https://p3-dcd-sign.byteimg.com/tos-cn-i-f042mdwyw7/1419aff9756648aa898c063463ec1da8~tplv-f042mdwyw7-original:800:0.image?lk3s=416a877a&x-expires=1796200596&x-signature=9qJapi02tySpwZTmPJbYo1ytfBA%3D&psm=motor.sophon.product",
-    "detail_url": "https://m.dcdapp.com/motor/feoffline/usedcar_detail/detail.html?sku_id=357015976&shop_id=118608",
-    "shop_id": "118608",
-    "image_file": "/workspace/dongchedi-wuhan-shop/images/357015976.jpg",
-    "banner": "",
-    "sort_scores": {
-      "config_proxy": 8.21,
-      "space_proxy": 2.0,
-      "fuel_proxy": 10.0,
-      "is_suv": false,
-      "price": 3.69,
-      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为全量min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式",
-      "config_norm": 40.75,
-      "space_norm": 0.0,
-      "fuel_norm": 100.0,
-      "price_score": 38.5,
-      "suv_score": 0.0,
-      "total_score": 40.0,
-      "weights": {
-        "config": 0.35,
-        "space": 0.25,
-        "fuel": 0.2,
-        "price": 0.15,
-        "suv": 0.05
-      }
-    },
-    "brand": "熊猫",
-    "manufacturer": "吉利汽车",
-    "manufacturer_inferred": false,
-    "total_score": 40.0,
-    "evaluation": "配置代理分一般；空间偏家用轿车级；油耗代理友好（纯电/混动或小排量）；准新车龄。",
-    "series": "熊猫",
-    "owner_reviews": {
-      "summary": "短名单外未逐车检索口碑",
-      "sources": [],
-      "found": false
-    },
-    "rank": 41
-  },
-  {
-    "sku": "356939503",
-    "title": "熊猫 2024款 200km 熊猫骑士",
-    "price": 3.09,
-    "price_type": "标价",
-    "prefix": "标价",
-    "extra": "限时物流补贴",
-    "extras": [
-      "限时物流补贴"
-    ],
-    "year": "2024年 / 1.90万公里 / 武汉",
-    "plate_year": 2024,
-    "model_year": 2024,
-    "mileage_wan": 1.9,
-    "city": "武汉",
-    "tags": [
-      "性价比很棒",
-      "放心检8.8分",
-      "100+人咨询",
-      "三电质保"
-    ],
-    "badges": [
-      "官方保",
-      "直营"
-    ],
-    "cover": "https://p3-dcd-sign.byteimg.com/tos-cn-i-f042mdwyw7/14b3b06066054f1a86011af6365f9dc4~tplv-resize:800:0.image?lk3s=416a877a&x-expires=1796200601&x-signature=zAZIusY%2BloXI8CIUqzIq9L%2Ft0sc%3D&psm=motor.sophon.product",
-    "detail_url": "https://m.dcdapp.com/motor/feoffline/usedcar_detail/detail.html?sku_id=356939503&shop_id=118608",
-    "shop_id": "118608",
-    "image_file": "/workspace/dongchedi-wuhan-shop/images/356939503.jpg",
-    "banner": "",
-    "sort_scores": {
-      "config_proxy": 7.48,
-      "space_proxy": 2.0,
-      "fuel_proxy": 10.0,
-      "is_suv": false,
-      "price": 3.09,
-      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为全量min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式",
-      "config_norm": 35.8,
-      "space_norm": 0.0,
-      "fuel_norm": 100.0,
-      "price_score": 48.5,
-      "suv_score": 0.0,
-      "total_score": 39.8,
-      "weights": {
-        "config": 0.35,
-        "space": 0.25,
-        "fuel": 0.2,
-        "price": 0.15,
-        "suv": 0.05
-      }
-    },
-    "brand": "熊猫",
-    "manufacturer": "吉利汽车",
-    "manufacturer_inferred": false,
-    "total_score": 39.8,
-    "evaluation": "配置代理分一般；空间偏家用轿车级；油耗代理友好（纯电/混动或小排量）；里程低。准新车龄。",
-    "series": "熊猫",
-    "owner_reviews": {
-      "summary": "短名单外未逐车检索口碑",
-      "sources": [],
-      "found": false
-    },
-    "rank": 42
+    "rank": 38
   },
   {
     "sku": "357204978",
@@ -2900,7 +2698,7 @@
       "fuel_proxy": 10.0,
       "is_suv": false,
       "price": 5.69,
-      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为全量min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式",
+      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为过滤后集合(n=146)min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式；已排除短续航纯电(≤300km/微型代步)",
       "config_norm": 52.95,
       "space_norm": 0.0,
       "fuel_norm": 100.0,
@@ -2922,11 +2720,24 @@
     "evaluation": "配置代理分一般；空间偏家用轿车级；油耗代理友好（纯电/混动或小排量）；价格 5.69 万接近预算上限。准新车龄。",
     "series": "海鸥",
     "owner_reviews": {
-      "summary": "短名单外未逐车检索口碑",
-      "sources": [],
-      "found": false
+      "summary": "城市代步口碑好：小巧好停、用车成本低、起步轻快；305 实际春秋约 220–280km、冬天/高速打折明显。短板是四座后备箱小、底盘偏硬、高速风噪胎噪，高速稳定性一般。",
+      "sources": [
+        {
+          "title": "海鸥2025款305km活力版车主口碑（汽车之家）",
+          "url": "https://k.autohome.com.cn/detail/view_01k7nj2cfq6mvk0e9n6cr00000.html"
+        },
+        {
+          "title": "海鸥口碑汇总（车质网）",
+          "url": "https://www.12365auto.com/review/3542_0_0_1.shtml"
+        },
+        {
+          "title": "海鸥2025款405km飞翔版用车感受（汽车之家）",
+          "url": "https://k.autohome.com.cn/detail/view_01jpejkge16mtkce9h6gvg0000.html"
+        }
+      ],
+      "found": true
     },
-    "rank": 43
+    "rank": 39
   },
   {
     "sku": "356630207",
@@ -2962,7 +2773,7 @@
       "fuel_proxy": 3.0,
       "is_suv": true,
       "price": 3.99,
-      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为全量min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式",
+      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为过滤后集合(n=146)min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式；已排除短续航纯电(≤300km/微型代步)",
       "config_norm": 44.14,
       "space_norm": 50.0,
       "fuel_norm": 6.67,
@@ -2988,7 +2799,7 @@
       "sources": [],
       "found": false
     },
-    "rank": 44
+    "rank": 40
   },
   {
     "sku": "357014230",
@@ -3024,7 +2835,7 @@
       "fuel_proxy": 3.75,
       "is_suv": false,
       "price": 4.98,
-      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为全量min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式",
+      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为过滤后集合(n=146)min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式；已排除短续航纯电(≤300km/微型代步)",
       "config_norm": 94.78,
       "space_norm": 0.0,
       "fuel_norm": 16.67,
@@ -3050,7 +2861,7 @@
       "sources": [],
       "found": false
     },
-    "rank": 45
+    "rank": 41
   },
   {
     "sku": "357097175",
@@ -3089,7 +2900,7 @@
       "fuel_proxy": 5.0,
       "is_suv": false,
       "price": 5.29,
-      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为全量min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式",
+      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为过滤后集合(n=146)min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式；已排除短续航纯电(≤300km/微型代步)",
       "config_norm": 87.25,
       "space_norm": 0.0,
       "fuel_norm": 33.33,
@@ -3115,7 +2926,7 @@
       "sources": [],
       "found": false
     },
-    "rank": 46
+    "rank": 42
   },
   {
     "sku": "357142040",
@@ -3153,7 +2964,7 @@
       "fuel_proxy": 3.0,
       "is_suv": true,
       "price": 3.89,
-      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为全量min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式",
+      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为过滤后集合(n=146)min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式；已排除短续航纯电(≤300km/微型代步)",
       "config_norm": 42.37,
       "space_norm": 50.0,
       "fuel_norm": 6.67,
@@ -3179,7 +2990,7 @@
       "sources": [],
       "found": false
     },
-    "rank": 47
+    "rank": 43
   },
   {
     "sku": "357349654",
@@ -3217,7 +3028,7 @@
       "fuel_proxy": 3.0,
       "is_suv": true,
       "price": 2.89,
-      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为全量min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式",
+      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为过滤后集合(n=146)min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式；已排除短续航纯电(≤300km/微型代步)",
       "config_norm": 34.58,
       "space_norm": 50.0,
       "fuel_norm": 6.67,
@@ -3243,7 +3054,7 @@
       "sources": [],
       "found": false
     },
-    "rank": 48
+    "rank": 44
   },
   {
     "sku": "357178943",
@@ -3280,7 +3091,7 @@
       "fuel_proxy": 5.0,
       "is_suv": false,
       "price": 4.59,
-      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为全量min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式",
+      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为过滤后集合(n=146)min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式；已排除短续航纯电(≤300km/微型代步)",
       "config_norm": 63.32,
       "space_norm": 25.0,
       "fuel_norm": 33.33,
@@ -3306,7 +3117,7 @@
       "sources": [],
       "found": false
     },
-    "rank": 49
+    "rank": 45
   },
   {
     "sku": "357002835",
@@ -3343,7 +3154,7 @@
       "fuel_proxy": 10.0,
       "is_suv": false,
       "price": 4.39,
-      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为全量min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式",
+      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为过滤后集合(n=146)min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式；已排除短续航纯电(≤300km/微型代步)",
       "config_norm": 41.69,
       "space_norm": 0.0,
       "fuel_norm": 100.0,
@@ -3369,7 +3180,7 @@
       "sources": [],
       "found": false
     },
-    "rank": 50
+    "rank": 46
   },
   {
     "sku": "356774603",
@@ -3405,7 +3216,7 @@
       "fuel_proxy": 4.0,
       "is_suv": true,
       "price": 4.69,
-      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为全量min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式",
+      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为过滤后集合(n=146)min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式；已排除短续航纯电(≤300km/微型代步)",
       "config_norm": 39.25,
       "space_norm": 50.0,
       "fuel_norm": 20.0,
@@ -3431,71 +3242,7 @@
       "sources": [],
       "found": false
     },
-    "rank": 51
-  },
-  {
-    "sku": "356751463",
-    "title": "长安Lumin 2023款 205km 香沁款",
-    "price": 3.09,
-    "price_type": "标价",
-    "prefix": "标价",
-    "extra": "限时物流补贴",
-    "extras": [
-      "限时物流补贴"
-    ],
-    "year": "2023年 / 1.72万公里 / 武汉",
-    "plate_year": 2023,
-    "model_year": 2023,
-    "mileage_wan": 1.72,
-    "city": "武汉",
-    "tags": [
-      "性价比极佳",
-      "放心检8.8分",
-      "咨询飙升",
-      "三电质保"
-    ],
-    "badges": [
-      "官方保",
-      "直营"
-    ],
-    "cover": "https://p3-dcd-sign.byteimg.com/tos-cn-i-f042mdwyw7/1c1b1334dfc544f4a95c62cf4dbb4604~tplv-resize:800:0.image?lk3s=416a877a&x-expires=1796200601&x-signature=WOggy1PdGnSF7nSteOE0vfkCQXY%3D&psm=motor.sophon.product",
-    "detail_url": "https://m.dcdapp.com/motor/feoffline/usedcar_detail/detail.html?sku_id=356751463&shop_id=118608",
-    "shop_id": "118608",
-    "image_file": "/workspace/dongchedi-wuhan-shop/images/356751463.jpg",
-    "banner": "",
-    "sort_scores": {
-      "config_proxy": 6.93,
-      "space_proxy": 2.0,
-      "fuel_proxy": 10.0,
-      "is_suv": false,
-      "price": 3.09,
-      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为全量min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式",
-      "config_norm": 32.07,
-      "space_norm": 0.0,
-      "fuel_norm": 100.0,
-      "price_score": 48.5,
-      "suv_score": 0.0,
-      "total_score": 38.5,
-      "weights": {
-        "config": 0.35,
-        "space": 0.25,
-        "fuel": 0.2,
-        "price": 0.15,
-        "suv": 0.05
-      }
-    },
-    "brand": "长安Lumin",
-    "manufacturer": "长安汽车",
-    "manufacturer_inferred": false,
-    "total_score": 38.5,
-    "evaluation": "配置代理分一般；空间偏家用轿车级；油耗代理友好（纯电/混动或小排量）；里程低。",
-    "series": "长安Lumin",
-    "owner_reviews": {
-      "summary": "短名单外未逐车检索口碑",
-      "sources": [],
-      "found": false
-    },
-    "rank": 52
+    "rank": 47
   },
   {
     "sku": "357228026",
@@ -3531,7 +3278,7 @@
       "fuel_proxy": 3.0,
       "is_suv": true,
       "price": 3.69,
-      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为全量min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式",
+      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为过滤后集合(n=146)min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式；已排除短续航纯电(≤300km/微型代步)",
       "config_norm": 32.47,
       "space_norm": 58.33,
       "fuel_norm": 6.67,
@@ -3557,71 +3304,7 @@
       "sources": [],
       "found": false
     },
-    "rank": 53
-  },
-  {
-    "sku": "357402984",
-    "title": "五菱之光EV 2025款 进取型",
-    "price": 4.89,
-    "price_type": "标价",
-    "prefix": "标价",
-    "extra": "限时物流补贴",
-    "extras": [
-      "限时物流补贴"
-    ],
-    "year": "2026年 / 2.37万公里 / 武汉",
-    "plate_year": 2026,
-    "model_year": 2025,
-    "mileage_wan": 2.37,
-    "city": "武汉",
-    "tags": [
-      "已检测",
-      "原版原漆",
-      "0过户",
-      "内饰如新"
-    ],
-    "badges": [
-      "官方保",
-      "直营"
-    ],
-    "cover": "https://p3-dcd-sign.byteimg.com/tos-cn-i-f042mdwyw7/66ed4a499ba2463db1a2bb830d6798dc~tplv-f042mdwyw7-original:800:0.image?lk3s=416a877a&x-expires=1796200601&x-signature=T0EQXaiiwGQBY0Fqe6481hHDJGY%3D&psm=motor.sophon.product",
-    "detail_url": "https://m.dcdapp.com/motor/feoffline/usedcar_detail/detail.html?sku_id=357402984&shop_id=118608",
-    "shop_id": "118608",
-    "image_file": "/workspace/dongchedi-wuhan-shop/images/357402984.jpg",
-    "banner": "",
-    "sort_scores": {
-      "config_proxy": 8.5,
-      "space_proxy": 2.0,
-      "fuel_proxy": 10.0,
-      "is_suv": false,
-      "price": 4.89,
-      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为全量min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式",
-      "config_norm": 42.71,
-      "space_norm": 0.0,
-      "fuel_norm": 100.0,
-      "price_score": 18.5,
-      "suv_score": 0.0,
-      "total_score": 37.7,
-      "weights": {
-        "config": 0.35,
-        "space": 0.25,
-        "fuel": 0.2,
-        "price": 0.15,
-        "suv": 0.05
-      }
-    },
-    "brand": "五菱",
-    "manufacturer": "上汽通用五菱",
-    "manufacturer_inferred": false,
-    "total_score": 37.7,
-    "evaluation": "配置代理分一般；空间偏家用轿车级；油耗代理友好（纯电/混动或小排量）；价格 4.89 万接近预算上限。准新车龄。",
-    "series": "五菱之光EV",
-    "owner_reviews": {
-      "summary": "短名单外未逐车检索口碑",
-      "sources": [],
-      "found": false
-    },
-    "rank": 54
+    "rank": 48
   },
   {
     "sku": "357261882",
@@ -3659,7 +3342,7 @@
       "fuel_proxy": 3.75,
       "is_suv": true,
       "price": 4.59,
-      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为全量min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式",
+      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为过滤后集合(n=146)min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式；已排除短续航纯电(≤300km/微型代步)",
       "config_norm": 31.39,
       "space_norm": 58.33,
       "fuel_norm": 16.67,
@@ -3685,71 +3368,7 @@
       "sources": [],
       "found": false
     },
-    "rank": 55
-  },
-  {
-    "sku": "357152462",
-    "title": "长安Lumin 2022款 210km 香甜款",
-    "price": 2.59,
-    "price_type": "券后",
-    "prefix": "券后价",
-    "extra": "领券优惠价",
-    "extras": [
-      "领券优惠价",
-      "直减券1000"
-    ],
-    "year": "2022年 / 2.30万公里 / 武汉",
-    "plate_year": 2022,
-    "model_year": 2022,
-    "mileage_wan": 2.3,
-    "city": "武汉",
-    "tags": [
-      "性价比合理",
-      "放心检7.5分",
-      "三电质保"
-    ],
-    "badges": [
-      "官方保",
-      "直营"
-    ],
-    "cover": "https://p3-dcd-sign.byteimg.com/tos-cn-i-f042mdwyw7/72d09ac37bce434db09026fdfc35c4f4~tplv-resize:800:0.image?lk3s=416a877a&x-expires=1796200601&x-signature=lH5Jt8jqBj1Akf9O30D2Q83LU%2FM%3D&psm=motor.sophon.product",
-    "detail_url": "https://m.dcdapp.com/motor/feoffline/usedcar_detail/detail.html?sku_id=357152462&shop_id=118608",
-    "shop_id": "118608",
-    "image_file": "/workspace/dongchedi-wuhan-shop/images/357152462.jpg",
-    "banner": "直减券1000",
-    "sort_scores": {
-      "config_proxy": 5.93,
-      "space_proxy": 2.0,
-      "fuel_proxy": 10.0,
-      "is_suv": false,
-      "price": 2.59,
-      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为全量min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式",
-      "config_norm": 25.29,
-      "space_norm": 0.0,
-      "fuel_norm": 100.0,
-      "price_score": 56.83,
-      "suv_score": 0.0,
-      "total_score": 37.4,
-      "weights": {
-        "config": 0.35,
-        "space": 0.25,
-        "fuel": 0.2,
-        "price": 0.15,
-        "suv": 0.05
-      }
-    },
-    "brand": "长安Lumin",
-    "manufacturer": "长安汽车",
-    "manufacturer_inferred": false,
-    "total_score": 37.4,
-    "evaluation": "配置代理分一般；空间偏家用轿车级；油耗代理友好（纯电/混动或小排量）。",
-    "series": "长安Lumin",
-    "owner_reviews": {
-      "summary": "短名单外未逐车检索口碑",
-      "sources": [],
-      "found": false
-    },
-    "rank": 56
+    "rank": 49
   },
   {
     "sku": "357337443",
@@ -3787,7 +3406,7 @@
       "fuel_proxy": 3.75,
       "is_suv": false,
       "price": 4.89,
-      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为全量min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式",
+      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为过滤后集合(n=146)min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式；已排除短续航纯电(≤300km/微型代步)",
       "config_norm": 70.51,
       "space_norm": 25.0,
       "fuel_norm": 16.67,
@@ -3813,7 +3432,7 @@
       "sources": [],
       "found": false
     },
-    "rank": 57
+    "rank": 50
   },
   {
     "sku": "357319061",
@@ -3850,7 +3469,7 @@
       "fuel_proxy": 3.75,
       "is_suv": true,
       "price": 5.29,
-      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为全量min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式",
+      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为过滤后集合(n=146)min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式；已排除短续航纯电(≤300km/微型代步)",
       "config_norm": 34.24,
       "space_norm": 58.33,
       "fuel_norm": 16.67,
@@ -3876,7 +3495,7 @@
       "sources": [],
       "found": false
     },
-    "rank": 58
+    "rank": 51
   },
   {
     "sku": "357228868",
@@ -3912,7 +3531,7 @@
       "fuel_proxy": 10.0,
       "is_suv": false,
       "price": 3.59,
-      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为全量min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式",
+      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为过滤后集合(n=146)min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式；已排除短续航纯电(≤300km/微型代步)",
       "config_norm": 30.64,
       "space_norm": 0.0,
       "fuel_norm": 100.0,
@@ -3938,7 +3557,7 @@
       "sources": [],
       "found": false
     },
-    "rank": 59
+    "rank": 52
   },
   {
     "sku": "357140215",
@@ -3975,7 +3594,7 @@
       "fuel_proxy": 4.5,
       "is_suv": false,
       "price": 5.1,
-      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为全量min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式",
+      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为过滤后集合(n=146)min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式；已排除短续航纯电(≤300km/微型代步)",
       "config_norm": 64.75,
       "space_norm": 25.0,
       "fuel_norm": 26.67,
@@ -4001,7 +3620,7 @@
       "sources": [],
       "found": false
     },
-    "rank": 60
+    "rank": 53
   },
   {
     "sku": "357250769",
@@ -4038,7 +3657,7 @@
       "fuel_proxy": 4.8,
       "is_suv": false,
       "price": 3.19,
-      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为全量min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式",
+      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为过滤后集合(n=146)min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式；已排除短续航纯电(≤300km/微型代步)",
       "config_norm": 66.44,
       "space_norm": 0.0,
       "fuel_norm": 30.67,
@@ -4064,7 +3683,7 @@
       "sources": [],
       "found": false
     },
-    "rank": 61
+    "rank": 54
   },
   {
     "sku": "357252968",
@@ -4101,7 +3720,7 @@
       "fuel_proxy": 5.0,
       "is_suv": false,
       "price": 4.99,
-      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为全量min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式",
+      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为过滤后集合(n=146)min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式；已排除短续航纯电(≤300km/微型代步)",
       "config_norm": 77.42,
       "space_norm": 0.0,
       "fuel_norm": 33.33,
@@ -4127,7 +3746,7 @@
       "sources": [],
       "found": false
     },
-    "rank": 62
+    "rank": 55
   },
   {
     "sku": "357319139",
@@ -4165,7 +3784,7 @@
       "fuel_proxy": 4.0,
       "is_suv": true,
       "price": 4.99,
-      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为全量min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式",
+      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为过滤后集合(n=146)min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式；已排除短续航纯电(≤300km/微型代步)",
       "config_norm": 33.22,
       "space_norm": 50.0,
       "fuel_norm": 20.0,
@@ -4191,7 +3810,7 @@
       "sources": [],
       "found": false
     },
-    "rank": 63
+    "rank": 56
   },
   {
     "sku": "357295571",
@@ -4227,7 +3846,7 @@
       "fuel_proxy": 3.75,
       "is_suv": true,
       "price": 3.89,
-      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为全量min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式",
+      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为过滤后集合(n=146)min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式；已排除短续航纯电(≤300km/微型代步)",
       "config_norm": 26.24,
       "space_norm": 50.0,
       "fuel_norm": 16.67,
@@ -4253,7 +3872,7 @@
       "sources": [],
       "found": false
     },
-    "rank": 64
+    "rank": 57
   },
   {
     "sku": "357250770",
@@ -4291,7 +3910,7 @@
       "fuel_proxy": 5.0,
       "is_suv": false,
       "price": 4.09,
-      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为全量min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式",
+      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为过滤后集合(n=146)min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式；已排除短续航纯电(≤300km/微型代步)",
       "config_norm": 67.59,
       "space_norm": 0.0,
       "fuel_norm": 33.33,
@@ -4317,7 +3936,7 @@
       "sources": [],
       "found": false
     },
-    "rank": 65
+    "rank": 58
   },
   {
     "sku": "357149732",
@@ -4355,7 +3974,7 @@
       "fuel_proxy": 3.0,
       "is_suv": true,
       "price": 4.89,
-      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为全量min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式",
+      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为过滤后集合(n=146)min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式；已排除短续航纯电(≤300km/微型代步)",
       "config_norm": 36.07,
       "space_norm": 50.0,
       "fuel_norm": 6.67,
@@ -4381,7 +4000,7 @@
       "sources": [],
       "found": false
     },
-    "rank": 66
+    "rank": 59
   },
   {
     "sku": "357232005",
@@ -4418,7 +4037,7 @@
       "fuel_proxy": 3.75,
       "is_suv": false,
       "price": 4.89,
-      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为全量min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式",
+      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为过滤后集合(n=146)min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式；已排除短续航纯电(≤300km/微型代步)",
       "config_norm": 61.63,
       "space_norm": 25.0,
       "fuel_norm": 16.67,
@@ -4444,7 +4063,7 @@
       "sources": [],
       "found": false
     },
-    "rank": 67
+    "rank": 60
   },
   {
     "sku": "357171772",
@@ -4480,7 +4099,7 @@
       "fuel_proxy": 4.0,
       "is_suv": true,
       "price": 4.39,
-      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为全量min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式",
+      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为过滤后集合(n=146)min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式；已排除短续航纯电(≤300km/微型代步)",
       "config_norm": 22.64,
       "space_norm": 50.0,
       "fuel_norm": 20.0,
@@ -4506,7 +4125,7 @@
       "sources": [],
       "found": false
     },
-    "rank": 68
+    "rank": 61
   },
   {
     "sku": "356872119",
@@ -4544,7 +4163,7 @@
       "fuel_proxy": 3.0,
       "is_suv": false,
       "price": 4.79,
-      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为全量min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式",
+      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为过滤后集合(n=146)min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式；已排除短续航纯电(≤300km/微型代步)",
       "config_norm": 64.61,
       "space_norm": 25.0,
       "fuel_norm": 6.67,
@@ -4570,7 +4189,7 @@
       "sources": [],
       "found": false
     },
-    "rank": 69
+    "rank": 62
   },
   {
     "sku": "356651013",
@@ -4608,7 +4227,7 @@
       "fuel_proxy": 10.0,
       "is_suv": false,
       "price": 4.79,
-      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为全量min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式",
+      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为过滤后集合(n=146)min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式；已排除短续航纯电(≤300km/微型代步)",
       "config_norm": 28.34,
       "space_norm": 0.0,
       "fuel_norm": 100.0,
@@ -4634,7 +4253,7 @@
       "sources": [],
       "found": false
     },
-    "rank": 70
+    "rank": 63
   },
   {
     "sku": "357250772",
@@ -4672,7 +4291,7 @@
       "fuel_proxy": 3.75,
       "is_suv": false,
       "price": 5.89,
-      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为全量min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式",
+      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为过滤后集合(n=146)min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式；已排除短续航纯电(≤300km/微型代步)",
       "config_norm": 81.02,
       "space_norm": 0.0,
       "fuel_norm": 16.67,
@@ -4698,7 +4317,7 @@
       "sources": [],
       "found": false
     },
-    "rank": 71
+    "rank": 64
   },
   {
     "sku": "356938379",
@@ -4735,7 +4354,7 @@
       "fuel_proxy": 3.75,
       "is_suv": false,
       "price": 5.69,
-      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为全量min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式",
+      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为过滤后集合(n=146)min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式；已排除短续航纯电(≤300km/微型代步)",
       "config_norm": 78.37,
       "space_norm": 0.0,
       "fuel_norm": 16.67,
@@ -4761,7 +4380,7 @@
       "sources": [],
       "found": false
     },
-    "rank": 72
+    "rank": 65
   },
   {
     "sku": "357107727",
@@ -4798,7 +4417,7 @@
       "fuel_proxy": 2.5,
       "is_suv": true,
       "price": 4.79,
-      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为全量min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式",
+      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为过滤后集合(n=146)min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式；已排除短续航纯电(≤300km/微型代步)",
       "config_norm": 29.29,
       "space_norm": 50.0,
       "fuel_norm": 0.0,
@@ -4824,7 +4443,7 @@
       "sources": [],
       "found": false
     },
-    "rank": 73
+    "rank": 66
   },
   {
     "sku": "357211013",
@@ -4861,7 +4480,7 @@
       "fuel_proxy": 2.5,
       "is_suv": true,
       "price": 3.28,
-      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为全量min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式",
+      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为过滤后集合(n=146)min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式；已排除短续航纯电(≤300km/微型代步)",
       "config_norm": 15.93,
       "space_norm": 50.0,
       "fuel_norm": 0.0,
@@ -4887,7 +4506,7 @@
       "sources": [],
       "found": false
     },
-    "rank": 74
+    "rank": 67
   },
   {
     "sku": "357211017",
@@ -4925,7 +4544,7 @@
       "fuel_proxy": 4.8,
       "is_suv": false,
       "price": 5.89,
-      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为全量min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式",
+      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为过滤后集合(n=146)min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式；已排除短续航纯电(≤300km/微型代步)",
       "config_norm": 66.31,
       "space_norm": 0.0,
       "fuel_norm": 30.67,
@@ -4951,7 +4570,7 @@
       "sources": [],
       "found": false
     },
-    "rank": 75
+    "rank": 68
   },
   {
     "sku": "356994816",
@@ -4988,7 +4607,7 @@
       "fuel_proxy": 2.5,
       "is_suv": false,
       "price": 5.39,
-      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为全量min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式",
+      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为过滤后集合(n=146)min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式；已排除短续航纯电(≤300km/微型代步)",
       "config_norm": 79.05,
       "space_norm": 0.0,
       "fuel_norm": 0.0,
@@ -5014,7 +4633,7 @@
       "sources": [],
       "found": false
     },
-    "rank": 76
+    "rank": 69
   },
   {
     "sku": "357127553",
@@ -5051,7 +4670,7 @@
       "fuel_proxy": 2.5,
       "is_suv": false,
       "price": 5.59,
-      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为全量min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式",
+      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为过滤后集合(n=146)min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式；已排除短续航纯电(≤300km/微型代步)",
       "config_norm": 61.69,
       "space_norm": 25.0,
       "fuel_norm": 0.0,
@@ -5077,7 +4696,7 @@
       "sources": [],
       "found": false
     },
-    "rank": 77
+    "rank": 70
   },
   {
     "sku": "357295564",
@@ -5113,7 +4732,7 @@
       "fuel_proxy": 4.4,
       "is_suv": false,
       "price": 4.49,
-      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为全量min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式",
+      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为过滤后集合(n=146)min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式；已排除短续航纯电(≤300km/微型代步)",
       "config_norm": 56.41,
       "space_norm": 0.0,
       "fuel_norm": 25.33,
@@ -5139,7 +4758,7 @@
       "sources": [],
       "found": false
     },
-    "rank": 78
+    "rank": 71
   },
   {
     "sku": "357156086",
@@ -5175,7 +4794,7 @@
       "fuel_proxy": 2.5,
       "is_suv": false,
       "price": 5.49,
-      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为全量min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式",
+      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为过滤后集合(n=146)min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式；已排除短续航纯电(≤300km/微型代步)",
       "config_norm": 77.63,
       "space_norm": 0.0,
       "fuel_norm": 0.0,
@@ -5201,7 +4820,7 @@
       "sources": [],
       "found": false
     },
-    "rank": 79
+    "rank": 72
   },
   {
     "sku": "357168539",
@@ -5239,7 +4858,7 @@
       "fuel_proxy": 5.0,
       "is_suv": false,
       "price": 4.29,
-      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为全量min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式",
+      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为过滤后集合(n=146)min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式；已排除短续航纯电(≤300km/微型代步)",
       "config_norm": 49.15,
       "space_norm": 0.0,
       "fuel_norm": 33.33,
@@ -5265,7 +4884,7 @@
       "sources": [],
       "found": false
     },
-    "rank": 80
+    "rank": 73
   },
   {
     "sku": "356871818",
@@ -5303,7 +4922,7 @@
       "fuel_proxy": 5.0,
       "is_suv": false,
       "price": 3.09,
-      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为全量min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式",
+      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为过滤后集合(n=146)min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式；已排除短续航纯电(≤300km/微型代步)",
       "config_norm": 39.8,
       "space_norm": 0.0,
       "fuel_norm": 33.33,
@@ -5318,9 +4937,9 @@
         "suv": 0.05
       }
     },
-    "brand": "斯柯达",
-    "manufacturer": "上汽大众斯柯达",
-    "manufacturer_inferred": false,
+    "brand": "昕锐",
+    "manufacturer": "昕锐",
+    "manufacturer_inferred": true,
     "total_score": 27.9,
     "evaluation": "配置代理分一般；空间偏家用轿车级；油耗代理偏低（较大排量燃油）。",
     "series": "昕锐",
@@ -5329,7 +4948,7 @@
       "sources": [],
       "found": false
     },
-    "rank": 81
+    "rank": 74
   },
   {
     "sku": "357355582",
@@ -5366,7 +4985,7 @@
       "fuel_proxy": 3.75,
       "is_suv": true,
       "price": 5.49,
-      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为全量min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式",
+      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为过滤后集合(n=146)min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式；已排除短续航纯电(≤300km/微型代步)",
       "config_norm": 10.51,
       "space_norm": 58.33,
       "fuel_norm": 16.67,
@@ -5392,7 +5011,7 @@
       "sources": [],
       "found": false
     },
-    "rank": 82
+    "rank": 75
   },
   {
     "sku": "356998318",
@@ -5428,7 +5047,7 @@
       "fuel_proxy": 2.5,
       "is_suv": true,
       "price": 5.59,
-      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为全量min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式",
+      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为过滤后集合(n=146)min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式；已排除短续航纯电(≤300km/微型代步)",
       "config_norm": 26.51,
       "space_norm": 50.0,
       "fuel_norm": 0.0,
@@ -5454,7 +5073,7 @@
       "sources": [],
       "found": false
     },
-    "rank": 83
+    "rank": 76
   },
   {
     "sku": "356902463",
@@ -5491,7 +5110,7 @@
       "fuel_proxy": 3.0,
       "is_suv": true,
       "price": 5.29,
-      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为全量min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式",
+      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为过滤后集合(n=146)min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式；已排除短续航纯电(≤300km/微型代步)",
       "config_norm": 18.78,
       "space_norm": 50.0,
       "fuel_norm": 6.67,
@@ -5517,7 +5136,7 @@
       "sources": [],
       "found": false
     },
-    "rank": 84
+    "rank": 77
   },
   {
     "sku": "357172826",
@@ -5553,7 +5172,7 @@
       "fuel_proxy": 3.0,
       "is_suv": true,
       "price": 5.49,
-      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为全量min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式",
+      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为过滤后集合(n=146)min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式；已排除短续航纯电(≤300km/微型代步)",
       "config_norm": 19.86,
       "space_norm": 50.0,
       "fuel_norm": 6.67,
@@ -5579,7 +5198,7 @@
       "sources": [],
       "found": false
     },
-    "rank": 85
+    "rank": 78
   },
   {
     "sku": "357192191",
@@ -5616,7 +5235,7 @@
       "fuel_proxy": 3.0,
       "is_suv": false,
       "price": 4.29,
-      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为全量min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式",
+      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为过滤后集合(n=146)min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式；已排除短续航纯电(≤300km/微型代步)",
       "config_norm": 60.75,
       "space_norm": 0.0,
       "fuel_norm": 6.67,
@@ -5642,7 +5261,7 @@
       "sources": [],
       "found": false
     },
-    "rank": 86
+    "rank": 79
   },
   {
     "sku": "357072673",
@@ -5678,7 +5297,7 @@
       "fuel_proxy": 3.0,
       "is_suv": false,
       "price": 3.69,
-      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为全量min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式",
+      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为过滤后集合(n=146)min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式；已排除短续航纯电(≤300km/微型代步)",
       "config_norm": 56.41,
       "space_norm": 0.0,
       "fuel_norm": 6.67,
@@ -5704,7 +5323,7 @@
       "sources": [],
       "found": false
     },
-    "rank": 87
+    "rank": 80
   },
   {
     "sku": "357237949",
@@ -5740,7 +5359,7 @@
       "fuel_proxy": 5.0,
       "is_suv": false,
       "price": 3.29,
-      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为全量min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式",
+      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为过滤后集合(n=146)min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式；已排除短续航纯电(≤300km/微型代步)",
       "config_norm": 38.1,
       "space_norm": 0.0,
       "fuel_norm": 33.33,
@@ -5766,7 +5385,7 @@
       "sources": [],
       "found": false
     },
-    "rank": 88
+    "rank": 81
   },
   {
     "sku": "357239398",
@@ -5802,7 +5421,7 @@
       "fuel_proxy": 5.0,
       "is_suv": false,
       "price": 4.49,
-      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为全量min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式",
+      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为过滤后集合(n=146)min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式；已排除短续航纯电(≤300km/微型代步)",
       "config_norm": 46.44,
       "space_norm": 0.0,
       "fuel_norm": 33.33,
@@ -5828,7 +5447,7 @@
       "sources": [],
       "found": false
     },
-    "rank": 89
+    "rank": 82
   },
   {
     "sku": "357036051",
@@ -5865,7 +5484,7 @@
       "fuel_proxy": 4.0,
       "is_suv": false,
       "price": 5.89,
-      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为全量min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式",
+      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为过滤后集合(n=146)min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式；已排除短续航纯电(≤300km/微型代步)",
       "config_norm": 63.86,
       "space_norm": 0.0,
       "fuel_norm": 20.0,
@@ -5882,7 +5501,7 @@
     },
     "brand": "丰田",
     "manufacturer": "广汽丰田",
-    "manufacturer_inferred": false,
+    "manufacturer_inferred": true,
     "total_score": 26.6,
     "evaluation": "配置档位偏高（标题含顶配/高配词）；空间偏家用轿车级；油耗代理偏低（较大排量燃油）；价格 5.89 万接近预算上限。",
     "series": "凌尚",
@@ -5891,7 +5510,7 @@
       "sources": [],
       "found": false
     },
-    "rank": 90
+    "rank": 83
   },
   {
     "sku": "357018303",
@@ -5926,7 +5545,7 @@
       "fuel_proxy": 3.0,
       "is_suv": false,
       "price": 3.69,
-      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为全量min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式",
+      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为过滤后集合(n=146)min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式；已排除短续航纯电(≤300km/微型代步)",
       "config_norm": 55.59,
       "space_norm": 0.0,
       "fuel_norm": 6.67,
@@ -5952,7 +5571,7 @@
       "sources": [],
       "found": false
     },
-    "rank": 91
+    "rank": 84
   },
   {
     "sku": "357307855",
@@ -5987,7 +5606,7 @@
       "fuel_proxy": 5.0,
       "is_suv": false,
       "price": 3.39,
-      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为全量min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式",
+      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为过滤后集合(n=146)min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式；已排除短续航纯电(≤300km/微型代步)",
       "config_norm": 34.58,
       "space_norm": 0.0,
       "fuel_norm": 33.33,
@@ -6013,7 +5632,7 @@
       "sources": [],
       "found": false
     },
-    "rank": 92
+    "rank": 85
   },
   {
     "sku": "357211009",
@@ -6050,7 +5669,7 @@
       "fuel_proxy": 3.0,
       "is_suv": false,
       "price": 4.59,
-      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为全量min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式",
+      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为过滤后集合(n=146)min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式；已排除短续航纯电(≤300km/微型代步)",
       "config_norm": 58.24,
       "space_norm": 0.0,
       "fuel_norm": 6.67,
@@ -6076,7 +5695,7 @@
       "sources": [],
       "found": false
     },
-    "rank": 93
+    "rank": 86
   },
   {
     "sku": "357228775",
@@ -6112,7 +5731,7 @@
       "fuel_proxy": 5.0,
       "is_suv": false,
       "price": 3.59,
-      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为全量min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式",
+      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为过滤后集合(n=146)min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式；已排除短续航纯电(≤300km/微型代步)",
       "config_norm": 35.53,
       "space_norm": 0.0,
       "fuel_norm": 33.33,
@@ -6138,7 +5757,7 @@
       "sources": [],
       "found": false
     },
-    "rank": 94
+    "rank": 87
   },
   {
     "sku": "357275132",
@@ -6174,7 +5793,7 @@
       "fuel_proxy": 5.0,
       "is_suv": false,
       "price": 3.89,
-      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为全量min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式",
+      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为过滤后集合(n=146)min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式；已排除短续航纯电(≤300km/微型代步)",
       "config_norm": 37.36,
       "space_norm": 0.0,
       "fuel_norm": 33.33,
@@ -6200,7 +5819,7 @@
       "sources": [],
       "found": false
     },
-    "rank": 95
+    "rank": 88
   },
   {
     "sku": "356856951",
@@ -6238,7 +5857,7 @@
       "fuel_proxy": 4.5,
       "is_suv": false,
       "price": 4.69,
-      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为全量min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式",
+      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为过滤后集合(n=146)min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式；已排除短续航纯电(≤300km/微型代步)",
       "config_norm": 45.15,
       "space_norm": 0.0,
       "fuel_norm": 26.67,
@@ -6264,7 +5883,7 @@
       "sources": [],
       "found": false
     },
-    "rank": 96
+    "rank": 89
   },
   {
     "sku": "357184320",
@@ -6304,7 +5923,7 @@
       "fuel_proxy": 3.0,
       "is_suv": false,
       "price": 4.69,
-      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为全量min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式",
+      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为过滤后集合(n=146)min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式；已排除短续航纯电(≤300km/微型代步)",
       "config_norm": 54.64,
       "space_norm": 0.0,
       "fuel_norm": 6.67,
@@ -6330,7 +5949,7 @@
       "sources": [],
       "found": false
     },
-    "rank": 97
+    "rank": 90
   },
   {
     "sku": "357236920",
@@ -6366,7 +5985,7 @@
       "fuel_proxy": 5.0,
       "is_suv": false,
       "price": 4.39,
-      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为全量min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式",
+      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为过滤后集合(n=146)min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式；已排除短续航纯电(≤300km/微型代步)",
       "config_norm": 36.68,
       "space_norm": 0.0,
       "fuel_norm": 33.33,
@@ -6392,7 +6011,7 @@
       "sources": [],
       "found": false
     },
-    "rank": 98
+    "rank": 91
   },
   {
     "sku": "357100389",
@@ -6429,7 +6048,7 @@
       "fuel_proxy": 3.75,
       "is_suv": false,
       "price": 5.19,
-      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为全量min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式",
+      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为过滤后集合(n=146)min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式；已排除短续航纯电(≤300km/微型代步)",
       "config_norm": 51.46,
       "space_norm": 0.0,
       "fuel_norm": 16.67,
@@ -6455,7 +6074,7 @@
       "sources": [],
       "found": false
     },
-    "rank": 99
+    "rank": 92
   },
   {
     "sku": "357279266",
@@ -6491,7 +6110,7 @@
       "fuel_proxy": 5.0,
       "is_suv": false,
       "price": 3.99,
-      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为全量min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式",
+      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为过滤后集合(n=146)min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式；已排除短续航纯电(≤300km/微型代步)",
       "config_norm": 32.75,
       "space_norm": 0.0,
       "fuel_norm": 33.33,
@@ -6517,7 +6136,7 @@
       "sources": [],
       "found": false
     },
-    "rank": 100
+    "rank": 93
   },
   {
     "sku": "357109426",
@@ -6554,7 +6173,7 @@
       "fuel_proxy": 5.0,
       "is_suv": false,
       "price": 4.19,
-      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为全量min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式",
+      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为过滤后集合(n=146)min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式；已排除短续航纯电(≤300km/微型代步)",
       "config_norm": 34.1,
       "space_norm": 0.0,
       "fuel_norm": 33.33,
@@ -6580,7 +6199,7 @@
       "sources": [],
       "found": false
     },
-    "rank": 101
+    "rank": 94
   },
   {
     "sku": "356998324",
@@ -6616,7 +6235,7 @@
       "fuel_proxy": 5.0,
       "is_suv": false,
       "price": 4.43,
-      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为全量min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式",
+      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为过滤后集合(n=146)min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式；已排除短续航纯电(≤300km/微型代步)",
       "config_norm": 35.53,
       "space_norm": 0.0,
       "fuel_norm": 33.33,
@@ -6642,7 +6261,7 @@
       "sources": [],
       "found": false
     },
-    "rank": 102
+    "rank": 95
   },
   {
     "sku": "357289435",
@@ -6679,7 +6298,7 @@
       "fuel_proxy": 2.5,
       "is_suv": false,
       "price": 5.09,
-      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为全量min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式",
+      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为过滤后集合(n=146)min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式；已排除短续航纯电(≤300km/微型代步)",
       "config_norm": 58.98,
       "space_norm": 0.0,
       "fuel_norm": 0.0,
@@ -6705,7 +6324,7 @@
       "sources": [],
       "found": false
     },
-    "rank": 103
+    "rank": 96
   },
   {
     "sku": "357151407",
@@ -6743,7 +6362,7 @@
       "fuel_proxy": 3.0,
       "is_suv": false,
       "price": 3.69,
-      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为全量min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式",
+      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为过滤后集合(n=146)min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式；已排除短续航纯电(≤300km/微型代步)",
       "config_norm": 44.88,
       "space_norm": 0.0,
       "fuel_norm": 6.67,
@@ -6769,7 +6388,7 @@
       "sources": [],
       "found": false
     },
-    "rank": 104
+    "rank": 97
   },
   {
     "sku": "356670011",
@@ -6806,7 +6425,7 @@
       "fuel_proxy": 3.0,
       "is_suv": false,
       "price": 3.69,
-      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为全量min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式",
+      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为过滤后集合(n=146)min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式；已排除短续航纯电(≤300km/微型代步)",
       "config_norm": 44.68,
       "space_norm": 0.0,
       "fuel_norm": 6.67,
@@ -6832,7 +6451,7 @@
       "sources": [],
       "found": false
     },
-    "rank": 105
+    "rank": 98
   },
   {
     "sku": "356829961",
@@ -6870,7 +6489,7 @@
       "fuel_proxy": 5.0,
       "is_suv": false,
       "price": 3.69,
-      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为全量min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式",
+      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为过滤后集合(n=146)min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式；已排除短续航纯电(≤300km/微型代步)",
       "config_norm": 28.34,
       "space_norm": 0.0,
       "fuel_norm": 33.33,
@@ -6896,7 +6515,7 @@
       "sources": [],
       "found": false
     },
-    "rank": 106
+    "rank": 99
   },
   {
     "sku": "357198641",
@@ -6934,7 +6553,7 @@
       "fuel_proxy": 4.8,
       "is_suv": false,
       "price": 1.99,
-      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为全量min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式",
+      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为过滤后集合(n=146)min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式；已排除短续航纯电(≤300km/微型代步)",
       "config_norm": 16.88,
       "space_norm": 0.0,
       "fuel_norm": 30.67,
@@ -6960,7 +6579,7 @@
       "sources": [],
       "found": false
     },
-    "rank": 107
+    "rank": 100
   },
   {
     "sku": "357211012",
@@ -6997,7 +6616,7 @@
       "fuel_proxy": 4.8,
       "is_suv": false,
       "price": 5.68,
-      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为全量min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式",
+      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为过滤后集合(n=146)min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式；已排除短续航纯电(≤300km/微型代步)",
       "config_norm": 43.19,
       "space_norm": 0.0,
       "fuel_norm": 30.67,
@@ -7023,7 +6642,7 @@
       "sources": [],
       "found": false
     },
-    "rank": 108
+    "rank": 101
   },
   {
     "sku": "356865895",
@@ -7060,7 +6679,7 @@
       "fuel_proxy": 5.0,
       "is_suv": false,
       "price": 4.69,
-      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为全量min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式",
+      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为过滤后集合(n=146)min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式；已排除短续航纯电(≤300km/微型代步)",
       "config_norm": 34.58,
       "space_norm": 0.0,
       "fuel_norm": 33.33,
@@ -7086,7 +6705,7 @@
       "sources": [],
       "found": false
     },
-    "rank": 109
+    "rank": 102
   },
   {
     "sku": "356868757",
@@ -7123,7 +6742,7 @@
       "fuel_proxy": 5.0,
       "is_suv": false,
       "price": 3.49,
-      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为全量min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式",
+      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为过滤后集合(n=146)min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式；已排除短续航纯电(≤300km/微型代步)",
       "config_norm": 23.59,
       "space_norm": 0.0,
       "fuel_norm": 33.33,
@@ -7149,7 +6768,7 @@
       "sources": [],
       "found": false
     },
-    "rank": 110
+    "rank": 103
   },
   {
     "sku": "356905845",
@@ -7185,7 +6804,7 @@
       "fuel_proxy": 5.0,
       "is_suv": false,
       "price": 4.29,
-      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为全量min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式",
+      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为过滤后集合(n=146)min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式；已排除短续航纯电(≤300km/微型代步)",
       "config_norm": 28.34,
       "space_norm": 0.0,
       "fuel_norm": 33.33,
@@ -7211,7 +6830,7 @@
       "sources": [],
       "found": false
     },
-    "rank": 111
+    "rank": 104
   },
   {
     "sku": "357166936",
@@ -7249,7 +6868,7 @@
       "fuel_proxy": 3.0,
       "is_suv": false,
       "price": 1.99,
-      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为全量min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式",
+      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为过滤后集合(n=146)min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式；已排除短续航纯电(≤300km/微型代步)",
       "config_norm": 25.49,
       "space_norm": 0.0,
       "fuel_norm": 6.67,
@@ -7275,7 +6894,7 @@
       "sources": [],
       "found": false
     },
-    "rank": 112
+    "rank": 105
   },
   {
     "sku": "357184176",
@@ -7312,7 +6931,7 @@
       "fuel_proxy": 3.0,
       "is_suv": false,
       "price": 4.69,
-      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为全量min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式",
+      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为过滤后集合(n=146)min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式；已排除短续航纯电(≤300km/微型代步)",
       "config_norm": 44.14,
       "space_norm": 0.0,
       "fuel_norm": 6.67,
@@ -7338,7 +6957,7 @@
       "sources": [],
       "found": false
     },
-    "rank": 113
+    "rank": 106
   },
   {
     "sku": "356905902",
@@ -7375,7 +6994,7 @@
       "fuel_proxy": 3.0,
       "is_suv": false,
       "price": 2.79,
-      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为全量min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式",
+      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为过滤后集合(n=146)min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式；已排除短续航纯电(≤300km/微型代步)",
       "config_norm": 30.37,
       "space_norm": 0.0,
       "fuel_norm": 6.67,
@@ -7401,7 +7020,7 @@
       "sources": [],
       "found": false
     },
-    "rank": 114
+    "rank": 107
   },
   {
     "sku": "357263877",
@@ -7437,7 +7056,7 @@
       "fuel_proxy": 5.0,
       "is_suv": false,
       "price": 2.89,
-      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为全量min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式",
+      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为过滤后集合(n=146)min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式；已排除短续航纯电(≤300km/微型代步)",
       "config_norm": 14.51,
       "space_norm": 0.0,
       "fuel_norm": 33.33,
@@ -7463,7 +7082,7 @@
       "sources": [],
       "found": false
     },
-    "rank": 115
+    "rank": 108
   },
   {
     "sku": "357100614",
@@ -7500,7 +7119,7 @@
       "fuel_proxy": 3.75,
       "is_suv": false,
       "price": 4.89,
-      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为全量min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式",
+      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为过滤后集合(n=146)min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式；已排除短续航纯电(≤300km/微型代步)",
       "config_norm": 37.63,
       "space_norm": 0.0,
       "fuel_norm": 16.67,
@@ -7526,7 +7145,7 @@
       "sources": [],
       "found": false
     },
-    "rank": 116
+    "rank": 109
   },
   {
     "sku": "357184721",
@@ -7562,7 +7181,7 @@
       "fuel_proxy": 3.0,
       "is_suv": false,
       "price": 2.99,
-      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为全量min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式",
+      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为过滤后集合(n=146)min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式；已排除短续航纯电(≤300km/微型代步)",
       "config_norm": 28.75,
       "space_norm": 0.0,
       "fuel_norm": 6.67,
@@ -7588,7 +7207,7 @@
       "sources": [],
       "found": false
     },
-    "rank": 117
+    "rank": 110
   },
   {
     "sku": "357328438",
@@ -7624,7 +7243,7 @@
       "fuel_proxy": 5.0,
       "is_suv": false,
       "price": 4.39,
-      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为全量min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式",
+      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为过滤后集合(n=146)min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式；已排除短续航纯电(≤300km/微型代步)",
       "config_norm": 23.32,
       "space_norm": 0.0,
       "fuel_norm": 33.33,
@@ -7650,7 +7269,7 @@
       "sources": [],
       "found": false
     },
-    "rank": 118
+    "rank": 111
   },
   {
     "sku": "357275248",
@@ -7686,7 +7305,7 @@
       "fuel_proxy": 3.0,
       "is_suv": false,
       "price": 3.99,
-      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为全量min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式",
+      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为过滤后集合(n=146)min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式；已排除短续航纯电(≤300km/微型代步)",
       "config_norm": 34.37,
       "space_norm": 0.0,
       "fuel_norm": 6.67,
@@ -7712,7 +7331,7 @@
       "sources": [],
       "found": false
     },
-    "rank": 119
+    "rank": 112
   },
   {
     "sku": "357335080",
@@ -7748,7 +7367,7 @@
       "fuel_proxy": 5.0,
       "is_suv": false,
       "price": 3.88,
-      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为全量min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式",
+      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为过滤后集合(n=146)min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式；已排除短续航纯电(≤300km/微型代步)",
       "config_norm": 17.56,
       "space_norm": 0.0,
       "fuel_norm": 33.33,
@@ -7774,7 +7393,7 @@
       "sources": [],
       "found": false
     },
-    "rank": 120
+    "rank": 113
   },
   {
     "sku": "357006776",
@@ -7810,7 +7429,7 @@
       "fuel_proxy": 3.0,
       "is_suv": false,
       "price": 2.99,
-      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为全量min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式",
+      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为过滤后集合(n=146)min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式；已排除短续航纯电(≤300km/微型代步)",
       "config_norm": 25.69,
       "space_norm": 0.0,
       "fuel_norm": 6.67,
@@ -7836,7 +7455,7 @@
       "sources": [],
       "found": false
     },
-    "rank": 121
+    "rank": 114
   },
   {
     "sku": "357246284",
@@ -7874,7 +7493,7 @@
       "fuel_proxy": 4.4,
       "is_suv": false,
       "price": 4.29,
-      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为全量min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式",
+      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为过滤后集合(n=146)min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式；已排除短续航纯电(≤300km/微型代步)",
       "config_norm": 23.86,
       "space_norm": 0.0,
       "fuel_norm": 25.33,
@@ -7900,7 +7519,7 @@
       "sources": [],
       "found": false
     },
-    "rank": 122
+    "rank": 115
   },
   {
     "sku": "357140248",
@@ -7936,7 +7555,7 @@
       "fuel_proxy": 3.0,
       "is_suv": false,
       "price": 4.56,
-      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为全量min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式",
+      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为过滤后集合(n=146)min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式；已排除短续航纯电(≤300km/微型代步)",
       "config_norm": 36.0,
       "space_norm": 0.0,
       "fuel_norm": 6.67,
@@ -7962,7 +7581,7 @@
       "sources": [],
       "found": false
     },
-    "rank": 123
+    "rank": 116
   },
   {
     "sku": "357250766",
@@ -8000,7 +7619,7 @@
       "fuel_proxy": 3.0,
       "is_suv": false,
       "price": 4.79,
-      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为全量min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式",
+      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为过滤后集合(n=146)min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式；已排除短续航纯电(≤300km/微型代步)",
       "config_norm": 36.88,
       "space_norm": 0.0,
       "fuel_norm": 6.67,
@@ -8026,7 +7645,7 @@
       "sources": [],
       "found": false
     },
-    "rank": 124
+    "rank": 117
   },
   {
     "sku": "357298372",
@@ -8064,7 +7683,7 @@
       "fuel_proxy": 3.75,
       "is_suv": false,
       "price": 5.39,
-      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为全量min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式",
+      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为过滤后集合(n=146)min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式；已排除短续航纯电(≤300km/微型代步)",
       "config_norm": 35.25,
       "space_norm": 0.0,
       "fuel_norm": 16.67,
@@ -8090,7 +7709,7 @@
       "sources": [],
       "found": false
     },
-    "rank": 125
+    "rank": 118
   },
   {
     "sku": "357160656",
@@ -8126,7 +7745,7 @@
       "fuel_proxy": 3.5,
       "is_suv": false,
       "price": 5.39,
-      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为全量min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式",
+      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为过滤后集合(n=146)min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式；已排除短续航纯电(≤300km/微型代步)",
       "config_norm": 36.95,
       "space_norm": 0.0,
       "fuel_norm": 13.33,
@@ -8152,7 +7771,7 @@
       "sources": [],
       "found": false
     },
-    "rank": 126
+    "rank": 119
   },
   {
     "sku": "357143231",
@@ -8190,7 +7809,7 @@
       "fuel_proxy": 3.0,
       "is_suv": false,
       "price": 4.69,
-      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为全量min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式",
+      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为过滤后集合(n=146)min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式；已排除短续航纯电(≤300km/微型代步)",
       "config_norm": 35.32,
       "space_norm": 0.0,
       "fuel_norm": 6.67,
@@ -8216,69 +7835,7 @@
       "sources": [],
       "found": false
     },
-    "rank": 127
-  },
-  {
-    "sku": "357160039",
-    "title": "五菱Air ev晴空 2022款 四座 进阶版",
-    "price": 3.99,
-    "price_type": "标价",
-    "prefix": "标价",
-    "extra": "限时物流补贴",
-    "extras": [
-      "限时物流补贴"
-    ],
-    "year": "2022年 / 0.44万公里 / 武汉",
-    "plate_year": 2022,
-    "model_year": 2022,
-    "mileage_wan": 0.44,
-    "city": "武汉",
-    "tags": [
-      "放心检9.3分",
-      "内饰如新"
-    ],
-    "badges": [
-      "官方保",
-      "直营"
-    ],
-    "cover": "https://p3-dcd-sign.byteimg.com/tos-cn-i-f042mdwyw7/74ec90d45a0441f8b1fdd7e7c50a5aec~tplv-f042mdwyw7-original:800:0.image?lk3s=416a877a&x-expires=1796200601&x-signature=xjfJeCiZQIUYa9iSumtxd4XAJio%3D&psm=motor.sophon.product",
-    "detail_url": "https://m.dcdapp.com/motor/feoffline/usedcar_detail/detail.html?sku_id=357160039&shop_id=118608",
-    "shop_id": "118608",
-    "image_file": "/workspace/dongchedi-wuhan-shop/images/357160039.jpg",
-    "banner": "",
-    "sort_scores": {
-      "config_proxy": 6.55,
-      "space_proxy": 2.0,
-      "fuel_proxy": 3.0,
-      "is_suv": false,
-      "price": 3.99,
-      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为全量min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式",
-      "config_norm": 29.49,
-      "space_norm": 0.0,
-      "fuel_norm": 6.67,
-      "price_score": 33.5,
-      "suv_score": 0.0,
-      "total_score": 16.7,
-      "weights": {
-        "config": 0.35,
-        "space": 0.25,
-        "fuel": 0.2,
-        "price": 0.15,
-        "suv": 0.05
-      }
-    },
-    "brand": "五菱",
-    "manufacturer": "上汽通用五菱",
-    "manufacturer_inferred": false,
-    "total_score": 16.7,
-    "evaluation": "配置代理分一般；空间偏家用轿车级；油耗代理偏低（较大排量燃油）；里程低。",
-    "series": "五菱Air ev晴空",
-    "owner_reviews": {
-      "summary": "短名单外未逐车检索口碑",
-      "sources": [],
-      "found": false
-    },
-    "rank": 128
+    "rank": 120
   },
   {
     "sku": "356670871",
@@ -8314,7 +7871,7 @@
       "fuel_proxy": 3.0,
       "is_suv": false,
       "price": 3.19,
-      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为全量min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式",
+      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为过滤后集合(n=146)min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式；已排除短续航纯电(≤300km/微型代步)",
       "config_norm": 23.39,
       "space_norm": 0.0,
       "fuel_norm": 6.67,
@@ -8340,7 +7897,7 @@
       "sources": [],
       "found": false
     },
-    "rank": 129
+    "rank": 121
   },
   {
     "sku": "357001086",
@@ -8376,7 +7933,7 @@
       "fuel_proxy": 3.0,
       "is_suv": false,
       "price": 1.79,
-      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为全量min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式",
+      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为过滤后集合(n=146)min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式；已排除短续航纯电(≤300km/微型代步)",
       "config_norm": 11.93,
       "space_norm": 0.0,
       "fuel_norm": 6.67,
@@ -8402,7 +7959,7 @@
       "sources": [],
       "found": false
     },
-    "rank": 130
+    "rank": 122
   },
   {
     "sku": "357172812",
@@ -8439,7 +7996,7 @@
       "fuel_proxy": 3.0,
       "is_suv": false,
       "price": 4.09,
-      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为全量min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式",
+      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为过滤后集合(n=146)min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式；已排除短续航纯电(≤300km/微型代步)",
       "config_norm": 27.8,
       "space_norm": 0.0,
       "fuel_norm": 6.67,
@@ -8465,7 +8022,7 @@
       "sources": [],
       "found": false
     },
-    "rank": 131
+    "rank": 123
   },
   {
     "sku": "357158863",
@@ -8502,7 +8059,7 @@
       "fuel_proxy": 3.0,
       "is_suv": false,
       "price": 2.49,
-      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为全量min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式",
+      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为过滤后集合(n=146)min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式；已排除短续航纯电(≤300km/微型代步)",
       "config_norm": 15.46,
       "space_norm": 0.0,
       "fuel_norm": 6.67,
@@ -8528,7 +8085,7 @@
       "sources": [],
       "found": false
     },
-    "rank": 132
+    "rank": 124
   },
   {
     "sku": "356796725",
@@ -8564,7 +8121,7 @@
       "fuel_proxy": 3.0,
       "is_suv": false,
       "price": 3.19,
-      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为全量min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式",
+      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为过滤后集合(n=146)min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式；已排除短续航纯电(≤300km/微型代步)",
       "config_norm": 19.59,
       "space_norm": 0.0,
       "fuel_norm": 6.67,
@@ -8590,7 +8147,7 @@
       "sources": [],
       "found": false
     },
-    "rank": 133
+    "rank": 125
   },
   {
     "sku": "357320599",
@@ -8627,7 +8184,7 @@
       "fuel_proxy": 3.0,
       "is_suv": false,
       "price": 3.49,
-      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为全量min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式",
+      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为过滤后集合(n=146)min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式；已排除短续航纯电(≤300km/微型代步)",
       "config_norm": 19.32,
       "space_norm": 0.0,
       "fuel_norm": 6.67,
@@ -8653,7 +8210,7 @@
       "sources": [],
       "found": false
     },
-    "rank": 134
+    "rank": 126
   },
   {
     "sku": "357205109",
@@ -8690,7 +8247,7 @@
       "fuel_proxy": 3.0,
       "is_suv": false,
       "price": 5.49,
-      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为全量min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式",
+      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为过滤后集合(n=146)min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式；已排除短续航纯电(≤300km/微型代步)",
       "config_norm": 32.27,
       "space_norm": 0.0,
       "fuel_norm": 6.67,
@@ -8716,7 +8273,7 @@
       "sources": [],
       "found": false
     },
-    "rank": 135
+    "rank": 127
   },
   {
     "sku": "357015257",
@@ -8752,7 +8309,7 @@
       "fuel_proxy": 3.0,
       "is_suv": false,
       "price": 5.39,
-      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为全量min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式",
+      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为过滤后集合(n=146)min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式；已排除短续航纯电(≤300km/微型代步)",
       "config_norm": 29.97,
       "space_norm": 0.0,
       "fuel_norm": 6.67,
@@ -8778,7 +8335,7 @@
       "sources": [],
       "found": false
     },
-    "rank": 136
+    "rank": 128
   },
   {
     "sku": "357166246",
@@ -8814,7 +8371,7 @@
       "fuel_proxy": 4.0,
       "is_suv": false,
       "price": 4.39,
-      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为全量min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式",
+      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为过滤后集合(n=146)min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式；已排除短续航纯电(≤300km/微型代步)",
       "config_norm": 13.76,
       "space_norm": 0.0,
       "fuel_norm": 20.0,
@@ -8840,7 +8397,7 @@
       "sources": [],
       "found": false
     },
-    "rank": 137
+    "rank": 129
   },
   {
     "sku": "357098152",
@@ -8877,7 +8434,7 @@
       "fuel_proxy": 3.0,
       "is_suv": false,
       "price": 5.59,
-      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为全量min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式",
+      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为过滤后集合(n=146)min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式；已排除短续航纯电(≤300km/微型代步)",
       "config_norm": 29.02,
       "space_norm": 0.0,
       "fuel_norm": 6.67,
@@ -8903,7 +8460,7 @@
       "sources": [],
       "found": false
     },
-    "rank": 138
+    "rank": 130
   },
   {
     "sku": "357265571",
@@ -8939,7 +8496,7 @@
       "fuel_proxy": 4.0,
       "is_suv": false,
       "price": 4.49,
-      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为全量min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式",
+      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为过滤后集合(n=146)min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式；已排除短续航纯电(≤300km/微型代步)",
       "config_norm": 13.36,
       "space_norm": 0.0,
       "fuel_norm": 20.0,
@@ -8965,7 +8522,7 @@
       "sources": [],
       "found": false
     },
-    "rank": 139
+    "rank": 131
   },
   {
     "sku": "357355671",
@@ -9002,7 +8559,7 @@
       "fuel_proxy": 4.5,
       "is_suv": false,
       "price": 4.19,
-      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为全量min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式",
+      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为过滤后集合(n=146)min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式；已排除短续航纯电(≤300km/微型代步)",
       "config_norm": 7.46,
       "space_norm": 0.0,
       "fuel_norm": 26.67,
@@ -9028,7 +8585,7 @@
       "sources": [],
       "found": false
     },
-    "rank": 140
+    "rank": 132
   },
   {
     "sku": "357409941",
@@ -9066,7 +8623,7 @@
       "fuel_proxy": 3.0,
       "is_suv": false,
       "price": 3.29,
-      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为全量min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式",
+      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为过滤后集合(n=146)min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式；已排除短续航纯电(≤300km/微型代步)",
       "config_norm": 11.86,
       "space_norm": 0.0,
       "fuel_norm": 6.67,
@@ -9092,7 +8649,7 @@
       "sources": [],
       "found": false
     },
-    "rank": 141
+    "rank": 133
   },
   {
     "sku": "357088396",
@@ -9128,7 +8685,7 @@
       "fuel_proxy": 3.0,
       "is_suv": false,
       "price": 4.29,
-      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为全量min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式",
+      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为过滤后集合(n=146)min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式；已排除短续航纯电(≤300km/微型代步)",
       "config_norm": 18.92,
       "space_norm": 0.0,
       "fuel_norm": 6.67,
@@ -9154,7 +8711,7 @@
       "sources": [],
       "found": false
     },
-    "rank": 142
+    "rank": 134
   },
   {
     "sku": "357307243",
@@ -9192,7 +8749,7 @@
       "fuel_proxy": 3.0,
       "is_suv": false,
       "price": 2.79,
-      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为全量min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式",
+      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为过滤后集合(n=146)min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式；已排除短续航纯电(≤300km/微型代步)",
       "config_norm": 8.14,
       "space_norm": 0.0,
       "fuel_norm": 6.67,
@@ -9218,7 +8775,7 @@
       "sources": [],
       "found": false
     },
-    "rank": 143
+    "rank": 135
   },
   {
     "sku": "357228147",
@@ -9255,7 +8812,7 @@
       "fuel_proxy": 3.0,
       "is_suv": false,
       "price": 5.49,
-      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为全量min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式",
+      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为过滤后集合(n=146)min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式；已排除短续航纯电(≤300km/微型代步)",
       "config_norm": 26.44,
       "space_norm": 0.0,
       "fuel_norm": 6.67,
@@ -9281,7 +8838,7 @@
       "sources": [],
       "found": false
     },
-    "rank": 144
+    "rank": 136
   },
   {
     "sku": "357152531",
@@ -9318,7 +8875,7 @@
       "fuel_proxy": 3.0,
       "is_suv": false,
       "price": 5.69,
-      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为全量min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式",
+      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为过滤后集合(n=146)min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式；已排除短续航纯电(≤300km/微型代步)",
       "config_norm": 27.12,
       "space_norm": 0.0,
       "fuel_norm": 6.67,
@@ -9344,7 +8901,7 @@
       "sources": [],
       "found": false
     },
-    "rank": 145
+    "rank": 137
   },
   {
     "sku": "357221753",
@@ -9381,7 +8938,7 @@
       "fuel_proxy": 4.0,
       "is_suv": false,
       "price": 5.19,
-      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为全量min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式",
+      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为过滤后集合(n=146)min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式；已排除短续航纯电(≤300km/微型代步)",
       "config_norm": 15.05,
       "space_norm": 0.0,
       "fuel_norm": 20.0,
@@ -9407,7 +8964,7 @@
       "sources": [],
       "found": false
     },
-    "rank": 146
+    "rank": 138
   },
   {
     "sku": "357410184",
@@ -9446,7 +9003,7 @@
       "fuel_proxy": 4.8,
       "is_suv": false,
       "price": 4.29,
-      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为全量min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式",
+      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为过滤后集合(n=146)min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式；已排除短续航纯电(≤300km/微型代步)",
       "config_norm": 2.37,
       "space_norm": 0.0,
       "fuel_norm": 30.67,
@@ -9472,7 +9029,7 @@
       "sources": [],
       "found": false
     },
-    "rank": 147
+    "rank": 139
   },
   {
     "sku": "357296089",
@@ -9508,7 +9065,7 @@
       "fuel_proxy": 3.0,
       "is_suv": false,
       "price": 5.29,
-      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为全量min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式",
+      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为过滤后集合(n=146)min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式；已排除短续航纯电(≤300km/微型代步)",
       "config_norm": 21.36,
       "space_norm": 0.0,
       "fuel_norm": 6.67,
@@ -9534,7 +9091,7 @@
       "sources": [],
       "found": false
     },
-    "rank": 148
+    "rank": 140
   },
   {
     "sku": "357350759",
@@ -9572,7 +9129,7 @@
       "fuel_proxy": 3.0,
       "is_suv": false,
       "price": 4.79,
-      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为全量min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式",
+      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为过滤后集合(n=146)min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式；已排除短续航纯电(≤300km/微型代步)",
       "config_norm": 15.59,
       "space_norm": 0.0,
       "fuel_norm": 6.67,
@@ -9598,7 +9155,7 @@
       "sources": [],
       "found": false
     },
-    "rank": 149
+    "rank": 141
   },
   {
     "sku": "357350550",
@@ -9636,7 +9193,7 @@
       "fuel_proxy": 3.0,
       "is_suv": false,
       "price": 5.29,
-      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为全量min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式",
+      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为过滤后集合(n=146)min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式；已排除短续航纯电(≤300km/微型代步)",
       "config_norm": 15.93,
       "space_norm": 0.0,
       "fuel_norm": 6.67,
@@ -9662,7 +9219,7 @@
       "sources": [],
       "found": false
     },
-    "rank": 150
+    "rank": 142
   },
   {
     "sku": "356881737",
@@ -9699,7 +9256,7 @@
       "fuel_proxy": 3.0,
       "is_suv": false,
       "price": 3.79,
-      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为全量min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式",
+      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为过滤后集合(n=146)min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式；已排除短续航纯电(≤300km/微型代步)",
       "config_norm": 4.81,
       "space_norm": 0.0,
       "fuel_norm": 6.67,
@@ -9725,7 +9282,7 @@
       "sources": [],
       "found": false
     },
-    "rank": 151
+    "rank": 143
   },
   {
     "sku": "357357693",
@@ -9765,7 +9322,7 @@
       "fuel_proxy": 4.0,
       "is_suv": false,
       "price": 5.99,
-      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为全量min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式",
+      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为过滤后集合(n=146)min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式；已排除短续航纯电(≤300km/微型代步)",
       "config_norm": 9.15,
       "space_norm": 0.0,
       "fuel_norm": 20.0,
@@ -9791,7 +9348,7 @@
       "sources": [],
       "found": false
     },
-    "rank": 152
+    "rank": 144
   },
   {
     "sku": "356587369",
@@ -9828,7 +9385,7 @@
       "fuel_proxy": 3.0,
       "is_suv": false,
       "price": 5.49,
-      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为全量min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式",
+      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为过滤后集合(n=146)min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式；已排除短续航纯电(≤300km/微型代步)",
       "config_norm": 11.32,
       "space_norm": 0.0,
       "fuel_norm": 6.67,
@@ -9854,7 +9411,7 @@
       "sources": [],
       "found": false
     },
-    "rank": 153
+    "rank": 145
   },
   {
     "sku": "357291441",
@@ -9889,7 +9446,7 @@
       "fuel_proxy": 3.0,
       "is_suv": false,
       "price": 4.99,
-      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为全量min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式",
+      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为过滤后集合(n=146)min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式；已排除短续航纯电(≤300km/微型代步)",
       "config_norm": 0.0,
       "space_norm": 0.0,
       "fuel_norm": 6.67,
@@ -9915,6 +9472,6 @@
       "sources": [],
       "found": false
     },
-    "rank": 154
+    "rank": 146
   }
 ]
