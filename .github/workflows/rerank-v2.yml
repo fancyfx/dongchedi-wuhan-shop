@@ -14,19 +14,16 @@ on:
       - "scripts/filters.py"
       - "scripts/tests/**"
       - ".github/workflows/rerank-v2.yml"
-  issues:
-    types: [opened]
 
 permissions:
   contents: write
 
 concurrency:
-  group: rerank-v2-main
+  group: rerank-v2-${{ github.ref }}
   cancel-in-progress: true
 
 jobs:
   rerank:
-    if: github.event_name != 'issues' || startsWith(github.event.issue.title, '[rerank]')
     name: Test, recalculate and publish ranking data
     runs-on: ubuntu-latest
     timeout-minutes: 10
