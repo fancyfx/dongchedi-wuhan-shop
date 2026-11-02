@@ -1,0 +1,100 @@
+name: Deploy dashboard to Vercel
+
+on:
+  workflow_dispatch:
+  workflow_run:
+    workflows:
+      - "Recalculate vehicle ranking"
+    types:
+      - completed
+
+permissions:
+  contents: read
+
+concurrency:
+  group: vercel-production-dashboard
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    name: Deploy production dashboard
+    if: >-
+      github.event_name == 'workflow_dispatch' ||
+      (github.event.workflow_run.conclusion == 'success' &&
+       github.event.workflow_run.head_branch == 'main')
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      VERCEL_ORG_ID: team_rxJFSxoFrSYXv0tDEnhDshzj
+      VERCEL_PROJECT_ID: prj_a8UysKfmYIDkBhmUH5oBmRSCC7qB
+      PRODUCTION_URL: https://dongchedi-wuhan-dashboard.vercel.app
+
+    steps:
+      - name: Checkout latest main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 1
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+          cache-dependency-path: dashboard/package-lock.json
+
+      - name: Verify deployment credentials
+        env:
+          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+        shell: bash
+        run: |
+          if [ -z "$VERCEL_TOKEN" ]; then
+            echo "::error::Repository secret VERCEL_TOKEN is not configured."
+            echo "Create a Vercel access token and save it as GitHub Actions secret VERCEL_TOKEN."
+            exit 1
+          fi
+
+      - name: Record deployment commit
+        shell: bash
+        run: |
+          echo "DEPLOY_SHA=$(git rev-parse HEAD)" >> "$GITHUB_ENV"
+          echo "Deploying commit: $(git rev-parse HEAD)"
+
+      - name: Pull Vercel production settings
+        env:
+          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+        run: npx --yes vercel@latest pull --yes --environment=production --token="$VERCEL_TOKEN"
+
+      - name: Build with Vercel
+        env:
+          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+        run: npx --yes vercel@latest build --prod --token="$VERCEL_TOKEN"
+
+      - name: Deploy prebuilt output to production
+        id: deploy
+        env:
+          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+        shell: bash
+        run: |
+          DEPLOY_URL=$(npx --yes vercel@latest deploy --prebuilt --prod --token="$VERCEL_TOKEN")
+          echo "url=$DEPLOY_URL" >> "$GITHUB_OUTPUT"
+          {
+            echo "### Vercel production deployment"
+            echo ""
+            echo "- Commit: \`$DEPLOY_SHA\`"
+            echo "- Deployment: $DEPLOY_URL"
+            echo "- Production alias: $PRODUCTION_URL"
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Verify production alias
+        shell: bash
+        run: |
+          for attempt in 1 2 3 4 5; do
+            if curl --fail --silent --show-error --location "$PRODUCTION_URL/" | grep -q "武汉店二手车看板"; then
+              echo "Production alias is serving the dashboard."
+              exit 0
+            fi
+            sleep 3
+          done
+          echo "::error::Production alias did not return the expected dashboard after deployment."
+          exit 1
