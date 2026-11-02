@@ -29,13 +29,14 @@
   "viewport": "390x844",
   "user_agent": "WeChat MicroMessenger iPhone (API + attempted page emulation; CDP UA override blocked)",
   "sort_preference": [
-    "config_high≈low_fuel",
+    "config_high",
     "space",
-    "suv",
-    "price_asc"
+    "low_fuel",
+    "price_asc",
+    "suv"
   ],
-  "notes": "列表接口默认 sort=0。shortlist 为过滤后按标价数字升序的最便宜30辆。封面签名 URL 会过期，以 images/{sku}.jpg 为准。",
+  "notes": "列表接口默认 sort=0。shortlist 为过滤后按新偏好排序的前30辆。封面签名 URL 会过期，以 images/{sku}.jpg 为准。排序：高配＞空间＞低油耗＞便宜＞SUV。",
   "sort_method": "heuristic_from_title_tags_until_detail_specs",
-  "ranked_at": "2026-11-02T16:41:59.691820+08:00",
+  "ranked_at": "2026-11-02T17:58:17.298923+08:00",
   "ranked_count": 154
 }
