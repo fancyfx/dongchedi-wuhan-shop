@@ -7,7 +7,7 @@
 - 数据：`data/` 快照；`images/` 封面短图；看板 `dashboard/`
 - 说明：H5 须微信 UA；页面「共 N 辆」可能含外店，入库以本店 sku 为准
 
-私有仓，供比价与晨检监控。
+公开仓，供比价与晨检监控；看板 https://dongchedi-wuhan-dashboard.vercel.app 。
 
 ## 评分（2026-11-02）
 
