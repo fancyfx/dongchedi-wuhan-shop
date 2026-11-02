@@ -15,7 +15,7 @@ on:
       - "scripts/rerank_composite.py"
       - "scripts/filters.py"
       - "scripts/tests/**"
-      - "dashboard/src/**"
+      - "dashboard/**"
       - ".github/workflows/rerank-v2.yml"
 
 permissions:
