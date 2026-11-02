@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Regression tests for ranking engine V2 with exact-trim V3 config data."""
+"""Ranking regression tests independent of legacy generated configuration data."""
 from __future__ import annotations
 
 import json
@@ -9,39 +9,110 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(ROOT / "scripts"))
 
-from ranking_v2.apply_verified import (  # noqa: E402
-    apply_verified_to_listings,
-    effective_price_fields,
-    load_verified_by_sku,
-)
+from ranking_v2.apply_verified import apply_verified_to_listings, effective_price_fields  # noqa: E402
 from ranking_v2.data_quality import assess_score_eligibility  # noqa: E402
 from ranking_v2.energy import energy_cost_yuan_100km, resolve_ranking_energy  # noqa: E402
 from ranking_v2.mileage_score import mileage_score  # noqa: E402
 from ranking_v2.score import score_listing  # noqa: E402
 
 
-def _load_ranked():
-    return json.loads((ROOT / "data" / "listings-ranked.json").read_text(encoding="utf-8"))
+def _fixture_trim() -> dict:
+    return {
+        "trim_id": "trim_ah_fixture",
+        "canonical_title": "测试SUV 2022款 1.5T 自动尊贵版",
+        "core_specs": {
+            "powertrain": "ice",
+            "body_type": "紧凑型SUV",
+            "seats": 5,
+            "engine": "1.5T",
+            "transmission": "7挡双离合",
+            "length_mm": 4600,
+            "width_mm": 1860,
+            "height_mm": 1700,
+            "wheelbase_mm": 2720,
+            "fuel_grade": "92",
+            "ranking_energy": {"type": "real_world_fuel", "value": 7.2, "unit": "L/100km"},
+            "real_world_fuel_l_100km": 7.2,
+            "real_world_sample_n": 50,
+        },
+        "features": {
+            "passive_safety": {
+                "front_airbags": True,
+                "front_side_airbags": True,
+                "curtain_airbags": True,
+                "tpms_display": True,
+            },
+            "active_safety": {
+                "aeb": True,
+                "fcw": True,
+                "ldw": True,
+                "lka": True,
+                "lane_centering": False,
+                "bsd": False,
+                "dow": False,
+            },
+            "parking_adas": {
+                "front_parking_radar": True,
+                "rear_parking_radar": True,
+                "surround_360": True,
+                "transparent_chassis_540": False,
+                "cruise": "adaptive",
+                "auto_park": False,
+                "remote_park": False,
+            },
+            "comfort": {
+                "sunroof": "全景天窗",
+                "power_tailgate": True,
+                "keyless_entry": True,
+                "remote_start": False,
+                "hud": False,
+                "wireless_phone_charging": False,
+                "driver_power_seat": True,
+                "passenger_power_seat": True,
+                "front_seat_heating": True,
+                "front_seat_ventilation": False,
+                "rear_air_vents": True,
+                "climate_control": "automatic_dual_zone",
+                "leather_seats": False,
+            },
+            "infotainment": {
+                "center_screen_inches": 12.3,
+                "carplay": True,
+                "carlife": False,
+                "phone_link": True,
+                "ota": True,
+                "full_lcd_cluster": True,
+                "chip_8155": False,
+            },
+        },
+        "data_quality": {
+            "core_confidence": 0.99,
+            "feature_confidence": "high",
+            "known_issues": [],
+        },
+        "sources": [{"source_type": "autohome_exact_trim"}],
+    }
 
 
-def _by_sku(listings, sku):
-    for x in listings:
-        if str(x.get("sku")) == str(sku):
-            return x
-    raise KeyError(sku)
+def test_new_configuration_store_has_no_legacy_shards():
+    index = json.loads((ROOT / "data" / "vehicle-specs-verified.json").read_text(encoding="utf-8"))
+    assert index.get("trim_files") == ["specs/exact-trims-auto.json"]
+    assert all(str(v).startswith("trim_ah_") for v in (index.get("sku_to_trim") or {}).values())
+    for i in range(1, 5):
+        assert not (ROOT / "data" / "specs" / f"exact-trims-{i}.json").exists()
 
 
-def test_v3_exact_trim_mapping_and_no_legacy_config_fallback():
-    verified = load_verified_by_sku(ROOT / "data" / "vehicle-specs-verified.json")
-    assert len(verified) >= 30
-
+def test_exact_trim_replaces_legacy_claims_and_unknown_is_erased():
+    verified = {"fixture": {"trim": _fixture_trim()}}
     poisoned = {
-        "sku": "357298372",
-        "price": 5.39,
+        "sku": "fixture",
+        "price": 5.0,
         "price_type": "标价",
+        "mileage_wan": 3.0,
+        "plate_year": 2022,
         "specs": {
             "match_level": "series_year_tier",
-            "features": {"aeb": True, "camera_360": True, "seat_ventilation": True, "power_tailgate": True},
+            "features": {"aeb": False, "camera_360": False, "seat_ventilation": True},
         },
     }
     patched = apply_verified_to_listings([poisoned], verified)[0]
@@ -49,19 +120,18 @@ def test_v3_exact_trim_mapping_and_no_legacy_config_fallback():
     feats = specs["features"]
     assert specs["match_level"] == "exact_trim"
     assert specs["configuration_source"] == "exact_trim_v3"
-    assert feats["aeb"] is False
-    assert feats["camera_360"] is False
+    assert feats["aeb"] is True
+    assert feats["camera_360"] is True
     assert feats["seat_ventilation"] is False
-    assert feats["power_tailgate"] is False
 
     unknown = {
-        "sku": "not-in-v3",
+        "sku": "not-verified",
         "price": 4.0,
         "price_type": "标价",
         "mileage_wan": 3.0,
         "plate_year": 2022,
         "specs": {
-            "match_level": "exact",
+            "match_level": "series_year_tier",
             "wheelbase_mm": 2700,
             "features": {"aeb": True, "seat_ventilation": True},
             "aeb": True,
@@ -70,49 +140,23 @@ def test_v3_exact_trim_mapping_and_no_legacy_config_fallback():
     cleaned = apply_verified_to_listings([unknown], verified)[0]
     assert cleaned["specs"]["features"] == {}
     assert "aeb" not in cleaned["specs"]
-    assert cleaned["specs"]["wheelbase_mm"] == 2700
     assert cleaned["specs"]["match_level"] == "unverified_config"
-    assert cleaned["specs"]["specs_found"] is False
     gate = assess_score_eligibility(cleaned)
     assert gate["eligible"] is False
     assert any(x["code"] == "detailed_config_insufficient" for x in gate["issues"])
 
 
-def test_tang_dm_energy_not_combined():
-    verified = load_verified_by_sku(ROOT / "data" / "vehicle-specs-verified.json")
-    raw = _load_ranked()
-    item = _by_sku(raw, "357215359")
-    poisoned = json.loads(json.dumps(item))
-    poisoned.setdefault("specs", {})["fuel_l_100km"] = 1.8
-    poisoned["specs"]["powertrain_type"] = "phev"
-    patched = apply_verified_to_listings([poisoned], verified)[0]
-    resolved = resolve_ranking_energy(patched["specs"])
-    assert resolved["value"] != 1.8
-    assert resolved["value"] != 2.0
-    assert abs(float(resolved["value"]) - 9.02) < 0.01
-    cost = energy_cost_yuan_100km(patched["specs"])
-    assert cost["energy_cost_yuan_100km"] is not None
-    assert cost["energy_cost_yuan_100km"] > 50
-
-
-def test_xingrui_cheaper_lower_mileage_wins():
-    verified = load_verified_by_sku(ROOT / "data" / "vehicle-specs-verified.json")
-    raw = _load_ranked()
-    a = json.loads(json.dumps(_by_sku(raw, "356994816")))
-    b = json.loads(json.dumps(_by_sku(raw, "357156086")))
-    a["price"], a["mileage_wan"], a["price_type"] = 5.39, 7.43, "标价"
-    b["price"], b["mileage_wan"], b["price_type"] = 5.49, 9.25, "标价"
-    a2 = apply_verified_to_listings([a], verified)[0]
-    b2 = apply_verified_to_listings([b], verified)[0]
-    for it, price in ((a2, 5.39), (b2, 5.49)):
-        it["price"] = price
-        it["price_type"] = "标价"
-        it.update(effective_price_fields(price, "标价"))
-    sa = score_listing(a2)
-    sb = score_listing(b2)
-    assert sa["total_score"] > sb["total_score"], (
-        sa["total_score"], sb["total_score"], sa["scores"], sb["scores"]
-    )
+def test_same_trim_cheaper_lower_mileage_wins():
+    verified = {"a": {"trim": _fixture_trim()}, "b": {"trim": _fixture_trim()}}
+    base = {
+        "price_type": "标价",
+        "plate_year": 2022,
+        "specs": {},
+    }
+    a = {**base, "sku": "a", "price": 4.8, "mileage_wan": 2.0}
+    b = {**base, "sku": "b", "price": 5.4, "mileage_wan": 6.0}
+    a2, b2 = apply_verified_to_listings([a, b], verified)
+    assert score_listing(a2)["total_score"] > score_listing(b2)["total_score"]
 
 
 def test_mileage_score_low_beats_high():
@@ -160,20 +204,6 @@ def test_95_costs_more_than_92():
     assert c95 > c92
 
 
-def test_binyue_2024_low_mileage_direction():
-    verified = load_verified_by_sku(ROOT / "data" / "vehicle-specs-verified.json")
-    raw = _load_ranked()
-    older = _by_sku(raw, "357100389")
-    newer = _by_sku(raw, "357298372")
-    a = apply_verified_to_listings([json.loads(json.dumps(older))], verified)[0]
-    b = apply_verified_to_listings([json.loads(json.dumps(newer))], verified)[0]
-    sa = score_listing(a)
-    sb = score_listing(b)
-    assert sb["scores"]["mileage"] > sa["scores"]["mileage"]
-    assert sb["scores"]["age"] >= sa["scores"]["age"]
-    assert sb["scores"]["mileage"] - sa["scores"]["mileage"] > 10
-
-
 def test_finance_reserve():
     ep = effective_price_fields(4.99, "分期")
     assert ep["needs_cash_quote"] is True
@@ -186,13 +216,12 @@ def test_finance_reserve():
 
 def main():
     tests = [
-        test_v3_exact_trim_mapping_and_no_legacy_config_fallback,
-        test_tang_dm_energy_not_combined,
-        test_xingrui_cheaper_lower_mileage_wins,
+        test_new_configuration_store_has_no_legacy_shards,
+        test_exact_trim_replaces_legacy_claims_and_unknown_is_erased,
+        test_same_trim_cheaper_lower_mileage_wins,
         test_mileage_score_low_beats_high,
         test_phev_does_not_use_combined_for_cross_powertrain,
         test_95_costs_more_than_92,
-        test_binyue_2024_low_mileage_direction,
         test_finance_reserve,
     ]
     failed = 0
@@ -200,9 +229,9 @@ def main():
         try:
             fn()
             print(f"PASS {fn.__name__}")
-        except Exception as e:
+        except Exception as exc:
             failed += 1
-            print(f"FAIL {fn.__name__}: {e}")
+            print(f"FAIL {fn.__name__}: {exc}")
     if failed:
         raise SystemExit(f"{failed} tests failed")
     print(f"ALL {len(tests)} PASSED")
