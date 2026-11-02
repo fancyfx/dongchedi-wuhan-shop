@@ -12,7 +12,9 @@
     "reference_year": 2026,
     "exclude_short_range_bev": true,
     "max_bev_range_km": 300,
-    "exclude_short_range_bev_desc": "排除续航≤300km 的纯电，以及无法解析续航的微型/城市代步纯电（宏光MINIEV/Lumin/熊猫/之光EV/Air ev 等）；插混/增程与续航>300 纯电保留"
+    "exclude_short_range_bev_desc": "排除续航≤300km 的纯电，以及无法解析续航的微型/城市代步纯电（宏光MINIEV/Lumin/熊猫/之光EV/Air ev 等）；插混/增程与续航>300 纯电保留",
+    "require_zhiying": true,
+    "require_zhiying_desc": "角标须含「直营」；非直营不入库、不进短名单与看板"
   },
   "price_filter": "<=6万",
   "mileage_filter": "<=10万公里",
@@ -32,7 +34,7 @@
   "viewport": "390x844",
   "user_agent": "WeChat MicroMessenger iPhone (API + attempted page emulation; CDP UA override blocked)",
   "sort_preference": "composite_total_score",
-  "notes": "列表接口默认 sort=0。shortlist 为过滤后按综合总得分排序的前30辆。封面签名 URL 会过期，以 images/{sku}.jpg 为准。综合总得分权重：高配40%＞空间25%＞油耗15%＞便宜15%＞SUV5%。配置分基于公开真实参配特征（非标题档位词）；主机厂商由标题映射；车主口碑含独立缺点(cons)专节，来自公开网页搜索（非详情页）。硬筛另排除短续航纯电（≤300km 或微型代步车系），后续不入库。",
+  "notes": "列表接口默认 sort=0。shortlist 为过滤后按综合总得分排序的前30辆。封面签名 URL 会过期，以 images/{sku}.jpg 为准。综合总得分权重：高配40%＞空间25%＞油耗15%＞便宜15%＞SUV5%。配置分基于公开真实参配特征（非标题档位词）；主机厂商由标题映射；车主口碑含独立缺点(cons)专节，来自公开网页搜索（非详情页）。硬筛另排除短续航纯电（≤300km 或微型代步车系），后续不入库；硬筛仅保留角标含「直营」的车源，非直营后续不入库。",
   "sort_method": "composite_total_score_real_specs",
   "ranked_at": "2026-11-02T18:47:14+08:00",
   "ranked_count": 146,
@@ -149,7 +151,7 @@
   "filtered_count": 146,
   "excluded_short_range_bev_count": 0,
   "excluded_short_range_bev": [],
-  "filter_pipeline": "shop_id=118608 → price≤6 → mileage≤10万km → age≤10年 → exclude_short_range_bev(max=300km / micro series); after=146 excluded=0",
+  "filter_pipeline": "shop_id=118608 → price≤6 → mileage≤10万km → age≤10年 → exclude_short_range_bev(max=300km / micro series); after=146 excluded=0→直营",
   "config_scoring": {
     "method": "real_specs",
     "forbidden": "title_tier_word_heuristic",
@@ -180,5 +182,6 @@
     "price": 0.15,
     "suv": 0.05
   },
-  "morning_check_note": "晨检入库沿用同一硬筛 + 综合分公式 config40/space25/fuel15/price15/suv5；配置分必须来自真实参配，短续航纯电不入库。"
+  "morning_check_note": "晨检入库沿用同一硬筛 + 综合分公式 config40/space25/fuel15/price15/suv5；配置分必须来自真实参配，短续航纯电不入库。",
+  "zhiying_filter": "仅直营（badges 含「直营」）"
 }

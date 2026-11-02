@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """Hard filters for Wuhan shop listings (shop_id=118608).
 
-叠加规则：价格≤6万、里程≤10万公里、车龄≤10年，以及排除短续航纯电。
-晨检/入库脚本应调用 is_short_range_bev / keep_listing，命中则不入库。
+叠加规则：价格≤6万、里程≤10万公里、车龄≤10年、角标须含「直营」，以及排除短续航纯电。
+晨检/入库脚本应调用 keep_listing；非直营或短续航纯电命中则不入库。
 """
 from __future__ import annotations
 
@@ -143,9 +143,31 @@ def is_short_range_bev(item: dict[str, Any] | str) -> bool:
     return short_range_bev_reason(item) is not None
 
 
+
+def badge_blob(item: dict[str, Any] | str) -> str:
+    if isinstance(item, str):
+        return item
+    return " ".join(str(b) for b in (item.get("badges") or []))
+
+
+def is_zhiying(item: dict[str, Any] | str) -> bool:
+    """角标/文案含「直营」才算直营车源。"""
+    return "直营" in badge_blob(item) or "直营" in _blob(item)
+
+
+def non_zhiying_reason(item: dict[str, Any] | str) -> str | None:
+    if is_zhiying(item):
+        return None
+    return "missing_zhiying_badge"
+
+
+
 def keep_listing(item: dict[str, Any]) -> bool:
-    """入库硬筛：短续航纯电不入库（其余价格/里程/车龄由抓取侧保证）。"""
+    """入库硬筛：须直营；短续航纯电不入库（其余价格/里程/车龄由抓取侧保证）。"""
+    if non_zhiying_reason(item):
+        return False
     return not is_short_range_bev(item)
+
 
 
 def filter_listings(
@@ -154,7 +176,7 @@ def filter_listings(
     kept: list[dict[str, Any]] = []
     excluded: list[dict[str, Any]] = []
     for item in listings:
-        reason = short_range_bev_reason(item)
+        reason = non_zhiying_reason(item) or short_range_bev_reason(item)
         if reason:
             excluded.append(
                 {
@@ -162,6 +184,7 @@ def filter_listings(
                     "title": item.get("title"),
                     "price": item.get("price"),
                     "series": item.get("series"),
+                    "badges": item.get("badges"),
                     "reason": reason,
                     "parsed_range_km": parse_bev_range_km(item),
                 }
@@ -171,7 +194,10 @@ def filter_listings(
     return kept, excluded
 
 
+
 FILTER_META = {
+    "require_zhiying": True,
+    "require_zhiying_desc": "角标须含「直营」；非直营不入库、不进短名单与看板",
     "exclude_short_range_bev": True,
     "max_bev_range_km": MAX_BEV_RANGE_KM,
     "exclude_short_range_bev_desc": (
@@ -179,6 +205,7 @@ FILTER_META = {
         "（宏光MINIEV/Lumin/熊猫/之光EV/Air ev 等）；插混/增程与续航>300 纯电保留"
     ),
 }
+
 
 
 if __name__ == "__main__":
