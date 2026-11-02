@@ -15,20 +15,25 @@
         "height_mm": 1677,
         "wheelbase_mm": 2650,
         "fuel_grade": "92",
-        "official_fuel_l_100km": null,
-        "official_standard": null,
+        "official_fuel_l_100km": 6.7,
+        "official_standard": "NEDC",
         "low_soc_fuel_l_100km": null,
         "real_world_fuel_l_100km": null,
         "real_world_sample_n": null,
         "ev_range_km": null,
         "ev_range_standard": null,
         "electric_kwh_100km": null,
-        "ranking_energy": null
+        "ranking_energy": {
+          "type": "official_nedc_with_uncertainty",
+          "value": 6.7,
+          "unit": "L/100km",
+          "fallback_multiplier_recommended": 1.2
+        }
       },
       "features": {
         "passive_safety": {
           "front_airbags": true,
-          "front_side_airbags": null,
+          "front_side_airbags": false,
           "curtain_airbags": false,
           "tpms_display": null
         },
@@ -42,35 +47,36 @@
           "dow": null,
           "rear_collision_warning": null,
           "traffic_sign_recognition": null,
-          "fatigue_warning": false
+          "fatigue_warning": false,
+          "esp": false
         },
         "parking_adas": {
-          "front_parking_radar": null,
+          "front_parking_radar": false,
           "rear_parking_radar": true,
           "reverse_camera": null,
-          "surround_360": null,
+          "surround_360": false,
           "transparent_chassis_540": null,
-          "cruise": null,
+          "cruise": "none",
           "adas_level": null,
           "auto_park": false,
           "remote_park": null
         },
         "comfort": {
-          "sunroof": null,
+          "sunroof": "none",
           "power_tailgate": false,
           "hands_free_tailgate": false,
-          "keyless_entry": null,
+          "keyless_entry": false,
           "keyless_start": false,
-          "remote_start": null,
+          "remote_start": false,
           "hud": false,
           "wireless_phone_charging": false,
-          "driver_power_seat": null,
+          "driver_power_seat": false,
           "passenger_power_seat": false,
-          "front_seat_heating": null,
-          "front_seat_ventilation": null,
+          "front_seat_heating": false,
+          "front_seat_ventilation": false,
           "rear_air_vents": false,
-          "climate_control": null,
-          "leather_seats": null
+          "climate_control": "manual",
+          "leather_seats": false
         },
         "infotainment": {
           "center_screen_inches": null,
@@ -83,7 +89,8 @@
           "branded_audio": "-",
           "voice_control": null,
           "full_lcd_cluster": false,
-          "chip_8155": null
+          "chip_8155": null,
+          "phone_link": false
         },
         "lighting": {
           "headlights": null,
@@ -98,12 +105,10 @@
       },
       "data_quality": {
         "core_confidence": 0.99,
-        "feature_confidence": "medium",
-        "verified_non_null_feature_leaf_count": 20,
+        "feature_confidence": "high",
+        "verified_non_null_feature_leaf_count": 30,
         "scoring_rule": "Only exact-trim standard features may score. null/optional features score 0.",
-        "known_issues": [
-          "汽车之家该车型可核验配置字段较少"
-        ],
+        "known_issues": [],
         "identity_source": "autohome_exact_trim",
         "series_match": 1.0,
         "trim_match": 1.0,
@@ -141,20 +146,25 @@
         "height_mm": 1467,
         "wheelbase_mm": 2600,
         "fuel_grade": "92",
-        "official_fuel_l_100km": null,
-        "official_standard": null,
+        "official_fuel_l_100km": 5.8,
+        "official_standard": "NEDC",
         "low_soc_fuel_l_100km": null,
         "real_world_fuel_l_100km": null,
         "real_world_sample_n": null,
         "ev_range_km": null,
         "ev_range_standard": null,
         "electric_kwh_100km": null,
-        "ranking_energy": null
+        "ranking_energy": {
+          "type": "official_nedc_with_uncertainty",
+          "value": 5.8,
+          "unit": "L/100km",
+          "fallback_multiplier_recommended": 1.2
+        }
       },
       "features": {
         "passive_safety": {
           "front_airbags": true,
-          "front_side_airbags": null,
+          "front_side_airbags": false,
           "curtain_airbags": false,
           "tpms_display": null
         },
@@ -168,38 +178,39 @@
           "dow": null,
           "rear_collision_warning": null,
           "traffic_sign_recognition": null,
-          "fatigue_warning": false
+          "fatigue_warning": false,
+          "esp": true
         },
         "parking_adas": {
-          "front_parking_radar": null,
+          "front_parking_radar": false,
           "rear_parking_radar": false,
           "reverse_camera": null,
-          "surround_360": null,
+          "surround_360": false,
           "transparent_chassis_540": null,
-          "cruise": null,
+          "cruise": "none",
           "adas_level": null,
           "auto_park": false,
           "remote_park": null
         },
         "comfort": {
-          "sunroof": null,
+          "sunroof": "single_openable",
           "power_tailgate": false,
           "hands_free_tailgate": false,
-          "keyless_entry": null,
+          "keyless_entry": false,
           "keyless_start": false,
-          "remote_start": null,
+          "remote_start": false,
           "hud": false,
           "wireless_phone_charging": false,
-          "driver_power_seat": null,
+          "driver_power_seat": false,
           "passenger_power_seat": false,
-          "front_seat_heating": null,
-          "front_seat_ventilation": null,
+          "front_seat_heating": false,
+          "front_seat_ventilation": false,
           "rear_air_vents": false,
-          "climate_control": null,
+          "climate_control": "manual",
           "leather_seats": null
         },
         "infotainment": {
-          "center_screen_inches": null,
+          "center_screen_inches": 7.0,
           "instrument_screen_inches": null,
           "carplay": null,
           "carlife": null,
@@ -209,7 +220,8 @@
           "branded_audio": "-",
           "voice_control": null,
           "full_lcd_cluster": false,
-          "chip_8155": null
+          "chip_8155": null,
+          "phone_link": null
         },
         "lighting": {
           "headlights": null,
@@ -224,12 +236,10 @@
       },
       "data_quality": {
         "core_confidence": 0.99,
-        "feature_confidence": "medium",
-        "verified_non_null_feature_leaf_count": 20,
+        "feature_confidence": "high",
+        "verified_non_null_feature_leaf_count": 31,
         "scoring_rule": "Only exact-trim standard features may score. null/optional features score 0.",
-        "known_issues": [
-          "汽车之家该车型可核验配置字段较少"
-        ],
+        "known_issues": [],
         "identity_source": "autohome_exact_trim",
         "series_match": 1.0,
         "trim_match": 1.0,
@@ -267,20 +277,25 @@
         "height_mm": 1573,
         "wheelbase_mm": 2700,
         "fuel_grade": "92",
-        "official_fuel_l_100km": null,
-        "official_standard": null,
+        "official_fuel_l_100km": 5.9,
+        "official_standard": "NEDC",
         "low_soc_fuel_l_100km": null,
         "real_world_fuel_l_100km": null,
         "real_world_sample_n": null,
         "ev_range_km": null,
         "ev_range_standard": null,
         "electric_kwh_100km": null,
-        "ranking_energy": null
+        "ranking_energy": {
+          "type": "official_nedc_with_uncertainty",
+          "value": 5.9,
+          "unit": "L/100km",
+          "fallback_multiplier_recommended": 1.2
+        }
       },
       "features": {
         "passive_safety": {
           "front_airbags": true,
-          "front_side_airbags": null,
+          "front_side_airbags": true,
           "curtain_airbags": false,
           "tpms_display": null
         },
@@ -294,38 +309,39 @@
           "dow": null,
           "rear_collision_warning": null,
           "traffic_sign_recognition": null,
-          "fatigue_warning": false
+          "fatigue_warning": false,
+          "esp": true
         },
         "parking_adas": {
-          "front_parking_radar": null,
+          "front_parking_radar": false,
           "rear_parking_radar": true,
           "reverse_camera": null,
-          "surround_360": null,
+          "surround_360": false,
           "transparent_chassis_540": null,
-          "cruise": null,
+          "cruise": "fixed",
           "adas_level": null,
           "auto_park": false,
           "remote_park": null
         },
         "comfort": {
-          "sunroof": null,
+          "sunroof": "panoramic",
           "power_tailgate": false,
           "hands_free_tailgate": false,
-          "keyless_entry": null,
+          "keyless_entry": true,
           "keyless_start": true,
-          "remote_start": null,
+          "remote_start": false,
           "hud": false,
           "wireless_phone_charging": false,
-          "driver_power_seat": null,
+          "driver_power_seat": false,
           "passenger_power_seat": false,
-          "front_seat_heating": null,
-          "front_seat_ventilation": null,
+          "front_seat_heating": false,
+          "front_seat_ventilation": false,
           "rear_air_vents": false,
-          "climate_control": null,
+          "climate_control": "automatic",
           "leather_seats": null
         },
         "infotainment": {
-          "center_screen_inches": null,
+          "center_screen_inches": 8.0,
           "instrument_screen_inches": null,
           "carplay": null,
           "carlife": null,
@@ -335,7 +351,8 @@
           "branded_audio": "-",
           "voice_control": null,
           "full_lcd_cluster": false,
-          "chip_8155": null
+          "chip_8155": null,
+          "phone_link": true
         },
         "lighting": {
           "headlights": null,
@@ -350,12 +367,10 @@
       },
       "data_quality": {
         "core_confidence": 0.99,
-        "feature_confidence": "medium",
-        "verified_non_null_feature_leaf_count": 20,
+        "feature_confidence": "high",
+        "verified_non_null_feature_leaf_count": 32,
         "scoring_rule": "Only exact-trim standard features may score. null/optional features score 0.",
-        "known_issues": [
-          "汽车之家该车型可核验配置字段较少"
-        ],
+        "known_issues": [],
         "identity_source": "autohome_exact_trim",
         "series_match": 1.0,
         "trim_match": 1.0,
@@ -393,20 +408,25 @@
         "height_mm": 1573,
         "wheelbase_mm": 2700,
         "fuel_grade": "92",
-        "official_fuel_l_100km": null,
-        "official_standard": null,
+        "official_fuel_l_100km": 5.9,
+        "official_standard": "NEDC",
         "low_soc_fuel_l_100km": null,
         "real_world_fuel_l_100km": null,
         "real_world_sample_n": null,
         "ev_range_km": null,
         "ev_range_standard": null,
         "electric_kwh_100km": null,
-        "ranking_energy": null
+        "ranking_energy": {
+          "type": "official_nedc_with_uncertainty",
+          "value": 5.9,
+          "unit": "L/100km",
+          "fallback_multiplier_recommended": 1.2
+        }
       },
       "features": {
         "passive_safety": {
           "front_airbags": true,
-          "front_side_airbags": null,
+          "front_side_airbags": true,
           "curtain_airbags": true,
           "tpms_display": null
         },
@@ -420,38 +440,39 @@
           "dow": null,
           "rear_collision_warning": null,
           "traffic_sign_recognition": null,
-          "fatigue_warning": false
+          "fatigue_warning": false,
+          "esp": true
         },
         "parking_adas": {
-          "front_parking_radar": null,
+          "front_parking_radar": false,
           "rear_parking_radar": true,
           "reverse_camera": null,
-          "surround_360": null,
+          "surround_360": false,
           "transparent_chassis_540": null,
-          "cruise": null,
+          "cruise": "adaptive",
           "adas_level": null,
           "auto_park": false,
           "remote_park": null
         },
         "comfort": {
-          "sunroof": null,
+          "sunroof": "panoramic",
           "power_tailgate": false,
           "hands_free_tailgate": false,
-          "keyless_entry": null,
+          "keyless_entry": true,
           "keyless_start": true,
-          "remote_start": null,
+          "remote_start": false,
           "hud": false,
           "wireless_phone_charging": false,
-          "driver_power_seat": null,
+          "driver_power_seat": true,
           "passenger_power_seat": true,
-          "front_seat_heating": null,
-          "front_seat_ventilation": null,
+          "front_seat_heating": true,
+          "front_seat_ventilation": false,
           "rear_air_vents": false,
-          "climate_control": null,
+          "climate_control": "automatic",
           "leather_seats": null
         },
         "infotainment": {
-          "center_screen_inches": null,
+          "center_screen_inches": 8.0,
           "instrument_screen_inches": null,
           "carplay": null,
           "carlife": null,
@@ -461,7 +482,8 @@
           "branded_audio": "-",
           "voice_control": null,
           "full_lcd_cluster": false,
-          "chip_8155": null
+          "chip_8155": null,
+          "phone_link": true
         },
         "lighting": {
           "headlights": null,
@@ -476,12 +498,10 @@
       },
       "data_quality": {
         "core_confidence": 0.99,
-        "feature_confidence": "medium",
-        "verified_non_null_feature_leaf_count": 20,
+        "feature_confidence": "high",
+        "verified_non_null_feature_leaf_count": 32,
         "scoring_rule": "Only exact-trim standard features may score. null/optional features score 0.",
-        "known_issues": [
-          "汽车之家该车型可核验配置字段较少"
-        ],
+        "known_issues": [],
         "identity_source": "autohome_exact_trim",
         "series_match": 1.0,
         "trim_match": 1.0,
@@ -537,7 +557,7 @@
       "features": {
         "passive_safety": {
           "front_airbags": true,
-          "front_side_airbags": null,
+          "front_side_airbags": true,
           "curtain_airbags": false,
           "tpms_display": null
         },
@@ -551,10 +571,11 @@
           "dow": null,
           "rear_collision_warning": null,
           "traffic_sign_recognition": false,
-          "fatigue_warning": false
+          "fatigue_warning": false,
+          "esp": true
         },
         "parking_adas": {
-          "front_parking_radar": null,
+          "front_parking_radar": false,
           "rear_parking_radar": true,
           "reverse_camera": null,
           "surround_360": null,
@@ -573,10 +594,10 @@
           "remote_start": null,
           "hud": false,
           "wireless_phone_charging": false,
-          "driver_power_seat": null,
+          "driver_power_seat": false,
           "passenger_power_seat": false,
-          "front_seat_heating": null,
-          "front_seat_ventilation": null,
+          "front_seat_heating": false,
+          "front_seat_ventilation": false,
           "rear_air_vents": true,
           "climate_control": null,
           "leather_seats": null
@@ -592,7 +613,8 @@
           "branded_audio": "-",
           "voice_control": null,
           "full_lcd_cluster": false,
-          "chip_8155": null
+          "chip_8155": null,
+          "phone_link": null
         },
         "lighting": {
           "headlights": null,
@@ -607,12 +629,10 @@
       },
       "data_quality": {
         "core_confidence": 0.99,
-        "feature_confidence": "medium",
-        "verified_non_null_feature_leaf_count": 23,
+        "feature_confidence": "high",
+        "verified_non_null_feature_leaf_count": 28,
         "scoring_rule": "Only exact-trim standard features may score. null/optional features score 0.",
-        "known_issues": [
-          "汽车之家该车型可核验配置字段较少"
-        ],
+        "known_issues": [],
         "identity_source": "autohome_exact_trim",
         "series_match": 1.0,
         "trim_match": 1.0,
@@ -668,7 +688,7 @@
       "features": {
         "passive_safety": {
           "front_airbags": true,
-          "front_side_airbags": null,
+          "front_side_airbags": true,
           "curtain_airbags": false,
           "tpms_display": null
         },
@@ -682,10 +702,11 @@
           "dow": null,
           "rear_collision_warning": null,
           "traffic_sign_recognition": false,
-          "fatigue_warning": false
+          "fatigue_warning": false,
+          "esp": true
         },
         "parking_adas": {
-          "front_parking_radar": null,
+          "front_parking_radar": false,
           "rear_parking_radar": true,
           "reverse_camera": null,
           "surround_360": null,
@@ -704,10 +725,10 @@
           "remote_start": false,
           "hud": false,
           "wireless_phone_charging": false,
-          "driver_power_seat": null,
+          "driver_power_seat": false,
           "passenger_power_seat": false,
-          "front_seat_heating": null,
-          "front_seat_ventilation": null,
+          "front_seat_heating": false,
+          "front_seat_ventilation": false,
           "rear_air_vents": false,
           "climate_control": null,
           "leather_seats": null
@@ -723,7 +744,8 @@
           "branded_audio": "-",
           "voice_control": false,
           "full_lcd_cluster": false,
-          "chip_8155": null
+          "chip_8155": null,
+          "phone_link": false
         },
         "lighting": {
           "headlights": null,
@@ -739,7 +761,7 @@
       "data_quality": {
         "core_confidence": 0.99,
         "feature_confidence": "high",
-        "verified_non_null_feature_leaf_count": 28,
+        "verified_non_null_feature_leaf_count": 33,
         "scoring_rule": "Only exact-trim standard features may score. null/optional features score 0.",
         "known_issues": [],
         "identity_source": "autohome_exact_trim",
@@ -765,132 +787,6 @@
       ],
       "trim_id": "trim_ah_8f113802a08f"
     },
-    "trim_ah_9a993417401b": {
-      "canonical_title": "英朗 2018款 15T 手动精英型",
-      "msrp_wan": 11.69,
-      "core_specs": {
-        "powertrain": "ice",
-        "body_type": "紧凑型车",
-        "seats": 5,
-        "engine": "●",
-        "transmission": "手动变速箱(MT)",
-        "length_mm": 4609,
-        "width_mm": 1798,
-        "height_mm": 1486,
-        "wheelbase_mm": 2640,
-        "fuel_grade": "92",
-        "official_fuel_l_100km": null,
-        "official_standard": null,
-        "low_soc_fuel_l_100km": null,
-        "real_world_fuel_l_100km": null,
-        "real_world_sample_n": null,
-        "ev_range_km": null,
-        "ev_range_standard": null,
-        "electric_kwh_100km": null,
-        "ranking_energy": null
-      },
-      "features": {
-        "passive_safety": {
-          "front_airbags": true,
-          "front_side_airbags": null,
-          "curtain_airbags": false,
-          "tpms_display": null
-        },
-        "active_safety": {
-          "aeb": false,
-          "fcw": null,
-          "ldw": false,
-          "lka": null,
-          "lane_centering": null,
-          "bsd": false,
-          "dow": null,
-          "rear_collision_warning": null,
-          "traffic_sign_recognition": null,
-          "fatigue_warning": false
-        },
-        "parking_adas": {
-          "front_parking_radar": null,
-          "rear_parking_radar": true,
-          "reverse_camera": null,
-          "surround_360": null,
-          "transparent_chassis_540": null,
-          "cruise": null,
-          "adas_level": null,
-          "auto_park": false,
-          "remote_park": null
-        },
-        "comfort": {
-          "sunroof": null,
-          "power_tailgate": false,
-          "hands_free_tailgate": false,
-          "keyless_entry": null,
-          "keyless_start": false,
-          "remote_start": null,
-          "hud": false,
-          "wireless_phone_charging": false,
-          "driver_power_seat": null,
-          "passenger_power_seat": false,
-          "front_seat_heating": null,
-          "front_seat_ventilation": null,
-          "rear_air_vents": true,
-          "climate_control": null,
-          "leather_seats": null
-        },
-        "infotainment": {
-          "center_screen_inches": null,
-          "instrument_screen_inches": null,
-          "carplay": null,
-          "carlife": null,
-          "connected_car": false,
-          "ota": null,
-          "speaker_count": null,
-          "branded_audio": "-",
-          "voice_control": null,
-          "full_lcd_cluster": false,
-          "chip_8155": null
-        },
-        "lighting": {
-          "headlights": null,
-          "auto_headlights": true,
-          "adaptive_high_beam": false
-        },
-        "wheels": {
-          "front_tire": "205/55 R16",
-          "rear_tire": "205/55 R16"
-        },
-        "optional_or_uncertain_features": []
-      },
-      "data_quality": {
-        "core_confidence": 0.93,
-        "feature_confidence": "medium",
-        "verified_non_null_feature_leaf_count": 20,
-        "scoring_rule": "Only exact-trim standard features may score. null/optional features score 0.",
-        "known_issues": [
-          "汽车之家该车型可核验配置字段较少"
-        ],
-        "identity_source": "autohome_exact_trim",
-        "series_match": 1.0,
-        "trim_match": 0.867,
-        "source_snapshot": "201902"
-      },
-      "sources": [
-        {
-          "url": "https://car.autohome.com.cn/config/spec/32188.html",
-          "source_type": "autohome_exact_trim",
-          "authority_tier": 2,
-          "series_id": 982,
-          "spec_id": 32188
-        },
-        {
-          "url": "https://github.com/swoiow/autohome",
-          "source_type": "autohome_parameter_dataset",
-          "authority_tier": 2,
-          "snapshot": "201902",
-          "source_path": "别克_英朗.csv"
-        }
-      ],
-      "trim_id": "trim_ah_9a993417401b"
-    },
     "trim_ah_25aa9701e3a0": {
       "canonical_title": "威驰FS 2017款 1.5L 手动锋驰版",
       "msrp_wan": 7.78,
@@ -905,20 +801,25 @@
         "height_mm": 1495,
         "wheelbase_mm": 2550,
         "fuel_grade": "92",
-        "official_fuel_l_100km": null,
-        "official_standard": null,
+        "official_fuel_l_100km": 5.4,
+        "official_standard": "NEDC",
         "low_soc_fuel_l_100km": null,
         "real_world_fuel_l_100km": null,
         "real_world_sample_n": null,
         "ev_range_km": null,
         "ev_range_standard": null,
         "electric_kwh_100km": null,
-        "ranking_energy": null
+        "ranking_energy": {
+          "type": "official_nedc_with_uncertainty",
+          "value": 5.4,
+          "unit": "L/100km",
+          "fallback_multiplier_recommended": 1.2
+        }
       },
       "features": {
         "passive_safety": {
           "front_airbags": true,
-          "front_side_airbags": null,
+          "front_side_airbags": false,
           "curtain_airbags": false,
           "tpms_display": null
         },
@@ -932,35 +833,36 @@
           "dow": null,
           "rear_collision_warning": null,
           "traffic_sign_recognition": null,
-          "fatigue_warning": false
+          "fatigue_warning": false,
+          "esp": true
         },
         "parking_adas": {
-          "front_parking_radar": null,
+          "front_parking_radar": false,
           "rear_parking_radar": false,
           "reverse_camera": null,
-          "surround_360": null,
+          "surround_360": false,
           "transparent_chassis_540": null,
-          "cruise": null,
+          "cruise": "none",
           "adas_level": null,
           "auto_park": false,
           "remote_park": null
         },
         "comfort": {
-          "sunroof": null,
+          "sunroof": "none",
           "power_tailgate": false,
           "hands_free_tailgate": false,
-          "keyless_entry": null,
+          "keyless_entry": false,
           "keyless_start": false,
-          "remote_start": null,
+          "remote_start": false,
           "hud": false,
           "wireless_phone_charging": false,
-          "driver_power_seat": null,
+          "driver_power_seat": false,
           "passenger_power_seat": false,
-          "front_seat_heating": null,
-          "front_seat_ventilation": null,
+          "front_seat_heating": false,
+          "front_seat_ventilation": false,
           "rear_air_vents": false,
-          "climate_control": null,
-          "leather_seats": null
+          "climate_control": "manual",
+          "leather_seats": false
         },
         "infotainment": {
           "center_screen_inches": null,
@@ -973,7 +875,8 @@
           "branded_audio": "-",
           "voice_control": null,
           "full_lcd_cluster": false,
-          "chip_8155": null
+          "chip_8155": null,
+          "phone_link": false
         },
         "lighting": {
           "headlights": null,
@@ -988,12 +891,10 @@
       },
       "data_quality": {
         "core_confidence": 0.99,
-        "feature_confidence": "medium",
-        "verified_non_null_feature_leaf_count": 21,
+        "feature_confidence": "high",
+        "verified_non_null_feature_leaf_count": 31,
         "scoring_rule": "Only exact-trim standard features may score. null/optional features score 0.",
-        "known_issues": [
-          "汽车之家该车型可核验配置字段较少"
-        ],
+        "known_issues": [],
         "identity_source": "autohome_exact_trim",
         "series_match": 1.0,
         "trim_match": 1.0,
@@ -1049,7 +950,7 @@
       "features": {
         "passive_safety": {
           "front_airbags": true,
-          "front_side_airbags": null,
+          "front_side_airbags": false,
           "curtain_airbags": false,
           "tpms_display": null
         },
@@ -1063,10 +964,11 @@
           "dow": null,
           "rear_collision_warning": null,
           "traffic_sign_recognition": false,
-          "fatigue_warning": false
+          "fatigue_warning": false,
+          "esp": null
         },
         "parking_adas": {
-          "front_parking_radar": null,
+          "front_parking_radar": false,
           "rear_parking_radar": false,
           "reverse_camera": null,
           "surround_360": null,
@@ -1085,10 +987,10 @@
           "remote_start": false,
           "hud": false,
           "wireless_phone_charging": false,
-          "driver_power_seat": null,
+          "driver_power_seat": false,
           "passenger_power_seat": false,
-          "front_seat_heating": null,
-          "front_seat_ventilation": null,
+          "front_seat_heating": false,
+          "front_seat_ventilation": false,
           "rear_air_vents": false,
           "climate_control": null,
           "leather_seats": null
@@ -1104,7 +1006,8 @@
           "branded_audio": "-",
           "voice_control": false,
           "full_lcd_cluster": false,
-          "chip_8155": null
+          "chip_8155": null,
+          "phone_link": null
         },
         "lighting": {
           "headlights": null,
@@ -1120,7 +1023,7 @@
       "data_quality": {
         "core_confidence": 0.99,
         "feature_confidence": "high",
-        "verified_non_null_feature_leaf_count": 27,
+        "verified_non_null_feature_leaf_count": 32,
         "scoring_rule": "Only exact-trim standard features may score. null/optional features score 0.",
         "known_issues": [],
         "identity_source": "autohome_exact_trim",
@@ -1160,20 +1063,25 @@
         "height_mm": 1573,
         "wheelbase_mm": 2700,
         "fuel_grade": "92",
-        "official_fuel_l_100km": null,
-        "official_standard": null,
+        "official_fuel_l_100km": 5.9,
+        "official_standard": "NEDC",
         "low_soc_fuel_l_100km": null,
         "real_world_fuel_l_100km": null,
         "real_world_sample_n": null,
         "ev_range_km": null,
         "ev_range_standard": null,
         "electric_kwh_100km": null,
-        "ranking_energy": null
+        "ranking_energy": {
+          "type": "official_nedc_with_uncertainty",
+          "value": 5.9,
+          "unit": "L/100km",
+          "fallback_multiplier_recommended": 1.2
+        }
       },
       "features": {
         "passive_safety": {
           "front_airbags": true,
-          "front_side_airbags": null,
+          "front_side_airbags": true,
           "curtain_airbags": false,
           "tpms_display": null
         },
@@ -1187,38 +1095,39 @@
           "dow": null,
           "rear_collision_warning": null,
           "traffic_sign_recognition": null,
-          "fatigue_warning": false
+          "fatigue_warning": false,
+          "esp": true
         },
         "parking_adas": {
-          "front_parking_radar": null,
+          "front_parking_radar": false,
           "rear_parking_radar": true,
           "reverse_camera": null,
-          "surround_360": null,
+          "surround_360": false,
           "transparent_chassis_540": null,
-          "cruise": null,
+          "cruise": "fixed",
           "adas_level": null,
           "auto_park": false,
           "remote_park": null
         },
         "comfort": {
-          "sunroof": null,
+          "sunroof": "single_openable",
           "power_tailgate": false,
           "hands_free_tailgate": false,
-          "keyless_entry": null,
+          "keyless_entry": true,
           "keyless_start": true,
-          "remote_start": null,
+          "remote_start": true,
           "hud": false,
           "wireless_phone_charging": false,
-          "driver_power_seat": null,
+          "driver_power_seat": false,
           "passenger_power_seat": false,
-          "front_seat_heating": null,
-          "front_seat_ventilation": null,
+          "front_seat_heating": false,
+          "front_seat_ventilation": false,
           "rear_air_vents": false,
           "climate_control": "automatic_dual_zone",
           "leather_seats": null
         },
         "infotainment": {
-          "center_screen_inches": null,
+          "center_screen_inches": 8.0,
           "instrument_screen_inches": null,
           "carplay": null,
           "carlife": null,
@@ -1228,7 +1137,8 @@
           "branded_audio": "-",
           "voice_control": null,
           "full_lcd_cluster": false,
-          "chip_8155": null
+          "chip_8155": null,
+          "phone_link": false
         },
         "lighting": {
           "headlights": null,
@@ -1243,12 +1153,10 @@
       },
       "data_quality": {
         "core_confidence": 0.963,
-        "feature_confidence": "medium",
-        "verified_non_null_feature_leaf_count": 21,
+        "feature_confidence": "high",
+        "verified_non_null_feature_leaf_count": 32,
         "scoring_rule": "Only exact-trim standard features may score. null/optional features score 0.",
-        "known_issues": [
-          "汽车之家该车型可核验配置字段较少"
-        ],
+        "known_issues": [],
         "identity_source": "autohome_exact_trim",
         "series_match": 1.0,
         "trim_match": 0.94,
@@ -1304,7 +1212,7 @@
       "features": {
         "passive_safety": {
           "front_airbags": true,
-          "front_side_airbags": null,
+          "front_side_airbags": true,
           "curtain_airbags": false,
           "tpms_display": null
         },
@@ -1318,10 +1226,11 @@
           "dow": null,
           "rear_collision_warning": null,
           "traffic_sign_recognition": false,
-          "fatigue_warning": false
+          "fatigue_warning": false,
+          "esp": true
         },
         "parking_adas": {
-          "front_parking_radar": null,
+          "front_parking_radar": false,
           "rear_parking_radar": true,
           "reverse_camera": null,
           "surround_360": null,
@@ -1340,10 +1249,10 @@
           "remote_start": false,
           "hud": false,
           "wireless_phone_charging": false,
-          "driver_power_seat": null,
+          "driver_power_seat": false,
           "passenger_power_seat": false,
-          "front_seat_heating": null,
-          "front_seat_ventilation": null,
+          "front_seat_heating": false,
+          "front_seat_ventilation": false,
           "rear_air_vents": false,
           "climate_control": null,
           "leather_seats": null
@@ -1359,7 +1268,8 @@
           "branded_audio": "-",
           "voice_control": null,
           "full_lcd_cluster": false,
-          "chip_8155": null
+          "chip_8155": null,
+          "phone_link": null
         },
         "lighting": {
           "headlights": null,
@@ -1375,7 +1285,7 @@
       "data_quality": {
         "core_confidence": 0.99,
         "feature_confidence": "high",
-        "verified_non_null_feature_leaf_count": 25,
+        "verified_non_null_feature_leaf_count": 30,
         "scoring_rule": "Only exact-trim standard features may score. null/optional features score 0.",
         "known_issues": [],
         "identity_source": "autohome_exact_trim",
@@ -1433,7 +1343,7 @@
       "features": {
         "passive_safety": {
           "front_airbags": true,
-          "front_side_airbags": null,
+          "front_side_airbags": true,
           "curtain_airbags": true,
           "tpms_display": null
         },
@@ -1447,10 +1357,11 @@
           "dow": null,
           "rear_collision_warning": null,
           "traffic_sign_recognition": false,
-          "fatigue_warning": false
+          "fatigue_warning": false,
+          "esp": true
         },
         "parking_adas": {
-          "front_parking_radar": null,
+          "front_parking_radar": false,
           "rear_parking_radar": true,
           "reverse_camera": null,
           "surround_360": null,
@@ -1469,10 +1380,10 @@
           "remote_start": false,
           "hud": false,
           "wireless_phone_charging": false,
-          "driver_power_seat": null,
+          "driver_power_seat": false,
           "passenger_power_seat": false,
-          "front_seat_heating": null,
-          "front_seat_ventilation": null,
+          "front_seat_heating": false,
+          "front_seat_ventilation": false,
           "rear_air_vents": false,
           "climate_control": null,
           "leather_seats": null
@@ -1488,7 +1399,8 @@
           "branded_audio": "-",
           "voice_control": null,
           "full_lcd_cluster": false,
-          "chip_8155": null
+          "chip_8155": null,
+          "phone_link": null
         },
         "lighting": {
           "headlights": null,
@@ -1504,7 +1416,7 @@
       "data_quality": {
         "core_confidence": 0.99,
         "feature_confidence": "high",
-        "verified_non_null_feature_leaf_count": 27,
+        "verified_non_null_feature_leaf_count": 32,
         "scoring_rule": "Only exact-trim standard features may score. null/optional features score 0.",
         "known_issues": [],
         "identity_source": "autohome_exact_trim",
@@ -1557,7 +1469,7 @@
       "features": {
         "passive_safety": {
           "front_airbags": true,
-          "front_side_airbags": null,
+          "front_side_airbags": false,
           "curtain_airbags": false,
           "tpms_display": null
         },
@@ -1571,10 +1483,11 @@
           "dow": null,
           "rear_collision_warning": null,
           "traffic_sign_recognition": false,
-          "fatigue_warning": false
+          "fatigue_warning": false,
+          "esp": false
         },
         "parking_adas": {
-          "front_parking_radar": null,
+          "front_parking_radar": false,
           "rear_parking_radar": true,
           "reverse_camera": null,
           "surround_360": null,
@@ -1593,10 +1506,10 @@
           "remote_start": null,
           "hud": null,
           "wireless_phone_charging": false,
-          "driver_power_seat": null,
+          "driver_power_seat": false,
           "passenger_power_seat": false,
-          "front_seat_heating": null,
-          "front_seat_ventilation": null,
+          "front_seat_heating": false,
+          "front_seat_ventilation": false,
           "rear_air_vents": false,
           "climate_control": null,
           "leather_seats": null
@@ -1612,7 +1525,8 @@
           "branded_audio": "-",
           "voice_control": null,
           "full_lcd_cluster": false,
-          "chip_8155": null
+          "chip_8155": null,
+          "phone_link": false
         },
         "lighting": {
           "headlights": null,
@@ -1628,7 +1542,7 @@
       "data_quality": {
         "core_confidence": 0.99,
         "feature_confidence": "high",
-        "verified_non_null_feature_leaf_count": 26,
+        "verified_non_null_feature_leaf_count": 31,
         "scoring_rule": "Only exact-trim standard features may score. null/optional features score 0.",
         "known_issues": [],
         "identity_source": "autohome_exact_trim",
@@ -1681,7 +1595,7 @@
       "features": {
         "passive_safety": {
           "front_airbags": true,
-          "front_side_airbags": null,
+          "front_side_airbags": false,
           "curtain_airbags": false,
           "tpms_display": null
         },
@@ -1695,10 +1609,11 @@
           "dow": null,
           "rear_collision_warning": null,
           "traffic_sign_recognition": false,
-          "fatigue_warning": false
+          "fatigue_warning": false,
+          "esp": false
         },
         "parking_adas": {
-          "front_parking_radar": null,
+          "front_parking_radar": false,
           "rear_parking_radar": false,
           "reverse_camera": null,
           "surround_360": null,
@@ -1717,7 +1632,7 @@
           "remote_start": null,
           "hud": false,
           "wireless_phone_charging": null,
-          "driver_power_seat": null,
+          "driver_power_seat": false,
           "passenger_power_seat": false,
           "front_seat_heating": null,
           "front_seat_ventilation": null,
@@ -1736,7 +1651,8 @@
           "branded_audio": null,
           "voice_control": null,
           "full_lcd_cluster": true,
-          "chip_8155": null
+          "chip_8155": null,
+          "phone_link": null
         },
         "lighting": {
           "headlights": null,
@@ -1752,7 +1668,7 @@
       "data_quality": {
         "core_confidence": 0.99,
         "feature_confidence": "medium",
-        "verified_non_null_feature_leaf_count": 21,
+        "verified_non_null_feature_leaf_count": 24,
         "scoring_rule": "Only exact-trim standard features may score. null/optional features score 0.",
         "known_issues": [
           "汽车之家该车型可核验配置字段较少"
@@ -1812,7 +1728,7 @@
       "features": {
         "passive_safety": {
           "front_airbags": true,
-          "front_side_airbags": null,
+          "front_side_airbags": true,
           "curtain_airbags": false,
           "tpms_display": null
         },
@@ -1826,10 +1742,11 @@
           "dow": null,
           "rear_collision_warning": null,
           "traffic_sign_recognition": false,
-          "fatigue_warning": false
+          "fatigue_warning": false,
+          "esp": true
         },
         "parking_adas": {
-          "front_parking_radar": null,
+          "front_parking_radar": false,
           "rear_parking_radar": true,
           "reverse_camera": null,
           "surround_360": null,
@@ -1848,10 +1765,10 @@
           "remote_start": false,
           "hud": false,
           "wireless_phone_charging": false,
-          "driver_power_seat": null,
+          "driver_power_seat": false,
           "passenger_power_seat": false,
-          "front_seat_heating": null,
-          "front_seat_ventilation": null,
+          "front_seat_heating": false,
+          "front_seat_ventilation": false,
           "rear_air_vents": true,
           "climate_control": null,
           "leather_seats": null
@@ -1867,7 +1784,8 @@
           "branded_audio": "-",
           "voice_control": null,
           "full_lcd_cluster": false,
-          "chip_8155": null
+          "chip_8155": null,
+          "phone_link": null
         },
         "lighting": {
           "headlights": null,
@@ -1883,7 +1801,7 @@
       "data_quality": {
         "core_confidence": 0.99,
         "feature_confidence": "high",
-        "verified_non_null_feature_leaf_count": 25,
+        "verified_non_null_feature_leaf_count": 30,
         "scoring_rule": "Only exact-trim standard features may score. null/optional features score 0.",
         "known_issues": [],
         "identity_source": "autohome_exact_trim",
@@ -1936,7 +1854,7 @@
       "features": {
         "passive_safety": {
           "front_airbags": true,
-          "front_side_airbags": null,
+          "front_side_airbags": false,
           "curtain_airbags": false,
           "tpms_display": null
         },
@@ -1950,10 +1868,11 @@
           "dow": null,
           "rear_collision_warning": null,
           "traffic_sign_recognition": null,
-          "fatigue_warning": false
+          "fatigue_warning": false,
+          "esp": false
         },
         "parking_adas": {
-          "front_parking_radar": null,
+          "front_parking_radar": false,
           "rear_parking_radar": true,
           "reverse_camera": null,
           "surround_360": null,
@@ -1972,10 +1891,10 @@
           "remote_start": null,
           "hud": null,
           "wireless_phone_charging": false,
-          "driver_power_seat": null,
+          "driver_power_seat": false,
           "passenger_power_seat": false,
-          "front_seat_heating": null,
-          "front_seat_ventilation": null,
+          "front_seat_heating": false,
+          "front_seat_ventilation": false,
           "rear_air_vents": false,
           "climate_control": null,
           "leather_seats": null
@@ -1991,7 +1910,8 @@
           "branded_audio": "-",
           "voice_control": null,
           "full_lcd_cluster": false,
-          "chip_8155": null
+          "chip_8155": null,
+          "phone_link": false
         },
         "lighting": {
           "headlights": null,
@@ -2006,12 +1926,10 @@
       },
       "data_quality": {
         "core_confidence": 0.99,
-        "feature_confidence": "medium",
-        "verified_non_null_feature_leaf_count": 21,
+        "feature_confidence": "high",
+        "verified_non_null_feature_leaf_count": 26,
         "scoring_rule": "Only exact-trim standard features may score. null/optional features score 0.",
-        "known_issues": [
-          "汽车之家该车型可核验配置字段较少"
-        ],
+        "known_issues": [],
         "identity_source": "autohome_exact_trim",
         "series_match": 1.0,
         "trim_match": 1.0,
@@ -2049,20 +1967,25 @@
         "height_mm": 1462,
         "wheelbase_mm": 2470,
         "fuel_grade": "92",
-        "official_fuel_l_100km": null,
-        "official_standard": null,
+        "official_fuel_l_100km": 5.7,
+        "official_standard": "NEDC",
         "low_soc_fuel_l_100km": null,
         "real_world_fuel_l_100km": null,
         "real_world_sample_n": null,
         "ev_range_km": null,
         "ev_range_standard": null,
         "electric_kwh_100km": null,
-        "ranking_energy": null
+        "ranking_energy": {
+          "type": "official_nedc_with_uncertainty",
+          "value": 5.7,
+          "unit": "L/100km",
+          "fallback_multiplier_recommended": 1.2
+        }
       },
       "features": {
         "passive_safety": {
           "front_airbags": true,
-          "front_side_airbags": null,
+          "front_side_airbags": true,
           "curtain_airbags": false,
           "tpms_display": null
         },
@@ -2076,34 +1999,35 @@
           "dow": null,
           "rear_collision_warning": null,
           "traffic_sign_recognition": null,
-          "fatigue_warning": false
+          "fatigue_warning": false,
+          "esp": true
         },
         "parking_adas": {
           "front_parking_radar": null,
           "rear_parking_radar": null,
           "reverse_camera": null,
-          "surround_360": null,
+          "surround_360": false,
           "transparent_chassis_540": null,
-          "cruise": null,
+          "cruise": "fixed",
           "adas_level": null,
           "auto_park": false,
           "remote_park": null
         },
         "comfort": {
-          "sunroof": null,
+          "sunroof": "single_openable",
           "power_tailgate": false,
           "hands_free_tailgate": false,
-          "keyless_entry": null,
+          "keyless_entry": false,
           "keyless_start": false,
-          "remote_start": null,
+          "remote_start": false,
           "hud": false,
           "wireless_phone_charging": false,
-          "driver_power_seat": null,
+          "driver_power_seat": false,
           "passenger_power_seat": false,
-          "front_seat_heating": null,
-          "front_seat_ventilation": null,
+          "front_seat_heating": false,
+          "front_seat_ventilation": false,
           "rear_air_vents": false,
-          "climate_control": null,
+          "climate_control": "manual",
           "leather_seats": null
         },
         "infotainment": {
@@ -2117,7 +2041,8 @@
           "branded_audio": "-",
           "voice_control": null,
           "full_lcd_cluster": false,
-          "chip_8155": null
+          "chip_8155": null,
+          "phone_link": null
         },
         "lighting": {
           "headlights": null,
@@ -2132,12 +2057,10 @@
       },
       "data_quality": {
         "core_confidence": 0.99,
-        "feature_confidence": "medium",
-        "verified_non_null_feature_leaf_count": 19,
+        "feature_confidence": "high",
+        "verified_non_null_feature_leaf_count": 28,
         "scoring_rule": "Only exact-trim standard features may score. null/optional features score 0.",
-        "known_issues": [
-          "汽车之家该车型可核验配置字段较少"
-        ],
+        "known_issues": [],
         "identity_source": "autohome_exact_trim",
         "series_match": 1.0,
         "trim_match": 1.0,
@@ -2160,6 +2083,137 @@
         }
       ],
       "trim_id": "trim_ah_1ff29c22a0b6"
+    },
+    "trim_ah_7fdff301f1e9": {
+      "canonical_title": "天逸 C5 AIRCROSS 2017款 380THP 豪华型",
+      "msrp_wan": 20.97,
+      "core_specs": {
+        "powertrain": "ice",
+        "body_type": "紧凑型SUV",
+        "seats": 5,
+        "engine": "●",
+        "transmission": "6挡手自一体",
+        "length_mm": 4510,
+        "width_mm": 1860,
+        "height_mm": 1705,
+        "wheelbase_mm": 2730,
+        "fuel_grade": "92",
+        "official_fuel_l_100km": 6.9,
+        "official_standard": "NEDC",
+        "low_soc_fuel_l_100km": null,
+        "real_world_fuel_l_100km": null,
+        "real_world_sample_n": null,
+        "ev_range_km": null,
+        "ev_range_standard": null,
+        "electric_kwh_100km": null,
+        "ranking_energy": {
+          "type": "official_nedc_with_uncertainty",
+          "value": 6.9,
+          "unit": "L/100km",
+          "fallback_multiplier_recommended": 1.2
+        }
+      },
+      "features": {
+        "passive_safety": {
+          "front_airbags": true,
+          "front_side_airbags": true,
+          "curtain_airbags": true,
+          "tpms_display": null
+        },
+        "active_safety": {
+          "aeb": false,
+          "fcw": null,
+          "ldw": false,
+          "lka": null,
+          "lane_centering": null,
+          "bsd": null,
+          "dow": null,
+          "rear_collision_warning": null,
+          "traffic_sign_recognition": null,
+          "fatigue_warning": false,
+          "esp": true
+        },
+        "parking_adas": {
+          "front_parking_radar": true,
+          "rear_parking_radar": true,
+          "reverse_camera": null,
+          "surround_360": null,
+          "transparent_chassis_540": null,
+          "cruise": "fixed",
+          "adas_level": null,
+          "auto_park": false,
+          "remote_park": null
+        },
+        "comfort": {
+          "sunroof": "panoramic",
+          "power_tailgate": true,
+          "hands_free_tailgate": true,
+          "keyless_entry": true,
+          "keyless_start": true,
+          "remote_start": false,
+          "hud": false,
+          "wireless_phone_charging": false,
+          "driver_power_seat": true,
+          "passenger_power_seat": true,
+          "front_seat_heating": false,
+          "front_seat_ventilation": false,
+          "rear_air_vents": true,
+          "climate_control": "automatic_dual_zone",
+          "leather_seats": true
+        },
+        "infotainment": {
+          "center_screen_inches": 8.0,
+          "instrument_screen_inches": null,
+          "carplay": null,
+          "carlife": null,
+          "connected_car": null,
+          "ota": null,
+          "speaker_count": 6,
+          "branded_audio": "-",
+          "voice_control": null,
+          "full_lcd_cluster": true,
+          "chip_8155": null,
+          "phone_link": true
+        },
+        "lighting": {
+          "headlights": null,
+          "auto_headlights": true,
+          "adaptive_high_beam": false
+        },
+        "wheels": {
+          "front_tire": "235/55 R18",
+          "rear_tire": "235/55 R18"
+        },
+        "optional_or_uncertain_features": []
+      },
+      "data_quality": {
+        "core_confidence": 0.99,
+        "feature_confidence": "high",
+        "verified_non_null_feature_leaf_count": 31,
+        "scoring_rule": "Only exact-trim standard features may score. null/optional features score 0.",
+        "known_issues": [],
+        "identity_source": "autohome_exact_trim",
+        "series_match": 1.0,
+        "trim_match": 1.0,
+        "source_snapshot": "201805"
+      },
+      "sources": [
+        {
+          "url": "https://car.autohome.com.cn/config/spec/31446.html",
+          "source_type": "autohome_exact_trim",
+          "authority_tier": 2,
+          "series_id": 4370,
+          "spec_id": 31446
+        },
+        {
+          "url": "https://github.com/swoiow/autohome",
+          "source_type": "autohome_parameter_dataset",
+          "authority_tier": 2,
+          "snapshot": "201805",
+          "source_path": "雪铁龙_天逸 C5 AIRCROSS.csv"
+        }
+      ],
+      "trim_id": "trim_ah_7fdff301f1e9"
     },
     "trim_ah_6156de32825b": {
       "canonical_title": "远景X3 2021款 PRO 1.5L CVT尊贵型",
@@ -2193,7 +2247,7 @@
       "features": {
         "passive_safety": {
           "front_airbags": true,
-          "front_side_airbags": null,
+          "front_side_airbags": false,
           "curtain_airbags": false,
           "tpms_display": null
         },
@@ -2207,10 +2261,11 @@
           "dow": null,
           "rear_collision_warning": null,
           "traffic_sign_recognition": false,
-          "fatigue_warning": false
+          "fatigue_warning": false,
+          "esp": true
         },
         "parking_adas": {
-          "front_parking_radar": null,
+          "front_parking_radar": false,
           "rear_parking_radar": true,
           "reverse_camera": null,
           "surround_360": null,
@@ -2229,10 +2284,10 @@
           "remote_start": false,
           "hud": false,
           "wireless_phone_charging": false,
-          "driver_power_seat": null,
+          "driver_power_seat": false,
           "passenger_power_seat": false,
-          "front_seat_heating": null,
-          "front_seat_ventilation": null,
+          "front_seat_heating": false,
+          "front_seat_ventilation": false,
           "rear_air_vents": false,
           "climate_control": null,
           "leather_seats": null
@@ -2248,7 +2303,8 @@
           "branded_audio": "-",
           "voice_control": false,
           "full_lcd_cluster": false,
-          "chip_8155": null
+          "chip_8155": null,
+          "phone_link": null
         },
         "lighting": {
           "headlights": null,
@@ -2264,7 +2320,7 @@
       "data_quality": {
         "core_confidence": 0.99,
         "feature_confidence": "high",
-        "verified_non_null_feature_leaf_count": 25,
+        "verified_non_null_feature_leaf_count": 30,
         "scoring_rule": "Only exact-trim standard features may score. null/optional features score 0.",
         "known_issues": [],
         "identity_source": "autohome_exact_trim",
@@ -2304,20 +2360,25 @@
         "height_mm": 1474,
         "wheelbase_mm": 2688,
         "fuel_grade": "92",
-        "official_fuel_l_100km": null,
-        "official_standard": null,
+        "official_fuel_l_100km": 5.5,
+        "official_standard": "NEDC",
         "low_soc_fuel_l_100km": null,
         "real_world_fuel_l_100km": null,
         "real_world_sample_n": null,
         "ev_range_km": null,
         "ev_range_standard": null,
         "electric_kwh_100km": null,
-        "ranking_energy": null
+        "ranking_energy": {
+          "type": "official_nedc_with_uncertainty",
+          "value": 5.5,
+          "unit": "L/100km",
+          "fallback_multiplier_recommended": 1.2
+        }
       },
       "features": {
         "passive_safety": {
           "front_airbags": true,
-          "front_side_airbags": null,
+          "front_side_airbags": false,
           "curtain_airbags": false,
           "tpms_display": null
         },
@@ -2331,34 +2392,35 @@
           "dow": null,
           "rear_collision_warning": null,
           "traffic_sign_recognition": null,
-          "fatigue_warning": false
+          "fatigue_warning": false,
+          "esp": true
         },
         "parking_adas": {
-          "front_parking_radar": null,
+          "front_parking_radar": false,
           "rear_parking_radar": true,
           "reverse_camera": null,
-          "surround_360": null,
+          "surround_360": false,
           "transparent_chassis_540": null,
-          "cruise": null,
+          "cruise": "none",
           "adas_level": null,
           "auto_park": false,
           "remote_park": null
         },
         "comfort": {
-          "sunroof": null,
+          "sunroof": "none",
           "power_tailgate": false,
           "hands_free_tailgate": false,
-          "keyless_entry": null,
+          "keyless_entry": false,
           "keyless_start": false,
-          "remote_start": null,
+          "remote_start": false,
           "hud": false,
           "wireless_phone_charging": false,
-          "driver_power_seat": null,
+          "driver_power_seat": false,
           "passenger_power_seat": false,
-          "front_seat_heating": null,
-          "front_seat_ventilation": null,
+          "front_seat_heating": false,
+          "front_seat_ventilation": false,
           "rear_air_vents": true,
-          "climate_control": null,
+          "climate_control": "manual",
           "leather_seats": null
         },
         "infotainment": {
@@ -2372,7 +2434,8 @@
           "branded_audio": "-",
           "voice_control": null,
           "full_lcd_cluster": false,
-          "chip_8155": null
+          "chip_8155": null,
+          "phone_link": false
         },
         "lighting": {
           "headlights": null,
@@ -2387,12 +2450,10 @@
       },
       "data_quality": {
         "core_confidence": 0.966,
-        "feature_confidence": "medium",
-        "verified_non_null_feature_leaf_count": 20,
+        "feature_confidence": "high",
+        "verified_non_null_feature_leaf_count": 30,
         "scoring_rule": "Only exact-trim standard features may score. null/optional features score 0.",
-        "known_issues": [
-          "汽车之家该车型可核验配置字段较少"
-        ],
+        "known_issues": [],
         "identity_source": "autohome_exact_trim",
         "series_match": 1.0,
         "trim_match": 0.947,
@@ -2416,6 +2477,136 @@
       ],
       "trim_id": "trim_ah_0b4ca70f5c9d"
     },
+    "trim_ah_8c4960ac9701": {
+      "canonical_title": "零跑T03 2025款 310舒享版",
+      "msrp_wan": 5.99,
+      "core_specs": {
+        "powertrain": "bev",
+        "body_type": "微型车",
+        "seats": null,
+        "engine": null,
+        "transmission": "固定齿比变速箱",
+        "length_mm": 3620,
+        "width_mm": 1652,
+        "height_mm": 1605,
+        "wheelbase_mm": 2400,
+        "fuel_grade": null,
+        "official_fuel_l_100km": null,
+        "official_standard": null,
+        "low_soc_fuel_l_100km": null,
+        "real_world_fuel_l_100km": null,
+        "real_world_sample_n": null,
+        "ev_range_km": 310.0,
+        "ev_range_standard": "CLTC",
+        "electric_kwh_100km": 11.5,
+        "ranking_energy": {
+          "type": "electricity",
+          "value": 11.5,
+          "unit": "kWh/100km"
+        }
+      },
+      "features": {
+        "passive_safety": {
+          "front_airbags": true,
+          "front_side_airbags": false,
+          "curtain_airbags": false,
+          "tpms_display": null
+        },
+        "active_safety": {
+          "aeb": false,
+          "fcw": null,
+          "ldw": false,
+          "lka": false,
+          "lane_centering": null,
+          "bsd": false,
+          "dow": null,
+          "rear_collision_warning": null,
+          "traffic_sign_recognition": null,
+          "fatigue_warning": false,
+          "esp": false
+        },
+        "parking_adas": {
+          "front_parking_radar": false,
+          "rear_parking_radar": true,
+          "reverse_camera": null,
+          "surround_360": null,
+          "transparent_chassis_540": null,
+          "cruise": null,
+          "adas_level": null,
+          "auto_park": false,
+          "remote_park": null
+        },
+        "comfort": {
+          "sunroof": "none",
+          "power_tailgate": null,
+          "hands_free_tailgate": null,
+          "keyless_entry": false,
+          "keyless_start": true,
+          "remote_start": null,
+          "hud": null,
+          "wireless_phone_charging": false,
+          "driver_power_seat": false,
+          "passenger_power_seat": false,
+          "front_seat_heating": false,
+          "front_seat_ventilation": false,
+          "rear_air_vents": false,
+          "climate_control": null,
+          "leather_seats": null
+        },
+        "infotainment": {
+          "center_screen_inches": null,
+          "instrument_screen_inches": null,
+          "carplay": null,
+          "carlife": null,
+          "connected_car": true,
+          "ota": true,
+          "speaker_count": null,
+          "branded_audio": "-",
+          "voice_control": null,
+          "full_lcd_cluster": false,
+          "chip_8155": null,
+          "phone_link": false
+        },
+        "lighting": {
+          "headlights": null,
+          "auto_headlights": true,
+          "adaptive_high_beam": false
+        },
+        "wheels": {
+          "front_tire": null,
+          "rear_tire": null
+        },
+        "optional_or_uncertain_features": []
+      },
+      "data_quality": {
+        "core_confidence": 0.99,
+        "feature_confidence": "high",
+        "verified_non_null_feature_leaf_count": 26,
+        "scoring_rule": "Only exact-trim standard features may score. null/optional features score 0.",
+        "known_issues": [],
+        "identity_source": "autohome_exact_trim",
+        "series_match": 1.0,
+        "trim_match": 1.0,
+        "source_snapshot": "202601"
+      },
+      "sources": [
+        {
+          "url": "https://car.autohome.com.cn/config/spec/71891.html",
+          "source_type": "autohome_exact_trim",
+          "authority_tier": 2,
+          "series_id": 5515,
+          "spec_id": 71891
+        },
+        {
+          "url": "https://github.com/swoiow/autohome",
+          "source_type": "autohome_parameter_dataset",
+          "authority_tier": 2,
+          "snapshot": "202601",
+          "source_path": "零跑汽车_零跑T03.csv"
+        }
+      ],
+      "trim_id": "trim_ah_8c4960ac9701"
+    },
     "trim_ah_c761b3c584a7": {
       "canonical_title": "迈锐宝XL 2018款 530T 自动锐逸版",
       "msrp_wan": 20.49,
@@ -2430,20 +2621,25 @@
         "height_mm": 1477,
         "wheelbase_mm": 2829,
         "fuel_grade": "92",
-        "official_fuel_l_100km": null,
-        "official_standard": null,
+        "official_fuel_l_100km": 6.3,
+        "official_standard": "NEDC",
         "low_soc_fuel_l_100km": null,
         "real_world_fuel_l_100km": null,
         "real_world_sample_n": null,
         "ev_range_km": null,
         "ev_range_standard": null,
         "electric_kwh_100km": null,
-        "ranking_energy": null
+        "ranking_energy": {
+          "type": "official_nedc_with_uncertainty",
+          "value": 6.3,
+          "unit": "L/100km",
+          "fallback_multiplier_recommended": 1.2
+        }
       },
       "features": {
         "passive_safety": {
           "front_airbags": true,
-          "front_side_airbags": null,
+          "front_side_airbags": true,
           "curtain_airbags": true,
           "tpms_display": null
         },
@@ -2457,38 +2653,39 @@
           "dow": null,
           "rear_collision_warning": null,
           "traffic_sign_recognition": null,
-          "fatigue_warning": false
+          "fatigue_warning": false,
+          "esp": true
         },
         "parking_adas": {
-          "front_parking_radar": null,
+          "front_parking_radar": false,
           "rear_parking_radar": true,
           "reverse_camera": null,
-          "surround_360": null,
+          "surround_360": false,
           "transparent_chassis_540": null,
-          "cruise": null,
+          "cruise": "fixed",
           "adas_level": null,
           "auto_park": false,
           "remote_park": null
         },
         "comfort": {
-          "sunroof": null,
+          "sunroof": "single_openable",
           "power_tailgate": false,
           "hands_free_tailgate": false,
-          "keyless_entry": null,
+          "keyless_entry": true,
           "keyless_start": true,
-          "remote_start": null,
+          "remote_start": true,
           "hud": false,
           "wireless_phone_charging": false,
-          "driver_power_seat": null,
+          "driver_power_seat": true,
           "passenger_power_seat": true,
-          "front_seat_heating": null,
-          "front_seat_ventilation": null,
+          "front_seat_heating": true,
+          "front_seat_ventilation": false,
           "rear_air_vents": true,
           "climate_control": "automatic_dual_zone",
           "leather_seats": null
         },
         "infotainment": {
-          "center_screen_inches": null,
+          "center_screen_inches": 8.0,
           "instrument_screen_inches": null,
           "carplay": null,
           "carlife": null,
@@ -2498,7 +2695,8 @@
           "branded_audio": "-",
           "voice_control": null,
           "full_lcd_cluster": false,
-          "chip_8155": null
+          "chip_8155": null,
+          "phone_link": true
         },
         "lighting": {
           "headlights": null,
@@ -2513,12 +2711,10 @@
       },
       "data_quality": {
         "core_confidence": 0.99,
-        "feature_confidence": "medium",
-        "verified_non_null_feature_leaf_count": 21,
+        "feature_confidence": "high",
+        "verified_non_null_feature_leaf_count": 32,
         "scoring_rule": "Only exact-trim standard features may score. null/optional features score 0.",
-        "known_issues": [
-          "汽车之家该车型可核验配置字段较少"
-        ],
+        "known_issues": [],
         "identity_source": "autohome_exact_trim",
         "series_match": 1.0,
         "trim_match": 1.0,
@@ -2556,20 +2752,25 @@
         "height_mm": 1524,
         "wheelbase_mm": 2700,
         "fuel_grade": "92",
-        "official_fuel_l_100km": null,
-        "official_standard": null,
+        "official_fuel_l_100km": 5.6,
+        "official_standard": "NEDC",
         "low_soc_fuel_l_100km": null,
         "real_world_fuel_l_100km": null,
         "real_world_sample_n": null,
         "ev_range_km": null,
         "ev_range_standard": null,
         "electric_kwh_100km": null,
-        "ranking_energy": null
+        "ranking_energy": {
+          "type": "official_nedc_with_uncertainty",
+          "value": 5.6,
+          "unit": "L/100km",
+          "fallback_multiplier_recommended": 1.2
+        }
       },
       "features": {
         "passive_safety": {
           "front_airbags": true,
-          "front_side_airbags": null,
+          "front_side_airbags": true,
           "curtain_airbags": true,
           "tpms_display": null
         },
@@ -2583,38 +2784,39 @@
           "dow": null,
           "rear_collision_warning": null,
           "traffic_sign_recognition": null,
-          "fatigue_warning": false
+          "fatigue_warning": false,
+          "esp": true
         },
         "parking_adas": {
-          "front_parking_radar": null,
+          "front_parking_radar": false,
           "rear_parking_radar": false,
           "reverse_camera": null,
-          "surround_360": null,
+          "surround_360": false,
           "transparent_chassis_540": null,
-          "cruise": null,
+          "cruise": "none",
           "adas_level": null,
           "auto_park": false,
           "remote_park": null
         },
         "comfort": {
-          "sunroof": null,
+          "sunroof": "single_openable",
           "power_tailgate": false,
           "hands_free_tailgate": false,
-          "keyless_entry": null,
+          "keyless_entry": true,
           "keyless_start": true,
-          "remote_start": null,
+          "remote_start": false,
           "hud": false,
           "wireless_phone_charging": false,
-          "driver_power_seat": null,
+          "driver_power_seat": false,
           "passenger_power_seat": false,
           "front_seat_heating": null,
-          "front_seat_ventilation": null,
+          "front_seat_ventilation": false,
           "rear_air_vents": false,
-          "climate_control": null,
-          "leather_seats": null
+          "climate_control": "manual",
+          "leather_seats": false
         },
         "infotainment": {
-          "center_screen_inches": null,
+          "center_screen_inches": 7.0,
           "instrument_screen_inches": null,
           "carplay": null,
           "carlife": null,
@@ -2624,7 +2826,8 @@
           "branded_audio": "-",
           "voice_control": null,
           "full_lcd_cluster": false,
-          "chip_8155": null
+          "chip_8155": null,
+          "phone_link": true
         },
         "lighting": {
           "headlights": null,
@@ -2639,12 +2842,10 @@
       },
       "data_quality": {
         "core_confidence": 0.963,
-        "feature_confidence": "medium",
-        "verified_non_null_feature_leaf_count": 20,
+        "feature_confidence": "high",
+        "verified_non_null_feature_leaf_count": 30,
         "scoring_rule": "Only exact-trim standard features may score. null/optional features score 0.",
-        "known_issues": [
-          "汽车之家该车型可核验配置字段较少"
-        ],
+        "known_issues": [],
         "identity_source": "autohome_exact_trim",
         "series_match": 1.0,
         "trim_match": 0.94,
@@ -2682,20 +2883,25 @@
         "height_mm": 1487,
         "wheelbase_mm": 2614,
         "fuel_grade": "92",
-        "official_fuel_l_100km": null,
-        "official_standard": null,
+        "official_fuel_l_100km": 6.0,
+        "official_standard": "NEDC",
         "low_soc_fuel_l_100km": null,
         "real_world_fuel_l_100km": null,
         "real_world_sample_n": null,
         "ev_range_km": null,
         "ev_range_standard": null,
         "electric_kwh_100km": null,
-        "ranking_energy": null
+        "ranking_energy": {
+          "type": "official_nedc_with_uncertainty",
+          "value": 6.0,
+          "unit": "L/100km",
+          "fallback_multiplier_recommended": 1.2
+        }
       },
       "features": {
         "passive_safety": {
           "front_airbags": true,
-          "front_side_airbags": null,
+          "front_side_airbags": true,
           "curtain_airbags": true,
           "tpms_display": null
         },
@@ -2709,38 +2915,39 @@
           "dow": null,
           "rear_collision_warning": null,
           "traffic_sign_recognition": null,
-          "fatigue_warning": false
+          "fatigue_warning": false,
+          "esp": true
         },
         "parking_adas": {
           "front_parking_radar": null,
           "rear_parking_radar": null,
           "reverse_camera": null,
-          "surround_360": null,
+          "surround_360": false,
           "transparent_chassis_540": null,
-          "cruise": null,
+          "cruise": "fixed",
           "adas_level": null,
           "auto_park": false,
           "remote_park": null
         },
         "comfort": {
-          "sunroof": null,
+          "sunroof": "panoramic",
           "power_tailgate": false,
           "hands_free_tailgate": false,
-          "keyless_entry": null,
+          "keyless_entry": false,
           "keyless_start": false,
-          "remote_start": null,
+          "remote_start": false,
           "hud": false,
           "wireless_phone_charging": false,
-          "driver_power_seat": null,
+          "driver_power_seat": false,
           "passenger_power_seat": false,
-          "front_seat_heating": null,
-          "front_seat_ventilation": null,
+          "front_seat_heating": false,
+          "front_seat_ventilation": false,
           "rear_air_vents": false,
-          "climate_control": null,
+          "climate_control": "manual",
           "leather_seats": null
         },
         "infotainment": {
-          "center_screen_inches": null,
+          "center_screen_inches": 6.5,
           "instrument_screen_inches": null,
           "carplay": null,
           "carlife": null,
@@ -2750,7 +2957,8 @@
           "branded_audio": "-",
           "voice_control": null,
           "full_lcd_cluster": false,
-          "chip_8155": null
+          "chip_8155": null,
+          "phone_link": false
         },
         "lighting": {
           "headlights": null,
@@ -2765,12 +2973,10 @@
       },
       "data_quality": {
         "core_confidence": 0.99,
-        "feature_confidence": "medium",
-        "verified_non_null_feature_leaf_count": 19,
+        "feature_confidence": "high",
+        "verified_non_null_feature_leaf_count": 29,
         "scoring_rule": "Only exact-trim standard features may score. null/optional features score 0.",
-        "known_issues": [
-          "汽车之家该车型可核验配置字段较少"
-        ],
+        "known_issues": [],
         "identity_source": "autohome_exact_trim",
         "series_match": 1.0,
         "trim_match": 1.0,
@@ -2821,7 +3027,7 @@
       "features": {
         "passive_safety": {
           "front_airbags": true,
-          "front_side_airbags": null,
+          "front_side_airbags": false,
           "curtain_airbags": false,
           "tpms_display": null
         },
@@ -2835,10 +3041,11 @@
           "dow": null,
           "rear_collision_warning": null,
           "traffic_sign_recognition": null,
-          "fatigue_warning": false
+          "fatigue_warning": false,
+          "esp": false
         },
         "parking_adas": {
-          "front_parking_radar": null,
+          "front_parking_radar": false,
           "rear_parking_radar": false,
           "reverse_camera": null,
           "surround_360": null,
@@ -2857,10 +3064,10 @@
           "remote_start": null,
           "hud": null,
           "wireless_phone_charging": false,
-          "driver_power_seat": null,
+          "driver_power_seat": false,
           "passenger_power_seat": false,
-          "front_seat_heating": null,
-          "front_seat_ventilation": null,
+          "front_seat_heating": false,
+          "front_seat_ventilation": false,
           "rear_air_vents": false,
           "climate_control": null,
           "leather_seats": null
@@ -2876,7 +3083,8 @@
           "branded_audio": "-",
           "voice_control": null,
           "full_lcd_cluster": false,
-          "chip_8155": null
+          "chip_8155": null,
+          "phone_link": false
         },
         "lighting": {
           "headlights": null,
@@ -2891,12 +3099,10 @@
       },
       "data_quality": {
         "core_confidence": 0.99,
-        "feature_confidence": "medium",
-        "verified_non_null_feature_leaf_count": 24,
+        "feature_confidence": "high",
+        "verified_non_null_feature_leaf_count": 29,
         "scoring_rule": "Only exact-trim standard features may score. null/optional features score 0.",
-        "known_issues": [
-          "汽车之家该车型可核验配置字段较少"
-        ],
+        "known_issues": [],
         "identity_source": "autohome_exact_trim",
         "series_match": 1.0,
         "trim_match": 1.0,
@@ -2952,7 +3158,7 @@
       "features": {
         "passive_safety": {
           "front_airbags": true,
-          "front_side_airbags": null,
+          "front_side_airbags": false,
           "curtain_airbags": false,
           "tpms_display": null
         },
@@ -2966,10 +3172,11 @@
           "dow": null,
           "rear_collision_warning": null,
           "traffic_sign_recognition": false,
-          "fatigue_warning": false
+          "fatigue_warning": false,
+          "esp": true
         },
         "parking_adas": {
-          "front_parking_radar": null,
+          "front_parking_radar": false,
           "rear_parking_radar": false,
           "reverse_camera": null,
           "surround_360": null,
@@ -2988,10 +3195,10 @@
           "remote_start": false,
           "hud": false,
           "wireless_phone_charging": false,
-          "driver_power_seat": null,
+          "driver_power_seat": false,
           "passenger_power_seat": false,
-          "front_seat_heating": null,
-          "front_seat_ventilation": null,
+          "front_seat_heating": false,
+          "front_seat_ventilation": false,
           "rear_air_vents": false,
           "climate_control": null,
           "leather_seats": null
@@ -3007,7 +3214,8 @@
           "branded_audio": "-",
           "voice_control": false,
           "full_lcd_cluster": false,
-          "chip_8155": null
+          "chip_8155": null,
+          "phone_link": false
         },
         "lighting": {
           "headlights": null,
@@ -3023,7 +3231,7 @@
       "data_quality": {
         "core_confidence": 0.99,
         "feature_confidence": "high",
-        "verified_non_null_feature_leaf_count": 28,
+        "verified_non_null_feature_leaf_count": 33,
         "scoring_rule": "Only exact-trim standard features may score. null/optional features score 0.",
         "known_issues": [],
         "identity_source": "autohome_exact_trim",
@@ -3063,20 +3271,25 @@
         "height_mm": 1470,
         "wheelbase_mm": 2770,
         "fuel_grade": "92",
-        "official_fuel_l_100km": null,
-        "official_standard": null,
+        "official_fuel_l_100km": 6.7,
+        "official_standard": "NEDC",
         "low_soc_fuel_l_100km": null,
         "real_world_fuel_l_100km": null,
         "real_world_sample_n": null,
         "ev_range_km": null,
         "ev_range_standard": null,
         "electric_kwh_100km": null,
-        "ranking_energy": null
+        "ranking_energy": {
+          "type": "official_nedc_with_uncertainty",
+          "value": 6.7,
+          "unit": "L/100km",
+          "fallback_multiplier_recommended": 1.2
+        }
       },
       "features": {
         "passive_safety": {
           "front_airbags": true,
-          "front_side_airbags": null,
+          "front_side_airbags": true,
           "curtain_airbags": false,
           "tpms_display": null
         },
@@ -3090,38 +3303,39 @@
           "dow": null,
           "rear_collision_warning": null,
           "traffic_sign_recognition": null,
-          "fatigue_warning": false
+          "fatigue_warning": false,
+          "esp": true
         },
         "parking_adas": {
-          "front_parking_radar": null,
+          "front_parking_radar": false,
           "rear_parking_radar": true,
           "reverse_camera": null,
-          "surround_360": null,
+          "surround_360": false,
           "transparent_chassis_540": null,
-          "cruise": null,
+          "cruise": "fixed",
           "adas_level": null,
           "auto_park": false,
           "remote_park": null
         },
         "comfort": {
-          "sunroof": null,
+          "sunroof": "panoramic",
           "power_tailgate": false,
           "hands_free_tailgate": true,
-          "keyless_entry": null,
+          "keyless_entry": true,
           "keyless_start": true,
-          "remote_start": null,
+          "remote_start": false,
           "hud": false,
           "wireless_phone_charging": false,
-          "driver_power_seat": null,
+          "driver_power_seat": true,
           "passenger_power_seat": true,
-          "front_seat_heating": null,
-          "front_seat_ventilation": null,
+          "front_seat_heating": false,
+          "front_seat_ventilation": false,
           "rear_air_vents": true,
           "climate_control": "automatic_dual_zone",
-          "leather_seats": null
+          "leather_seats": false
         },
         "infotainment": {
-          "center_screen_inches": null,
+          "center_screen_inches": 8.0,
           "instrument_screen_inches": null,
           "carplay": null,
           "carlife": null,
@@ -3131,7 +3345,8 @@
           "branded_audio": "-",
           "voice_control": null,
           "full_lcd_cluster": false,
-          "chip_8155": null
+          "chip_8155": null,
+          "phone_link": false
         },
         "lighting": {
           "headlights": null,
@@ -3146,12 +3361,10 @@
       },
       "data_quality": {
         "core_confidence": 0.966,
-        "feature_confidence": "medium",
-        "verified_non_null_feature_leaf_count": 21,
+        "feature_confidence": "high",
+        "verified_non_null_feature_leaf_count": 32,
         "scoring_rule": "Only exact-trim standard features may score. null/optional features score 0.",
-        "known_issues": [
-          "汽车之家该车型可核验配置字段较少"
-        ],
+        "known_issues": [],
         "identity_source": "autohome_exact_trim",
         "series_match": 1.0,
         "trim_match": 0.947,
@@ -3189,20 +3402,25 @@
         "height_mm": 1470,
         "wheelbase_mm": 2770,
         "fuel_grade": "92",
-        "official_fuel_l_100km": null,
-        "official_standard": null,
+        "official_fuel_l_100km": 6.7,
+        "official_standard": "NEDC",
         "low_soc_fuel_l_100km": null,
         "real_world_fuel_l_100km": null,
         "real_world_sample_n": null,
         "ev_range_km": null,
         "ev_range_standard": null,
         "electric_kwh_100km": null,
-        "ranking_energy": null
+        "ranking_energy": {
+          "type": "official_nedc_with_uncertainty",
+          "value": 6.7,
+          "unit": "L/100km",
+          "fallback_multiplier_recommended": 1.2
+        }
       },
       "features": {
         "passive_safety": {
           "front_airbags": true,
-          "front_side_airbags": null,
+          "front_side_airbags": false,
           "curtain_airbags": false,
           "tpms_display": null
         },
@@ -3216,38 +3434,39 @@
           "dow": null,
           "rear_collision_warning": null,
           "traffic_sign_recognition": null,
-          "fatigue_warning": false
+          "fatigue_warning": false,
+          "esp": true
         },
         "parking_adas": {
-          "front_parking_radar": null,
+          "front_parking_radar": false,
           "rear_parking_radar": true,
           "reverse_camera": null,
-          "surround_360": null,
+          "surround_360": false,
           "transparent_chassis_540": null,
-          "cruise": null,
+          "cruise": "none",
           "adas_level": null,
           "auto_park": false,
           "remote_park": null
         },
         "comfort": {
-          "sunroof": null,
+          "sunroof": "panoramic",
           "power_tailgate": false,
           "hands_free_tailgate": true,
-          "keyless_entry": null,
+          "keyless_entry": true,
           "keyless_start": true,
-          "remote_start": null,
+          "remote_start": false,
           "hud": false,
           "wireless_phone_charging": false,
-          "driver_power_seat": null,
+          "driver_power_seat": false,
           "passenger_power_seat": false,
-          "front_seat_heating": null,
-          "front_seat_ventilation": null,
+          "front_seat_heating": false,
+          "front_seat_ventilation": false,
           "rear_air_vents": true,
           "climate_control": "automatic_dual_zone",
-          "leather_seats": null
+          "leather_seats": false
         },
         "infotainment": {
-          "center_screen_inches": null,
+          "center_screen_inches": 8.0,
           "instrument_screen_inches": null,
           "carplay": null,
           "carlife": null,
@@ -3257,7 +3476,8 @@
           "branded_audio": "-",
           "voice_control": null,
           "full_lcd_cluster": false,
-          "chip_8155": null
+          "chip_8155": null,
+          "phone_link": false
         },
         "lighting": {
           "headlights": null,
@@ -3272,12 +3492,10 @@
       },
       "data_quality": {
         "core_confidence": 0.966,
-        "feature_confidence": "medium",
-        "verified_non_null_feature_leaf_count": 22,
+        "feature_confidence": "high",
+        "verified_non_null_feature_leaf_count": 33,
         "scoring_rule": "Only exact-trim standard features may score. null/optional features score 0.",
-        "known_issues": [
-          "汽车之家该车型可核验配置字段较少"
-        ],
+        "known_issues": [],
         "identity_source": "autohome_exact_trim",
         "series_match": 1.0,
         "trim_match": 0.947,
@@ -3315,20 +3533,25 @@
         "height_mm": 1490,
         "wheelbase_mm": 2775,
         "fuel_grade": "92",
-        "official_fuel_l_100km": null,
-        "official_standard": null,
+        "official_fuel_l_100km": 7.2,
+        "official_standard": "NEDC",
         "low_soc_fuel_l_100km": null,
         "real_world_fuel_l_100km": null,
         "real_world_sample_n": null,
         "ev_range_km": null,
         "ev_range_standard": null,
         "electric_kwh_100km": null,
-        "ranking_energy": null
+        "ranking_energy": {
+          "type": "official_nedc_with_uncertainty",
+          "value": 7.2,
+          "unit": "L/100km",
+          "fallback_multiplier_recommended": 1.2
+        }
       },
       "features": {
         "passive_safety": {
           "front_airbags": true,
-          "front_side_airbags": null,
+          "front_side_airbags": true,
           "curtain_airbags": true,
           "tpms_display": null
         },
@@ -3342,38 +3565,39 @@
           "dow": null,
           "rear_collision_warning": null,
           "traffic_sign_recognition": null,
-          "fatigue_warning": false
+          "fatigue_warning": false,
+          "esp": true
         },
         "parking_adas": {
-          "front_parking_radar": null,
+          "front_parking_radar": false,
           "rear_parking_radar": false,
           "reverse_camera": null,
-          "surround_360": null,
+          "surround_360": false,
           "transparent_chassis_540": null,
-          "cruise": null,
+          "cruise": "fixed",
           "adas_level": null,
           "auto_park": false,
           "remote_park": null
         },
         "comfort": {
-          "sunroof": null,
+          "sunroof": "single_openable",
           "power_tailgate": false,
           "hands_free_tailgate": false,
-          "keyless_entry": null,
+          "keyless_entry": true,
           "keyless_start": true,
-          "remote_start": null,
+          "remote_start": false,
           "hud": false,
           "wireless_phone_charging": false,
-          "driver_power_seat": null,
+          "driver_power_seat": true,
           "passenger_power_seat": true,
-          "front_seat_heating": null,
-          "front_seat_ventilation": null,
+          "front_seat_heating": false,
+          "front_seat_ventilation": false,
           "rear_air_vents": true,
           "climate_control": "automatic_dual_zone",
           "leather_seats": true
         },
         "infotainment": {
-          "center_screen_inches": null,
+          "center_screen_inches": 7.0,
           "instrument_screen_inches": null,
           "carplay": null,
           "carlife": null,
@@ -3383,7 +3607,8 @@
           "branded_audio": "-",
           "voice_control": null,
           "full_lcd_cluster": false,
-          "chip_8155": null
+          "chip_8155": null,
+          "phone_link": false
         },
         "lighting": {
           "headlights": null,
@@ -3398,12 +3623,10 @@
       },
       "data_quality": {
         "core_confidence": 0.99,
-        "feature_confidence": "medium",
-        "verified_non_null_feature_leaf_count": 23,
+        "feature_confidence": "high",
+        "verified_non_null_feature_leaf_count": 34,
         "scoring_rule": "Only exact-trim standard features may score. null/optional features score 0.",
-        "known_issues": [
-          "汽车之家该车型可核验配置字段较少"
-        ],
+        "known_issues": [],
         "identity_source": "autohome_exact_trim",
         "series_match": 1.0,
         "trim_match": 1.0,
@@ -3459,7 +3682,7 @@
       "features": {
         "passive_safety": {
           "front_airbags": true,
-          "front_side_airbags": null,
+          "front_side_airbags": false,
           "curtain_airbags": false,
           "tpms_display": null
         },
@@ -3473,10 +3696,11 @@
           "dow": null,
           "rear_collision_warning": null,
           "traffic_sign_recognition": null,
-          "fatigue_warning": false
+          "fatigue_warning": false,
+          "esp": true
         },
         "parking_adas": {
-          "front_parking_radar": null,
+          "front_parking_radar": false,
           "rear_parking_radar": false,
           "reverse_camera": null,
           "surround_360": null,
@@ -3495,10 +3719,10 @@
           "remote_start": null,
           "hud": null,
           "wireless_phone_charging": false,
-          "driver_power_seat": null,
+          "driver_power_seat": false,
           "passenger_power_seat": false,
-          "front_seat_heating": null,
-          "front_seat_ventilation": null,
+          "front_seat_heating": false,
+          "front_seat_ventilation": false,
           "rear_air_vents": false,
           "climate_control": null,
           "leather_seats": null
@@ -3514,7 +3738,8 @@
           "branded_audio": "-",
           "voice_control": null,
           "full_lcd_cluster": false,
-          "chip_8155": null
+          "chip_8155": null,
+          "phone_link": null
         },
         "lighting": {
           "headlights": null,
@@ -3529,12 +3754,10 @@
       },
       "data_quality": {
         "core_confidence": 0.99,
-        "feature_confidence": "medium",
-        "verified_non_null_feature_leaf_count": 21,
+        "feature_confidence": "high",
+        "verified_non_null_feature_leaf_count": 26,
         "scoring_rule": "Only exact-trim standard features may score. null/optional features score 0.",
-        "known_issues": [
-          "汽车之家该车型可核验配置字段较少"
-        ],
+        "known_issues": [],
         "identity_source": "autohome_exact_trim",
         "series_match": 1.0,
         "trim_match": 1.0,
@@ -3572,20 +3795,25 @@
         "height_mm": 1710,
         "wheelbase_mm": 2670,
         "fuel_grade": "92",
-        "official_fuel_l_100km": null,
-        "official_standard": null,
+        "official_fuel_l_100km": 8.1,
+        "official_standard": "NEDC",
         "low_soc_fuel_l_100km": null,
         "real_world_fuel_l_100km": null,
         "real_world_sample_n": null,
         "ev_range_km": null,
         "ev_range_standard": null,
         "electric_kwh_100km": null,
-        "ranking_energy": null
+        "ranking_energy": {
+          "type": "official_nedc_with_uncertainty",
+          "value": 8.1,
+          "unit": "L/100km",
+          "fallback_multiplier_recommended": 1.2
+        }
       },
       "features": {
         "passive_safety": {
           "front_airbags": true,
-          "front_side_airbags": null,
+          "front_side_airbags": true,
           "curtain_airbags": true,
           "tpms_display": null
         },
@@ -3599,38 +3827,39 @@
           "dow": null,
           "rear_collision_warning": null,
           "traffic_sign_recognition": null,
-          "fatigue_warning": false
+          "fatigue_warning": false,
+          "esp": true
         },
         "parking_adas": {
-          "front_parking_radar": null,
+          "front_parking_radar": false,
           "rear_parking_radar": true,
           "reverse_camera": null,
-          "surround_360": null,
+          "surround_360": false,
           "transparent_chassis_540": null,
-          "cruise": null,
+          "cruise": "fixed",
           "adas_level": null,
           "auto_park": false,
           "remote_park": null
         },
         "comfort": {
-          "sunroof": null,
+          "sunroof": "single_openable",
           "power_tailgate": true,
           "hands_free_tailgate": false,
-          "keyless_entry": null,
+          "keyless_entry": true,
           "keyless_start": true,
-          "remote_start": null,
+          "remote_start": false,
           "hud": false,
           "wireless_phone_charging": false,
-          "driver_power_seat": null,
+          "driver_power_seat": true,
           "passenger_power_seat": true,
-          "front_seat_heating": null,
-          "front_seat_ventilation": null,
+          "front_seat_heating": true,
+          "front_seat_ventilation": false,
           "rear_air_vents": false,
           "climate_control": "automatic_dual_zone",
           "leather_seats": null
         },
         "infotainment": {
-          "center_screen_inches": null,
+          "center_screen_inches": 8.0,
           "instrument_screen_inches": null,
           "carplay": null,
           "carlife": null,
@@ -3640,7 +3869,8 @@
           "branded_audio": "-",
           "voice_control": null,
           "full_lcd_cluster": false,
-          "chip_8155": null
+          "chip_8155": null,
+          "phone_link": true
         },
         "lighting": {
           "headlights": null,
@@ -3655,12 +3885,10 @@
       },
       "data_quality": {
         "core_confidence": 0.99,
-        "feature_confidence": "medium",
-        "verified_non_null_feature_leaf_count": 21,
+        "feature_confidence": "high",
+        "verified_non_null_feature_leaf_count": 32,
         "scoring_rule": "Only exact-trim standard features may score. null/optional features score 0.",
-        "known_issues": [
-          "汽车之家该车型可核验配置字段较少"
-        ],
+        "known_issues": [],
         "identity_source": "autohome_exact_trim",
         "series_match": 1.0,
         "trim_match": 1.0,
@@ -3711,7 +3939,7 @@
       "features": {
         "passive_safety": {
           "front_airbags": true,
-          "front_side_airbags": null,
+          "front_side_airbags": true,
           "curtain_airbags": false,
           "tpms_display": null
         },
@@ -3725,10 +3953,11 @@
           "dow": null,
           "rear_collision_warning": null,
           "traffic_sign_recognition": false,
-          "fatigue_warning": false
+          "fatigue_warning": false,
+          "esp": true
         },
         "parking_adas": {
-          "front_parking_radar": null,
+          "front_parking_radar": false,
           "rear_parking_radar": true,
           "reverse_camera": null,
           "surround_360": null,
@@ -3747,10 +3976,10 @@
           "remote_start": null,
           "hud": false,
           "wireless_phone_charging": false,
-          "driver_power_seat": null,
+          "driver_power_seat": false,
           "passenger_power_seat": false,
-          "front_seat_heating": null,
-          "front_seat_ventilation": null,
+          "front_seat_heating": false,
+          "front_seat_ventilation": false,
           "rear_air_vents": false,
           "climate_control": null,
           "leather_seats": null
@@ -3766,7 +3995,8 @@
           "branded_audio": "-",
           "voice_control": null,
           "full_lcd_cluster": false,
-          "chip_8155": null
+          "chip_8155": null,
+          "phone_link": null
         },
         "lighting": {
           "headlights": null,
@@ -3781,12 +4011,10 @@
       },
       "data_quality": {
         "core_confidence": 0.974,
-        "feature_confidence": "medium",
-        "verified_non_null_feature_leaf_count": 23,
+        "feature_confidence": "high",
+        "verified_non_null_feature_leaf_count": 28,
         "scoring_rule": "Only exact-trim standard features may score. null/optional features score 0.",
-        "known_issues": [
-          "汽车之家该车型可核验配置字段较少"
-        ],
+        "known_issues": [],
         "identity_source": "autohome_exact_trim",
         "series_match": 1.0,
         "trim_match": 0.966,
@@ -3842,7 +4070,7 @@
       "features": {
         "passive_safety": {
           "front_airbags": true,
-          "front_side_airbags": null,
+          "front_side_airbags": false,
           "curtain_airbags": false,
           "tpms_display": null
         },
@@ -3856,10 +4084,11 @@
           "dow": null,
           "rear_collision_warning": null,
           "traffic_sign_recognition": false,
-          "fatigue_warning": false
+          "fatigue_warning": false,
+          "esp": true
         },
         "parking_adas": {
-          "front_parking_radar": null,
+          "front_parking_radar": false,
           "rear_parking_radar": true,
           "reverse_camera": null,
           "surround_360": null,
@@ -3878,10 +4107,10 @@
           "remote_start": false,
           "hud": false,
           "wireless_phone_charging": false,
-          "driver_power_seat": null,
+          "driver_power_seat": false,
           "passenger_power_seat": false,
-          "front_seat_heating": null,
-          "front_seat_ventilation": null,
+          "front_seat_heating": false,
+          "front_seat_ventilation": false,
           "rear_air_vents": false,
           "climate_control": null,
           "leather_seats": null
@@ -3897,7 +4126,8 @@
           "branded_audio": "-",
           "voice_control": false,
           "full_lcd_cluster": false,
-          "chip_8155": null
+          "chip_8155": null,
+          "phone_link": false
         },
         "lighting": {
           "headlights": null,
@@ -3913,7 +4143,7 @@
       "data_quality": {
         "core_confidence": 0.99,
         "feature_confidence": "high",
-        "verified_non_null_feature_leaf_count": 27,
+        "verified_non_null_feature_leaf_count": 32,
         "scoring_rule": "Only exact-trim standard features may score. null/optional features score 0.",
         "known_issues": [],
         "identity_source": "autohome_exact_trim",
@@ -3971,7 +4201,7 @@
       "features": {
         "passive_safety": {
           "front_airbags": true,
-          "front_side_airbags": null,
+          "front_side_airbags": true,
           "curtain_airbags": true,
           "tpms_display": null
         },
@@ -3985,10 +4215,11 @@
           "dow": null,
           "rear_collision_warning": null,
           "traffic_sign_recognition": false,
-          "fatigue_warning": false
+          "fatigue_warning": false,
+          "esp": true
         },
         "parking_adas": {
-          "front_parking_radar": null,
+          "front_parking_radar": false,
           "rear_parking_radar": true,
           "reverse_camera": null,
           "surround_360": null,
@@ -4007,7 +4238,7 @@
           "remote_start": null,
           "hud": false,
           "wireless_phone_charging": false,
-          "driver_power_seat": null,
+          "driver_power_seat": true,
           "passenger_power_seat": true,
           "front_seat_heating": null,
           "front_seat_ventilation": null,
@@ -4026,7 +4257,8 @@
           "branded_audio": "-",
           "voice_control": false,
           "full_lcd_cluster": false,
-          "chip_8155": null
+          "chip_8155": null,
+          "phone_link": null
         },
         "lighting": {
           "headlights": null,
@@ -4042,7 +4274,7 @@
       "data_quality": {
         "core_confidence": 0.99,
         "feature_confidence": "high",
-        "verified_non_null_feature_leaf_count": 26,
+        "verified_non_null_feature_leaf_count": 29,
         "scoring_rule": "Only exact-trim standard features may score. null/optional features score 0.",
         "known_issues": [],
         "identity_source": "autohome_exact_trim",
@@ -4100,7 +4332,7 @@
       "features": {
         "passive_safety": {
           "front_airbags": true,
-          "front_side_airbags": null,
+          "front_side_airbags": true,
           "curtain_airbags": true,
           "tpms_display": null
         },
@@ -4114,10 +4346,11 @@
           "dow": null,
           "rear_collision_warning": null,
           "traffic_sign_recognition": true,
-          "fatigue_warning": false
+          "fatigue_warning": false,
+          "esp": true
         },
         "parking_adas": {
-          "front_parking_radar": null,
+          "front_parking_radar": true,
           "rear_parking_radar": true,
           "reverse_camera": null,
           "surround_360": null,
@@ -4136,7 +4369,7 @@
           "remote_start": null,
           "hud": false,
           "wireless_phone_charging": null,
-          "driver_power_seat": null,
+          "driver_power_seat": true,
           "passenger_power_seat": true,
           "front_seat_heating": null,
           "front_seat_ventilation": null,
@@ -4155,7 +4388,8 @@
           "branded_audio": "-",
           "voice_control": null,
           "full_lcd_cluster": true,
-          "chip_8155": null
+          "chip_8155": null,
+          "phone_link": false
         },
         "lighting": {
           "headlights": null,
@@ -4170,12 +4404,10 @@
       },
       "data_quality": {
         "core_confidence": 0.99,
-        "feature_confidence": "medium",
-        "verified_non_null_feature_leaf_count": 23,
+        "feature_confidence": "high",
+        "verified_non_null_feature_leaf_count": 26,
         "scoring_rule": "Only exact-trim standard features may score. null/optional features score 0.",
-        "known_issues": [
-          "汽车之家该车型可核验配置字段较少"
-        ],
+        "known_issues": [],
         "identity_source": "autohome_exact_trim",
         "series_match": 1.0,
         "trim_match": 1.0,
@@ -4213,20 +4445,25 @@
         "height_mm": 1416,
         "wheelbase_mm": 2700,
         "fuel_grade": "92",
-        "official_fuel_l_100km": null,
-        "official_standard": null,
+        "official_fuel_l_100km": 5.4,
+        "official_standard": "NEDC",
         "low_soc_fuel_l_100km": null,
         "real_world_fuel_l_100km": null,
         "real_world_sample_n": null,
         "ev_range_km": null,
         "ev_range_standard": null,
         "electric_kwh_100km": null,
-        "ranking_energy": null
+        "ranking_energy": {
+          "type": "official_nedc_with_uncertainty",
+          "value": 5.4,
+          "unit": "L/100km",
+          "fallback_multiplier_recommended": 1.2
+        }
       },
       "features": {
         "passive_safety": {
           "front_airbags": true,
-          "front_side_airbags": null,
+          "front_side_airbags": true,
           "curtain_airbags": true,
           "tpms_display": null
         },
@@ -4240,38 +4477,39 @@
           "dow": null,
           "rear_collision_warning": null,
           "traffic_sign_recognition": null,
-          "fatigue_warning": false
+          "fatigue_warning": false,
+          "esp": true
         },
         "parking_adas": {
-          "front_parking_radar": null,
+          "front_parking_radar": false,
           "rear_parking_radar": true,
           "reverse_camera": null,
-          "surround_360": null,
+          "surround_360": false,
           "transparent_chassis_540": null,
-          "cruise": null,
+          "cruise": "none",
           "adas_level": null,
           "auto_park": false,
           "remote_park": null
         },
         "comfort": {
-          "sunroof": null,
+          "sunroof": "single_openable",
           "power_tailgate": false,
           "hands_free_tailgate": false,
-          "keyless_entry": null,
+          "keyless_entry": true,
           "keyless_start": true,
-          "remote_start": null,
+          "remote_start": true,
           "hud": false,
           "wireless_phone_charging": false,
-          "driver_power_seat": null,
+          "driver_power_seat": false,
           "passenger_power_seat": false,
-          "front_seat_heating": null,
-          "front_seat_ventilation": null,
+          "front_seat_heating": false,
+          "front_seat_ventilation": false,
           "rear_air_vents": false,
           "climate_control": "automatic_dual_zone",
-          "leather_seats": null
+          "leather_seats": false
         },
         "infotainment": {
-          "center_screen_inches": null,
+          "center_screen_inches": 7.0,
           "instrument_screen_inches": null,
           "carplay": null,
           "carlife": null,
@@ -4281,7 +4519,8 @@
           "branded_audio": "-",
           "voice_control": null,
           "full_lcd_cluster": false,
-          "chip_8155": null
+          "chip_8155": null,
+          "phone_link": true
         },
         "lighting": {
           "headlights": null,
@@ -4296,12 +4535,10 @@
       },
       "data_quality": {
         "core_confidence": 0.99,
-        "feature_confidence": "medium",
-        "verified_non_null_feature_leaf_count": 22,
+        "feature_confidence": "high",
+        "verified_non_null_feature_leaf_count": 33,
         "scoring_rule": "Only exact-trim standard features may score. null/optional features score 0.",
-        "known_issues": [
-          "汽车之家该车型可核验配置字段较少"
-        ],
+        "known_issues": [],
         "identity_source": "autohome_exact_trim",
         "series_match": 1.0,
         "trim_match": 1.0,
@@ -4325,6 +4562,137 @@
       ],
       "trim_id": "trim_ah_1e537ee5e9a5"
     },
+    "trim_ah_78cda46e94bc": {
+      "canonical_title": "领克02 2018款 1.5T 两驱劲Pro版",
+      "msrp_wan": 15.28,
+      "core_specs": {
+        "powertrain": "ice",
+        "body_type": "紧凑型SUV",
+        "seats": 5,
+        "engine": "●",
+        "transmission": "双离合变速箱(DCT)",
+        "length_mm": 4448,
+        "width_mm": 1890,
+        "height_mm": 1528,
+        "wheelbase_mm": 2702,
+        "fuel_grade": "95",
+        "official_fuel_l_100km": 6.2,
+        "official_standard": "NEDC",
+        "low_soc_fuel_l_100km": null,
+        "real_world_fuel_l_100km": null,
+        "real_world_sample_n": null,
+        "ev_range_km": null,
+        "ev_range_standard": null,
+        "electric_kwh_100km": null,
+        "ranking_energy": {
+          "type": "official_nedc_with_uncertainty",
+          "value": 6.2,
+          "unit": "L/100km",
+          "fallback_multiplier_recommended": 1.2
+        }
+      },
+      "features": {
+        "passive_safety": {
+          "front_airbags": true,
+          "front_side_airbags": true,
+          "curtain_airbags": true,
+          "tpms_display": null
+        },
+        "active_safety": {
+          "aeb": true,
+          "fcw": null,
+          "ldw": true,
+          "lka": null,
+          "lane_centering": null,
+          "bsd": true,
+          "dow": null,
+          "rear_collision_warning": null,
+          "traffic_sign_recognition": null,
+          "fatigue_warning": true,
+          "esp": true
+        },
+        "parking_adas": {
+          "front_parking_radar": true,
+          "rear_parking_radar": true,
+          "reverse_camera": null,
+          "surround_360": true,
+          "transparent_chassis_540": null,
+          "cruise": "adaptive",
+          "adas_level": null,
+          "auto_park": true,
+          "remote_park": null
+        },
+        "comfort": {
+          "sunroof": "panoramic",
+          "power_tailgate": false,
+          "hands_free_tailgate": false,
+          "keyless_entry": true,
+          "keyless_start": true,
+          "remote_start": true,
+          "hud": false,
+          "wireless_phone_charging": true,
+          "driver_power_seat": true,
+          "passenger_power_seat": true,
+          "front_seat_heating": true,
+          "front_seat_ventilation": false,
+          "rear_air_vents": true,
+          "climate_control": "automatic_dual_zone",
+          "leather_seats": null
+        },
+        "infotainment": {
+          "center_screen_inches": 10.2,
+          "instrument_screen_inches": null,
+          "carplay": null,
+          "carlife": null,
+          "connected_car": true,
+          "ota": null,
+          "speaker_count": null,
+          "branded_audio": "Infinity燕飞利仕",
+          "voice_control": null,
+          "full_lcd_cluster": true,
+          "chip_8155": null,
+          "phone_link": true
+        },
+        "lighting": {
+          "headlights": null,
+          "auto_headlights": true,
+          "adaptive_high_beam": true
+        },
+        "wheels": {
+          "front_tire": "235/50 R18",
+          "rear_tire": "235/50 R18"
+        },
+        "optional_or_uncertain_features": []
+      },
+      "data_quality": {
+        "core_confidence": 0.935,
+        "feature_confidence": "high",
+        "verified_non_null_feature_leaf_count": 32,
+        "scoring_rule": "Only exact-trim standard features may score. null/optional features score 0.",
+        "known_issues": [],
+        "identity_source": "autohome_exact_trim",
+        "series_match": 1.0,
+        "trim_match": 0.878,
+        "source_snapshot": "201902"
+      },
+      "sources": [
+        {
+          "url": "https://car.autohome.com.cn/config/spec/34751.html",
+          "source_type": "autohome_exact_trim",
+          "authority_tier": 2,
+          "series_id": 4616,
+          "spec_id": 34751
+        },
+        {
+          "url": "https://github.com/swoiow/autohome",
+          "source_type": "autohome_parameter_dataset",
+          "authority_tier": 2,
+          "snapshot": "201902",
+          "source_path": "领克_领克02.csv"
+        }
+      ],
+      "trim_id": "trim_ah_78cda46e94bc"
+    },
     "trim_ah_f1f929a49c0f": {
       "canonical_title": "领克03 2019款 1.5TD DCT劲版 国VI",
       "msrp_wan": 13.88,
@@ -4339,20 +4707,25 @@
         "height_mm": 1460,
         "wheelbase_mm": 2730,
         "fuel_grade": "95",
-        "official_fuel_l_100km": null,
-        "official_standard": null,
+        "official_fuel_l_100km": 6.2,
+        "official_standard": "NEDC",
         "low_soc_fuel_l_100km": null,
         "real_world_fuel_l_100km": null,
         "real_world_sample_n": null,
         "ev_range_km": null,
         "ev_range_standard": null,
         "electric_kwh_100km": null,
-        "ranking_energy": null
+        "ranking_energy": {
+          "type": "official_nedc_with_uncertainty",
+          "value": 6.2,
+          "unit": "L/100km",
+          "fallback_multiplier_recommended": 1.2
+        }
       },
       "features": {
         "passive_safety": {
           "front_airbags": true,
-          "front_side_airbags": null,
+          "front_side_airbags": true,
           "curtain_airbags": true,
           "tpms_display": null
         },
@@ -4366,38 +4739,39 @@
           "dow": null,
           "rear_collision_warning": null,
           "traffic_sign_recognition": null,
-          "fatigue_warning": false
+          "fatigue_warning": false,
+          "esp": true
         },
         "parking_adas": {
-          "front_parking_radar": null,
+          "front_parking_radar": false,
           "rear_parking_radar": true,
           "reverse_camera": null,
-          "surround_360": null,
+          "surround_360": false,
           "transparent_chassis_540": null,
-          "cruise": null,
+          "cruise": "fixed",
           "adas_level": null,
           "auto_park": false,
           "remote_park": null
         },
         "comfort": {
-          "sunroof": null,
+          "sunroof": "panoramic",
           "power_tailgate": false,
           "hands_free_tailgate": false,
-          "keyless_entry": null,
+          "keyless_entry": true,
           "keyless_start": true,
-          "remote_start": null,
+          "remote_start": true,
           "hud": false,
           "wireless_phone_charging": false,
-          "driver_power_seat": null,
+          "driver_power_seat": false,
           "passenger_power_seat": false,
-          "front_seat_heating": null,
-          "front_seat_ventilation": null,
+          "front_seat_heating": true,
+          "front_seat_ventilation": false,
           "rear_air_vents": true,
           "climate_control": "automatic_dual_zone",
           "leather_seats": null
         },
         "infotainment": {
-          "center_screen_inches": null,
+          "center_screen_inches": 10.2,
           "instrument_screen_inches": null,
           "carplay": null,
           "carlife": null,
@@ -4407,7 +4781,8 @@
           "branded_audio": "-",
           "voice_control": null,
           "full_lcd_cluster": true,
-          "chip_8155": null
+          "chip_8155": null,
+          "phone_link": true
         },
         "lighting": {
           "headlights": null,
@@ -4422,12 +4797,10 @@
       },
       "data_quality": {
         "core_confidence": 0.963,
-        "feature_confidence": "medium",
-        "verified_non_null_feature_leaf_count": 21,
+        "feature_confidence": "high",
+        "verified_non_null_feature_leaf_count": 32,
         "scoring_rule": "Only exact-trim standard features may score. null/optional features score 0.",
-        "known_issues": [
-          "汽车之家该车型可核验配置字段较少"
-        ],
+        "known_issues": [],
         "identity_source": "autohome_exact_trim",
         "series_match": 1.0,
         "trim_match": 0.94,
@@ -4465,20 +4838,25 @@
         "height_mm": 1612,
         "wheelbase_mm": 2646,
         "fuel_grade": "92",
-        "official_fuel_l_100km": null,
-        "official_standard": null,
+        "official_fuel_l_100km": 6.9,
+        "official_standard": "NEDC",
         "low_soc_fuel_l_100km": null,
         "real_world_fuel_l_100km": null,
         "real_world_sample_n": null,
         "ev_range_km": null,
         "ev_range_standard": null,
         "electric_kwh_100km": null,
-        "ranking_energy": null
+        "ranking_energy": {
+          "type": "official_nedc_with_uncertainty",
+          "value": 6.9,
+          "unit": "L/100km",
+          "fallback_multiplier_recommended": 1.2
+        }
       },
       "features": {
         "passive_safety": {
           "front_airbags": true,
-          "front_side_airbags": null,
+          "front_side_airbags": true,
           "curtain_airbags": true,
           "tpms_display": null
         },
@@ -4492,38 +4870,39 @@
           "dow": null,
           "rear_collision_warning": null,
           "traffic_sign_recognition": null,
-          "fatigue_warning": false
+          "fatigue_warning": false,
+          "esp": true
         },
         "parking_adas": {
-          "front_parking_radar": null,
+          "front_parking_radar": false,
           "rear_parking_radar": false,
           "reverse_camera": null,
-          "surround_360": null,
+          "surround_360": true,
           "transparent_chassis_540": null,
-          "cruise": null,
+          "cruise": "none",
           "adas_level": null,
           "auto_park": false,
           "remote_park": null
         },
         "comfort": {
-          "sunroof": null,
+          "sunroof": "panoramic",
           "power_tailgate": false,
           "hands_free_tailgate": false,
-          "keyless_entry": null,
+          "keyless_entry": true,
           "keyless_start": true,
-          "remote_start": null,
+          "remote_start": false,
           "hud": false,
           "wireless_phone_charging": false,
-          "driver_power_seat": null,
+          "driver_power_seat": false,
           "passenger_power_seat": false,
-          "front_seat_heating": null,
-          "front_seat_ventilation": null,
+          "front_seat_heating": false,
+          "front_seat_ventilation": false,
           "rear_air_vents": false,
-          "climate_control": null,
-          "leather_seats": null
+          "climate_control": "manual",
+          "leather_seats": false
         },
         "infotainment": {
-          "center_screen_inches": null,
+          "center_screen_inches": 7.0,
           "instrument_screen_inches": null,
           "carplay": null,
           "carlife": null,
@@ -4533,7 +4912,8 @@
           "branded_audio": "-",
           "voice_control": null,
           "full_lcd_cluster": false,
-          "chip_8155": null
+          "chip_8155": null,
+          "phone_link": true
         },
         "lighting": {
           "headlights": null,
@@ -4548,12 +4928,10 @@
       },
       "data_quality": {
         "core_confidence": 0.964,
-        "feature_confidence": "medium",
-        "verified_non_null_feature_leaf_count": 20,
+        "feature_confidence": "high",
+        "verified_non_null_feature_leaf_count": 31,
         "scoring_rule": "Only exact-trim standard features may score. null/optional features score 0.",
-        "known_issues": [
-          "汽车之家该车型可核验配置字段较少"
-        ],
+        "known_issues": [],
         "identity_source": "autohome_exact_trim",
         "series_match": 1.0,
         "trim_match": 0.941,
@@ -4609,7 +4987,7 @@
       "features": {
         "passive_safety": {
           "front_airbags": true,
-          "front_side_airbags": null,
+          "front_side_airbags": true,
           "curtain_airbags": false,
           "tpms_display": null
         },
@@ -4623,10 +5001,11 @@
           "dow": null,
           "rear_collision_warning": null,
           "traffic_sign_recognition": false,
-          "fatigue_warning": false
+          "fatigue_warning": false,
+          "esp": true
         },
         "parking_adas": {
-          "front_parking_radar": null,
+          "front_parking_radar": false,
           "rear_parking_radar": false,
           "reverse_camera": null,
           "surround_360": null,
@@ -4645,10 +5024,10 @@
           "remote_start": false,
           "hud": false,
           "wireless_phone_charging": false,
-          "driver_power_seat": null,
+          "driver_power_seat": false,
           "passenger_power_seat": false,
-          "front_seat_heating": null,
-          "front_seat_ventilation": null,
+          "front_seat_heating": false,
+          "front_seat_ventilation": false,
           "rear_air_vents": false,
           "climate_control": null,
           "leather_seats": null
@@ -4664,7 +5043,8 @@
           "branded_audio": "-",
           "voice_control": false,
           "full_lcd_cluster": true,
-          "chip_8155": null
+          "chip_8155": null,
+          "phone_link": false
         },
         "lighting": {
           "headlights": null,
@@ -4680,7 +5060,7 @@
       "data_quality": {
         "core_confidence": 0.99,
         "feature_confidence": "high",
-        "verified_non_null_feature_leaf_count": 28,
+        "verified_non_null_feature_leaf_count": 33,
         "scoring_rule": "Only exact-trim standard features may score. null/optional features score 0.",
         "known_issues": [],
         "identity_source": "autohome_exact_trim",
@@ -4705,6 +5085,136 @@
         }
       ],
       "trim_id": "trim_ah_9bf74b56ab3f"
+    },
+    "trim_ah_59feefa2b1cf": {
+      "canonical_title": "海鸥 2025款 智驾版 305km 活力版",
+      "msrp_wan": 6.98,
+      "core_specs": {
+        "powertrain": "bev",
+        "body_type": "小型车",
+        "seats": null,
+        "engine": null,
+        "transmission": "固定齿比变速箱",
+        "length_mm": 3780,
+        "width_mm": 1715,
+        "height_mm": 1540,
+        "wheelbase_mm": 2500,
+        "fuel_grade": null,
+        "official_fuel_l_100km": null,
+        "official_standard": null,
+        "low_soc_fuel_l_100km": null,
+        "real_world_fuel_l_100km": null,
+        "real_world_sample_n": null,
+        "ev_range_km": 305.0,
+        "ev_range_standard": "CLTC",
+        "electric_kwh_100km": 9.9,
+        "ranking_energy": {
+          "type": "electricity",
+          "value": 9.9,
+          "unit": "kWh/100km"
+        }
+      },
+      "features": {
+        "passive_safety": {
+          "front_airbags": true,
+          "front_side_airbags": false,
+          "curtain_airbags": true,
+          "tpms_display": null
+        },
+        "active_safety": {
+          "aeb": false,
+          "fcw": false,
+          "ldw": false,
+          "lka": false,
+          "lane_centering": false,
+          "bsd": false,
+          "dow": false,
+          "rear_collision_warning": false,
+          "traffic_sign_recognition": false,
+          "fatigue_warning": false,
+          "esp": true
+        },
+        "parking_adas": {
+          "front_parking_radar": false,
+          "rear_parking_radar": true,
+          "reverse_camera": null,
+          "surround_360": null,
+          "transparent_chassis_540": null,
+          "cruise": null,
+          "adas_level": "-",
+          "auto_park": false,
+          "remote_park": false
+        },
+        "comfort": {
+          "sunroof": "none",
+          "power_tailgate": null,
+          "hands_free_tailgate": null,
+          "keyless_entry": null,
+          "keyless_start": true,
+          "remote_start": null,
+          "hud": null,
+          "wireless_phone_charging": false,
+          "driver_power_seat": false,
+          "passenger_power_seat": false,
+          "front_seat_heating": false,
+          "front_seat_ventilation": false,
+          "rear_air_vents": false,
+          "climate_control": null,
+          "leather_seats": null
+        },
+        "infotainment": {
+          "center_screen_inches": null,
+          "instrument_screen_inches": null,
+          "carplay": null,
+          "carlife": null,
+          "connected_car": true,
+          "ota": true,
+          "speaker_count": null,
+          "branded_audio": "-",
+          "voice_control": null,
+          "full_lcd_cluster": false,
+          "chip_8155": null,
+          "phone_link": false
+        },
+        "lighting": {
+          "headlights": null,
+          "auto_headlights": true,
+          "adaptive_high_beam": false
+        },
+        "wheels": {
+          "front_tire": null,
+          "rear_tire": null
+        },
+        "optional_or_uncertain_features": []
+      },
+      "data_quality": {
+        "core_confidence": 0.99,
+        "feature_confidence": "high",
+        "verified_non_null_feature_leaf_count": 32,
+        "scoring_rule": "Only exact-trim standard features may score. null/optional features score 0.",
+        "known_issues": [],
+        "identity_source": "autohome_exact_trim",
+        "series_match": 1.0,
+        "trim_match": 1.0,
+        "source_snapshot": "202601"
+      },
+      "sources": [
+        {
+          "url": "https://car.autohome.com.cn/config/spec/71690.html",
+          "source_type": "autohome_exact_trim",
+          "authority_tier": 2,
+          "series_id": 6762,
+          "spec_id": 71690
+        },
+        {
+          "url": "https://github.com/swoiow/autohome",
+          "source_type": "autohome_parameter_dataset",
+          "authority_tier": 2,
+          "snapshot": "202601",
+          "source_path": "比亚迪_海鸥.csv"
+        }
+      ],
+      "trim_id": "trim_ah_59feefa2b1cf"
     },
     "trim_ah_aa026fd23572": {
       "canonical_title": "宝来 2023款 200TSI DSG智行PRO版",
@@ -4738,7 +5248,7 @@
       "features": {
         "passive_safety": {
           "front_airbags": true,
-          "front_side_airbags": null,
+          "front_side_airbags": true,
           "curtain_airbags": true,
           "tpms_display": null
         },
@@ -4752,10 +5262,11 @@
           "dow": null,
           "rear_collision_warning": null,
           "traffic_sign_recognition": null,
-          "fatigue_warning": false
+          "fatigue_warning": false,
+          "esp": true
         },
         "parking_adas": {
-          "front_parking_radar": null,
+          "front_parking_radar": true,
           "rear_parking_radar": true,
           "reverse_camera": null,
           "surround_360": null,
@@ -4774,7 +5285,7 @@
           "remote_start": null,
           "hud": null,
           "wireless_phone_charging": false,
-          "driver_power_seat": null,
+          "driver_power_seat": true,
           "passenger_power_seat": true,
           "front_seat_heating": null,
           "front_seat_ventilation": null,
@@ -4793,7 +5304,8 @@
           "branded_audio": "-",
           "voice_control": null,
           "full_lcd_cluster": true,
-          "chip_8155": null
+          "chip_8155": null,
+          "phone_link": null
         },
         "lighting": {
           "headlights": null,
@@ -4809,7 +5321,7 @@
       "data_quality": {
         "core_confidence": 0.99,
         "feature_confidence": "medium",
-        "verified_non_null_feature_leaf_count": 20,
+        "verified_non_null_feature_leaf_count": 23,
         "scoring_rule": "Only exact-trim standard features may score. null/optional features score 0.",
         "known_issues": [
           "汽车之家该车型可核验配置字段较少"
@@ -4851,20 +5363,25 @@
         "height_mm": 1593,
         "wheelbase_mm": 2646,
         "fuel_grade": "92",
-        "official_fuel_l_100km": null,
-        "official_standard": null,
+        "official_fuel_l_100km": 6.2,
+        "official_standard": "NEDC",
         "low_soc_fuel_l_100km": null,
         "real_world_fuel_l_100km": null,
         "real_world_sample_n": null,
         "ev_range_km": null,
         "ev_range_standard": null,
         "electric_kwh_100km": null,
-        "ranking_energy": null
+        "ranking_energy": {
+          "type": "official_nedc_with_uncertainty",
+          "value": 6.2,
+          "unit": "L/100km",
+          "fallback_multiplier_recommended": 1.2
+        }
       },
       "features": {
         "passive_safety": {
           "front_airbags": true,
-          "front_side_airbags": null,
+          "front_side_airbags": true,
           "curtain_airbags": true,
           "tpms_display": null
         },
@@ -4878,38 +5395,39 @@
           "dow": null,
           "rear_collision_warning": null,
           "traffic_sign_recognition": null,
-          "fatigue_warning": false
+          "fatigue_warning": false,
+          "esp": true
         },
         "parking_adas": {
-          "front_parking_radar": null,
+          "front_parking_radar": false,
           "rear_parking_radar": false,
           "reverse_camera": null,
-          "surround_360": null,
+          "surround_360": true,
           "transparent_chassis_540": null,
-          "cruise": null,
+          "cruise": "fixed",
           "adas_level": null,
           "auto_park": false,
           "remote_park": null
         },
         "comfort": {
-          "sunroof": null,
+          "sunroof": "panoramic",
           "power_tailgate": false,
           "hands_free_tailgate": false,
-          "keyless_entry": null,
+          "keyless_entry": true,
           "keyless_start": true,
-          "remote_start": null,
+          "remote_start": false,
           "hud": false,
           "wireless_phone_charging": false,
-          "driver_power_seat": null,
+          "driver_power_seat": true,
           "passenger_power_seat": true,
-          "front_seat_heating": null,
-          "front_seat_ventilation": null,
+          "front_seat_heating": false,
+          "front_seat_ventilation": false,
           "rear_air_vents": true,
-          "climate_control": null,
+          "climate_control": "manual",
           "leather_seats": null
         },
         "infotainment": {
-          "center_screen_inches": null,
+          "center_screen_inches": 9.0,
           "instrument_screen_inches": null,
           "carplay": null,
           "carlife": null,
@@ -4919,7 +5437,8 @@
           "branded_audio": "-",
           "voice_control": null,
           "full_lcd_cluster": false,
-          "chip_8155": null
+          "chip_8155": null,
+          "phone_link": true
         },
         "lighting": {
           "headlights": null,
@@ -4934,12 +5453,10 @@
       },
       "data_quality": {
         "core_confidence": 0.99,
-        "feature_confidence": "medium",
-        "verified_non_null_feature_leaf_count": 20,
+        "feature_confidence": "high",
+        "verified_non_null_feature_leaf_count": 31,
         "scoring_rule": "Only exact-trim standard features may score. null/optional features score 0.",
-        "known_issues": [
-          "汽车之家该车型可核验配置字段较少"
-        ],
+        "known_issues": [],
         "identity_source": "autohome_exact_trim",
         "series_match": 1.0,
         "trim_match": 1.0,
@@ -4962,6 +5479,137 @@
         }
       ],
       "trim_id": "trim_ah_41764eac453c"
+    },
+    "trim_ah_3463164d4364": {
+      "canonical_title": "柯迪亚克 2018款 改款 TSI330 7座两驱豪华优享版",
+      "msrp_wan": 22.98,
+      "core_specs": {
+        "powertrain": "ice",
+        "body_type": "中型SUV",
+        "seats": 7,
+        "engine": "●",
+        "transmission": "双离合变速箱(DCT)",
+        "length_mm": 4698,
+        "width_mm": 1883,
+        "height_mm": 1676,
+        "wheelbase_mm": 2791,
+        "fuel_grade": "95",
+        "official_fuel_l_100km": 6.9,
+        "official_standard": "NEDC",
+        "low_soc_fuel_l_100km": null,
+        "real_world_fuel_l_100km": null,
+        "real_world_sample_n": null,
+        "ev_range_km": null,
+        "ev_range_standard": null,
+        "electric_kwh_100km": null,
+        "ranking_energy": {
+          "type": "official_nedc_with_uncertainty",
+          "value": 6.9,
+          "unit": "L/100km",
+          "fallback_multiplier_recommended": 1.2
+        }
+      },
+      "features": {
+        "passive_safety": {
+          "front_airbags": true,
+          "front_side_airbags": true,
+          "curtain_airbags": true,
+          "tpms_display": null
+        },
+        "active_safety": {
+          "aeb": null,
+          "fcw": null,
+          "ldw": false,
+          "lka": null,
+          "lane_centering": null,
+          "bsd": null,
+          "dow": null,
+          "rear_collision_warning": null,
+          "traffic_sign_recognition": null,
+          "fatigue_warning": true,
+          "esp": true
+        },
+        "parking_adas": {
+          "front_parking_radar": false,
+          "rear_parking_radar": true,
+          "reverse_camera": null,
+          "surround_360": false,
+          "transparent_chassis_540": null,
+          "cruise": null,
+          "adas_level": null,
+          "auto_park": false,
+          "remote_park": null
+        },
+        "comfort": {
+          "sunroof": "panoramic",
+          "power_tailgate": null,
+          "hands_free_tailgate": false,
+          "keyless_entry": true,
+          "keyless_start": true,
+          "remote_start": false,
+          "hud": false,
+          "wireless_phone_charging": false,
+          "driver_power_seat": true,
+          "passenger_power_seat": true,
+          "front_seat_heating": true,
+          "front_seat_ventilation": false,
+          "rear_air_vents": true,
+          "climate_control": "automatic_dual_zone",
+          "leather_seats": null
+        },
+        "infotainment": {
+          "center_screen_inches": 9.0,
+          "instrument_screen_inches": null,
+          "carplay": null,
+          "carlife": null,
+          "connected_car": false,
+          "ota": null,
+          "speaker_count": null,
+          "branded_audio": "-",
+          "voice_control": null,
+          "full_lcd_cluster": false,
+          "chip_8155": null,
+          "phone_link": true
+        },
+        "lighting": {
+          "headlights": null,
+          "auto_headlights": true,
+          "adaptive_high_beam": false
+        },
+        "wheels": {
+          "front_tire": "235/55 R18",
+          "rear_tire": "235/55 R18"
+        },
+        "optional_or_uncertain_features": []
+      },
+      "data_quality": {
+        "core_confidence": 0.99,
+        "feature_confidence": "high",
+        "verified_non_null_feature_leaf_count": 28,
+        "scoring_rule": "Only exact-trim standard features may score. null/optional features score 0.",
+        "known_issues": [],
+        "identity_source": "autohome_exact_trim",
+        "series_match": 1.0,
+        "trim_match": 1.0,
+        "source_snapshot": "201902"
+      },
+      "sources": [
+        {
+          "url": "https://car.autohome.com.cn/config/spec/33403.html",
+          "source_type": "autohome_exact_trim",
+          "authority_tier": 2,
+          "series_id": 4217,
+          "spec_id": 33403
+        },
+        {
+          "url": "https://github.com/swoiow/autohome",
+          "source_type": "autohome_parameter_dataset",
+          "authority_tier": 2,
+          "snapshot": "201902",
+          "source_path": "斯柯达_柯迪亚克.csv"
+        }
+      ],
+      "trim_id": "trim_ah_3463164d4364"
     },
     "trim_ah_8e1fe937b42f": {
       "canonical_title": "标致408 2022款 1.6T 追光版",
@@ -4995,7 +5643,7 @@
       "features": {
         "passive_safety": {
           "front_airbags": true,
-          "front_side_airbags": null,
+          "front_side_airbags": true,
           "curtain_airbags": true,
           "tpms_display": null
         },
@@ -5009,10 +5657,11 @@
           "dow": null,
           "rear_collision_warning": null,
           "traffic_sign_recognition": false,
-          "fatigue_warning": false
+          "fatigue_warning": false,
+          "esp": true
         },
         "parking_adas": {
-          "front_parking_radar": null,
+          "front_parking_radar": true,
           "rear_parking_radar": true,
           "reverse_camera": null,
           "surround_360": null,
@@ -5031,10 +5680,10 @@
           "remote_start": false,
           "hud": false,
           "wireless_phone_charging": false,
-          "driver_power_seat": null,
+          "driver_power_seat": true,
           "passenger_power_seat": true,
-          "front_seat_heating": null,
-          "front_seat_ventilation": null,
+          "front_seat_heating": false,
+          "front_seat_ventilation": false,
           "rear_air_vents": true,
           "climate_control": "automatic_dual_zone",
           "leather_seats": null
@@ -5050,7 +5699,8 @@
           "branded_audio": "-",
           "voice_control": null,
           "full_lcd_cluster": false,
-          "chip_8155": null
+          "chip_8155": null,
+          "phone_link": null
         },
         "lighting": {
           "headlights": null,
@@ -5066,7 +5716,7 @@
       "data_quality": {
         "core_confidence": 0.99,
         "feature_confidence": "high",
-        "verified_non_null_feature_leaf_count": 25,
+        "verified_non_null_feature_leaf_count": 30,
         "scoring_rule": "Only exact-trim standard features may score. null/optional features score 0.",
         "known_issues": [],
         "identity_source": "autohome_exact_trim",
@@ -5124,7 +5774,7 @@
       "features": {
         "passive_safety": {
           "front_airbags": true,
-          "front_side_airbags": null,
+          "front_side_airbags": true,
           "curtain_airbags": true,
           "tpms_display": null
         },
@@ -5138,10 +5788,11 @@
           "dow": null,
           "rear_collision_warning": null,
           "traffic_sign_recognition": false,
-          "fatigue_warning": false
+          "fatigue_warning": false,
+          "esp": true
         },
         "parking_adas": {
-          "front_parking_radar": null,
+          "front_parking_radar": false,
           "rear_parking_radar": false,
           "reverse_camera": null,
           "surround_360": null,
@@ -5160,10 +5811,10 @@
           "remote_start": false,
           "hud": false,
           "wireless_phone_charging": false,
-          "driver_power_seat": null,
+          "driver_power_seat": false,
           "passenger_power_seat": false,
-          "front_seat_heating": null,
-          "front_seat_ventilation": null,
+          "front_seat_heating": false,
+          "front_seat_ventilation": false,
           "rear_air_vents": false,
           "climate_control": null,
           "leather_seats": null
@@ -5179,7 +5830,8 @@
           "branded_audio": "-",
           "voice_control": null,
           "full_lcd_cluster": false,
-          "chip_8155": null
+          "chip_8155": null,
+          "phone_link": null
         },
         "lighting": {
           "headlights": null,
@@ -5195,7 +5847,7 @@
       "data_quality": {
         "core_confidence": 0.99,
         "feature_confidence": "high",
-        "verified_non_null_feature_leaf_count": 26,
+        "verified_non_null_feature_leaf_count": 31,
         "scoring_rule": "Only exact-trim standard features may score. null/optional features score 0.",
         "known_issues": [],
         "identity_source": "autohome_exact_trim",
@@ -5235,20 +5887,25 @@
         "height_mm": 1584,
         "wheelbase_mm": 2680,
         "fuel_grade": "95",
-        "official_fuel_l_100km": null,
-        "official_standard": null,
+        "official_fuel_l_100km": 5.9,
+        "official_standard": "NEDC",
         "low_soc_fuel_l_100km": null,
         "real_world_fuel_l_100km": null,
         "real_world_sample_n": null,
         "ev_range_km": null,
         "ev_range_standard": null,
         "electric_kwh_100km": null,
-        "ranking_energy": null
+        "ranking_energy": {
+          "type": "official_nedc_with_uncertainty",
+          "value": 5.9,
+          "unit": "L/100km",
+          "fallback_multiplier_recommended": 1.2
+        }
       },
       "features": {
         "passive_safety": {
           "front_airbags": true,
-          "front_side_airbags": null,
+          "front_side_airbags": true,
           "curtain_airbags": true,
           "tpms_display": null
         },
@@ -5262,10 +5919,11 @@
           "dow": null,
           "rear_collision_warning": null,
           "traffic_sign_recognition": false,
-          "fatigue_warning": true
+          "fatigue_warning": true,
+          "esp": true
         },
         "parking_adas": {
-          "front_parking_radar": null,
+          "front_parking_radar": true,
           "rear_parking_radar": true,
           "reverse_camera": null,
           "surround_360": null,
@@ -5303,7 +5961,8 @@
           "branded_audio": null,
           "voice_control": null,
           "full_lcd_cluster": false,
-          "chip_8155": null
+          "chip_8155": null,
+          "phone_link": null
         },
         "lighting": {
           "headlights": null,
@@ -5319,7 +5978,7 @@
       "data_quality": {
         "core_confidence": 0.99,
         "feature_confidence": "medium",
-        "verified_non_null_feature_leaf_count": 19,
+        "verified_non_null_feature_leaf_count": 21,
         "scoring_rule": "Only exact-trim standard features may score. null/optional features score 0.",
         "known_issues": [
           "汽车之家该车型可核验配置字段较少"
@@ -5346,6 +6005,137 @@
         }
       ],
       "trim_id": "trim_ah_166a2565b580"
+    },
+    "trim_ah_8e4ff6b3cf3e": {
+      "canonical_title": "奔驰GLA 2018款 GLA 200 时尚型",
+      "msrp_wan": 28.88,
+      "core_specs": {
+        "powertrain": "ice",
+        "body_type": "紧凑型SUV",
+        "seats": 5,
+        "engine": "●",
+        "transmission": "双离合变速箱(DCT)",
+        "length_mm": 4449,
+        "width_mm": 1804,
+        "height_mm": 1535,
+        "wheelbase_mm": 2699,
+        "fuel_grade": "95",
+        "official_fuel_l_100km": 6.5,
+        "official_standard": "NEDC",
+        "low_soc_fuel_l_100km": null,
+        "real_world_fuel_l_100km": null,
+        "real_world_sample_n": null,
+        "ev_range_km": null,
+        "ev_range_standard": null,
+        "electric_kwh_100km": null,
+        "ranking_energy": {
+          "type": "official_nedc_with_uncertainty",
+          "value": 6.5,
+          "unit": "L/100km",
+          "fallback_multiplier_recommended": 1.2
+        }
+      },
+      "features": {
+        "passive_safety": {
+          "front_airbags": true,
+          "front_side_airbags": true,
+          "curtain_airbags": true,
+          "tpms_display": null
+        },
+        "active_safety": {
+          "aeb": true,
+          "fcw": null,
+          "ldw": null,
+          "lka": null,
+          "lane_centering": null,
+          "bsd": null,
+          "dow": null,
+          "rear_collision_warning": null,
+          "traffic_sign_recognition": null,
+          "fatigue_warning": true,
+          "esp": true
+        },
+        "parking_adas": {
+          "front_parking_radar": true,
+          "rear_parking_radar": true,
+          "reverse_camera": null,
+          "surround_360": false,
+          "transparent_chassis_540": null,
+          "cruise": "fixed",
+          "adas_level": null,
+          "auto_park": true,
+          "remote_park": null
+        },
+        "comfort": {
+          "sunroof": "panoramic",
+          "power_tailgate": null,
+          "hands_free_tailgate": null,
+          "keyless_entry": false,
+          "keyless_start": true,
+          "remote_start": false,
+          "hud": false,
+          "wireless_phone_charging": false,
+          "driver_power_seat": true,
+          "passenger_power_seat": true,
+          "front_seat_heating": false,
+          "front_seat_ventilation": false,
+          "rear_air_vents": true,
+          "climate_control": "manual",
+          "leather_seats": null
+        },
+        "infotainment": {
+          "center_screen_inches": 8.0,
+          "instrument_screen_inches": null,
+          "carplay": null,
+          "carlife": null,
+          "connected_car": false,
+          "ota": null,
+          "speaker_count": null,
+          "branded_audio": "(选装harman/kardon哈曼卡顿)",
+          "voice_control": null,
+          "full_lcd_cluster": false,
+          "chip_8155": null,
+          "phone_link": true
+        },
+        "lighting": {
+          "headlights": null,
+          "auto_headlights": true,
+          "adaptive_high_beam": false
+        },
+        "wheels": {
+          "front_tire": "235/50 R18",
+          "rear_tire": "235/50 R18"
+        },
+        "optional_or_uncertain_features": []
+      },
+      "data_quality": {
+        "core_confidence": 0.99,
+        "feature_confidence": "high",
+        "verified_non_null_feature_leaf_count": 27,
+        "scoring_rule": "Only exact-trim standard features may score. null/optional features score 0.",
+        "known_issues": [],
+        "identity_source": "autohome_exact_trim",
+        "series_match": 1.0,
+        "trim_match": 1.0,
+        "source_snapshot": "201902"
+      },
+      "sources": [
+        {
+          "url": "https://car.autohome.com.cn/config/spec/33985.html",
+          "source_type": "autohome_exact_trim",
+          "authority_tier": 2,
+          "series_id": 3248,
+          "spec_id": 33985
+        },
+        {
+          "url": "https://github.com/swoiow/autohome",
+          "source_type": "autohome_parameter_dataset",
+          "authority_tier": 2,
+          "snapshot": "201902",
+          "source_path": "奔驰_奔驰GLA.csv"
+        }
+      ],
+      "trim_id": "trim_ah_8e4ff6b3cf3e"
     },
     "trim_ah_4e023664833a": {
       "canonical_title": "宝来 2023款 200TSI DSG智行版",
@@ -5379,7 +6169,7 @@
       "features": {
         "passive_safety": {
           "front_airbags": true,
-          "front_side_airbags": null,
+          "front_side_airbags": true,
           "curtain_airbags": true,
           "tpms_display": null
         },
@@ -5393,10 +6183,11 @@
           "dow": null,
           "rear_collision_warning": null,
           "traffic_sign_recognition": null,
-          "fatigue_warning": false
+          "fatigue_warning": false,
+          "esp": true
         },
         "parking_adas": {
-          "front_parking_radar": null,
+          "front_parking_radar": true,
           "rear_parking_radar": true,
           "reverse_camera": null,
           "surround_360": null,
@@ -5415,7 +6206,7 @@
           "remote_start": null,
           "hud": null,
           "wireless_phone_charging": false,
-          "driver_power_seat": null,
+          "driver_power_seat": false,
           "passenger_power_seat": false,
           "front_seat_heating": null,
           "front_seat_ventilation": null,
@@ -5434,7 +6225,8 @@
           "branded_audio": "-",
           "voice_control": null,
           "full_lcd_cluster": null,
-          "chip_8155": null
+          "chip_8155": null,
+          "phone_link": null
         },
         "lighting": {
           "headlights": null,
@@ -5450,7 +6242,7 @@
       "data_quality": {
         "core_confidence": 0.99,
         "feature_confidence": "medium",
-        "verified_non_null_feature_leaf_count": 20,
+        "verified_non_null_feature_leaf_count": 23,
         "scoring_rule": "Only exact-trim standard features may score. null/optional features score 0.",
         "known_issues": [
           "汽车之家该车型可核验配置字段较少"
@@ -5492,20 +6284,25 @@
         "height_mm": 1460,
         "wheelbase_mm": 2730,
         "fuel_grade": "95",
-        "official_fuel_l_100km": null,
-        "official_standard": null,
+        "official_fuel_l_100km": 6.5,
+        "official_standard": "NEDC",
         "low_soc_fuel_l_100km": null,
         "real_world_fuel_l_100km": null,
         "real_world_sample_n": null,
         "ev_range_km": null,
         "ev_range_standard": null,
         "electric_kwh_100km": null,
-        "ranking_energy": null
+        "ranking_energy": {
+          "type": "official_nedc_with_uncertainty",
+          "value": 6.5,
+          "unit": "L/100km",
+          "fallback_multiplier_recommended": 1.2
+        }
       },
       "features": {
         "passive_safety": {
           "front_airbags": true,
-          "front_side_airbags": null,
+          "front_side_airbags": true,
           "curtain_airbags": true,
           "tpms_display": null
         },
@@ -5519,38 +6316,39 @@
           "dow": null,
           "rear_collision_warning": null,
           "traffic_sign_recognition": null,
-          "fatigue_warning": true
+          "fatigue_warning": true,
+          "esp": true
         },
         "parking_adas": {
-          "front_parking_radar": null,
+          "front_parking_radar": true,
           "rear_parking_radar": true,
           "reverse_camera": null,
-          "surround_360": null,
+          "surround_360": true,
           "transparent_chassis_540": null,
-          "cruise": null,
+          "cruise": "adaptive",
           "adas_level": null,
           "auto_park": true,
           "remote_park": null
         },
         "comfort": {
-          "sunroof": null,
+          "sunroof": "panoramic",
           "power_tailgate": false,
           "hands_free_tailgate": false,
-          "keyless_entry": null,
+          "keyless_entry": true,
           "keyless_start": true,
-          "remote_start": null,
+          "remote_start": true,
           "hud": false,
           "wireless_phone_charging": true,
-          "driver_power_seat": null,
+          "driver_power_seat": true,
           "passenger_power_seat": null,
-          "front_seat_heating": null,
+          "front_seat_heating": true,
           "front_seat_ventilation": null,
           "rear_air_vents": true,
           "climate_control": "automatic_dual_zone",
           "leather_seats": null
         },
         "infotainment": {
-          "center_screen_inches": null,
+          "center_screen_inches": 10.2,
           "instrument_screen_inches": null,
           "carplay": null,
           "carlife": null,
@@ -5560,7 +6358,8 @@
           "branded_audio": "Infinity燕飞利仕",
           "voice_control": null,
           "full_lcd_cluster": true,
-          "chip_8155": null
+          "chip_8155": null,
+          "phone_link": true
         },
         "lighting": {
           "headlights": null,
@@ -5575,12 +6374,10 @@
       },
       "data_quality": {
         "core_confidence": 0.99,
-        "feature_confidence": "medium",
-        "verified_non_null_feature_leaf_count": 20,
+        "feature_confidence": "high",
+        "verified_non_null_feature_leaf_count": 30,
         "scoring_rule": "Only exact-trim standard features may score. null/optional features score 0.",
-        "known_issues": [
-          "汽车之家该车型可核验配置字段较少"
-        ],
+        "known_issues": [],
         "identity_source": "autohome_exact_trim",
         "series_match": 1.0,
         "trim_match": 1.0,
@@ -5636,7 +6433,7 @@
       "features": {
         "passive_safety": {
           "front_airbags": true,
-          "front_side_airbags": null,
+          "front_side_airbags": true,
           "curtain_airbags": true,
           "tpms_display": null
         },
@@ -5650,10 +6447,11 @@
           "dow": null,
           "rear_collision_warning": null,
           "traffic_sign_recognition": false,
-          "fatigue_warning": false
+          "fatigue_warning": false,
+          "esp": true
         },
         "parking_adas": {
-          "front_parking_radar": null,
+          "front_parking_radar": false,
           "rear_parking_radar": true,
           "reverse_camera": null,
           "surround_360": null,
@@ -5672,7 +6470,7 @@
           "remote_start": null,
           "hud": false,
           "wireless_phone_charging": false,
-          "driver_power_seat": null,
+          "driver_power_seat": true,
           "passenger_power_seat": true,
           "front_seat_heating": null,
           "front_seat_ventilation": null,
@@ -5691,7 +6489,8 @@
           "branded_audio": "-",
           "voice_control": null,
           "full_lcd_cluster": false,
-          "chip_8155": null
+          "chip_8155": null,
+          "phone_link": null
         },
         "lighting": {
           "headlights": null,
@@ -5706,12 +6505,10 @@
       },
       "data_quality": {
         "core_confidence": 0.99,
-        "feature_confidence": "medium",
-        "verified_non_null_feature_leaf_count": 24,
+        "feature_confidence": "high",
+        "verified_non_null_feature_leaf_count": 27,
         "scoring_rule": "Only exact-trim standard features may score. null/optional features score 0.",
-        "known_issues": [
-          "汽车之家该车型可核验配置字段较少"
-        ],
+        "known_issues": [],
         "identity_source": "autohome_exact_trim",
         "series_match": 1.0,
         "trim_match": 1.0,
@@ -5735,79 +6532,79 @@
       ],
       "trim_id": "trim_ah_7a3cf44077b9"
     },
-    "trim_ah_ab4b6c84cfa2": {
-      "canonical_title": "轩逸 2024款 改款二 经典 1.6XE CVT舒适版",
-      "msrp_wan": 10.86,
+    "trim_ah_b829183ae52a": {
+      "canonical_title": "海鸥 2025款 智驾版 405km 飞翔版",
+      "msrp_wan": 8.58,
       "core_specs": {
-        "powertrain": "ice",
-        "body_type": "紧凑型车",
+        "powertrain": "bev",
+        "body_type": "小型车",
         "seats": null,
-        "engine": "●",
-        "transmission": "无级变速箱(CVT)",
-        "length_mm": 4631,
-        "width_mm": 1760,
-        "height_mm": 1503,
-        "wheelbase_mm": 2700,
-        "fuel_grade": "92",
-        "official_fuel_l_100km": 5.99,
-        "official_standard": "WLTC",
+        "engine": null,
+        "transmission": "固定齿比变速箱",
+        "length_mm": 3780,
+        "width_mm": 1715,
+        "height_mm": 1540,
+        "wheelbase_mm": 2500,
+        "fuel_grade": null,
+        "official_fuel_l_100km": null,
+        "official_standard": null,
         "low_soc_fuel_l_100km": null,
         "real_world_fuel_l_100km": null,
         "real_world_sample_n": null,
-        "ev_range_km": null,
-        "ev_range_standard": null,
-        "electric_kwh_100km": null,
+        "ev_range_km": 405.0,
+        "ev_range_standard": "CLTC",
+        "electric_kwh_100km": 10.1,
         "ranking_energy": {
-          "type": "official_wltc_with_uncertainty",
-          "value": 5.99,
-          "unit": "L/100km",
-          "fallback_multiplier_recommended": 1.15
+          "type": "electricity",
+          "value": 10.1,
+          "unit": "kWh/100km"
         }
       },
       "features": {
         "passive_safety": {
           "front_airbags": true,
-          "front_side_airbags": null,
+          "front_side_airbags": true,
           "curtain_airbags": true,
           "tpms_display": null
         },
         "active_safety": {
-          "aeb": false,
-          "fcw": false,
-          "ldw": false,
-          "lka": false,
-          "lane_centering": false,
-          "bsd": false,
-          "dow": null,
-          "rear_collision_warning": null,
-          "traffic_sign_recognition": null,
-          "fatigue_warning": false
+          "aeb": true,
+          "fcw": true,
+          "ldw": true,
+          "lka": true,
+          "lane_centering": true,
+          "bsd": true,
+          "dow": true,
+          "rear_collision_warning": true,
+          "traffic_sign_recognition": true,
+          "fatigue_warning": false,
+          "esp": true
         },
         "parking_adas": {
-          "front_parking_radar": null,
-          "rear_parking_radar": false,
+          "front_parking_radar": true,
+          "rear_parking_radar": true,
           "reverse_camera": null,
           "surround_360": null,
           "transparent_chassis_540": null,
-          "cruise": "none",
-          "adas_level": "-",
-          "auto_park": null,
-          "remote_park": null
+          "cruise": null,
+          "adas_level": null,
+          "auto_park": true,
+          "remote_park": true
         },
         "comfort": {
           "sunroof": "none",
-          "power_tailgate": false,
+          "power_tailgate": null,
           "hands_free_tailgate": null,
-          "keyless_entry": false,
-          "keyless_start": false,
-          "remote_start": false,
+          "keyless_entry": null,
+          "keyless_start": true,
+          "remote_start": null,
           "hud": null,
-          "wireless_phone_charging": false,
-          "driver_power_seat": null,
-          "passenger_power_seat": false,
+          "wireless_phone_charging": null,
+          "driver_power_seat": true,
+          "passenger_power_seat": true,
           "front_seat_heating": null,
           "front_seat_ventilation": null,
-          "rear_air_vents": true,
+          "rear_air_vents": false,
           "climate_control": null,
           "leather_seats": null
         },
@@ -5816,18 +6613,19 @@
           "instrument_screen_inches": null,
           "carplay": null,
           "carlife": null,
-          "connected_car": false,
-          "ota": false,
+          "connected_car": true,
+          "ota": true,
           "speaker_count": null,
           "branded_audio": "-",
-          "voice_control": false,
-          "full_lcd_cluster": false,
-          "chip_8155": null
+          "voice_control": null,
+          "full_lcd_cluster": true,
+          "chip_8155": null,
+          "phone_link": false
         },
         "lighting": {
           "headlights": null,
-          "auto_headlights": false,
-          "adaptive_high_beam": false
+          "auto_headlights": true,
+          "adaptive_high_beam": true
         },
         "wheels": {
           "front_tire": null,
@@ -5836,33 +6634,33 @@
         "optional_or_uncertain_features": []
       },
       "data_quality": {
-        "core_confidence": 0.96,
+        "core_confidence": 0.949,
         "feature_confidence": "high",
-        "verified_non_null_feature_leaf_count": 27,
+        "verified_non_null_feature_leaf_count": 28,
         "scoring_rule": "Only exact-trim standard features may score. null/optional features score 0.",
         "known_issues": [],
         "identity_source": "autohome_exact_trim",
         "series_match": 1.0,
-        "trim_match": 0.933,
-        "source_snapshot": "202503"
+        "trim_match": 0.909,
+        "source_snapshot": "202601"
       },
       "sources": [
         {
-          "url": "https://car.autohome.com.cn/config/spec/71105.html",
+          "url": "https://car.autohome.com.cn/config/spec/71065.html",
           "source_type": "autohome_exact_trim",
           "authority_tier": 2,
-          "series_id": 448,
-          "spec_id": 71105
+          "series_id": 6762,
+          "spec_id": 71065
         },
         {
           "url": "https://github.com/swoiow/autohome",
           "source_type": "autohome_parameter_dataset",
           "authority_tier": 2,
-          "snapshot": "202503",
-          "source_path": "日产_轩逸.csv"
+          "snapshot": "202601",
+          "source_path": "比亚迪_海鸥.csv"
         }
       ],
-      "trim_id": "trim_ah_ab4b6c84cfa2"
+      "trim_id": "trim_ah_b829183ae52a"
     },
     "trim_ah_1dae85e1d846": {
       "canonical_title": "轩逸 2023款 1.6L CVT悦享版",
@@ -5896,7 +6694,7 @@
       "features": {
         "passive_safety": {
           "front_airbags": true,
-          "front_side_airbags": null,
+          "front_side_airbags": true,
           "curtain_airbags": true,
           "tpms_display": null
         },
@@ -5910,10 +6708,11 @@
           "dow": null,
           "rear_collision_warning": null,
           "traffic_sign_recognition": null,
-          "fatigue_warning": false
+          "fatigue_warning": false,
+          "esp": true
         },
         "parking_adas": {
-          "front_parking_radar": null,
+          "front_parking_radar": false,
           "rear_parking_radar": false,
           "reverse_camera": null,
           "surround_360": null,
@@ -5932,10 +6731,10 @@
           "remote_start": null,
           "hud": null,
           "wireless_phone_charging": false,
-          "driver_power_seat": null,
+          "driver_power_seat": false,
           "passenger_power_seat": false,
-          "front_seat_heating": null,
-          "front_seat_ventilation": null,
+          "front_seat_heating": false,
+          "front_seat_ventilation": false,
           "rear_air_vents": true,
           "climate_control": "automatic_dual_zone",
           "leather_seats": null
@@ -5951,7 +6750,8 @@
           "branded_audio": "-",
           "voice_control": null,
           "full_lcd_cluster": false,
-          "chip_8155": null
+          "chip_8155": null,
+          "phone_link": false
         },
         "lighting": {
           "headlights": null,
@@ -5966,12 +6766,10 @@
       },
       "data_quality": {
         "core_confidence": 0.99,
-        "feature_confidence": "medium",
-        "verified_non_null_feature_leaf_count": 24,
+        "feature_confidence": "high",
+        "verified_non_null_feature_leaf_count": 29,
         "scoring_rule": "Only exact-trim standard features may score. null/optional features score 0.",
-        "known_issues": [
-          "汽车之家该车型可核验配置字段较少"
-        ],
+        "known_issues": [],
         "identity_source": "autohome_exact_trim",
         "series_match": 1.0,
         "trim_match": 1.0,
@@ -6027,7 +6825,7 @@
       "features": {
         "passive_safety": {
           "front_airbags": true,
-          "front_side_airbags": null,
+          "front_side_airbags": true,
           "curtain_airbags": true,
           "tpms_display": null
         },
@@ -6041,10 +6839,11 @@
           "dow": null,
           "rear_collision_warning": null,
           "traffic_sign_recognition": false,
-          "fatigue_warning": false
+          "fatigue_warning": false,
+          "esp": true
         },
         "parking_adas": {
-          "front_parking_radar": null,
+          "front_parking_radar": false,
           "rear_parking_radar": false,
           "reverse_camera": null,
           "surround_360": null,
@@ -6063,10 +6862,10 @@
           "remote_start": false,
           "hud": false,
           "wireless_phone_charging": false,
-          "driver_power_seat": null,
+          "driver_power_seat": false,
           "passenger_power_seat": false,
-          "front_seat_heating": null,
-          "front_seat_ventilation": null,
+          "front_seat_heating": false,
+          "front_seat_ventilation": false,
           "rear_air_vents": false,
           "climate_control": null,
           "leather_seats": null
@@ -6082,7 +6881,8 @@
           "branded_audio": "-",
           "voice_control": null,
           "full_lcd_cluster": false,
-          "chip_8155": null
+          "chip_8155": null,
+          "phone_link": false
         },
         "lighting": {
           "headlights": null,
@@ -6097,12 +6897,10 @@
       },
       "data_quality": {
         "core_confidence": 0.99,
-        "feature_confidence": "medium",
-        "verified_non_null_feature_leaf_count": 24,
+        "feature_confidence": "high",
+        "verified_non_null_feature_leaf_count": 29,
         "scoring_rule": "Only exact-trim standard features may score. null/optional features score 0.",
-        "known_issues": [
-          "汽车之家该车型可核验配置字段较少"
-        ],
+        "known_issues": [],
         "identity_source": "autohome_exact_trim",
         "series_match": 1.0,
         "trim_match": 1.0,
@@ -6140,20 +6938,25 @@
         "height_mm": 1486,
         "wheelbase_mm": 2537,
         "fuel_grade": "95",
-        "official_fuel_l_100km": null,
-        "official_standard": null,
+        "official_fuel_l_100km": 5.6,
+        "official_standard": "NEDC",
         "low_soc_fuel_l_100km": null,
         "real_world_fuel_l_100km": null,
         "real_world_sample_n": null,
         "ev_range_km": null,
         "ev_range_standard": null,
         "electric_kwh_100km": null,
-        "ranking_energy": null
+        "ranking_energy": {
+          "type": "official_nedc_with_uncertainty",
+          "value": 5.6,
+          "unit": "L/100km",
+          "fallback_multiplier_recommended": 1.2
+        }
       },
       "features": {
         "passive_safety": {
           "front_airbags": true,
-          "front_side_airbags": null,
+          "front_side_airbags": true,
           "curtain_airbags": true,
           "tpms_display": null
         },
@@ -6167,38 +6970,39 @@
           "dow": null,
           "rear_collision_warning": null,
           "traffic_sign_recognition": null,
-          "fatigue_warning": false
+          "fatigue_warning": false,
+          "esp": true
         },
         "parking_adas": {
-          "front_parking_radar": null,
+          "front_parking_radar": false,
           "rear_parking_radar": false,
           "reverse_camera": null,
-          "surround_360": null,
+          "surround_360": false,
           "transparent_chassis_540": null,
-          "cruise": null,
+          "cruise": "fixed",
           "adas_level": null,
           "auto_park": false,
           "remote_park": null
         },
         "comfort": {
-          "sunroof": null,
+          "sunroof": "none",
           "power_tailgate": false,
           "hands_free_tailgate": false,
-          "keyless_entry": null,
+          "keyless_entry": false,
           "keyless_start": false,
-          "remote_start": null,
+          "remote_start": false,
           "hud": false,
           "wireless_phone_charging": false,
-          "driver_power_seat": null,
+          "driver_power_seat": false,
           "passenger_power_seat": false,
-          "front_seat_heating": null,
-          "front_seat_ventilation": null,
+          "front_seat_heating": false,
+          "front_seat_ventilation": false,
           "rear_air_vents": false,
-          "climate_control": null,
+          "climate_control": "manual",
           "leather_seats": null
         },
         "infotainment": {
-          "center_screen_inches": null,
+          "center_screen_inches": 6.5,
           "instrument_screen_inches": null,
           "carplay": null,
           "carlife": null,
@@ -6208,7 +7012,8 @@
           "branded_audio": "-",
           "voice_control": null,
           "full_lcd_cluster": false,
-          "chip_8155": null
+          "chip_8155": null,
+          "phone_link": true
         },
         "lighting": {
           "headlights": null,
@@ -6223,12 +7028,10 @@
       },
       "data_quality": {
         "core_confidence": 0.99,
-        "feature_confidence": "medium",
-        "verified_non_null_feature_leaf_count": 20,
+        "feature_confidence": "high",
+        "verified_non_null_feature_leaf_count": 31,
         "scoring_rule": "Only exact-trim standard features may score. null/optional features score 0.",
-        "known_issues": [
-          "汽车之家该车型可核验配置字段较少"
-        ],
+        "known_issues": [],
         "identity_source": "autohome_exact_trim",
         "series_match": 1.0,
         "trim_match": 1.0,
