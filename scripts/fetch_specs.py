@@ -758,15 +758,30 @@ PROS_BY_SERIES = {
 }
 
 
+def load_series_owner_reviews() -> dict:
+    """Full-series public koubei library (not used-car detail pages)."""
+    p = Path(__file__).resolve().parents[1] / "data" / "owner-reviews-by-series.json"
+    if p.exists():
+        return json.loads(p.read_text(encoding="utf-8"))
+    return {}
+
+
+SERIES_OWNER_REVIEWS = load_series_owner_reviews()
+PLACEHOLDER_BAN = "短名单外未逐车检索"
+
+
 def split_owner_reviews(item: dict) -> dict:
     series = item.get("series") or series_key(item["title"])
     old = item.get("owner_reviews") or {}
-    cons = list(CONS_BY_SERIES.get(series) or [])
-    pros = list(PROS_BY_SERIES.get(series) or [])
-    summary = old.get("summary") or ""
-    found = bool(old.get("found")) or bool(cons) or bool(summary)
+    canned = SERIES_OWNER_REVIEWS.get(series) or {}
+    cons = list(canned.get("cons") or CONS_BY_SERIES.get(series) or [])
+    pros = list(canned.get("pros") or PROS_BY_SERIES.get(series) or [])
+    summary = (canned.get("summary") or old.get("summary") or "").strip()
+    if PLACEHOLDER_BAN in summary:
+        summary = ""
+    sources = list(canned.get("sources") or old.get("sources") or [])
+    found = bool(canned.get("found")) if canned else (bool(old.get("found")) or bool(cons) or bool(summary))
     if not cons and found and summary:
-        # try light split from summary if series map missing
         for part in re.split(r"[；;。]", summary):
             if any(k in part for k in ("槽点", "短板", "通病", "需", "偏", "噪", "顿挫", "异响", "油耗偏")):
                 bit = part.strip()
@@ -776,13 +791,24 @@ def split_owner_reviews(item: dict) -> dict:
         summary = "；".join(pros[:2]) + ("。" if pros else "")
         if cons:
             summary += "主要槽点见缺点专节。"
+    if not summary and not pros and not cons:
+        # Never leave shortlist-only placeholder; mark as not found with reason.
+        return {
+            "summary": f"公开渠道暂未汇总到「{series}」稳定车主口碑样本",
+            "pros": [],
+            "cons": [],
+            "drawbacks": [],
+            "sources": sources,
+            "found": False,
+            "cons_note": "公开口碑未覆盖或样本不足",
+        }
     return {
         "summary": summary,
         "pros": pros,
         "cons": cons,
-        "drawbacks": cons,  # alias
-        "sources": old.get("sources") or [],
-        "found": found,
+        "drawbacks": cons,
+        "sources": sources,
+        "found": True if (summary or pros or cons) else found,
         "cons_note": None if cons else "暂无汇总缺点（公开口碑未覆盖或样本不足）",
     }
 
@@ -1018,7 +1044,7 @@ def main():
         "missing": missing_specs[:50],
     }
     meta["owner_reviews_note"] = (
-        "短名单按车系汇总公开口碑；结构含 summary/pros/cons(drawbacks)/sources/found；"
+        "全量按车系汇总公开口碑（禁止「短名单外未逐车检索」占位）；结构含 summary/pros/cons(drawbacks)/sources/found；"
         "看板单独展示「缺点」专节。"
     )
     meta["owner_reviews_series_covered"] = sorted(set(

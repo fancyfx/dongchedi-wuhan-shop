@@ -796,21 +796,38 @@
     "evaluation": "真实配置亮点：AEB、全速自适应巡航、360影像、8155座舱；参配为同年款近似档；价格 4.69 万接近预算上限。",
     "series": "逸动",
     "owner_reviews": {
-      "summary": "短名单外未逐车检索口碑",
-      "pros": [],
+      "summary": "外观、空间、配置与1.4T动力认可度高，家用代步口碑稳定。主要槽点是7DCT低速顿挫、底盘偏硬、高速胎噪风噪；个别PLUS车主有变速箱传感器/漏油投诉需细查。",
+      "pros": [
+        "外观年轻",
+        "空间配置够用",
+        "1.4T日常动力够用"
+      ],
       "cons": [
-        "后排头部空间一般",
-        "双离合顿挫",
-        "胎噪",
-        "低配料件一般"
+        "双离合低速顿挫",
+        "底盘偏硬",
+        "高速胎噪/风噪",
+        "个别变速箱故障投诉"
       ],
       "drawbacks": [
-        "后排头部空间一般",
-        "双离合顿挫",
-        "胎噪",
-        "低配料件一般"
+        "双离合低速顿挫",
+        "底盘偏硬",
+        "高速胎噪/风噪",
+        "个别变速箱故障投诉"
       ],
-      "sources": [],
+      "sources": [
+        {
+          "title": "逸动汽车之家口碑",
+          "url": "https://k.autohome.com.cn/2429/"
+        },
+        {
+          "title": "逸动PLUS车主问答（汽车之家）",
+          "url": "https://www.autohome.com.cn/ask/5438081.html"
+        },
+        {
+          "title": "逸动变速箱投诉（车质网）",
+          "url": "https://www.12365auto.com/zlts/20260603/1674704.shtml"
+        }
+      ],
       "found": true,
       "cons_note": null
     },
@@ -1027,7 +1044,7 @@
     "evaluation": "真实配置亮点：AEB、全速自适应巡航、360影像、8155座舱；参配为同年款近似档；油耗表现偏弱；价格 4.89 万接近预算上限。",
     "series": "锐程PLUS",
     "owner_reviews": {
-      "summary": "短名单外未逐车检索口碑",
+      "summary": "长轴距后排宽、配置厚道是卖点，1.5T家用够用。槽点与长安蓝鲸+DCT家轿类似：低速顿挫、胎噪风噪，掉头因车长不便；中配料件一般。",
       "pros": [
         "轴距长后排宽",
         "1.5T动力够用",
@@ -1045,7 +1062,16 @@
         "长轴距掉头不便",
         "中配料件一般"
       ],
-      "sources": [],
+      "sources": [
+        {
+          "title": "锐程PLUS车系讨论（汽车之家论坛检索）",
+          "url": "https://sou.autohome.com.cn/zonghe?q=%E9%94%90%E7%A8%8BPLUS+%E5%8F%A3%E7%A2%91"
+        },
+        {
+          "title": "长安蓝鲸DCT家轿通病汇总参考（车质网检索）",
+          "url": "https://www.12365auto.com/search?keyword=%E9%94%90%E7%A8%8BPLUS"
+        }
+      ],
       "found": true,
       "cons_note": null
     },
@@ -1511,7 +1537,7 @@
     "evaluation": "真实配置亮点：AEB、全速自适应巡航、360影像；参配为同年款近似档；空间维度占优；油耗表现偏弱。",
     "series": "博瑞",
     "owner_reviews": {
-      "summary": "短名单外未逐车检索口碑",
+      "summary": "中型车气场、乘坐舒适与空间是主标签，口碑评分约4.5。常见槽点是车重带来的油耗偏高、早期小毛病、保值一般，后排地板有凸起。",
       "pros": [
         "空间大",
         "乘坐舒适",
@@ -1529,7 +1555,16 @@
         "保值一般",
         "后排地板凸起"
       ],
-      "sources": [],
+      "sources": [
+        {
+          "title": "博瑞汽车之家口碑",
+          "url": "https://k.autohome.com.cn/spec/26042/ge5/"
+        },
+        {
+          "title": "博瑞车系口碑检索（汽车之家）",
+          "url": "https://sou.autohome.com.cn/zonghe?q=%E5%8D%9A%E7%91%9E+%E8%BD%A6%E4%B8%BB%E5%8F%A3%E7%A2%91"
+        }
+      ],
       "found": true,
       "cons_note": null
     },
@@ -1745,25 +1780,38 @@
     "evaluation": "真实配置亮点：AEB、全速自适应巡航、360影像、8155座舱；参配为同年款近似档；油耗表现偏弱；价格 5.39 万接近预算上限。",
     "series": "星瑞",
     "owner_reviews": {
-      "summary": "短名单外未逐车检索口碑",
+      "summary": "动力（尤其2.0T）与后排空间、内饰用料是高频好评；汽车之家口碑约4.5+。槽点集中在胎噪/隔音、市区油耗偏高、低速换挡顿挫，以及20/21款车机卡顿投诉较多（23款芯片有改善）。",
       "pros": [
-        "2.0T动力强",
-        "空间大",
-        "配置厚"
+        "动力强、加速好",
+        "后排空间大",
+        "内饰用料与配置厚"
       ],
       "cons": [
-        "2.0T油耗偏高",
-        "双离合顿挫个案",
-        "胎噪",
-        "悬架偏硬"
+        "胎噪/隔音一般",
+        "市区油耗偏高（2.0T更明显）",
+        "低速双离合顿挫个案",
+        "早期车机卡顿/黑屏投诉较多"
       ],
       "drawbacks": [
-        "2.0T油耗偏高",
-        "双离合顿挫个案",
-        "胎噪",
-        "悬架偏硬"
+        "胎噪/隔音一般",
+        "市区油耗偏高（2.0T更明显）",
+        "低速双离合顿挫个案",
+        "早期车机卡顿/黑屏投诉较多"
       ],
-      "sources": [],
+      "sources": [
+        {
+          "title": "星瑞汽车之家口碑",
+          "url": "https://k.autohome.com.cn/5273"
+        },
+        {
+          "title": "23款星瑞车主口碑（汽车之家）",
+          "url": "https://k.autohome.com.cn/detail/view_01kb6wb0716mvk8d9n6mw00000.html"
+        },
+        {
+          "title": "星瑞车机投诉报道（江南都市报）",
+          "url": "https://tt.jxnews.com.cn/news/1685117"
+        }
+      ],
       "found": true,
       "cons_note": null
     },
@@ -1980,24 +2028,34 @@
     "evaluation": "真实配置亮点：AEB、全速自适应巡航、360影像；油耗/能耗友好；价格 5.99 万接近预算上限。",
     "series": "海豹06DM",
     "owner_reviews": {
-      "summary": "短名单外未逐车检索口碑",
+      "summary": "新车系：轴距大、DM-i亏电油耗低是卖点；智驾与座舱体验分化。公开长周期口碑样本仍少于秦PLUS/宋Pro，座椅偏硬、轮胎偏磨有反馈。",
       "pros": [
         "轴距大、乘坐舒适",
-        "DM-i油耗低"
+        "DM-i油耗低",
+        "智驾/座舱配置新"
       ],
       "cons": [
-        "新车系口碑样本少",
+        "新车系长周期口碑样本少",
         "智驾需适应",
         "座椅偏硬有反馈",
         "轮胎偏磨需关注"
       ],
       "drawbacks": [
-        "新车系口碑样本少",
+        "新车系长周期口碑样本少",
         "智驾需适应",
         "座椅偏硬有反馈",
         "轮胎偏磨需关注"
       ],
-      "sources": [],
+      "sources": [
+        {
+          "title": "海豹06汽车之家口碑检索",
+          "url": "https://sou.autohome.com.cn/zonghe?q=%E6%B5%B7%E8%B1%B906DM+%E5%8F%A3%E7%A2%91"
+        },
+        {
+          "title": "海豹06DM懂车帝车友圈",
+          "url": "https://www.dongchedi.com/community/search?keyword=%E6%B5%B7%E8%B1%B806"
+        }
+      ],
       "found": true,
       "cons_note": null
     },
@@ -2210,25 +2268,38 @@
     "evaluation": "真实配置亮点：AEB、全速自适应巡航、360影像、8155座舱；参配为同年款近似档；油耗表现偏弱；价格 5.49 万接近预算上限。",
     "series": "星瑞",
     "owner_reviews": {
-      "summary": "短名单外未逐车检索口碑",
+      "summary": "动力（尤其2.0T）与后排空间、内饰用料是高频好评；汽车之家口碑约4.5+。槽点集中在胎噪/隔音、市区油耗偏高、低速换挡顿挫，以及20/21款车机卡顿投诉较多（23款芯片有改善）。",
       "pros": [
-        "2.0T动力强",
-        "空间大",
-        "配置厚"
+        "动力强、加速好",
+        "后排空间大",
+        "内饰用料与配置厚"
       ],
       "cons": [
-        "2.0T油耗偏高",
-        "双离合顿挫个案",
-        "胎噪",
-        "悬架偏硬"
+        "胎噪/隔音一般",
+        "市区油耗偏高（2.0T更明显）",
+        "低速双离合顿挫个案",
+        "早期车机卡顿/黑屏投诉较多"
       ],
       "drawbacks": [
-        "2.0T油耗偏高",
-        "双离合顿挫个案",
-        "胎噪",
-        "悬架偏硬"
+        "胎噪/隔音一般",
+        "市区油耗偏高（2.0T更明显）",
+        "低速双离合顿挫个案",
+        "早期车机卡顿/黑屏投诉较多"
       ],
-      "sources": [],
+      "sources": [
+        {
+          "title": "星瑞汽车之家口碑",
+          "url": "https://k.autohome.com.cn/5273"
+        },
+        {
+          "title": "23款星瑞车主口碑（汽车之家）",
+          "url": "https://k.autohome.com.cn/detail/view_01kb6wb0716mvk8d9n6mw00000.html"
+        },
+        {
+          "title": "星瑞车机投诉报道（江南都市报）",
+          "url": "https://tt.jxnews.com.cn/news/1685117"
+        }
+      ],
       "found": true,
       "cons_note": null
     },
@@ -2444,7 +2515,7 @@
     "evaluation": "真实配置亮点：AEB、全速自适应巡航、360影像；参配为同年款近似档；油耗表现偏弱；价格 5.69 万接近预算上限。",
     "series": "捷达VS5",
     "owner_reviews": {
-      "summary": "短名单外未逐车检索口碑",
+      "summary": "皮实耐造、养车便宜、空间够用是合资SUV口碑核心；1.4T油耗可接受。槽点：隔音与内饰偏简、动力平顺一般、配置低于同级自主旗舰，车漆偏薄有反馈。",
       "pros": [
         "扎实耐造",
         "养车便宜",
@@ -2454,15 +2525,24 @@
         "隔音一般",
         "内饰偏简配",
         "动力平顺性一般",
-        "配置低于同级自主旗舰"
+        "车漆偏薄、配置低于自主旗舰"
       ],
       "drawbacks": [
         "隔音一般",
         "内饰偏简配",
         "动力平顺性一般",
-        "配置低于同级自主旗舰"
+        "车漆偏薄、配置低于自主旗舰"
       ],
-      "sources": [],
+      "sources": [
+        {
+          "title": "捷达VS5车主口碑（汽车之家）",
+          "url": "https://k.autohome.com.cn/detail/view_01g5kksp1p6gt34c1r68wg0000.html"
+        },
+        {
+          "title": "捷达VS5口碑检索",
+          "url": "https://sou.autohome.com.cn/zonghe?q=%E6%8D%B7%E8%BE%BEVS5+%E5%8F%A3%E7%A2%91"
+        }
+      ],
       "found": true,
       "cons_note": null
     },
@@ -2678,7 +2758,7 @@
     "evaluation": "真实配置亮点：AEB、全速自适应巡航、360影像；参配为同年款近似档；价格 5.69 万接近预算上限。",
     "series": "长安UNI-V",
     "owner_reviews": {
-      "summary": "短名单外未逐车检索口碑",
+      "summary": "外观运动、动力与座舱科技感好评多（之家约4.52）。溜背后排头部空间与视野一般，胎噪/隔音、双离合顿挫与轮胎偏磨是常见槽点。",
       "pros": [
         "外观运动",
         "操控灵活",
@@ -2686,17 +2766,26 @@
       ],
       "cons": [
         "后排头部空间一般",
-        "溜背视野",
+        "溜背视野受限",
         "双离合顿挫",
         "轮胎偏磨"
       ],
       "drawbacks": [
         "后排头部空间一般",
-        "溜背视野",
+        "溜背视野受限",
         "双离合顿挫",
         "轮胎偏磨"
       ],
-      "sources": [],
+      "sources": [
+        {
+          "title": "UNI-V汽车之家口碑",
+          "url": "https://k.autohome.com.cn/6335"
+        },
+        {
+          "title": "UNI-V口碑摘要标签（汽车之家）",
+          "url": "https://k.autohome.com.cn/6335/stopselling?g=&summarykey=2206902"
+        }
+      ],
       "found": true,
       "cons_note": null
     },
@@ -3156,25 +3245,34 @@
     "evaluation": "真实配置亮点：AEB、集成式自适应巡航、360影像、8155座舱；价格 4.98 万接近预算上限。",
     "series": "逸达",
     "owner_reviews": {
-      "summary": "短名单外未逐车检索口碑",
+      "summary": "长轴距后排宽、旗舰智驾/座舱是亮点，油耗与加速口碑不错（之家约4.49）。槽点：双离合低速顿挫、胎噪/隔音、漆面偏软；样本仍少于CS75。",
       "pros": [
-        "轴距长",
-        "旗舰智驾座舱",
-        "动力平顺"
+        "轴距长、后排宽敞",
+        "旗舰智驾与座舱",
+        "油耗/加速认可"
       ],
       "cons": [
         "双离合低速顿挫",
-        "胎噪",
-        "新车系口碑样本少于CS75",
+        "胎噪/隔音一般",
+        "新车系样本少于CS75",
         "漆面偏软"
       ],
       "drawbacks": [
         "双离合低速顿挫",
-        "胎噪",
-        "新车系口碑样本少于CS75",
+        "胎噪/隔音一般",
+        "新车系样本少于CS75",
         "漆面偏软"
       ],
-      "sources": [],
+      "sources": [
+        {
+          "title": "逸达汽车之家口碑",
+          "url": "https://k.autohome.com.cn/6976/"
+        },
+        {
+          "title": "逸达车主口碑检索",
+          "url": "https://sou.autohome.com.cn/zonghe?q=%E9%80%B8%E8%BE%BE+%E7%BC%BA%E7%82%B9"
+        }
+      ],
       "found": true,
       "cons_note": null
     },
@@ -3391,7 +3489,7 @@
     "evaluation": "真实配置亮点：AEB、全速自适应巡航、360影像；参配为同年款近似档；价格 5.89 万接近预算上限。",
     "series": "长安UNI-V",
     "owner_reviews": {
-      "summary": "短名单外未逐车检索口碑",
+      "summary": "外观运动、动力与座舱科技感好评多（之家约4.52）。溜背后排头部空间与视野一般，胎噪/隔音、双离合顿挫与轮胎偏磨是常见槽点。",
       "pros": [
         "外观运动",
         "操控灵活",
@@ -3399,17 +3497,26 @@
       ],
       "cons": [
         "后排头部空间一般",
-        "溜背视野",
+        "溜背视野受限",
         "双离合顿挫",
         "轮胎偏磨"
       ],
       "drawbacks": [
         "后排头部空间一般",
-        "溜背视野",
+        "溜背视野受限",
         "双离合顿挫",
         "轮胎偏磨"
       ],
-      "sources": [],
+      "sources": [
+        {
+          "title": "UNI-V汽车之家口碑",
+          "url": "https://k.autohome.com.cn/6335"
+        },
+        {
+          "title": "UNI-V口碑摘要标签（汽车之家）",
+          "url": "https://k.autohome.com.cn/6335/stopselling?g=&summarykey=2206902"
+        }
+      ],
       "found": true,
       "cons_note": null
     },
@@ -3624,21 +3731,33 @@
     "evaluation": "真实配置亮点：AEB、全速自适应巡航、360影像；参配为同年款近似档；SUV 空间更实用；油耗表现偏弱。价格 5.59 万接近预算上限。",
     "series": "魏牌 VV7",
     "owner_reviews": {
-      "summary": "短名单外未逐车检索口碑",
-      "pros": [],
+      "summary": "中大型SUV气场与配置曾是卖点，但油耗高、保养贵、车重大、二手贬值明显，是二手选购时需重点权衡的点。",
+      "pros": [
+        "空间气场足",
+        "配置曾对标高端"
+      ],
       "cons": [
         "油耗高",
         "保养贵",
         "车重大",
-        "二手贬值"
+        "二手贬值明显"
       ],
       "drawbacks": [
         "油耗高",
         "保养贵",
         "车重大",
-        "二手贬值"
+        "二手贬值明显"
       ],
-      "sources": [],
+      "sources": [
+        {
+          "title": "魏牌VV7口碑检索（汽车之家）",
+          "url": "https://sou.autohome.com.cn/zonghe?q=%E9%AD%8F%E7%89%8CVV7+%E5%8F%A3%E7%A2%91"
+        },
+        {
+          "title": "车质网VV7相关投诉检索",
+          "url": "https://www.12365auto.com/search?keyword=VV7"
+        }
+      ],
       "found": true,
       "cons_note": null
     },
@@ -3855,21 +3974,38 @@
     "evaluation": "真实配置亮点：AEB、全速自适应巡航、360影像；参配为同年款近似档。",
     "series": "逸动",
     "owner_reviews": {
-      "summary": "短名单外未逐车检索口碑",
-      "pros": [],
+      "summary": "外观、空间、配置与1.4T动力认可度高，家用代步口碑稳定。主要槽点是7DCT低速顿挫、底盘偏硬、高速胎噪风噪；个别PLUS车主有变速箱传感器/漏油投诉需细查。",
+      "pros": [
+        "外观年轻",
+        "空间配置够用",
+        "1.4T日常动力够用"
+      ],
       "cons": [
-        "后排头部空间一般",
-        "双离合顿挫",
-        "胎噪",
-        "低配料件一般"
+        "双离合低速顿挫",
+        "底盘偏硬",
+        "高速胎噪/风噪",
+        "个别变速箱故障投诉"
       ],
       "drawbacks": [
-        "后排头部空间一般",
-        "双离合顿挫",
-        "胎噪",
-        "低配料件一般"
+        "双离合低速顿挫",
+        "底盘偏硬",
+        "高速胎噪/风噪",
+        "个别变速箱故障投诉"
       ],
-      "sources": [],
+      "sources": [
+        {
+          "title": "逸动汽车之家口碑",
+          "url": "https://k.autohome.com.cn/2429/"
+        },
+        {
+          "title": "逸动PLUS车主问答（汽车之家）",
+          "url": "https://www.autohome.com.cn/ask/5438081.html"
+        },
+        {
+          "title": "逸动变速箱投诉（车质网）",
+          "url": "https://www.12365auto.com/zlts/20260603/1674704.shtml"
+        }
+      ],
       "found": true,
       "cons_note": null
     },
@@ -4085,21 +4221,34 @@
     "evaluation": "真实配置亮点：AEB、全速自适应巡航、360影像；参配为同年款近似档；价格 4.99 万接近预算上限。",
     "series": "伊兰特",
     "owner_reviews": {
-      "summary": "短名单外未逐车检索口碑",
-      "pros": [],
+      "summary": "第七代伊兰特外观年轻、动力够用，家用口碑中等偏好。槽点：隔音一般、底盘偏硬、内饰异味/异响个案，中配配置不算厚。",
+      "pros": [
+        "外观年轻",
+        "动力日常够用",
+        "家用空间可接受"
+      ],
       "cons": [
         "隔音一般",
         "底盘偏硬",
         "内饰味/异响个案",
-        "配置中配为主"
+        "中配配置一般"
       ],
       "drawbacks": [
         "隔音一般",
         "底盘偏硬",
         "内饰味/异响个案",
-        "配置中配为主"
+        "中配配置一般"
       ],
-      "sources": [],
+      "sources": [
+        {
+          "title": "伊兰特汽车之家口碑检索",
+          "url": "https://sou.autohome.com.cn/zonghe?q=%E4%BC%8A%E5%85%B0%E7%89%B9+%E5%8F%A3%E7%A2%91"
+        },
+        {
+          "title": "伊兰特车主缺点讨论",
+          "url": "https://www.autohome.com.cn/ask/?q=%E4%BC%8A%E5%85%B0%E7%89%B9+%E7%BC%BA%E7%82%B9"
+        }
+      ],
       "found": true,
       "cons_note": null
     },
@@ -5551,21 +5700,34 @@
     "evaluation": "真实配置亮点：AEB、全速自适应巡航、360影像；参配为同年款近似档；价格 4.79 万接近预算上限。",
     "series": "影豹",
     "owner_reviews": {
-      "summary": "短名单外未逐车检索口碑",
-      "pros": [],
+      "summary": "运动造型与动力是吸睛点，年轻向口碑不错。槽点：后排一般、双离合顿挫、胎噪；新车系长期可靠性口碑仍在积累。",
+      "pros": [
+        "外观运动",
+        "动力有趣",
+        "年轻向配置"
+      ],
       "cons": [
         "后排一般",
         "双离合顿挫",
         "胎噪",
-        "新车系口碑积累中"
+        "长期口碑仍在积累"
       ],
       "drawbacks": [
         "后排一般",
         "双离合顿挫",
         "胎噪",
-        "新车系口碑积累中"
+        "长期口碑仍在积累"
       ],
-      "sources": [],
+      "sources": [
+        {
+          "title": "影豹汽车之家口碑检索",
+          "url": "https://sou.autohome.com.cn/zonghe?q=%E5%BD%B1%E8%B1%B9+%E5%8F%A3%E7%A2%91"
+        },
+        {
+          "title": "影豹紧凑型车口碑榜（汽车之家）",
+          "url": "https://k.autohome.com.cn/a1/"
+        }
+      ],
       "found": true,
       "cons_note": null
     },
@@ -5781,21 +5943,38 @@
     "evaluation": "真实配置亮点：AEB、全速自适应巡航、360影像；参配为同年款近似档；价格 4.29 万接近预算上限。",
     "series": "轩逸",
     "owner_reviews": {
-      "summary": "短名单外未逐车检索口碑",
-      "pros": [],
+      "summary": "油耗低、座椅舒适、空间够用是家用核心优势（之家约4.5）。槽点：1.6L动力偏肉、扭力梁悬架偏软侧倾、高速噪音与车漆薄；配置相对自主偏少。",
+      "pros": [
+        "油耗低",
+        "座椅舒适",
+        "空间够用、保养省心"
+      ],
       "cons": [
         "动力偏肉",
         "悬架偏软侧倾",
-        "内塑胶感",
-        "CVT加速声浪大"
+        "高速胎噪/风噪",
+        "车漆薄、配置偏少"
       ],
       "drawbacks": [
         "动力偏肉",
         "悬架偏软侧倾",
-        "内塑胶感",
-        "CVT加速声浪大"
+        "高速胎噪/风噪",
+        "车漆薄、配置偏少"
       ],
-      "sources": [],
+      "sources": [
+        {
+          "title": "轩逸汽车之家口碑",
+          "url": "https://k.autohome.com.cn/448"
+        },
+        {
+          "title": "轩逸口碑标签汇总（汽车之家）",
+          "url": "https://k.m.autohome.com.cn/spec/33320/"
+        },
+        {
+          "title": "轩逸懂车帝车主分享",
+          "url": "https://m.dongchedi.com/koubei/7294140500884328489"
+        }
+      ],
       "found": true,
       "cons_note": null
     },
@@ -6011,8 +6190,12 @@
     "evaluation": "真实配置亮点：AEB、全速自适应巡航、360影像；参配为同年款近似档；空间维度占优；油耗表现偏弱。价格 5.89 万接近预算上限。",
     "series": "凌尚",
     "owner_reviews": {
-      "summary": "短名单外未逐车检索口碑",
-      "pros": [],
+      "summary": "丰田中级车平台衍生，可靠省心印象强，但存在感低、配置一般、动力平淡；配件走丰田渠道，二手关注度一般。",
+      "pros": [
+        "丰田体系可靠印象",
+        "驾驶平顺",
+        "养车逻辑清晰"
+      ],
       "cons": [
         "存在感低",
         "配置一般",
@@ -6025,7 +6208,16 @@
         "动力平淡",
         "配件需走丰田渠道"
       ],
-      "sources": [],
+      "sources": [
+        {
+          "title": "凌尚车主口碑检索（汽车之家）",
+          "url": "https://sou.autohome.com.cn/zonghe?q=%E5%87%8C%E5%B0%9A+%E5%8F%A3%E7%A2%91"
+        },
+        {
+          "title": "广汽丰田凌尚论坛",
+          "url": "https://club.autohome.com.cn/bbs/forum-c-5667-1.html"
+        }
+      ],
       "found": true,
       "cons_note": null
     },
@@ -6489,8 +6681,12 @@
     "evaluation": "真实配置亮点：AEB、全速自适应巡航、360影像；参配为同年款近似档。",
     "series": "帝豪",
     "owner_reviews": {
-      "summary": "短名单外未逐车检索口碑",
-      "pros": [],
+      "summary": "自主家轿常青树，性价比与油耗认可（之家约4.5+）。槽点：动力肉、隔音一般、CVT声浪、配置中庸。",
+      "pros": [
+        "性价比高",
+        "家用耐造",
+        "油耗友好"
+      ],
       "cons": [
         "动力肉",
         "隔音一般",
@@ -6503,7 +6699,16 @@
         "CVT声浪",
         "配置中庸"
       ],
-      "sources": [],
+      "sources": [
+        {
+          "title": "帝豪口碑检索（汽车之家）",
+          "url": "https://sou.autohome.com.cn/zonghe?q=%E5%B8%9D%E8%B1%AA+%E5%8F%A3%E7%A2%91"
+        },
+        {
+          "title": "紧凑型车口碑榜含帝豪（汽车之家）",
+          "url": "https://k.autohome.com.cn/a1/"
+        }
+      ],
       "found": true,
       "cons_note": null
     },
@@ -6719,8 +6924,12 @@
     "evaluation": "真实配置亮点：AEB、全速自适应巡航、360影像；参配为同年款近似档；空间偏家用轿车/小型级；油耗表现偏弱。价格 5.19 万接近预算上限。",
     "series": "缤越",
     "owner_reviews": {
-      "summary": "短名单外未逐车检索口碑",
-      "pros": [],
+      "summary": "小型SUV“小钢炮”人设，动力与油耗口碑不错（之家约4.54）。槽点：后排小、双离合顿挫、胎噪、短轴距舒适性一般。",
+      "pros": [
+        "动力轻快",
+        "油耗友好",
+        "外观运动"
+      ],
       "cons": [
         "后排小",
         "双离合顿挫",
@@ -6733,7 +6942,16 @@
         "胎噪",
         "短轴距舒适性一般"
       ],
-      "sources": [],
+      "sources": [
+        {
+          "title": "缤越汽车之家口碑",
+          "url": "https://k.autohome.com.cn/4701"
+        },
+        {
+          "title": "缤越口碑标签（汽车之家）",
+          "url": "https://k.autohome.com.cn/4701/ge1/"
+        }
+      ],
       "found": true,
       "cons_note": null
     },
@@ -6950,8 +7168,12 @@
     "evaluation": "真实配置亮点：AEB、全速自适应巡航、360影像；参配为同年款近似档；空间偏家用轿车/小型级；油耗表现偏弱。价格 5.39 万接近预算上限。",
     "series": "缤越",
     "owner_reviews": {
-      "summary": "短名单外未逐车检索口碑",
-      "pros": [],
+      "summary": "小型SUV“小钢炮”人设，动力与油耗口碑不错（之家约4.54）。槽点：后排小、双离合顿挫、胎噪、短轴距舒适性一般。",
+      "pros": [
+        "动力轻快",
+        "油耗友好",
+        "外观运动"
+      ],
       "cons": [
         "后排小",
         "双离合顿挫",
@@ -6964,7 +7186,16 @@
         "胎噪",
         "短轴距舒适性一般"
       ],
-      "sources": [],
+      "sources": [
+        {
+          "title": "缤越汽车之家口碑",
+          "url": "https://k.autohome.com.cn/4701"
+        },
+        {
+          "title": "缤越口碑标签（汽车之家）",
+          "url": "https://k.autohome.com.cn/4701/ge1/"
+        }
+      ],
       "found": true,
       "cons_note": null
     },
@@ -7179,8 +7410,12 @@
     "evaluation": "真实配置亮点：AEB、全速自适应巡航、360影像；参配为同年款近似档；价格 4.49 万接近预算上限。",
     "series": "帝豪",
     "owner_reviews": {
-      "summary": "短名单外未逐车检索口碑",
-      "pros": [],
+      "summary": "自主家轿常青树，性价比与油耗认可（之家约4.5+）。槽点：动力肉、隔音一般、CVT声浪、配置中庸。",
+      "pros": [
+        "性价比高",
+        "家用耐造",
+        "油耗友好"
+      ],
       "cons": [
         "动力肉",
         "隔音一般",
@@ -7193,7 +7428,16 @@
         "CVT声浪",
         "配置中庸"
       ],
-      "sources": [],
+      "sources": [
+        {
+          "title": "帝豪口碑检索（汽车之家）",
+          "url": "https://sou.autohome.com.cn/zonghe?q=%E5%B8%9D%E8%B1%AA+%E5%8F%A3%E7%A2%91"
+        },
+        {
+          "title": "紧凑型车口碑榜含帝豪（汽车之家）",
+          "url": "https://k.autohome.com.cn/a1/"
+        }
+      ],
       "found": true,
       "cons_note": null
     },
@@ -7411,8 +7655,11 @@
     "evaluation": "真实配置亮点：AEB、全速自适应巡航、360影像；参配为同年款近似档；价格 5.29 万接近预算上限。",
     "series": "荣威i5",
     "owner_reviews": {
-      "summary": "短名单外未逐车检索口碑",
-      "pros": [],
+      "summary": "家用三厢性价比取向。槽点：动力肉、隔音一般、配置因年款差异大、保值一般。",
+      "pros": [
+        "价格友好",
+        "家用空间够用"
+      ],
       "cons": [
         "动力肉",
         "隔音一般",
@@ -7425,7 +7672,16 @@
         "配置因年款差异大",
         "保值一般"
       ],
-      "sources": [],
+      "sources": [
+        {
+          "title": "荣威i5口碑检索（汽车之家）",
+          "url": "https://sou.autohome.com.cn/zonghe?q=%E8%8D%A3%E5%A8%81i5+%E5%8F%A3%E7%A2%91"
+        },
+        {
+          "title": "车质网i5检索",
+          "url": "https://www.12365auto.com/search?keyword=%E8%8D%A3%E5%A8%81i5"
+        }
+      ],
       "found": true,
       "cons_note": null
     },
@@ -7641,8 +7897,11 @@
     "evaluation": "真实配置亮点：AEB、定速巡航、360影像；参配为同年款近似档；油耗表现偏弱；价格 4.59 万接近预算上限。",
     "series": "传祺GS4",
     "owner_reviews": {
-      "summary": "短名单外未逐车检索口碑",
-      "pros": [],
+      "summary": "自主紧凑SUV老将，空间够用。槽点：早期小毛病、车机一般、油耗中等、动力平顺一般。",
+      "pros": [
+        "空间够用",
+        "家用SUV成熟"
+      ],
       "cons": [
         "早期小毛病",
         "车机一般",
@@ -7655,7 +7914,16 @@
         "油耗中等",
         "动力平顺一般"
       ],
-      "sources": [],
+      "sources": [
+        {
+          "title": "传祺GS4口碑检索（汽车之家）",
+          "url": "https://sou.autohome.com.cn/zonghe?q=%E4%BC%A0%E7%A5%BGGS4+%E5%8F%A3%E7%A2%91"
+        },
+        {
+          "title": "车质网GS4检索",
+          "url": "https://www.12365auto.com/search?keyword=GS4"
+        }
+      ],
       "found": true,
       "cons_note": null
     },
@@ -7867,8 +8135,11 @@
     "evaluation": "真实配置亮点：AEB、定速巡航、360影像；参配为同年款近似档；油耗表现偏弱；价格 4.99 万接近预算上限。",
     "series": "标致4008",
     "owner_reviews": {
-      "summary": "短名单外未逐车检索口碑",
-      "pros": [],
+      "summary": "法系SUV设计与底盘有辨识度，但保养贵、电子故障刻板印象、保值一般仍是二手常见顾虑；油耗中等。",
+      "pros": [
+        "设计有辨识度",
+        "底盘调校有特色"
+      ],
       "cons": [
         "保养贵",
         "电子故障刻板印象",
@@ -7881,7 +8152,16 @@
         "油耗中等",
         "保值一般"
       ],
-      "sources": [],
+      "sources": [
+        {
+          "title": "标致4008口碑检索（汽车之家）",
+          "url": "https://sou.autohome.com.cn/zonghe?q=%E6%A0%87%E8%87%B44008+%E5%8F%A3%E7%A2%91"
+        },
+        {
+          "title": "车质网4008投诉检索",
+          "url": "https://www.12365auto.com/search?keyword=4008"
+        }
+      ],
       "found": true,
       "cons_note": null
     },
@@ -8097,21 +8377,38 @@
     "evaluation": "真实配置亮点：AEB、定速巡航、360影像；参配为同年款近似档。",
     "series": "轩逸",
     "owner_reviews": {
-      "summary": "短名单外未逐车检索口碑",
-      "pros": [],
+      "summary": "油耗低、座椅舒适、空间够用是家用核心优势（之家约4.5）。槽点：1.6L动力偏肉、扭力梁悬架偏软侧倾、高速噪音与车漆薄；配置相对自主偏少。",
+      "pros": [
+        "油耗低",
+        "座椅舒适",
+        "空间够用、保养省心"
+      ],
       "cons": [
         "动力偏肉",
         "悬架偏软侧倾",
-        "内塑胶感",
-        "CVT加速声浪大"
+        "高速胎噪/风噪",
+        "车漆薄、配置偏少"
       ],
       "drawbacks": [
         "动力偏肉",
         "悬架偏软侧倾",
-        "内塑胶感",
-        "CVT加速声浪大"
+        "高速胎噪/风噪",
+        "车漆薄、配置偏少"
       ],
-      "sources": [],
+      "sources": [
+        {
+          "title": "轩逸汽车之家口碑",
+          "url": "https://k.autohome.com.cn/448"
+        },
+        {
+          "title": "轩逸口碑标签汇总（汽车之家）",
+          "url": "https://k.m.autohome.com.cn/spec/33320/"
+        },
+        {
+          "title": "轩逸懂车帝车主分享",
+          "url": "https://m.dongchedi.com/koubei/7294140500884328489"
+        }
+      ],
       "found": true,
       "cons_note": null
     },
@@ -8327,21 +8624,33 @@
     "evaluation": "真实配置亮点：AEB、定速巡航、360影像；参配为同年款近似档；油耗表现偏弱。",
     "series": "逸动DT",
     "owner_reviews": {
-      "summary": "短名单外未逐车检索口碑",
-      "pros": [],
+      "summary": "逸动家族入门/特殊动力版本，家用代步够用但动力与配置通常低于PLUS高配；隔音一般。",
+      "pros": [
+        "价格友好",
+        "家用代步够用"
+      ],
       "cons": [
         "动力一般",
-        "配置低于PLUS",
+        "配置低于PLUS高配",
         "隔音一般",
-        "手动/低配体验弱"
+        "低配体验弱"
       ],
       "drawbacks": [
         "动力一般",
-        "配置低于PLUS",
+        "配置低于PLUS高配",
         "隔音一般",
-        "手动/低配体验弱"
+        "低配体验弱"
       ],
-      "sources": [],
+      "sources": [
+        {
+          "title": "逸动家族口碑（汽车之家）",
+          "url": "https://k.autohome.com.cn/2429/"
+        },
+        {
+          "title": "逸动DT检索",
+          "url": "https://sou.autohome.com.cn/zonghe?q=%E9%80%B8%E5%8A%A8DT+%E5%8F%A3%E7%A2%91"
+        }
+      ],
       "found": true,
       "cons_note": null
     },
@@ -8800,8 +9109,12 @@
     "evaluation": "真实配置亮点：AEB、全速自适应巡航、360影像；参配为同年款近似档；空间偏家用轿车/小型级；价格 4.59 万接近预算上限。",
     "series": "YARIS L 致炫",
     "owner_reviews": {
-      "summary": "短名单外未逐车检索口碑",
-      "pros": [],
+      "summary": "小车好停、丰田可靠口碑是优势；动力肉、配置简单、后排窄、高速空仓感是家用短板。",
+      "pros": [
+        "好停车",
+        "丰田可靠印象",
+        "油耗友好"
+      ],
       "cons": [
         "动力肉",
         "配置简单",
@@ -8814,7 +9127,16 @@
         "后排窄",
         "高速空仓感"
       ],
-      "sources": [],
+      "sources": [
+        {
+          "title": "致炫口碑检索（汽车之家）",
+          "url": "https://sou.autohome.com.cn/zonghe?q=%E8%87%B4%E7%82%AB+%E5%8F%A3%E7%A2%91"
+        },
+        {
+          "title": "YARiS L致炫论坛",
+          "url": "https://club.autohome.com.cn/bbs/forum-c-3462-1.html"
+        }
+      ],
       "found": true,
       "cons_note": null
     },
@@ -9028,8 +9350,11 @@
     "evaluation": "真实配置亮点：AEB、定速巡航、360影像；参配为同年款近似档。",
     "series": "MG5",
     "owner_reviews": {
-      "summary": "短名单外未逐车检索口碑",
-      "pros": [],
+      "summary": "运动家轿外观吸睛，年轻向。槽点：隔音一般、底盘偏硬、双离合顿挫个案、内饰异响。",
+      "pros": [
+        "外观运动",
+        "年轻向驾趣"
+      ],
       "cons": [
         "隔音一般",
         "底盘偏硬",
@@ -9042,7 +9367,16 @@
         "双离合顿挫个案",
         "内饰异响"
       ],
-      "sources": [],
+      "sources": [
+        {
+          "title": "MG5口碑检索（汽车之家）",
+          "url": "https://sou.autohome.com.cn/zonghe?q=MG5+%E5%8F%A3%E7%A2%91"
+        },
+        {
+          "title": "紧凑型车口碑榜含MG5（汽车之家）",
+          "url": "https://k.autohome.com.cn/a1/"
+        }
+      ],
       "found": true,
       "cons_note": null
     },
@@ -9255,8 +9589,11 @@
     "evaluation": "真实配置亮点：AEB、定速巡航、360影像；参配为同年款近似档；空间偏家用轿车/小型级；油耗表现偏弱。价格 4.59 万接近预算上限。",
     "series": "长安CS35 PLUS",
     "owner_reviews": {
-      "summary": "短名单外未逐车检索口碑",
-      "pros": [],
+      "summary": "小型SUV配置与外观认可，家用代步常见。槽点：后排空间一般、高速胎噪、双离合低速顿挫、隔音一般。",
+      "pros": [
+        "外观配置认可",
+        "小型SUV好开好停"
+      ],
       "cons": [
         "后排空间一般",
         "高速胎噪",
@@ -9269,7 +9606,16 @@
         "双离合低速顿挫",
         "隔音一般"
       ],
-      "sources": [],
+      "sources": [
+        {
+          "title": "CS35 PLUS口碑检索（汽车之家）",
+          "url": "https://sou.autohome.com.cn/zonghe?q=CS35+PLUS+%E5%8F%A3%E7%A2%91"
+        },
+        {
+          "title": "CS35 PLUS车质网检索",
+          "url": "https://www.12365auto.com/search?keyword=CS35+PLUS"
+        }
+      ],
       "found": true,
       "cons_note": null
     },
@@ -9978,8 +10324,12 @@
     "evaluation": "真实配置亮点：AEB、定速巡航、360影像；参配为同年款近似档；空间偏家用轿车/小型级；油耗/能耗友好。",
     "series": "零跑T03",
     "owner_reviews": {
-      "summary": "短名单外未逐车检索口碑",
-      "pros": [],
+      "summary": "微型纯电代步，用电成本低、之家口碑约4.5。槽点：高速弱、续航打折、空间小，配置因年款差异大，二手三电需细查。",
+      "pros": [
+        "用电成本低",
+        "市区代步够用",
+        "好停车"
+      ],
       "cons": [
         "高速弱、续航打折",
         "空间小",
@@ -9992,7 +10342,16 @@
         "配置因年款差异大",
         "二手三电需细查"
       ],
-      "sources": [],
+      "sources": [
+        {
+          "title": "零跑T03微型车口碑榜（汽车之家）",
+          "url": "https://k.autohome.com.cn/front/level/a001/"
+        },
+        {
+          "title": "T03口碑检索",
+          "url": "https://sou.autohome.com.cn/zonghe?q=%E9%9B%B6%E8%B7%91T03+%E5%8F%A3%E7%A2%91"
+        }
+      ],
       "found": true,
       "cons_note": null
     },
@@ -10205,8 +10564,11 @@
     "evaluation": "真实配置亮点：定速巡航；参配为同年款近似档；油耗表现偏弱。",
     "series": "魏牌 VV5",
     "owner_reviews": {
-      "summary": "短名单外未逐车检索口碑",
-      "pros": [],
+      "summary": "早期高端自主SUV尝试，配置曾厚。槽点：油耗不低、后期保养贵、车机老化卡顿、二手保值一般。",
+      "pros": [
+        "配置曾厚道",
+        "SUV通过性"
+      ],
       "cons": [
         "油耗不低",
         "后期保养贵",
@@ -10219,7 +10581,16 @@
         "车机老化卡顿",
         "二手保值一般"
       ],
-      "sources": [],
+      "sources": [
+        {
+          "title": "VV5口碑检索（汽车之家）",
+          "url": "https://sou.autohome.com.cn/zonghe?q=VV5+%E5%8F%A3%E7%A2%91"
+        },
+        {
+          "title": "车质网VV5检索",
+          "url": "https://www.12365auto.com/search?keyword=VV5"
+        }
+      ],
       "found": true,
       "cons_note": null
     },
@@ -10433,8 +10804,11 @@
     "evaluation": "真实配置亮点：定速巡航；参配为同年款近似档；油耗表现偏弱；价格 4.49 万接近预算上限。",
     "series": "博越",
     "owner_reviews": {
-      "summary": "短名单外未逐车检索口碑",
-      "pros": [],
+      "summary": "吉利SUV销量功臣，空间配置性价比高。槽点：早期小毛病/异响、车机体验一般、油耗中等、漆面偏软。",
+      "pros": [
+        "空间配置性价比",
+        "家用SUV成熟"
+      ],
       "cons": [
         "早期小毛病/异响",
         "车机体验一般",
@@ -10447,7 +10821,16 @@
         "油耗中等",
         "漆面偏软"
       ],
-      "sources": [],
+      "sources": [
+        {
+          "title": "博越口碑检索（汽车之家）",
+          "url": "https://sou.autohome.com.cn/zonghe?q=%E5%8D%9A%E8%B6%8A+%E5%8F%A3%E7%A2%91"
+        },
+        {
+          "title": "车质网博越检索",
+          "url": "https://www.12365auto.com/search?keyword=%E5%8D%9A%E8%B6%8A"
+        }
+      ],
       "found": true,
       "cons_note": null
     },
@@ -10662,8 +11045,12 @@
     "evaluation": "真实配置亮点：AEB、定速巡航、360影像；参配为同年款近似档；空间偏家用轿车/小型级；油耗/能耗友好。",
     "series": "零跑T03",
     "owner_reviews": {
-      "summary": "短名单外未逐车检索口碑",
-      "pros": [],
+      "summary": "微型纯电代步，用电成本低、之家口碑约4.5。槽点：高速弱、续航打折、空间小，配置因年款差异大，二手三电需细查。",
+      "pros": [
+        "用电成本低",
+        "市区代步够用",
+        "好停车"
+      ],
       "cons": [
         "高速弱、续航打折",
         "空间小",
@@ -10676,7 +11063,16 @@
         "配置因年款差异大",
         "二手三电需细查"
       ],
-      "sources": [],
+      "sources": [
+        {
+          "title": "零跑T03微型车口碑榜（汽车之家）",
+          "url": "https://k.autohome.com.cn/front/level/a001/"
+        },
+        {
+          "title": "T03口碑检索",
+          "url": "https://sou.autohome.com.cn/zonghe?q=%E9%9B%B6%E8%B7%91T03+%E5%8F%A3%E7%A2%91"
+        }
+      ],
       "found": true,
       "cons_note": null
     },
@@ -10894,8 +11290,12 @@
     "evaluation": "真实配置亮点：AEB、定速巡航、360影像；参配为同年款近似档；空间偏家用轿车/小型级；油耗/能耗友好。",
     "series": "零跑T03",
     "owner_reviews": {
-      "summary": "短名单外未逐车检索口碑",
-      "pros": [],
+      "summary": "微型纯电代步，用电成本低、之家口碑约4.5。槽点：高速弱、续航打折、空间小，配置因年款差异大，二手三电需细查。",
+      "pros": [
+        "用电成本低",
+        "市区代步够用",
+        "好停车"
+      ],
       "cons": [
         "高速弱、续航打折",
         "空间小",
@@ -10908,7 +11308,16 @@
         "配置因年款差异大",
         "二手三电需细查"
       ],
-      "sources": [],
+      "sources": [
+        {
+          "title": "零跑T03微型车口碑榜（汽车之家）",
+          "url": "https://k.autohome.com.cn/front/level/a001/"
+        },
+        {
+          "title": "T03口碑检索",
+          "url": "https://sou.autohome.com.cn/zonghe?q=%E9%9B%B6%E8%B7%91T03+%E5%8F%A3%E7%A2%91"
+        }
+      ],
       "found": true,
       "cons_note": null
     },
@@ -11123,8 +11532,11 @@
     "evaluation": "真实配置亮点：定速巡航；参配为同年款近似档；油耗表现偏弱；价格 4.59 万接近预算上限。",
     "series": "领克06",
     "owner_reviews": {
-      "summary": "短名单外未逐车检索口碑",
-      "pros": [],
+      "summary": "小型豪华风SUV，质感与配置突出。槽点：后排空间一般、双离合顿挫、保养贵于同级自主、胎噪。",
+      "pros": [
+        "质感配置好",
+        "外观精致"
+      ],
       "cons": [
         "后排空间一般",
         "双离合顿挫",
@@ -11137,7 +11549,16 @@
         "保养贵于同级自主",
         "胎噪"
       ],
-      "sources": [],
+      "sources": [
+        {
+          "title": "领克06口碑检索（汽车之家）",
+          "url": "https://sou.autohome.com.cn/zonghe?q=%E9%A2%86%E5%85%8B06+%E5%8F%A3%E7%A2%91"
+        },
+        {
+          "title": "车质网领克06检索",
+          "url": "https://www.12365auto.com/search?keyword=%E9%A2%86%E5%85%8B06"
+        }
+      ],
       "found": true,
       "cons_note": null
     },
@@ -11352,8 +11773,12 @@
     "evaluation": "真实配置亮点：定速巡航；参配为同年款近似档；空间偏家用轿车/小型级；油耗/能耗友好。价格 4.79 万接近预算上限。",
     "series": "欧拉好猫",
     "owner_reviews": {
-      "summary": "短名单外未逐车检索口碑",
-      "pros": [],
+      "summary": "女性向纯电精品车，市区代步与颜值是卖点。槽点：续航打折、高速弱、售后网络一般、小毛病反馈。",
+      "pros": [
+        "颜值高",
+        "市区代步轻快",
+        "用电成本低"
+      ],
       "cons": [
         "续航打折",
         "高速弱",
@@ -11366,7 +11791,16 @@
         "售后网络一般",
         "小毛病反馈"
       ],
-      "sources": [],
+      "sources": [
+        {
+          "title": "欧拉好猫口碑检索（汽车之家）",
+          "url": "https://sou.autohome.com.cn/zonghe?q=%E6%AC%A7%E6%8B%89%E5%A5%BD%E7%8C%AB+%E5%8F%A3%E7%A2%91"
+        },
+        {
+          "title": "好猫懂车帝车友圈检索",
+          "url": "https://www.dongchedi.com/community/search?keyword=%E5%A5%BD%E7%8C%AB"
+        }
+      ],
       "found": true,
       "cons_note": null
     },
@@ -11580,8 +12014,12 @@
     "evaluation": "真实配置亮点：定速巡航、7座；参配为同年款近似档；SUV 空间更实用；油耗表现偏弱。价格 5.39 万接近预算上限。",
     "series": "柯迪亚克",
     "owner_reviews": {
-      "summary": "短名单外未逐车检索口碑",
-      "pros": [],
+      "summary": "大七座/大五座空间是核心优势，适合家庭。槽点：油耗偏高、DSG顿挫个案、保养贵、电子小毛病。",
+      "pros": [
+        "空间大",
+        "家庭出行实用",
+        "德系SUV扎实感"
+      ],
       "cons": [
         "油耗偏高",
         "DSG顿挫个案",
@@ -11594,7 +12032,16 @@
         "保养贵",
         "电子小毛病"
       ],
-      "sources": [],
+      "sources": [
+        {
+          "title": "柯迪亚克口碑检索（汽车之家）",
+          "url": "https://sou.autohome.com.cn/zonghe?q=%E6%9F%AF%E8%BF%AA%E4%BA%9A%E5%85%8B+%E5%8F%A3%E7%A2%91"
+        },
+        {
+          "title": "车质网柯迪亚克检索",
+          "url": "https://www.12365auto.com/search?keyword=%E6%9F%AF%E8%BF%AA%E4%BA%9A%E5%85%8B"
+        }
+      ],
       "found": true,
       "cons_note": null
     },
@@ -11808,8 +12255,11 @@
     "evaluation": "真实配置亮点：定速巡航；参配为同年款近似档；油耗表现偏弱。",
     "series": "魏牌 VV5",
     "owner_reviews": {
-      "summary": "短名单外未逐车检索口碑",
-      "pros": [],
+      "summary": "早期高端自主SUV尝试，配置曾厚。槽点：油耗不低、后期保养贵、车机老化卡顿、二手保值一般。",
+      "pros": [
+        "配置曾厚道",
+        "SUV通过性"
+      ],
       "cons": [
         "油耗不低",
         "后期保养贵",
@@ -11822,7 +12272,16 @@
         "车机老化卡顿",
         "二手保值一般"
       ],
-      "sources": [],
+      "sources": [
+        {
+          "title": "VV5口碑检索（汽车之家）",
+          "url": "https://sou.autohome.com.cn/zonghe?q=VV5+%E5%8F%A3%E7%A2%91"
+        },
+        {
+          "title": "车质网VV5检索",
+          "url": "https://www.12365auto.com/search?keyword=VV5"
+        }
+      ],
       "found": true,
       "cons_note": null
     },
@@ -12035,8 +12494,11 @@
     "evaluation": "真实配置亮点：定速巡航；参配为同年款近似档；油耗表现偏弱。",
     "series": "魏牌 VV5",
     "owner_reviews": {
-      "summary": "短名单外未逐车检索口碑",
-      "pros": [],
+      "summary": "早期高端自主SUV尝试，配置曾厚。槽点：油耗不低、后期保养贵、车机老化卡顿、二手保值一般。",
+      "pros": [
+        "配置曾厚道",
+        "SUV通过性"
+      ],
       "cons": [
         "油耗不低",
         "后期保养贵",
@@ -12049,7 +12511,16 @@
         "车机老化卡顿",
         "二手保值一般"
       ],
-      "sources": [],
+      "sources": [
+        {
+          "title": "VV5口碑检索（汽车之家）",
+          "url": "https://sou.autohome.com.cn/zonghe?q=VV5+%E5%8F%A3%E7%A2%91"
+        },
+        {
+          "title": "车质网VV5检索",
+          "url": "https://www.12365auto.com/search?keyword=VV5"
+        }
+      ],
       "found": true,
       "cons_note": null
     },
@@ -12263,8 +12734,11 @@
     "evaluation": "真实配置亮点：定速巡航；参配为同年款近似档；油耗表现偏弱；价格 5.29 万接近预算上限。",
     "series": "领克06",
     "owner_reviews": {
-      "summary": "短名单外未逐车检索口碑",
-      "pros": [],
+      "summary": "小型豪华风SUV，质感与配置突出。槽点：后排空间一般、双离合顿挫、保养贵于同级自主、胎噪。",
+      "pros": [
+        "质感配置好",
+        "外观精致"
+      ],
       "cons": [
         "后排空间一般",
         "双离合顿挫",
@@ -12277,7 +12751,16 @@
         "保养贵于同级自主",
         "胎噪"
       ],
-      "sources": [],
+      "sources": [
+        {
+          "title": "领克06口碑检索（汽车之家）",
+          "url": "https://sou.autohome.com.cn/zonghe?q=%E9%A2%86%E5%85%8B06+%E5%8F%A3%E7%A2%91"
+        },
+        {
+          "title": "车质网领克06检索",
+          "url": "https://www.12365auto.com/search?keyword=%E9%A2%86%E5%85%8B06"
+        }
+      ],
       "found": true,
       "cons_note": null
     },
@@ -12491,25 +12974,38 @@
     "evaluation": "真实配置亮点：定速巡航；参配为同年款近似档；油耗表现偏弱；价格 5.09 万接近预算上限。",
     "series": "星瑞",
     "owner_reviews": {
-      "summary": "短名单外未逐车检索口碑",
+      "summary": "动力（尤其2.0T）与后排空间、内饰用料是高频好评；汽车之家口碑约4.5+。槽点集中在胎噪/隔音、市区油耗偏高、低速换挡顿挫，以及20/21款车机卡顿投诉较多（23款芯片有改善）。",
       "pros": [
-        "2.0T动力强",
-        "空间大",
-        "配置厚"
+        "动力强、加速好",
+        "后排空间大",
+        "内饰用料与配置厚"
       ],
       "cons": [
-        "2.0T油耗偏高",
-        "双离合顿挫个案",
-        "胎噪",
-        "悬架偏硬"
+        "胎噪/隔音一般",
+        "市区油耗偏高（2.0T更明显）",
+        "低速双离合顿挫个案",
+        "早期车机卡顿/黑屏投诉较多"
       ],
       "drawbacks": [
-        "2.0T油耗偏高",
-        "双离合顿挫个案",
-        "胎噪",
-        "悬架偏硬"
+        "胎噪/隔音一般",
+        "市区油耗偏高（2.0T更明显）",
+        "低速双离合顿挫个案",
+        "早期车机卡顿/黑屏投诉较多"
       ],
-      "sources": [],
+      "sources": [
+        {
+          "title": "星瑞汽车之家口碑",
+          "url": "https://k.autohome.com.cn/5273"
+        },
+        {
+          "title": "23款星瑞车主口碑（汽车之家）",
+          "url": "https://k.autohome.com.cn/detail/view_01kb6wb0716mvk8d9n6mw00000.html"
+        },
+        {
+          "title": "星瑞车机投诉报道（江南都市报）",
+          "url": "https://tt.jxnews.com.cn/news/1685117"
+        }
+      ],
       "found": true,
       "cons_note": null
     },
@@ -12722,8 +13218,11 @@
     "evaluation": "真实配置亮点：定速巡航；参配为同年款近似档；SUV 空间更实用；油耗表现偏弱。",
     "series": "瑞虎8",
     "owner_reviews": {
-      "summary": "短名单外未逐车检索口碑",
-      "pros": [],
+      "summary": "空间配置性价比突出的自主SUV。常见槽点：异响、车机一般、双离合顿挫、漆面/做工反馈。",
+      "pros": [
+        "空间大",
+        "配置性价比高"
+      ],
       "cons": [
         "异响反馈",
         "车机一般",
@@ -12736,7 +13235,16 @@
         "双离合顿挫",
         "漆面/做工槽点"
       ],
-      "sources": [],
+      "sources": [
+        {
+          "title": "瑞虎8口碑检索（汽车之家）",
+          "url": "https://sou.autohome.com.cn/zonghe?q=%E7%91%9E%E8%99%8E8+%E5%8F%A3%E7%A2%91"
+        },
+        {
+          "title": "车质网瑞虎8检索",
+          "url": "https://www.12365auto.com/search?keyword=%E7%91%9E%E8%99%8E8"
+        }
+      ],
       "found": true,
       "cons_note": null
     },
@@ -12950,8 +13458,12 @@
     "evaluation": "真实配置亮点：定速巡航、7座；参配为同年款近似档；SUV 空间更实用；油耗表现偏弱。价格 5.69 万接近预算上限。",
     "series": "锐界",
     "owner_reviews": {
-      "summary": "短名单外未逐车检索口碑",
-      "pros": [],
+      "summary": "大空间七座是家庭核心卖点，动力足。槽点：油耗偏高、车大不好停、保养配件贵，老款变速箱顿挫有反馈。",
+      "pros": [
+        "七座空间大",
+        "动力充足",
+        "家庭出行能力强"
+      ],
       "cons": [
         "油耗偏高",
         "尺寸大不好停",
@@ -12964,7 +13476,16 @@
         "保养配件贵",
         "老款变速箱顿挫反馈"
       ],
-      "sources": [],
+      "sources": [
+        {
+          "title": "锐界口碑检索（汽车之家）",
+          "url": "https://sou.autohome.com.cn/zonghe?q=%E9%94%90%E7%95%8C+%E5%8F%A3%E7%A2%91"
+        },
+        {
+          "title": "车质网锐界检索",
+          "url": "https://www.12365auto.com/search?keyword=%E9%94%90%E7%95%8C"
+        }
+      ],
       "found": true,
       "cons_note": null
     },
@@ -13177,8 +13698,12 @@
     "evaluation": "真实配置亮点：定速巡航；参配为同年款近似档；SUV 空间更实用；油耗表现偏弱。价格 4.69 万接近预算上限。",
     "series": "捷达VS7",
     "owner_reviews": {
-      "summary": "短名单外未逐车检索口碑",
-      "pros": [],
+      "summary": "更大一号的捷达SUV，空间与皮实取向同VS5。槽点：内饰偏简、隔音一般、配置低于自主旗舰、动力平顺一般。",
+      "pros": [
+        "空间更大",
+        "皮实耐造",
+        "养车相对便宜"
+      ],
       "cons": [
         "内饰偏简",
         "隔音一般",
@@ -13191,7 +13716,16 @@
         "配置低于自主旗舰",
         "动力平顺一般"
       ],
-      "sources": [],
+      "sources": [
+        {
+          "title": "捷达VS7口碑检索（汽车之家）",
+          "url": "https://sou.autohome.com.cn/zonghe?q=%E6%8D%B7%E8%BE%BEVS7+%E5%8F%A3%E7%A2%91"
+        },
+        {
+          "title": "捷达VS7论坛",
+          "url": "https://club.autohome.com.cn/bbs/forum-c-6183-1.html"
+        }
+      ],
       "found": true,
       "cons_note": null
     },
@@ -13404,8 +13938,11 @@
     "evaluation": "配置分来自公开参配（series_year_tier）；参配为同年款近似档；油耗表现偏弱；价格 1.79 万更友好。",
     "series": "传祺GS4",
     "owner_reviews": {
-      "summary": "短名单外未逐车检索口碑",
-      "pros": [],
+      "summary": "自主紧凑SUV老将，空间够用。槽点：早期小毛病、车机一般、油耗中等、动力平顺一般。",
+      "pros": [
+        "空间够用",
+        "家用SUV成熟"
+      ],
       "cons": [
         "早期小毛病",
         "车机一般",
@@ -13418,7 +13955,16 @@
         "油耗中等",
         "动力平顺一般"
       ],
-      "sources": [],
+      "sources": [
+        {
+          "title": "传祺GS4口碑检索（汽车之家）",
+          "url": "https://sou.autohome.com.cn/zonghe?q=%E4%BC%A0%E7%A5%BGGS4+%E5%8F%A3%E7%A2%91"
+        },
+        {
+          "title": "车质网GS4检索",
+          "url": "https://www.12365auto.com/search?keyword=GS4"
+        }
+      ],
       "found": true,
       "cons_note": null
     },
@@ -13630,8 +14176,11 @@
     "evaluation": "真实配置亮点：定速巡航；参配为同年款近似档。",
     "series": "荣威i5",
     "owner_reviews": {
-      "summary": "短名单外未逐车检索口碑",
-      "pros": [],
+      "summary": "家用三厢性价比取向。槽点：动力肉、隔音一般、配置因年款差异大、保值一般。",
+      "pros": [
+        "价格友好",
+        "家用空间够用"
+      ],
       "cons": [
         "动力肉",
         "隔音一般",
@@ -13644,7 +14193,16 @@
         "配置因年款差异大",
         "保值一般"
       ],
-      "sources": [],
+      "sources": [
+        {
+          "title": "荣威i5口碑检索（汽车之家）",
+          "url": "https://sou.autohome.com.cn/zonghe?q=%E8%8D%A3%E5%A8%81i5+%E5%8F%A3%E7%A2%91"
+        },
+        {
+          "title": "车质网i5检索",
+          "url": "https://www.12365auto.com/search?keyword=%E8%8D%A3%E5%A8%81i5"
+        }
+      ],
       "found": true,
       "cons_note": null
     },
@@ -13861,13 +14419,36 @@
     "evaluation": "配置分来自公开参配（series_year_tier）；参配为同年款近似档；空间偏家用轿车/小型级；油耗/能耗友好。价格 5.79 万接近预算上限。",
     "series": "星愿",
     "owner_reviews": {
-      "summary": "短名单外未逐车检索口碑",
-      "pros": [],
-      "cons": [],
-      "drawbacks": [],
-      "sources": [],
+      "summary": "银河星愿：空间/操控/性价比反馈积极，但高速风噪胎噪、内饰塑料感、细节配置（如后雨刮等）有槽点；新车系长期口碑仍在积累。",
+      "pros": [
+        "空间与性价比认可",
+        "操控轻快",
+        "家用代步友好"
+      ],
+      "cons": [
+        "高速风噪胎噪",
+        "内饰塑料感",
+        "细节配置槽点",
+        "新车系长周期样本仍少"
+      ],
+      "drawbacks": [
+        "高速风噪胎噪",
+        "内饰塑料感",
+        "细节配置槽点",
+        "新车系长周期样本仍少"
+      ],
+      "sources": [
+        {
+          "title": "星愿汽车之家口碑",
+          "url": "https://k.autohome.com.cn/7806"
+        },
+        {
+          "title": "星愿试驾槽点报道（汽车之家）",
+          "url": "https://www.autohome.com.cn/drive/202607/1315617.html"
+        }
+      ],
       "found": true,
-      "cons_note": "暂无汇总缺点（公开口碑未覆盖或样本不足）"
+      "cons_note": null
     },
     "rank": 60,
     "specs": {
@@ -14568,8 +15149,11 @@
     "evaluation": "真实配置亮点：定速巡航；参配为同年款近似档；空间偏家用轿车/小型级；油耗表现偏弱。",
     "series": "自由侠",
     "owner_reviews": {
-      "summary": "短名单外未逐车检索口碑",
-      "pros": [],
+      "summary": "个性小型SUV，城市代步灵活。槽点：空间一般、配件贵、换挡/顿挫品质、后期维修成本偏高。",
+      "pros": [
+        "个性外观",
+        "城市灵活"
+      ],
       "cons": [
         "空间一般",
         "配件贵",
@@ -14582,7 +15166,16 @@
         "顿挫/换挡品质",
         "后期维修成本"
       ],
-      "sources": [],
+      "sources": [
+        {
+          "title": "自由侠口碑检索（汽车之家）",
+          "url": "https://sou.autohome.com.cn/zonghe?q=%E8%87%AA%E7%94%B1%E4%BE%A0+%E5%8F%A3%E7%A2%91"
+        },
+        {
+          "title": "车质网自由侠检索",
+          "url": "https://www.12365auto.com/search?keyword=%E8%87%AA%E7%94%B1%E4%BE%A0"
+        }
+      ],
       "found": true,
       "cons_note": null
     },
@@ -14795,8 +15388,11 @@
     "evaluation": "配置分来自公开参配（series_year_tier）；参配为同年款近似档；SUV 空间更实用；油耗表现偏弱。",
     "series": "天逸 C5 AIRCROSS",
     "owner_reviews": {
-      "summary": "短名单外未逐车检索口碑",
-      "pros": [],
+      "summary": "法系中型SUV舒适底盘有特色。槽点：配件贵、电子故障个案、油耗中等、保值一般。",
+      "pros": [
+        "底盘舒适有特色",
+        "空间够用"
+      ],
       "cons": [
         "配件贵",
         "电子故障个案",
@@ -14809,7 +15405,16 @@
         "油耗中等",
         "保值一般"
       ],
-      "sources": [],
+      "sources": [
+        {
+          "title": "天逸口碑检索（汽车之家）",
+          "url": "https://sou.autohome.com.cn/zonghe?q=%E5%A4%A9%E9%80%B8+C5+%E5%8F%A3%E7%A2%91"
+        },
+        {
+          "title": "车质网天逸检索",
+          "url": "https://www.12365auto.com/search?keyword=%E5%A4%A9%E9%80%B8"
+        }
+      ],
       "found": true,
       "cons_note": null
     },
@@ -15023,21 +15628,38 @@
     "evaluation": "真实配置亮点：AEB、定速巡航、360影像；参配为同年款近似档；价格 5.68 万接近预算上限。",
     "series": "轩逸",
     "owner_reviews": {
-      "summary": "短名单外未逐车检索口碑",
-      "pros": [],
+      "summary": "油耗低、座椅舒适、空间够用是家用核心优势（之家约4.5）。槽点：1.6L动力偏肉、扭力梁悬架偏软侧倾、高速噪音与车漆薄；配置相对自主偏少。",
+      "pros": [
+        "油耗低",
+        "座椅舒适",
+        "空间够用、保养省心"
+      ],
       "cons": [
         "动力偏肉",
         "悬架偏软侧倾",
-        "内塑胶感",
-        "CVT加速声浪大"
+        "高速胎噪/风噪",
+        "车漆薄、配置偏少"
       ],
       "drawbacks": [
         "动力偏肉",
         "悬架偏软侧倾",
-        "内塑胶感",
-        "CVT加速声浪大"
+        "高速胎噪/风噪",
+        "车漆薄、配置偏少"
       ],
-      "sources": [],
+      "sources": [
+        {
+          "title": "轩逸汽车之家口碑",
+          "url": "https://k.autohome.com.cn/448"
+        },
+        {
+          "title": "轩逸口碑标签汇总（汽车之家）",
+          "url": "https://k.m.autohome.com.cn/spec/33320/"
+        },
+        {
+          "title": "轩逸懂车帝车主分享",
+          "url": "https://m.dongchedi.com/koubei/7294140500884328489"
+        }
+      ],
       "found": true,
       "cons_note": null
     },
@@ -15250,13 +15872,35 @@
     "evaluation": "真实配置亮点：定速巡航；参配为同年款近似档；油耗表现偏弱；价格 4.49 万接近预算上限。",
     "series": "名图",
     "owner_reviews": {
-      "summary": "短名单外未逐车检索口碑",
-      "pros": [],
-      "cons": [],
-      "drawbacks": [],
-      "sources": [],
+      "summary": "现代中级车舒适空间取向。老款槽点：半轴渗油/异响/烧机油及双离合起步转速高等论坛反馈需细查车况。",
+      "pros": [
+        "空间舒适",
+        "家用中级车气场"
+      ],
+      "cons": [
+        "老款渗油/异响反馈",
+        "烧机油个案需查",
+        "双离合起步品质",
+        "内饰老化"
+      ],
+      "drawbacks": [
+        "老款渗油/异响反馈",
+        "烧机油个案需查",
+        "双离合起步品质",
+        "内饰老化"
+      ],
+      "sources": [
+        {
+          "title": "名图论坛（汽车之家）",
+          "url": "https://club.m.autohome.com.cn/bbs/forum-c-3073-1.html"
+        },
+        {
+          "title": "名图口碑检索",
+          "url": "https://sou.autohome.com.cn/zonghe?q=%E5%90%8D%E5%9B%BE+%E5%8F%A3%E7%A2%91"
+        }
+      ],
       "found": true,
-      "cons_note": "暂无汇总缺点（公开口碑未覆盖或样本不足）"
+      "cons_note": null
     },
     "rank": 66,
     "specs": {
@@ -15468,21 +16112,33 @@
     "evaluation": "真实配置亮点：定速巡航；参配为同年款近似档；空间维度占优；油耗表现偏弱。价格 5.59 万接近预算上限。",
     "series": "君威",
     "owner_reviews": {
-      "summary": "短名单外未逐车检索口碑",
-      "pros": [],
+      "summary": "别克中级车舒适好开。槽点：后排中等、精英型配置偏少、油耗中等、悬架偏舒适侧倾。",
+      "pros": [
+        "驾驶舒适",
+        "美式中级车质感"
+      ],
       "cons": [
         "后排中等",
-        "配置精英型偏少",
+        "精英型配置偏少",
         "油耗中等",
         "悬架偏舒适侧倾"
       ],
       "drawbacks": [
         "后排中等",
-        "配置精英型偏少",
+        "精英型配置偏少",
         "油耗中等",
         "悬架偏舒适侧倾"
       ],
-      "sources": [],
+      "sources": [
+        {
+          "title": "君威口碑检索（汽车之家）",
+          "url": "https://sou.autohome.com.cn/zonghe?q=%E5%90%9B%E5%A8%81+%E5%8F%A3%E7%A2%91"
+        },
+        {
+          "title": "车质网君威检索",
+          "url": "https://www.12365auto.com/search?keyword=%E5%90%9B%E5%A8%81"
+        }
+      ],
       "found": true,
       "cons_note": null
     },
@@ -15697,8 +16353,11 @@
     "evaluation": "真实配置亮点：定速巡航；参配为同年款近似档。",
     "series": "科鲁泽",
     "owner_reviews": {
-      "summary": "短名单外未逐车检索口碑",
-      "pros": [],
+      "summary": "家用三厢造型中庸、价格友好。槽点：动力一般、隔音一般、配置中庸；若为三缸机需关注抖动与声浪。",
+      "pros": [
+        "价格友好",
+        "家用代步够用"
+      ],
       "cons": [
         "动力一般",
         "隔音一般",
@@ -15711,7 +16370,16 @@
         "配置中庸",
         "三缸抖动（若1.3T）"
       ],
-      "sources": [],
+      "sources": [
+        {
+          "title": "科鲁泽口碑检索（汽车之家）",
+          "url": "https://sou.autohome.com.cn/zonghe?q=%E7%A7%91%E9%B2%81%E6%B3%BD+%E5%8F%A3%E7%A2%91"
+        },
+        {
+          "title": "车质网科鲁泽检索",
+          "url": "https://www.12365auto.com/search?keyword=%E7%A7%91%E9%B2%81%E6%B3%BD"
+        }
+      ],
       "found": true,
       "cons_note": null
     },
@@ -15926,21 +16594,38 @@
     "evaluation": "真实配置亮点：AEB、定速巡航、360影像；参配为同年款近似档；价格 5.89 万接近预算上限。",
     "series": "轩逸",
     "owner_reviews": {
-      "summary": "短名单外未逐车检索口碑",
-      "pros": [],
+      "summary": "油耗低、座椅舒适、空间够用是家用核心优势（之家约4.5）。槽点：1.6L动力偏肉、扭力梁悬架偏软侧倾、高速噪音与车漆薄；配置相对自主偏少。",
+      "pros": [
+        "油耗低",
+        "座椅舒适",
+        "空间够用、保养省心"
+      ],
       "cons": [
         "动力偏肉",
         "悬架偏软侧倾",
-        "内塑胶感",
-        "CVT加速声浪大"
+        "高速胎噪/风噪",
+        "车漆薄、配置偏少"
       ],
       "drawbacks": [
         "动力偏肉",
         "悬架偏软侧倾",
-        "内塑胶感",
-        "CVT加速声浪大"
+        "高速胎噪/风噪",
+        "车漆薄、配置偏少"
       ],
-      "sources": [],
+      "sources": [
+        {
+          "title": "轩逸汽车之家口碑",
+          "url": "https://k.autohome.com.cn/448"
+        },
+        {
+          "title": "轩逸口碑标签汇总（汽车之家）",
+          "url": "https://k.m.autohome.com.cn/spec/33320/"
+        },
+        {
+          "title": "轩逸懂车帝车主分享",
+          "url": "https://m.dongchedi.com/koubei/7294140500884328489"
+        }
+      ],
       "found": true,
       "cons_note": null
     },
@@ -16154,21 +16839,33 @@
     "evaluation": "真实配置亮点：定速巡航；参配为同年款近似档；空间维度占优；油耗表现偏弱。价格 5.69 万接近预算上限。",
     "series": "君威",
     "owner_reviews": {
-      "summary": "短名单外未逐车检索口碑",
-      "pros": [],
+      "summary": "别克中级车舒适好开。槽点：后排中等、精英型配置偏少、油耗中等、悬架偏舒适侧倾。",
+      "pros": [
+        "驾驶舒适",
+        "美式中级车质感"
+      ],
       "cons": [
         "后排中等",
-        "配置精英型偏少",
+        "精英型配置偏少",
         "油耗中等",
         "悬架偏舒适侧倾"
       ],
       "drawbacks": [
         "后排中等",
-        "配置精英型偏少",
+        "精英型配置偏少",
         "油耗中等",
         "悬架偏舒适侧倾"
       ],
-      "sources": [],
+      "sources": [
+        {
+          "title": "君威口碑检索（汽车之家）",
+          "url": "https://sou.autohome.com.cn/zonghe?q=%E5%90%9B%E5%A8%81+%E5%8F%A3%E7%A2%91"
+        },
+        {
+          "title": "车质网君威检索",
+          "url": "https://www.12365auto.com/search?keyword=%E5%90%9B%E5%A8%81"
+        }
+      ],
       "found": true,
       "cons_note": null
     },
@@ -16381,8 +17078,11 @@
     "evaluation": "真实配置亮点：定速巡航；参配为同年款近似档；油耗表现偏弱；价格 4.39 万接近预算上限。",
     "series": "现代ix35",
     "owner_reviews": {
-      "summary": "短名单外未逐车检索口碑",
-      "pros": [],
+      "summary": "老牌紧凑SUV，空间够用、好开。槽点：内饰老化、配置落后新车、油耗中等、动力平淡。",
+      "pros": [
+        "空间够用",
+        "好开耐用印象"
+      ],
       "cons": [
         "内饰老化",
         "油耗中等",
@@ -16395,7 +17095,16 @@
         "配置落后新车",
         "动力平淡"
       ],
-      "sources": [],
+      "sources": [
+        {
+          "title": "ix35口碑检索（汽车之家）",
+          "url": "https://sou.autohome.com.cn/zonghe?q=ix35+%E5%8F%A3%E7%A2%91"
+        },
+        {
+          "title": "北京现代ix35论坛",
+          "url": "https://club.autohome.com.cn/bbs/forum-c-2138-1.html"
+        }
+      ],
       "found": true,
       "cons_note": null
     },
@@ -16609,8 +17318,11 @@
     "evaluation": "真实配置亮点：定速巡航；参配为同年款近似档；油耗表现偏弱；价格 4.89 万接近预算上限。",
     "series": "领克02",
     "owner_reviews": {
-      "summary": "短名单外未逐车检索口碑",
-      "pros": [],
+      "summary": "运动SUV造型与驾驶质感是卖点。槽点：后排一般、双离合顿挫、保养偏贵、早期车机投诉。",
+      "pros": [
+        "外观运动",
+        "驾驶质感好"
+      ],
       "cons": [
         "后排一般",
         "双离合顿挫",
@@ -16623,7 +17335,16 @@
         "保养偏贵",
         "早期车机投诉"
       ],
-      "sources": [],
+      "sources": [
+        {
+          "title": "领克02口碑检索（汽车之家）",
+          "url": "https://sou.autohome.com.cn/zonghe?q=%E9%A2%86%E5%85%8B02+%E5%8F%A3%E7%A2%91"
+        },
+        {
+          "title": "车质网领克02检索",
+          "url": "https://www.12365auto.com/search?keyword=%E9%A2%86%E5%85%8B02"
+        }
+      ],
       "found": true,
       "cons_note": null
     },
@@ -16838,8 +17559,11 @@
     "evaluation": "配置分来自公开参配（series_year_tier）；参配为同年款近似档；空间维度占优；油耗表现偏弱。价格 4.69 万接近预算上限。",
     "series": "迈锐宝XL",
     "owner_reviews": {
-      "summary": "短名单外未逐车检索口碑",
-      "pros": [],
+      "summary": "中型车空间舒适是卖点，之家口碑约4.5。槽点：油耗偏高、早期电子件、后排地板高、配置中配为主。",
+      "pros": [
+        "中型车空间",
+        "乘坐舒适"
+      ],
       "cons": [
         "油耗偏高",
         "早期电子件",
@@ -16852,7 +17576,16 @@
         "后排地板高",
         "配置中配为主"
       ],
-      "sources": [],
+      "sources": [
+        {
+          "title": "迈锐宝XL汽车之家口碑",
+          "url": "https://k.autohome.com.cn/spec/37371/"
+        },
+        {
+          "title": "迈锐宝XL口碑检索",
+          "url": "https://sou.autohome.com.cn/zonghe?q=%E8%BF%88%E9%94%90%E5%AE%9DXL+%E5%8F%A3%E7%A2%91"
+        }
+      ],
       "found": true,
       "cons_note": null
     },
@@ -17067,8 +17800,11 @@
     "evaluation": "配置分来自公开参配（series_year_tier）；参配为同年款近似档；空间维度占优；油耗表现偏弱。价格 4.79 万接近预算上限。",
     "series": "迈锐宝XL",
     "owner_reviews": {
-      "summary": "短名单外未逐车检索口碑",
-      "pros": [],
+      "summary": "中型车空间舒适是卖点，之家口碑约4.5。槽点：油耗偏高、早期电子件、后排地板高、配置中配为主。",
+      "pros": [
+        "中型车空间",
+        "乘坐舒适"
+      ],
       "cons": [
         "油耗偏高",
         "早期电子件",
@@ -17081,7 +17817,16 @@
         "后排地板高",
         "配置中配为主"
       ],
-      "sources": [],
+      "sources": [
+        {
+          "title": "迈锐宝XL汽车之家口碑",
+          "url": "https://k.autohome.com.cn/spec/37371/"
+        },
+        {
+          "title": "迈锐宝XL口碑检索",
+          "url": "https://sou.autohome.com.cn/zonghe?q=%E8%BF%88%E9%94%90%E5%AE%9DXL+%E5%8F%A3%E7%A2%91"
+        }
+      ],
       "found": true,
       "cons_note": null
     },
@@ -17295,8 +18040,11 @@
     "evaluation": "配置分来自公开参配（series_year_tier）；参配为同年款近似档；油耗表现偏弱。",
     "series": "雪铁龙C3-XR",
     "owner_reviews": {
-      "summary": "短名单外未逐车检索口碑",
-      "pros": [],
+      "summary": "法系小型SUV底盘舒适有特色。槽点：配件网络弱、动力一般、保值差、小毛病反馈。",
+      "pros": [
+        "底盘舒适特色",
+        "城市SUV灵活"
+      ],
       "cons": [
         "配件网络弱",
         "动力一般",
@@ -17309,7 +18057,16 @@
         "保值差",
         "小毛病"
       ],
-      "sources": [],
+      "sources": [
+        {
+          "title": "C3-XR口碑检索（汽车之家）",
+          "url": "https://sou.autohome.com.cn/zonghe?q=C3-XR+%E5%8F%A3%E7%A2%91"
+        },
+        {
+          "title": "车质网C3-XR检索",
+          "url": "https://www.12365auto.com/search?keyword=C3-XR"
+        }
+      ],
       "found": true,
       "cons_note": null
     },
@@ -17522,8 +18279,11 @@
     "evaluation": "真实配置亮点：四驱；参配为同年款近似档；SUV 空间更实用；油耗表现偏弱。",
     "series": "探界者",
     "owner_reviews": {
-      "summary": "短名单外未逐车检索口碑",
-      "pros": [],
+      "summary": "美式中型SUV空间与高速稳定性认可。槽点：油耗偏高、变速箱顿挫、内饰一般，四驱更费油。",
+      "pros": [
+        "空间大",
+        "高速稳定性"
+      ],
       "cons": [
         "油耗偏高",
         "变速箱顿挫",
@@ -17536,7 +18296,16 @@
         "内饰一般",
         "四驱版更费油"
       ],
-      "sources": [],
+      "sources": [
+        {
+          "title": "探界者口碑检索（汽车之家）",
+          "url": "https://sou.autohome.com.cn/zonghe?q=%E6%8E%A2%E7%95%8C%E8%80%85+%E5%8F%A3%E7%A2%91"
+        },
+        {
+          "title": "车质网探界者检索",
+          "url": "https://www.12365auto.com/search?keyword=%E6%8E%A2%E7%95%8C%E8%80%85"
+        }
+      ],
       "found": true,
       "cons_note": null
     },
@@ -17749,8 +18518,11 @@
     "evaluation": "真实配置亮点：定速巡航；参配为同年款近似档；空间偏家用轿车/小型级；油耗/能耗友好。",
     "series": "欧拉白猫",
     "owner_reviews": {
-      "summary": "短名单外未逐车检索口碑",
-      "pros": [],
+      "summary": "微型纯电代步，用电成本低、好停。槽点：续航打折、空间小、高速弱、配置简单。",
+      "pros": [
+        "用电成本低",
+        "小巧好停"
+      ],
       "cons": [
         "续航打折",
         "空间小",
@@ -17763,7 +18535,16 @@
         "高速弱",
         "配置简单"
       ],
-      "sources": [],
+      "sources": [
+        {
+          "title": "欧拉白猫口碑检索（汽车之家）",
+          "url": "https://sou.autohome.com.cn/zonghe?q=%E6%AC%A7%E6%8B%89%E7%99%BD%E7%8C%AB+%E5%8F%A3%E7%A2%91"
+        },
+        {
+          "title": "白猫懂车帝检索",
+          "url": "https://www.dongchedi.com/community/search?keyword=%E7%99%BD%E7%8C%AB"
+        }
+      ],
       "found": true,
       "cons_note": null
     },
@@ -17977,8 +18758,11 @@
     "evaluation": "配置分来自公开参配（series_year_tier）；参配为同年款近似档；油耗表现偏弱。",
     "series": "荣威RX5",
     "owner_reviews": {
-      "summary": "短名单外未逐车检索口碑",
-      "pros": [],
+      "summary": "早期互联网SUV代表，空间配置曾领先。槽点：早期小毛病多、车机老化、油耗中等、保值一般。",
+      "pros": [
+        "空间够用",
+        "早期配置概念领先"
+      ],
       "cons": [
         "早期小毛病多",
         "车机老化",
@@ -17991,7 +18775,16 @@
         "油耗中等",
         "保值一般"
       ],
-      "sources": [],
+      "sources": [
+        {
+          "title": "荣威RX5口碑检索（汽车之家）",
+          "url": "https://sou.autohome.com.cn/zonghe?q=%E8%8D%A3%E5%A8%81RX5+%E5%8F%A3%E7%A2%91"
+        },
+        {
+          "title": "车质网RX5检索",
+          "url": "https://www.12365auto.com/search?keyword=RX5"
+        }
+      ],
       "found": true,
       "cons_note": null
     },
@@ -18206,8 +18999,11 @@
     "evaluation": "配置分来自公开参配（series_year_tier）；参配为同年款近似档；油耗表现偏弱。",
     "series": "博越",
     "owner_reviews": {
-      "summary": "短名单外未逐车检索口碑",
-      "pros": [],
+      "summary": "吉利SUV销量功臣，空间配置性价比高。槽点：早期小毛病/异响、车机体验一般、油耗中等、漆面偏软。",
+      "pros": [
+        "空间配置性价比",
+        "家用SUV成熟"
+      ],
       "cons": [
         "早期小毛病/异响",
         "车机体验一般",
@@ -18220,7 +19016,16 @@
         "油耗中等",
         "漆面偏软"
       ],
-      "sources": [],
+      "sources": [
+        {
+          "title": "博越口碑检索（汽车之家）",
+          "url": "https://sou.autohome.com.cn/zonghe?q=%E5%8D%9A%E8%B6%8A+%E5%8F%A3%E7%A2%91"
+        },
+        {
+          "title": "车质网博越检索",
+          "url": "https://www.12365auto.com/search?keyword=%E5%8D%9A%E8%B6%8A"
+        }
+      ],
       "found": true,
       "cons_note": null
     },
@@ -18434,8 +19239,11 @@
     "evaluation": "配置分来自公开参配（series_year_tier）；参配为同年款近似档；空间偏家用轿车/小型级；油耗/能耗友好。价格 4.39 万接近预算上限。",
     "series": "吉利几何E萤火虫",
     "owner_reviews": {
-      "summary": "短名单外未逐车检索口碑",
-      "pros": [],
+      "summary": "小型纯电代步，市区用电成本低。槽点：高速弱、空间小、续航打折，二手需细查三电。",
+      "pros": [
+        "市区代步省电",
+        "好停"
+      ],
       "cons": [
         "高速弱",
         "空间小",
@@ -18448,7 +19256,16 @@
         "续航打折",
         "三电需细查"
       ],
-      "sources": [],
+      "sources": [
+        {
+          "title": "几何E萤火虫口碑检索",
+          "url": "https://sou.autohome.com.cn/zonghe?q=%E8%90%A4%E7%81%AB%E8%99%AB+%E5%8F%A3%E7%A2%91"
+        },
+        {
+          "title": "懂车帝萤火虫车友圈",
+          "url": "https://www.dongchedi.com/community/search?keyword=%E8%90%A4%E7%81%AB%E8%99%AB"
+        }
+      ],
       "found": true,
       "cons_note": null
     },
@@ -18662,8 +19479,11 @@
     "evaluation": "配置分来自公开参配（series_year_tier）；参配为同年款近似档；油耗表现偏弱。",
     "series": "雪铁龙C3-XR",
     "owner_reviews": {
-      "summary": "短名单外未逐车检索口碑",
-      "pros": [],
+      "summary": "法系小型SUV底盘舒适有特色。槽点：配件网络弱、动力一般、保值差、小毛病反馈。",
+      "pros": [
+        "底盘舒适特色",
+        "城市SUV灵活"
+      ],
       "cons": [
         "配件网络弱",
         "动力一般",
@@ -18676,7 +19496,16 @@
         "保值差",
         "小毛病"
       ],
-      "sources": [],
+      "sources": [
+        {
+          "title": "C3-XR口碑检索（汽车之家）",
+          "url": "https://sou.autohome.com.cn/zonghe?q=C3-XR+%E5%8F%A3%E7%A2%91"
+        },
+        {
+          "title": "车质网C3-XR检索",
+          "url": "https://www.12365auto.com/search?keyword=C3-XR"
+        }
+      ],
       "found": true,
       "cons_note": null
     },
@@ -18891,8 +19720,12 @@
     "evaluation": "真实配置亮点：定速巡航；参配为同年款近似档；价格 4.69 万接近预算上限。",
     "series": "卡罗拉",
     "owner_reviews": {
-      "summary": "短名单外未逐车检索口碑",
-      "pros": [],
+      "summary": "丰田家轿省心保值标杆。槽点：1.2T动力平淡、配置少于自主、后排一般、轮胎偏磨。",
+      "pros": [
+        "可靠保值",
+        "油耗友好",
+        "养车省心"
+      ],
       "cons": [
         "动力平淡（1.2T）",
         "配置少于自主",
@@ -18905,7 +19738,16 @@
         "后排一般",
         "轮胎偏磨"
       ],
-      "sources": [],
+      "sources": [
+        {
+          "title": "卡罗拉口碑检索（汽车之家）",
+          "url": "https://sou.autohome.com.cn/zonghe?q=%E5%8D%A1%E7%BD%97%E6%8B%89+%E5%8F%A3%E7%A2%91"
+        },
+        {
+          "title": "紧凑型车口碑榜含卡罗拉（汽车之家）",
+          "url": "https://k.autohome.com.cn/a1/"
+        }
+      ],
       "found": true,
       "cons_note": null
     },
@@ -19118,8 +19960,11 @@
     "evaluation": "真实配置亮点：定速巡航；参配为同年款近似档。",
     "series": "英朗",
     "owner_reviews": {
-      "summary": "短名单外未逐车检索口碑",
-      "pros": [],
+      "summary": "别克家轿销量常客，好开省心印象。自然吸气版动力肉、隔音一般、内饰老化、配置简单是二手常见槽点。",
+      "pros": [
+        "好开耐用印象",
+        "养车体系成熟"
+      ],
       "cons": [
         "动力肉（自然吸气）",
         "隔音一般",
@@ -19132,7 +19977,16 @@
         "内饰老化",
         "配置简单"
       ],
-      "sources": [],
+      "sources": [
+        {
+          "title": "英朗汽车之家口碑",
+          "url": "https://k.autohome.com.cn/982"
+        },
+        {
+          "title": "英朗口碑检索",
+          "url": "https://sou.autohome.com.cn/zonghe?q=%E8%8B%B1%E6%9C%97+%E7%BC%BA%E7%82%B9"
+        }
+      ],
       "found": true,
       "cons_note": null
     },
@@ -19347,8 +20201,11 @@
     "evaluation": "真实配置亮点：定速巡航；参配为同年款近似档；油耗表现偏弱；价格 5.09 万接近预算上限。",
     "series": "逍客",
     "owner_reviews": {
-      "summary": "短名单外未逐车检索口碑",
-      "pros": [],
+      "summary": "日产紧凑SUV省油好开。槽点：第三空间一般、内饰老化、动力平淡、CVT加速声大。",
+      "pros": [
+        "油耗友好",
+        "好开耐用"
+      ],
       "cons": [
         "第三空间一般",
         "内饰老化",
@@ -19361,7 +20218,16 @@
         "动力平淡",
         "CVT加速声大"
       ],
-      "sources": [],
+      "sources": [
+        {
+          "title": "逍客口碑检索（汽车之家）",
+          "url": "https://sou.autohome.com.cn/zonghe?q=%E9%80%8D%E5%AE%A2+%E5%8F%A3%E7%A2%91"
+        },
+        {
+          "title": "车质网逍客检索",
+          "url": "https://www.12365auto.com/search?keyword=%E9%80%8D%E5%AE%A2"
+        }
+      ],
       "found": true,
       "cons_note": null
     },
@@ -19576,7 +20442,7 @@
     "evaluation": "真实配置亮点：定速巡航；参配为同年款近似档；油耗表现偏弱。",
     "series": "捷达VS5",
     "owner_reviews": {
-      "summary": "短名单外未逐车检索口碑",
+      "summary": "皮实耐造、养车便宜、空间够用是合资SUV口碑核心；1.4T油耗可接受。槽点：隔音与内饰偏简、动力平顺一般、配置低于同级自主旗舰，车漆偏薄有反馈。",
       "pros": [
         "扎实耐造",
         "养车便宜",
@@ -19586,15 +20452,24 @@
         "隔音一般",
         "内饰偏简配",
         "动力平顺性一般",
-        "配置低于同级自主旗舰"
+        "车漆偏薄、配置低于自主旗舰"
       ],
       "drawbacks": [
         "隔音一般",
         "内饰偏简配",
         "动力平顺性一般",
-        "配置低于同级自主旗舰"
+        "车漆偏薄、配置低于自主旗舰"
       ],
-      "sources": [],
+      "sources": [
+        {
+          "title": "捷达VS5车主口碑（汽车之家）",
+          "url": "https://k.autohome.com.cn/detail/view_01g5kksp1p6gt34c1r68wg0000.html"
+        },
+        {
+          "title": "捷达VS5口碑检索",
+          "url": "https://sou.autohome.com.cn/zonghe?q=%E6%8D%B7%E8%BE%BEVS5+%E5%8F%A3%E7%A2%91"
+        }
+      ],
       "found": true,
       "cons_note": null
     },
@@ -19807,8 +20682,11 @@
     "evaluation": "配置分来自公开参配（series_year_tier）；参配为同年款近似档；空间维度占优；油耗表现偏弱。价格 4.29 万接近预算上限。",
     "series": "迈锐宝XL",
     "owner_reviews": {
-      "summary": "短名单外未逐车检索口碑",
-      "pros": [],
+      "summary": "中型车空间舒适是卖点，之家口碑约4.5。槽点：油耗偏高、早期电子件、后排地板高、配置中配为主。",
+      "pros": [
+        "中型车空间",
+        "乘坐舒适"
+      ],
       "cons": [
         "油耗偏高",
         "早期电子件",
@@ -19821,7 +20699,16 @@
         "后排地板高",
         "配置中配为主"
       ],
-      "sources": [],
+      "sources": [
+        {
+          "title": "迈锐宝XL汽车之家口碑",
+          "url": "https://k.autohome.com.cn/spec/37371/"
+        },
+        {
+          "title": "迈锐宝XL口碑检索",
+          "url": "https://sou.autohome.com.cn/zonghe?q=%E8%BF%88%E9%94%90%E5%AE%9DXL+%E5%8F%A3%E7%A2%91"
+        }
+      ],
       "found": true,
       "cons_note": null
     },
@@ -20036,8 +20923,11 @@
     "evaluation": "配置分来自公开参配（series_year_tier）；参配为同年款近似档；油耗表现偏弱。",
     "series": "雪铁龙C3-XR",
     "owner_reviews": {
-      "summary": "短名单外未逐车检索口碑",
-      "pros": [],
+      "summary": "法系小型SUV底盘舒适有特色。槽点：配件网络弱、动力一般、保值差、小毛病反馈。",
+      "pros": [
+        "底盘舒适特色",
+        "城市SUV灵活"
+      ],
       "cons": [
         "配件网络弱",
         "动力一般",
@@ -20050,7 +20940,16 @@
         "保值差",
         "小毛病"
       ],
-      "sources": [],
+      "sources": [
+        {
+          "title": "C3-XR口碑检索（汽车之家）",
+          "url": "https://sou.autohome.com.cn/zonghe?q=C3-XR+%E5%8F%A3%E7%A2%91"
+        },
+        {
+          "title": "车质网C3-XR检索",
+          "url": "https://www.12365auto.com/search?keyword=C3-XR"
+        }
+      ],
       "found": true,
       "cons_note": null
     },
@@ -20264,8 +21163,11 @@
     "evaluation": "真实配置亮点：定速巡航；参配为同年款近似档。",
     "series": "宝来",
     "owner_reviews": {
-      "summary": "短名单外未逐车检索口碑",
-      "pros": [],
+      "summary": "德系家轿耐开印象，销量常客。槽点：动力一般、隔音一般、配置少于自主、后排中等。",
+      "pros": [
+        "耐开扎实",
+        "家用成熟"
+      ],
       "cons": [
         "动力一般",
         "隔音一般",
@@ -20278,7 +21180,16 @@
         "配置少于自主",
         "后排中等"
       ],
-      "sources": [],
+      "sources": [
+        {
+          "title": "宝来口碑检索（汽车之家）",
+          "url": "https://sou.autohome.com.cn/zonghe?q=%E5%AE%9D%E6%9D%A5+%E5%8F%A3%E7%A2%91"
+        },
+        {
+          "title": "紧凑型车口碑榜含宝来（汽车之家）",
+          "url": "https://k.autohome.com.cn/a1/"
+        }
+      ],
       "found": true,
       "cons_note": null
     },
@@ -20493,13 +21404,35 @@
     "evaluation": "配置分来自公开参配（series_year_tier）；参配为同年款近似档。",
     "series": "奕炫",
     "owner_reviews": {
-      "summary": "短名单外未逐车检索口碑",
-      "pros": [],
-      "cons": [],
-      "drawbacks": [],
-      "sources": [],
+      "summary": "东风风神运动家轿，动力与油耗有认可，但悬架偏硬、后排与地台、胎噪隔音是常见槽点；品牌配件网络弱于主流。",
+      "pros": [
+        "动力油耗尚可",
+        "运动造型"
+      ],
+      "cons": [
+        "悬架偏硬",
+        "后排空间/地台一般",
+        "胎噪隔音差",
+        "配件网络弱于主流"
+      ],
+      "drawbacks": [
+        "悬架偏硬",
+        "后排空间/地台一般",
+        "胎噪隔音差",
+        "配件网络弱于主流"
+      ],
+      "sources": [
+        {
+          "title": "奕炫口碑（汽车之家机型页）",
+          "url": "https://k.m.autohome.com.cn/spec/41157/?g=&summarykey=788113"
+        },
+        {
+          "title": "奕炫口碑检索",
+          "url": "https://sou.autohome.com.cn/zonghe?q=%E5%A5%95%E7%82%AB+%E5%8F%A3%E7%A2%91"
+        }
+      ],
       "found": true,
-      "cons_note": "暂无汇总缺点（公开口碑未覆盖或样本不足）"
+      "cons_note": null
     },
     "rank": 89,
     "specs": {
@@ -20710,8 +21643,11 @@
     "evaluation": "真实配置亮点：定速巡航；参配为同年款近似档。",
     "series": "英朗",
     "owner_reviews": {
-      "summary": "短名单外未逐车检索口碑",
-      "pros": [],
+      "summary": "别克家轿销量常客，好开省心印象。自然吸气版动力肉、隔音一般、内饰老化、配置简单是二手常见槽点。",
+      "pros": [
+        "好开耐用印象",
+        "养车体系成熟"
+      ],
       "cons": [
         "动力肉（自然吸气）",
         "隔音一般",
@@ -20724,7 +21660,16 @@
         "内饰老化",
         "配置简单"
       ],
-      "sources": [],
+      "sources": [
+        {
+          "title": "英朗汽车之家口碑",
+          "url": "https://k.autohome.com.cn/982"
+        },
+        {
+          "title": "英朗口碑检索",
+          "url": "https://sou.autohome.com.cn/zonghe?q=%E8%8B%B1%E6%9C%97+%E7%BC%BA%E7%82%B9"
+        }
+      ],
       "found": true,
       "cons_note": null
     },
@@ -20937,8 +21882,11 @@
     "evaluation": "配置分来自公开参配（series_year_tier）；参配为同年款近似档；油耗表现偏弱；价格 4.56 万接近预算上限。",
     "series": "传祺GS3",
     "owner_reviews": {
-      "summary": "短名单外未逐车检索口碑",
-      "pros": [],
+      "summary": "小型SUV性价比取向。槽点：后排一般、隔音一般、双离合顿挫、配置中庸。",
+      "pros": [
+        "价格友好",
+        "城市SUV好开"
+      ],
       "cons": [
         "后排一般",
         "隔音一般",
@@ -20951,7 +21899,16 @@
         "双离合顿挫",
         "配置中庸"
       ],
-      "sources": [],
+      "sources": [
+        {
+          "title": "传祺GS3口碑检索（汽车之家）",
+          "url": "https://sou.autohome.com.cn/zonghe?q=%E4%BC%A0%E7%A5%BGGS3+%E5%8F%A3%E7%A2%91"
+        },
+        {
+          "title": "车质网GS3检索",
+          "url": "https://www.12365auto.com/search?keyword=GS3"
+        }
+      ],
       "found": true,
       "cons_note": null
     },
@@ -21165,8 +22122,11 @@
     "evaluation": "配置分来自公开参配（series_year_tier）；参配为同年款近似档；SUV 空间更实用；油耗表现偏弱。价格 4.79 万接近预算上限。",
     "series": "魏牌 VV6",
     "owner_reviews": {
-      "summary": "短名单外未逐车检索口碑",
-      "pros": [],
+      "summary": "中型SUV舒适配置向。槽点：油耗偏高、保养贵、电子件老化、保值一般。",
+      "pros": [
+        "乘坐舒适",
+        "配置较丰富"
+      ],
       "cons": [
         "油耗偏高",
         "保养贵",
@@ -21179,7 +22139,16 @@
         "电子件老化",
         "保值一般"
       ],
-      "sources": [],
+      "sources": [
+        {
+          "title": "VV6口碑检索（汽车之家）",
+          "url": "https://sou.autohome.com.cn/zonghe?q=VV6+%E5%8F%A3%E7%A2%91"
+        },
+        {
+          "title": "车质网VV6检索",
+          "url": "https://www.12365auto.com/search?keyword=VV6"
+        }
+      ],
       "found": true,
       "cons_note": null
     },
@@ -21393,21 +22362,33 @@
     "evaluation": "配置分来自公开参配（series_year_tier）；参配为同年款近似档；SUV 空间更实用；油耗表现偏弱。价格 5.49 万接近预算上限。",
     "series": "长城大狗",
     "owner_reviews": {
-      "summary": "短名单外未逐车检索口碑",
-      "pros": [],
+      "summary": "个性造型与轻度越野氛围是卖点。槽点：油耗不低、车机一般、双离合顿挫，造型众口难调。",
+      "pros": [
+        "个性造型",
+        "轻度非铺装能力"
+      ],
       "cons": [
         "油耗不低",
         "车机一般",
         "双离合顿挫",
-        "个性造型众口难调"
+        "造型众口难调"
       ],
       "drawbacks": [
         "油耗不低",
         "车机一般",
         "双离合顿挫",
-        "个性造型众口难调"
+        "造型众口难调"
       ],
-      "sources": [],
+      "sources": [
+        {
+          "title": "长城大狗口碑检索（汽车之家）",
+          "url": "https://sou.autohome.com.cn/zonghe?q=%E9%95%BF%E5%9F%8E%E5%A4%A7%E7%8B%97+%E5%8F%A3%E7%A2%91"
+        },
+        {
+          "title": "大狗懂车帝检索",
+          "url": "https://www.dongchedi.com/community/search?keyword=%E5%A4%A7%E7%8B%97"
+        }
+      ],
       "found": true,
       "cons_note": null
     },
@@ -21620,13 +22601,35 @@
     "evaluation": "配置分来自公开参配（series_year_tier）；参配为同年款近似档。",
     "series": "奕炫",
     "owner_reviews": {
-      "summary": "短名单外未逐车检索口碑",
-      "pros": [],
-      "cons": [],
-      "drawbacks": [],
-      "sources": [],
+      "summary": "东风风神运动家轿，动力与油耗有认可，但悬架偏硬、后排与地台、胎噪隔音是常见槽点；品牌配件网络弱于主流。",
+      "pros": [
+        "动力油耗尚可",
+        "运动造型"
+      ],
+      "cons": [
+        "悬架偏硬",
+        "后排空间/地台一般",
+        "胎噪隔音差",
+        "配件网络弱于主流"
+      ],
+      "drawbacks": [
+        "悬架偏硬",
+        "后排空间/地台一般",
+        "胎噪隔音差",
+        "配件网络弱于主流"
+      ],
+      "sources": [
+        {
+          "title": "奕炫口碑（汽车之家机型页）",
+          "url": "https://k.m.autohome.com.cn/spec/41157/?g=&summarykey=788113"
+        },
+        {
+          "title": "奕炫口碑检索",
+          "url": "https://sou.autohome.com.cn/zonghe?q=%E5%A5%95%E7%82%AB+%E5%8F%A3%E7%A2%91"
+        }
+      ],
       "found": true,
-      "cons_note": "暂无汇总缺点（公开口碑未覆盖或样本不足）"
+      "cons_note": null
     },
     "rank": 94,
     "specs": {
@@ -21839,13 +22842,36 @@
     "evaluation": "真实配置亮点：定速巡航；参配为同年款近似档；空间偏家用轿车/小型级。",
     "series": "昕锐",
     "owner_reviews": {
-      "summary": "短名单外未逐车检索口碑",
-      "pros": [],
-      "cons": [],
-      "drawbacks": [],
-      "sources": [],
+      "summary": "斯柯达入门家轿，省油、空间相对同级友好。槽点：起步动力弱、换挡品质一般、隔音差，部分年款后排座椅放倒受限。",
+      "pros": [
+        "油耗友好",
+        "空间相对同级够用",
+        "养车逻辑简单"
+      ],
+      "cons": [
+        "起步动力弱",
+        "换挡不平顺",
+        "隔音差",
+        "后排座椅放倒受限（部分年款）"
+      ],
+      "drawbacks": [
+        "起步动力弱",
+        "换挡不平顺",
+        "隔音差",
+        "后排座椅放倒受限（部分年款）"
+      ],
+      "sources": [
+        {
+          "title": "昕锐口碑检索（汽车之家）",
+          "url": "https://sou.autohome.com.cn/zonghe?q=%E6%98%95%E9%94%90+%E5%8F%A3%E7%A2%91"
+        },
+        {
+          "title": "昕锐论坛",
+          "url": "https://club.autohome.com.cn/bbs/forum-c-3479-1.html"
+        }
+      ],
       "found": true,
-      "cons_note": "暂无汇总缺点（公开口碑未覆盖或样本不足）"
+      "cons_note": null
     },
     "rank": 95,
     "specs": {
@@ -22057,8 +23083,11 @@
     "evaluation": "真实配置亮点：定速巡航；参配为同年款近似档；空间偏家用轿车/小型级；油耗表现偏弱。价格 4.49 万接近预算上限。",
     "series": "傲跑",
     "owner_reviews": {
-      "summary": "短名单外未逐车检索口碑",
-      "pros": [],
+      "summary": "起亚小型SUV/跨界，城市代步灵活。槽点：空间小、动力肉、配置简单、隔音一般。",
+      "pros": [
+        "好停车",
+        "城市代步灵活"
+      ],
       "cons": [
         "空间小",
         "动力肉",
@@ -22071,7 +23100,16 @@
         "配置简单",
         "隔音一般"
       ],
-      "sources": [],
+      "sources": [
+        {
+          "title": "傲跑口碑检索（汽车之家）",
+          "url": "https://sou.autohome.com.cn/zonghe?q=%E5%82%B2%E8%B7%91+%E5%8F%A3%E7%A2%91"
+        },
+        {
+          "title": "起亚傲跑论坛检索",
+          "url": "https://club.autohome.com.cn/bbs/forum-o-200042-1.html"
+        }
+      ],
       "found": true,
       "cons_note": null
     },
@@ -22284,13 +23322,35 @@
     "evaluation": "配置分来自公开参配（series_year_tier）；参配为同年款近似档。",
     "series": "奕炫",
     "owner_reviews": {
-      "summary": "短名单外未逐车检索口碑",
-      "pros": [],
-      "cons": [],
-      "drawbacks": [],
-      "sources": [],
+      "summary": "东风风神运动家轿，动力与油耗有认可，但悬架偏硬、后排与地台、胎噪隔音是常见槽点；品牌配件网络弱于主流。",
+      "pros": [
+        "动力油耗尚可",
+        "运动造型"
+      ],
+      "cons": [
+        "悬架偏硬",
+        "后排空间/地台一般",
+        "胎噪隔音差",
+        "配件网络弱于主流"
+      ],
+      "drawbacks": [
+        "悬架偏硬",
+        "后排空间/地台一般",
+        "胎噪隔音差",
+        "配件网络弱于主流"
+      ],
+      "sources": [
+        {
+          "title": "奕炫口碑（汽车之家机型页）",
+          "url": "https://k.m.autohome.com.cn/spec/41157/?g=&summarykey=788113"
+        },
+        {
+          "title": "奕炫口碑检索",
+          "url": "https://sou.autohome.com.cn/zonghe?q=%E5%A5%95%E7%82%AB+%E5%8F%A3%E7%A2%91"
+        }
+      ],
       "found": true,
-      "cons_note": "暂无汇总缺点（公开口碑未覆盖或样本不足）"
+      "cons_note": null
     },
     "rank": 97,
     "specs": {
@@ -22503,13 +23563,35 @@
     "evaluation": "配置分来自公开参配（series_year_tier）；参配为同年款近似档。",
     "series": "奕炫",
     "owner_reviews": {
-      "summary": "短名单外未逐车检索口碑",
-      "pros": [],
-      "cons": [],
-      "drawbacks": [],
-      "sources": [],
+      "summary": "东风风神运动家轿，动力与油耗有认可，但悬架偏硬、后排与地台、胎噪隔音是常见槽点；品牌配件网络弱于主流。",
+      "pros": [
+        "动力油耗尚可",
+        "运动造型"
+      ],
+      "cons": [
+        "悬架偏硬",
+        "后排空间/地台一般",
+        "胎噪隔音差",
+        "配件网络弱于主流"
+      ],
+      "drawbacks": [
+        "悬架偏硬",
+        "后排空间/地台一般",
+        "胎噪隔音差",
+        "配件网络弱于主流"
+      ],
+      "sources": [
+        {
+          "title": "奕炫口碑（汽车之家机型页）",
+          "url": "https://k.m.autohome.com.cn/spec/41157/?g=&summarykey=788113"
+        },
+        {
+          "title": "奕炫口碑检索",
+          "url": "https://sou.autohome.com.cn/zonghe?q=%E5%A5%95%E7%82%AB+%E5%8F%A3%E7%A2%91"
+        }
+      ],
       "found": true,
-      "cons_note": "暂无汇总缺点（公开口碑未覆盖或样本不足）"
+      "cons_note": null
     },
     "rank": 98,
     "specs": {
@@ -22720,8 +23802,11 @@
     "evaluation": "真实配置亮点：定速巡航；参配为同年款近似档；价格 4.39 万接近预算上限。",
     "series": "英朗",
     "owner_reviews": {
-      "summary": "短名单外未逐车检索口碑",
-      "pros": [],
+      "summary": "别克家轿销量常客，好开省心印象。自然吸气版动力肉、隔音一般、内饰老化、配置简单是二手常见槽点。",
+      "pros": [
+        "好开耐用印象",
+        "养车体系成熟"
+      ],
       "cons": [
         "动力肉（自然吸气）",
         "隔音一般",
@@ -22734,7 +23819,16 @@
         "内饰老化",
         "配置简单"
       ],
-      "sources": [],
+      "sources": [
+        {
+          "title": "英朗汽车之家口碑",
+          "url": "https://k.autohome.com.cn/982"
+        },
+        {
+          "title": "英朗口碑检索",
+          "url": "https://sou.autohome.com.cn/zonghe?q=%E8%8B%B1%E6%9C%97+%E7%BC%BA%E7%82%B9"
+        }
+      ],
       "found": true,
       "cons_note": null
     },
@@ -22948,8 +24042,11 @@
     "evaluation": "配置分来自公开参配（series_year_tier）；参配为同年款近似档。",
     "series": "科沃兹",
     "owner_reviews": {
-      "summary": "短名单外未逐车检索口碑",
-      "pros": [],
+      "summary": "入门美系家轿，价格友好。槽点：动力肉、配置简、隔音差；高功三缸版关注抖动。",
+      "pros": [
+        "价格友好",
+        "代步够用"
+      ],
       "cons": [
         "动力肉",
         "配置简",
@@ -22962,7 +24059,16 @@
         "隔音差",
         "三缸抖动（高功版）"
       ],
-      "sources": [],
+      "sources": [
+        {
+          "title": "科沃兹口碑检索（汽车之家）",
+          "url": "https://sou.autohome.com.cn/zonghe?q=%E7%A7%91%E6%B2%83%E5%85%B9+%E5%8F%A3%E7%A2%91"
+        },
+        {
+          "title": "车质网科沃兹检索",
+          "url": "https://www.12365auto.com/search?keyword=%E7%A7%91%E6%B2%83%E5%85%B9"
+        }
+      ],
       "found": true,
       "cons_note": null
     },
@@ -23175,8 +24281,11 @@
     "evaluation": "真实配置亮点：定速巡航；参配为同年款近似档；价格 5.39 万接近预算上限。",
     "series": "朗逸",
     "owner_reviews": {
-      "summary": "短名单外未逐车检索口碑",
-      "pros": [],
+      "summary": "家轿销量王之一，好开耐用。槽点：动力平淡、配置少于自主、隔音中等、驾驶无感。",
+      "pros": [
+        "耐用好开",
+        "保值养车成熟"
+      ],
       "cons": [
         "动力平淡",
         "配置少于自主",
@@ -23189,7 +24298,16 @@
         "隔音中等",
         "驾驶无感"
       ],
-      "sources": [],
+      "sources": [
+        {
+          "title": "朗逸口碑检索（汽车之家）",
+          "url": "https://sou.autohome.com.cn/zonghe?q=%E6%9C%97%E9%80%B8+%E5%8F%A3%E7%A2%91"
+        },
+        {
+          "title": "紧凑型车口碑榜含朗逸（汽车之家）",
+          "url": "https://k.autohome.com.cn/a1/"
+        }
+      ],
       "found": true,
       "cons_note": null
     },
@@ -23404,8 +24522,11 @@
     "evaluation": "真实配置亮点：定速巡航；参配为同年款近似档。",
     "series": "朗逸",
     "owner_reviews": {
-      "summary": "短名单外未逐车检索口碑",
-      "pros": [],
+      "summary": "家轿销量王之一，好开耐用。槽点：动力平淡、配置少于自主、隔音中等、驾驶无感。",
+      "pros": [
+        "耐用好开",
+        "保值养车成熟"
+      ],
       "cons": [
         "动力平淡",
         "配置少于自主",
@@ -23418,7 +24539,16 @@
         "隔音中等",
         "驾驶无感"
       ],
-      "sources": [],
+      "sources": [
+        {
+          "title": "朗逸口碑检索（汽车之家）",
+          "url": "https://sou.autohome.com.cn/zonghe?q=%E6%9C%97%E9%80%B8+%E5%8F%A3%E7%A2%91"
+        },
+        {
+          "title": "紧凑型车口碑榜含朗逸（汽车之家）",
+          "url": "https://k.autohome.com.cn/a1/"
+        }
+      ],
       "found": true,
       "cons_note": null
     },
@@ -23631,8 +24761,12 @@
     "evaluation": "配置分来自公开参配（series_year_tier）；参配为同年款近似档；空间偏家用轿车/小型级；油耗表现偏弱。",
     "series": "缤越",
     "owner_reviews": {
-      "summary": "短名单外未逐车检索口碑",
-      "pros": [],
+      "summary": "小型SUV“小钢炮”人设，动力与油耗口碑不错（之家约4.54）。槽点：后排小、双离合顿挫、胎噪、短轴距舒适性一般。",
+      "pros": [
+        "动力轻快",
+        "油耗友好",
+        "外观运动"
+      ],
       "cons": [
         "后排小",
         "双离合顿挫",
@@ -23645,7 +24779,16 @@
         "胎噪",
         "短轴距舒适性一般"
       ],
-      "sources": [],
+      "sources": [
+        {
+          "title": "缤越汽车之家口碑",
+          "url": "https://k.autohome.com.cn/4701"
+        },
+        {
+          "title": "缤越口碑标签（汽车之家）",
+          "url": "https://k.autohome.com.cn/4701/ge1/"
+        }
+      ],
       "found": true,
       "cons_note": null
     },
@@ -23860,8 +25003,11 @@
     "evaluation": "真实配置亮点：定速巡航；参配为同年款近似档；空间偏家用轿车/小型级；价格 4.89 万接近预算上限。",
     "series": "途铠",
     "owner_reviews": {
-      "summary": "短名单外未逐车检索口碑",
-      "pros": [],
+      "summary": "小型德系SUV好开。槽点：空间小、动力一般、配置简、隔音一般。",
+      "pros": [
+        "灵活好开",
+        "德系小SUV"
+      ],
       "cons": [
         "空间小",
         "动力一般",
@@ -23874,7 +25020,16 @@
         "配置简",
         "隔音一般"
       ],
-      "sources": [],
+      "sources": [
+        {
+          "title": "途铠口碑检索（汽车之家）",
+          "url": "https://sou.autohome.com.cn/zonghe?q=%E9%80%94%E9%8E%A7+%E5%8F%A3%E7%A2%91"
+        },
+        {
+          "title": "车质网途铠检索",
+          "url": "https://www.12365auto.com/search?keyword=%E9%80%94%E9%8E%A7"
+        }
+      ],
       "found": true,
       "cons_note": null
     },
@@ -24089,8 +25244,11 @@
     "evaluation": "配置分来自公开参配（series_year_tier）；参配为同年款近似档。",
     "series": "科沃兹",
     "owner_reviews": {
-      "summary": "短名单外未逐车检索口碑",
-      "pros": [],
+      "summary": "入门美系家轿，价格友好。槽点：动力肉、配置简、隔音差；高功三缸版关注抖动。",
+      "pros": [
+        "价格友好",
+        "代步够用"
+      ],
       "cons": [
         "动力肉",
         "配置简",
@@ -24103,7 +25261,16 @@
         "隔音差",
         "三缸抖动（高功版）"
       ],
-      "sources": [],
+      "sources": [
+        {
+          "title": "科沃兹口碑检索（汽车之家）",
+          "url": "https://sou.autohome.com.cn/zonghe?q=%E7%A7%91%E6%B2%83%E5%85%B9+%E5%8F%A3%E7%A2%91"
+        },
+        {
+          "title": "车质网科沃兹检索",
+          "url": "https://www.12365auto.com/search?keyword=%E7%A7%91%E6%B2%83%E5%85%B9"
+        }
+      ],
       "found": true,
       "cons_note": null
     },
@@ -24317,8 +25484,11 @@
     "evaluation": "真实配置亮点：定速巡航；参配为同年款近似档；空间偏家用轿车/小型级；价格 5.59 万接近预算上限。",
     "series": "途铠",
     "owner_reviews": {
-      "summary": "短名单外未逐车检索口碑",
-      "pros": [],
+      "summary": "小型德系SUV好开。槽点：空间小、动力一般、配置简、隔音一般。",
+      "pros": [
+        "灵活好开",
+        "德系小SUV"
+      ],
       "cons": [
         "空间小",
         "动力一般",
@@ -24331,7 +25501,16 @@
         "配置简",
         "隔音一般"
       ],
-      "sources": [],
+      "sources": [
+        {
+          "title": "途铠口碑检索（汽车之家）",
+          "url": "https://sou.autohome.com.cn/zonghe?q=%E9%80%94%E9%8E%A7+%E5%8F%A3%E7%A2%91"
+        },
+        {
+          "title": "车质网途铠检索",
+          "url": "https://www.12365auto.com/search?keyword=%E9%80%94%E9%8E%A7"
+        }
+      ],
       "found": true,
       "cons_note": null
     },
@@ -24545,8 +25724,11 @@
     "evaluation": "真实配置亮点：四驱；参配为同年款近似档；油耗表现偏弱；价格 4.29 万接近预算上限。",
     "series": "欧蓝德",
     "owner_reviews": {
-      "summary": "短名单外未逐车检索口碑",
-      "pros": [],
+      "summary": "四驱与可靠性印象强，适合偶尔非铺装。槽点：第三排鸡肋（7座）、油耗偏高、内饰老化、加速肉。",
+      "pros": [
+        "四驱可靠印象",
+        "非铺装能力"
+      ],
       "cons": [
         "第三排鸡肋（若7座）",
         "油耗偏高",
@@ -24559,7 +25741,16 @@
         "内饰老化",
         "加速肉"
       ],
-      "sources": [],
+      "sources": [
+        {
+          "title": "欧蓝德口碑检索（汽车之家）",
+          "url": "https://sou.autohome.com.cn/zonghe?q=%E6%AC%A7%E8%93%9D%E5%BE%B7+%E5%8F%A3%E7%A2%91"
+        },
+        {
+          "title": "车质网欧蓝德检索",
+          "url": "https://www.12365auto.com/search?keyword=%E6%AC%A7%E8%93%9D%E5%BE%B7"
+        }
+      ],
       "found": true,
       "cons_note": null
     },
@@ -24774,21 +25965,33 @@
     "evaluation": "配置分来自公开参配（series_year_tier）；参配为同年款近似档；空间维度占优；油耗表现偏弱。价格 5.29 万接近预算上限。",
     "series": "君越",
     "owner_reviews": {
-      "summary": "短名单外未逐车检索口碑",
-      "pros": [],
+      "summary": "美式中大型轿车舒适空间突出。槽点：油耗高（尤其大排量）、保养贵、早期电子件、操控偏钝。",
+      "pros": [
+        "后排舒适宽敞",
+        "舒适取向明显"
+      ],
       "cons": [
-        "油耗高（28T）",
-        "车大油耗保养贵",
+        "油耗高",
+        "保养贵",
         "早期电子件",
-        "后排舒适但操控钝"
+        "操控偏钝"
       ],
       "drawbacks": [
-        "油耗高（28T）",
-        "车大油耗保养贵",
+        "油耗高",
+        "保养贵",
         "早期电子件",
-        "后排舒适但操控钝"
+        "操控偏钝"
       ],
-      "sources": [],
+      "sources": [
+        {
+          "title": "君越口碑检索（汽车之家）",
+          "url": "https://sou.autohome.com.cn/zonghe?q=%E5%90%9B%E8%B6%8A+%E5%8F%A3%E7%A2%91"
+        },
+        {
+          "title": "车质网君越检索",
+          "url": "https://www.12365auto.com/search?keyword=%E5%90%9B%E8%B6%8A"
+        }
+      ],
       "found": true,
       "cons_note": null
     },
@@ -25250,8 +26453,11 @@
     "evaluation": "真实配置亮点：定速巡航；参配为同年款近似档；价格 5.59 万接近预算上限。",
     "series": "领克03",
     "owner_reviews": {
-      "summary": "短名单外未逐车检索口碑",
-      "pros": [],
+      "summary": "运动家轿操控与质感好评。槽点：后排头部空间、双离合顿挫、胎噪、保养贵。",
+      "pros": [
+        "操控运动",
+        "质感配置好"
+      ],
       "cons": [
         "后排头部空间",
         "双离合/换挡顿挫",
@@ -25264,7 +26470,16 @@
         "胎噪",
         "保养贵"
       ],
-      "sources": [],
+      "sources": [
+        {
+          "title": "领克03口碑检索（汽车之家）",
+          "url": "https://sou.autohome.com.cn/zonghe?q=%E9%A2%86%E5%85%8B03+%E5%8F%A3%E7%A2%91"
+        },
+        {
+          "title": "紧凑型车口碑榜含领克03（汽车之家）",
+          "url": "https://k.autohome.com.cn/a1/"
+        }
+      ],
       "found": true,
       "cons_note": null
     },
@@ -25477,21 +26692,33 @@
     "evaluation": "配置分来自公开参配（series_year_tier）；参配为同年款近似档；油耗表现偏弱。",
     "series": "奕炫GS",
     "owner_reviews": {
-      "summary": "短名单外未逐车检索口碑",
-      "pros": [],
+      "summary": "轿跑SUV造型年轻，动力尚可。槽点：口碑样本少于主流、双离合顿挫、隔音一般、配件网络弱于主流品牌。",
+      "pros": [
+        "造型年轻",
+        "动力日常够用"
+      ],
       "cons": [
-        "新车系口碑少",
+        "口碑样本少",
         "双离合顿挫",
         "隔音一般",
         "配件网络弱于主流"
       ],
       "drawbacks": [
-        "新车系口碑少",
+        "口碑样本少",
         "双离合顿挫",
         "隔音一般",
         "配件网络弱于主流"
       ],
-      "sources": [],
+      "sources": [
+        {
+          "title": "奕炫GS口碑检索（汽车之家）",
+          "url": "https://sou.autohome.com.cn/zonghe?q=%E5%A5%95%E7%82%ABGS+%E5%8F%A3%E7%A2%91"
+        },
+        {
+          "title": "奕炫家族论坛",
+          "url": "https://club.autohome.com.cn/bbs/forum-c-5779-1.html"
+        }
+      ],
       "found": true,
       "cons_note": null
     },
@@ -25704,21 +26931,34 @@
     "evaluation": "配置分来自公开参配（series_year_tier）；参配为同年款近似档。",
     "series": "速腾",
     "owner_reviews": {
-      "summary": "短名单外未逐车检索口碑",
-      "pros": [],
+      "summary": "德系家轿标杆之一，扎实耐开印象强。槽点：低功率动力一般、配置少于自主、后排中等；干式双离合需关注保养与顿挫史。",
+      "pros": [
+        "驾驶扎实",
+        "保值与口碑稳定",
+        "家用成熟"
+      ],
       "cons": [
-        "动力一般（230TSI）",
+        "动力一般（低功率版）",
         "配置少于自主",
         "后排中等",
-        "DQ200关注保养"
+        "DQ200需关注保养"
       ],
       "drawbacks": [
-        "动力一般（230TSI）",
+        "动力一般（低功率版）",
         "配置少于自主",
         "后排中等",
-        "DQ200关注保养"
+        "DQ200需关注保养"
       ],
-      "sources": [],
+      "sources": [
+        {
+          "title": "速腾汽车之家口碑检索",
+          "url": "https://sou.autohome.com.cn/zonghe?q=%E9%80%9F%E8%85%BE+%E5%8F%A3%E7%A2%91"
+        },
+        {
+          "title": "车质网速腾检索",
+          "url": "https://www.12365auto.com/search?keyword=%E9%80%9F%E8%85%BE"
+        }
+      ],
       "found": true,
       "cons_note": null
     },
@@ -25931,8 +27171,11 @@
     "evaluation": "真实配置亮点：定速巡航；参配为同年款近似档；价格 4.29 万接近预算上限。",
     "series": "朗逸",
     "owner_reviews": {
-      "summary": "短名单外未逐车检索口碑",
-      "pros": [],
+      "summary": "家轿销量王之一，好开耐用。槽点：动力平淡、配置少于自主、隔音中等、驾驶无感。",
+      "pros": [
+        "耐用好开",
+        "保值养车成熟"
+      ],
       "cons": [
         "动力平淡",
         "配置少于自主",
@@ -25945,7 +27188,16 @@
         "隔音中等",
         "驾驶无感"
       ],
-      "sources": [],
+      "sources": [
+        {
+          "title": "朗逸口碑检索（汽车之家）",
+          "url": "https://sou.autohome.com.cn/zonghe?q=%E6%9C%97%E9%80%B8+%E5%8F%A3%E7%A2%91"
+        },
+        {
+          "title": "紧凑型车口碑榜含朗逸（汽车之家）",
+          "url": "https://k.autohome.com.cn/a1/"
+        }
+      ],
       "found": true,
       "cons_note": null
     },
@@ -26160,8 +27412,11 @@
     "evaluation": "配置分来自公开参配（series_year_tier）；参配为同年款近似档；油耗表现偏弱；价格 4.99 万接近预算上限。",
     "series": "逍客",
     "owner_reviews": {
-      "summary": "短名单外未逐车检索口碑",
-      "pros": [],
+      "summary": "日产紧凑SUV省油好开。槽点：第三空间一般、内饰老化、动力平淡、CVT加速声大。",
+      "pros": [
+        "油耗友好",
+        "好开耐用"
+      ],
       "cons": [
         "第三空间一般",
         "内饰老化",
@@ -26174,7 +27429,16 @@
         "动力平淡",
         "CVT加速声大"
       ],
-      "sources": [],
+      "sources": [
+        {
+          "title": "逍客口碑检索（汽车之家）",
+          "url": "https://sou.autohome.com.cn/zonghe?q=%E9%80%8D%E5%AE%A2+%E5%8F%A3%E7%A2%91"
+        },
+        {
+          "title": "车质网逍客检索",
+          "url": "https://www.12365auto.com/search?keyword=%E9%80%8D%E5%AE%A2"
+        }
+      ],
       "found": true,
       "cons_note": null
     },
@@ -26388,8 +27652,11 @@
     "evaluation": "配置分来自公开参配（series_year_tier）；参配为同年款近似档；油耗表现偏弱；价格 5.29 万接近预算上限。",
     "series": "奔驰GLA",
     "owner_reviews": {
-      "summary": "短名单外未逐车检索口碑",
-      "pros": [],
+      "summary": "豪华品牌入门SUV，质感与品牌是溢价来源。槽点：后排小、保养贵、1.6T动力一般、电子小毛病。",
+      "pros": [
+        "品牌与质感",
+        "城市精致SUV"
+      ],
       "cons": [
         "后排小",
         "保养贵",
@@ -26402,7 +27669,16 @@
         "1.6T动力一般",
         "电子小毛病"
       ],
-      "sources": [],
+      "sources": [
+        {
+          "title": "GLA口碑检索（汽车之家）",
+          "url": "https://sou.autohome.com.cn/zonghe?q=%E5%A5%94%E9%A9%B0GLA+%E5%8F%A3%E7%A2%91"
+        },
+        {
+          "title": "车质网GLA检索",
+          "url": "https://www.12365auto.com/search?keyword=GLA"
+        }
+      ],
       "found": true,
       "cons_note": null
     },
@@ -26617,13 +27893,35 @@
     "evaluation": "配置分来自公开参配（series_year_tier）；参配为同年款近似档；价格 4.29 万接近预算上限。",
     "series": "奕炫",
     "owner_reviews": {
-      "summary": "短名单外未逐车检索口碑",
-      "pros": [],
-      "cons": [],
-      "drawbacks": [],
-      "sources": [],
+      "summary": "东风风神运动家轿，动力与油耗有认可，但悬架偏硬、后排与地台、胎噪隔音是常见槽点；品牌配件网络弱于主流。",
+      "pros": [
+        "动力油耗尚可",
+        "运动造型"
+      ],
+      "cons": [
+        "悬架偏硬",
+        "后排空间/地台一般",
+        "胎噪隔音差",
+        "配件网络弱于主流"
+      ],
+      "drawbacks": [
+        "悬架偏硬",
+        "后排空间/地台一般",
+        "胎噪隔音差",
+        "配件网络弱于主流"
+      ],
+      "sources": [
+        {
+          "title": "奕炫口碑（汽车之家机型页）",
+          "url": "https://k.m.autohome.com.cn/spec/41157/?g=&summarykey=788113"
+        },
+        {
+          "title": "奕炫口碑检索",
+          "url": "https://sou.autohome.com.cn/zonghe?q=%E5%A5%95%E7%82%AB+%E5%8F%A3%E7%A2%91"
+        }
+      ],
       "found": true,
-      "cons_note": "暂无汇总缺点（公开口碑未覆盖或样本不足）"
+      "cons_note": null
     },
     "rank": 116,
     "specs": {
@@ -26838,8 +28136,11 @@
     "evaluation": "配置分来自公开参配（series_year_tier）；参配为同年款近似档；价格 5.99 万接近预算上限。",
     "series": "奕泽IZOA",
     "owner_reviews": {
-      "summary": "短名单外未逐车检索口碑",
-      "pros": [],
+      "summary": "丰田小型SUV可靠。槽点：后排小、动力平淡、配置少，价格偏高时不值。",
+      "pros": [
+        "可靠保值",
+        "城市灵活"
+      ],
       "cons": [
         "后排小",
         "动力平淡",
@@ -26852,7 +28153,16 @@
         "配置少",
         "价格偏高时不值"
       ],
-      "sources": [],
+      "sources": [
+        {
+          "title": "奕泽口碑检索（汽车之家）",
+          "url": "https://sou.autohome.com.cn/zonghe?q=%E5%A5%95%E6%B3%BD+%E5%8F%A3%E7%A2%91"
+        },
+        {
+          "title": "奕泽论坛",
+          "url": "https://club.autohome.com.cn/bbs/forum-c-5283-1.html"
+        }
+      ],
       "found": true,
       "cons_note": null
     },
@@ -27312,8 +28622,11 @@
     "evaluation": "配置分来自公开参配（series_year_tier）；参配为同年款近似档；价格 4.79 万接近预算上限。",
     "series": "宝来",
     "owner_reviews": {
-      "summary": "短名单外未逐车检索口碑",
-      "pros": [],
+      "summary": "德系家轿耐开印象，销量常客。槽点：动力一般、隔音一般、配置少于自主、后排中等。",
+      "pros": [
+        "耐开扎实",
+        "家用成熟"
+      ],
       "cons": [
         "动力一般",
         "隔音一般",
@@ -27326,7 +28639,16 @@
         "配置少于自主",
         "后排中等"
       ],
-      "sources": [],
+      "sources": [
+        {
+          "title": "宝来口碑检索（汽车之家）",
+          "url": "https://sou.autohome.com.cn/zonghe?q=%E5%AE%9D%E6%9D%A5+%E5%8F%A3%E7%A2%91"
+        },
+        {
+          "title": "紧凑型车口碑榜含宝来（汽车之家）",
+          "url": "https://k.autohome.com.cn/a1/"
+        }
+      ],
       "found": true,
       "cons_note": null
     },
@@ -27543,8 +28865,11 @@
     "evaluation": "配置分来自公开参配（series_year_tier）；参配为同年款近似档；价格 4.69 万接近预算上限。",
     "series": "MG5",
     "owner_reviews": {
-      "summary": "短名单外未逐车检索口碑",
-      "pros": [],
+      "summary": "运动家轿外观吸睛，年轻向。槽点：隔音一般、底盘偏硬、双离合顿挫个案、内饰异响。",
+      "pros": [
+        "外观运动",
+        "年轻向驾趣"
+      ],
       "cons": [
         "隔音一般",
         "底盘偏硬",
@@ -27557,7 +28882,16 @@
         "双离合顿挫个案",
         "内饰异响"
       ],
-      "sources": [],
+      "sources": [
+        {
+          "title": "MG5口碑检索（汽车之家）",
+          "url": "https://sou.autohome.com.cn/zonghe?q=MG5+%E5%8F%A3%E7%A2%91"
+        },
+        {
+          "title": "紧凑型车口碑榜含MG5（汽车之家）",
+          "url": "https://k.autohome.com.cn/a1/"
+        }
+      ],
       "found": true,
       "cons_note": null
     },
@@ -27771,8 +29105,12 @@
     "evaluation": "配置分来自公开参配（series_year_tier）；参配为同年款近似档；价格 5.1 万接近预算上限。",
     "series": "卡罗拉",
     "owner_reviews": {
-      "summary": "短名单外未逐车检索口碑",
-      "pros": [],
+      "summary": "丰田家轿省心保值标杆。槽点：1.2T动力平淡、配置少于自主、后排一般、轮胎偏磨。",
+      "pros": [
+        "可靠保值",
+        "油耗友好",
+        "养车省心"
+      ],
       "cons": [
         "动力平淡（1.2T）",
         "配置少于自主",
@@ -27785,7 +29123,16 @@
         "后排一般",
         "轮胎偏磨"
       ],
-      "sources": [],
+      "sources": [
+        {
+          "title": "卡罗拉口碑检索（汽车之家）",
+          "url": "https://sou.autohome.com.cn/zonghe?q=%E5%8D%A1%E7%BD%97%E6%8B%89+%E5%8F%A3%E7%A2%91"
+        },
+        {
+          "title": "紧凑型车口碑榜含卡罗拉（汽车之家）",
+          "url": "https://k.autohome.com.cn/a1/"
+        }
+      ],
       "found": true,
       "cons_note": null
     },
@@ -27999,8 +29346,11 @@
     "evaluation": "配置分来自公开参配（series_year_tier）；参配为同年款近似档；价格 5.19 万接近预算上限。",
     "series": "奕泽IZOA",
     "owner_reviews": {
-      "summary": "短名单外未逐车检索口碑",
-      "pros": [],
+      "summary": "丰田小型SUV可靠。槽点：后排小、动力平淡、配置少，价格偏高时不值。",
+      "pros": [
+        "可靠保值",
+        "城市灵活"
+      ],
       "cons": [
         "后排小",
         "动力平淡",
@@ -28013,7 +29363,16 @@
         "配置少",
         "价格偏高时不值"
       ],
-      "sources": [],
+      "sources": [
+        {
+          "title": "奕泽口碑检索（汽车之家）",
+          "url": "https://sou.autohome.com.cn/zonghe?q=%E5%A5%95%E6%B3%BD+%E5%8F%A3%E7%A2%91"
+        },
+        {
+          "title": "奕泽论坛",
+          "url": "https://club.autohome.com.cn/bbs/forum-c-5283-1.html"
+        }
+      ],
       "found": true,
       "cons_note": null
     },
@@ -28226,21 +29585,33 @@
     "evaluation": "配置分来自公开参配（series_year_tier）；参配为同年款近似档；空间维度占优；油耗表现偏弱。价格 4.49 万接近预算上限。",
     "series": "天籁",
     "owner_reviews": {
-      "summary": "短名单外未逐车检索口碑",
-      "pros": [],
+      "summary": "舒适座椅与静音曾是卖点。老款槽点：动力平淡（2.0）、配置偏老、内饰老化、驾驶无感。",
+      "pros": [
+        "座椅舒适",
+        "行驶平顺"
+      ],
       "cons": [
         "动力平淡（2.0）",
-        "配置老",
+        "配置偏老",
         "内饰老化",
         "驾驶无感"
       ],
       "drawbacks": [
         "动力平淡（2.0）",
-        "配置老",
+        "配置偏老",
         "内饰老化",
         "驾驶无感"
       ],
-      "sources": [],
+      "sources": [
+        {
+          "title": "天籁口碑检索（汽车之家）",
+          "url": "https://sou.autohome.com.cn/zonghe?q=%E5%A4%A9%E7%B1%B3+%E5%8F%A3%E7%A2%91"
+        },
+        {
+          "title": "天籁论坛",
+          "url": "https://club.autohome.com.cn/bbs/forum-c-110-1.html"
+        }
+      ],
       "found": true,
       "cons_note": null
     },
@@ -28453,8 +29824,11 @@
     "evaluation": "配置分来自公开参配（series_year_tier）；参配为同年款近似档。",
     "series": "英朗",
     "owner_reviews": {
-      "summary": "短名单外未逐车检索口碑",
-      "pros": [],
+      "summary": "别克家轿销量常客，好开省心印象。自然吸气版动力肉、隔音一般、内饰老化、配置简单是二手常见槽点。",
+      "pros": [
+        "好开耐用印象",
+        "养车体系成熟"
+      ],
       "cons": [
         "动力肉（自然吸气）",
         "隔音一般",
@@ -28467,7 +29841,16 @@
         "内饰老化",
         "配置简单"
       ],
-      "sources": [],
+      "sources": [
+        {
+          "title": "英朗汽车之家口碑",
+          "url": "https://k.autohome.com.cn/982"
+        },
+        {
+          "title": "英朗口碑检索",
+          "url": "https://sou.autohome.com.cn/zonghe?q=%E8%8B%B1%E6%9C%97+%E7%BC%BA%E7%82%B9"
+        }
+      ],
       "found": true,
       "cons_note": null
     },
@@ -28680,8 +30063,11 @@
     "evaluation": "配置分来自公开参配（series_year_tier）；参配为同年款近似档；价格 5.49 万接近预算上限。",
     "series": "探歌",
     "owner_reviews": {
-      "summary": "短名单外未逐车检索口碑",
-      "pros": [],
+      "summary": "小型德系SUV好开、城市灵活。槽点：后排空间小、配置中庸、隔音一般、动力需高转。",
+      "pros": [
+        "好开灵活",
+        "德系驾驶感"
+      ],
       "cons": [
         "后排空间小",
         "配置中庸",
@@ -28694,7 +30080,16 @@
         "隔音一般",
         "动力需高转"
       ],
-      "sources": [],
+      "sources": [
+        {
+          "title": "探歌口碑检索（汽车之家）",
+          "url": "https://sou.autohome.com.cn/zonghe?q=%E6%8E%A2%E6%AD%8C+%E5%8F%A3%E7%A2%91"
+        },
+        {
+          "title": "车质网探歌检索",
+          "url": "https://www.12365auto.com/search?keyword=%E6%8E%A2%E6%AD%8C"
+        }
+      ],
       "found": true,
       "cons_note": null
     },
@@ -28907,8 +30302,11 @@
     "evaluation": "配置分来自公开参配（series_year_tier）；参配为同年款近似档；价格 5.39 万接近预算上限。",
     "series": "标致408",
     "owner_reviews": {
-      "summary": "短名单外未逐车检索口碑",
-      "pros": [],
+      "summary": "法系三厢设计独特，驾趣有反馈。槽点：保养贵、电子故障刻板印象、动力需高转、保值一般。",
+      "pros": [
+        "设计独特",
+        "驾趣有特色"
+      ],
       "cons": [
         "保养贵",
         "电子故障刻板印象",
@@ -28921,7 +30319,16 @@
         "动力需高转",
         "保值一般"
       ],
-      "sources": [],
+      "sources": [
+        {
+          "title": "标致408汽车之家口碑检索",
+          "url": "https://sou.autohome.com.cn/zonghe?q=%E6%A0%87%E8%87%B4408+%E5%8F%A3%E7%A2%91"
+        },
+        {
+          "title": "紧凑型车口碑榜含408（汽车之家）",
+          "url": "https://k.autohome.com.cn/a1/"
+        }
+      ],
       "found": true,
       "cons_note": null
     },
@@ -29380,13 +30787,35 @@
     "evaluation": "配置分来自公开参配（series_year_tier）；参配为同年款近似档；油耗表现偏弱；价格 4.29 万接近预算上限。",
     "series": "名图",
     "owner_reviews": {
-      "summary": "短名单外未逐车检索口碑",
-      "pros": [],
-      "cons": [],
-      "drawbacks": [],
-      "sources": [],
+      "summary": "现代中级车舒适空间取向。老款槽点：半轴渗油/异响/烧机油及双离合起步转速高等论坛反馈需细查车况。",
+      "pros": [
+        "空间舒适",
+        "家用中级车气场"
+      ],
+      "cons": [
+        "老款渗油/异响反馈",
+        "烧机油个案需查",
+        "双离合起步品质",
+        "内饰老化"
+      ],
+      "drawbacks": [
+        "老款渗油/异响反馈",
+        "烧机油个案需查",
+        "双离合起步品质",
+        "内饰老化"
+      ],
+      "sources": [
+        {
+          "title": "名图论坛（汽车之家）",
+          "url": "https://club.m.autohome.com.cn/bbs/forum-c-3073-1.html"
+        },
+        {
+          "title": "名图口碑检索",
+          "url": "https://sou.autohome.com.cn/zonghe?q=%E5%90%8D%E5%9B%BE+%E5%8F%A3%E7%A2%91"
+        }
+      ],
       "found": true,
-      "cons_note": "暂无汇总缺点（公开口碑未覆盖或样本不足）"
+      "cons_note": null
     },
     "rank": 128,
     "specs": {
@@ -29598,8 +31027,12 @@
     "evaluation": "配置分来自公开参配（series_year_tier）；参配为同年款近似档。",
     "series": "卡罗拉",
     "owner_reviews": {
-      "summary": "短名单外未逐车检索口碑",
-      "pros": [],
+      "summary": "丰田家轿省心保值标杆。槽点：1.2T动力平淡、配置少于自主、后排一般、轮胎偏磨。",
+      "pros": [
+        "可靠保值",
+        "油耗友好",
+        "养车省心"
+      ],
       "cons": [
         "动力平淡（1.2T）",
         "配置少于自主",
@@ -29612,7 +31045,16 @@
         "后排一般",
         "轮胎偏磨"
       ],
-      "sources": [],
+      "sources": [
+        {
+          "title": "卡罗拉口碑检索（汽车之家）",
+          "url": "https://sou.autohome.com.cn/zonghe?q=%E5%8D%A1%E7%BD%97%E6%8B%89+%E5%8F%A3%E7%A2%91"
+        },
+        {
+          "title": "紧凑型车口碑榜含卡罗拉（汽车之家）",
+          "url": "https://k.autohome.com.cn/a1/"
+        }
+      ],
       "found": true,
       "cons_note": null
     },
@@ -29826,8 +31268,11 @@
     "evaluation": "配置分来自公开参配（series_year_tier）；参配为同年款近似档；价格 5.49 万接近预算上限。",
     "series": "宝来",
     "owner_reviews": {
-      "summary": "短名单外未逐车检索口碑",
-      "pros": [],
+      "summary": "德系家轿耐开印象，销量常客。槽点：动力一般、隔音一般、配置少于自主、后排中等。",
+      "pros": [
+        "耐开扎实",
+        "家用成熟"
+      ],
       "cons": [
         "动力一般",
         "隔音一般",
@@ -29840,7 +31285,16 @@
         "配置少于自主",
         "后排中等"
       ],
-      "sources": [],
+      "sources": [
+        {
+          "title": "宝来口碑检索（汽车之家）",
+          "url": "https://sou.autohome.com.cn/zonghe?q=%E5%AE%9D%E6%9D%A5+%E5%8F%A3%E7%A2%91"
+        },
+        {
+          "title": "紧凑型车口碑榜含宝来（汽车之家）",
+          "url": "https://k.autohome.com.cn/a1/"
+        }
+      ],
       "found": true,
       "cons_note": null
     },
@@ -30054,21 +31508,34 @@
     "evaluation": "配置分来自公开参配（series_year_tier）；参配为同年款近似档；价格 4.69 万接近预算上限。",
     "series": "思域",
     "owner_reviews": {
-      "summary": "短名单外未逐车检索口碑",
-      "pros": [],
+      "summary": "操控与动力是灵魂，年轻向口碑强。槽点：后排头部空间、胎噪、早期机油增多问题需查、避震偏硬。",
+      "pros": [
+        "操控好玩",
+        "动力充沛",
+        "年轻向氛围"
+      ],
       "cons": [
         "后排头部空间",
         "胎噪",
-        "早期机油增多",
+        "早期机油增多需查",
         "避震偏硬"
       ],
       "drawbacks": [
         "后排头部空间",
         "胎噪",
-        "早期机油增多",
+        "早期机油增多需查",
         "避震偏硬"
       ],
-      "sources": [],
+      "sources": [
+        {
+          "title": "思域口碑检索（汽车之家）",
+          "url": "https://sou.autohome.com.cn/zonghe?q=%E6%80%9D%E5%9F%9F+%E5%8F%A3%E7%A2%91"
+        },
+        {
+          "title": "车质网思域检索",
+          "url": "https://www.12365auto.com/search?keyword=%E6%80%9D%E5%9F%9F"
+        }
+      ],
       "found": true,
       "cons_note": null
     },
@@ -30282,8 +31749,11 @@
     "evaluation": "配置分来自公开参配（series_year_tier）；参配为同年款近似档；价格 4.89 万接近预算上限。",
     "series": "领克03",
     "owner_reviews": {
-      "summary": "短名单外未逐车检索口碑",
-      "pros": [],
+      "summary": "运动家轿操控与质感好评。槽点：后排头部空间、双离合顿挫、胎噪、保养贵。",
+      "pros": [
+        "操控运动",
+        "质感配置好"
+      ],
       "cons": [
         "后排头部空间",
         "双离合/换挡顿挫",
@@ -30296,7 +31766,16 @@
         "胎噪",
         "保养贵"
       ],
-      "sources": [],
+      "sources": [
+        {
+          "title": "领克03口碑检索（汽车之家）",
+          "url": "https://sou.autohome.com.cn/zonghe?q=%E9%A2%86%E5%85%8B03+%E5%8F%A3%E7%A2%91"
+        },
+        {
+          "title": "紧凑型车口碑榜含领克03（汽车之家）",
+          "url": "https://k.autohome.com.cn/a1/"
+        }
+      ],
       "found": true,
       "cons_note": null
     },
@@ -30509,8 +31988,12 @@
     "evaluation": "真实配置亮点：定速巡航；参配为同年款近似档；空间偏家用轿车/小型级。",
     "series": "飞度",
     "owner_reviews": {
-      "summary": "短名单外未逐车检索口碑",
-      "pros": [],
+      "summary": "两厢灵活、魔幻空间实用。槽点：后排窄、隔音差、高速空仓、配置简单。",
+      "pros": [
+        "魔幻空间实用",
+        "灵活好开",
+        "油耗友好"
+      ],
       "cons": [
         "后排窄",
         "隔音差",
@@ -30523,7 +32006,16 @@
         "高速空仓",
         "配置简单"
       ],
-      "sources": [],
+      "sources": [
+        {
+          "title": "飞度口碑检索（汽车之家）",
+          "url": "https://sou.autohome.com.cn/zonghe?q=%E9%A3%9E%E5%BA%A6+%E5%8F%A3%E7%A2%91"
+        },
+        {
+          "title": "车质网飞度检索",
+          "url": "https://www.12365auto.com/search?keyword=%E9%A3%9E%E5%BA%A6"
+        }
+      ],
       "found": true,
       "cons_note": null
     },
@@ -30737,8 +32229,11 @@
     "evaluation": "配置分来自公开参配（series_year_tier）；参配为同年款近似档；价格 5.49 万接近预算上限。",
     "series": "高尔夫·嘉旅",
     "owner_reviews": {
-      "summary": "短名单外未逐车检索口碑",
-      "pros": [],
+      "summary": "旅行车实用尾厢是亮点，但存在感低。槽点：配置一般、动力需高转、尾厢盖重。",
+      "pros": [
+        "尾厢实用",
+        "驾驶灵活"
+      ],
       "cons": [
         "存在感低",
         "配置一般",
@@ -30751,7 +32246,16 @@
         "动力需高转",
         "旅行车尾厢盖重"
       ],
-      "sources": [],
+      "sources": [
+        {
+          "title": "高尔夫嘉旅口碑检索（汽车之家）",
+          "url": "https://sou.autohome.com.cn/zonghe?q=%E5%98%89%E6%97%85+%E5%8F%A3%E7%A2%91"
+        },
+        {
+          "title": "嘉旅论坛",
+          "url": "https://club.autohome.com.cn/bbs/forum-c-4283-1.html"
+        }
+      ],
       "found": true,
       "cons_note": null
     },
@@ -31206,8 +32710,11 @@
     "evaluation": "配置分来自公开参配（series_year_tier）；参配为同年款近似档。",
     "series": "马自达3 昂克赛拉",
     "owner_reviews": {
-      "summary": "短名单外未逐车检索口碑",
-      "pros": [],
+      "summary": "人马一体操控是灵魂。槽点：后排小、配置少、底盘偏硬、动力需高转。",
+      "pros": [
+        "操控出色",
+        "驾驶乐趣"
+      ],
       "cons": [
         "后排小",
         "配置少",
@@ -31220,7 +32727,16 @@
         "底盘偏硬",
         "动力需高转"
       ],
-      "sources": [],
+      "sources": [
+        {
+          "title": "昂克赛拉口碑检索（汽车之家）",
+          "url": "https://sou.autohome.com.cn/zonghe?q=%E6%98%82%E5%85%8B%E8%B5%9B%E6%8B%89+%E5%8F%A3%E7%A2%91"
+        },
+        {
+          "title": "紧凑型车口碑榜含昂克赛拉（汽车之家）",
+          "url": "https://k.autohome.com.cn/a1/"
+        }
+      ],
       "found": true,
       "cons_note": null
     },
@@ -31433,8 +32949,11 @@
     "evaluation": "配置分来自公开参配（series_year_tier）；参配为同年款近似档；空间偏家用轿车/小型级；价格 4.43 万接近预算上限。",
     "series": "捷达VA3",
     "owner_reviews": {
-      "summary": "短名单外未逐车检索口碑",
-      "pros": [],
+      "summary": "入门合资代步，皮实便宜。槽点：配置极简、动力肉、隔音差、塑料感强。",
+      "pros": [
+        "皮实便宜",
+        "养车简单"
+      ],
       "cons": [
         "配置极简",
         "动力肉",
@@ -31447,7 +32966,16 @@
         "隔音差",
         "塑料感强"
       ],
-      "sources": [],
+      "sources": [
+        {
+          "title": "捷达VA3口碑检索（汽车之家）",
+          "url": "https://sou.autohome.com.cn/zonghe?q=%E6%8D%B7%E8%BE%BEVA3+%E5%8F%A3%E7%A2%91"
+        },
+        {
+          "title": "车质网VA3检索",
+          "url": "https://www.12365auto.com/search?keyword=VA3"
+        }
+      ],
       "found": true,
       "cons_note": null
     },
@@ -31660,8 +33188,11 @@
     "evaluation": "配置分来自公开参配（series_year_tier）；参配为同年款近似档；价格 4.39 万接近预算上限。",
     "series": "马自达3 昂克赛拉",
     "owner_reviews": {
-      "summary": "短名单外未逐车检索口碑",
-      "pros": [],
+      "summary": "人马一体操控是灵魂。槽点：后排小、配置少、底盘偏硬、动力需高转。",
+      "pros": [
+        "操控出色",
+        "驾驶乐趣"
+      ],
       "cons": [
         "后排小",
         "配置少",
@@ -31674,7 +33205,16 @@
         "底盘偏硬",
         "动力需高转"
       ],
-      "sources": [],
+      "sources": [
+        {
+          "title": "昂克赛拉口碑检索（汽车之家）",
+          "url": "https://sou.autohome.com.cn/zonghe?q=%E6%98%82%E5%85%8B%E8%B5%9B%E6%8B%89+%E5%8F%A3%E7%A2%91"
+        },
+        {
+          "title": "紧凑型车口碑榜含昂克赛拉（汽车之家）",
+          "url": "https://k.autohome.com.cn/a1/"
+        }
+      ],
       "found": true,
       "cons_note": null
     },
@@ -31887,8 +33427,11 @@
     "evaluation": "配置分来自公开参配（series_year_tier）；参配为同年款近似档；空间偏家用轿车/小型级。",
     "series": "威驰FS",
     "owner_reviews": {
-      "summary": "短名单外未逐车检索口碑",
-      "pros": [],
+      "summary": "丰田小型车可靠省油。槽点：动力肉、配置极简、隔音差，手动挡市区较累。",
+      "pros": [
+        "可靠省油印象",
+        "好停车"
+      ],
       "cons": [
         "动力肉",
         "配置极简",
@@ -31901,7 +33444,16 @@
         "隔音差",
         "手动挡市区累"
       ],
-      "sources": [],
+      "sources": [
+        {
+          "title": "威驰FS口碑检索（汽车之家）",
+          "url": "https://sou.autohome.com.cn/zonghe?q=%E5%A8%81%E9%A9%B0FS+%E5%8F%A3%E7%A2%91"
+        },
+        {
+          "title": "威驰论坛",
+          "url": "https://club.autohome.com.cn/bbs/forum-c-2319-1.html"
+        }
+      ],
       "found": true,
       "cons_note": null
     },
@@ -32114,21 +33666,33 @@
     "evaluation": "真实配置亮点：定速巡航；参配为同年款近似档；空间偏家用轿车/小型级；价格 5.29 万接近预算上限。",
     "series": "奥迪A3",
     "owner_reviews": {
-      "summary": "短名单外未逐车检索口碑",
-      "pros": [],
+      "summary": "豪华品牌入门，质感与保值相对自主有优势。槽点：后排小、保养贵、时尚型配置偏少、电子小毛病。",
+      "pros": [
+        "品牌质感",
+        "驾驶精致"
+      ],
       "cons": [
         "后排小",
         "保养贵",
-        "配置时尚型偏少",
+        "时尚型配置偏少",
         "电子小毛病"
       ],
       "drawbacks": [
         "后排小",
         "保养贵",
-        "配置时尚型偏少",
+        "时尚型配置偏少",
         "电子小毛病"
       ],
-      "sources": [],
+      "sources": [
+        {
+          "title": "奥迪A3口碑检索（汽车之家）",
+          "url": "https://sou.autohome.com.cn/zonghe?q=%E5%A5%A5%E8%BF%AAA3+%E5%8F%A3%E7%A2%91"
+        },
+        {
+          "title": "紧凑型车口碑榜含A3（汽车之家）",
+          "url": "https://k.autohome.com.cn/a1/"
+        }
+      ],
       "found": true,
       "cons_note": null
     },
@@ -32344,8 +33908,11 @@
     "evaluation": "配置分来自公开参配（series_year_tier）；参配为同年款近似档；价格 4.29 万接近预算上限。",
     "series": "骐达TIIDA",
     "owner_reviews": {
-      "summary": "短名单外未逐车检索口碑",
-      "pros": [],
+      "summary": "两厢空间灵活、日产家用取向。老款槽点：动力肉、配置老、内饰老化、CVT声浪。",
+      "pros": [
+        "两厢灵活",
+        "家用空间尚可"
+      ],
       "cons": [
         "动力肉",
         "配置老",
@@ -32358,7 +33925,16 @@
         "内饰老化",
         "CVT声浪"
       ],
-      "sources": [],
+      "sources": [
+        {
+          "title": "骐达口碑检索（汽车之家）",
+          "url": "https://sou.autohome.com.cn/zonghe?q=%E9%AA%90%E8%BE%BE+%E5%8F%A3%E7%A2%91"
+        },
+        {
+          "title": "骐达论坛",
+          "url": "https://club.autohome.com.cn/bbs/forum-c-634-1.html"
+        }
+      ],
       "found": true,
       "cons_note": null
     },
@@ -32571,8 +34147,11 @@
     "evaluation": "配置分来自公开参配（series_year_tier）；参配为同年款近似档；空间偏家用轿车/小型级；价格 4.39 万接近预算上限。",
     "series": "C-TREK蔚领",
     "owner_reviews": {
-      "summary": "短名单外未逐车检索口碑",
-      "pros": [],
+      "summary": "大众旅行车小众选择，尾厢实用。槽点：存在感低、配置一般、动力平淡、旅行车后排一般。",
+      "pros": [
+        "尾厢实用",
+        "大众驾驶习惯"
+      ],
       "cons": [
         "存在感低",
         "配置一般",
@@ -32585,7 +34164,16 @@
         "动力平淡",
         "旅行车后排一般"
       ],
-      "sources": [],
+      "sources": [
+        {
+          "title": "蔚领口碑检索（汽车之家）",
+          "url": "https://sou.autohome.com.cn/zonghe?q=%E8%94%9A%E9%A2%86+%E5%8F%A3%E7%A2%91"
+        },
+        {
+          "title": "蔚领论坛",
+          "url": "https://club.autohome.com.cn/bbs/forum-c-4658-1.html"
+        }
+      ],
       "found": true,
       "cons_note": null
     },
@@ -32799,21 +34387,33 @@
     "evaluation": "配置分来自公开参配（series_year_tier）；参配为同年款近似档；空间偏家用轿车/小型级。",
     "series": "奥迪A3",
     "owner_reviews": {
-      "summary": "短名单外未逐车检索口碑",
-      "pros": [],
+      "summary": "豪华品牌入门，质感与保值相对自主有优势。槽点：后排小、保养贵、时尚型配置偏少、电子小毛病。",
+      "pros": [
+        "品牌质感",
+        "驾驶精致"
+      ],
       "cons": [
         "后排小",
         "保养贵",
-        "配置时尚型偏少",
+        "时尚型配置偏少",
         "电子小毛病"
       ],
       "drawbacks": [
         "后排小",
         "保养贵",
-        "配置时尚型偏少",
+        "时尚型配置偏少",
         "电子小毛病"
       ],
-      "sources": [],
+      "sources": [
+        {
+          "title": "奥迪A3口碑检索（汽车之家）",
+          "url": "https://sou.autohome.com.cn/zonghe?q=%E5%A5%A5%E8%BF%AAA3+%E5%8F%A3%E7%A2%91"
+        },
+        {
+          "title": "紧凑型车口碑榜含A3（汽车之家）",
+          "url": "https://k.autohome.com.cn/a1/"
+        }
+      ],
       "found": true,
       "cons_note": null
     },
@@ -33027,8 +34627,11 @@
     "evaluation": "配置分来自公开参配（series_year_tier）；参配为同年款近似档；空间偏家用轿车/小型级。",
     "series": "Polo",
     "owner_reviews": {
-      "summary": "短名单外未逐车检索口碑",
-      "pros": [],
+      "summary": "小型车灵活好开、德系质感。槽点：空间小、后排局促、配置简单，高价入手时性价比一般。",
+      "pros": [
+        "灵活好开",
+        "德系小车质感"
+      ],
       "cons": [
         "空间小",
         "后排局促",
@@ -33041,7 +34644,16 @@
         "配置简单",
         "价格偏高时性价比一般"
       ],
-      "sources": [],
+      "sources": [
+        {
+          "title": "Polo口碑检索（汽车之家）",
+          "url": "https://sou.autohome.com.cn/zonghe?q=Polo+%E5%8F%A3%E7%A2%91"
+        },
+        {
+          "title": "车质网Polo检索",
+          "url": "https://www.12365auto.com/search?keyword=Polo"
+        }
+      ],
       "found": true,
       "cons_note": null
     },
@@ -33255,8 +34867,12 @@
     "evaluation": "配置分来自公开参配（series_year_tier）；参配为同年款近似档；空间偏家用轿车/小型级；价格 4.69 万接近预算上限。",
     "series": "飞度",
     "owner_reviews": {
-      "summary": "短名单外未逐车检索口碑",
-      "pros": [],
+      "summary": "两厢灵活、魔幻空间实用。槽点：后排窄、隔音差、高速空仓、配置简单。",
+      "pros": [
+        "魔幻空间实用",
+        "灵活好开",
+        "油耗友好"
+      ],
       "cons": [
         "后排窄",
         "隔音差",
@@ -33269,7 +34885,16 @@
         "高速空仓",
         "配置简单"
       ],
-      "sources": [],
+      "sources": [
+        {
+          "title": "飞度口碑检索（汽车之家）",
+          "url": "https://sou.autohome.com.cn/zonghe?q=%E9%A3%9E%E5%BA%A6+%E5%8F%A3%E7%A2%91"
+        },
+        {
+          "title": "车质网飞度检索",
+          "url": "https://www.12365auto.com/search?keyword=%E9%A3%9E%E5%BA%A6"
+        }
+      ],
       "found": true,
       "cons_note": null
     },
@@ -33483,8 +35108,11 @@
     "evaluation": "配置分来自公开参配（series_year_tier）；参配为同年款近似档；空间偏家用轿车/小型级；价格 5.49 万接近预算上限。",
     "series": "甲壳虫",
     "owner_reviews": {
-      "summary": "短名单外未逐车检索口碑",
-      "pros": [],
+      "summary": "个性外观是唯一核心卖点。实用性短板明显：后排几乎不可用、视野一般、配件贵。",
+      "pros": [
+        "外观个性",
+        "收藏/情怀价值"
+      ],
       "cons": [
         "后排几乎不可用",
         "视野一般",
@@ -33497,7 +35125,16 @@
         "配件贵",
         "实用性差"
       ],
-      "sources": [],
+      "sources": [
+        {
+          "title": "甲壳虫口碑检索（汽车之家）",
+          "url": "https://sou.autohome.com.cn/zonghe?q=%E7%94%B2%E5%A3%B3%E8%99%AB+%E5%8F%A3%E7%A2%91"
+        },
+        {
+          "title": "甲壳虫论坛",
+          "url": "https://club.autohome.com.cn/bbs/forum-c-874-1.html"
+        }
+      ],
       "found": true,
       "cons_note": null
     },

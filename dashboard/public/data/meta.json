@@ -55,7 +55,7 @@
       "凌尚 2023款 2.0L 豪华版"
     ]
   },
-  "owner_reviews_note": "短名单按车系汇总公开口碑；结构含 summary/pros/cons(drawbacks)/sources/found；看板单独展示「缺点」专节。",
+  "owner_reviews_note": "全量按车系汇总公开口碑（汽车之家口碑/论坛、懂车帝口碑页、车质网等），禁止占位「短名单外未逐车检索」；结构含 summary/pros/cons(drawbacks)/sources/found；同系复用。",
   "owner_reviews_series_covered": [
     "C-TREK蔚领",
     "MG5",
@@ -70,6 +70,7 @@
     "博越",
     "卡罗拉",
     "吉利几何E萤火虫",
+    "名图",
     "君威",
     "君越",
     "哈弗H6",
@@ -78,6 +79,7 @@
     "天逸 C5 AIRCROSS",
     "奔驰GLA",
     "奕泽IZOA",
+    "奕炫",
     "奕炫GS",
     "奥迪A3",
     "威驰FS",
@@ -92,6 +94,8 @@
     "捷达VS7",
     "探歌",
     "探界者",
+    "昕锐",
+    "星愿",
     "星瑞",
     "朗逸",
     "柯迪亚克",
@@ -99,7 +103,6 @@
     "标致408",
     "欧拉好猫",
     "欧拉白猫",
-    "欧拉白猫/好猫",
     "欧蓝德",
     "海豹06DM",
     "海鸥",
@@ -183,5 +186,8 @@
     "suv": 0.05
   },
   "morning_check_note": "晨检入库沿用同一硬筛 + 综合分公式 config40/space25/fuel15/price15/suv5；配置分必须来自真实参配，短续航纯电不入库。",
-  "zhiying_filter": "仅直营（badges 含「直营」）"
+  "zhiying_filter": "仅直营（badges 含「直营」）",
+  "owner_reviews_found_cars": 146,
+  "owner_reviews_placeholder_cars": 0,
+  "owner_reviews_updated": "2026-11-02"
 }
