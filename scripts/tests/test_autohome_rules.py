@@ -81,7 +81,9 @@ def test_legacy_aliases_raise_real_coverage_and_energy():
     cfg = config_score(item["specs"])
     energy = resolve_ranking_energy(item["specs"])
     assert cfg["coverage"] >= 0.60, cfg
-    assert energy["value"] == 7.2, energy
+    assert energy["raw_ranking_energy"]["value"] == 7.2, energy
+    assert energy["value"] == 8.64, energy
+    assert energy["type"] == "official_nedc_with_uncertainty", energy
     assert item["specs"]["features"]["camera_360"] is True
     assert item["specs"]["features"]["front_radar"] is True
     assert item["specs"]["features"]["rear_radar"] is True
