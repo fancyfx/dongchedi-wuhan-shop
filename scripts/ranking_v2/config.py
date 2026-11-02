@@ -1,13 +1,13 @@
 """V2 score weights, anchors, energy prices, finance reserve."""
 from __future__ import annotations
 
-SCORE_VERSION = "v2.0.0"
+SCORE_VERSION = "v2.1.0"
 
 WEIGHTS = {
-    "price": 0.25,
-    "config": 0.20,
-    "operating_cost": 0.20,
-    "space": 0.15,
+    "price": 0.15,
+    "config": 0.30,
+    "operating_cost": 0.15,
+    "space": 0.20,
     "age": 0.05,
     "mileage": 0.05,
     "body_preference": 0.05,

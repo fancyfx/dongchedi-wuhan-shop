@@ -157,7 +157,7 @@ def main() -> None:
     meta["sort_method"] = "ranking_v2_fixed_anchors"
     meta["sort_weights"] = WEIGHTS
     meta["sort_formula"] = (
-        "total = 0.25*price + 0.20*config + 0.20*operating_cost + 0.15*space "
+        "total = 0.15*price + 0.30*config + 0.15*operating_cost + 0.20*space "
         "+ 0.05*age + 0.05*mileage + 0.05*body_preference + 0.05*data_quality; "
         "fixed anchors (no cohort min-max); "
         "operating_cost from energy_cost_yuan_100km; "
