@@ -1,0 +1,42 @@
+{
+  "shop_id": "118608",
+  "shop_name": "懂车帝汽车商城·武汉店",
+  "filters": {
+    "price": "<=6万",
+    "price_param": "0,6",
+    "mileage": "<=10万公里",
+    "mileage_param": "0,10",
+    "vehicle_age": "<=10年",
+    "age_param": "0,10",
+    "plate_or_model_year": ">=2016",
+    "reference_year": 2026
+  },
+  "price_filter": "<=6万",
+  "mileage_filter": "<=10万公里",
+  "age_filter": "<=10年 (上牌/款年>=2016)",
+  "ui_filter_button_count": 3335,
+  "count_api_total": 3333,
+  "list_api_shop_total_reported": 154,
+  "list_api_loaded_before_other_shops": 154,
+  "list_api_session_loaded_including_other_shops": 454,
+  "list_api_session_total_advertised_after_pad": 3179,
+  "loaded_cards_shop_118608": 154,
+  "passed_mileage_and_age": 154,
+  "dropped_client_side": 0,
+  "matched_total_reported": 154,
+  "note_on_counts": "更多筛选底部按钮/count接口约3333-3335，含非本店车源；card/query 在 shop_id=118608 下 page.total 先报154，翻过本店后继续拼其他店铺直至 has_more=false（本会话454条，广告total 3179）。入库仅 shop_id=118608 且价格<=6、里程<=10万公里、上牌年>=2016。",
+  "captured_at": "2026-11-02T16:39:04.628239+08:00",
+  "viewport": "390x844",
+  "user_agent": "WeChat MicroMessenger iPhone (API + attempted page emulation; CDP UA override blocked)",
+  "sort_preference": [
+    "config_high",
+    "space",
+    "low_fuel",
+    "price_asc",
+    "suv"
+  ],
+  "notes": "列表接口默认 sort=0。shortlist 为过滤后按新偏好排序的前30辆。封面签名 URL 会过期，以 images/{sku}.jpg 为准。排序：高配＞空间＞低油耗＞便宜＞SUV。",
+  "sort_method": "heuristic_from_title_tags_until_detail_specs",
+  "ranked_at": "2026-11-02T17:58:17.298923+08:00",
+  "ranked_count": 154
+}
