@@ -1,0 +1,44 @@
+name: Probe maintained Dongchedi client
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - ".github/workflows/dcd-cli-probe.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install maintained client
+        run: pip install --disable-pip-version-check dongchedi-cli==0.4.0
+      - name: Probe search and source implementation
+        shell: bash
+        run: |
+          set +e
+          echo '=== dcd search rendered ==='
+          dcd search '传祺GS4'
+          echo '=== dcd search json prefix ==='
+          dcd search '传祺GS4' --json | head -c 6000
+          echo
+          echo '=== module files ==='
+          python - <<'PY'
+          import dongchedi_cli, inspect
+          from dongchedi_cli import api
+          print('package', dongchedi_cli.__file__)
+          print('api', api.__file__)
+          print('--- request/search related source ---')
+          src = inspect.getsource(api)
+          for line in src.splitlines():
+              if any(k in line.lower() for k in ('search', 'request', 'header', 'user-agent', 'car_list')):
+                  print(line)
+          PY
