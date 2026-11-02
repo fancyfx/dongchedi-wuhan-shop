@@ -13,7 +13,9 @@
       "BEV使用kWh/100km，不伪装成L/100km。",
       "配置矩阵未做完精确trim逐项核验的车型不应从近似档位继承配置；缺失值用null。",
       "display_price为仓库抓取展示价，分期价不是现金成交价；排序需计算effective_price并加入不确定性。"
-    ]
+    ],
+    "cash_price_refresh_at": "2026-11-02T20:24:57+08:00",
+    "cash_price_source": "m.dcdapp.com/motor/ecom/sophon/guide/card/detail sku_price"
   },
   "vehicles": [
     {
@@ -21,11 +23,12 @@
       "listing": {
         "sku": "357215359",
         "title": "唐DM 2018款 DM 2.0T 全时四驱智联创享型 7座 国V",
-        "display_price_wan": 4.99,
-        "price_type": "分期",
+        "display_price_wan": 5.19,
+        "price_type": "标价",
         "plate_year": 2018,
         "mileage_wan_km": 5.96,
-        "source": "https://raw.githubusercontent.com/fancyfx/dongchedi-wuhan-shop/main/shortlist-ranked.json"
+        "source": "https://raw.githubusercontent.com/fancyfx/dongchedi-wuhan-shop/main/shortlist-ranked.json",
+        "price_basis": "cash"
       },
       "verified_core": {
         "powertrain": "phev",
@@ -112,7 +115,8 @@
         "price_type": "标价",
         "plate_year": 2023,
         "mileage_wan_km": 2.72,
-        "source": "https://raw.githubusercontent.com/fancyfx/dongchedi-wuhan-shop/main/shortlist-ranked.json"
+        "source": "https://raw.githubusercontent.com/fancyfx/dongchedi-wuhan-shop/main/shortlist-ranked.json",
+        "price_basis": "cash"
       },
       "verified_core": {
         "powertrain": "ice",
@@ -193,11 +197,12 @@
       "listing": {
         "sku": "357052729",
         "title": "宋Pro DM 2024款 DM-i 荣耀版 71km 领航型",
-        "display_price_wan": 5.99,
-        "price_type": "分期",
+        "display_price_wan": 6.39,
+        "price_type": "标价",
         "plate_year": 2024,
         "mileage_wan_km": 6.05,
-        "source": "https://raw.githubusercontent.com/fancyfx/dongchedi-wuhan-shop/main/shortlist-ranked.json"
+        "source": "https://raw.githubusercontent.com/fancyfx/dongchedi-wuhan-shop/main/shortlist-ranked.json",
+        "price_basis": "cash"
       },
       "verified_core": {
         "powertrain": "phev",
@@ -279,7 +284,8 @@
         "price_type": "标价",
         "plate_year": 2023,
         "mileage_wan_km": 3.14,
-        "source": "https://raw.githubusercontent.com/fancyfx/dongchedi-wuhan-shop/main/shortlist-ranked.json"
+        "source": "https://raw.githubusercontent.com/fancyfx/dongchedi-wuhan-shop/main/shortlist-ranked.json",
+        "price_basis": "cash"
       },
       "verified_core": {
         "powertrain": "ice",
@@ -364,7 +370,8 @@
         "price_type": "标价",
         "plate_year": 2024,
         "mileage_wan_km": 2.39,
-        "source": "https://raw.githubusercontent.com/fancyfx/dongchedi-wuhan-shop/main/shortlist-ranked.json"
+        "source": "https://raw.githubusercontent.com/fancyfx/dongchedi-wuhan-shop/main/shortlist-ranked.json",
+        "price_basis": "cash"
       },
       "verified_core": {
         "powertrain": "ice",
@@ -450,7 +457,8 @@
         "price_type": "标价",
         "plate_year": 2025,
         "mileage_wan_km": 0.82,
-        "source": "https://raw.githubusercontent.com/fancyfx/dongchedi-wuhan-shop/main/shortlist-ranked.json"
+        "source": "https://raw.githubusercontent.com/fancyfx/dongchedi-wuhan-shop/main/shortlist-ranked.json",
+        "price_basis": "cash"
       },
       "verified_core": {
         "powertrain": "phev",
@@ -532,11 +540,12 @@
       "listing": {
         "sku": "357172812",
         "title": "博瑞 2021款 1.8T 领航版",
-        "display_price_wan": 4.09,
-        "price_type": "分期",
+        "display_price_wan": 4.29,
+        "price_type": "标价",
         "plate_year": 2021,
         "mileage_wan_km": 4.51,
-        "source": "https://raw.githubusercontent.com/fancyfx/dongchedi-wuhan-shop/main/shortlist-ranked.json"
+        "source": "https://raw.githubusercontent.com/fancyfx/dongchedi-wuhan-shop/main/shortlist-ranked.json",
+        "price_basis": "cash"
       },
       "verified_core": {
         "powertrain": "ice",
@@ -619,11 +628,12 @@
       "listing": {
         "sku": "356994816",
         "title": "星瑞 2023款 2.0T 尊贵型",
-        "display_price_wan": 5.39,
-        "price_type": "分期",
+        "display_price_wan": 5.89,
+        "price_type": "标价",
         "plate_year": 2022,
         "mileage_wan_km": 7.43,
-        "source": "https://raw.githubusercontent.com/fancyfx/dongchedi-wuhan-shop/main/shortlist-ranked.json"
+        "source": "https://raw.githubusercontent.com/fancyfx/dongchedi-wuhan-shop/main/shortlist-ranked.json",
+        "price_basis": "cash"
       },
       "verified_core": {
         "powertrain": "ice",
@@ -705,11 +715,12 @@
       "listing": {
         "sku": "357140222",
         "title": "海豹06DM 2024款 DM-i 80KM尊贵型",
-        "display_price_wan": 5.99,
-        "price_type": "分期",
+        "display_price_wan": 6.29,
+        "price_type": "标价",
         "plate_year": 2024,
         "mileage_wan_km": 4.91,
-        "source": "https://raw.githubusercontent.com/fancyfx/dongchedi-wuhan-shop/main/shortlist-ranked.json"
+        "source": "https://raw.githubusercontent.com/fancyfx/dongchedi-wuhan-shop/main/shortlist-ranked.json",
+        "price_basis": "cash"
       },
       "verified_core": {
         "powertrain": "phev",
@@ -791,7 +802,8 @@
         "price_type": "标价",
         "plate_year": 2022,
         "mileage_wan_km": 9.25,
-        "source": "https://raw.githubusercontent.com/fancyfx/dongchedi-wuhan-shop/main/shortlist-ranked.json"
+        "source": "https://raw.githubusercontent.com/fancyfx/dongchedi-wuhan-shop/main/shortlist-ranked.json",
+        "price_basis": "cash"
       },
       "verified_core": {
         "powertrain": "ice",
@@ -877,7 +889,8 @@
         "price_type": "标价",
         "plate_year": 2022,
         "mileage_wan_km": 5.99,
-        "source": "https://raw.githubusercontent.com/fancyfx/dongchedi-wuhan-shop/main/shortlist-ranked.json"
+        "source": "https://raw.githubusercontent.com/fancyfx/dongchedi-wuhan-shop/main/shortlist-ranked.json",
+        "price_basis": "cash"
       },
       "verified_core": {
         "powertrain": "ice",
@@ -966,11 +979,12 @@
       "listing": {
         "sku": "356938379",
         "title": "长安UNI-V 2022款 1.5T 尊贵型",
-        "display_price_wan": 5.69,
-        "price_type": "分期",
+        "display_price_wan": 5.99,
+        "price_type": "标价",
         "plate_year": 2023,
         "mileage_wan_km": 4.17,
-        "source": "https://raw.githubusercontent.com/fancyfx/dongchedi-wuhan-shop/main/shortlist-ranked.json"
+        "source": "https://raw.githubusercontent.com/fancyfx/dongchedi-wuhan-shop/main/shortlist-ranked.json",
+        "price_basis": "cash"
       },
       "verified_core": {
         "powertrain": "ice",
@@ -1049,7 +1063,8 @@
         "price_type": "标价",
         "plate_year": 2022,
         "mileage_wan_km": 6.39,
-        "source": "https://raw.githubusercontent.com/fancyfx/dongchedi-wuhan-shop/main/shortlist-ranked.json"
+        "source": "https://raw.githubusercontent.com/fancyfx/dongchedi-wuhan-shop/main/shortlist-ranked.json",
+        "price_basis": "cash"
       },
       "verified_core": {
         "powertrain": "ice",
@@ -1134,7 +1149,8 @@
         "price_type": "标价",
         "plate_year": 2023,
         "mileage_wan_km": 4.1,
-        "source": "https://raw.githubusercontent.com/fancyfx/dongchedi-wuhan-shop/main/shortlist-ranked.json"
+        "source": "https://raw.githubusercontent.com/fancyfx/dongchedi-wuhan-shop/main/shortlist-ranked.json",
+        "price_basis": "cash"
       },
       "verified_core": {
         "powertrain": "ice",
@@ -1212,11 +1228,12 @@
       "listing": {
         "sku": "357250772",
         "title": "长安UNI-V 2022款 1.5T 尊贵型",
-        "display_price_wan": 5.89,
-        "price_type": "分期",
+        "display_price_wan": 6.19,
+        "price_type": "标价",
         "plate_year": 2022,
         "mileage_wan_km": 2.85,
-        "source": "https://raw.githubusercontent.com/fancyfx/dongchedi-wuhan-shop/main/shortlist-ranked.json"
+        "source": "https://raw.githubusercontent.com/fancyfx/dongchedi-wuhan-shop/main/shortlist-ranked.json",
+        "price_basis": "cash"
       },
       "verified_core": {
         "powertrain": "ice",
@@ -1295,7 +1312,8 @@
         "price_type": "标价",
         "plate_year": 2020,
         "mileage_wan_km": 4.46,
-        "source": "https://raw.githubusercontent.com/fancyfx/dongchedi-wuhan-shop/main/shortlist-ranked.json"
+        "source": "https://raw.githubusercontent.com/fancyfx/dongchedi-wuhan-shop/main/shortlist-ranked.json",
+        "price_basis": "cash"
       },
       "verified_core": {
         "powertrain": "ice",
@@ -1376,11 +1394,12 @@
       "listing": {
         "sku": "357211018",
         "title": "逸动 2022款 PLUS 1.6L GDI 手动豪华型",
-        "display_price_wan": 2.89,
-        "price_type": "分期",
+        "display_price_wan": 2.99,
+        "price_type": "标价",
         "plate_year": 2022,
         "mileage_wan_km": 5.23,
-        "source": "https://raw.githubusercontent.com/fancyfx/dongchedi-wuhan-shop/main/shortlist-ranked.json"
+        "source": "https://raw.githubusercontent.com/fancyfx/dongchedi-wuhan-shop/main/shortlist-ranked.json",
+        "price_basis": "cash"
       },
       "verified_core": {
         "powertrain": "ice",
@@ -1465,7 +1484,8 @@
         "price_type": "标价",
         "plate_year": 2021,
         "mileage_wan_km": 6.89,
-        "source": "https://raw.githubusercontent.com/fancyfx/dongchedi-wuhan-shop/main/shortlist-ranked.json"
+        "source": "https://raw.githubusercontent.com/fancyfx/dongchedi-wuhan-shop/main/shortlist-ranked.json",
+        "price_basis": "cash"
       },
       "verified_core": {
         "powertrain": "ice",
@@ -1548,7 +1568,8 @@
         "price_type": "标价",
         "plate_year": 2021,
         "mileage_wan_km": 2.49,
-        "source": "https://raw.githubusercontent.com/fancyfx/dongchedi-wuhan-shop/main/shortlist-ranked.json"
+        "source": "https://raw.githubusercontent.com/fancyfx/dongchedi-wuhan-shop/main/shortlist-ranked.json",
+        "price_basis": "cash"
       },
       "verified_core": {
         "powertrain": "ice",
@@ -1633,7 +1654,8 @@
         "price_type": "标价",
         "plate_year": 2021,
         "mileage_wan_km": 7.17,
-        "source": "https://raw.githubusercontent.com/fancyfx/dongchedi-wuhan-shop/main/shortlist-ranked.json"
+        "source": "https://raw.githubusercontent.com/fancyfx/dongchedi-wuhan-shop/main/shortlist-ranked.json",
+        "price_basis": "cash"
       },
       "verified_core": {
         "powertrain": "ice",
@@ -1714,11 +1736,12 @@
       "listing": {
         "sku": "356579334",
         "title": "长安CS75 PLUS 2020款 2.0T 自动旗舰型",
-        "display_price_wan": 4.97,
-        "price_type": "分期",
+        "display_price_wan": 5.67,
+        "price_type": "标价",
         "plate_year": 2020,
         "mileage_wan_km": 4.68,
-        "source": "https://raw.githubusercontent.com/fancyfx/dongchedi-wuhan-shop/main/shortlist-ranked.json"
+        "source": "https://raw.githubusercontent.com/fancyfx/dongchedi-wuhan-shop/main/shortlist-ranked.json",
+        "price_basis": "cash"
       },
       "verified_core": {
         "powertrain": "ice",
@@ -1801,11 +1824,12 @@
       "listing": {
         "sku": "357211014",
         "title": "秦PLUS DM 2024款 荣耀版 DM-i 55KM 领先型",
-        "display_price_wan": 4.69,
-        "price_type": "分期",
+        "display_price_wan": 5.09,
+        "price_type": "标价",
         "plate_year": 2024,
         "mileage_wan_km": 3.45,
-        "source": "https://raw.githubusercontent.com/fancyfx/dongchedi-wuhan-shop/main/shortlist-ranked.json"
+        "source": "https://raw.githubusercontent.com/fancyfx/dongchedi-wuhan-shop/main/shortlist-ranked.json",
+        "price_basis": "cash"
       },
       "verified_core": {
         "powertrain": "phev",
@@ -1882,11 +1906,12 @@
       "listing": {
         "sku": "356773034",
         "title": "秦PLUS DM 2023款 DM-i 冠军版 120KM 领先型",
-        "display_price_wan": 4.89,
-        "price_type": "分期",
+        "display_price_wan": 5.39,
+        "price_type": "标价",
         "plate_year": 2023,
         "mileage_wan_km": 5.6,
-        "source": "https://raw.githubusercontent.com/fancyfx/dongchedi-wuhan-shop/main/shortlist-ranked.json"
+        "source": "https://raw.githubusercontent.com/fancyfx/dongchedi-wuhan-shop/main/shortlist-ranked.json",
+        "price_basis": "cash"
       },
       "verified_core": {
         "powertrain": "phev",
@@ -1963,11 +1988,12 @@
       "listing": {
         "sku": "357250766",
         "title": "影豹 2023款 270T DCT J15版",
-        "display_price_wan": 4.79,
-        "price_type": "分期",
+        "display_price_wan": 4.99,
+        "price_type": "标价",
         "plate_year": 2023,
         "mileage_wan_km": 7.5,
-        "source": "https://raw.githubusercontent.com/fancyfx/dongchedi-wuhan-shop/main/shortlist-ranked.json"
+        "source": "https://raw.githubusercontent.com/fancyfx/dongchedi-wuhan-shop/main/shortlist-ranked.json",
+        "price_basis": "cash"
       },
       "verified_core": {
         "powertrain": "ice",
@@ -2045,11 +2071,12 @@
       "listing": {
         "sku": "357192191",
         "title": "轩逸 2022款 经典 1.6 XL CVT豪华版",
-        "display_price_wan": 4.29,
-        "price_type": "分期",
+        "display_price_wan": 4.59,
+        "price_type": "标价",
         "plate_year": 2021,
         "mileage_wan_km": 5.03,
-        "source": "https://raw.githubusercontent.com/fancyfx/dongchedi-wuhan-shop/main/shortlist-ranked.json"
+        "source": "https://raw.githubusercontent.com/fancyfx/dongchedi-wuhan-shop/main/shortlist-ranked.json",
+        "price_basis": "cash"
       },
       "verified_core": {
         "powertrain": "ice",
@@ -2130,11 +2157,12 @@
       "listing": {
         "sku": "357036051",
         "title": "凌尚 2023款 2.0L 豪华版",
-        "display_price_wan": 5.89,
-        "price_type": "分期",
+        "display_price_wan": 6.19,
+        "price_type": "标价",
         "plate_year": 2023,
         "mileage_wan_km": 6.13,
-        "source": "https://raw.githubusercontent.com/fancyfx/dongchedi-wuhan-shop/main/shortlist-ranked.json"
+        "source": "https://raw.githubusercontent.com/fancyfx/dongchedi-wuhan-shop/main/shortlist-ranked.json",
+        "price_basis": "cash"
       },
       "verified_core": {
         "powertrain": "ice",
@@ -2217,7 +2245,8 @@
         "price_type": "标价",
         "plate_year": 2024,
         "mileage_wan_km": 3.46,
-        "source": "https://raw.githubusercontent.com/fancyfx/dongchedi-wuhan-shop/main/shortlist-ranked.json"
+        "source": "https://raw.githubusercontent.com/fancyfx/dongchedi-wuhan-shop/main/shortlist-ranked.json",
+        "price_basis": "cash"
       },
       "verified_core": {
         "powertrain": "bev",
@@ -2295,11 +2324,12 @@
       "listing": {
         "sku": "357250770",
         "title": "帝豪 2023款 第4代 冠军版 1.5L CVT豪华型",
-        "display_price_wan": 4.09,
-        "price_type": "分期",
+        "display_price_wan": 4.29,
+        "price_type": "标价",
         "plate_year": 2023,
         "mileage_wan_km": 2.75,
-        "source": "https://raw.githubusercontent.com/fancyfx/dongchedi-wuhan-shop/main/shortlist-ranked.json"
+        "source": "https://raw.githubusercontent.com/fancyfx/dongchedi-wuhan-shop/main/shortlist-ranked.json",
+        "price_basis": "cash"
       },
       "verified_core": {
         "powertrain": "ice",
@@ -2382,7 +2412,8 @@
         "price_type": "标价",
         "plate_year": 2024,
         "mileage_wan_km": 4.98,
-        "source": "https://raw.githubusercontent.com/fancyfx/dongchedi-wuhan-shop/main/shortlist-ranked.json"
+        "source": "https://raw.githubusercontent.com/fancyfx/dongchedi-wuhan-shop/main/shortlist-ranked.json",
+        "price_basis": "cash"
       },
       "verified_core": {
         "powertrain": "ice",
@@ -2465,7 +2496,8 @@
         "price_type": "标价",
         "plate_year": 2024,
         "mileage_wan_km": 1.22,
-        "source": "https://raw.githubusercontent.com/fancyfx/dongchedi-wuhan-shop/main/shortlist-ranked.json"
+        "source": "https://raw.githubusercontent.com/fancyfx/dongchedi-wuhan-shop/main/shortlist-ranked.json",
+        "price_basis": "cash"
       },
       "verified_core": {
         "powertrain": "ice",

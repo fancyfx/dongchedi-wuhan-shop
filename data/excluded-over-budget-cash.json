@@ -1,0 +1,60 @@
+{
+  "excluded_at": "2026-11-02T20:24:57+08:00",
+  "count": 6,
+  "items": [
+    {
+      "sku": "357140222",
+      "title": "海豹06DM 2024款 DM-i 80KM尊贵型",
+      "old_price": 5.99,
+      "cash_price_wan": 6.29,
+      "finance_discount_price_wan": 5.99,
+      "old_type": "分期",
+      "reason": "cash_price_over_6wan"
+    },
+    {
+      "sku": "357052729",
+      "title": "宋Pro DM 2024款 DM-i 荣耀版 71km 领航型",
+      "old_price": 5.99,
+      "cash_price_wan": 6.39,
+      "finance_discount_price_wan": 6.09,
+      "old_type": "分期",
+      "reason": "cash_price_over_6wan"
+    },
+    {
+      "sku": "357250772",
+      "title": "长安UNI-V 2022款 1.5T 尊贵型",
+      "old_price": 5.89,
+      "cash_price_wan": 6.19,
+      "finance_discount_price_wan": 5.89,
+      "old_type": "分期",
+      "reason": "cash_price_over_6wan"
+    },
+    {
+      "sku": "357036051",
+      "title": "凌尚 2023款 2.0L 豪华版",
+      "old_price": 5.89,
+      "cash_price_wan": 6.19,
+      "finance_discount_price_wan": 5.89,
+      "old_type": "分期",
+      "reason": "cash_price_over_6wan"
+    },
+    {
+      "sku": "357211019",
+      "title": "锐界 2018款 EcoBoost 245 两驱豪锐型 7座 国V",
+      "old_price": 5.69,
+      "cash_price_wan": 6.19,
+      "finance_discount_price_wan": 5.89,
+      "old_type": "分期",
+      "reason": "cash_price_over_6wan"
+    },
+    {
+      "sku": "357261851",
+      "title": "星愿 2026款 310km 梦想版",
+      "old_price": 5.79,
+      "cash_price_wan": 6.09,
+      "finance_discount_price_wan": 5.79,
+      "old_type": "分期",
+      "reason": "cash_price_over_6wan"
+    }
+  ]
+}
