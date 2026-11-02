@@ -28,15 +28,38 @@
   "captured_at": "2026-11-02T16:39:04.628239+08:00",
   "viewport": "390x844",
   "user_agent": "WeChat MicroMessenger iPhone (API + attempted page emulation; CDP UA override blocked)",
-  "sort_preference": [
-    "config_high",
-    "space",
-    "low_fuel",
-    "price_asc",
-    "suv"
-  ],
-  "notes": "列表接口默认 sort=0。shortlist 为过滤后按新偏好排序的前30辆。封面签名 URL 会过期，以 images/{sku}.jpg 为准。排序：高配＞空间＞低油耗＞便宜＞SUV。",
-  "sort_method": "heuristic_from_title_tags_until_detail_specs",
-  "ranked_at": "2026-11-02T17:58:17.298923+08:00",
-  "ranked_count": 154
+  "sort_preference": "composite_total_score",
+  "notes": "列表接口默认 sort=0。shortlist 为过滤后按综合总得分排序的前30辆。封面签名 URL 会过期，以 images/{sku}.jpg 为准。综合总得分权重：高配35%＞空间25%＞油耗20%＞便宜15%＞SUV5%。主机厂商由标题映射；车主口碑来自公开网页搜索（非详情页）。",
+  "sort_method": "composite_total_score_heuristic",
+  "ranked_at": "2026-11-02T18:26:26+08:00",
+  "ranked_count": 154,
+  "sort_weights": {
+    "config": 0.35,
+    "space": 0.25,
+    "fuel": 0.2,
+    "price": 0.15,
+    "suv": 0.05
+  },
+  "sort_formula": "total_score = 0.35*config_norm + 0.25*space_norm + 0.20*fuel_norm + 0.15*price_score + 0.05*suv_score; config/space/fuel = min-max(proxy) over 154; price_score = clip((6-price_wan)/6*100,0,100); suv_score = 100 if SUV else 0",
+  "manufacturer_coverage": {
+    "total": 154,
+    "inferred_count": 1,
+    "inferred_titles": [
+      "自由侠 2019款 220T 自动领先版"
+    ]
+  },
+  "owner_reviews_note": "短名单前15按车系网页搜索公开口碑（非懂车帝二手车详情页）；同车系复用摘要。",
+  "owner_reviews_series_covered": [
+    "唐DM",
+    "长安欧尚X5 PLUS",
+    "五菱宏光MINIEV",
+    "远景X3",
+    "秦PLUS DM",
+    "宋Pro DM",
+    "长安CS75 PLUS",
+    "长安UNI-T",
+    "远景X6",
+    "帝豪GS",
+    "哈弗H6"
+  ]
 }

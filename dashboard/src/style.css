@@ -384,3 +384,55 @@ a {
     padding-top: 4px;
   }
 }
+
+
+.manu-line {
+  font-size: 12px;
+  color: var(--accent);
+  margin-bottom: 4px;
+  letter-spacing: 0.02em;
+}
+
+.eval, .review {
+  font-size: 12px;
+  line-height: 1.55;
+  color: #c5d0de;
+  background: rgba(255,255,255,0.03);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 8px 10px;
+  margin-top: 8px;
+}
+
+.review.muted { color: var(--muted); }
+
+.sources {
+  margin-top: 6px;
+  font-size: 11px;
+  color: var(--accent-2);
+  line-height: 1.45;
+  word-break: break-all;
+}
+
+.sources a { color: var(--accent-2); text-decoration: underline; text-underline-offset: 2px; }
+
+.score-badge {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  background: linear-gradient(135deg, #3dd6c6, #5b8cff);
+  color: #041018;
+  font-weight: 700;
+  font-size: 14px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  box-shadow: var(--shadow);
+}
+
+.pill.manu {
+  background: rgba(91,140,255,0.18);
+  border-color: rgba(91,140,255,0.35);
+  color: #b8ccff;
+}
+
+.cover { position: relative; }

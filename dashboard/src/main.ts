@@ -6,7 +6,19 @@ type SortScores = {
   fuel_proxy: number
   is_suv: boolean
   price: number
+  config_norm?: number
+  space_norm?: number
+  fuel_norm?: number
+  price_score?: number
+  suv_score?: number
+  total_score?: number
   note?: string
+}
+
+type OwnerReviews = {
+  summary?: string
+  sources?: { title: string; url: string }[]
+  found?: boolean
 }
 
 type Listing = {
@@ -23,7 +35,13 @@ type Listing = {
   badges?: string[]
   detail_url: string
   shop_id?: string
+  brand?: string
+  manufacturer?: string
+  total_score?: number
+  evaluation?: string
+  rank?: number
   sort_scores?: SortScores
+  owner_reviews?: OwnerReviews
 }
 
 type Meta = {
@@ -37,10 +55,12 @@ type Meta = {
   ranked_at?: string
   ranked_count?: number
   notes?: string
-  sort_preference?: string[]
+  sort_preference?: string | string[]
+  sort_weights?: Record<string, number>
+  sort_formula?: string
 }
 
-type SortKey = 'recommend' | 'price' | 'year' | 'mileage' | 'config'
+type SortKey = 'recommend' | 'price' | 'year' | 'mileage' | 'config' | 'score'
 
 const app = document.querySelector<HTMLDivElement>('#app')!
 
@@ -94,6 +114,10 @@ function statsOf(items: Listing[]) {
   }
 }
 
+function totalOf(item: Listing): number {
+  return item.total_score ?? item.sort_scores?.total_score ?? 0
+}
+
 function filtered(): Listing[] {
   const q = state.q.trim().toLowerCase()
   const pMin = state.priceMin === '' ? null : Number(state.priceMin)
@@ -101,7 +125,15 @@ function filtered(): Listing[] {
   const mMax = state.mileageMax === '' ? null : Number(state.mileageMax)
 
   let rows = listings.filter((item) => {
-    if (q && !item.title.toLowerCase().includes(q)) return false
+    if (
+      q &&
+      !(
+        item.title.toLowerCase().includes(q) ||
+        (item.manufacturer || '').toLowerCase().includes(q) ||
+        (item.brand || '').toLowerCase().includes(q)
+      )
+    )
+      return false
     if (pMin != null && !Number.isNaN(pMin) && item.price < pMin) return false
     if (pMax != null && !Number.isNaN(pMax) && item.price > pMax) return false
     if (mMax != null && !Number.isNaN(mMax) && (item.mileage_wan ?? 999) > mMax) return false
@@ -115,7 +147,7 @@ function filtered(): Listing[] {
   rows = [...rows]
   switch (state.sort) {
     case 'price':
-      rows.sort((a, b) => a.price - b.price || (originalIndex.get(a.sku)! - originalIndex.get(b.sku)!))
+      rows.sort((a, b) => a.price - b.price || originalIndex.get(a.sku)! - originalIndex.get(b.sku)!)
       break
     case 'year':
       rows.sort(
@@ -138,8 +170,15 @@ function filtered(): Listing[] {
           originalIndex.get(a.sku)! - originalIndex.get(b.sku)!,
       )
       break
+    case 'score':
+    case 'recommend':
     default:
-      rows.sort((a, b) => originalIndex.get(a.sku)! - originalIndex.get(b.sku)!)
+      rows.sort(
+        (a, b) =>
+          totalOf(b) - totalOf(a) ||
+          (b.sort_scores?.config_norm ?? 0) - (a.sort_scores?.config_norm ?? 0) ||
+          originalIndex.get(a.sku)! - originalIndex.get(b.sku)!,
+      )
   }
   return rows
 }
@@ -155,14 +194,35 @@ function cardHtml(item: Listing, rank: number): string {
       .filter(Boolean)
       .join(' / ')
   const score = item.sort_scores
+  const total = totalOf(item)
   const scoreText = score
-    ? `#${rank} 配${score.config_proxy.toFixed(1)} · 空${score.space_proxy} · 油${score.fuel_proxy}`
-    : `#${rank}`
+    ? `总分 ${total.toFixed(1)} · 配${(score.config_norm ?? score.config_proxy).toFixed(0)} · 空${(score.space_norm ?? score.space_proxy).toFixed(0)} · 油${(score.fuel_norm ?? score.fuel_proxy).toFixed(0)}`
+    : `总分 ${total.toFixed(1)}`
+
+  const manu = item.manufacturer || '未知厂商'
+  const brand = item.brand && item.brand !== item.manufacturer ? ` · ${item.brand}` : ''
 
   const badgeHtml = [
     ...badges.slice(0, 3).map((b) => `<span class="pill official">${esc(b)}</span>`),
     isSuv ? `<span class="pill suv">SUV</span>` : '',
+    `<span class="pill manu">${esc(manu)}</span>`,
   ].join('')
+
+  const evalHtml = item.evaluation
+    ? `<div class="eval"><strong>评价</strong>：${esc(item.evaluation)}</div>`
+    : ''
+
+  const or = item.owner_reviews
+  let reviewHtml = ''
+  if (or?.found && or.summary) {
+    const links = (or.sources || [])
+      .slice(0, 3)
+      .map((s) => `<a href="${esc(s.url)}" target="_blank" rel="noopener noreferrer">${esc(s.title)}</a>`)
+      .join(' · ')
+    reviewHtml = `<div class="review"><strong>车主口碑</strong>：${esc(or.summary)}${links ? `<div class="sources">${links}</div>` : ''}</div>`
+  } else if (or && or.found === false && or.summary && !or.summary.includes('短名单外')) {
+    reviewHtml = `<div class="review muted">${esc(or.summary)}</div>`
+  }
 
   return `
   <article class="card">
@@ -171,8 +231,10 @@ function cardHtml(item: Listing, rank: number): string {
         onerror="this.style.display='none'; this.nextElementSibling.style.display='grid';" />
       <div class="placeholder" style="display:none">暂无封面</div>
       <div class="badges">${badgeHtml}</div>
+      <div class="score-badge">${total.toFixed(1)}</div>
     </div>
     <div class="body">
+      <div class="manu-line">${esc(manu)}${esc(brand)}</div>
       <div class="title" title="${esc(item.title)}">${esc(item.title)}</div>
       <div class="meta-row">${esc(yearLine)}</div>
       <div class="price-row">
@@ -180,8 +242,10 @@ function cardHtml(item: Listing, rank: number): string {
         <div class="price-type">${esc(item.price_type || '标价')}</div>
       </div>
       <div class="tags">${tags.map((t) => `<span class="tag">${esc(t)}</span>`).join('')}</div>
+      ${evalHtml}
+      ${reviewHtml}
       <div class="footer-row">
-        <span class="score">${esc(scoreText)}</span>
+        <span class="score">#${rank} ${esc(scoreText)}</span>
         <a class="btn-link" href="${esc(item.detail_url)}" target="_blank" rel="noopener noreferrer">详情</a>
       </div>
     </div>
@@ -196,6 +260,10 @@ function renderShell() {
     meta?.mileage_filter || meta?.filters?.mileage || '≤10万公里',
     meta?.age_filter || meta?.filters?.vehicle_age || '≤10年',
   ].join(' · ')
+  const w = meta?.sort_weights
+  const weightText = w
+    ? `综合总分：配置${Math.round(w.config * 100)}% + 空间${Math.round(w.space * 100)}% + 油耗${Math.round(w.fuel * 100)}% + 价格${Math.round(w.price * 100)}% + SUV${Math.round(w.suv * 100)}%`
+    : '综合总分：配置35% + 空间25% + 油耗20% + 价格15% + SUV5%'
 
   app.innerHTML = `
     <header class="header">
@@ -204,7 +272,7 @@ function renderShell() {
         <span class="badge-note">非官方 · 本地抓取数据看板</span>
       </div>
       <div class="sub">${esc(shop)}（shop_id ${esc(meta?.shop_id || '118608')}） · 硬筛：${esc(filters)}</div>
-      <div class="sort-rule">当前排序：高配 ＞ 空间 ＞ 低油耗 ＞ 便宜 ＞ SUV</div>
+      <div class="sort-rule">${esc(weightText)}</div>
     </header>
 
     <section class="stats" id="stats">
@@ -218,8 +286,8 @@ function renderShell() {
 
     <section class="controls">
       <div class="field">
-        <label for="q">关键词（标题）</label>
-        <input id="q" type="search" placeholder="如：哈弗 H6 / 秦PLUS" value="${esc(state.q)}" />
+        <label for="q">关键词（标题/厂商）</label>
+        <input id="q" type="search" placeholder="如：哈弗 / 比亚迪 / 秦PLUS" value="${esc(state.q)}" />
       </div>
       <div class="field">
         <label for="priceMin">最低价（万）</label>
@@ -244,7 +312,8 @@ function renderShell() {
       <div class="field">
         <label for="sort">排序</label>
         <select id="sort">
-          <option value="recommend" ${state.sort === 'recommend' ? 'selected' : ''}>推荐排序</option>
+          <option value="recommend" ${state.sort === 'recommend' ? 'selected' : ''}>综合总分</option>
+          <option value="score" ${state.sort === 'score' ? 'selected' : ''}>总分（显式）</option>
           <option value="price" ${state.sort === 'price' ? 'selected' : ''}>更便宜</option>
           <option value="year" ${state.sort === 'year' ? 'selected' : ''}>更新上牌</option>
           <option value="mileage" ${state.sort === 'mileage' ? 'selected' : ''}>更低里程</option>
@@ -259,7 +328,7 @@ function renderShell() {
 
     <div class="toolbar">
       <div id="result-count">显示 ${allStats.count} / ${listings.length} 辆</div>
-      <div>封面来自本地 images/{sku}.jpg · 详情跳转懂车帝</div>
+      <div>封面 images/{sku}.jpg · 口碑来自公开网页搜索 · 详情跳转懂车帝</div>
     </div>
     <section class="grid" id="grid"></section>
   `

@@ -1,462 +1,80 @@
 [
   {
-    "sku": "357228241",
-    "title": "秦PLUS DM 2025款 智驾版 DM-i 55KM 领先型",
-    "price": 5.99,
-    "price_type": "标价",
-    "prefix": "标价",
-    "extra": "限时物流补贴",
-    "extras": [
-      "限时物流补贴"
-    ],
-    "year": "2025年 / 0.82万公里 / 武汉",
-    "plate_year": 2025,
-    "model_year": 2025,
-    "mileage_wan": 0.82,
-    "city": "武汉",
-    "tags": [
-      "性价比极佳",
-      "放心检9.7分",
-      "原版原漆",
-      "三电质保",
-      "准新",
-      "内饰如新"
-    ],
-    "badges": [
-      "官方保",
-      "直营"
-    ],
-    "cover": "https://p3-dcd-sign.byteimg.com/tos-cn-i-f042mdwyw7/117c1ce31780410299bc521fafb8b607~tplv-f042mdwyw7-original:800:0.image?lk3s=416a877a&x-expires=1796200589&x-signature=Pi1H5qmpZlLqdnROEYTiSGx45gQ%3D&psm=motor.sophon.product",
-    "detail_url": "https://m.dcdapp.com/motor/feoffline/usedcar_detail/detail.html?sku_id=357228241&shop_id=118608",
-    "shop_id": "118608",
-    "image_file": "/workspace/dongchedi-wuhan-shop/images/357228241.jpg",
-    "banner": "",
-    "sort_scores": {
-      "config_proxy": 16.95,
-      "space_proxy": 3.5,
-      "fuel_proxy": 9.0,
-      "is_suv": false,
-      "price": 5.99,
-      "note": "排序：高配＞空间＞低油耗＞便宜＞SUV；卡片无完整参配，config≈年款/配置词/变速箱/涡轮/检测分；空间≈SUV/MPV/7座；油耗≈纯电/混动/排量"
-    }
-  },
-  {
-    "sku": "357014230",
-    "title": "逸达 2023款 1.5T GDI 自动旗舰型",
-    "price": 4.98,
-    "price_type": "标价",
-    "prefix": "标价",
-    "extra": "限时物流补贴",
-    "extras": [
-      "限时物流补贴"
-    ],
-    "year": "2023年 / 4.10万公里 / 武汉",
-    "plate_year": 2023,
-    "model_year": 2023,
-    "mileage_wan": 4.1,
-    "city": "武汉",
-    "tags": [
-      "性价比合理",
-      "放心检7.5分"
-    ],
-    "badges": [
-      "官方保",
-      "直营"
-    ],
-    "cover": "https://p3-dcd-sign.byteimg.com/tos-cn-i-f042mdwyw7/41b06ff2a5144f88ac7f09a7f9bf8698~tplv-resize:800:0.image?lk3s=416a877a&x-expires=1796200581&x-signature=jivZ6MoeZjTWhEYdAEruWgmIU5E%3D&psm=motor.sophon.product",
-    "detail_url": "https://m.dcdapp.com/motor/feoffline/usedcar_detail/detail.html?sku_id=357014230&shop_id=118608",
-    "shop_id": "118608",
-    "image_file": "/workspace/dongchedi-wuhan-shop/images/357014230.jpg",
-    "banner": "",
-    "sort_scores": {
-      "config_proxy": 16.18,
-      "space_proxy": 2.0,
-      "fuel_proxy": 3.75,
-      "is_suv": false,
-      "price": 4.98,
-      "note": "排序：高配＞空间＞低油耗＞便宜＞SUV；卡片无完整参配，config≈年款/配置词/变速箱/涡轮/检测分；空间≈SUV/MPV/7座；油耗≈纯电/混动/排量"
-    }
-  },
-  {
-    "sku": "357149730",
-    "title": "长安UNI-T 2023款 第二代 1.5T 旗舰型",
-    "price": 5.99,
-    "price_type": "标价",
-    "prefix": "标价",
-    "extra": "直降2000元",
-    "extras": [
-      "直降2000元"
-    ],
-    "year": "2023年 / 2.72万公里 / 武汉",
-    "plate_year": 2023,
-    "model_year": 2023,
-    "mileage_wan": 2.72,
-    "city": "武汉",
-    "tags": [
-      "性价比合理",
-      "放心检8.5分"
-    ],
-    "badges": [
-      "官方保",
-      "直营"
-    ],
-    "cover": "https://p3-dcd-sign.byteimg.com/tos-cn-i-f042mdwyw7/98ede7c65d0b409bb8a35ba3c9fab358~tplv-resize:800:0.image?lk3s=416a877a&x-expires=1796200585&x-signature=I8mZ%2Fv2tSrN9U9qjwZmDCk%2F2LvA%3D&psm=motor.sophon.product",
-    "detail_url": "https://m.dcdapp.com/motor/feoffline/usedcar_detail/detail.html?sku_id=357149730&shop_id=118608",
-    "shop_id": "118608",
-    "image_file": "/workspace/dongchedi-wuhan-shop/images/357149730.jpg",
-    "banner": "",
-    "sort_scores": {
-      "config_proxy": 15.33,
-      "space_proxy": 5.5,
-      "fuel_proxy": 3.75,
-      "is_suv": true,
-      "price": 5.99,
-      "note": "排序：高配＞空间＞低油耗＞便宜＞SUV；卡片无完整参配，config≈年款/配置词/变速箱/涡轮/检测分；空间≈SUV/MPV/7座；油耗≈纯电/混动/排量"
-    }
-  },
-  {
-    "sku": "357301752",
-    "title": "哈弗H6 2021款 第三代 2.0T 自动两驱Max版",
-    "price": 5.19,
-    "price_type": "标价",
-    "prefix": "标价",
-    "extra": "限时物流补贴",
-    "extras": [
-      "限时物流补贴"
-    ],
-    "year": "2021年 / 2.49万公里 / 武汉",
-    "plate_year": 2021,
-    "model_year": 2021,
-    "mileage_wan": 2.49,
-    "city": "武汉",
-    "tags": [
-      "性价比极佳",
-      "放心检8.1分"
-    ],
-    "badges": [
-      "官方保",
-      "直营"
-    ],
-    "cover": "https://p3-dcd-sign.byteimg.com/tos-cn-i-f042mdwyw7/fbd1eab4a6a34016aee47d6148356ea9~tplv-f042mdwyw7-original:800:0.image?lk3s=416a877a&x-expires=1796200581&x-signature=x90h7kMzoc0%2FOPljDRYLwdSIGGQ%3D&psm=motor.sophon.product",
-    "detail_url": "https://m.dcdapp.com/motor/feoffline/usedcar_detail/detail.html?sku_id=357301752&shop_id=118608",
-    "shop_id": "118608",
-    "image_file": "/workspace/dongchedi-wuhan-shop/images/357301752.jpg",
-    "banner": "",
-    "sort_scores": {
-      "config_proxy": 15.28,
-      "space_proxy": 5.5,
-      "fuel_proxy": 2.5,
-      "is_suv": true,
-      "price": 5.19,
-      "note": "排序：高配＞空间＞低油耗＞便宜＞SUV；卡片无完整参配，config≈年款/配置词/变速箱/涡轮/检测分；空间≈SUV/MPV/7座；油耗≈纯电/混动/排量"
-    }
-  },
-  {
-    "sku": "357097175",
-    "title": "荣威i5 2026款 1.5L CVT豪华版",
-    "price": 5.29,
+    "sku": "357215359",
+    "title": "唐DM 2018款 DM 2.0T 全时四驱智联创享型 7座 国V",
+    "price": 4.99,
     "price_type": "分期",
     "prefix": "分期价",
     "extra": "领券优惠价",
     "extras": [
       "领券优惠价",
-      "分期直减3000元"
+      "分期直减2000元"
     ],
-    "year": "2026年 / 0.87万公里 / 武汉",
-    "plate_year": 2026,
-    "model_year": 2026,
-    "mileage_wan": 0.87,
-    "city": "武汉",
-    "tags": [
-      "性价比合理",
-      "放心检8.5分",
-      "原版原漆",
-      "准新"
-    ],
-    "badges": [
-      "官方保",
-      "直营"
-    ],
-    "cover": "https://p3-dcd-sign.byteimg.com/tos-cn-i-f042mdwyw7/97b065d0b5f64aa2bb27f5340f1f41a8~tplv-resize:800:0.image?lk3s=416a877a&x-expires=1796200596&x-signature=psvWPt6jZBAOZGreizvz5DBPGPc%3D&psm=motor.sophon.product",
-    "detail_url": "https://m.dcdapp.com/motor/feoffline/usedcar_detail/detail.html?sku_id=357097175&shop_id=118608",
-    "shop_id": "118608",
-    "image_file": "/workspace/dongchedi-wuhan-shop/images/357097175.jpg",
-    "banner": "分期直减3000元",
-    "sort_scores": {
-      "config_proxy": 15.07,
-      "space_proxy": 2.0,
-      "fuel_proxy": 5.0,
-      "is_suv": false,
-      "price": 5.29,
-      "note": "排序：高配＞空间＞低油耗＞便宜＞SUV；卡片无完整参配，config≈年款/配置词/变速箱/涡轮/检测分；空间≈SUV/MPV/7座；油耗≈纯电/混动/排量"
-    }
-  },
-  {
-    "sku": "356845779",
-    "title": "海鸥 2025款 智驾版 305KM 活力版",
-    "price": 5.09,
-    "price_type": "标价",
-    "prefix": "标价",
-    "extra": "限时物流补贴",
-    "extras": [
-      "限时物流补贴"
-    ],
-    "year": "2025年 / 4.89万公里 / 武汉",
-    "plate_year": 2025,
-    "model_year": 2025,
-    "mileage_wan": 4.89,
-    "city": "武汉",
-    "tags": [
-      "性价比合理",
-      "放心检9.3分",
-      "原版原漆",
-      "三电质保",
-      "电池健康"
-    ],
-    "badges": [
-      "官方保",
-      "直营"
-    ],
-    "cover": "https://p9-dcd-sign.byteimg.com/tos-cn-i-f042mdwyw7/d7b6abd168294b568fbe0b3d43e4d126~tplv-f042mdwyw7-original:800:0.image?lk3s=416a877a&x-expires=1796200596&x-signature=pheiPXQ5xR1nMT76FEO5Mt74dGs%3D&psm=motor.sophon.product",
-    "detail_url": "https://m.dcdapp.com/motor/feoffline/usedcar_detail/detail.html?sku_id=356845779&shop_id=118608",
-    "shop_id": "118608",
-    "image_file": "/workspace/dongchedi-wuhan-shop/images/356845779.jpg",
-    "banner": "",
-    "sort_scores": {
-      "config_proxy": 15.0,
-      "space_proxy": 2.0,
-      "fuel_proxy": 10.0,
-      "is_suv": false,
-      "price": 5.09,
-      "note": "排序：高配＞空间＞低油耗＞便宜＞SUV；卡片无完整参配，config≈年款/配置词/变速箱/涡轮/检测分；空间≈SUV/MPV/7座；油耗≈纯电/混动/排量"
-    }
-  },
-  {
-    "sku": "357168649",
-    "title": "长安UNI-T 2020款 1.5T 旗舰型",
-    "price": 4.99,
-    "price_type": "标价",
-    "prefix": "标价",
-    "extra": "限时物流补贴",
-    "extras": [
-      "限时物流补贴"
-    ],
-    "year": "2021年 / 7.17万公里 / 武汉",
-    "plate_year": 2021,
-    "model_year": 2020,
-    "mileage_wan": 7.17,
+    "year": "2018年 / 5.96万公里 / 武汉",
+    "plate_year": 2018,
+    "model_year": 2018,
+    "mileage_wan": 5.96,
     "city": "武汉",
     "tags": [
       "性价比极佳",
       "放心检8.2分",
-      "无钣金"
-    ],
-    "badges": [
-      "官方保",
-      "直营"
-    ],
-    "cover": "https://p9-dcd-sign.byteimg.com/tos-cn-i-f042mdwyw7/a315e6afdfe0443993bec5bd31b77abd~tplv-resize:800:0.image?lk3s=416a877a&x-expires=1796200593&x-signature=a5kEJtEI69SYdKcKs3pM6ZcZK2o%3D&psm=motor.sophon.product",
-    "detail_url": "https://m.dcdapp.com/motor/feoffline/usedcar_detail/detail.html?sku_id=357168649&shop_id=118608",
-    "shop_id": "118608",
-    "image_file": "/workspace/dongchedi-wuhan-shop/images/357168649.jpg",
-    "banner": "",
-    "sort_scores": {
-      "config_proxy": 14.92,
-      "space_proxy": 5.5,
-      "fuel_proxy": 3.75,
-      "is_suv": true,
-      "price": 4.99,
-      "note": "排序：高配＞空间＞低油耗＞便宜＞SUV；卡片无完整参配，config≈年款/配置词/变速箱/涡轮/检测分；空间≈SUV/MPV/7座；油耗≈纯电/混动/排量"
-    }
-  },
-  {
-    "sku": "356579334",
-    "title": "长安CS75 PLUS 2020款 2.0T 自动旗舰型",
-    "price": 4.97,
-    "price_type": "分期",
-    "prefix": "分期价",
-    "extra": "领券优惠价",
-    "extras": [
-      "领券优惠价",
-      "分期直减7000元"
-    ],
-    "year": "2020年 / 4.68万公里 / 武汉",
-    "plate_year": 2020,
-    "model_year": 2020,
-    "mileage_wan": 4.68,
-    "city": "武汉",
-    "tags": [
-      "性价比极佳",
-      "放心检8.6分"
-    ],
-    "badges": [
-      "官方保",
-      "直营"
-    ],
-    "cover": "https://p3-dcd-sign.byteimg.com/tos-cn-i-f042mdwyw7/66bebce72fe146a08a1730c23dca5e46~tplv-resize:800:0.image?lk3s=416a877a&x-expires=1796200581&x-signature=mvqWcVuYMhsTUnd1Od%2FGOtRNM3Y%3D&psm=motor.sophon.product",
-    "detail_url": "https://m.dcdapp.com/motor/feoffline/usedcar_detail/detail.html?sku_id=356579334&shop_id=118608",
-    "shop_id": "118608",
-    "image_file": "/workspace/dongchedi-wuhan-shop/images/356579334.jpg",
-    "banner": "分期直减7000元",
-    "sort_scores": {
-      "config_proxy": 14.91,
-      "space_proxy": 6.5,
-      "fuel_proxy": 2.5,
-      "is_suv": true,
-      "price": 4.97,
-      "note": "排序：高配＞空间＞低油耗＞便宜＞SUV；卡片无完整参配，config≈年款/配置词/变速箱/涡轮/检测分；空间≈SUV/MPV/7座；油耗≈纯电/混动/排量"
-    }
-  },
-  {
-    "sku": "357220895",
-    "title": "逸动 2023款 PLUS畅享版 蓝鲸NE 1.4T GDI DCT尊贵型",
-    "price": 4.69,
-    "price_type": "标价",
-    "prefix": "标价",
-    "extra": "限时物流补贴",
-    "extras": [
-      "限时物流补贴"
-    ],
-    "year": "2023年 / 3.14万公里 / 武汉",
-    "plate_year": 2023,
-    "model_year": 2023,
-    "mileage_wan": 3.14,
-    "city": "武汉",
-    "tags": [
-      "放心检8.0分"
-    ],
-    "badges": [
-      "官方保",
-      "直营"
-    ],
-    "cover": "https://p3-dcd-sign.byteimg.com/tos-cn-i-f042mdwyw7/a7e6bed7b4f04c5aaa19519ac8f0db3c~tplv-resize:800:0.image?lk3s=416a877a&x-expires=1796200596&x-signature=e05Qm9taUbD3yqE3f0kqONXJWIE%3D&psm=motor.sophon.product",
-    "detail_url": "https://m.dcdapp.com/motor/feoffline/usedcar_detail/detail.html?sku_id=357220895&shop_id=118608",
-    "shop_id": "118608",
-    "image_file": "/workspace/dongchedi-wuhan-shop/images/357220895.jpg",
-    "banner": "",
-    "sort_scores": {
-      "config_proxy": 14.85,
-      "space_proxy": 3.5,
-      "fuel_proxy": 4.0,
-      "is_suv": false,
-      "price": 4.69,
-      "note": "排序：高配＞空间＞低油耗＞便宜＞SUV；卡片无完整参配，config≈年款/配置词/变速箱/涡轮/检测分；空间≈SUV/MPV/7座；油耗≈纯电/混动/排量"
-    }
-  },
-  {
-    "sku": "357140222",
-    "title": "海豹06DM 2024款 DM-i 80KM尊贵型",
-    "price": 5.99,
-    "price_type": "分期",
-    "prefix": "分期价",
-    "extra": "领券优惠价",
-    "extras": [
-      "领券优惠价",
-      "分期直减3000元"
-    ],
-    "year": "2024年 / 4.91万公里 / 武汉",
-    "plate_year": 2024,
-    "model_year": 2024,
-    "mileage_wan": 4.91,
-    "city": "武汉",
-    "tags": [
-      "性价比极佳",
-      "放心检8.8分",
       "三电质保"
     ],
     "badges": [
       "官方保",
       "直营"
     ],
-    "cover": "https://p3-dcd-sign.byteimg.com/tos-cn-i-f042mdwyw7/246c4fd863964aeba3b2aa2b79b1689a~tplv-resize:800:0.image?lk3s=416a877a&x-expires=1796200578&x-signature=lL6%2BFgDF7Ad5Ab6p%2BREIS%2F6Ojd8%3D&psm=motor.sophon.product",
-    "detail_url": "https://m.dcdapp.com/motor/feoffline/usedcar_detail/detail.html?sku_id=357140222&shop_id=118608",
+    "cover": "https://p9-dcd-sign.byteimg.com/tos-cn-i-f042mdwyw7/58bf0601969845188c7cd921d06b6303~tplv-resize:800:0.image?lk3s=416a877a&x-expires=1796200574&x-signature=OTJx2Gtzkaf0s65xCG%2B7WL7sPqE%3D&psm=motor.sophon.product",
+    "detail_url": "https://m.dcdapp.com/motor/feoffline/usedcar_detail/detail.html?sku_id=357215359&shop_id=118608",
     "shop_id": "118608",
-    "image_file": "/workspace/dongchedi-wuhan-shop/images/357140222.jpg",
-    "banner": "分期直减3000元",
+    "image_file": "/workspace/dongchedi-wuhan-shop/images/357215359.jpg",
+    "banner": "分期直减2000元",
     "sort_scores": {
-      "config_proxy": 14.68,
-      "space_proxy": 2.0,
+      "config_proxy": 12.17,
+      "space_proxy": 8.0,
       "fuel_proxy": 9.0,
-      "is_suv": false,
-      "price": 5.99,
-      "note": "排序：高配＞空间＞低油耗＞便宜＞SUV；卡片无完整参配，config≈年款/配置词/变速箱/涡轮/检测分；空间≈SUV/MPV/7座；油耗≈纯电/混动/排量"
-    }
-  },
-  {
-    "sku": "357149711",
-    "title": "远景X6 2021款 PRO 1.4T 自动尊贵型",
-    "price": 4.89,
-    "price_type": "标价",
-    "prefix": "标价",
-    "extra": "限时物流补贴",
-    "extras": [
-      "限时物流补贴"
-    ],
-    "year": "2022年 / 6.39万公里 / 武汉",
-    "plate_year": 2022,
-    "model_year": 2021,
-    "mileage_wan": 6.39,
-    "city": "武汉",
-    "tags": [
-      "性价比很棒",
-      "放心检7.8分"
-    ],
-    "badges": [
-      "官方保",
-      "直营"
-    ],
-    "cover": "https://p9-dcd-sign.byteimg.com/tos-cn-i-f042mdwyw7/42f7afa292a1477fbc629b59ca2eda63~tplv-resize:800:0.image?lk3s=416a877a&x-expires=1796200596&x-signature=nw9YHqkoAyf%2FY9ycdPEUQmWvdvw%3D&psm=motor.sophon.product",
-    "detail_url": "https://m.dcdapp.com/motor/feoffline/usedcar_detail/detail.html?sku_id=357149711&shop_id=118608",
-    "shop_id": "118608",
-    "image_file": "/workspace/dongchedi-wuhan-shop/images/357149711.jpg",
-    "banner": "",
-    "sort_scores": {
-      "config_proxy": 14.23,
-      "space_proxy": 5.5,
-      "fuel_proxy": 4.0,
       "is_suv": true,
-      "price": 4.89,
-      "note": "排序：高配＞空间＞低油耗＞便宜＞SUV；卡片无完整参配，config≈年款/配置词/变速箱/涡轮/检测分；空间≈SUV/MPV/7座；油耗≈纯电/混动/排量"
-    }
-  },
-  {
-    "sku": "357250772",
-    "title": "长安UNI-V 2022款 1.5T 尊贵型",
-    "price": 5.89,
-    "price_type": "分期",
-    "prefix": "分期价",
-    "extra": "领券优惠价",
-    "extras": [
-      "领券优惠价",
-      "分期直减3000元"
-    ],
-    "year": "2022年 / 2.85万公里 / 武汉",
-    "plate_year": 2022,
-    "model_year": 2022,
-    "mileage_wan": 2.85,
-    "city": "武汉",
-    "tags": [
-      "性价比合理",
-      "放心检8.7分",
-      "原版原漆"
-    ],
-    "badges": [
-      "官方保",
-      "直营"
-    ],
-    "cover": "https://p9-dcd-sign.byteimg.com/tos-cn-i-f042mdwyw7/df233e8d36c846919ee439357d037332~tplv-resize:800:0.image?lk3s=416a877a&x-expires=1796200589&x-signature=LB3cLGXRZLS5cvtNA1yS3ZAXWGM%3D&psm=motor.sophon.product",
-    "detail_url": "https://m.dcdapp.com/motor/feoffline/usedcar_detail/detail.html?sku_id=357250772&shop_id=118608",
-    "shop_id": "118608",
-    "image_file": "/workspace/dongchedi-wuhan-shop/images/357250772.jpg",
-    "banner": "分期直减3000元",
-    "sort_scores": {
-      "config_proxy": 14.15,
-      "space_proxy": 2.0,
-      "fuel_proxy": 3.75,
-      "is_suv": false,
-      "price": 5.89,
-      "note": "排序：高配＞空间＞低油耗＞便宜＞SUV；卡片无完整参配，config≈年款/配置词/变速箱/涡轮/检测分；空间≈SUV/MPV/7座；油耗≈纯电/混动/排量"
-    }
+      "price": 4.99,
+      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为全量min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式",
+      "config_norm": 67.59,
+      "space_norm": 100.0,
+      "fuel_norm": 86.67,
+      "price_score": 16.83,
+      "suv_score": 100.0,
+      "total_score": 73.5,
+      "weights": {
+        "config": 0.35,
+        "space": 0.25,
+        "fuel": 0.2,
+        "price": 0.15,
+        "suv": 0.05
+      }
+    },
+    "brand": "唐",
+    "manufacturer": "比亚迪",
+    "manufacturer_inferred": false,
+    "total_score": 73.5,
+    "evaluation": "配置代理分一般；SUV 空间更实用；油耗代理友好（纯电/混动或小排量）；价格 4.99 万接近预算上限。",
+    "series": "唐DM",
+    "owner_reviews": {
+      "summary": "车主普遍认可动力强、七座空间与配置；有充电时通勤成本低。短板是亏电油耗偏高（高速约10–12L、市区更高）、高速风噪胎噪、第三排局促，长里程车主反馈电池衰减/减震/门把手等维修案例较多，购入二手需重点查三电与底盘。",
+      "sources": [
+        {
+          "title": "18款唐DM车主18万公里感受（汽车之家论坛）",
+          "url": "https://club.m.autohome.com.cn/bbs/thread/70236227ff7f5fcb/108328602-1.html"
+        },
+        {
+          "title": "唐新能源车主口碑摘要（汽车之家）",
+          "url": "https://k.m.autohome.com.cn/spec/35062/"
+        },
+        {
+          "title": "详测2018款唐DM（界面新闻）",
+          "url": "https://www.jiemian.com/article/3175256.html"
+        }
+      ],
+      "found": true
+    },
+    "rank": 1
   },
   {
     "sku": "356811592",
@@ -494,46 +112,199 @@
       "fuel_proxy": 3.75,
       "is_suv": true,
       "price": 4.99,
-      "note": "排序：高配＞空间＞低油耗＞便宜＞SUV；卡片无完整参配，config≈年款/配置词/变速箱/涡轮/检测分；空间≈SUV/MPV/7座；油耗≈纯电/混动/排量"
-    }
+      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为全量min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式",
+      "config_norm": 80.27,
+      "space_norm": 100.0,
+      "fuel_norm": 16.67,
+      "price_score": 16.83,
+      "suv_score": 100.0,
+      "total_score": 64.0,
+      "weights": {
+        "config": 0.35,
+        "space": 0.25,
+        "fuel": 0.2,
+        "price": 0.15,
+        "suv": 0.05
+      }
+    },
+    "brand": "长安欧尚",
+    "manufacturer": "长安汽车",
+    "manufacturer_inferred": false,
+    "total_score": 64.0,
+    "evaluation": "配置代理分靠前（年款/配置词/检测分综合较好）；SUV 空间更实用；油耗代理偏低（较大排量燃油）；价格 4.99 万接近预算上限。",
+    "series": "长安欧尚X5 PLUS",
+    "owner_reviews": {
+      "summary": "外观、配置、动力和后排空间评价较好，1.5T日常超车够用；众测综合油耗约8.2–8.4L/100km。常见槽点是低速双离合顿挫、高速胎噪风噪、悬架偏硬及偶发异响/车机卡顿。",
+      "sources": [
+        {
+          "title": "欧尚X5 PLUS懂车帝车主评分",
+          "url": "https://www.dongchedi.com/auto/series/score/6035-79868-S0-3-create_time-1-1"
+        },
+        {
+          "title": "小熊油耗：X5 PLUS 1.5T先锋型众测8.42L",
+          "url": "https://www.xiaoxiongyouhao.com/modelyh/60441.html"
+        },
+        {
+          "title": "小熊油耗：智趣AI版众测8.18L",
+          "url": "https://www.xiaoxiongyouhao.com/modelyh/62773.html"
+        }
+      ],
+      "found": true
+    },
+    "rank": 2
   },
   {
-    "sku": "356994816",
-    "title": "星瑞 2023款 2.0T 尊贵型",
-    "price": 5.39,
-    "price_type": "分期",
-    "prefix": "分期价",
-    "extra": "领券优惠价",
+    "sku": "357170397",
+    "title": "五菱宏光MINIEV 2022款 GAMEBOY 200km 玩咖款 磷酸铁锂",
+    "price": 2.69,
+    "price_type": "标价",
+    "prefix": "标价",
+    "extra": "直降1300元",
     "extras": [
-      "领券优惠价",
-      "分期直减5000元"
+      "直降1300元"
     ],
-    "year": "2022年 / 7.43万公里 / 武汉",
-    "plate_year": 2022,
-    "model_year": 2023,
-    "mileage_wan": 7.43,
+    "year": "2023年 / 1.50万公里 / 武汉",
+    "plate_year": 2023,
+    "model_year": 2022,
+    "mileage_wan": 1.5,
     "city": "武汉",
     "tags": [
-      "性价比极佳",
-      "放心检8.6分"
+      "性价比合理",
+      "放心检8.1分",
+      "原版原漆",
+      "三电质保"
     ],
     "badges": [
       "官方保",
       "直营"
     ],
-    "cover": "https://p3-dcd-sign.byteimg.com/tos-cn-i-f042mdwyw7/2d6d3742bd2742e5a802a6eb27ea4962~tplv-f042mdwyw7-original:800:0.image?lk3s=416a877a&x-expires=1796200578&x-signature=cr9brEly6JWZfuf6AN3DWvBbxcA%3D&psm=motor.sophon.product",
-    "detail_url": "https://m.dcdapp.com/motor/feoffline/usedcar_detail/detail.html?sku_id=356994816&shop_id=118608",
+    "cover": "https://p3-dcd-sign.byteimg.com/tos-cn-i-f042mdwyw7/98c236bfb83b4fc68f91fda486d269f8~tplv-f042mdwyw7-original:800:0.image?lk3s=416a877a&x-expires=1796200601&x-signature=SrMaS7DlZvSEks5EURjV92D2bT4%3D&psm=motor.sophon.product",
+    "detail_url": "https://m.dcdapp.com/motor/feoffline/usedcar_detail/detail.html?sku_id=357170397&shop_id=118608",
     "shop_id": "118608",
-    "image_file": "/workspace/dongchedi-wuhan-shop/images/356994816.jpg",
-    "banner": "分期直减5000元",
+    "image_file": "/workspace/dongchedi-wuhan-shop/images/357170397.jpg",
+    "banner": "",
     "sort_scores": {
-      "config_proxy": 13.86,
-      "space_proxy": 2.0,
-      "fuel_proxy": 2.5,
-      "is_suv": false,
-      "price": 5.39,
-      "note": "排序：高配＞空间＞低油耗＞便宜＞SUV；卡片无完整参配，config≈年款/配置词/变速箱/涡轮/检测分；空间≈SUV/MPV/7座；油耗≈纯电/混动/排量"
-    }
+      "config_proxy": 9.69,
+      "space_proxy": 5.0,
+      "fuel_proxy": 10.0,
+      "is_suv": true,
+      "price": 2.69,
+      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为全量min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式",
+      "config_norm": 50.78,
+      "space_norm": 50.0,
+      "fuel_norm": 100.0,
+      "price_score": 55.17,
+      "suv_score": 100.0,
+      "total_score": 63.5,
+      "weights": {
+        "config": 0.35,
+        "space": 0.25,
+        "fuel": 0.2,
+        "price": 0.15,
+        "suv": 0.05
+      }
+    },
+    "brand": "五菱",
+    "manufacturer": "上汽通用五菱",
+    "manufacturer_inferred": false,
+    "total_score": 63.5,
+    "evaluation": "配置代理分一般；油耗代理友好（纯电/混动或小排量）；里程低。",
+    "series": "五菱宏光MINIEV",
+    "owner_reviews": {
+      "summary": "城市短途代步口碑强：小巧好停、用车成本极低、起步轻快。短板是空间局促、隔音与高速稳定性差，部分车主反馈电池续航衰减或动力中断类问题，不适合当高速/长途主力。",
+      "sources": [
+        {
+          "title": "宏光MINIEV汽车之家口碑",
+          "url": "https://k.autohome.com.cn/5714?pvareaid=6863951"
+        },
+        {
+          "title": "宏光MINIEV车质网口碑",
+          "url": "https://www.12365auto.com/review/2875_0_0_1.shtml"
+        },
+        {
+          "title": "有驾车主点评宏光MINIEV",
+          "url": "https://www.yoojia.com/comment/s-1005714"
+        }
+      ],
+      "found": true
+    },
+    "rank": 3
+  },
+  {
+    "sku": "357219214",
+    "title": "五菱宏光MINIEV 2022款 自在款 磷酸铁锂",
+    "price": 2.09,
+    "price_type": "标价",
+    "prefix": "标价",
+    "extra": "限时物流补贴",
+    "extras": [
+      "限时物流补贴"
+    ],
+    "year": "2023年 / 2.01万公里 / 武汉",
+    "plate_year": 2023,
+    "model_year": 2022,
+    "mileage_wan": 2.01,
+    "city": "武汉",
+    "tags": [
+      "放心检8.4分",
+      "原版原漆",
+      "三电质保"
+    ],
+    "badges": [
+      "官方保",
+      "直营"
+    ],
+    "cover": "https://p3-dcd-sign.byteimg.com/tos-cn-i-f042mdwyw7/a0cf0c37fce8462aad28766b179cc1e9~tplv-resize:800:0.image?lk3s=416a877a&x-expires=1796200601&x-signature=Lk6JvGDetwPTAtPlk9O9x9CvNxs%3D&psm=motor.sophon.product",
+    "detail_url": "https://m.dcdapp.com/motor/feoffline/usedcar_detail/detail.html?sku_id=357219214&shop_id=118608",
+    "shop_id": "118608",
+    "image_file": "/workspace/dongchedi-wuhan-shop/images/357219214.jpg",
+    "banner": "",
+    "sort_scores": {
+      "config_proxy": 8.79,
+      "space_proxy": 5.0,
+      "fuel_proxy": 10.0,
+      "is_suv": true,
+      "price": 2.09,
+      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为全量min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式",
+      "config_norm": 44.68,
+      "space_norm": 50.0,
+      "fuel_norm": 100.0,
+      "price_score": 65.17,
+      "suv_score": 100.0,
+      "total_score": 62.9,
+      "weights": {
+        "config": 0.35,
+        "space": 0.25,
+        "fuel": 0.2,
+        "price": 0.15,
+        "suv": 0.05
+      }
+    },
+    "brand": "五菱",
+    "manufacturer": "上汽通用五菱",
+    "manufacturer_inferred": false,
+    "total_score": 62.9,
+    "evaluation": "配置代理分一般；油耗代理友好（纯电/混动或小排量）。",
+    "series": "五菱宏光MINIEV",
+    "owner_reviews": {
+      "summary": "城市短途代步口碑强：小巧好停、用车成本极低、起步轻快。短板是空间局促、隔音与高速稳定性差，部分车主反馈电池续航衰减或动力中断类问题，不适合当高速/长途主力。",
+      "sources": [
+        {
+          "title": "宏光MINIEV汽车之家口碑",
+          "url": "https://k.autohome.com.cn/5714?pvareaid=6863951"
+        },
+        {
+          "title": "宏光MINIEV车质网口碑",
+          "url": "https://www.12365auto.com/review/2875_0_0_1.shtml"
+        },
+        {
+          "title": "有驾车主点评宏光MINIEV",
+          "url": "https://www.yoojia.com/comment/s-1005714"
+        }
+      ],
+      "found": true
+    },
+    "rank": 4
   },
   {
     "sku": "357230255",
@@ -570,83 +341,505 @@
       "fuel_proxy": 5.0,
       "is_suv": true,
       "price": 3.99,
-      "note": "排序：高配＞空间＞低油耗＞便宜＞SUV；卡片无完整参配，config≈年款/配置词/变速箱/涡轮/检测分；空间≈SUV/MPV/7座；油耗≈纯电/混动/排量"
-    }
+      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为全量min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式",
+      "config_norm": 78.58,
+      "space_norm": 58.33,
+      "fuel_norm": 33.33,
+      "price_score": 33.5,
+      "suv_score": 100.0,
+      "total_score": 58.8,
+      "weights": {
+        "config": 0.35,
+        "space": 0.25,
+        "fuel": 0.2,
+        "price": 0.15,
+        "suv": 0.05
+      }
+    },
+    "brand": "吉利",
+    "manufacturer": "吉利汽车",
+    "manufacturer_inferred": false,
+    "total_score": 58.8,
+    "evaluation": "配置档位偏高（标题含顶配/高配词）；油耗代理偏低（较大排量燃油）；里程低。",
+    "series": "远景X3",
+    "owner_reviews": {
+      "summary": "预算友好的小型SUV，颜值/配置/停车便利性受认可；后排与后备箱偏小、动力偏弱、减震偏硬。CVT尊贵众测约8.1L，手动约7.5–7.6L；车友圈有变速箱顿挫、异响及漆面问题反馈。",
+      "sources": [
+        {
+          "title": "远景X3汽车之家口碑",
+          "url": "https://k.m.autohome.com.cn/spec/50511/"
+        },
+        {
+          "title": "小熊油耗：远景X3车系油耗",
+          "url": "https://www.xiaoxiongyouhao.com/chexiyh/4481.html"
+        },
+        {
+          "title": "远景X3懂车帝车友圈质量讨论",
+          "url": "https://www.dongchedi.com/community/1614/quality"
+        }
+      ],
+      "found": true
+    },
+    "rank": 5
   },
   {
-    "sku": "356938379",
-    "title": "长安UNI-V 2022款 1.5T 尊贵型",
-    "price": 5.69,
-    "price_type": "分期",
-    "prefix": "分期价",
-    "extra": "领券优惠价",
-    "extras": [
-      "领券优惠价",
-      "分期直减3000元"
-    ],
-    "year": "2023年 / 4.17万公里 / 武汉",
-    "plate_year": 2023,
-    "model_year": 2022,
-    "mileage_wan": 4.17,
-    "city": "武汉",
-    "tags": [
-      "性价比合理",
-      "放心检8.3分"
-    ],
-    "badges": [
-      "官方保",
-      "直营"
-    ],
-    "cover": "https://p3-dcd-sign.byteimg.com/tos-cn-i-f042mdwyw7/55525f1368f3487385d647320efbac4f~tplv-resize:800:0.image?lk3s=416a877a&x-expires=1796200581&x-signature=Bk4%2F3F%2BSFIqG5UcNA7udva%2BW%2BWw%3D&psm=motor.sophon.product",
-    "detail_url": "https://m.dcdapp.com/motor/feoffline/usedcar_detail/detail.html?sku_id=356938379&shop_id=118608",
-    "shop_id": "118608",
-    "image_file": "/workspace/dongchedi-wuhan-shop/images/356938379.jpg",
-    "banner": "分期直减3000元",
-    "sort_scores": {
-      "config_proxy": 13.76,
-      "space_proxy": 2.0,
-      "fuel_proxy": 3.75,
-      "is_suv": false,
-      "price": 5.69,
-      "note": "排序：高配＞空间＞低油耗＞便宜＞SUV；卡片无完整参配，config≈年款/配置词/变速箱/涡轮/检测分；空间≈SUV/MPV/7座；油耗≈纯电/混动/排量"
-    }
-  },
-  {
-    "sku": "357156086",
-    "title": "星瑞 2023款 2.0T 尊贵型",
-    "price": 5.49,
+    "sku": "357228241",
+    "title": "秦PLUS DM 2025款 智驾版 DM-i 55KM 领先型",
+    "price": 5.99,
     "price_type": "标价",
     "prefix": "标价",
     "extra": "限时物流补贴",
     "extras": [
       "限时物流补贴"
     ],
-    "year": "2022年 / 9.25万公里 / 武汉",
-    "plate_year": 2022,
-    "model_year": 2023,
-    "mileage_wan": 9.25,
+    "year": "2025年 / 0.82万公里 / 武汉",
+    "plate_year": 2025,
+    "model_year": 2025,
+    "mileage_wan": 0.82,
     "city": "武汉",
     "tags": [
       "性价比极佳",
-      "放心检8.0分"
+      "放心检9.7分",
+      "原版原漆",
+      "三电质保",
+      "准新",
+      "内饰如新"
     ],
     "badges": [
       "官方保",
       "直营"
     ],
-    "cover": "https://p9-dcd-sign.byteimg.com/tos-cn-i-f042mdwyw7/2b683a4cf8584304879493ad8fb501c5~tplv-resize:800:0.image?lk3s=416a877a&x-expires=1796200574&x-signature=hsWqgXYp4H7guhQEDUHbnGCuR50%3D&psm=motor.sophon.product",
-    "detail_url": "https://m.dcdapp.com/motor/feoffline/usedcar_detail/detail.html?sku_id=357156086&shop_id=118608",
+    "cover": "https://p3-dcd-sign.byteimg.com/tos-cn-i-f042mdwyw7/117c1ce31780410299bc521fafb8b607~tplv-f042mdwyw7-original:800:0.image?lk3s=416a877a&x-expires=1796200589&x-signature=Pi1H5qmpZlLqdnROEYTiSGx45gQ%3D&psm=motor.sophon.product",
+    "detail_url": "https://m.dcdapp.com/motor/feoffline/usedcar_detail/detail.html?sku_id=357228241&shop_id=118608",
     "shop_id": "118608",
-    "image_file": "/workspace/dongchedi-wuhan-shop/images/357156086.jpg",
+    "image_file": "/workspace/dongchedi-wuhan-shop/images/357228241.jpg",
     "banner": "",
     "sort_scores": {
-      "config_proxy": 13.65,
-      "space_proxy": 2.0,
-      "fuel_proxy": 2.5,
+      "config_proxy": 16.95,
+      "space_proxy": 3.5,
+      "fuel_proxy": 9.0,
       "is_suv": false,
-      "price": 5.49,
-      "note": "排序：高配＞空间＞低油耗＞便宜＞SUV；卡片无完整参配，config≈年款/配置词/变速箱/涡轮/检测分；空间≈SUV/MPV/7座；油耗≈纯电/混动/排量"
-    }
+      "price": 5.99,
+      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为全量min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式",
+      "config_norm": 100.0,
+      "space_norm": 25.0,
+      "fuel_norm": 86.67,
+      "price_score": 0.17,
+      "suv_score": 0.0,
+      "total_score": 58.6,
+      "weights": {
+        "config": 0.35,
+        "space": 0.25,
+        "fuel": 0.2,
+        "price": 0.15,
+        "suv": 0.05
+      }
+    },
+    "brand": "秦PLUS",
+    "manufacturer": "比亚迪",
+    "manufacturer_inferred": false,
+    "total_score": 58.6,
+    "evaluation": "配置档位偏高（标题含顶配/高配词）；空间偏家用轿车级；油耗代理友好（纯电/混动或小排量）；价格 5.99 万接近预算上限。里程低；准新车龄。",
+    "series": "秦PLUS DM",
+    "owner_reviews": {
+      "summary": "亏电油耗多在3.7–4.0L/100km，市区电驱平顺、用车成本低，是高频好评点。通病是前轮吃胎偏磨（数万公里常见），另有高速风噪胎噪、悬架偏硬、车漆偏薄；长期车主称电池衰减不明显。",
+      "sources": [
+        {
+          "title": "秦PLUS汽车之家口碑",
+          "url": "https://k.autohome.com.cn/5964/stopselling/ge5/"
+        },
+        {
+          "title": "秦PLUS DM-i车主油耗挑战分享（爱卡）",
+          "url": "https://aikahao.xcar.com.cn/item/1666051.html"
+        },
+        {
+          "title": "用车4年：电池与前轮吃胎（腾讯新闻）",
+          "url": "https://news.qq.com/rain/a/20260207A052EA00"
+        }
+      ],
+      "found": true
+    },
+    "rank": 6
+  },
+  {
+    "sku": "357052729",
+    "title": "宋Pro DM 2024款 DM-i 荣耀版 71km 领航型",
+    "price": 5.99,
+    "price_type": "分期",
+    "prefix": "分期价",
+    "extra": "领券优惠价",
+    "extras": [
+      "领券优惠价",
+      "分期直减4000元"
+    ],
+    "year": "2024年 / 6.05万公里 / 武汉",
+    "plate_year": 2024,
+    "model_year": 2024,
+    "mileage_wan": 6.05,
+    "city": "武汉",
+    "tags": [
+      "性价比很棒",
+      "放心检7.4分",
+      "三电质保",
+      "电池健康"
+    ],
+    "badges": [
+      "官方保",
+      "直营"
+    ],
+    "cover": "https://p3-dcd-sign.byteimg.com/tos-cn-i-f042mdwyw7/ba128ed249dc410ab3a0baccd2feccdf~tplv-resize:800:0.image?lk3s=416a877a&x-expires=1796200581&x-signature=jKvNo%2FgcCInUp9bgQZBU%2Bgl25oY%3D&psm=motor.sophon.product",
+    "detail_url": "https://m.dcdapp.com/motor/feoffline/usedcar_detail/detail.html?sku_id=357052729&shop_id=118608",
+    "shop_id": "118608",
+    "image_file": "/workspace/dongchedi-wuhan-shop/images/357052729.jpg",
+    "banner": "分期直减4000元",
+    "sort_scores": {
+      "config_proxy": 12.19,
+      "space_proxy": 5.0,
+      "fuel_proxy": 9.0,
+      "is_suv": true,
+      "price": 5.99,
+      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为全量min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式",
+      "config_norm": 67.73,
+      "space_norm": 50.0,
+      "fuel_norm": 86.67,
+      "price_score": 0.17,
+      "suv_score": 100.0,
+      "total_score": 58.6,
+      "weights": {
+        "config": 0.35,
+        "space": 0.25,
+        "fuel": 0.2,
+        "price": 0.15,
+        "suv": 0.05
+      }
+    },
+    "brand": "宋",
+    "manufacturer": "比亚迪",
+    "manufacturer_inferred": false,
+    "total_score": 58.6,
+    "evaluation": "配置代理分一般；油耗代理友好（纯电/混动或小排量）；价格 5.99 万接近预算上限；准新车龄。",
+    "series": "宋Pro DM",
+    "owner_reviews": {
+      "summary": "家用向插混SUV：空间配置够用、市区电驱省油省心；有家充时成本优势明显。槽点集中在高速风噪胎噪、内饰/底盘异响和车机偶发卡顿；亏电高速油耗约5–7L，冬季更高。",
+      "sources": [
+        {
+          "title": "宋Pro DM懂车帝能耗分享",
+          "url": "https://www.dongchedi.com/community/3504/energy"
+        },
+        {
+          "title": "宋Pro DM-i用车分享（有驾）",
+          "url": "https://www.yoojia.com/article/9145557309582282834.html"
+        },
+        {
+          "title": "宋Pro DMI高速油耗实测（汽车之家论坛）",
+          "url": "https://club.m.autohome.com.cn/bbs/thread/8067cb732e5bcdce/101901028-1.html"
+        }
+      ],
+      "found": true
+    },
+    "rank": 7
+  },
+  {
+    "sku": "356579334",
+    "title": "长安CS75 PLUS 2020款 2.0T 自动旗舰型",
+    "price": 4.97,
+    "price_type": "分期",
+    "prefix": "分期价",
+    "extra": "领券优惠价",
+    "extras": [
+      "领券优惠价",
+      "分期直减7000元"
+    ],
+    "year": "2020年 / 4.68万公里 / 武汉",
+    "plate_year": 2020,
+    "model_year": 2020,
+    "mileage_wan": 4.68,
+    "city": "武汉",
+    "tags": [
+      "性价比极佳",
+      "放心检8.6分"
+    ],
+    "badges": [
+      "官方保",
+      "直营"
+    ],
+    "cover": "https://p3-dcd-sign.byteimg.com/tos-cn-i-f042mdwyw7/66bebce72fe146a08a1730c23dca5e46~tplv-resize:800:0.image?lk3s=416a877a&x-expires=1796200581&x-signature=mvqWcVuYMhsTUnd1Od%2FGOtRNM3Y%3D&psm=motor.sophon.product",
+    "detail_url": "https://m.dcdapp.com/motor/feoffline/usedcar_detail/detail.html?sku_id=356579334&shop_id=118608",
+    "shop_id": "118608",
+    "image_file": "/workspace/dongchedi-wuhan-shop/images/356579334.jpg",
+    "banner": "分期直减7000元",
+    "sort_scores": {
+      "config_proxy": 14.91,
+      "space_proxy": 6.5,
+      "fuel_proxy": 2.5,
+      "is_suv": true,
+      "price": 4.97,
+      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为全量min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式",
+      "config_norm": 86.17,
+      "space_norm": 75.0,
+      "fuel_norm": 0.0,
+      "price_score": 17.17,
+      "suv_score": 100.0,
+      "total_score": 56.5,
+      "weights": {
+        "config": 0.35,
+        "space": 0.25,
+        "fuel": 0.2,
+        "price": 0.15,
+        "suv": 0.05
+      }
+    },
+    "brand": "长安",
+    "manufacturer": "长安汽车",
+    "manufacturer_inferred": false,
+    "total_score": 56.5,
+    "evaluation": "配置档位偏高（标题含顶配/高配词）；SUV 空间更实用；油耗代理偏低（较大排量燃油）；价格 4.97 万接近预算上限。",
+    "series": "长安CS75 PLUS",
+    "owner_reviews": {
+      "summary": "外观内饰空间配置与动力认可度高，是销量口碑两旺的紧凑SUV；1.5T综合约9L、2.0T更高。老款集中槽点：车机卡顿/影像模糊、内饰异响、电瓶亏电及偶发变速箱顿挫，入手建议路试车机与换挡。",
+      "sources": [
+        {
+          "title": "小熊油耗：CS75 PLUS车系油耗",
+          "url": "https://www.xiaoxiongyouhao.com/chexiyh/5179.html"
+        },
+        {
+          "title": "CS75 PLUS车机卡顿相关报道（中国经济网）",
+          "url": "https://finance.ce.cn/stock/gsgdbd/202201/10/t20220110_37242975.shtml"
+        },
+        {
+          "title": "车质网CS75 PLUS投诉汇总",
+          "url": "https://www.12365auto.com/series/c-2601-52-0.shtml"
+        }
+      ],
+      "found": true
+    },
+    "rank": 8
+  },
+  {
+    "sku": "357168649",
+    "title": "长安UNI-T 2020款 1.5T 旗舰型",
+    "price": 4.99,
+    "price_type": "标价",
+    "prefix": "标价",
+    "extra": "限时物流补贴",
+    "extras": [
+      "限时物流补贴"
+    ],
+    "year": "2021年 / 7.17万公里 / 武汉",
+    "plate_year": 2021,
+    "model_year": 2020,
+    "mileage_wan": 7.17,
+    "city": "武汉",
+    "tags": [
+      "性价比极佳",
+      "放心检8.2分",
+      "无钣金"
+    ],
+    "badges": [
+      "官方保",
+      "直营"
+    ],
+    "cover": "https://p9-dcd-sign.byteimg.com/tos-cn-i-f042mdwyw7/a315e6afdfe0443993bec5bd31b77abd~tplv-resize:800:0.image?lk3s=416a877a&x-expires=1796200593&x-signature=a5kEJtEI69SYdKcKs3pM6ZcZK2o%3D&psm=motor.sophon.product",
+    "detail_url": "https://m.dcdapp.com/motor/feoffline/usedcar_detail/detail.html?sku_id=357168649&shop_id=118608",
+    "shop_id": "118608",
+    "image_file": "/workspace/dongchedi-wuhan-shop/images/357168649.jpg",
+    "banner": "",
+    "sort_scores": {
+      "config_proxy": 14.92,
+      "space_proxy": 5.5,
+      "fuel_proxy": 3.75,
+      "is_suv": true,
+      "price": 4.99,
+      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为全量min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式",
+      "config_norm": 86.24,
+      "space_norm": 58.33,
+      "fuel_norm": 16.67,
+      "price_score": 16.83,
+      "suv_score": 100.0,
+      "total_score": 55.6,
+      "weights": {
+        "config": 0.35,
+        "space": 0.25,
+        "fuel": 0.2,
+        "price": 0.15,
+        "suv": 0.05
+      }
+    },
+    "brand": "长安UNI",
+    "manufacturer": "长安汽车",
+    "manufacturer_inferred": false,
+    "total_score": 55.6,
+    "evaluation": "配置档位偏高（标题含顶配/高配词）；油耗代理偏低（较大排量燃油）；价格 4.99 万接近预算上限。",
+    "series": "长安UNI-T",
+    "owner_reviews": {
+      "summary": "外观动力配置操控好评多，但溜背后排/后备箱偏小、高速噪音明显；早期车机卡顿与双离合顿挫/漏油投诉较多。众测综合油耗约8.4–9.4L；二代体验有改善，空间仍是短板。",
+      "sources": [
+        {
+          "title": "UNI-T车质网口碑",
+          "url": "https://www.12365auto.com/review/2848_0_0_5.shtml"
+        },
+        {
+          "title": "小熊油耗：UNI-T车系油耗",
+          "url": "https://www.xiaoxiongyouhao.com/chexiyh/5565.html"
+        },
+        {
+          "title": "凯睿赛驰：UNI-T质量表现研究",
+          "url": "http://www.carresearch.cn/res/20230316/513.shtml"
+        }
+      ],
+      "found": true
+    },
+    "rank": 9
+  },
+  {
+    "sku": "357149711",
+    "title": "远景X6 2021款 PRO 1.4T 自动尊贵型",
+    "price": 4.89,
+    "price_type": "标价",
+    "prefix": "标价",
+    "extra": "限时物流补贴",
+    "extras": [
+      "限时物流补贴"
+    ],
+    "year": "2022年 / 6.39万公里 / 武汉",
+    "plate_year": 2022,
+    "model_year": 2021,
+    "mileage_wan": 6.39,
+    "city": "武汉",
+    "tags": [
+      "性价比很棒",
+      "放心检7.8分"
+    ],
+    "badges": [
+      "官方保",
+      "直营"
+    ],
+    "cover": "https://p9-dcd-sign.byteimg.com/tos-cn-i-f042mdwyw7/42f7afa292a1477fbc629b59ca2eda63~tplv-resize:800:0.image?lk3s=416a877a&x-expires=1796200596&x-signature=nw9YHqkoAyf%2FY9ycdPEUQmWvdvw%3D&psm=motor.sophon.product",
+    "detail_url": "https://m.dcdapp.com/motor/feoffline/usedcar_detail/detail.html?sku_id=357149711&shop_id=118608",
+    "shop_id": "118608",
+    "image_file": "/workspace/dongchedi-wuhan-shop/images/357149711.jpg",
+    "banner": "",
+    "sort_scores": {
+      "config_proxy": 14.23,
+      "space_proxy": 5.5,
+      "fuel_proxy": 4.0,
+      "is_suv": true,
+      "price": 4.89,
+      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为全量min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式",
+      "config_norm": 81.56,
+      "space_norm": 58.33,
+      "fuel_norm": 20.0,
+      "price_score": 18.5,
+      "suv_score": 100.0,
+      "total_score": 54.9,
+      "weights": {
+        "config": 0.35,
+        "space": 0.25,
+        "fuel": 0.2,
+        "price": 0.15,
+        "suv": 0.05
+      }
+    },
+    "brand": "吉利",
+    "manufacturer": "吉利汽车",
+    "manufacturer_inferred": false,
+    "total_score": 54.9,
+    "evaluation": "配置档位偏高（标题含顶配/高配词）；油耗代理偏低（较大排量燃油）；价格 4.89 万接近预算上限。",
+    "series": "远景X6",
+    "owner_reviews": {
+      "summary": "空间大、配置多、性价比是主标签，家用代步够用；1.4T起步偏肉、高速隔音一般、车机体验一般。手动众测约7.6L，自动尊贵约9L左右；市区拥堵短途油耗波动大。",
+      "sources": [
+        {
+          "title": "21款远景X6PRO用车半年感受（汽车之家论坛）",
+          "url": "https://club.m.autohome.com.cn/bbs/thread/17d4217961aa17dd/107899741-1.html"
+        },
+        {
+          "title": "小熊油耗：远景X6手动豪华众测7.61L",
+          "url": "https://www.xiaoxiongyouhao.com/modelyh/53241.html"
+        },
+        {
+          "title": "搜狐汽车远景X6车主口碑",
+          "url": "https://db.m.auto.sohu.com/model_5091/dianping"
+        }
+      ],
+      "found": true
+    },
+    "rank": 10
+  },
+  {
+    "sku": "357149730",
+    "title": "长安UNI-T 2023款 第二代 1.5T 旗舰型",
+    "price": 5.99,
+    "price_type": "标价",
+    "prefix": "标价",
+    "extra": "直降2000元",
+    "extras": [
+      "直降2000元"
+    ],
+    "year": "2023年 / 2.72万公里 / 武汉",
+    "plate_year": 2023,
+    "model_year": 2023,
+    "mileage_wan": 2.72,
+    "city": "武汉",
+    "tags": [
+      "性价比合理",
+      "放心检8.5分"
+    ],
+    "badges": [
+      "官方保",
+      "直营"
+    ],
+    "cover": "https://p3-dcd-sign.byteimg.com/tos-cn-i-f042mdwyw7/98ede7c65d0b409bb8a35ba3c9fab358~tplv-resize:800:0.image?lk3s=416a877a&x-expires=1796200585&x-signature=I8mZ%2Fv2tSrN9U9qjwZmDCk%2F2LvA%3D&psm=motor.sophon.product",
+    "detail_url": "https://m.dcdapp.com/motor/feoffline/usedcar_detail/detail.html?sku_id=357149730&shop_id=118608",
+    "shop_id": "118608",
+    "image_file": "/workspace/dongchedi-wuhan-shop/images/357149730.jpg",
+    "banner": "",
+    "sort_scores": {
+      "config_proxy": 15.33,
+      "space_proxy": 5.5,
+      "fuel_proxy": 3.75,
+      "is_suv": true,
+      "price": 5.99,
+      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为全量min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式",
+      "config_norm": 89.02,
+      "space_norm": 58.33,
+      "fuel_norm": 16.67,
+      "price_score": 0.17,
+      "suv_score": 100.0,
+      "total_score": 54.1,
+      "weights": {
+        "config": 0.35,
+        "space": 0.25,
+        "fuel": 0.2,
+        "price": 0.15,
+        "suv": 0.05
+      }
+    },
+    "brand": "长安UNI",
+    "manufacturer": "长安汽车",
+    "manufacturer_inferred": false,
+    "total_score": 54.1,
+    "evaluation": "配置档位偏高（标题含顶配/高配词）；油耗代理偏低（较大排量燃油）；价格 5.99 万接近预算上限。",
+    "series": "长安UNI-T",
+    "owner_reviews": {
+      "summary": "外观动力配置操控好评多，但溜背后排/后备箱偏小、高速噪音明显；早期车机卡顿与双离合顿挫/漏油投诉较多。众测综合油耗约8.4–9.4L；二代体验有改善，空间仍是短板。",
+      "sources": [
+        {
+          "title": "UNI-T车质网口碑",
+          "url": "https://www.12365auto.com/review/2848_0_0_5.shtml"
+        },
+        {
+          "title": "小熊油耗：UNI-T车系油耗",
+          "url": "https://www.xiaoxiongyouhao.com/chexiyh/5565.html"
+        },
+        {
+          "title": "凯睿赛驰：UNI-T质量表现研究",
+          "url": "http://www.carresearch.cn/res/20230316/513.shtml"
+        }
+      ],
+      "found": true
+    },
+    "rank": 11
   },
   {
     "sku": "357211014",
@@ -685,46 +878,402 @@
       "fuel_proxy": 9.0,
       "is_suv": false,
       "price": 4.69,
-      "note": "排序：高配＞空间＞低油耗＞便宜＞SUV；卡片无完整参配，config≈年款/配置词/变速箱/涡轮/检测分；空间≈SUV/MPV/7座；油耗≈纯电/混动/排量"
-    }
+      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为全量min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式",
+      "config_norm": 77.42,
+      "space_norm": 25.0,
+      "fuel_norm": 86.67,
+      "price_score": 21.83,
+      "suv_score": 0.0,
+      "total_score": 54.0,
+      "weights": {
+        "config": 0.35,
+        "space": 0.25,
+        "fuel": 0.2,
+        "price": 0.15,
+        "suv": 0.05
+      }
+    },
+    "brand": "秦PLUS",
+    "manufacturer": "比亚迪",
+    "manufacturer_inferred": false,
+    "total_score": 54.0,
+    "evaluation": "配置代理分靠前（年款/配置词/检测分综合较好）；空间偏家用轿车级；油耗代理友好（纯电/混动或小排量）；价格 4.69 万接近预算上限。准新车龄。",
+    "series": "秦PLUS DM",
+    "owner_reviews": {
+      "summary": "亏电油耗多在3.7–4.0L/100km，市区电驱平顺、用车成本低，是高频好评点。通病是前轮吃胎偏磨（数万公里常见），另有高速风噪胎噪、悬架偏硬、车漆偏薄；长期车主称电池衰减不明显。",
+      "sources": [
+        {
+          "title": "秦PLUS汽车之家口碑",
+          "url": "https://k.autohome.com.cn/5964/stopselling/ge5/"
+        },
+        {
+          "title": "秦PLUS DM-i车主油耗挑战分享（爱卡）",
+          "url": "https://aikahao.xcar.com.cn/item/1666051.html"
+        },
+        {
+          "title": "用车4年：电池与前轮吃胎（腾讯新闻）",
+          "url": "https://news.qq.com/rain/a/20260207A052EA00"
+        }
+      ],
+      "found": true
+    },
+    "rank": 12
   },
   {
-    "sku": "357252968",
-    "title": "伊兰特 2021款 1.5L CVT LUX尊贵版",
-    "price": 4.99,
+    "sku": "357247792",
+    "title": "长安CS75 PLUS 2021款 1.5T 自动豪华型",
+    "price": 5.39,
     "price_type": "标价",
     "prefix": "标价",
     "extra": "限时物流补贴",
     "extras": [
       "限时物流补贴"
     ],
-    "year": "2021年 / 6.89万公里 / 武汉",
-    "plate_year": 2021,
+    "year": "2020年 / 3.37万公里 / 武汉",
+    "plate_year": 2020,
     "model_year": 2021,
-    "mileage_wan": 6.89,
+    "mileage_wan": 3.37,
     "city": "武汉",
     "tags": [
-      "性价比很棒",
-      "放心检8.2分",
-      "无钣金"
+      "性价比合理",
+      "放心检8.0分",
+      "原版原漆"
     ],
     "badges": [
       "官方保",
       "直营"
     ],
-    "cover": "https://p3-dcd-sign.byteimg.com/tos-cn-i-f042mdwyw7/19de64ad408f4012aae5cf5f472c96ee~tplv-resize:800:0.image?lk3s=416a877a&x-expires=1796200574&x-signature=XkO8YeOK4muLJ7m8xkMl4NJKq7M%3D&psm=motor.sophon.product",
-    "detail_url": "https://m.dcdapp.com/motor/feoffline/usedcar_detail/detail.html?sku_id=357252968&shop_id=118608",
+    "cover": "https://p3-dcd-sign.byteimg.com/tos-cn-i-f042mdwyw7/e4ac3c87384946b5930671d9145efb40~tplv-f042mdwyw7-original:800:0.image?lk3s=416a877a&x-expires=1796200593&x-signature=CF4dYznXzePaCbRKlxVbUPkBZJs%3D&psm=motor.sophon.product",
+    "detail_url": "https://m.dcdapp.com/motor/feoffline/usedcar_detail/detail.html?sku_id=357247792&shop_id=118608",
     "shop_id": "118608",
-    "image_file": "/workspace/dongchedi-wuhan-shop/images/357252968.jpg",
+    "image_file": "/workspace/dongchedi-wuhan-shop/images/357247792.jpg",
     "banner": "",
     "sort_scores": {
-      "config_proxy": 13.62,
+      "config_proxy": 12.55,
+      "space_proxy": 6.5,
+      "fuel_proxy": 3.75,
+      "is_suv": true,
+      "price": 5.39,
+      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为全量min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式",
+      "config_norm": 70.17,
+      "space_norm": 75.0,
+      "fuel_norm": 16.67,
+      "price_score": 10.17,
+      "suv_score": 100.0,
+      "total_score": 53.2,
+      "weights": {
+        "config": 0.35,
+        "space": 0.25,
+        "fuel": 0.2,
+        "price": 0.15,
+        "suv": 0.05
+      }
+    },
+    "brand": "长安",
+    "manufacturer": "长安汽车",
+    "manufacturer_inferred": false,
+    "total_score": 53.2,
+    "evaluation": "配置档位偏高（标题含顶配/高配词）；SUV 空间更实用；油耗代理偏低（较大排量燃油）；价格 5.39 万接近预算上限。",
+    "series": "长安CS75 PLUS",
+    "owner_reviews": {
+      "summary": "外观内饰空间配置与动力认可度高，是销量口碑两旺的紧凑SUV；1.5T综合约9L、2.0T更高。老款集中槽点：车机卡顿/影像模糊、内饰异响、电瓶亏电及偶发变速箱顿挫，入手建议路试车机与换挡。",
+      "sources": [
+        {
+          "title": "小熊油耗：CS75 PLUS车系油耗",
+          "url": "https://www.xiaoxiongyouhao.com/chexiyh/5179.html"
+        },
+        {
+          "title": "CS75 PLUS车机卡顿相关报道（中国经济网）",
+          "url": "https://finance.ce.cn/stock/gsgdbd/202201/10/t20220110_37242975.shtml"
+        },
+        {
+          "title": "车质网CS75 PLUS投诉汇总",
+          "url": "https://www.12365auto.com/series/c-2601-52-0.shtml"
+        }
+      ],
+      "found": true
+    },
+    "rank": 13
+  },
+  {
+    "sku": "356933838",
+    "title": "帝豪GS 2018款 领潮版 1.4T 自动臻尚智联型",
+    "price": 2.49,
+    "price_type": "分期",
+    "prefix": "分期价",
+    "extra": "领券优惠价",
+    "extras": [
+      "领券优惠价",
+      "分期直减2000元"
+    ],
+    "year": "2018年 / 8.65万公里 / 武汉",
+    "plate_year": 2018,
+    "model_year": 2018,
+    "mileage_wan": 8.65,
+    "city": "武汉",
+    "tags": [
+      "性价比很棒",
+      "放心检8.1分",
+      "原版原漆"
+    ],
+    "badges": [
+      "官方保",
+      "直营"
+    ],
+    "cover": "https://p3-dcd-sign.byteimg.com/tos-cn-i-f042mdwyw7/13d2aa542b894078924fcc17c0f5001f~tplv-f042mdwyw7-original:800:0.image?lk3s=416a877a&x-expires=1796200596&x-signature=wQFAHoeZfbWYSF29Hlh3%2FQLM1dw%3D&psm=motor.sophon.product",
+    "detail_url": "https://m.dcdapp.com/motor/feoffline/usedcar_detail/detail.html?sku_id=356933838&shop_id=118608",
+    "shop_id": "118608",
+    "image_file": "/workspace/dongchedi-wuhan-shop/images/356933838.jpg",
+    "banner": "分期直减2000元",
+    "sort_scores": {
+      "config_proxy": 10.94,
+      "space_proxy": 5.5,
+      "fuel_proxy": 4.0,
+      "is_suv": true,
+      "price": 2.49,
+      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为全量min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式",
+      "config_norm": 59.25,
+      "space_norm": 58.33,
+      "fuel_norm": 20.0,
+      "price_score": 58.5,
+      "suv_score": 100.0,
+      "total_score": 53.1,
+      "weights": {
+        "config": 0.35,
+        "space": 0.25,
+        "fuel": 0.2,
+        "price": 0.15,
+        "suv": 0.05
+      }
+    },
+    "brand": "吉利",
+    "manufacturer": "吉利汽车",
+    "manufacturer_inferred": false,
+    "total_score": 53.1,
+    "evaluation": "配置代理分一般；油耗代理偏低（较大排量燃油）；里程偏高需留意。",
+    "series": "帝豪GS",
+    "owner_reviews": {
+      "summary": "外观内饰配置性价比受认可，适合预算优先；后备箱小、隔音一般、动力偏肉。1.4T自动众测约8L；部分长里程车主提到干式双离合顿挫/故障与锈蚀，也有数万公里无大修案例，二手需重点试驾变速箱。",
+      "sources": [
+        {
+          "title": "小熊油耗：帝豪GS车系油耗",
+          "url": "https://www.xiaoxiongyouhao.com/chexiyh/3465.html"
+        },
+        {
+          "title": "帝豪GS车质网口碑",
+          "url": "https://www.12365auto.com/review/1915_0_0_1.shtml"
+        },
+        {
+          "title": "帝豪GS懂车帝口碑评分",
+          "url": "https://www.dongchedi.com/auto/series/score/740-x-S0-P17-x-1-x"
+        }
+      ],
+      "found": true
+    },
+    "rank": 14
+  },
+  {
+    "sku": "357301752",
+    "title": "哈弗H6 2021款 第三代 2.0T 自动两驱Max版",
+    "price": 5.19,
+    "price_type": "标价",
+    "prefix": "标价",
+    "extra": "限时物流补贴",
+    "extras": [
+      "限时物流补贴"
+    ],
+    "year": "2021年 / 2.49万公里 / 武汉",
+    "plate_year": 2021,
+    "model_year": 2021,
+    "mileage_wan": 2.49,
+    "city": "武汉",
+    "tags": [
+      "性价比极佳",
+      "放心检8.1分"
+    ],
+    "badges": [
+      "官方保",
+      "直营"
+    ],
+    "cover": "https://p3-dcd-sign.byteimg.com/tos-cn-i-f042mdwyw7/fbd1eab4a6a34016aee47d6148356ea9~tplv-f042mdwyw7-original:800:0.image?lk3s=416a877a&x-expires=1796200581&x-signature=x90h7kMzoc0%2FOPljDRYLwdSIGGQ%3D&psm=motor.sophon.product",
+    "detail_url": "https://m.dcdapp.com/motor/feoffline/usedcar_detail/detail.html?sku_id=357301752&shop_id=118608",
+    "shop_id": "118608",
+    "image_file": "/workspace/dongchedi-wuhan-shop/images/357301752.jpg",
+    "banner": "",
+    "sort_scores": {
+      "config_proxy": 15.28,
+      "space_proxy": 5.5,
+      "fuel_proxy": 2.5,
+      "is_suv": true,
+      "price": 5.19,
+      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为全量min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式",
+      "config_norm": 88.68,
+      "space_norm": 58.33,
+      "fuel_norm": 0.0,
+      "price_score": 13.5,
+      "suv_score": 100.0,
+      "total_score": 52.6,
+      "weights": {
+        "config": 0.35,
+        "space": 0.25,
+        "fuel": 0.2,
+        "price": 0.15,
+        "suv": 0.05
+      }
+    },
+    "brand": "哈弗",
+    "manufacturer": "长城汽车",
+    "manufacturer_inferred": false,
+    "total_score": 52.6,
+    "evaluation": "配置档位偏高（标题含顶配/高配词）；油耗代理偏低（较大排量燃油）；价格 5.19 万接近预算上限。",
+    "series": "哈弗H6",
+    "owner_reviews": {
+      "summary": "第三代2.0T Max：空间动力配置均衡，两驱Max众测综合约9.2L/100km。槽点含高速噪音、音响/车机体验一般；需警惕烧机油、电瓶亏电、异响及OTA后换挡异常等投诉，实车建议查机油消耗与电瓶状态。",
+      "sources": [
+        {
+          "title": "第三代H6 2.0T Max车主口碑（汽车之家）",
+          "url": "https://k.autohome.com.cn/detail/view_01frx3er636gr3ge9s6csg0000.html"
+        },
+        {
+          "title": "小熊油耗：第三代H6两驱Max众测9.20L",
+          "url": "https://www.xiaoxiongyouhao.com/modelyh/49472.html"
+        },
+        {
+          "title": "车质网哈弗H6投诉汇总",
+          "url": "https://www.12365auto.com/series/c-199-76-0.shtml"
+        }
+      ],
+      "found": true
+    },
+    "rank": 15
+  },
+  {
+    "sku": "356845779",
+    "title": "海鸥 2025款 智驾版 305KM 活力版",
+    "price": 5.09,
+    "price_type": "标价",
+    "prefix": "标价",
+    "extra": "限时物流补贴",
+    "extras": [
+      "限时物流补贴"
+    ],
+    "year": "2025年 / 4.89万公里 / 武汉",
+    "plate_year": 2025,
+    "model_year": 2025,
+    "mileage_wan": 4.89,
+    "city": "武汉",
+    "tags": [
+      "性价比合理",
+      "放心检9.3分",
+      "原版原漆",
+      "三电质保",
+      "电池健康"
+    ],
+    "badges": [
+      "官方保",
+      "直营"
+    ],
+    "cover": "https://p9-dcd-sign.byteimg.com/tos-cn-i-f042mdwyw7/d7b6abd168294b568fbe0b3d43e4d126~tplv-f042mdwyw7-original:800:0.image?lk3s=416a877a&x-expires=1796200596&x-signature=pheiPXQ5xR1nMT76FEO5Mt74dGs%3D&psm=motor.sophon.product",
+    "detail_url": "https://m.dcdapp.com/motor/feoffline/usedcar_detail/detail.html?sku_id=356845779&shop_id=118608",
+    "shop_id": "118608",
+    "image_file": "/workspace/dongchedi-wuhan-shop/images/356845779.jpg",
+    "banner": "",
+    "sort_scores": {
+      "config_proxy": 15.0,
       "space_proxy": 2.0,
-      "fuel_proxy": 5.0,
+      "fuel_proxy": 10.0,
       "is_suv": false,
-      "price": 4.99,
-      "note": "排序：高配＞空间＞低油耗＞便宜＞SUV；卡片无完整参配，config≈年款/配置词/变速箱/涡轮/检测分；空间≈SUV/MPV/7座；油耗≈纯电/混动/排量"
-    }
+      "price": 5.09,
+      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为全量min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式",
+      "config_norm": 86.78,
+      "space_norm": 0.0,
+      "fuel_norm": 100.0,
+      "price_score": 15.17,
+      "suv_score": 0.0,
+      "total_score": 52.6,
+      "weights": {
+        "config": 0.35,
+        "space": 0.25,
+        "fuel": 0.2,
+        "price": 0.15,
+        "suv": 0.05
+      }
+    },
+    "brand": "海鸥",
+    "manufacturer": "比亚迪",
+    "manufacturer_inferred": false,
+    "total_score": 52.6,
+    "evaluation": "配置档位偏高（标题含顶配/高配词）；空间偏家用轿车级；油耗代理友好（纯电/混动或小排量）；价格 5.09 万接近预算上限。准新车龄。",
+    "series": "海鸥",
+    "owner_reviews": {
+      "summary": "短名单外未逐车检索口碑",
+      "sources": [],
+      "found": false
+    },
+    "rank": 16
+  },
+  {
+    "sku": "356892961",
+    "title": "帝豪GS 2018款 领潮版 1.4T 自动领尚智联型",
+    "price": 2.59,
+    "price_type": "标价",
+    "prefix": "标价",
+    "extra": "直降1000元",
+    "extras": [
+      "直降1000元"
+    ],
+    "year": "2018年 / 8.53万公里 / 武汉",
+    "plate_year": 2018,
+    "model_year": 2018,
+    "mileage_wan": 8.53,
+    "city": "武汉",
+    "tags": [
+      "性价比很棒",
+      "放心检7.5分",
+      "原版原漆"
+    ],
+    "badges": [
+      "官方保",
+      "直营"
+    ],
+    "cover": "https://p9-dcd-sign.byteimg.com/tos-cn-i-f042mdwyw7/eab08308b7c441ae95f154611d8c3b2f~tplv-resize:800:0.image?lk3s=416a877a&x-expires=1796200596&x-signature=lZMct3sOwtg8vIRGhX8GjhOenJs%3D&psm=motor.sophon.product",
+    "detail_url": "https://m.dcdapp.com/motor/feoffline/usedcar_detail/detail.html?sku_id=356892961&shop_id=118608",
+    "shop_id": "118608",
+    "image_file": "/workspace/dongchedi-wuhan-shop/images/356892961.jpg",
+    "banner": "",
+    "sort_scores": {
+      "config_proxy": 10.73,
+      "space_proxy": 5.5,
+      "fuel_proxy": 4.0,
+      "is_suv": true,
+      "price": 2.59,
+      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为全量min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式",
+      "config_norm": 57.83,
+      "space_norm": 58.33,
+      "fuel_norm": 20.0,
+      "price_score": 56.83,
+      "suv_score": 100.0,
+      "total_score": 52.3,
+      "weights": {
+        "config": 0.35,
+        "space": 0.25,
+        "fuel": 0.2,
+        "price": 0.15,
+        "suv": 0.05
+      }
+    },
+    "brand": "吉利",
+    "manufacturer": "吉利汽车",
+    "manufacturer_inferred": false,
+    "total_score": 52.3,
+    "evaluation": "配置代理分一般；油耗代理偏低（较大排量燃油）；里程偏高需留意。",
+    "series": "帝豪GS",
+    "owner_reviews": {
+      "summary": "短名单外未逐车检索口碑",
+      "sources": [],
+      "found": false
+    },
+    "rank": 17
   },
   {
     "sku": "356773034",
@@ -765,85 +1314,658 @@
       "fuel_proxy": 9.0,
       "is_suv": false,
       "price": 4.89,
-      "note": "排序：高配＞空间＞低油耗＞便宜＞SUV；卡片无完整参配，config≈年款/配置词/变速箱/涡轮/检测分；空间≈SUV/MPV/7座；油耗≈纯电/混动/排量"
-    }
+      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为全量min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式",
+      "config_norm": 72.27,
+      "space_norm": 25.0,
+      "fuel_norm": 86.67,
+      "price_score": 18.5,
+      "suv_score": 0.0,
+      "total_score": 51.7,
+      "weights": {
+        "config": 0.35,
+        "space": 0.25,
+        "fuel": 0.2,
+        "price": 0.15,
+        "suv": 0.05
+      }
+    },
+    "brand": "秦PLUS",
+    "manufacturer": "比亚迪",
+    "manufacturer_inferred": false,
+    "total_score": 51.7,
+    "evaluation": "配置代理分靠前（年款/配置词/检测分综合较好）；空间偏家用轿车级；油耗代理友好（纯电/混动或小排量）；价格 4.89 万接近预算上限。",
+    "series": "秦PLUS DM",
+    "owner_reviews": {
+      "summary": "短名单外未逐车检索口碑",
+      "sources": [],
+      "found": false
+    },
+    "rank": 18
   },
   {
-    "sku": "357337443",
-    "title": "锐程PLUS 2023款 1.5T DCT尊贵型",
-    "price": 4.89,
+    "sku": "357246142",
+    "title": "帝豪GS 2019款 1.4T CVT雅 Pro 国VI",
+    "price": 3.29,
     "price_type": "标价",
     "prefix": "标价",
-    "extra": "限时物流补贴",
+    "extra": "特价省200元",
     "extras": [
-      "限时物流补贴"
+      "特价省200元"
     ],
-    "year": "2024年 / 2.39万公里 / 武汉",
-    "plate_year": 2024,
-    "model_year": 2023,
-    "mileage_wan": 2.39,
+    "year": "2020年 / 5.95万公里 / 武汉",
+    "plate_year": 2020,
+    "model_year": 2019,
+    "mileage_wan": 5.95,
+    "city": "武汉",
+    "tags": [
+      "放心检7.1分"
+    ],
+    "badges": [
+      "官方保",
+      "直营"
+    ],
+    "cover": "https://p3-dcd-sign.byteimg.com/tos-cn-i-f042mdwyw7/1f31e32b20e64f229001e0f6f1a1b05a~tplv-resize:800:0.image?lk3s=416a877a&x-expires=1796200596&x-signature=O9zIHrRc0G8193cFnuilBc%2FTJ28%3D&psm=motor.sophon.product",
+    "detail_url": "https://m.dcdapp.com/motor/feoffline/usedcar_detail/detail.html?sku_id=357246142&shop_id=118608",
+    "shop_id": "118608",
+    "image_file": "/workspace/dongchedi-wuhan-shop/images/357246142.jpg",
+    "banner": "",
+    "sort_scores": {
+      "config_proxy": 10.88,
+      "space_proxy": 5.5,
+      "fuel_proxy": 4.0,
+      "is_suv": true,
+      "price": 3.29,
+      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为全量min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式",
+      "config_norm": 58.85,
+      "space_norm": 58.33,
+      "fuel_norm": 20.0,
+      "price_score": 45.17,
+      "suv_score": 100.0,
+      "total_score": 51.0,
+      "weights": {
+        "config": 0.35,
+        "space": 0.25,
+        "fuel": 0.2,
+        "price": 0.15,
+        "suv": 0.05
+      }
+    },
+    "brand": "吉利",
+    "manufacturer": "吉利汽车",
+    "manufacturer_inferred": false,
+    "total_score": 51.0,
+    "evaluation": "配置代理分一般；油耗代理偏低（较大排量燃油）。",
+    "series": "帝豪GS",
+    "owner_reviews": {
+      "summary": "短名单外未逐车检索口碑",
+      "sources": [],
+      "found": false
+    },
+    "rank": 19
+  },
+  {
+    "sku": "357211019",
+    "title": "锐界 2018款 EcoBoost 245 两驱豪锐型 7座 国V",
+    "price": 5.69,
+    "price_type": "分期",
+    "prefix": "分期价",
+    "extra": "领券优惠价",
+    "extras": [
+      "领券优惠价",
+      "分期直减5000元"
+    ],
+    "year": "2019年 / 6.91万公里 / 武汉",
+    "plate_year": 2019,
+    "model_year": 2018,
+    "mileage_wan": 6.91,
     "city": "武汉",
     "tags": [
       "性价比很棒",
-      "已检测",
-      "0过户",
-      "内饰如新"
+      "放心检6.4分"
     ],
     "badges": [
       "官方保",
       "直营"
     ],
-    "cover": "https://p9-dcd-sign.byteimg.com/tos-cn-i-f042mdwyw7/c97992664474416d9dcd94417877e38f~tplv-f042mdwyw7-original:800:0.image?lk3s=416a877a&x-expires=1796200596&x-signature=QLIYBFe%2B7ZmCxoXEtHWofLuKXrE%3D&psm=motor.sophon.product",
-    "detail_url": "https://m.dcdapp.com/motor/feoffline/usedcar_detail/detail.html?sku_id=357337443&shop_id=118608",
+    "cover": "https://p3-dcd-sign.byteimg.com/tos-cn-i-f042mdwyw7/5870b8610d4f4041bc40544fe4616e45~tplv-resize:800:0.image?lk3s=416a877a&x-expires=1796200578&x-signature=DvUmFkGeC2juUXEQrRtk%2BI9o%2BuE%3D&psm=motor.sophon.product",
+    "detail_url": "https://m.dcdapp.com/motor/feoffline/usedcar_detail/detail.html?sku_id=357211019&shop_id=118608",
     "shop_id": "118608",
-    "image_file": "/workspace/dongchedi-wuhan-shop/images/357337443.jpg",
-    "banner": "",
+    "image_file": "/workspace/dongchedi-wuhan-shop/images/357211019.jpg",
+    "banner": "分期直减5000元",
     "sort_scores": {
-      "config_proxy": 12.6,
-      "space_proxy": 3.5,
-      "fuel_proxy": 3.75,
-      "is_suv": false,
-      "price": 4.89,
-      "note": "排序：高配＞空间＞低油耗＞便宜＞SUV；卡片无完整参配，config≈年款/配置词/变速箱/涡轮/检测分；空间≈SUV/MPV/7座；油耗≈纯电/混动/排量"
-    }
+      "config_proxy": 9.89,
+      "space_proxy": 8.0,
+      "fuel_proxy": 3.0,
+      "is_suv": true,
+      "price": 5.69,
+      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为全量min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式",
+      "config_norm": 52.14,
+      "space_norm": 100.0,
+      "fuel_norm": 6.67,
+      "price_score": 5.17,
+      "suv_score": 100.0,
+      "total_score": 50.4,
+      "weights": {
+        "config": 0.35,
+        "space": 0.25,
+        "fuel": 0.2,
+        "price": 0.15,
+        "suv": 0.05
+      }
+    },
+    "brand": "福特",
+    "manufacturer": "长安福特",
+    "manufacturer_inferred": false,
+    "total_score": 50.4,
+    "evaluation": "配置代理分一般；SUV 空间更实用；油耗代理偏低（较大排量燃油）；价格 5.69 万接近预算上限。",
+    "series": "锐界",
+    "owner_reviews": {
+      "summary": "短名单外未逐车检索口碑",
+      "sources": [],
+      "found": false
+    },
+    "rank": 20
   },
   {
-    "sku": "357247792",
-    "title": "长安CS75 PLUS 2021款 1.5T 自动豪华型",
-    "price": 5.39,
+    "sku": "357171771",
+    "title": "长安CS35 PLUS 2021款 蓝鲸NE 1.4T DCT豪华型",
+    "price": 4.59,
     "price_type": "标价",
     "prefix": "标价",
     "extra": "限时物流补贴",
     "extras": [
       "限时物流补贴"
     ],
-    "year": "2020年 / 3.37万公里 / 武汉",
-    "plate_year": 2020,
+    "year": "2021年 / 1.75万公里 / 武汉",
+    "plate_year": 2021,
     "model_year": 2021,
-    "mileage_wan": 3.37,
+    "mileage_wan": 1.75,
     "city": "武汉",
     "tags": [
-      "性价比合理",
-      "放心检8.0分",
-      "原版原漆"
+      "性价比很棒",
+      "放心检8.5分"
     ],
     "badges": [
       "官方保",
       "直营"
     ],
-    "cover": "https://p3-dcd-sign.byteimg.com/tos-cn-i-f042mdwyw7/e4ac3c87384946b5930671d9145efb40~tplv-f042mdwyw7-original:800:0.image?lk3s=416a877a&x-expires=1796200593&x-signature=CF4dYznXzePaCbRKlxVbUPkBZJs%3D&psm=motor.sophon.product",
-    "detail_url": "https://m.dcdapp.com/motor/feoffline/usedcar_detail/detail.html?sku_id=357247792&shop_id=118608",
+    "cover": "https://p3-dcd-sign.byteimg.com/tos-cn-i-f042mdwyw7/96138290b01c4c7a8b98c126ae47babd~tplv-f042mdwyw7-original:800:0.image?lk3s=416a877a&x-expires=1796200593&x-signature=3zhv0Mt7zlTdZLysxuxSB%2FVwcks%3D&psm=motor.sophon.product",
+    "detail_url": "https://m.dcdapp.com/motor/feoffline/usedcar_detail/detail.html?sku_id=357171771&shop_id=118608",
     "shop_id": "118608",
-    "image_file": "/workspace/dongchedi-wuhan-shop/images/357247792.jpg",
+    "image_file": "/workspace/dongchedi-wuhan-shop/images/357171771.jpg",
     "banner": "",
     "sort_scores": {
-      "config_proxy": 12.55,
-      "space_proxy": 6.5,
+      "config_proxy": 11.92,
+      "space_proxy": 5.5,
+      "fuel_proxy": 4.0,
+      "is_suv": true,
+      "price": 4.59,
+      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为全量min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式",
+      "config_norm": 65.9,
+      "space_norm": 58.33,
+      "fuel_norm": 20.0,
+      "price_score": 23.5,
+      "suv_score": 100.0,
+      "total_score": 50.2,
+      "weights": {
+        "config": 0.35,
+        "space": 0.25,
+        "fuel": 0.2,
+        "price": 0.15,
+        "suv": 0.05
+      }
+    },
+    "brand": "长安",
+    "manufacturer": "长安汽车",
+    "manufacturer_inferred": false,
+    "total_score": 50.2,
+    "evaluation": "配置档位偏高（标题含顶配/高配词）；油耗代理偏低（较大排量燃油）；价格 4.59 万接近预算上限；里程低。",
+    "series": "长安CS35 PLUS",
+    "owner_reviews": {
+      "summary": "短名单外未逐车检索口碑",
+      "sources": [],
+      "found": false
+    },
+    "rank": 21
+  },
+  {
+    "sku": "357149717",
+    "title": "魏牌 VV5 2017款 2.0T 旗舰型",
+    "price": 3.29,
+    "price_type": "标价",
+    "prefix": "标价",
+    "extra": "特价省200元",
+    "extras": [
+      "特价省200元"
+    ],
+    "year": "2018年 / 7.35万公里 / 武汉",
+    "plate_year": 2018,
+    "model_year": 2017,
+    "mileage_wan": 7.35,
+    "city": "武汉",
+    "tags": [
+      "性价比极佳",
+      "放心检7.5分"
+    ],
+    "badges": [
+      "官方保",
+      "直营"
+    ],
+    "cover": "https://p9-dcd-sign.byteimg.com/tos-cn-i-f042mdwyw7/719e519e36f14727a20c34757a2770e8~tplv-resize:800:0.image?lk3s=416a877a&x-expires=1796200581&x-signature=Q8y%2B4hYO57djAijBPgJiwVFiRgM%3D&psm=motor.sophon.product",
+    "detail_url": "https://m.dcdapp.com/motor/feoffline/usedcar_detail/detail.html?sku_id=357149717&shop_id=118608",
+    "shop_id": "118608",
+    "image_file": "/workspace/dongchedi-wuhan-shop/images/357149717.jpg",
+    "banner": "",
+    "sort_scores": {
+      "config_proxy": 12.22,
+      "space_proxy": 5.0,
+      "fuel_proxy": 2.5,
+      "is_suv": true,
+      "price": 3.29,
+      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为全量min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式",
+      "config_norm": 67.93,
+      "space_norm": 50.0,
+      "fuel_norm": 0.0,
+      "price_score": 45.17,
+      "suv_score": 100.0,
+      "total_score": 48.1,
+      "weights": {
+        "config": 0.35,
+        "space": 0.25,
+        "fuel": 0.2,
+        "price": 0.15,
+        "suv": 0.05
+      }
+    },
+    "brand": "魏牌",
+    "manufacturer": "长城汽车",
+    "manufacturer_inferred": false,
+    "total_score": 48.1,
+    "evaluation": "配置档位偏高（标题含顶配/高配词）；油耗代理偏低（较大排量燃油）。",
+    "series": "魏牌 VV5",
+    "owner_reviews": {
+      "summary": "短名单外未逐车检索口碑",
+      "sources": [],
+      "found": false
+    },
+    "rank": 22
+  },
+  {
+    "sku": "357140222",
+    "title": "海豹06DM 2024款 DM-i 80KM尊贵型",
+    "price": 5.99,
+    "price_type": "分期",
+    "prefix": "分期价",
+    "extra": "领券优惠价",
+    "extras": [
+      "领券优惠价",
+      "分期直减3000元"
+    ],
+    "year": "2024年 / 4.91万公里 / 武汉",
+    "plate_year": 2024,
+    "model_year": 2024,
+    "mileage_wan": 4.91,
+    "city": "武汉",
+    "tags": [
+      "性价比极佳",
+      "放心检8.8分",
+      "三电质保"
+    ],
+    "badges": [
+      "官方保",
+      "直营"
+    ],
+    "cover": "https://p3-dcd-sign.byteimg.com/tos-cn-i-f042mdwyw7/246c4fd863964aeba3b2aa2b79b1689a~tplv-resize:800:0.image?lk3s=416a877a&x-expires=1796200578&x-signature=lL6%2BFgDF7Ad5Ab6p%2BREIS%2F6Ojd8%3D&psm=motor.sophon.product",
+    "detail_url": "https://m.dcdapp.com/motor/feoffline/usedcar_detail/detail.html?sku_id=357140222&shop_id=118608",
+    "shop_id": "118608",
+    "image_file": "/workspace/dongchedi-wuhan-shop/images/357140222.jpg",
+    "banner": "分期直减3000元",
+    "sort_scores": {
+      "config_proxy": 14.68,
+      "space_proxy": 2.0,
+      "fuel_proxy": 9.0,
+      "is_suv": false,
+      "price": 5.99,
+      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为全量min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式",
+      "config_norm": 84.61,
+      "space_norm": 0.0,
+      "fuel_norm": 86.67,
+      "price_score": 0.17,
+      "suv_score": 0.0,
+      "total_score": 47.0,
+      "weights": {
+        "config": 0.35,
+        "space": 0.25,
+        "fuel": 0.2,
+        "price": 0.15,
+        "suv": 0.05
+      }
+    },
+    "brand": "海豹",
+    "manufacturer": "比亚迪",
+    "manufacturer_inferred": false,
+    "total_score": 47.0,
+    "evaluation": "配置档位偏高（标题含顶配/高配词）；空间偏家用轿车级；油耗代理友好（纯电/混动或小排量）；价格 5.99 万接近预算上限。准新车龄。",
+    "series": "海豹06DM",
+    "owner_reviews": {
+      "summary": "短名单外未逐车检索口碑",
+      "sources": [],
+      "found": false
+    },
+    "rank": 23
+  },
+  {
+    "sku": "357192192",
+    "title": "轩逸 2019款 1.6XV CVT智联尊享版 国VI",
+    "price": 3.56,
+    "price_type": "分期",
+    "prefix": "分期价",
+    "extra": "领券优惠价",
+    "extras": [
+      "领券优惠价",
+      "分期直减3000元"
+    ],
+    "year": "2019年 / 6.06万公里 / 武汉",
+    "plate_year": 2019,
+    "model_year": 2019,
+    "mileage_wan": 6.06,
+    "city": "武汉",
+    "tags": [
+      "性价比极佳",
+      "放心检7.3分"
+    ],
+    "badges": [
+      "官方保",
+      "直营"
+    ],
+    "cover": "https://p3-dcd-sign.byteimg.com/tos-cn-i-f042mdwyw7/4ed25d030e504214b711d630e24ebffa~tplv-f042mdwyw7-original:800:0.image?lk3s=416a877a&x-expires=1796200589&x-signature=P%2FYsog4F2uXhdXBA7jmZkeNbAic%3D&psm=motor.sophon.product",
+    "detail_url": "https://m.dcdapp.com/motor/feoffline/usedcar_detail/detail.html?sku_id=357192192&shop_id=118608",
+    "shop_id": "118608",
+    "image_file": "/workspace/dongchedi-wuhan-shop/images/357192192.jpg",
+    "banner": "分期直减3000元",
+    "sort_scores": {
+      "config_proxy": 11.4,
+      "space_proxy": 5.0,
+      "fuel_proxy": 3.0,
+      "is_suv": true,
+      "price": 3.56,
+      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为全量min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式",
+      "config_norm": 62.37,
+      "space_norm": 50.0,
+      "fuel_norm": 6.67,
+      "price_score": 40.67,
+      "suv_score": 100.0,
+      "total_score": 46.8,
+      "weights": {
+        "config": 0.35,
+        "space": 0.25,
+        "fuel": 0.2,
+        "price": 0.15,
+        "suv": 0.05
+      }
+    },
+    "brand": "日产",
+    "manufacturer": "东风日产",
+    "manufacturer_inferred": false,
+    "total_score": 46.8,
+    "evaluation": "配置代理分一般；油耗代理偏低（较大排量燃油）。",
+    "series": "轩逸",
+    "owner_reviews": {
+      "summary": "短名单外未逐车检索口碑",
+      "sources": [],
+      "found": false
+    },
+    "rank": 24
+  },
+  {
+    "sku": "357232750",
+    "title": "博越 2020款 1.5TD 自动智联PRO",
+    "price": 4.49,
+    "price_type": "分期",
+    "prefix": "分期价",
+    "extra": "领券优惠价",
+    "extras": [
+      "领券优惠价",
+      "分期直减3000元"
+    ],
+    "year": "2020年 / 2.81万公里 / 武汉",
+    "plate_year": 2020,
+    "model_year": 2020,
+    "mileage_wan": 2.81,
+    "city": "武汉",
+    "tags": [
+      "性价比很棒",
+      "放心检8.7分"
+    ],
+    "badges": [
+      "官方保",
+      "直营"
+    ],
+    "cover": "https://p3-dcd-sign.byteimg.com/tos-cn-i-f042mdwyw7/d856992045944ac79dbb7ab7bae85fdf~tplv-f042mdwyw7-original:800:0.image?lk3s=416a877a&x-expires=1796200593&x-signature=u2pxgmmBf3gGFz33BIjzyZwG6Ho%3D&psm=motor.sophon.product",
+    "detail_url": "https://m.dcdapp.com/motor/feoffline/usedcar_detail/detail.html?sku_id=357232750&shop_id=118608",
+    "shop_id": "118608",
+    "image_file": "/workspace/dongchedi-wuhan-shop/images/357232750.jpg",
+    "banner": "分期直减3000元",
+    "sort_scores": {
+      "config_proxy": 11.45,
+      "space_proxy": 5.0,
       "fuel_proxy": 3.75,
       "is_suv": true,
-      "price": 5.39,
-      "note": "排序：高配＞空间＞低油耗＞便宜＞SUV；卡片无完整参配，config≈年款/配置词/变速箱/涡轮/检测分；空间≈SUV/MPV/7座；油耗≈纯电/混动/排量"
-    }
+      "price": 4.49,
+      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为全量min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式",
+      "config_norm": 62.71,
+      "space_norm": 50.0,
+      "fuel_norm": 16.67,
+      "price_score": 25.17,
+      "suv_score": 100.0,
+      "total_score": 46.6,
+      "weights": {
+        "config": 0.35,
+        "space": 0.25,
+        "fuel": 0.2,
+        "price": 0.15,
+        "suv": 0.05
+      }
+    },
+    "brand": "吉利",
+    "manufacturer": "吉利汽车",
+    "manufacturer_inferred": false,
+    "total_score": 46.6,
+    "evaluation": "配置代理分一般；油耗代理偏低（较大排量燃油）；价格 4.49 万接近预算上限。",
+    "series": "博越",
+    "owner_reviews": {
+      "summary": "短名单外未逐车检索口碑",
+      "sources": [],
+      "found": false
+    },
+    "rank": 25
+  },
+  {
+    "sku": "357211011",
+    "title": "海鸥 2024款 荣耀版 305KM 活力版",
+    "price": 4.99,
+    "price_type": "标价",
+    "prefix": "标价",
+    "extra": "限时物流补贴",
+    "extras": [
+      "限时物流补贴"
+    ],
+    "year": "2024年 / 3.46万公里 / 武汉",
+    "plate_year": 2024,
+    "model_year": 2024,
+    "mileage_wan": 3.46,
+    "city": "武汉",
+    "tags": [
+      "性价比合理",
+      "放心检8.7分",
+      "三电质保"
+    ],
+    "badges": [
+      "官方保",
+      "直营"
+    ],
+    "cover": "https://p9-dcd-sign.byteimg.com/tos-cn-i-f042mdwyw7/5769a60c635141adac1ada8cdf2f199f~tplv-resize:800:0.image?lk3s=416a877a&x-expires=1796200601&x-signature=nPE7IO8e6fDC5vu1AxIkYYp7lKI%3D&psm=motor.sophon.product",
+    "detail_url": "https://m.dcdapp.com/motor/feoffline/usedcar_detail/detail.html?sku_id=357211011&shop_id=118608",
+    "shop_id": "118608",
+    "image_file": "/workspace/dongchedi-wuhan-shop/images/357211011.jpg",
+    "banner": "",
+    "sort_scores": {
+      "config_proxy": 11.45,
+      "space_proxy": 2.0,
+      "fuel_proxy": 10.0,
+      "is_suv": false,
+      "price": 4.99,
+      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为全量min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式",
+      "config_norm": 62.71,
+      "space_norm": 0.0,
+      "fuel_norm": 100.0,
+      "price_score": 16.83,
+      "suv_score": 0.0,
+      "total_score": 44.5,
+      "weights": {
+        "config": 0.35,
+        "space": 0.25,
+        "fuel": 0.2,
+        "price": 0.15,
+        "suv": 0.05
+      }
+    },
+    "brand": "海鸥",
+    "manufacturer": "比亚迪",
+    "manufacturer_inferred": false,
+    "total_score": 44.5,
+    "evaluation": "配置代理分一般；空间偏家用轿车级；油耗代理友好（纯电/混动或小排量）；价格 4.99 万接近预算上限。准新车龄。",
+    "series": "海鸥",
+    "owner_reviews": {
+      "summary": "短名单外未逐车检索口碑",
+      "sources": [],
+      "found": false
+    },
+    "rank": 26
+  },
+  {
+    "sku": "357204629",
+    "title": "哈弗H6 2021款 第二代 1.5T 自动都市版",
+    "price": 4.39,
+    "price_type": "标价",
+    "prefix": "标价",
+    "extra": "限时物流补贴",
+    "extras": [
+      "限时物流补贴"
+    ],
+    "year": "2020年 / 1.20万公里 / 武汉",
+    "plate_year": 2020,
+    "model_year": 2021,
+    "mileage_wan": 1.2,
+    "city": "武汉",
+    "tags": [
+      "性价比很棒",
+      "放心检8.1分",
+      "无钣金"
+    ],
+    "badges": [
+      "官方保",
+      "直营"
+    ],
+    "cover": "https://p9-dcd-sign.byteimg.com/tos-cn-i-f042mdwyw7/dedaa5ffcf544144b72b414681dfef81~tplv-resize:800:0.image?lk3s=416a877a&x-expires=1796200581&x-signature=wjrzYHiE7HoX%2BsXQyH5%2FRJNsdII%3D&psm=motor.sophon.product",
+    "detail_url": "https://m.dcdapp.com/motor/feoffline/usedcar_detail/detail.html?sku_id=357204629&shop_id=118608",
+    "shop_id": "118608",
+    "image_file": "/workspace/dongchedi-wuhan-shop/images/357204629.jpg",
+    "banner": "",
+    "sort_scores": {
+      "config_proxy": 9.59,
+      "space_proxy": 5.5,
+      "fuel_proxy": 3.75,
+      "is_suv": true,
+      "price": 4.39,
+      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为全量min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式",
+      "config_norm": 50.1,
+      "space_norm": 58.33,
+      "fuel_norm": 16.67,
+      "price_score": 26.83,
+      "suv_score": 100.0,
+      "total_score": 44.5,
+      "weights": {
+        "config": 0.35,
+        "space": 0.25,
+        "fuel": 0.2,
+        "price": 0.15,
+        "suv": 0.05
+      }
+    },
+    "brand": "哈弗",
+    "manufacturer": "长城汽车",
+    "manufacturer_inferred": false,
+    "total_score": 44.5,
+    "evaluation": "配置代理分一般；油耗代理偏低（较大排量燃油）；价格 4.39 万接近预算上限；里程低。",
+    "series": "哈弗H6",
+    "owner_reviews": {
+      "summary": "短名单外未逐车检索口碑",
+      "sources": [],
+      "found": false
+    },
+    "rank": 27
+  },
+  {
+    "sku": "357220895",
+    "title": "逸动 2023款 PLUS畅享版 蓝鲸NE 1.4T GDI DCT尊贵型",
+    "price": 4.69,
+    "price_type": "标价",
+    "prefix": "标价",
+    "extra": "限时物流补贴",
+    "extras": [
+      "限时物流补贴"
+    ],
+    "year": "2023年 / 3.14万公里 / 武汉",
+    "plate_year": 2023,
+    "model_year": 2023,
+    "mileage_wan": 3.14,
+    "city": "武汉",
+    "tags": [
+      "放心检8.0分"
+    ],
+    "badges": [
+      "官方保",
+      "直营"
+    ],
+    "cover": "https://p3-dcd-sign.byteimg.com/tos-cn-i-f042mdwyw7/a7e6bed7b4f04c5aaa19519ac8f0db3c~tplv-resize:800:0.image?lk3s=416a877a&x-expires=1796200596&x-signature=e05Qm9taUbD3yqE3f0kqONXJWIE%3D&psm=motor.sophon.product",
+    "detail_url": "https://m.dcdapp.com/motor/feoffline/usedcar_detail/detail.html?sku_id=357220895&shop_id=118608",
+    "shop_id": "118608",
+    "image_file": "/workspace/dongchedi-wuhan-shop/images/357220895.jpg",
+    "banner": "",
+    "sort_scores": {
+      "config_proxy": 14.85,
+      "space_proxy": 3.5,
+      "fuel_proxy": 4.0,
+      "is_suv": false,
+      "price": 4.69,
+      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为全量min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式",
+      "config_norm": 85.76,
+      "space_norm": 25.0,
+      "fuel_norm": 20.0,
+      "price_score": 21.83,
+      "suv_score": 0.0,
+      "total_score": 43.5,
+      "weights": {
+        "config": 0.35,
+        "space": 0.25,
+        "fuel": 0.2,
+        "price": 0.15,
+        "suv": 0.05
+      }
+    },
+    "brand": "长安",
+    "manufacturer": "长安汽车",
+    "manufacturer_inferred": false,
+    "total_score": 43.5,
+    "evaluation": "配置档位偏高（标题含顶配/高配词）；空间偏家用轿车级；油耗代理偏低（较大排量燃油）；价格 4.69 万接近预算上限。",
+    "series": "逸动",
+    "owner_reviews": {
+      "summary": "短名单外未逐车检索口碑",
+      "sources": [],
+      "found": false
+    },
+    "rank": 28
   },
   {
     "sku": "356990772",
@@ -880,90 +2002,38 @@
       "fuel_proxy": 3.0,
       "is_suv": true,
       "price": 5.69,
-      "note": "排序：高配＞空间＞低油耗＞便宜＞SUV；卡片无完整参配，config≈年款/配置词/变速箱/涡轮/检测分；空间≈SUV/MPV/7座；油耗≈纯电/混动/排量"
-    }
+      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为全量min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式",
+      "config_norm": 68.34,
+      "space_norm": 50.0,
+      "fuel_norm": 6.67,
+      "price_score": 5.17,
+      "suv_score": 100.0,
+      "total_score": 43.5,
+      "weights": {
+        "config": 0.35,
+        "space": 0.25,
+        "fuel": 0.2,
+        "price": 0.15,
+        "suv": 0.05
+      }
+    },
+    "brand": "捷达",
+    "manufacturer": "一汽-大众",
+    "manufacturer_inferred": false,
+    "total_score": 43.5,
+    "evaluation": "配置代理分一般；油耗代理偏低（较大排量燃油）；价格 5.69 万接近预算上限。",
+    "series": "捷达VS5",
+    "owner_reviews": {
+      "summary": "短名单外未逐车检索口碑",
+      "sources": [],
+      "found": false
+    },
+    "rank": 29
   },
   {
-    "sku": "357149717",
-    "title": "魏牌 VV5 2017款 2.0T 旗舰型",
-    "price": 3.29,
-    "price_type": "标价",
-    "prefix": "标价",
-    "extra": "特价省200元",
-    "extras": [
-      "特价省200元"
-    ],
-    "year": "2018年 / 7.35万公里 / 武汉",
-    "plate_year": 2018,
-    "model_year": 2017,
-    "mileage_wan": 7.35,
-    "city": "武汉",
-    "tags": [
-      "性价比极佳",
-      "放心检7.5分"
-    ],
-    "badges": [
-      "官方保",
-      "直营"
-    ],
-    "cover": "https://p9-dcd-sign.byteimg.com/tos-cn-i-f042mdwyw7/719e519e36f14727a20c34757a2770e8~tplv-resize:800:0.image?lk3s=416a877a&x-expires=1796200581&x-signature=Q8y%2B4hYO57djAijBPgJiwVFiRgM%3D&psm=motor.sophon.product",
-    "detail_url": "https://m.dcdapp.com/motor/feoffline/usedcar_detail/detail.html?sku_id=357149717&shop_id=118608",
-    "shop_id": "118608",
-    "image_file": "/workspace/dongchedi-wuhan-shop/images/357149717.jpg",
-    "banner": "",
-    "sort_scores": {
-      "config_proxy": 12.22,
-      "space_proxy": 5.0,
-      "fuel_proxy": 2.5,
-      "is_suv": true,
-      "price": 3.29,
-      "note": "排序：高配＞空间＞低油耗＞便宜＞SUV；卡片无完整参配，config≈年款/配置词/变速箱/涡轮/检测分；空间≈SUV/MPV/7座；油耗≈纯电/混动/排量"
-    }
-  },
-  {
-    "sku": "357052729",
-    "title": "宋Pro DM 2024款 DM-i 荣耀版 71km 领航型",
-    "price": 5.99,
-    "price_type": "分期",
-    "prefix": "分期价",
-    "extra": "领券优惠价",
-    "extras": [
-      "领券优惠价",
-      "分期直减4000元"
-    ],
-    "year": "2024年 / 6.05万公里 / 武汉",
-    "plate_year": 2024,
-    "model_year": 2024,
-    "mileage_wan": 6.05,
-    "city": "武汉",
-    "tags": [
-      "性价比很棒",
-      "放心检7.4分",
-      "三电质保",
-      "电池健康"
-    ],
-    "badges": [
-      "官方保",
-      "直营"
-    ],
-    "cover": "https://p3-dcd-sign.byteimg.com/tos-cn-i-f042mdwyw7/ba128ed249dc410ab3a0baccd2feccdf~tplv-resize:800:0.image?lk3s=416a877a&x-expires=1796200581&x-signature=jKvNo%2FgcCInUp9bgQZBU%2Bgl25oY%3D&psm=motor.sophon.product",
-    "detail_url": "https://m.dcdapp.com/motor/feoffline/usedcar_detail/detail.html?sku_id=357052729&shop_id=118608",
-    "shop_id": "118608",
-    "image_file": "/workspace/dongchedi-wuhan-shop/images/357052729.jpg",
-    "banner": "分期直减4000元",
-    "sort_scores": {
-      "config_proxy": 12.19,
-      "space_proxy": 5.0,
-      "fuel_proxy": 9.0,
-      "is_suv": true,
-      "price": 5.99,
-      "note": "排序：高配＞空间＞低油耗＞便宜＞SUV；卡片无完整参配，config≈年款/配置词/变速箱/涡轮/检测分；空间≈SUV/MPV/7座；油耗≈纯电/混动/排量"
-    }
-  },
-  {
-    "sku": "357215359",
-    "title": "唐DM 2018款 DM 2.0T 全时四驱智联创享型 7座 国V",
-    "price": 4.99,
+    "sku": "357192150",
+    "title": "逍客 2019款 2.0L CVT豪华版",
+    "price": 5.09,
     "price_type": "分期",
     "prefix": "分期价",
     "extra": "领券优惠价",
@@ -971,187 +2041,57 @@
       "领券优惠价",
       "分期直减2000元"
     ],
-    "year": "2018年 / 5.96万公里 / 武汉",
-    "plate_year": 2018,
-    "model_year": 2018,
-    "mileage_wan": 5.96,
+    "year": "2019年 / 8.41万公里 / 武汉",
+    "plate_year": 2019,
+    "model_year": 2019,
+    "mileage_wan": 8.41,
     "city": "武汉",
     "tags": [
       "性价比极佳",
       "放心检8.2分",
-      "三电质保"
+      "原版原漆"
     ],
     "badges": [
       "官方保",
       "直营"
     ],
-    "cover": "https://p9-dcd-sign.byteimg.com/tos-cn-i-f042mdwyw7/58bf0601969845188c7cd921d06b6303~tplv-resize:800:0.image?lk3s=416a877a&x-expires=1796200574&x-signature=OTJx2Gtzkaf0s65xCG%2B7WL7sPqE%3D&psm=motor.sophon.product",
-    "detail_url": "https://m.dcdapp.com/motor/feoffline/usedcar_detail/detail.html?sku_id=357215359&shop_id=118608",
+    "cover": "https://p3-dcd-sign.byteimg.com/tos-cn-i-f042mdwyw7/036230552bb44bd3be04bfe269401806~tplv-resize:800:0.image?lk3s=416a877a&x-expires=1796200585&x-signature=xjVjThntpscj2LJrnhXIkaPQ1xE%3D&psm=motor.sophon.product",
+    "detail_url": "https://m.dcdapp.com/motor/feoffline/usedcar_detail/detail.html?sku_id=357192150&shop_id=118608",
     "shop_id": "118608",
-    "image_file": "/workspace/dongchedi-wuhan-shop/images/357215359.jpg",
+    "image_file": "/workspace/dongchedi-wuhan-shop/images/357192150.jpg",
     "banner": "分期直减2000元",
     "sort_scores": {
-      "config_proxy": 12.17,
-      "space_proxy": 8.0,
-      "fuel_proxy": 9.0,
+      "config_proxy": 10.52,
+      "space_proxy": 5.0,
+      "fuel_proxy": 4.0,
       "is_suv": true,
-      "price": 4.99,
-      "note": "排序：高配＞空间＞低油耗＞便宜＞SUV；卡片无完整参配，config≈年款/配置词/变速箱/涡轮/检测分；空间≈SUV/MPV/7座；油耗≈纯电/混动/排量"
-    }
-  },
-  {
-    "sku": "357250770",
-    "title": "帝豪 2023款 第4代 冠军版 1.5L CVT豪华型",
-    "price": 4.09,
-    "price_type": "分期",
-    "prefix": "分期价",
-    "extra": "领券优惠价",
-    "extras": [
-      "领券优惠价",
-      "分期直减2000元"
-    ],
-    "year": "2023年 / 2.75万公里 / 武汉",
-    "plate_year": 2023,
-    "model_year": 2023,
-    "mileage_wan": 2.75,
-    "city": "武汉",
-    "tags": [
-      "性价比很棒",
-      "放心检8.9分",
-      "内饰如新"
-    ],
-    "badges": [
-      "官方保",
-      "直营"
-    ],
-    "cover": "https://p3-dcd-sign.byteimg.com/tos-cn-i-f042mdwyw7/891466ab102a4078abbeb092ee7863ad~tplv-resize:800:0.image?lk3s=416a877a&x-expires=1796200589&x-signature=G%2B4FcfXEwOWybGsuOj%2F9RTX1zlE%3D&psm=motor.sophon.product",
-    "detail_url": "https://m.dcdapp.com/motor/feoffline/usedcar_detail/detail.html?sku_id=357250770&shop_id=118608",
-    "shop_id": "118608",
-    "image_file": "/workspace/dongchedi-wuhan-shop/images/357250770.jpg",
-    "banner": "分期直减2000元",
-    "sort_scores": {
-      "config_proxy": 12.17,
-      "space_proxy": 2.0,
-      "fuel_proxy": 5.0,
-      "is_suv": false,
-      "price": 4.09,
-      "note": "排序：高配＞空间＞低油耗＞便宜＞SUV；卡片无完整参配，config≈年款/配置词/变速箱/涡轮/检测分；空间≈SUV/MPV/7座；油耗≈纯电/混动/排量"
-    }
-  },
-  {
-    "sku": "357211018",
-    "title": "逸动 2022款 PLUS 1.6L GDI 手动豪华型",
-    "price": 2.89,
-    "price_type": "分期",
-    "prefix": "分期价",
-    "extra": "领券优惠价",
-    "extras": [
-      "领券优惠价",
-      "分期直减1000元"
-    ],
-    "year": "2022年 / 5.23万公里 / 武汉",
-    "plate_year": 2022,
-    "model_year": 2022,
-    "mileage_wan": 5.23,
-    "city": "武汉",
-    "tags": [
-      "性价比极佳",
-      "放心检8.7分",
-      "无钣金"
-    ],
-    "badges": [
-      "官方保",
-      "直营"
-    ],
-    "cover": "https://p9-dcd-sign.byteimg.com/tos-cn-i-f042mdwyw7/0dc8790ab13c47249a76342a0a746e22~tplv-resize:800:0.image?lk3s=416a877a&x-expires=1796200585&x-signature=fbLXVjUKpF3kTHQkQZv0ahwAp%2F4%3D&psm=motor.sophon.product",
-    "detail_url": "https://m.dcdapp.com/motor/feoffline/usedcar_detail/detail.html?sku_id=357211018&shop_id=118608",
-    "shop_id": "118608",
-    "image_file": "/workspace/dongchedi-wuhan-shop/images/357211018.jpg",
-    "banner": "分期直减1000元",
-    "sort_scores": {
-      "config_proxy": 12.15,
-      "space_proxy": 3.5,
-      "fuel_proxy": 3.5,
-      "is_suv": false,
-      "price": 2.89,
-      "note": "排序：高配＞空间＞低油耗＞便宜＞SUV；卡片无完整参配，config≈年款/配置词/变速箱/涡轮/检测分；空间≈SUV/MPV/7座；油耗≈纯电/混动/排量"
-    }
-  },
-  {
-    "sku": "357250769",
-    "title": "逸动DT 2021款 1.6L 自动豪华型",
-    "price": 3.19,
-    "price_type": "标价",
-    "prefix": "标价",
-    "extra": "限时物流补贴",
-    "extras": [
-      "限时物流补贴"
-    ],
-    "year": "2022年 / 2.62万公里 / 武汉",
-    "plate_year": 2022,
-    "model_year": 2021,
-    "mileage_wan": 2.62,
-    "city": "武汉",
-    "tags": [
-      "性价比合理",
-      "放心检7.7分",
-      "无钣金"
-    ],
-    "badges": [
-      "官方保",
-      "直营"
-    ],
-    "cover": "https://p3-dcd-sign.byteimg.com/tos-cn-i-f042mdwyw7/0698265f7cf742228e54581f8152262e~tplv-resize:800:0.image?lk3s=416a877a&x-expires=1796200581&x-signature=Cptes1ShnnESIwjRFlhlJZlHvQs%3D&psm=motor.sophon.product",
-    "detail_url": "https://m.dcdapp.com/motor/feoffline/usedcar_detail/detail.html?sku_id=357250769&shop_id=118608",
-    "shop_id": "118608",
-    "image_file": "/workspace/dongchedi-wuhan-shop/images/357250769.jpg",
-    "banner": "",
-    "sort_scores": {
-      "config_proxy": 12.0,
-      "space_proxy": 2.0,
-      "fuel_proxy": 4.8,
-      "is_suv": false,
-      "price": 3.19,
-      "note": "排序：高配＞空间＞低油耗＞便宜＞SUV；卡片无完整参配，config≈年款/配置词/变速箱/涡轮/检测分；空间≈SUV/MPV/7座；油耗≈纯电/混动/排量"
-    }
-  },
-  {
-    "sku": "357211017",
-    "title": "轩逸 2024款 改款三 经典 1.6L XE CVT舒适版",
-    "price": 5.89,
-    "price_type": "标价",
-    "prefix": "标价",
-    "extra": "限时物流补贴",
-    "extras": [
-      "限时物流补贴"
-    ],
-    "year": "2025年 / 0.87万公里 / 武汉",
-    "plate_year": 2025,
-    "model_year": 2024,
-    "mileage_wan": 0.87,
-    "city": "武汉",
-    "tags": [
-      "性价比很棒",
-      "放心检9.8分",
-      "原版原漆",
-      "准新"
-    ],
-    "badges": [
-      "官方保",
-      "直营"
-    ],
-    "cover": "https://p3-dcd-sign.byteimg.com/tos-cn-i-f042mdwyw7/5d45d5dcd1284fd6afcba0fdaa9eb483~tplv-resize:800:0.image?lk3s=416a877a&x-expires=1796200581&x-signature=iVpUKsX5hRqhN88%2FKlUdheRvDDw%3D&psm=motor.sophon.product",
-    "detail_url": "https://m.dcdapp.com/motor/feoffline/usedcar_detail/detail.html?sku_id=357211017&shop_id=118608",
-    "shop_id": "118608",
-    "image_file": "/workspace/dongchedi-wuhan-shop/images/357211017.jpg",
-    "banner": "",
-    "sort_scores": {
-      "config_proxy": 11.98,
-      "space_proxy": 2.0,
-      "fuel_proxy": 4.8,
-      "is_suv": false,
-      "price": 5.89,
-      "note": "排序：高配＞空间＞低油耗＞便宜＞SUV；卡片无完整参配，config≈年款/配置词/变速箱/涡轮/检测分；空间≈SUV/MPV/7座；油耗≈纯电/混动/排量"
-    }
+      "price": 5.09,
+      "note": "综合总得分=config35%+space25%+fuel20%+price15%+suv5%；分项为全量min-max归一化到0-100（price用(6-price)/6*100）；卡片无完整参配，config/space/fuel 仍为标题启发式",
+      "config_norm": 56.41,
+      "space_norm": 50.0,
+      "fuel_norm": 20.0,
+      "price_score": 15.17,
+      "suv_score": 100.0,
+      "total_score": 43.5,
+      "weights": {
+        "config": 0.35,
+        "space": 0.25,
+        "fuel": 0.2,
+        "price": 0.15,
+        "suv": 0.05
+      }
+    },
+    "brand": "日产",
+    "manufacturer": "东风日产",
+    "manufacturer_inferred": false,
+    "total_score": 43.5,
+    "evaluation": "配置档位偏高（标题含顶配/高配词）；油耗代理偏低（较大排量燃油）；价格 5.09 万接近预算上限；里程偏高需留意。",
+    "series": "逍客",
+    "owner_reviews": {
+      "summary": "短名单外未逐车检索口碑",
+      "sources": [],
+      "found": false
+    },
+    "rank": 30
   }
 ]
