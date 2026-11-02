@@ -1,347 +1,904 @@
 [
   {
-    "sku": "357172814",
-    "title": "凯越 2013款 1.5L 自动经典型",
-    "year": "2014年 / 3.42万公里 / 武汉",
-    "prefix": "券后价",
-    "price": 1.29,
-    "extra": "领券优惠价",
-    "tags": [
-      "性价比极佳",
-      "放心检7.7分"
-    ],
-    "badge": true,
-    "cover": "https://p9-dcd-sign.byteimg.com/tos-cn-v-ed3284/oQN3htaDy7gUAIiqQR7EsZADrBeQNMlFa1IgoP~tplv-f042mdwyw7-auto-webp:480:0.jpg?rk3s=5205f25e&x-expires=1794212085&x-signature=9LO%2Bd5N194w1eC97AlMC7wHPk18%3D&psm=motor.sophon.pack",
-    "detail_url": "https://m.dcdapp.com/motor/feoffline/usedcar_detail/detail.html?sku_id=357172814&shop_id=118608",
-    "shop_id": "118608",
-    "image_file": "/workspace/dongchedi-wuhan-shop/images/357172814.jpg"
-  },
-  {
-    "sku": "357187536",
-    "title": "科帕奇 2014款 2.4L 两驱城市版 5座",
-    "year": "2014年 / 10.66万公里 / 武汉",
-    "prefix": "券后价",
-    "price": 1.39,
-    "extra": "领券优惠价",
-    "tags": [
-      "性价比极佳",
-      "放心检6.5分"
-    ],
-    "badge": true,
-    "cover": "https://p3-dcd-sign.byteimg.com/tos-cn-v-ed3284/oM0YHqk7HQU5XtKdiF2UI7IktBIawWNTa9ABE~tplv-f042mdwyw7-auto-webp:480:0.jpg?rk3s=5205f25e&x-expires=1794212085&x-signature=GuxAGmXa9bvFcthq%2BTGcYbV2Pd4%3D&psm=motor.sophon.pack",
-    "detail_url": "https://m.dcdapp.com/motor/feoffline/usedcar_detail/detail.html?sku_id=357187536&shop_id=118608",
-    "shop_id": "118608",
-    "image_file": "/workspace/dongchedi-wuhan-shop/images/357187536.jpg"
-  },
-  {
-    "sku": "356943949",
-    "title": "桑塔纳 2015款 1.6L 手动风尚版",
-    "year": "2015年 / 9.33万公里 / 武汉",
-    "prefix": "券后价",
-    "price": 1.69,
-    "extra": "领券优惠价",
-    "tags": [
-      "性价比极佳",
-      "放心检7.3分"
-    ],
-    "badge": true,
-    "cover": "https://p9-dcd-sign.byteimg.com/tos-cn-v-ed3284/oM5NHADuwWVeAfIfKxtXQ1e8tIfq9Bfwphj3ka~tplv-f042mdwyw7-auto-webp:480:0.jpg?rk3s=5205f25e&x-expires=1794212073&x-signature=5Ifl9KuMd6xgnROT%2FaJHaG5vBO8%3D&psm=motor.sophon.pack",
-    "detail_url": "https://m.dcdapp.com/motor/feoffline/usedcar_detail/detail.html?sku_id=356943949&shop_id=118608",
-    "shop_id": "118608",
-    "image_file": "/workspace/dongchedi-wuhan-shop/images/356943949.jpg"
-  },
-  {
-    "sku": "356981875",
-    "title": "锐腾 2017款 20T 自动豪华版",
-    "year": "2017年 / 13.75万公里 / 武汉",
-    "prefix": "标价",
-    "price": 1.69,
-    "extra": "特价省200元",
-    "tags": [
-      "性价比合理",
-      "放心检6.8分"
-    ],
-    "badge": true,
-    "cover": "https://p3-dcd-sign.byteimg.com/tos-cn-v-ed3284/oQ7Qejfct0ef9fHBgWKqwoQTEsgDHwq4UI2jQe~tplv-f042mdwyw7-auto-webp:480:0.jpg?rk3s=5205f25e&x-expires=1794212043&x-signature=LCn%2FgqCMhnVdAkCq%2FBtRnuPCKw8%3D&psm=motor.sophon.pack",
-    "detail_url": "https://m.dcdapp.com/motor/feoffline/usedcar_detail/detail.html?sku_id=356981875&shop_id=118608",
-    "shop_id": "118608",
-    "image_file": "/workspace/dongchedi-wuhan-shop/images/356981875.jpg"
-  },
-  {
-    "sku": "357127522",
-    "title": "哈弗H2 2016款 红标 1.5T 自动两驱尊贵型",
-    "year": "2015年 / 5.58万公里 / 武汉",
-    "prefix": "券后价",
-    "price": 1.69,
-    "extra": "领券优惠价",
-    "tags": [
-      "性价比极佳",
-      "放心检7.1分"
-    ],
-    "badge": true,
-    "cover": "https://p3-dcd-sign.byteimg.com/tos-cn-v-ed3284/oUwdQMkPzz9EstgTWBZ8qaIHTnIIN050zBh6d~tplv-f042mdwyw7-auto-webp:480:0.jpg?rk3s=5205f25e&x-expires=1794212084&x-signature=dEx1JeEnLSrvCWqvda55vNbSrPY%3D&psm=motor.sophon.pack",
-    "detail_url": "https://m.dcdapp.com/motor/feoffline/usedcar_detail/detail.html?sku_id=357127522&shop_id=118608",
-    "shop_id": "118608",
-    "image_file": "/workspace/dongchedi-wuhan-shop/images/357127522.jpg"
-  },
-  {
     "sku": "357001086",
     "title": "传祺GS4 2017款 235T 手动两驱舒适版",
-    "year": "2016年 / 8.56万公里 / 武汉",
-    "prefix": "券后价",
     "price": 1.79,
+    "price_type": "券后",
+    "prefix": "券后价",
     "extra": "领券优惠价",
+    "extras": [
+      "领券优惠价",
+      "直减券2000"
+    ],
+    "year": "2016年 / 8.56万公里 / 武汉",
+    "plate_year": 2016,
+    "model_year": 2017,
+    "mileage_wan": 8.56,
+    "city": "武汉",
     "tags": [
       "放心检6.9分"
     ],
-    "badge": true,
-    "cover": "https://p3-dcd-sign.byteimg.com/tos-cn-v-ed3284/ogQDIhEYhaD4Q0asdxtYgy1D170QIA2XQzIe87~tplv-f042mdwyw7-auto-webp:480:0.jpg?rk3s=5205f25e&x-expires=1794212086&x-signature=2yZt8qYjx4bU%2BqKyCnNGnDVOXPI%3D&psm=motor.sophon.pack",
+    "badges": [
+      "官方保",
+      "直营"
+    ],
+    "cover": "https://p3-dcd-sign.byteimg.com/tos-cn-i-f042mdwyw7/c2bcfdd65614455a8c34b14892712a23~tplv-resize:800:0.image?lk3s=416a877a&x-expires=1796200589&x-signature=Qjdni65aArD4LdiTW6ziu0Lib%2BA%3D&psm=motor.sophon.product",
     "detail_url": "https://m.dcdapp.com/motor/feoffline/usedcar_detail/detail.html?sku_id=357001086&shop_id=118608",
     "shop_id": "118608",
-    "image_file": "/workspace/dongchedi-wuhan-shop/images/357001086.jpg"
-  },
-  {
-    "sku": "357172809",
-    "title": "逍客 2012款 2.0XL 火 6MT 2WD",
-    "year": "2014年 / 8.83万公里 / 武汉",
-    "prefix": "标价",
-    "price": 1.79,
-    "extra": "特价省200元",
-    "tags": [
-      "性价比极佳",
-      "放心检7.6分",
-      "无钣金"
-    ],
-    "badge": true,
-    "cover": "https://p3-dcd-sign.byteimg.com/tos-cn-v-ed3284/ogcItXan5QBKnWdEQ1OBtqDtwwlw5XEKrI9BC~tplv-f042mdwyw7-auto-webp:480:0.jpg?rk3s=5205f25e&x-expires=1794212084&x-signature=Z9zC7M2pNs67NpM%2F409ZokFgmjA%3D&psm=motor.sophon.pack",
-    "detail_url": "https://m.dcdapp.com/motor/feoffline/usedcar_detail/detail.html?sku_id=357172809&shop_id=118608",
-    "shop_id": "118608",
-    "image_file": "/workspace/dongchedi-wuhan-shop/images/357172809.jpg"
-  },
-  {
-    "sku": "357212868",
-    "title": "冰淇淋 2022款 甜筒",
-    "year": "2023年 / 0.67万公里 / 东莞",
-    "prefix": "标价",
-    "price": 1.88,
-    "extra": "限时物流补贴",
-    "tags": [
-      "放心检8.8分",
-      "无钣金",
-      "0过户"
-    ],
-    "badge": true,
-    "cover": "https://p9-dcd-sign.byteimg.com/tos-cn-i-f042mdwyw7/fab14e9ce2504f3f8d68936870f68951~tplv-resize:800:0.image?lk3s=416a877a&x-expires=1796199299&x-signature=qIUhQ4EDC9AjwMDry2yygEEGU4c%3D&psm=motor.sophon.product",
-    "detail_url": "https://m.dcdapp.com/motor/feoffline/usedcar_detail/detail.html?sku_id=357212868&shop_id=118608",
-    "shop_id": "118608",
-    "image_file": "/workspace/dongchedi-wuhan-shop/images/357212868.jpg"
-  },
-  {
-    "sku": "357107858",
-    "title": "嘉年华 2013款 两厢 1.5L 自动时尚型",
-    "year": "2016年 / 4.64万公里 / 武汉",
-    "prefix": "分期价",
-    "price": 1.89,
-    "extra": "领券优惠价",
-    "tags": [
-      "性价比很棒",
-      "放心检6.9分"
-    ],
-    "badge": true,
-    "cover": "https://p3-dcd-sign.byteimg.com/tos-cn-v-ed3284/osBQ0htE1jE4FWuHsV0TsI9IT5d9FwBjdd20a~tplv-f042mdwyw7-auto-webp:480:0.jpg?rk3s=5205f25e&x-expires=1794212073&x-signature=mBjEXZXrCMII9H5Rj4RLwnWrh2Q%3D&psm=motor.sophon.pack",
-    "detail_url": "https://m.dcdapp.com/motor/feoffline/usedcar_detail/detail.html?sku_id=357107858&shop_id=118608",
-    "shop_id": "118608",
-    "image_file": "/workspace/dongchedi-wuhan-shop/images/357107858.jpg"
+    "image_file": "/workspace/dongchedi-wuhan-shop/images/357001086.jpg",
+    "banner": "直减券2000"
   },
   {
     "sku": "357166936",
     "title": "科沃兹 2019款 320 自动欣享天窗版",
-    "year": "2019年 / 8.70万公里 / 武汉",
-    "prefix": "券后价",
     "price": 1.99,
+    "price_type": "券后",
+    "prefix": "券后价",
     "extra": "领券优惠价",
+    "extras": [
+      "领券优惠价",
+      "直减券2000"
+    ],
+    "year": "2019年 / 8.70万公里 / 武汉",
+    "plate_year": 2019,
+    "model_year": 2019,
+    "mileage_wan": 8.7,
+    "city": "武汉",
     "tags": [
       "性价比极佳",
       "放心检6.6分",
       "原版原漆"
     ],
-    "badge": true,
-    "cover": "https://p9-dcd-sign.byteimg.com/tos-cn-v-ed3284/o47VQhtoEkdIaZ7ySLb14DtusAfaVOQgDkG5xA~tplv-f042mdwyw7-auto-webp:480:0.jpg?rk3s=5205f25e&x-expires=1794212084&x-signature=BBsZqLLz%2F1pEog7rXpdbvr75agU%3D&psm=motor.sophon.pack",
+    "badges": [
+      "官方保",
+      "直营"
+    ],
+    "cover": "https://p9-dcd-sign.byteimg.com/tos-cn-i-f042mdwyw7/8f695d0997dc406bb2067115cbd07b13~tplv-resize:800:0.image?lk3s=416a877a&x-expires=1796200593&x-signature=7g%2BuDGCyxbcwaNuN%2Bx44fjVayHM%3D&psm=motor.sophon.product",
     "detail_url": "https://m.dcdapp.com/motor/feoffline/usedcar_detail/detail.html?sku_id=357166936&shop_id=118608",
     "shop_id": "118608",
-    "image_file": "/workspace/dongchedi-wuhan-shop/images/357166936.jpg"
+    "image_file": "/workspace/dongchedi-wuhan-shop/images/357166936.jpg",
+    "banner": "直减券2000"
   },
   {
     "sku": "357198641",
     "title": "雪铁龙C3-XR 2015款 1.6L 自动先锋型",
-    "year": "2016年 / 6.74万公里 / 武汉",
-    "prefix": "分期价",
     "price": 1.99,
+    "price_type": "分期",
+    "prefix": "分期价",
     "extra": "领券优惠价",
+    "extras": [
+      "领券优惠价",
+      "分期直减2000元"
+    ],
+    "year": "2016年 / 6.74万公里 / 武汉",
+    "plate_year": 2016,
+    "model_year": 2015,
+    "mileage_wan": 6.74,
+    "city": "武汉",
     "tags": [
       "性价比极佳",
       "放心检7.7分",
       "原版原漆"
     ],
-    "badge": true,
-    "cover": "https://p3-dcd-sign.byteimg.com/tos-cn-v-ed3284/oMqoDlT0bBiEyHtlNALIZziBl03fgnInheLa7t~tplv-f042mdwyw7-auto-webp:480:0.jpg?rk3s=5205f25e&x-expires=1794212084&x-signature=ioQh9dHpquKFcm5%2B8Qd029bKpQc%3D&psm=motor.sophon.pack",
+    "badges": [
+      "官方保",
+      "直营"
+    ],
+    "cover": "https://p3-dcd-sign.byteimg.com/tos-cn-i-f042mdwyw7/9607b46e010b4bc582903d3b4e9edf3e~tplv-resize:800:0.image?lk3s=416a877a&x-expires=1796200589&x-signature=4CrsbQTkGjq1c%2Bn%2FFAlkS%2BOAKYQ%3D&psm=motor.sophon.product",
     "detail_url": "https://m.dcdapp.com/motor/feoffline/usedcar_detail/detail.html?sku_id=357198641&shop_id=118608",
     "shop_id": "118608",
-    "image_file": "/workspace/dongchedi-wuhan-shop/images/357198641.jpg"
-  },
-  {
-    "sku": "357250758",
-    "title": "君威 2015款 1.6T 领先技术型",
-    "year": "2017年 / 12.29万公里 / 武汉",
-    "prefix": "标价",
-    "price": 1.99,
-    "extra": "特价省200元",
-    "tags": [
-      "性价比合理",
-      "放心检6.0分"
-    ],
-    "badge": true,
-    "cover": "https://p3-dcd-sign.byteimg.com/tos-cn-v-ed3284/ooMTIitH3mDf3hg9ADaHQi3HlOqgeBu3jv75In~tplv-f042mdwyw7-auto-webp:480:0.jpg?rk3s=5205f25e&x-expires=1794212086&x-signature=9cRMeFUiusMfDyXcuneDv0%2BtJOI%3D&psm=motor.sophon.pack",
-    "detail_url": "https://m.dcdapp.com/motor/feoffline/usedcar_detail/detail.html?sku_id=357250758&shop_id=118608",
-    "shop_id": "118608",
-    "image_file": "/workspace/dongchedi-wuhan-shop/images/357250758.jpg"
+    "image_file": "/workspace/dongchedi-wuhan-shop/images/357198641.jpg",
+    "banner": "分期直减2000元"
   },
   {
     "sku": "357219214",
     "title": "五菱宏光MINIEV 2022款 自在款 磷酸铁锂",
-    "year": "2023年 / 2.01万公里 / 武汉",
-    "prefix": "标价",
     "price": 2.09,
+    "price_type": "标价",
+    "prefix": "标价",
     "extra": "限时物流补贴",
+    "extras": [
+      "限时物流补贴"
+    ],
+    "year": "2023年 / 2.01万公里 / 武汉",
+    "plate_year": 2023,
+    "model_year": 2022,
+    "mileage_wan": 2.01,
+    "city": "武汉",
     "tags": [
       "放心检8.4分",
       "原版原漆",
       "三电质保"
     ],
-    "badge": true,
-    "cover": "https://p9-dcd-sign.byteimg.com/tos-cn-v-ed3284/oEtcuc5qdIat9lUwEy72WBaJQZmmBIaEwatoq~tplv-f042mdwyw7-auto-webp:480:0.jpg?rk3s=5205f25e&x-expires=1794212090&x-signature=YeF%2BIh1QwG1o1IF17kLsg73tsf0%3D&psm=motor.sophon.pack",
+    "badges": [
+      "官方保",
+      "直营"
+    ],
+    "cover": "https://p3-dcd-sign.byteimg.com/tos-cn-i-f042mdwyw7/a0cf0c37fce8462aad28766b179cc1e9~tplv-resize:800:0.image?lk3s=416a877a&x-expires=1796200601&x-signature=Lk6JvGDetwPTAtPlk9O9x9CvNxs%3D&psm=motor.sophon.product",
     "detail_url": "https://m.dcdapp.com/motor/feoffline/usedcar_detail/detail.html?sku_id=357219214&shop_id=118608",
     "shop_id": "118608",
-    "image_file": "/workspace/dongchedi-wuhan-shop/images/357219214.jpg"
-  },
-  {
-    "sku": "357211010",
-    "title": "福克斯 2018款 经典版 三厢 1.6L 自动风尚型智行版",
-    "year": "2017年 / 10.92万公里 / 武汉",
-    "prefix": "分期价",
-    "price": 2.19,
-    "extra": "领券优惠价",
-    "tags": [
-      "性价比极佳",
-      "放心检7.6分"
-    ],
-    "badge": true,
-    "cover": "https://p9-dcd-sign.byteimg.com/tos-cn-v-ed3284/o0AtaY9no6IQzICtli5EBg9kdwIccBBLWuWjE~tplv-f042mdwyw7-auto-webp:480:0.jpg?rk3s=5205f25e&x-expires=1794212073&x-signature=65aCJi4Du%2BM8sqdaQIr%2FZ76EXsE%3D&psm=motor.sophon.pack",
-    "detail_url": "https://m.dcdapp.com/motor/feoffline/usedcar_detail/detail.html?sku_id=357211010&shop_id=118608",
-    "shop_id": "118608",
-    "image_file": "/workspace/dongchedi-wuhan-shop/images/357211010.jpg"
-  },
-  {
-    "sku": "357103201",
-    "title": "翼虎 2015款 1.5L GTDi 两驱风尚型",
-    "year": "2015年 / 8.32万公里 / 武汉",
-    "prefix": "券后价",
-    "price": 2.29,
-    "extra": "领券优惠价",
-    "tags": [
-      "性价比极佳",
-      "放心检7.7分"
-    ],
-    "badge": true,
-    "cover": "https://p3-dcd-sign.byteimg.com/tos-cn-v-ed3284/ogglRDqH3x64aE8H1AQ0OxafKrGBMgRd2d3eJE~tplv-f042mdwyw7-auto-webp:480:0.jpg?rk3s=5205f25e&x-expires=1794212084&x-signature=zjuAMBjaxMesLmTVamre1fWhIrY%3D&psm=motor.sophon.pack",
-    "detail_url": "https://m.dcdapp.com/motor/feoffline/usedcar_detail/detail.html?sku_id=357103201&shop_id=118608",
-    "shop_id": "118608",
-    "image_file": "/workspace/dongchedi-wuhan-shop/images/357103201.jpg"
-  },
-  {
-    "sku": "357182608",
-    "title": "起亚K2 2017款 三厢 1.4L AT GLS",
-    "year": "2017年 / 10.48万公里 / 武汉",
-    "prefix": "分期价",
-    "price": 2.29,
-    "extra": "领券优惠价",
-    "tags": [
-      "性价比合理",
-      "放心检6.4分"
-    ],
-    "badge": true,
-    "cover": "https://p3-dcd-sign.byteimg.com/tos-cn-v-ed3284/o8Y55dYEWiNIIDtIuIwLYQkn9gatBmuLVEmgB~tplv-f042mdwyw7-auto-webp:480:0.jpg?rk3s=5205f25e&x-expires=1794212079&x-signature=8wobwQm5vz0ohOKk6p9Jft%2FVxbs%3D&psm=motor.sophon.pack",
-    "detail_url": "https://m.dcdapp.com/motor/feoffline/usedcar_detail/detail.html?sku_id=357182608&shop_id=118608",
-    "shop_id": "118608",
-    "image_file": "/workspace/dongchedi-wuhan-shop/images/357182608.jpg"
-  },
-  {
-    "sku": "357140196",
-    "title": "明锐 2017款 1.6L 手动智行版",
-    "year": "2017年 / 10.37万公里 / 武汉",
-    "prefix": "标价",
-    "price": 2.39,
-    "extra": "直降3000元",
-    "tags": [
-      "性价比合理",
-      "放心检6.9分"
-    ],
-    "badge": true,
-    "cover": "https://p3-dcd-sign.byteimg.com/tos-cn-v-ed3284/o8m1GRw51BcVaP1vae2joiQ7nCGgdULAsqLffP~tplv-f042mdwyw7-auto-webp:480:0.jpg?rk3s=5205f25e&x-expires=1794212079&x-signature=gF15rsuraVimCHcq7v0ZUdzuL78%3D&psm=motor.sophon.pack",
-    "detail_url": "https://m.dcdapp.com/motor/feoffline/usedcar_detail/detail.html?sku_id=357140196&shop_id=118608",
-    "shop_id": "118608",
-    "image_file": "/workspace/dongchedi-wuhan-shop/images/357140196.jpg"
+    "image_file": "/workspace/dongchedi-wuhan-shop/images/357219214.jpg",
+    "banner": ""
   },
   {
     "sku": "356933838",
     "title": "帝豪GS 2018款 领潮版 1.4T 自动臻尚智联型",
-    "year": "2018年 / 8.65万公里 / 武汉",
-    "prefix": "分期价",
     "price": 2.49,
+    "price_type": "分期",
+    "prefix": "分期价",
     "extra": "领券优惠价",
+    "extras": [
+      "领券优惠价",
+      "分期直减2000元"
+    ],
+    "year": "2018年 / 8.65万公里 / 武汉",
+    "plate_year": 2018,
+    "model_year": 2018,
+    "mileage_wan": 8.65,
+    "city": "武汉",
     "tags": [
       "性价比很棒",
       "放心检8.1分",
       "原版原漆"
     ],
-    "badge": true,
-    "cover": "https://p3-dcd-sign.byteimg.com/tos-cn-v-ed3284/o8dya7Q3QL1Gv77eQAhgMhtusWuthgIGO8D8HV~tplv-f042mdwyw7-auto-webp:480:0.jpg?rk3s=5205f25e&x-expires=1794212090&x-signature=ifu6M7waxG3OJeGr%2B92gd%2FSbZQ8%3D&psm=motor.sophon.pack",
+    "badges": [
+      "官方保",
+      "直营"
+    ],
+    "cover": "https://p3-dcd-sign.byteimg.com/tos-cn-i-f042mdwyw7/13d2aa542b894078924fcc17c0f5001f~tplv-f042mdwyw7-original:800:0.image?lk3s=416a877a&x-expires=1796200596&x-signature=wQFAHoeZfbWYSF29Hlh3%2FQLM1dw%3D&psm=motor.sophon.product",
     "detail_url": "https://m.dcdapp.com/motor/feoffline/usedcar_detail/detail.html?sku_id=356933838&shop_id=118608",
     "shop_id": "118608",
-    "image_file": "/workspace/dongchedi-wuhan-shop/images/356933838.jpg"
-  },
-  {
-    "sku": "356946226",
-    "title": "明锐 2017款 1.6L 自动智行版",
-    "year": "2016年 / 11.42万公里 / 武汉",
-    "prefix": "分期价",
-    "price": 2.49,
-    "extra": "领券优惠价",
-    "tags": [
-      "性价比很棒",
-      "放心检7.8分"
-    ],
-    "badge": true,
-    "cover": "https://p9-dcd-sign.byteimg.com/tos-cn-v-ed3284/ocIZqaX32QVIgwvfieRAcOrHliG4q1DSADECB8~tplv-f042mdwyw7-auto-webp:480:0.jpg?rk3s=5205f25e&x-expires=1794212055&x-signature=GpVK%2FBqaZvqy2BTsh22TCaTsWuA%3D&psm=motor.sophon.pack",
-    "detail_url": "https://m.dcdapp.com/motor/feoffline/usedcar_detail/detail.html?sku_id=356946226&shop_id=118608",
-    "shop_id": "118608",
-    "image_file": "/workspace/dongchedi-wuhan-shop/images/356946226.jpg"
+    "image_file": "/workspace/dongchedi-wuhan-shop/images/356933838.jpg",
+    "banner": "分期直减2000元"
   },
   {
     "sku": "357158863",
     "title": "荣威RX5 2016款 20T 两驱自动互联网智享版",
-    "year": "2017年 / 3.60万公里 / 武汉",
-    "prefix": "分期价",
     "price": 2.49,
+    "price_type": "分期",
+    "prefix": "分期价",
     "extra": "领券优惠价",
+    "extras": [
+      "领券优惠价",
+      "分期直减2000元"
+    ],
+    "year": "2017年 / 3.60万公里 / 武汉",
+    "plate_year": 2017,
+    "model_year": 2016,
+    "mileage_wan": 3.6,
+    "city": "武汉",
     "tags": [
       "性价比很棒",
       "放心检7.8分"
     ],
-    "badge": true,
-    "cover": "https://p3-dcd-sign.byteimg.com/tos-cn-v-ed3284/oczWBQIgq19NkJIwBEsEohvKE7N98VJt4Pa5d~tplv-f042mdwyw7-auto-webp:480:0.jpg?rk3s=5205f25e&x-expires=1794212079&x-signature=8WxPDRzjBY%2BlvgAlcwpoFNf5OF8%3D&psm=motor.sophon.pack",
+    "badges": [
+      "官方保",
+      "直营"
+    ],
+    "cover": "https://p3-dcd-sign.byteimg.com/tos-cn-i-f042mdwyw7/fb51587448ba49e4a7ddcc315b56394c~tplv-resize:800:0.image?lk3s=416a877a&x-expires=1796200589&x-signature=3oiis0tIn6G9VI%2FwI1BsPvrN1Ig%3D&psm=motor.sophon.product",
     "detail_url": "https://m.dcdapp.com/motor/feoffline/usedcar_detail/detail.html?sku_id=357158863&shop_id=118608",
     "shop_id": "118608",
-    "image_file": "/workspace/dongchedi-wuhan-shop/images/357158863.jpg"
+    "image_file": "/workspace/dongchedi-wuhan-shop/images/357158863.jpg",
+    "banner": "分期直减2000元"
+  },
+  {
+    "sku": "356892961",
+    "title": "帝豪GS 2018款 领潮版 1.4T 自动领尚智联型",
+    "price": 2.59,
+    "price_type": "标价",
+    "prefix": "标价",
+    "extra": "直降1000元",
+    "extras": [
+      "直降1000元"
+    ],
+    "year": "2018年 / 8.53万公里 / 武汉",
+    "plate_year": 2018,
+    "model_year": 2018,
+    "mileage_wan": 8.53,
+    "city": "武汉",
+    "tags": [
+      "性价比很棒",
+      "放心检7.5分",
+      "原版原漆"
+    ],
+    "badges": [
+      "官方保",
+      "直营"
+    ],
+    "cover": "https://p9-dcd-sign.byteimg.com/tos-cn-i-f042mdwyw7/eab08308b7c441ae95f154611d8c3b2f~tplv-resize:800:0.image?lk3s=416a877a&x-expires=1796200596&x-signature=lZMct3sOwtg8vIRGhX8GjhOenJs%3D&psm=motor.sophon.product",
+    "detail_url": "https://m.dcdapp.com/motor/feoffline/usedcar_detail/detail.html?sku_id=356892961&shop_id=118608",
+    "shop_id": "118608",
+    "image_file": "/workspace/dongchedi-wuhan-shop/images/356892961.jpg",
+    "banner": ""
+  },
+  {
+    "sku": "357152462",
+    "title": "长安Lumin 2022款 210km 香甜款",
+    "price": 2.59,
+    "price_type": "券后",
+    "prefix": "券后价",
+    "extra": "领券优惠价",
+    "extras": [
+      "领券优惠价",
+      "直减券1000"
+    ],
+    "year": "2022年 / 2.30万公里 / 武汉",
+    "plate_year": 2022,
+    "model_year": 2022,
+    "mileage_wan": 2.3,
+    "city": "武汉",
+    "tags": [
+      "性价比合理",
+      "放心检7.5分",
+      "三电质保"
+    ],
+    "badges": [
+      "官方保",
+      "直营"
+    ],
+    "cover": "https://p3-dcd-sign.byteimg.com/tos-cn-i-f042mdwyw7/72d09ac37bce434db09026fdfc35c4f4~tplv-resize:800:0.image?lk3s=416a877a&x-expires=1796200601&x-signature=lH5Jt8jqBj1Akf9O30D2Q83LU%2FM%3D&psm=motor.sophon.product",
+    "detail_url": "https://m.dcdapp.com/motor/feoffline/usedcar_detail/detail.html?sku_id=357152462&shop_id=118608",
+    "shop_id": "118608",
+    "image_file": "/workspace/dongchedi-wuhan-shop/images/357152462.jpg",
+    "banner": "直减券1000"
+  },
+  {
+    "sku": "357170397",
+    "title": "五菱宏光MINIEV 2022款 GAMEBOY 200km 玩咖款 磷酸铁锂",
+    "price": 2.69,
+    "price_type": "标价",
+    "prefix": "标价",
+    "extra": "直降1300元",
+    "extras": [
+      "直降1300元"
+    ],
+    "year": "2023年 / 1.50万公里 / 武汉",
+    "plate_year": 2023,
+    "model_year": 2022,
+    "mileage_wan": 1.5,
+    "city": "武汉",
+    "tags": [
+      "性价比合理",
+      "放心检8.1分",
+      "原版原漆",
+      "三电质保"
+    ],
+    "badges": [
+      "官方保",
+      "直营"
+    ],
+    "cover": "https://p3-dcd-sign.byteimg.com/tos-cn-i-f042mdwyw7/98c236bfb83b4fc68f91fda486d269f8~tplv-f042mdwyw7-original:800:0.image?lk3s=416a877a&x-expires=1796200601&x-signature=SrMaS7DlZvSEks5EURjV92D2bT4%3D&psm=motor.sophon.product",
+    "detail_url": "https://m.dcdapp.com/motor/feoffline/usedcar_detail/detail.html?sku_id=357170397&shop_id=118608",
+    "shop_id": "118608",
+    "image_file": "/workspace/dongchedi-wuhan-shop/images/357170397.jpg",
+    "banner": ""
+  },
+  {
+    "sku": "356905902",
+    "title": "科沃兹 2021款 325T 自动欣悦版",
+    "price": 2.79,
+    "price_type": "分期",
+    "prefix": "分期价",
+    "extra": "领券优惠价",
+    "extras": [
+      "领券优惠价",
+      "分期直减2000元"
+    ],
+    "year": "2021年 / 5.39万公里 / 武汉",
+    "plate_year": 2021,
+    "model_year": 2021,
+    "mileage_wan": 5.39,
+    "city": "武汉",
+    "tags": [
+      "性价比合理",
+      "放心检7.8分"
+    ],
+    "badges": [
+      "官方保",
+      "直营"
+    ],
+    "cover": "https://p3-dcd-sign.byteimg.com/tos-cn-i-f042mdwyw7/00b0ee8719924ee0826cd4c2178f08ab~tplv-resize:800:0.image?lk3s=416a877a&x-expires=1796200585&x-signature=Bs8MkR9hSTnQ7JWAOggWInu%2BXss%3D&psm=motor.sophon.product",
+    "detail_url": "https://m.dcdapp.com/motor/feoffline/usedcar_detail/detail.html?sku_id=356905902&shop_id=118608",
+    "shop_id": "118608",
+    "image_file": "/workspace/dongchedi-wuhan-shop/images/356905902.jpg",
+    "banner": "分期直减2000元"
+  },
+  {
+    "sku": "357307243",
+    "title": "奕炫 2020款 230T 自动炫酷版",
+    "price": 2.79,
+    "price_type": "标价",
+    "prefix": "标价",
+    "extra": "限时物流补贴",
+    "extras": [
+      "限时物流补贴"
+    ],
+    "year": "2020年 / 5.11万公里 / 武汉",
+    "plate_year": 2020,
+    "model_year": 2020,
+    "mileage_wan": 5.11,
+    "city": "武汉",
+    "tags": [
+      "性价比极佳",
+      "已检测",
+      "0过户",
+      "内饰如新"
+    ],
+    "badges": [
+      "官方保",
+      "直营"
+    ],
+    "cover": "https://p3-dcd-sign.byteimg.com/tos-cn-i-f042mdwyw7/b5be2ac6b4ca45009bf67d4bd835e167~tplv-resize:800:0.image?lk3s=416a877a&x-expires=1796200589&x-signature=xcTep2Scqwan03%2ByJ2V8XRntsFI%3D&psm=motor.sophon.product",
+    "detail_url": "https://m.dcdapp.com/motor/feoffline/usedcar_detail/detail.html?sku_id=357307243&shop_id=118608",
+    "shop_id": "118608",
+    "image_file": "/workspace/dongchedi-wuhan-shop/images/357307243.jpg",
+    "banner": ""
+  },
+  {
+    "sku": "357211018",
+    "title": "逸动 2022款 PLUS 1.6L GDI 手动豪华型",
+    "price": 2.89,
+    "price_type": "分期",
+    "prefix": "分期价",
+    "extra": "领券优惠价",
+    "extras": [
+      "领券优惠价",
+      "分期直减1000元"
+    ],
+    "year": "2022年 / 5.23万公里 / 武汉",
+    "plate_year": 2022,
+    "model_year": 2022,
+    "mileage_wan": 5.23,
+    "city": "武汉",
+    "tags": [
+      "性价比极佳",
+      "放心检8.7分",
+      "无钣金"
+    ],
+    "badges": [
+      "官方保",
+      "直营"
+    ],
+    "cover": "https://p9-dcd-sign.byteimg.com/tos-cn-i-f042mdwyw7/0dc8790ab13c47249a76342a0a746e22~tplv-resize:800:0.image?lk3s=416a877a&x-expires=1796200585&x-signature=fbLXVjUKpF3kTHQkQZv0ahwAp%2F4%3D&psm=motor.sophon.product",
+    "detail_url": "https://m.dcdapp.com/motor/feoffline/usedcar_detail/detail.html?sku_id=357211018&shop_id=118608",
+    "shop_id": "118608",
+    "image_file": "/workspace/dongchedi-wuhan-shop/images/357211018.jpg",
+    "banner": "分期直减1000元"
+  },
+  {
+    "sku": "357263877",
+    "title": "威驰FS 2017款 1.5L 手动锋驰版",
+    "price": 2.89,
+    "price_type": "分期",
+    "prefix": "分期价",
+    "extra": "领券优惠价",
+    "extras": [
+      "领券优惠价",
+      "分期直减3000元"
+    ],
+    "year": "2019年 / 3.88万公里 / 武汉",
+    "plate_year": 2019,
+    "model_year": 2017,
+    "mileage_wan": 3.88,
+    "city": "武汉",
+    "tags": [
+      "放心检7.7分"
+    ],
+    "badges": [
+      "官方保",
+      "直营"
+    ],
+    "cover": "https://p3-dcd-sign.byteimg.com/tos-cn-i-f042mdwyw7/3d8a7516c6564beca83f11fdabed0486~tplv-resize:800:0.image?lk3s=416a877a&x-expires=1796200596&x-signature=W%2F2YFvzH6shYvMlScAWFDsAiBjA%3D&psm=motor.sophon.product",
+    "detail_url": "https://m.dcdapp.com/motor/feoffline/usedcar_detail/detail.html?sku_id=357263877&shop_id=118608",
+    "shop_id": "118608",
+    "image_file": "/workspace/dongchedi-wuhan-shop/images/357263877.jpg",
+    "banner": "分期直减3000元"
+  },
+  {
+    "sku": "357349654",
+    "title": "博越 2018款 1.8TD 自动两驱智联型4G互联版",
+    "price": 2.89,
+    "price_type": "标价",
+    "prefix": "标价",
+    "extra": "特价省200元",
+    "extras": [
+      "特价省200元"
+    ],
+    "year": "2018年 / 6.01万公里 / 武汉",
+    "plate_year": 2018,
+    "model_year": 2018,
+    "mileage_wan": 6.01,
+    "city": "武汉",
+    "tags": [
+      "性价比极佳",
+      "已检测",
+      "新上",
+      "0过户"
+    ],
+    "badges": [
+      "官方保",
+      "直营"
+    ],
+    "cover": "https://p3-dcd-sign.byteimg.com/tos-cn-i-f042mdwyw7/7b0bc34e4d7049c29ed8b91f61064ed3~tplv-f042mdwyw7-original:800:0.image?lk3s=416a877a&x-expires=1796200589&x-signature=ALvoB2L2FknPqMrmURcOVEqrvDY%3D&psm=motor.sophon.product",
+    "detail_url": "https://m.dcdapp.com/motor/feoffline/usedcar_detail/detail.html?sku_id=357349654&shop_id=118608",
+    "shop_id": "118608",
+    "image_file": "/workspace/dongchedi-wuhan-shop/images/357349654.jpg",
+    "banner": ""
+  },
+  {
+    "sku": "357006776",
+    "title": "英朗 2018款 18T 自动精英型",
+    "price": 2.99,
+    "price_type": "标价",
+    "prefix": "标价",
+    "extra": "特价省200元",
+    "extras": [
+      "特价省200元"
+    ],
+    "year": "2018年 / 3.78万公里 / 武汉",
+    "plate_year": 2018,
+    "model_year": 2018,
+    "mileage_wan": 3.78,
+    "city": "武汉",
+    "tags": [
+      "性价比合理",
+      "放心检7.7分"
+    ],
+    "badges": [
+      "官方保",
+      "直营"
+    ],
+    "cover": "https://p3-dcd-sign.byteimg.com/tos-cn-i-f042mdwyw7/47537e31225642399d92b40f4c910965~tplv-resize:800:0.image?lk3s=416a877a&x-expires=1796200585&x-signature=OkO5X%2Bpz6xzsAXWKXhbKBxBfSTM%3D&psm=motor.sophon.product",
+    "detail_url": "https://m.dcdapp.com/motor/feoffline/usedcar_detail/detail.html?sku_id=357006776&shop_id=118608",
+    "shop_id": "118608",
+    "image_file": "/workspace/dongchedi-wuhan-shop/images/357006776.jpg",
+    "banner": ""
+  },
+  {
+    "sku": "357184721",
+    "title": "奕炫 2021款 230T 自动追影骑士版",
+    "price": 2.99,
+    "price_type": "标价",
+    "prefix": "标价",
+    "extra": "特价省200元",
+    "extras": [
+      "特价省200元"
+    ],
+    "year": "2021年 / 9.46万公里 / 武汉",
+    "plate_year": 2021,
+    "model_year": 2021,
+    "mileage_wan": 9.46,
+    "city": "武汉",
+    "tags": [
+      "性价比很棒",
+      "放心检7.1分"
+    ],
+    "badges": [
+      "官方保",
+      "直营"
+    ],
+    "cover": "https://p9-dcd-sign.byteimg.com/tos-cn-i-f042mdwyw7/8d471b151fe04dc3b77f988572c9c431~tplv-f042mdwyw7-original:800:0.image?lk3s=416a877a&x-expires=1796200578&x-signature=jJXJde%2B%2FuoGdk3ArYTtH5mgqDk8%3D&psm=motor.sophon.product",
+    "detail_url": "https://m.dcdapp.com/motor/feoffline/usedcar_detail/detail.html?sku_id=357184721&shop_id=118608",
+    "shop_id": "118608",
+    "image_file": "/workspace/dongchedi-wuhan-shop/images/357184721.jpg",
+    "banner": ""
+  },
+  {
+    "sku": "357211030",
+    "title": "自由侠 2019款 220T 自动领先版",
+    "price": 2.99,
+    "price_type": "分期",
+    "prefix": "分期价",
+    "extra": "领券优惠价",
+    "extras": [
+      "领券优惠价",
+      "分期直减2000元"
+    ],
+    "year": "2019年 / 9.81万公里 / 武汉",
+    "plate_year": 2019,
+    "model_year": 2019,
+    "mileage_wan": 9.81,
+    "city": "武汉",
+    "tags": [
+      "性价比合理",
+      "放心检7.1分"
+    ],
+    "badges": [
+      "官方保",
+      "直营"
+    ],
+    "cover": "https://p9-dcd-sign.byteimg.com/tos-cn-i-f042mdwyw7/4be36538959e49ccbc239ba6eef06221~tplv-resize:800:0.image?lk3s=416a877a&x-expires=1796200578&x-signature=02hVjnnu%2BcMDq1PWCbMTLlyQ2F0%3D&psm=motor.sophon.product",
+    "detail_url": "https://m.dcdapp.com/motor/feoffline/usedcar_detail/detail.html?sku_id=357211030&shop_id=118608",
+    "shop_id": "118608",
+    "image_file": "/workspace/dongchedi-wuhan-shop/images/357211030.jpg",
+    "banner": "分期直减2000元"
+  },
+  {
+    "sku": "356751463",
+    "title": "长安Lumin 2023款 205km 香沁款",
+    "price": 3.09,
+    "price_type": "标价",
+    "prefix": "标价",
+    "extra": "限时物流补贴",
+    "extras": [
+      "限时物流补贴"
+    ],
+    "year": "2023年 / 1.72万公里 / 武汉",
+    "plate_year": 2023,
+    "model_year": 2023,
+    "mileage_wan": 1.72,
+    "city": "武汉",
+    "tags": [
+      "性价比极佳",
+      "放心检8.8分",
+      "咨询飙升",
+      "三电质保"
+    ],
+    "badges": [
+      "官方保",
+      "直营"
+    ],
+    "cover": "https://p3-dcd-sign.byteimg.com/tos-cn-i-f042mdwyw7/1c1b1334dfc544f4a95c62cf4dbb4604~tplv-resize:800:0.image?lk3s=416a877a&x-expires=1796200601&x-signature=WOggy1PdGnSF7nSteOE0vfkCQXY%3D&psm=motor.sophon.product",
+    "detail_url": "https://m.dcdapp.com/motor/feoffline/usedcar_detail/detail.html?sku_id=356751463&shop_id=118608",
+    "shop_id": "118608",
+    "image_file": "/workspace/dongchedi-wuhan-shop/images/356751463.jpg",
+    "banner": ""
+  },
+  {
+    "sku": "356871818",
+    "title": "昕锐 2020款 1.5L 自动舒适版",
+    "price": 3.09,
+    "price_type": "分期",
+    "prefix": "分期价",
+    "extra": "领券优惠价",
+    "extras": [
+      "领券优惠价",
+      "分期直减3000元"
+    ],
+    "year": "2020年 / 6.93万公里 / 武汉",
+    "plate_year": 2020,
+    "model_year": 2020,
+    "mileage_wan": 6.93,
+    "city": "武汉",
+    "tags": [
+      "性价比极佳",
+      "放心检8.2分",
+      "原版原漆"
+    ],
+    "badges": [
+      "官方保",
+      "直营"
+    ],
+    "cover": "https://p3-dcd-sign.byteimg.com/tos-cn-i-f042mdwyw7/72d63710a2744ab9a96ce5a1d7905abb~tplv-f042mdwyw7-original:800:0.image?lk3s=416a877a&x-expires=1796200589&x-signature=ls1uTmFrq1HZ%2B7rU0c%2BYFvseo%2F0%3D&psm=motor.sophon.product",
+    "detail_url": "https://m.dcdapp.com/motor/feoffline/usedcar_detail/detail.html?sku_id=356871818&shop_id=118608",
+    "shop_id": "118608",
+    "image_file": "/workspace/dongchedi-wuhan-shop/images/356871818.jpg",
+    "banner": "分期直减3000元"
+  },
+  {
+    "sku": "356939503",
+    "title": "熊猫 2024款 200km 熊猫骑士",
+    "price": 3.09,
+    "price_type": "标价",
+    "prefix": "标价",
+    "extra": "限时物流补贴",
+    "extras": [
+      "限时物流补贴"
+    ],
+    "year": "2024年 / 1.90万公里 / 武汉",
+    "plate_year": 2024,
+    "model_year": 2024,
+    "mileage_wan": 1.9,
+    "city": "武汉",
+    "tags": [
+      "性价比很棒",
+      "放心检8.8分",
+      "100+人咨询",
+      "三电质保"
+    ],
+    "badges": [
+      "官方保",
+      "直营"
+    ],
+    "cover": "https://p3-dcd-sign.byteimg.com/tos-cn-i-f042mdwyw7/14b3b06066054f1a86011af6365f9dc4~tplv-resize:800:0.image?lk3s=416a877a&x-expires=1796200601&x-signature=zAZIusY%2BloXI8CIUqzIq9L%2Ft0sc%3D&psm=motor.sophon.product",
+    "detail_url": "https://m.dcdapp.com/motor/feoffline/usedcar_detail/detail.html?sku_id=356939503&shop_id=118608",
+    "shop_id": "118608",
+    "image_file": "/workspace/dongchedi-wuhan-shop/images/356939503.jpg",
+    "banner": ""
+  },
+  {
+    "sku": "356595514",
+    "title": "零跑T03 2023款 310轻享版",
+    "price": 3.16,
+    "price_type": "分期",
+    "prefix": "分期价",
+    "extra": "领券优惠价",
+    "extras": [
+      "领券优惠价",
+      "分期直减4000元"
+    ],
+    "year": "2023年 / 3.27万公里 / 武汉",
+    "plate_year": 2023,
+    "model_year": 2023,
+    "mileage_wan": 3.27,
+    "city": "武汉",
+    "tags": [
+      "性价比极佳",
+      "放心检8.8分",
+      "无钣金",
+      "三电质保"
+    ],
+    "badges": [
+      "官方保",
+      "直营"
+    ],
+    "cover": "https://p3-dcd-sign.byteimg.com/tos-cn-i-f042mdwyw7/0b02f28b77bc45ea822088f43fd40dec~tplv-f042mdwyw7-original:800:0.image?lk3s=416a877a&x-expires=1796200596&x-signature=gcUmM0sBPk8k48uDS3ceAbgEcV4%3D&psm=motor.sophon.product",
+    "detail_url": "https://m.dcdapp.com/motor/feoffline/usedcar_detail/detail.html?sku_id=356595514&shop_id=118608",
+    "shop_id": "118608",
+    "image_file": "/workspace/dongchedi-wuhan-shop/images/356595514.jpg",
+    "banner": "分期直减4000元"
+  },
+  {
+    "sku": "356670871",
+    "title": "缤越 2019款 运动款 260T DCT游侠 国VI",
+    "price": 3.19,
+    "price_type": "标价",
+    "prefix": "标价",
+    "extra": "直降2000元",
+    "extras": [
+      "直降2000元"
+    ],
+    "year": "2019年 / 3.39万公里 / 武汉",
+    "plate_year": 2019,
+    "model_year": 2019,
+    "mileage_wan": 3.39,
+    "city": "武汉",
+    "tags": [
+      "性价比极佳",
+      "放心检8.0分"
+    ],
+    "badges": [
+      "官方保",
+      "直营"
+    ],
+    "cover": "https://p9-dcd-sign.byteimg.com/tos-cn-i-f042mdwyw7/57ff1a16417049a69f0e9b93e1d9ba25~tplv-f042mdwyw7-original:800:0.image?lk3s=416a877a&x-expires=1796200589&x-signature=aZF%2Bs4IvMcb%2B7t3gNz6X282RIf8%3D&psm=motor.sophon.product",
+    "detail_url": "https://m.dcdapp.com/motor/feoffline/usedcar_detail/detail.html?sku_id=356670871&shop_id=118608",
+    "shop_id": "118608",
+    "image_file": "/workspace/dongchedi-wuhan-shop/images/356670871.jpg",
+    "banner": ""
+  },
+  {
+    "sku": "356796725",
+    "title": "速腾 2017款 230TSI 自动舒适型",
+    "price": 3.19,
+    "price_type": "标价",
+    "prefix": "标价",
+    "extra": "直降2000元",
+    "extras": [
+      "直降2000元"
+    ],
+    "year": "2017年 / 7.75万公里 / 武汉",
+    "plate_year": 2017,
+    "model_year": 2017,
+    "mileage_wan": 7.75,
+    "city": "武汉",
+    "tags": [
+      "性价比极佳",
+      "放心检6.7分"
+    ],
+    "badges": [
+      "官方保",
+      "直营"
+    ],
+    "cover": "https://p3-dcd-sign.byteimg.com/tos-cn-i-f042mdwyw7/258bec890eb14cae82f38cf9be45e722~tplv-f042mdwyw7-original:800:0.image?lk3s=416a877a&x-expires=1796200574&x-signature=M03IwJLT4seIyTzGN7Gp8uSJqr0%3D&psm=motor.sophon.product",
+    "detail_url": "https://m.dcdapp.com/motor/feoffline/usedcar_detail/detail.html?sku_id=356796725&shop_id=118608",
+    "shop_id": "118608",
+    "image_file": "/workspace/dongchedi-wuhan-shop/images/356796725.jpg",
+    "banner": ""
+  },
+  {
+    "sku": "357250769",
+    "title": "逸动DT 2021款 1.6L 自动豪华型",
+    "price": 3.19,
+    "price_type": "标价",
+    "prefix": "标价",
+    "extra": "限时物流补贴",
+    "extras": [
+      "限时物流补贴"
+    ],
+    "year": "2022年 / 2.62万公里 / 武汉",
+    "plate_year": 2022,
+    "model_year": 2021,
+    "mileage_wan": 2.62,
+    "city": "武汉",
+    "tags": [
+      "性价比合理",
+      "放心检7.7分",
+      "无钣金"
+    ],
+    "badges": [
+      "官方保",
+      "直营"
+    ],
+    "cover": "https://p3-dcd-sign.byteimg.com/tos-cn-i-f042mdwyw7/0698265f7cf742228e54581f8152262e~tplv-resize:800:0.image?lk3s=416a877a&x-expires=1796200581&x-signature=Cptes1ShnnESIwjRFlhlJZlHvQs%3D&psm=motor.sophon.product",
+    "detail_url": "https://m.dcdapp.com/motor/feoffline/usedcar_detail/detail.html?sku_id=357250769&shop_id=118608",
+    "shop_id": "118608",
+    "image_file": "/workspace/dongchedi-wuhan-shop/images/357250769.jpg",
+    "banner": ""
+  },
+  {
+    "sku": "357211013",
+    "title": "魏牌 VV5 2017款 2.0T 超豪型",
+    "price": 3.28,
+    "price_type": "分期",
+    "prefix": "分期价",
+    "extra": "领券优惠价",
+    "extras": [
+      "领券优惠价",
+      "分期直减4000元"
+    ],
+    "year": "2018年 / 5.79万公里 / 武汉",
+    "plate_year": 2018,
+    "model_year": 2017,
+    "mileage_wan": 5.79,
+    "city": "武汉",
+    "tags": [
+      "性价比很棒",
+      "放心检7.0分"
+    ],
+    "badges": [
+      "官方保",
+      "直营"
+    ],
+    "cover": "https://p9-dcd-sign.byteimg.com/tos-cn-i-f042mdwyw7/085bf6f1ea7742d292a2eb5c9bbf3093~tplv-resize:800:0.image?lk3s=416a877a&x-expires=1796200585&x-signature=DmzQ4H8oiXrKkSM2tmXg01wEXlM%3D&psm=motor.sophon.product",
+    "detail_url": "https://m.dcdapp.com/motor/feoffline/usedcar_detail/detail.html?sku_id=357211013&shop_id=118608",
+    "shop_id": "118608",
+    "image_file": "/workspace/dongchedi-wuhan-shop/images/357211013.jpg",
+    "banner": "分期直减4000元"
+  },
+  {
+    "sku": "357149717",
+    "title": "魏牌 VV5 2017款 2.0T 旗舰型",
+    "price": 3.29,
+    "price_type": "标价",
+    "prefix": "标价",
+    "extra": "特价省200元",
+    "extras": [
+      "特价省200元"
+    ],
+    "year": "2018年 / 7.35万公里 / 武汉",
+    "plate_year": 2018,
+    "model_year": 2017,
+    "mileage_wan": 7.35,
+    "city": "武汉",
+    "tags": [
+      "性价比极佳",
+      "放心检7.5分"
+    ],
+    "badges": [
+      "官方保",
+      "直营"
+    ],
+    "cover": "https://p9-dcd-sign.byteimg.com/tos-cn-i-f042mdwyw7/719e519e36f14727a20c34757a2770e8~tplv-resize:800:0.image?lk3s=416a877a&x-expires=1796200581&x-signature=Q8y%2B4hYO57djAijBPgJiwVFiRgM%3D&psm=motor.sophon.product",
+    "detail_url": "https://m.dcdapp.com/motor/feoffline/usedcar_detail/detail.html?sku_id=357149717&shop_id=118608",
+    "shop_id": "118608",
+    "image_file": "/workspace/dongchedi-wuhan-shop/images/357149717.jpg",
+    "banner": ""
+  },
+  {
+    "sku": "357237949",
+    "title": "奕炫 2023款 改款 1.5L 自动追风版",
+    "price": 3.29,
+    "price_type": "标价",
+    "prefix": "标价",
+    "extra": "限时物流补贴",
+    "extras": [
+      "限时物流补贴"
+    ],
+    "year": "2023年 / 5.19万公里 / 武汉",
+    "plate_year": 2023,
+    "model_year": 2023,
+    "mileage_wan": 5.19,
+    "city": "武汉",
+    "tags": [
+      "性价比很棒",
+      "放心检7.9分"
+    ],
+    "badges": [
+      "官方保",
+      "直营"
+    ],
+    "cover": "https://p3-dcd-sign.byteimg.com/tos-cn-i-f042mdwyw7/3ed443414f2c47e083c6a7311f862a12~tplv-resize:800:0.image?lk3s=416a877a&x-expires=1796200581&x-signature=ypeLBSJtezYcwc%2BxlDp03twOokk%3D&psm=motor.sophon.product",
+    "detail_url": "https://m.dcdapp.com/motor/feoffline/usedcar_detail/detail.html?sku_id=357237949&shop_id=118608",
+    "shop_id": "118608",
+    "image_file": "/workspace/dongchedi-wuhan-shop/images/357237949.jpg",
+    "banner": ""
+  },
+  {
+    "sku": "357246142",
+    "title": "帝豪GS 2019款 1.4T CVT雅 Pro 国VI",
+    "price": 3.29,
+    "price_type": "标价",
+    "prefix": "标价",
+    "extra": "特价省200元",
+    "extras": [
+      "特价省200元"
+    ],
+    "year": "2020年 / 5.95万公里 / 武汉",
+    "plate_year": 2020,
+    "model_year": 2019,
+    "mileage_wan": 5.95,
+    "city": "武汉",
+    "tags": [
+      "放心检7.1分"
+    ],
+    "badges": [
+      "官方保",
+      "直营"
+    ],
+    "cover": "https://p3-dcd-sign.byteimg.com/tos-cn-i-f042mdwyw7/1f31e32b20e64f229001e0f6f1a1b05a~tplv-resize:800:0.image?lk3s=416a877a&x-expires=1796200596&x-signature=O9zIHrRc0G8193cFnuilBc%2FTJ28%3D&psm=motor.sophon.product",
+    "detail_url": "https://m.dcdapp.com/motor/feoffline/usedcar_detail/detail.html?sku_id=357246142&shop_id=118608",
+    "shop_id": "118608",
+    "image_file": "/workspace/dongchedi-wuhan-shop/images/357246142.jpg",
+    "banner": ""
+  },
+  {
+    "sku": "357409941",
+    "title": "奕炫 2020款 230T 自动炫目赛道骑士版",
+    "price": 3.29,
+    "price_type": "标价",
+    "prefix": "标价",
+    "extra": "限时物流补贴",
+    "extras": [
+      "限时物流补贴"
+    ],
+    "year": "2021年 / 4.99万公里 / 武汉",
+    "plate_year": 2021,
+    "model_year": 2020,
+    "mileage_wan": 4.99,
+    "city": "武汉",
+    "tags": [
+      "已检测",
+      "新上",
+      "0过户",
+      "内饰如新"
+    ],
+    "badges": [
+      "官方保",
+      "直营"
+    ],
+    "cover": "https://p3-dcd-sign.byteimg.com/tos-cn-i-f042mdwyw7/a34319289f6e468eb1ee656ea6ece5ee~tplv-f042mdwyw7-original:800:0.image?lk3s=416a877a&x-expires=1796200589&x-signature=vttbs7PtPioCI4IUP3SBG26vSF4%3D&psm=motor.sophon.product",
+    "detail_url": "https://m.dcdapp.com/motor/feoffline/usedcar_detail/detail.html?sku_id=357409941&shop_id=118608",
+    "shop_id": "118608",
+    "image_file": "/workspace/dongchedi-wuhan-shop/images/357409941.jpg",
+    "banner": ""
+  },
+  {
+    "sku": "357307855",
+    "title": "荣威i5 2022款 1.5L CVT安心版",
+    "price": 3.39,
+    "price_type": "标价",
+    "prefix": "标价",
+    "extra": "限时物流补贴",
+    "extras": [
+      "限时物流补贴"
+    ],
+    "year": "2022年 / 5.82万公里 / 武汉",
+    "plate_year": 2022,
+    "model_year": 2022,
+    "mileage_wan": 5.82,
+    "city": "武汉",
+    "tags": [
+      "放心检8.0分"
+    ],
+    "badges": [
+      "官方保",
+      "直营"
+    ],
+    "cover": "https://p9-dcd-sign.byteimg.com/tos-cn-i-f042mdwyw7/889b2a364c2746f4986bf74977be73ab~tplv-f042mdwyw7-original:800:0.image?lk3s=416a877a&x-expires=1796200593&x-signature=zJHQpd5LS3nyJOJtEaKZyuUN4dU%3D&psm=motor.sophon.product",
+    "detail_url": "https://m.dcdapp.com/motor/feoffline/usedcar_detail/detail.html?sku_id=357307855&shop_id=118608",
+    "shop_id": "118608",
+    "image_file": "/workspace/dongchedi-wuhan-shop/images/357307855.jpg",
+    "banner": ""
   }
 ]
