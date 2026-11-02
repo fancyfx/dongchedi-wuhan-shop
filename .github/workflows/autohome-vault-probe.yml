@@ -28,20 +28,69 @@ jobs:
           ls -lh /tmp/data.vault /tmp/manifest.json
           cat /tmp/manifest.json
 
-      - name: Identify archive format
+      - name: Reverse record framing
         shell: bash
         run: |
-          set +e
-          echo '=== file ==='
-          file /tmp/data.vault
-          echo '=== magic ==='
-          xxd -l 96 /tmp/data.vault
-          echo '=== strings ==='
-          strings -n 6 /tmp/data.vault | head -40
-          echo '=== archive probes ==='
-          unzip -l /tmp/data.vault | head -20
-          tar -tf /tmp/data.vault | head -20
-          gzip -t /tmp/data.vault && echo gzip-ok
-          xz -t /tmp/data.vault && echo xz-ok
-          command -v zstd >/dev/null && zstd -t /tmp/data.vault && echo zstd-ok
-          command -v 7z >/dev/null && 7z l /tmp/data.vault | head -60
+          python - <<'PY'
+          import bz2, gzip, lzma, struct, zlib
+          from pathlib import Path
+
+          b = Path('/tmp/data.vault').read_bytes()
+          print('size', len(b))
+          print('head_hex', b[:256].hex(' '))
+          print('head_u32', [struct.unpack_from('<I', b, i)[0] for i in range(0, min(128,len(b)-3),4)])
+          print('head_u64', [struct.unpack_from('<Q', b, i)[0] for i in range(0, min(128,len(b)-7),8)])
+
+          hits=[]
+          pos=0
+          while True:
+              i=b.find(b'.csv',pos)
+              if i<0: break
+              hits.append(i)
+              pos=i+4
+              if len(hits)>=20: break
+          print('csv_hits', hits)
+          for i in hits[:10]:
+              lo=max(0,i-80); hi=min(len(b),i+100)
+              print('\nHIT',i)
+              print('ascii', repr(b[lo:hi]))
+              print('hex', b[lo:hi].hex(' '))
+              ints=[]
+              for off in range(max(0,i-32), i+8, 4):
+                  if off+4<=len(b): ints.append((off,struct.unpack_from('<I',b,off)[0]))
+              print('u32-near',ints)
+
+          # Search common compression stream magics inside the custom container.
+          magics={
+              'gzip':b'\x1f\x8b', 'zlib78_9c':b'\x78\x9c', 'zlib78_da':b'\x78\xda',
+              'bz2':b'BZh', 'xz':b'\xfd7zXZ\x00', 'zstd':b'\x28\xb5\x2f\xfd',
+              'zip':b'PK\x03\x04'
+          }
+          for name,m in magics.items():
+              found=[]; p=0
+              while True:
+                  j=b.find(m,p)
+                  if j<0: break
+                  found.append(j); p=j+1
+                  if len(found)>=10: break
+              print('magic',name,found)
+
+          # Brute-test common decompressors at the first several plausible stream offsets.
+          candidates=set([0,4,8,12,16,24,32])
+          for m in magics.values():
+              p=b.find(m)
+              if p>=0: candidates.add(p)
+          for off in sorted(candidates):
+              data=b[off:]
+              for name,fn in [
+                  ('zlib',lambda x:zlib.decompress(x)),
+                  ('gzip',lambda x:gzip.decompress(x)),
+                  ('bz2',lambda x:bz2.decompress(x)),
+                  ('lzma',lambda x:lzma.decompress(x)),
+              ]:
+                  try:
+                      out=fn(data)
+                      print('DECOMP_OK',off,name,len(out),repr(out[:100]))
+                  except Exception:
+                      pass
+          PY
