@@ -234,7 +234,6 @@ def _verified_specs_from_trim(trim: dict[str, Any]) -> dict[str, Any]:
 
 
 def apply_verified_record(item: dict[str, Any], verified: dict[str, Any]) -> dict[str, Any]:
-    """Replace listing specs with the exact-trim V3 record."""
     item = copy.deepcopy(item)
     trim = verified.get("trim") or verified
     item["specs"] = _verified_specs_from_trim(trim)
@@ -243,7 +242,7 @@ def apply_verified_record(item: dict[str, Any], verified: dict[str, Any]) -> dic
 
 
 def sanitize_unverified_listing(item: dict[str, Any]) -> dict[str, Any]:
-    """Keep core data but remove all legacy configuration evidence."""
+    """Keep listing/core metadata but remove every legacy config claim."""
     item = copy.deepcopy(item)
     specs = copy.deepcopy(item.get("specs") or {})
     specs["features"] = {}
@@ -258,10 +257,14 @@ def sanitize_unverified_listing(item: dict[str, Any]) -> dict[str, Any]:
         "hud", "chip_8155",
     ):
         specs.pop(k, None)
+    specs["specs_found"] = False
+    specs["specs_approx"] = False
+    specs["verified"] = False
     specs["configuration_source"] = "unverified_v3"
     specs["configuration_unverified"] = True
     specs["feature_confidence"] = 0.0
     specs["match_level"] = "unverified_config"
+    specs["verification_issues"] = ["详细配置数据不足"]
     item["specs"] = specs
     item["detailed_config"] = specs
     return item
