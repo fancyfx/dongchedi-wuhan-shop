@@ -1,0 +1,16 @@
+{
+  "shop_id": "118608",
+  "shop_name": "懂车帝汽车商城·武汉店",
+  "price_filter": "<=6万",
+  "matched_total_reported": 3484,
+  "loaded_cards": 280,
+  "captured_at": "2026-11-02T16:19:33.206286+08:00",
+  "sort_preference": [
+    "price_asc",
+    "config",
+    "fuel_economy",
+    "space",
+    "suv"
+  ],
+  "notes": "列表默认非按价；shortlist 为已加载卡片中最便宜一批；封面签名 URL 会过期，以 images/ 本地文件为准。"
+}
