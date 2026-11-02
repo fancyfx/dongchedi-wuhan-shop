@@ -10,9 +10,11 @@ on:
       - "data/specs/**"
       - "scripts/ranking_v2/**"
       - "scripts/rerank_v2.py"
+      - "scripts/sync_exact_trim_specs.py"
       - "scripts/rerank_composite.py"
       - "scripts/filters.py"
       - "scripts/tests/**"
+      - "dashboard/src/**"
       - ".github/workflows/rerank-v2.yml"
 
 permissions:
@@ -24,9 +26,9 @@ concurrency:
 
 jobs:
   rerank:
-    name: Test, recalculate and publish ranking data
+    name: Sync exact trims, recalculate and publish
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 20
 
     steps:
       - name: Checkout repository
@@ -40,7 +42,7 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Validate exact-trim source JSON
+      - name: Validate existing exact-trim source JSON
         shell: bash
         run: |
           python -m json.tool data/vehicle-specs-verified.json >/dev/null
@@ -48,7 +50,19 @@ jobs:
             python -m json.tool "$f" >/dev/null
           done
 
-      - name: Recalculate V2 ranking
+      - name: Sync exact trims for complete filtered inventory
+        run: python scripts/sync_exact_trim_specs.py
+
+      - name: Validate synced exact-trim source JSON
+        shell: bash
+        run: |
+          python -m json.tool data/vehicle-specs-verified.json >/dev/null
+          for f in data/specs/exact-trims-*.json; do
+            python -m json.tool "$f" >/dev/null
+          done
+          python -m json.tool data/specs/exact-trim-sync-report.json >/dev/null
+
+      - name: Recalculate ranking with hard data-quality gate
         run: python scripts/rerank_v2.py
 
       - name: Run ranking regression tests
@@ -64,24 +78,52 @@ jobs:
           root = Path('.')
           meta = json.loads((root / 'data/meta.json').read_text(encoding='utf-8'))
           ranked = json.loads((root / 'data/listings-ranked.json').read_text(encoding='utf-8'))
+          issues = json.loads((root / 'data/data-issues.json').read_text(encoding='utf-8'))
+          filtered = json.loads((root / 'data/listings-filtered.json').read_text(encoding='utf-8'))
           shortlist = json.loads((root / 'data/shortlist-ranked.json').read_text(encoding='utf-8'))
 
           assert meta.get('score_version') == 'v2.2.0', meta.get('score_version')
-          assert ranked, 'ranked list is empty'
           assert len(shortlist) <= 30, len(shortlist)
           assert all(x.get('score_version') == 'v2.2.0' for x in ranked), 'mixed score versions'
+          assert all(x.get('score_eligible') is True for x in ranked), 'ineligible row leaked into ranking'
+          assert all(x.get('total_score') is not None for x in ranked), 'ranked row missing total_score'
           assert [x.get('rank') for x in ranked] == list(range(1, len(ranked) + 1)), 'rank sequence broken'
+          assert all(x.get('score_eligible') is False for x in issues), 'issue row marked scoreable'
+          assert all(x.get('total_score') is None and x.get('rank') is None for x in issues), 'issue row has score/rank'
+          assert all(x.get('data_issues') for x in issues), 'issue row missing reasons'
+          ranked_skus = {str(x.get('sku')) for x in ranked}
+          issue_skus = {str(x.get('sku')) for x in issues}
+          assert not (ranked_skus & issue_skus), 'ranked/issues overlap'
+          assert len(filtered) == len(ranked) + len(issues), (len(filtered), len(ranked), len(issues))
+          assert meta.get('ranked_count') == len(ranked)
+          assert meta.get('data_issue_count') == len(issues)
 
-          print(f"validated ranked={len(ranked)} shortlist={len(shortlist)} score_version={meta.get('score_version')}")
+          print(f"validated filtered={len(filtered)} ranked={len(ranked)} issues={len(issues)} shortlist={len(shortlist)}")
           PY
 
-      - name: Commit regenerated ranking artifacts
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+          cache-dependency-path: dashboard/package-lock.json
+
+      - name: Build dashboard
+        working-directory: dashboard
+        run: |
+          npm ci
+          npm run build
+
+      - name: Commit synced specs and regenerated artifacts
         shell: bash
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
           git add \
+            data/vehicle-specs-verified.json \
+            data/specs/exact-trims-auto.json \
+            data/specs/exact-trim-sync-report.json \
             listings-ranked.json \
             listings-filtered.json \
             shortlist-ranked.json \
@@ -90,12 +132,14 @@ jobs:
             data/listings-filtered.json \
             data/shortlist-ranked.json \
             data/shortlist-cheapest.json \
+            data/data-issues.json \
             data/excluded-short-range-bev.json \
             data/meta.json \
             dashboard/public/data/listings-ranked.json \
             dashboard/public/data/listings-filtered.json \
             dashboard/public/data/shortlist-ranked.json \
             dashboard/public/data/shortlist-cheapest.json \
+            dashboard/public/data/data-issues.json \
             dashboard/public/data/meta.json \
             dashboard/public/data/vehicle-specs-verified.json
 
@@ -104,5 +148,5 @@ jobs:
             exit 0
           fi
 
-          git commit -m "chore(data): recalculate rankings [skip ci]"
+          git commit -m "chore(data): sync exact trims and recalculate rankings [skip ci]"
           git push origin HEAD:main
