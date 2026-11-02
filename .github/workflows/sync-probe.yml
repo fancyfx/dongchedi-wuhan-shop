@@ -1,0 +1,51 @@
+name: Probe exact-trim sync
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - ".github/workflows/sync-probe.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 6
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Keep 12 currently-unverified listings only
+        shell: bash
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          root = Path('.')
+          index = json.loads((root/'data/vehicle-specs-verified.json').read_text(encoding='utf-8'))
+          mapped = {str(x) for x in (index.get('sku_to_trim') or {})}
+          rows = json.loads((root/'data/listings-filtered.json').read_text(encoding='utf-8'))
+          probe = [x for x in rows if str(x.get('sku')) not in mapped][:12]
+          (root/'data/listings-filtered.json').write_text(json.dumps(probe, ensure_ascii=False, indent=2)+'\n', encoding='utf-8')
+          print('probe titles:')
+          for x in probe:
+              print(x.get('sku'), x.get('title'))
+          PY
+      - name: Run resilient exact-trim sync probe
+        run: python scripts/sync_exact_trim_specs_strict.py
+      - name: Summarize probe
+        shell: bash
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          p = Path('data/specs/exact-trim-sync-report.json')
+          r = json.loads(p.read_text(encoding='utf-8'))
+          print('SUMMARY', {k:r.get(k) for k in ('total_listings','existing_verified_skipped','new_exact_matches','unmatched_or_insufficient','new_match_sources')})
+          for row in r.get('rows', []):
+              print(json.dumps({k:row.get(k) for k in ('sku','title','status','identity_source','series_id','car_id','trim_match','reason','sku_detail_error','car_list_error','config_catalog_error')}, ensure_ascii=False))
+          PY
