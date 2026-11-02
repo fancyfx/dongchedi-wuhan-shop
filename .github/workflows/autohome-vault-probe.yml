@@ -1,0 +1,47 @@
+name: Probe AutoHome historical vault
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - ".github/workflows/autohome-vault-probe.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Download historical snapshot
+        shell: bash
+        run: |
+          set -euxo pipefail
+          curl -L --fail --retry 2 \
+            https://raw.githubusercontent.com/swoiow/autohome/vaults/vaults/202202/data.vault \
+            -o /tmp/data.vault
+          curl -L --fail --retry 2 \
+            https://raw.githubusercontent.com/swoiow/autohome/vaults/vaults/202202/manifest.json \
+            -o /tmp/manifest.json
+          ls -lh /tmp/data.vault /tmp/manifest.json
+          cat /tmp/manifest.json
+
+      - name: Identify archive format
+        shell: bash
+        run: |
+          set +e
+          echo '=== file ==='
+          file /tmp/data.vault
+          echo '=== magic ==='
+          xxd -l 96 /tmp/data.vault
+          echo '=== strings ==='
+          strings -n 6 /tmp/data.vault | head -40
+          echo '=== archive probes ==='
+          unzip -l /tmp/data.vault | head -20
+          tar -tf /tmp/data.vault | head -20
+          gzip -t /tmp/data.vault && echo gzip-ok
+          xz -t /tmp/data.vault && echo xz-ok
+          command -v zstd >/dev/null && zstd -t /tmp/data.vault && echo zstd-ok
+          command -v 7z >/dev/null && 7z l /tmp/data.vault | head -60
