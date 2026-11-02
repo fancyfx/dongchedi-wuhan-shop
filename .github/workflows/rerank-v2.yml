@@ -11,6 +11,7 @@ on:
       - "scripts/ranking_v2/**"
       - "scripts/rerank_v2.py"
       - "scripts/sync_exact_trim_specs.py"
+      - "scripts/sync_exact_trim_specs_strict.py"
       - "scripts/rerank_composite.py"
       - "scripts/filters.py"
       - "scripts/tests/**"
@@ -51,7 +52,7 @@ jobs:
           done
 
       - name: Sync exact trims for complete filtered inventory
-        run: python scripts/sync_exact_trim_specs.py
+        run: python scripts/sync_exact_trim_specs_strict.py
 
       - name: Validate synced exact-trim source JSON
         shell: bash
