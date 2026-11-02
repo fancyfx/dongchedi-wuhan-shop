@@ -1,0 +1,2545 @@
+{
+  "meta": {
+    "schema_version": "2.0-audit",
+    "verified_at": "2026-11-02",
+    "scope": "GitHub仓库 shortlist-ranked.json 前30条（30个车源；重复具体车型作为独立车源保留）",
+    "repo": "https://github.com/fancyfx/dongchedi-wuhan-shop",
+    "source_shortlist": "https://raw.githubusercontent.com/fancyfx/dongchedi-wuhan-shop/main/shortlist-ranked.json",
+    "record_count": 30,
+    "important_notes": [
+      "本文件将车源字段(listing)与独立核验车型核心参数(verified_core)分离。",
+      "PHEV默认排名禁止使用WLTC/工信部综合油耗；优先最低荷电状态油耗。老款无低SOC数据时用明确标注的真实油耗参考。",
+      "ICE优先采用足量车主真实油耗；没有足量样本时保留官方WLTC并标记fallback_multiplier_recommended与较低置信度。",
+      "BEV使用kWh/100km，不伪装成L/100km。",
+      "配置矩阵未做完精确trim逐项核验的车型不应从近似档位继承配置；缺失值用null。",
+      "display_price为仓库抓取展示价，分期价不是现金成交价；排序需计算effective_price并加入不确定性。"
+    ]
+  },
+  "vehicles": [
+    {
+      "original_rank": 1,
+      "listing": {
+        "sku": "357215359",
+        "title": "唐DM 2018款 DM 2.0T 全时四驱智联创享型 7座 国V",
+        "display_price_wan": 4.99,
+        "price_type": "分期",
+        "plate_year": 2018,
+        "mileage_wan_km": 5.96,
+        "source": "https://raw.githubusercontent.com/fancyfx/dongchedi-wuhan-shop/main/shortlist-ranked.json"
+      },
+      "verified_core": {
+        "powertrain": "phev",
+        "body_type": "中型SUV",
+        "seats": 7,
+        "engine": "2.0T 205马力 L4 + 前后电机",
+        "transmission": "6挡湿式双离合",
+        "length_mm": 4870,
+        "width_mm": 1950,
+        "height_mm": 1725,
+        "wheelbase_mm": 2820,
+        "fuel_grade": "92",
+        "official_fuel_l_100km": 1.8,
+        "official_standard": "工信部综合（不可用于跨动力排名）",
+        "low_soc_fuel_l_100km": null,
+        "real_world_fuel_l_100km": 9.02,
+        "real_world_sample_n": 231,
+        "ev_range_km": 81,
+        "ev_range_standard": "NEDC",
+        "electric_kwh_100km": null,
+        "ranking_energy": {
+          "type": "real_world_fuel",
+          "value": 9.02,
+          "unit": "L/100km",
+          "reason": "老款PHEV无可靠低SOC标准值；禁用1.8L综合油耗"
+        },
+        "core_confidence": 0.97,
+        "feature_confidence": 0.75,
+        "sources": [
+          {
+            "type": "exact_trim_params",
+            "url": "https://detail.zol.com.cn/1293/1292781/param.shtml"
+          },
+          {
+            "type": "owner_fuel",
+            "url": "https://www.xiaoxiongyouhao.com/modelyh/35062.html"
+          }
+        ],
+        "issues": [
+          "仓库宽/高曾写为1940/1720，独立核验为1950/1725",
+          "1.8~2.0L/100km为插混综合测试值，不应当作日常燃油成本输入"
+        ]
+      },
+      "feature_matrix": {
+        "status": "partial_or_exact_source_required",
+        "policy": "只有精确trim来源明确给出的配置才允许true/false；未精确核验字段必须为null，不允许series_year_tier补齐。",
+        "recommended_fields": [
+          "esp",
+          "airbags",
+          "aeb",
+          "fcw",
+          "ldw",
+          "lka",
+          "lane_centering",
+          "bsd",
+          "dow",
+          "acc",
+          "camera_360",
+          "front_radar",
+          "rear_radar",
+          "auto_park",
+          "power_driver_seat",
+          "power_passenger_seat",
+          "seat_heating",
+          "seat_ventilation",
+          "panoramic_sunroof",
+          "power_tailgate",
+          "rear_ac_vents",
+          "dual_zone_climate",
+          "keyless_entry",
+          "wireless_charge",
+          "hud",
+          "full_lcd_cluster",
+          "ota"
+        ]
+      }
+    },
+    {
+      "original_rank": 2,
+      "listing": {
+        "sku": "357149730",
+        "title": "长安UNI-T 2023款 第二代 1.5T 旗舰型",
+        "display_price_wan": 5.99,
+        "price_type": "标价",
+        "plate_year": 2023,
+        "mileage_wan_km": 2.72,
+        "source": "https://raw.githubusercontent.com/fancyfx/dongchedi-wuhan-shop/main/shortlist-ranked.json"
+      },
+      "verified_core": {
+        "powertrain": "ice",
+        "body_type": "紧凑型SUV",
+        "seats": 5,
+        "engine": "1.5T 188马力 L4",
+        "transmission": "7挡湿式双离合",
+        "length_mm": 4535,
+        "width_mm": 1870,
+        "height_mm": 1565,
+        "wheelbase_mm": 2710,
+        "fuel_grade": "92",
+        "official_fuel_l_100km": 6.45,
+        "official_standard": "WLTC",
+        "low_soc_fuel_l_100km": null,
+        "real_world_fuel_l_100km": 8.93,
+        "real_world_sample_n": 46,
+        "ev_range_km": null,
+        "ev_range_standard": null,
+        "electric_kwh_100km": null,
+        "ranking_energy": {
+          "type": "real_world_fuel",
+          "value": 8.93,
+          "unit": "L/100km"
+        },
+        "core_confidence": 0.97,
+        "feature_confidence": 0.95,
+        "sources": [
+          {
+            "type": "exact_trim_params",
+            "url": "https://detail.zol.com.cn/1976/1975719/param.shtml"
+          },
+          {
+            "type": "owner_fuel",
+            "url": "https://www.xiaoxiongyouhao.com/modelyh/61643.html"
+          }
+        ],
+        "issues": [
+          "仓库以6.45L WLTC作为能耗会高估，排序应优先使用8.93L车主众测"
+        ]
+      },
+      "feature_matrix": {
+        "status": "partial_or_exact_source_required",
+        "policy": "只有精确trim来源明确给出的配置才允许true/false；未精确核验字段必须为null，不允许series_year_tier补齐。",
+        "recommended_fields": [
+          "esp",
+          "airbags",
+          "aeb",
+          "fcw",
+          "ldw",
+          "lka",
+          "lane_centering",
+          "bsd",
+          "dow",
+          "acc",
+          "camera_360",
+          "front_radar",
+          "rear_radar",
+          "auto_park",
+          "power_driver_seat",
+          "power_passenger_seat",
+          "seat_heating",
+          "seat_ventilation",
+          "panoramic_sunroof",
+          "power_tailgate",
+          "rear_ac_vents",
+          "dual_zone_climate",
+          "keyless_entry",
+          "wireless_charge",
+          "hud",
+          "full_lcd_cluster",
+          "ota"
+        ]
+      }
+    },
+    {
+      "original_rank": 3,
+      "listing": {
+        "sku": "357052729",
+        "title": "宋Pro DM 2024款 DM-i 荣耀版 71km 领航型",
+        "display_price_wan": 5.99,
+        "price_type": "分期",
+        "plate_year": 2024,
+        "mileage_wan_km": 6.05,
+        "source": "https://raw.githubusercontent.com/fancyfx/dongchedi-wuhan-shop/main/shortlist-ranked.json"
+      },
+      "verified_core": {
+        "powertrain": "phev",
+        "body_type": "紧凑型SUV",
+        "seats": 5,
+        "engine": "1.5L 110马力 L4 + 前电机",
+        "transmission": "E-CVT",
+        "length_mm": 4738,
+        "width_mm": 1860,
+        "height_mm": 1710,
+        "wheelbase_mm": 2712,
+        "fuel_grade": "92",
+        "official_fuel_l_100km": 2.87,
+        "official_standard": "WLTC综合（不可用于跨动力排名）",
+        "low_soc_fuel_l_100km": 5.3,
+        "real_world_fuel_l_100km": null,
+        "real_world_sample_n": null,
+        "ev_range_km": 59,
+        "ev_range_standard": "WLTC（NEDC 71km）",
+        "electric_kwh_100km": 13.8,
+        "ranking_energy": {
+          "type": "low_soc_fuel",
+          "value": 5.3,
+          "unit": "L/100km",
+          "reason": "默认无稳定充电条件场景"
+        },
+        "core_confidence": 0.99,
+        "feature_confidence": 0.98,
+        "sources": [
+          {
+            "type": "exact_trim_params",
+            "url": "https://www.dongchedi.com/auto/params-carIds-98583"
+          }
+        ],
+        "issues": [
+          "必须用5.3L/100km最低荷电状态油耗，而不是2.87L综合油耗"
+        ]
+      },
+      "feature_matrix": {
+        "status": "partial_or_exact_source_required",
+        "policy": "只有精确trim来源明确给出的配置才允许true/false；未精确核验字段必须为null，不允许series_year_tier补齐。",
+        "recommended_fields": [
+          "esp",
+          "airbags",
+          "aeb",
+          "fcw",
+          "ldw",
+          "lka",
+          "lane_centering",
+          "bsd",
+          "dow",
+          "acc",
+          "camera_360",
+          "front_radar",
+          "rear_radar",
+          "auto_park",
+          "power_driver_seat",
+          "power_passenger_seat",
+          "seat_heating",
+          "seat_ventilation",
+          "panoramic_sunroof",
+          "power_tailgate",
+          "rear_ac_vents",
+          "dual_zone_climate",
+          "keyless_entry",
+          "wireless_charge",
+          "hud",
+          "full_lcd_cluster",
+          "ota"
+        ]
+      }
+    },
+    {
+      "original_rank": 4,
+      "listing": {
+        "sku": "357220895",
+        "title": "逸动 2023款 PLUS畅享版 蓝鲸NE 1.4T GDI DCT尊贵型",
+        "display_price_wan": 4.69,
+        "price_type": "标价",
+        "plate_year": 2023,
+        "mileage_wan_km": 3.14,
+        "source": "https://raw.githubusercontent.com/fancyfx/dongchedi-wuhan-shop/main/shortlist-ranked.json"
+      },
+      "verified_core": {
+        "powertrain": "ice",
+        "body_type": "紧凑型车",
+        "seats": 5,
+        "engine": "1.4T 160马力 L4",
+        "transmission": "7挡湿式双离合",
+        "length_mm": 4730,
+        "width_mm": 1820,
+        "height_mm": 1505,
+        "wheelbase_mm": 2700,
+        "fuel_grade": "92",
+        "official_fuel_l_100km": 6.4,
+        "official_standard": "WLTC",
+        "low_soc_fuel_l_100km": null,
+        "real_world_fuel_l_100km": 7.84,
+        "real_world_sample_n": 2247,
+        "ev_range_km": null,
+        "ev_range_standard": null,
+        "electric_kwh_100km": null,
+        "ranking_energy": {
+          "type": "real_world_fuel",
+          "value": 7.84,
+          "unit": "L/100km"
+        },
+        "core_confidence": 0.98,
+        "feature_confidence": 0.85,
+        "sources": [
+          {
+            "type": "exact_trim_params",
+            "url": "https://dealer.xcar.com.cn/43648/price_m69573.htm"
+          },
+          {
+            "type": "owner_fuel",
+            "url": "https://www.xiaoxiongyouhao.com/modelyh/62910.html"
+          }
+        ],
+        "issues": [
+          "真实车主油耗7.84L显著高于6.4L WLTC，排序应优先真实油耗"
+        ]
+      },
+      "feature_matrix": {
+        "status": "partial_or_exact_source_required",
+        "policy": "只有精确trim来源明确给出的配置才允许true/false；未精确核验字段必须为null，不允许series_year_tier补齐。",
+        "recommended_fields": [
+          "esp",
+          "airbags",
+          "aeb",
+          "fcw",
+          "ldw",
+          "lka",
+          "lane_centering",
+          "bsd",
+          "dow",
+          "acc",
+          "camera_360",
+          "front_radar",
+          "rear_radar",
+          "auto_park",
+          "power_driver_seat",
+          "power_passenger_seat",
+          "seat_heating",
+          "seat_ventilation",
+          "panoramic_sunroof",
+          "power_tailgate",
+          "rear_ac_vents",
+          "dual_zone_climate",
+          "keyless_entry",
+          "wireless_charge",
+          "hud",
+          "full_lcd_cluster",
+          "ota"
+        ]
+      }
+    },
+    {
+      "original_rank": 5,
+      "listing": {
+        "sku": "357337443",
+        "title": "锐程PLUS 2023款 1.5T DCT尊贵型",
+        "display_price_wan": 4.89,
+        "price_type": "标价",
+        "plate_year": 2024,
+        "mileage_wan_km": 2.39,
+        "source": "https://raw.githubusercontent.com/fancyfx/dongchedi-wuhan-shop/main/shortlist-ranked.json"
+      },
+      "verified_core": {
+        "powertrain": "ice",
+        "body_type": "紧凑型车",
+        "seats": 5,
+        "engine": "1.5T 188马力 L4",
+        "transmission": "7挡湿式双离合",
+        "length_mm": 4800,
+        "width_mm": 1825,
+        "height_mm": 1465,
+        "wheelbase_mm": 2770,
+        "fuel_grade": "92",
+        "official_fuel_l_100km": 6.44,
+        "official_standard": "WLTC",
+        "low_soc_fuel_l_100km": null,
+        "real_world_fuel_l_100km": 8.19,
+        "real_world_sample_n": null,
+        "ev_range_km": null,
+        "ev_range_standard": null,
+        "electric_kwh_100km": null,
+        "ranking_energy": {
+          "type": "real_world_fuel",
+          "value": 8.19,
+          "unit": "L/100km"
+        },
+        "core_confidence": 0.98,
+        "feature_confidence": 0.55,
+        "sources": [
+          {
+            "type": "exact_trim_params",
+            "url": "https://detail.zol.com.cn/1976/1975768/param.shtml"
+          },
+          {
+            "type": "owner_fuel",
+            "url": "https://www.xiaoxiongyouhao.com/modelyh/59448.html"
+          }
+        ],
+        "issues": [
+          "仓库曾以series_year_tier近似配置填充；高级配置不得沿用近似值",
+          "真实油耗8.19L应替代6.44L WLTC用于默认排序"
+        ]
+      },
+      "feature_matrix": {
+        "status": "partial_or_exact_source_required",
+        "policy": "只有精确trim来源明确给出的配置才允许true/false；未精确核验字段必须为null，不允许series_year_tier补齐。",
+        "recommended_fields": [
+          "esp",
+          "airbags",
+          "aeb",
+          "fcw",
+          "ldw",
+          "lka",
+          "lane_centering",
+          "bsd",
+          "dow",
+          "acc",
+          "camera_360",
+          "front_radar",
+          "rear_radar",
+          "auto_park",
+          "power_driver_seat",
+          "power_passenger_seat",
+          "seat_heating",
+          "seat_ventilation",
+          "panoramic_sunroof",
+          "power_tailgate",
+          "rear_ac_vents",
+          "dual_zone_climate",
+          "keyless_entry",
+          "wireless_charge",
+          "hud",
+          "full_lcd_cluster",
+          "ota"
+        ]
+      }
+    },
+    {
+      "original_rank": 6,
+      "listing": {
+        "sku": "357228241",
+        "title": "秦PLUS DM 2025款 智驾版 DM-i 55KM 领先型",
+        "display_price_wan": 5.99,
+        "price_type": "标价",
+        "plate_year": 2025,
+        "mileage_wan_km": 0.82,
+        "source": "https://raw.githubusercontent.com/fancyfx/dongchedi-wuhan-shop/main/shortlist-ranked.json"
+      },
+      "verified_core": {
+        "powertrain": "phev",
+        "body_type": "紧凑型车",
+        "seats": 5,
+        "engine": "1.5L 101马力 L4 + 前电机",
+        "transmission": "E-CVT",
+        "length_mm": 4780,
+        "width_mm": 1837,
+        "height_mm": 1515,
+        "wheelbase_mm": 2718,
+        "fuel_grade": "92",
+        "official_fuel_l_100km": 1.74,
+        "official_standard": "WLTC综合（不可用于跨动力排名）",
+        "low_soc_fuel_l_100km": 3.9,
+        "real_world_fuel_l_100km": 5.09,
+        "real_world_sample_n": 38,
+        "ev_range_km": 43,
+        "ev_range_standard": "WLTC（CLTC 55km）",
+        "electric_kwh_100km": 11.1,
+        "ranking_energy": {
+          "type": "low_soc_fuel",
+          "value": 3.9,
+          "unit": "L/100km",
+          "reason": "跨动力公平比较采用最低荷电状态；车主PHEV油耗受充电行为影响，仅作参考"
+        },
+        "core_confidence": 0.99,
+        "feature_confidence": 0.9,
+        "sources": [
+          {
+            "type": "exact_trim_params",
+            "url": "https://www.dongchedi.com/auto/params-carIds-244692"
+          },
+          {
+            "type": "owner_fuel_reference",
+            "url": "https://www.xiaoxiongyouhao.com/modelyh/71504.html"
+          }
+        ],
+        "issues": [
+          "禁用1.74L综合油耗直接参与排名；默认使用3.9L低SOC"
+        ]
+      },
+      "feature_matrix": {
+        "status": "partial_or_exact_source_required",
+        "policy": "只有精确trim来源明确给出的配置才允许true/false；未精确核验字段必须为null，不允许series_year_tier补齐。",
+        "recommended_fields": [
+          "esp",
+          "airbags",
+          "aeb",
+          "fcw",
+          "ldw",
+          "lka",
+          "lane_centering",
+          "bsd",
+          "dow",
+          "acc",
+          "camera_360",
+          "front_radar",
+          "rear_radar",
+          "auto_park",
+          "power_driver_seat",
+          "power_passenger_seat",
+          "seat_heating",
+          "seat_ventilation",
+          "panoramic_sunroof",
+          "power_tailgate",
+          "rear_ac_vents",
+          "dual_zone_climate",
+          "keyless_entry",
+          "wireless_charge",
+          "hud",
+          "full_lcd_cluster",
+          "ota"
+        ]
+      }
+    },
+    {
+      "original_rank": 7,
+      "listing": {
+        "sku": "357172812",
+        "title": "博瑞 2021款 1.8T 领航版",
+        "display_price_wan": 4.09,
+        "price_type": "分期",
+        "plate_year": 2021,
+        "mileage_wan_km": 4.51,
+        "source": "https://raw.githubusercontent.com/fancyfx/dongchedi-wuhan-shop/main/shortlist-ranked.json"
+      },
+      "verified_core": {
+        "powertrain": "ice",
+        "body_type": "中型车",
+        "seats": 5,
+        "engine": "1.8T 184马力 L4",
+        "transmission": "7挡湿式双离合",
+        "length_mm": 4986,
+        "width_mm": 1861,
+        "height_mm": 1513,
+        "wheelbase_mm": 2870,
+        "fuel_grade": "92",
+        "official_fuel_l_100km": 7.3,
+        "official_standard": "NEDC（另有来源列WLTC 7.49）",
+        "low_soc_fuel_l_100km": null,
+        "real_world_fuel_l_100km": 8.85,
+        "real_world_sample_n": 65,
+        "ev_range_km": null,
+        "ev_range_standard": null,
+        "electric_kwh_100km": null,
+        "ranking_energy": {
+          "type": "real_world_fuel",
+          "value": 8.85,
+          "unit": "L/100km"
+        },
+        "core_confidence": 0.99,
+        "feature_confidence": 0.45,
+        "sources": [
+          {
+            "type": "exact_trim_params",
+            "url": "https://newcar.xcar.com.cn/m55651/config.htm"
+          },
+          {
+            "type": "owner_fuel",
+            "url": "https://www.xiaoxiongyouhao.com/modelyh/46863.html"
+          }
+        ],
+        "issues": [
+          "仓库车身尺寸曾错误",
+          "仓库近似配置曾高估主动安全/驾驶辅助；必须按领航版具体配置重抓",
+          "真实油耗8.85L"
+        ]
+      },
+      "feature_matrix": {
+        "status": "partial_or_exact_source_required",
+        "policy": "只有精确trim来源明确给出的配置才允许true/false；未精确核验字段必须为null，不允许series_year_tier补齐。",
+        "recommended_fields": [
+          "esp",
+          "airbags",
+          "aeb",
+          "fcw",
+          "ldw",
+          "lka",
+          "lane_centering",
+          "bsd",
+          "dow",
+          "acc",
+          "camera_360",
+          "front_radar",
+          "rear_radar",
+          "auto_park",
+          "power_driver_seat",
+          "power_passenger_seat",
+          "seat_heating",
+          "seat_ventilation",
+          "panoramic_sunroof",
+          "power_tailgate",
+          "rear_ac_vents",
+          "dual_zone_climate",
+          "keyless_entry",
+          "wireless_charge",
+          "hud",
+          "full_lcd_cluster",
+          "ota"
+        ]
+      }
+    },
+    {
+      "original_rank": 8,
+      "listing": {
+        "sku": "356994816",
+        "title": "星瑞 2023款 2.0T 尊贵型",
+        "display_price_wan": 5.39,
+        "price_type": "分期",
+        "plate_year": 2022,
+        "mileage_wan_km": 7.43,
+        "source": "https://raw.githubusercontent.com/fancyfx/dongchedi-wuhan-shop/main/shortlist-ranked.json"
+      },
+      "verified_core": {
+        "powertrain": "ice",
+        "body_type": "紧凑型车",
+        "seats": 5,
+        "engine": "2.0T 190马力 L4",
+        "transmission": "7挡双离合",
+        "length_mm": 4785,
+        "width_mm": 1869,
+        "height_mm": 1469,
+        "wheelbase_mm": 2800,
+        "fuel_grade": "95",
+        "official_fuel_l_100km": 6.7,
+        "official_standard": "NEDC",
+        "low_soc_fuel_l_100km": null,
+        "real_world_fuel_l_100km": 8.3,
+        "real_world_sample_n": null,
+        "ev_range_km": null,
+        "ev_range_standard": null,
+        "electric_kwh_100km": null,
+        "ranking_energy": {
+          "type": "real_world_fuel",
+          "value": 8.3,
+          "unit": "L/100km",
+          "fuel_grade": "95"
+        },
+        "core_confidence": 0.99,
+        "feature_confidence": 0.95,
+        "sources": [
+          {
+            "type": "exact_trim_params",
+            "url": "https://www.dongchedi.com/auto/params-carIds-75851"
+          },
+          {
+            "type": "owner_fuel",
+            "url": "https://www.xiaoxiongyouhao.com/chexiyh/5273.html"
+          }
+        ],
+        "issues": [
+          "需要计入95号汽油成本；同配置两台车必须由价格/里程/车龄拉开差距"
+        ]
+      },
+      "feature_matrix": {
+        "status": "partial_or_exact_source_required",
+        "policy": "只有精确trim来源明确给出的配置才允许true/false；未精确核验字段必须为null，不允许series_year_tier补齐。",
+        "recommended_fields": [
+          "esp",
+          "airbags",
+          "aeb",
+          "fcw",
+          "ldw",
+          "lka",
+          "lane_centering",
+          "bsd",
+          "dow",
+          "acc",
+          "camera_360",
+          "front_radar",
+          "rear_radar",
+          "auto_park",
+          "power_driver_seat",
+          "power_passenger_seat",
+          "seat_heating",
+          "seat_ventilation",
+          "panoramic_sunroof",
+          "power_tailgate",
+          "rear_ac_vents",
+          "dual_zone_climate",
+          "keyless_entry",
+          "wireless_charge",
+          "hud",
+          "full_lcd_cluster",
+          "ota"
+        ]
+      }
+    },
+    {
+      "original_rank": 9,
+      "listing": {
+        "sku": "357140222",
+        "title": "海豹06DM 2024款 DM-i 80KM尊贵型",
+        "display_price_wan": 5.99,
+        "price_type": "分期",
+        "plate_year": 2024,
+        "mileage_wan_km": 4.91,
+        "source": "https://raw.githubusercontent.com/fancyfx/dongchedi-wuhan-shop/main/shortlist-ranked.json"
+      },
+      "verified_core": {
+        "powertrain": "phev",
+        "body_type": "中型车",
+        "seats": 5,
+        "engine": "1.5L 101马力 L4 + 前电机",
+        "transmission": "E-CVT",
+        "length_mm": 4830,
+        "width_mm": 1875,
+        "height_mm": 1495,
+        "wheelbase_mm": 2790,
+        "fuel_grade": "92",
+        "official_fuel_l_100km": 1.36,
+        "official_standard": "WLTC综合（不可用于跨动力排名）",
+        "low_soc_fuel_l_100km": 3.8,
+        "real_world_fuel_l_100km": null,
+        "real_world_sample_n": null,
+        "ev_range_km": 60,
+        "ev_range_standard": "WLTC（CLTC 80km）",
+        "electric_kwh_100km": 11.1,
+        "ranking_energy": {
+          "type": "low_soc_fuel",
+          "value": 3.8,
+          "unit": "L/100km"
+        },
+        "core_confidence": 0.94,
+        "feature_confidence": 0.7,
+        "sources": [
+          {
+            "type": "same_powertrain_core_params",
+            "url": "https://www.dongchedi.com/auto/params-carIds-101802"
+          }
+        ],
+        "issues": [
+          "核心尺寸/动力与80KM同动力版本一致；尊贵型配置矩阵仍应按精确trim重新抓取",
+          "禁用1.36L综合油耗，使用3.8L低SOC"
+        ]
+      },
+      "feature_matrix": {
+        "status": "partial_or_exact_source_required",
+        "policy": "只有精确trim来源明确给出的配置才允许true/false；未精确核验字段必须为null，不允许series_year_tier补齐。",
+        "recommended_fields": [
+          "esp",
+          "airbags",
+          "aeb",
+          "fcw",
+          "ldw",
+          "lka",
+          "lane_centering",
+          "bsd",
+          "dow",
+          "acc",
+          "camera_360",
+          "front_radar",
+          "rear_radar",
+          "auto_park",
+          "power_driver_seat",
+          "power_passenger_seat",
+          "seat_heating",
+          "seat_ventilation",
+          "panoramic_sunroof",
+          "power_tailgate",
+          "rear_ac_vents",
+          "dual_zone_climate",
+          "keyless_entry",
+          "wireless_charge",
+          "hud",
+          "full_lcd_cluster",
+          "ota"
+        ]
+      }
+    },
+    {
+      "original_rank": 10,
+      "listing": {
+        "sku": "357156086",
+        "title": "星瑞 2023款 2.0T 尊贵型",
+        "display_price_wan": 5.49,
+        "price_type": "标价",
+        "plate_year": 2022,
+        "mileage_wan_km": 9.25,
+        "source": "https://raw.githubusercontent.com/fancyfx/dongchedi-wuhan-shop/main/shortlist-ranked.json"
+      },
+      "verified_core": {
+        "powertrain": "ice",
+        "body_type": "紧凑型车",
+        "seats": 5,
+        "engine": "2.0T 190马力 L4",
+        "transmission": "7挡双离合",
+        "length_mm": 4785,
+        "width_mm": 1869,
+        "height_mm": 1469,
+        "wheelbase_mm": 2800,
+        "fuel_grade": "95",
+        "official_fuel_l_100km": 6.7,
+        "official_standard": "NEDC",
+        "low_soc_fuel_l_100km": null,
+        "real_world_fuel_l_100km": 8.3,
+        "real_world_sample_n": null,
+        "ev_range_km": null,
+        "ev_range_standard": null,
+        "electric_kwh_100km": null,
+        "ranking_energy": {
+          "type": "real_world_fuel",
+          "value": 8.3,
+          "unit": "L/100km",
+          "fuel_grade": "95"
+        },
+        "core_confidence": 0.99,
+        "feature_confidence": 0.95,
+        "sources": [
+          {
+            "type": "exact_trim_params",
+            "url": "https://www.dongchedi.com/auto/params-carIds-75851"
+          },
+          {
+            "type": "owner_fuel",
+            "url": "https://www.xiaoxiongyouhao.com/chexiyh/5273.html"
+          }
+        ],
+        "issues": [
+          "需要计入95号汽油成本；同配置两台车必须由价格/里程/车龄拉开差距"
+        ]
+      },
+      "feature_matrix": {
+        "status": "partial_or_exact_source_required",
+        "policy": "只有精确trim来源明确给出的配置才允许true/false；未精确核验字段必须为null，不允许series_year_tier补齐。",
+        "recommended_fields": [
+          "esp",
+          "airbags",
+          "aeb",
+          "fcw",
+          "ldw",
+          "lka",
+          "lane_centering",
+          "bsd",
+          "dow",
+          "acc",
+          "camera_360",
+          "front_radar",
+          "rear_radar",
+          "auto_park",
+          "power_driver_seat",
+          "power_passenger_seat",
+          "seat_heating",
+          "seat_ventilation",
+          "panoramic_sunroof",
+          "power_tailgate",
+          "rear_ac_vents",
+          "dual_zone_climate",
+          "keyless_entry",
+          "wireless_charge",
+          "hud",
+          "full_lcd_cluster",
+          "ota"
+        ]
+      }
+    },
+    {
+      "original_rank": 11,
+      "listing": {
+        "sku": "356990772",
+        "title": "捷达VS5 2022款 280TSI 自动悦享版Pro",
+        "display_price_wan": 5.69,
+        "price_type": "标价",
+        "plate_year": 2022,
+        "mileage_wan_km": 5.99,
+        "source": "https://raw.githubusercontent.com/fancyfx/dongchedi-wuhan-shop/main/shortlist-ranked.json"
+      },
+      "verified_core": {
+        "powertrain": "ice",
+        "body_type": "紧凑型SUV",
+        "seats": 5,
+        "engine": "1.4T 150马力 L4",
+        "transmission": "6挡手自一体",
+        "length_mm": 4418,
+        "width_mm": 1841,
+        "height_mm": 1616,
+        "wheelbase_mm": 2630,
+        "fuel_grade": "95",
+        "official_fuel_l_100km": 7.38,
+        "official_standard": "WLTC",
+        "low_soc_fuel_l_100km": null,
+        "real_world_fuel_l_100km": null,
+        "real_world_sample_n": null,
+        "ev_range_km": null,
+        "ev_range_standard": null,
+        "electric_kwh_100km": null,
+        "real_world_reference_range_l_100km": [
+          8.15,
+          8.28
+        ],
+        "ranking_energy": {
+          "type": "official_wltc_with_uncertainty",
+          "value": 7.38,
+          "unit": "L/100km",
+          "fallback_multiplier_recommended": 1.15,
+          "fuel_grade": "95"
+        },
+        "core_confidence": 0.95,
+        "feature_confidence": 0.35,
+        "sources": [
+          {
+            "type": "exact_trim_params",
+            "url": "https://gmgroup.msk.ru/zh/cars/jetta/vs5/280tsi-automatic-enjoy-2022"
+          },
+          {
+            "type": "adjacent_trim_owner_fuel",
+            "url": "https://www.xiaoxiongyouhao.com/modelyh/54453.html"
+          }
+        ],
+        "issues": [
+          "仓库近似配置曾错误加入360/L2/座椅通风/电尾门/无线充电等",
+          "燃油标号95，使用成本需高于同油耗92号车",
+          "无精确悦享Pro车主油耗时不得把邻近款8.15/8.28冒充精确值"
+        ]
+      },
+      "feature_matrix": {
+        "status": "partial_or_exact_source_required",
+        "policy": "只有精确trim来源明确给出的配置才允许true/false；未精确核验字段必须为null，不允许series_year_tier补齐。",
+        "recommended_fields": [
+          "esp",
+          "airbags",
+          "aeb",
+          "fcw",
+          "ldw",
+          "lka",
+          "lane_centering",
+          "bsd",
+          "dow",
+          "acc",
+          "camera_360",
+          "front_radar",
+          "rear_radar",
+          "auto_park",
+          "power_driver_seat",
+          "power_passenger_seat",
+          "seat_heating",
+          "seat_ventilation",
+          "panoramic_sunroof",
+          "power_tailgate",
+          "rear_ac_vents",
+          "dual_zone_climate",
+          "keyless_entry",
+          "wireless_charge",
+          "hud",
+          "full_lcd_cluster",
+          "ota"
+        ]
+      }
+    },
+    {
+      "original_rank": 12,
+      "listing": {
+        "sku": "356938379",
+        "title": "长安UNI-V 2022款 1.5T 尊贵型",
+        "display_price_wan": 5.69,
+        "price_type": "分期",
+        "plate_year": 2023,
+        "mileage_wan_km": 4.17,
+        "source": "https://raw.githubusercontent.com/fancyfx/dongchedi-wuhan-shop/main/shortlist-ranked.json"
+      },
+      "verified_core": {
+        "powertrain": "ice",
+        "body_type": "紧凑型掀背车",
+        "seats": 5,
+        "engine": "1.5T 188马力 L4",
+        "transmission": "7挡湿式双离合",
+        "length_mm": 4680,
+        "width_mm": 1838,
+        "height_mm": 1430,
+        "wheelbase_mm": 2750,
+        "fuel_grade": "92",
+        "official_fuel_l_100km": 6.22,
+        "official_standard": "WLTC",
+        "low_soc_fuel_l_100km": null,
+        "real_world_fuel_l_100km": 7.2,
+        "real_world_sample_n": null,
+        "ev_range_km": null,
+        "ev_range_standard": null,
+        "electric_kwh_100km": null,
+        "ranking_energy": {
+          "type": "measured_fuel",
+          "value": 7.2,
+          "unit": "L/100km"
+        },
+        "core_confidence": 0.96,
+        "feature_confidence": 0.9,
+        "sources": [
+          {
+            "type": "exact_trim_params_and_test",
+            "url": "https://detail.zol.com.cn/1977/1976157/param.shtml"
+          }
+        ],
+        "issues": []
+      },
+      "feature_matrix": {
+        "status": "partial_or_exact_source_required",
+        "policy": "只有精确trim来源明确给出的配置才允许true/false；未精确核验字段必须为null，不允许series_year_tier补齐。",
+        "recommended_fields": [
+          "esp",
+          "airbags",
+          "aeb",
+          "fcw",
+          "ldw",
+          "lka",
+          "lane_centering",
+          "bsd",
+          "dow",
+          "acc",
+          "camera_360",
+          "front_radar",
+          "rear_radar",
+          "auto_park",
+          "power_driver_seat",
+          "power_passenger_seat",
+          "seat_heating",
+          "seat_ventilation",
+          "panoramic_sunroof",
+          "power_tailgate",
+          "rear_ac_vents",
+          "dual_zone_climate",
+          "keyless_entry",
+          "wireless_charge",
+          "hud",
+          "full_lcd_cluster",
+          "ota"
+        ]
+      }
+    },
+    {
+      "original_rank": 13,
+      "listing": {
+        "sku": "357149711",
+        "title": "远景X6 2021款 PRO 1.4T 自动尊贵型",
+        "display_price_wan": 4.89,
+        "price_type": "标价",
+        "plate_year": 2022,
+        "mileage_wan_km": 6.39,
+        "source": "https://raw.githubusercontent.com/fancyfx/dongchedi-wuhan-shop/main/shortlist-ranked.json"
+      },
+      "verified_core": {
+        "powertrain": "ice",
+        "body_type": "紧凑型SUV",
+        "seats": 5,
+        "engine": "1.4T 141马力 L4",
+        "transmission": "6挡手自一体",
+        "length_mm": 4518,
+        "width_mm": 1834,
+        "height_mm": 1715,
+        "wheelbase_mm": 2661,
+        "fuel_grade": "92",
+        "official_fuel_l_100km": 6.8,
+        "official_standard": "NEDC",
+        "low_soc_fuel_l_100km": null,
+        "real_world_fuel_l_100km": 9.01,
+        "real_world_sample_n": null,
+        "ev_range_km": null,
+        "ev_range_standard": null,
+        "electric_kwh_100km": null,
+        "ranking_energy": {
+          "type": "real_world_fuel",
+          "value": 9.01,
+          "unit": "L/100km"
+        },
+        "core_confidence": 0.98,
+        "feature_confidence": 0.9,
+        "sources": [
+          {
+            "type": "exact_trim_params",
+            "url": "https://www.gdnewcity.com/param.html?id=160131"
+          },
+          {
+            "type": "owner_fuel",
+            "url": "https://www.xiaoxiongyouhao.com/chexiyh/4133.html"
+          }
+        ],
+        "issues": [
+          "真实油耗9.01L，不能只用6.8L NEDC"
+        ]
+      },
+      "feature_matrix": {
+        "status": "partial_or_exact_source_required",
+        "policy": "只有精确trim来源明确给出的配置才允许true/false；未精确核验字段必须为null，不允许series_year_tier补齐。",
+        "recommended_fields": [
+          "esp",
+          "airbags",
+          "aeb",
+          "fcw",
+          "ldw",
+          "lka",
+          "lane_centering",
+          "bsd",
+          "dow",
+          "acc",
+          "camera_360",
+          "front_radar",
+          "rear_radar",
+          "auto_park",
+          "power_driver_seat",
+          "power_passenger_seat",
+          "seat_heating",
+          "seat_ventilation",
+          "panoramic_sunroof",
+          "power_tailgate",
+          "rear_ac_vents",
+          "dual_zone_climate",
+          "keyless_entry",
+          "wireless_charge",
+          "hud",
+          "full_lcd_cluster",
+          "ota"
+        ]
+      }
+    },
+    {
+      "original_rank": 14,
+      "listing": {
+        "sku": "357014230",
+        "title": "逸达 2023款 1.5T GDI 自动旗舰型",
+        "display_price_wan": 4.98,
+        "price_type": "标价",
+        "plate_year": 2023,
+        "mileage_wan_km": 4.1,
+        "source": "https://raw.githubusercontent.com/fancyfx/dongchedi-wuhan-shop/main/shortlist-ranked.json"
+      },
+      "verified_core": {
+        "powertrain": "ice",
+        "body_type": "紧凑型车",
+        "seats": 5,
+        "engine": "1.5T 170马力 L4",
+        "transmission": "7挡双离合",
+        "length_mm": 4770,
+        "width_mm": 1840,
+        "height_mm": 1450,
+        "wheelbase_mm": 2765,
+        "fuel_grade": "92",
+        "official_fuel_l_100km": 5.99,
+        "official_standard": "WLTC",
+        "low_soc_fuel_l_100km": null,
+        "real_world_fuel_l_100km": null,
+        "real_world_sample_n": null,
+        "ev_range_km": null,
+        "ev_range_standard": null,
+        "electric_kwh_100km": null,
+        "ranking_energy": {
+          "type": "official_wltc_with_uncertainty",
+          "value": 5.99,
+          "unit": "L/100km",
+          "fallback_multiplier_recommended": 1.15
+        },
+        "core_confidence": 0.98,
+        "feature_confidence": 0.92,
+        "sources": [
+          {
+            "type": "exact_trim_series_params",
+            "url": "https://www.dongchedi.com/auto/params-carIds-x-6209"
+          }
+        ],
+        "issues": [
+          "本轮未获得足够样本的精确车主实耗；排序时应对5.99L乘保守修正并降低能耗置信度"
+        ]
+      },
+      "feature_matrix": {
+        "status": "partial_or_exact_source_required",
+        "policy": "只有精确trim来源明确给出的配置才允许true/false；未精确核验字段必须为null，不允许series_year_tier补齐。",
+        "recommended_fields": [
+          "esp",
+          "airbags",
+          "aeb",
+          "fcw",
+          "ldw",
+          "lka",
+          "lane_centering",
+          "bsd",
+          "dow",
+          "acc",
+          "camera_360",
+          "front_radar",
+          "rear_radar",
+          "auto_park",
+          "power_driver_seat",
+          "power_passenger_seat",
+          "seat_heating",
+          "seat_ventilation",
+          "panoramic_sunroof",
+          "power_tailgate",
+          "rear_ac_vents",
+          "dual_zone_climate",
+          "keyless_entry",
+          "wireless_charge",
+          "hud",
+          "full_lcd_cluster",
+          "ota"
+        ]
+      }
+    },
+    {
+      "original_rank": 15,
+      "listing": {
+        "sku": "357250772",
+        "title": "长安UNI-V 2022款 1.5T 尊贵型",
+        "display_price_wan": 5.89,
+        "price_type": "分期",
+        "plate_year": 2022,
+        "mileage_wan_km": 2.85,
+        "source": "https://raw.githubusercontent.com/fancyfx/dongchedi-wuhan-shop/main/shortlist-ranked.json"
+      },
+      "verified_core": {
+        "powertrain": "ice",
+        "body_type": "紧凑型掀背车",
+        "seats": 5,
+        "engine": "1.5T 188马力 L4",
+        "transmission": "7挡湿式双离合",
+        "length_mm": 4680,
+        "width_mm": 1838,
+        "height_mm": 1430,
+        "wheelbase_mm": 2750,
+        "fuel_grade": "92",
+        "official_fuel_l_100km": 6.22,
+        "official_standard": "WLTC",
+        "low_soc_fuel_l_100km": null,
+        "real_world_fuel_l_100km": 7.2,
+        "real_world_sample_n": null,
+        "ev_range_km": null,
+        "ev_range_standard": null,
+        "electric_kwh_100km": null,
+        "ranking_energy": {
+          "type": "measured_fuel",
+          "value": 7.2,
+          "unit": "L/100km"
+        },
+        "core_confidence": 0.96,
+        "feature_confidence": 0.9,
+        "sources": [
+          {
+            "type": "exact_trim_params_and_test",
+            "url": "https://detail.zol.com.cn/1977/1976157/param.shtml"
+          }
+        ],
+        "issues": []
+      },
+      "feature_matrix": {
+        "status": "partial_or_exact_source_required",
+        "policy": "只有精确trim来源明确给出的配置才允许true/false；未精确核验字段必须为null，不允许series_year_tier补齐。",
+        "recommended_fields": [
+          "esp",
+          "airbags",
+          "aeb",
+          "fcw",
+          "ldw",
+          "lka",
+          "lane_centering",
+          "bsd",
+          "dow",
+          "acc",
+          "camera_360",
+          "front_radar",
+          "rear_radar",
+          "auto_park",
+          "power_driver_seat",
+          "power_passenger_seat",
+          "seat_heating",
+          "seat_ventilation",
+          "panoramic_sunroof",
+          "power_tailgate",
+          "rear_ac_vents",
+          "dual_zone_climate",
+          "keyless_entry",
+          "wireless_charge",
+          "hud",
+          "full_lcd_cluster",
+          "ota"
+        ]
+      }
+    },
+    {
+      "original_rank": 16,
+      "listing": {
+        "sku": "356998318",
+        "title": "魏牌 VV7 2020款 2.0T 超豪型",
+        "display_price_wan": 5.59,
+        "price_type": "标价",
+        "plate_year": 2020,
+        "mileage_wan_km": 4.46,
+        "source": "https://raw.githubusercontent.com/fancyfx/dongchedi-wuhan-shop/main/shortlist-ranked.json"
+      },
+      "verified_core": {
+        "powertrain": "ice",
+        "body_type": "中型SUV",
+        "seats": 5,
+        "engine": "2.0T 227马力 L4",
+        "transmission": "7挡双离合",
+        "length_mm": 4760,
+        "width_mm": 1931,
+        "height_mm": 1655,
+        "wheelbase_mm": 2950,
+        "fuel_grade": "92",
+        "official_fuel_l_100km": 7.7,
+        "official_standard": "工信部",
+        "low_soc_fuel_l_100km": null,
+        "real_world_fuel_l_100km": 10.86,
+        "real_world_sample_n": 220,
+        "ev_range_km": null,
+        "ev_range_standard": null,
+        "electric_kwh_100km": null,
+        "ranking_energy": {
+          "type": "real_world_fuel",
+          "value": 10.86,
+          "unit": "L/100km"
+        },
+        "core_confidence": 0.99,
+        "feature_confidence": 0.9,
+        "sources": [
+          {
+            "type": "exact_trim_params",
+            "url": "https://www.gdnewcity.com/param.html?id=182385"
+          },
+          {
+            "type": "owner_fuel",
+            "url": "https://www.xiaoxiongyouhao.com/modelyh/41568.html"
+          }
+        ],
+        "issues": [
+          "真实油耗10.86L，当前排名对使用成本惩罚不足"
+        ]
+      },
+      "feature_matrix": {
+        "status": "partial_or_exact_source_required",
+        "policy": "只有精确trim来源明确给出的配置才允许true/false；未精确核验字段必须为null，不允许series_year_tier补齐。",
+        "recommended_fields": [
+          "esp",
+          "airbags",
+          "aeb",
+          "fcw",
+          "ldw",
+          "lka",
+          "lane_centering",
+          "bsd",
+          "dow",
+          "acc",
+          "camera_360",
+          "front_radar",
+          "rear_radar",
+          "auto_park",
+          "power_driver_seat",
+          "power_passenger_seat",
+          "seat_heating",
+          "seat_ventilation",
+          "panoramic_sunroof",
+          "power_tailgate",
+          "rear_ac_vents",
+          "dual_zone_climate",
+          "keyless_entry",
+          "wireless_charge",
+          "hud",
+          "full_lcd_cluster",
+          "ota"
+        ]
+      }
+    },
+    {
+      "original_rank": 17,
+      "listing": {
+        "sku": "357211018",
+        "title": "逸动 2022款 PLUS 1.6L GDI 手动豪华型",
+        "display_price_wan": 2.89,
+        "price_type": "分期",
+        "plate_year": 2022,
+        "mileage_wan_km": 5.23,
+        "source": "https://raw.githubusercontent.com/fancyfx/dongchedi-wuhan-shop/main/shortlist-ranked.json"
+      },
+      "verified_core": {
+        "powertrain": "ice",
+        "body_type": "紧凑型车",
+        "seats": 5,
+        "engine": "1.6L 128马力 L4",
+        "transmission": "5挡手动",
+        "length_mm": 4730,
+        "width_mm": 1820,
+        "height_mm": 1505,
+        "wheelbase_mm": 2700,
+        "fuel_grade": "92",
+        "official_fuel_l_100km": 5.7,
+        "official_standard": "NEDC",
+        "low_soc_fuel_l_100km": null,
+        "real_world_fuel_l_100km": 7.4,
+        "real_world_sample_n": null,
+        "ev_range_km": null,
+        "ev_range_standard": null,
+        "electric_kwh_100km": null,
+        "ranking_energy": {
+          "type": "real_world_fuel",
+          "value": 7.4,
+          "unit": "L/100km"
+        },
+        "core_confidence": 0.98,
+        "feature_confidence": 0.35,
+        "sources": [
+          {
+            "type": "exact_trim_params",
+            "url": "https://detail.zol.com.cn/1985/1984091/param.shtml"
+          },
+          {
+            "type": "owner_fuel",
+            "url": "https://www.xiaoxiongyouhao.com/chexiyh/2429.html"
+          }
+        ],
+        "issues": [
+          "仓库使用近似高配配置会严重高估手动豪华型；具体功能必须精确trim抓取"
+        ]
+      },
+      "feature_matrix": {
+        "status": "partial_or_exact_source_required",
+        "policy": "只有精确trim来源明确给出的配置才允许true/false；未精确核验字段必须为null，不允许series_year_tier补齐。",
+        "recommended_fields": [
+          "esp",
+          "airbags",
+          "aeb",
+          "fcw",
+          "ldw",
+          "lka",
+          "lane_centering",
+          "bsd",
+          "dow",
+          "acc",
+          "camera_360",
+          "front_radar",
+          "rear_radar",
+          "auto_park",
+          "power_driver_seat",
+          "power_passenger_seat",
+          "seat_heating",
+          "seat_ventilation",
+          "panoramic_sunroof",
+          "power_tailgate",
+          "rear_ac_vents",
+          "dual_zone_climate",
+          "keyless_entry",
+          "wireless_charge",
+          "hud",
+          "full_lcd_cluster",
+          "ota"
+        ]
+      }
+    },
+    {
+      "original_rank": 18,
+      "listing": {
+        "sku": "357252968",
+        "title": "伊兰特 2021款 1.5L CVT LUX尊贵版",
+        "display_price_wan": 4.99,
+        "price_type": "标价",
+        "plate_year": 2021,
+        "mileage_wan_km": 6.89,
+        "source": "https://raw.githubusercontent.com/fancyfx/dongchedi-wuhan-shop/main/shortlist-ranked.json"
+      },
+      "verified_core": {
+        "powertrain": "ice",
+        "body_type": "紧凑型车",
+        "seats": 5,
+        "engine": "1.5L 115马力 L4",
+        "transmission": "CVT",
+        "length_mm": 4680,
+        "width_mm": 1810,
+        "height_mm": 1415,
+        "wheelbase_mm": 2720,
+        "fuel_grade": "92",
+        "official_fuel_l_100km": 5.4,
+        "official_standard": "工信部",
+        "low_soc_fuel_l_100km": null,
+        "real_world_fuel_l_100km": 6.97,
+        "real_world_sample_n": 420,
+        "ev_range_km": null,
+        "ev_range_standard": null,
+        "electric_kwh_100km": null,
+        "ranking_energy": {
+          "type": "real_world_fuel",
+          "value": 6.97,
+          "unit": "L/100km"
+        },
+        "core_confidence": 0.98,
+        "feature_confidence": 0.85,
+        "sources": [
+          {
+            "type": "exact_trim_params",
+            "url": "https://www.hddycpt.com/car/show-13712.html"
+          },
+          {
+            "type": "owner_fuel",
+            "url": "https://www.xiaoxiongyouhao.com/modelyh/48021.html"
+          }
+        ],
+        "issues": []
+      },
+      "feature_matrix": {
+        "status": "partial_or_exact_source_required",
+        "policy": "只有精确trim来源明确给出的配置才允许true/false；未精确核验字段必须为null，不允许series_year_tier补齐。",
+        "recommended_fields": [
+          "esp",
+          "airbags",
+          "aeb",
+          "fcw",
+          "ldw",
+          "lka",
+          "lane_centering",
+          "bsd",
+          "dow",
+          "acc",
+          "camera_360",
+          "front_radar",
+          "rear_radar",
+          "auto_park",
+          "power_driver_seat",
+          "power_passenger_seat",
+          "seat_heating",
+          "seat_ventilation",
+          "panoramic_sunroof",
+          "power_tailgate",
+          "rear_ac_vents",
+          "dual_zone_climate",
+          "keyless_entry",
+          "wireless_charge",
+          "hud",
+          "full_lcd_cluster",
+          "ota"
+        ]
+      }
+    },
+    {
+      "original_rank": 19,
+      "listing": {
+        "sku": "357301752",
+        "title": "哈弗H6 2021款 第三代 2.0T 自动两驱Max版",
+        "display_price_wan": 5.19,
+        "price_type": "标价",
+        "plate_year": 2021,
+        "mileage_wan_km": 2.49,
+        "source": "https://raw.githubusercontent.com/fancyfx/dongchedi-wuhan-shop/main/shortlist-ranked.json"
+      },
+      "verified_core": {
+        "powertrain": "ice",
+        "body_type": "紧凑型SUV",
+        "seats": 5,
+        "engine": "2.0T 211马力 L4",
+        "transmission": "7挡湿式双离合",
+        "length_mm": 4653,
+        "width_mm": 1886,
+        "height_mm": 1730,
+        "wheelbase_mm": 2738,
+        "fuel_grade": "92",
+        "official_fuel_l_100km": 7.14,
+        "official_standard": "WLTC",
+        "low_soc_fuel_l_100km": null,
+        "real_world_fuel_l_100km": 9.2,
+        "real_world_sample_n": 2249,
+        "ev_range_km": null,
+        "ev_range_standard": null,
+        "electric_kwh_100km": null,
+        "ranking_energy": {
+          "type": "real_world_fuel",
+          "value": 9.2,
+          "unit": "L/100km"
+        },
+        "core_confidence": 0.99,
+        "feature_confidence": 0.95,
+        "sources": [
+          {
+            "type": "exact_trim_params",
+            "url": "https://detail.zol.com.cn/series/2530/69625/param_10849056_0_1.html"
+          },
+          {
+            "type": "owner_fuel",
+            "url": "https://www.xiaoxiongyouhao.com/modelyh/49472.html"
+          }
+        ],
+        "issues": [
+          "原算法未计2.49万公里的低里程优势；油耗应使用9.20L真实值"
+        ]
+      },
+      "feature_matrix": {
+        "status": "partial_or_exact_source_required",
+        "policy": "只有精确trim来源明确给出的配置才允许true/false；未精确核验字段必须为null，不允许series_year_tier补齐。",
+        "recommended_fields": [
+          "esp",
+          "airbags",
+          "aeb",
+          "fcw",
+          "ldw",
+          "lka",
+          "lane_centering",
+          "bsd",
+          "dow",
+          "acc",
+          "camera_360",
+          "front_radar",
+          "rear_radar",
+          "auto_park",
+          "power_driver_seat",
+          "power_passenger_seat",
+          "seat_heating",
+          "seat_ventilation",
+          "panoramic_sunroof",
+          "power_tailgate",
+          "rear_ac_vents",
+          "dual_zone_climate",
+          "keyless_entry",
+          "wireless_charge",
+          "hud",
+          "full_lcd_cluster",
+          "ota"
+        ]
+      }
+    },
+    {
+      "original_rank": 20,
+      "listing": {
+        "sku": "357168649",
+        "title": "长安UNI-T 2020款 1.5T 旗舰型",
+        "display_price_wan": 4.99,
+        "price_type": "标价",
+        "plate_year": 2021,
+        "mileage_wan_km": 7.17,
+        "source": "https://raw.githubusercontent.com/fancyfx/dongchedi-wuhan-shop/main/shortlist-ranked.json"
+      },
+      "verified_core": {
+        "powertrain": "ice",
+        "body_type": "紧凑型SUV",
+        "seats": 5,
+        "engine": "1.5T 180马力 L4",
+        "transmission": "7挡湿式双离合",
+        "length_mm": 4515,
+        "width_mm": 1870,
+        "height_mm": 1565,
+        "wheelbase_mm": 2710,
+        "fuel_grade": "92",
+        "official_fuel_l_100km": 6.3,
+        "official_standard": "NEDC/厂家口径（需以精确页复核）",
+        "low_soc_fuel_l_100km": null,
+        "real_world_fuel_l_100km": 9.1,
+        "real_world_sample_n": null,
+        "ev_range_km": null,
+        "ev_range_standard": null,
+        "electric_kwh_100km": null,
+        "ranking_energy": {
+          "type": "measured_fuel",
+          "value": 9.1,
+          "unit": "L/100km"
+        },
+        "core_confidence": 0.88,
+        "feature_confidence": 0.9,
+        "sources": [
+          {
+            "type": "manufacturer_series_params",
+            "url": "https://www.changan.com.cn/3Dhall/UNI-T-2nd/"
+          },
+          {
+            "type": "media_test",
+            "url": "https://www.autohome.com.cn/5565/0/23/Section.html"
+          }
+        ],
+        "issues": [
+          "9.1L媒体实测更接近日常成本；车型尺寸为初代UNI-T口径，开发抓取应绑定精确trim ID"
+        ]
+      },
+      "feature_matrix": {
+        "status": "partial_or_exact_source_required",
+        "policy": "只有精确trim来源明确给出的配置才允许true/false；未精确核验字段必须为null，不允许series_year_tier补齐。",
+        "recommended_fields": [
+          "esp",
+          "airbags",
+          "aeb",
+          "fcw",
+          "ldw",
+          "lka",
+          "lane_centering",
+          "bsd",
+          "dow",
+          "acc",
+          "camera_360",
+          "front_radar",
+          "rear_radar",
+          "auto_park",
+          "power_driver_seat",
+          "power_passenger_seat",
+          "seat_heating",
+          "seat_ventilation",
+          "panoramic_sunroof",
+          "power_tailgate",
+          "rear_ac_vents",
+          "dual_zone_climate",
+          "keyless_entry",
+          "wireless_charge",
+          "hud",
+          "full_lcd_cluster",
+          "ota"
+        ]
+      }
+    },
+    {
+      "original_rank": 21,
+      "listing": {
+        "sku": "356579334",
+        "title": "长安CS75 PLUS 2020款 2.0T 自动旗舰型",
+        "display_price_wan": 4.97,
+        "price_type": "分期",
+        "plate_year": 2020,
+        "mileage_wan_km": 4.68,
+        "source": "https://raw.githubusercontent.com/fancyfx/dongchedi-wuhan-shop/main/shortlist-ranked.json"
+      },
+      "verified_core": {
+        "powertrain": "ice",
+        "body_type": "紧凑型SUV",
+        "seats": 5,
+        "engine": "2.0T 233马力 L4",
+        "transmission": "8挡手自一体",
+        "length_mm": 4700,
+        "width_mm": 1865,
+        "height_mm": 1710,
+        "wheelbase_mm": 2710,
+        "fuel_grade": "92",
+        "official_fuel_l_100km": 8.1,
+        "official_standard": "工信部/车型口径",
+        "low_soc_fuel_l_100km": null,
+        "real_world_fuel_l_100km": 10.0,
+        "real_world_sample_n": 78,
+        "ev_range_km": null,
+        "ev_range_standard": null,
+        "electric_kwh_100km": null,
+        "media_test_fuel_l_100km": 11.7,
+        "ranking_energy": {
+          "type": "owner_fuel",
+          "value": 10.0,
+          "unit": "L/100km",
+          "reason": "优先78人车主平均，11.7L媒体单次测试作上界参考"
+        },
+        "core_confidence": 0.95,
+        "feature_confidence": 0.95,
+        "sources": [
+          {
+            "type": "owner_reviews_fuel",
+            "url": "https://k.m.autohome.com.cn/spec/38163/"
+          },
+          {
+            "type": "media_test",
+            "url": "https://www.autohome.com.cn/5179/20589/23/Section.html"
+          }
+        ],
+        "issues": [
+          "使用成本显著偏高；原算法车龄/里程权重为0会高估老款高配SUV"
+        ]
+      },
+      "feature_matrix": {
+        "status": "partial_or_exact_source_required",
+        "policy": "只有精确trim来源明确给出的配置才允许true/false；未精确核验字段必须为null，不允许series_year_tier补齐。",
+        "recommended_fields": [
+          "esp",
+          "airbags",
+          "aeb",
+          "fcw",
+          "ldw",
+          "lka",
+          "lane_centering",
+          "bsd",
+          "dow",
+          "acc",
+          "camera_360",
+          "front_radar",
+          "rear_radar",
+          "auto_park",
+          "power_driver_seat",
+          "power_passenger_seat",
+          "seat_heating",
+          "seat_ventilation",
+          "panoramic_sunroof",
+          "power_tailgate",
+          "rear_ac_vents",
+          "dual_zone_climate",
+          "keyless_entry",
+          "wireless_charge",
+          "hud",
+          "full_lcd_cluster",
+          "ota"
+        ]
+      }
+    },
+    {
+      "original_rank": 22,
+      "listing": {
+        "sku": "357211014",
+        "title": "秦PLUS DM 2024款 荣耀版 DM-i 55KM 领先型",
+        "display_price_wan": 4.69,
+        "price_type": "分期",
+        "plate_year": 2024,
+        "mileage_wan_km": 3.45,
+        "source": "https://raw.githubusercontent.com/fancyfx/dongchedi-wuhan-shop/main/shortlist-ranked.json"
+      },
+      "verified_core": {
+        "powertrain": "phev",
+        "body_type": "紧凑型车",
+        "seats": 5,
+        "engine": "1.5L 110马力 L4 + 前电机",
+        "transmission": "E-CVT",
+        "length_mm": 4765,
+        "width_mm": 1837,
+        "height_mm": 1495,
+        "wheelbase_mm": 2718,
+        "fuel_grade": "92",
+        "official_fuel_l_100km": 2.17,
+        "official_standard": "WLTC综合（不可用于跨动力排名）",
+        "low_soc_fuel_l_100km": 4.6,
+        "real_world_fuel_l_100km": null,
+        "real_world_sample_n": null,
+        "ev_range_km": 46,
+        "ev_range_standard": "WLTC（NEDC 55km）",
+        "electric_kwh_100km": 11.7,
+        "ranking_energy": {
+          "type": "low_soc_fuel",
+          "value": 4.6,
+          "unit": "L/100km"
+        },
+        "core_confidence": 0.99,
+        "feature_confidence": 0.9,
+        "sources": [
+          {
+            "type": "exact_trim_params",
+            "url": "https://www.dongchedi.com/auto/params-carIds-98138"
+          }
+        ],
+        "issues": [
+          "禁用2.17L综合油耗；使用4.6L低SOC"
+        ]
+      },
+      "feature_matrix": {
+        "status": "partial_or_exact_source_required",
+        "policy": "只有精确trim来源明确给出的配置才允许true/false；未精确核验字段必须为null，不允许series_year_tier补齐。",
+        "recommended_fields": [
+          "esp",
+          "airbags",
+          "aeb",
+          "fcw",
+          "ldw",
+          "lka",
+          "lane_centering",
+          "bsd",
+          "dow",
+          "acc",
+          "camera_360",
+          "front_radar",
+          "rear_radar",
+          "auto_park",
+          "power_driver_seat",
+          "power_passenger_seat",
+          "seat_heating",
+          "seat_ventilation",
+          "panoramic_sunroof",
+          "power_tailgate",
+          "rear_ac_vents",
+          "dual_zone_climate",
+          "keyless_entry",
+          "wireless_charge",
+          "hud",
+          "full_lcd_cluster",
+          "ota"
+        ]
+      }
+    },
+    {
+      "original_rank": 23,
+      "listing": {
+        "sku": "356773034",
+        "title": "秦PLUS DM 2023款 DM-i 冠军版 120KM 领先型",
+        "display_price_wan": 4.89,
+        "price_type": "分期",
+        "plate_year": 2023,
+        "mileage_wan_km": 5.6,
+        "source": "https://raw.githubusercontent.com/fancyfx/dongchedi-wuhan-shop/main/shortlist-ranked.json"
+      },
+      "verified_core": {
+        "powertrain": "phev",
+        "body_type": "紧凑型车",
+        "seats": 5,
+        "engine": "1.5L 110马力 L4 + 前电机",
+        "transmission": "E-CVT",
+        "length_mm": 4765,
+        "width_mm": 1837,
+        "height_mm": 1495,
+        "wheelbase_mm": 2718,
+        "fuel_grade": "92",
+        "official_fuel_l_100km": 1.58,
+        "official_standard": "WLTC综合（不可用于跨动力排名）",
+        "low_soc_fuel_l_100km": 4.6,
+        "real_world_fuel_l_100km": null,
+        "real_world_sample_n": null,
+        "ev_range_km": 101,
+        "ev_range_standard": "WLTC（NEDC 120km）",
+        "electric_kwh_100km": 14.5,
+        "ranking_energy": {
+          "type": "low_soc_fuel",
+          "value": 4.6,
+          "unit": "L/100km"
+        },
+        "core_confidence": 0.99,
+        "feature_confidence": 0.9,
+        "sources": [
+          {
+            "type": "exact_trim_params",
+            "url": "https://www.dongchedi.com/auto/params-carIds-85885-85884-81271-81279-81283"
+          }
+        ],
+        "issues": [
+          "禁用1.58L综合油耗；使用4.6L低SOC"
+        ]
+      },
+      "feature_matrix": {
+        "status": "partial_or_exact_source_required",
+        "policy": "只有精确trim来源明确给出的配置才允许true/false；未精确核验字段必须为null，不允许series_year_tier补齐。",
+        "recommended_fields": [
+          "esp",
+          "airbags",
+          "aeb",
+          "fcw",
+          "ldw",
+          "lka",
+          "lane_centering",
+          "bsd",
+          "dow",
+          "acc",
+          "camera_360",
+          "front_radar",
+          "rear_radar",
+          "auto_park",
+          "power_driver_seat",
+          "power_passenger_seat",
+          "seat_heating",
+          "seat_ventilation",
+          "panoramic_sunroof",
+          "power_tailgate",
+          "rear_ac_vents",
+          "dual_zone_climate",
+          "keyless_entry",
+          "wireless_charge",
+          "hud",
+          "full_lcd_cluster",
+          "ota"
+        ]
+      }
+    },
+    {
+      "original_rank": 24,
+      "listing": {
+        "sku": "357250766",
+        "title": "影豹 2023款 270T DCT J15版",
+        "display_price_wan": 4.79,
+        "price_type": "分期",
+        "plate_year": 2023,
+        "mileage_wan_km": 7.5,
+        "source": "https://raw.githubusercontent.com/fancyfx/dongchedi-wuhan-shop/main/shortlist-ranked.json"
+      },
+      "verified_core": {
+        "powertrain": "ice",
+        "body_type": "紧凑型车",
+        "seats": 5,
+        "engine": "1.5T 177马力 L4",
+        "transmission": "7挡湿式双离合",
+        "length_mm": 4700,
+        "width_mm": 1850,
+        "height_mm": 1432,
+        "wheelbase_mm": 2736,
+        "fuel_grade": "92",
+        "official_fuel_l_100km": 5.96,
+        "official_standard": "WLTC",
+        "low_soc_fuel_l_100km": null,
+        "real_world_fuel_l_100km": null,
+        "real_world_sample_n": null,
+        "ev_range_km": null,
+        "ev_range_standard": null,
+        "electric_kwh_100km": null,
+        "ranking_energy": {
+          "type": "official_wltc_with_uncertainty",
+          "value": 5.96,
+          "unit": "L/100km",
+          "fallback_multiplier_recommended": 1.15
+        },
+        "core_confidence": 0.98,
+        "feature_confidence": 0.9,
+        "sources": [
+          {
+            "type": "exact_trim_params",
+            "url": "https://www.gdnewcity.com/param.html?id=193223"
+          }
+        ],
+        "issues": [
+          "本轮未获得精确trim足量车主实耗；应用官方值时需降低置信度并保守修正"
+        ]
+      },
+      "feature_matrix": {
+        "status": "partial_or_exact_source_required",
+        "policy": "只有精确trim来源明确给出的配置才允许true/false；未精确核验字段必须为null，不允许series_year_tier补齐。",
+        "recommended_fields": [
+          "esp",
+          "airbags",
+          "aeb",
+          "fcw",
+          "ldw",
+          "lka",
+          "lane_centering",
+          "bsd",
+          "dow",
+          "acc",
+          "camera_360",
+          "front_radar",
+          "rear_radar",
+          "auto_park",
+          "power_driver_seat",
+          "power_passenger_seat",
+          "seat_heating",
+          "seat_ventilation",
+          "panoramic_sunroof",
+          "power_tailgate",
+          "rear_ac_vents",
+          "dual_zone_climate",
+          "keyless_entry",
+          "wireless_charge",
+          "hud",
+          "full_lcd_cluster",
+          "ota"
+        ]
+      }
+    },
+    {
+      "original_rank": 25,
+      "listing": {
+        "sku": "357192191",
+        "title": "轩逸 2022款 经典 1.6 XL CVT豪华版",
+        "display_price_wan": 4.29,
+        "price_type": "分期",
+        "plate_year": 2021,
+        "mileage_wan_km": 5.03,
+        "source": "https://raw.githubusercontent.com/fancyfx/dongchedi-wuhan-shop/main/shortlist-ranked.json"
+      },
+      "verified_core": {
+        "powertrain": "ice",
+        "body_type": "紧凑型车",
+        "seats": 5,
+        "engine": "1.6L 122马力 L4",
+        "transmission": "CVT",
+        "length_mm": 4631,
+        "width_mm": 1760,
+        "height_mm": 1503,
+        "wheelbase_mm": 2700,
+        "fuel_grade": "92",
+        "official_fuel_l_100km": 5.2,
+        "official_standard": "NEDC",
+        "low_soc_fuel_l_100km": null,
+        "real_world_fuel_l_100km": 6.79,
+        "real_world_sample_n": 746,
+        "ev_range_km": null,
+        "ev_range_standard": null,
+        "electric_kwh_100km": null,
+        "ranking_energy": {
+          "type": "real_world_fuel",
+          "value": 6.79,
+          "unit": "L/100km"
+        },
+        "core_confidence": 0.99,
+        "feature_confidence": 0.45,
+        "sources": [
+          {
+            "type": "exact_trim_params",
+            "url": "https://detail.zol.com.cn/1970/1969666/param.shtml"
+          },
+          {
+            "type": "owner_fuel",
+            "url": "https://www.xiaoxiongyouhao.com/modelyh/53316.html"
+          }
+        ],
+        "issues": [
+          "仓库如使用series_year_tier近似高配，配置必须清零重抓；真实油耗6.79L"
+        ]
+      },
+      "feature_matrix": {
+        "status": "partial_or_exact_source_required",
+        "policy": "只有精确trim来源明确给出的配置才允许true/false；未精确核验字段必须为null，不允许series_year_tier补齐。",
+        "recommended_fields": [
+          "esp",
+          "airbags",
+          "aeb",
+          "fcw",
+          "ldw",
+          "lka",
+          "lane_centering",
+          "bsd",
+          "dow",
+          "acc",
+          "camera_360",
+          "front_radar",
+          "rear_radar",
+          "auto_park",
+          "power_driver_seat",
+          "power_passenger_seat",
+          "seat_heating",
+          "seat_ventilation",
+          "panoramic_sunroof",
+          "power_tailgate",
+          "rear_ac_vents",
+          "dual_zone_climate",
+          "keyless_entry",
+          "wireless_charge",
+          "hud",
+          "full_lcd_cluster",
+          "ota"
+        ]
+      }
+    },
+    {
+      "original_rank": 26,
+      "listing": {
+        "sku": "357036051",
+        "title": "凌尚 2023款 2.0L 豪华版",
+        "display_price_wan": 5.89,
+        "price_type": "分期",
+        "plate_year": 2023,
+        "mileage_wan_km": 6.13,
+        "source": "https://raw.githubusercontent.com/fancyfx/dongchedi-wuhan-shop/main/shortlist-ranked.json"
+      },
+      "verified_core": {
+        "powertrain": "ice",
+        "body_type": "紧凑型车",
+        "seats": 5,
+        "engine": "2.0L 171马力 L4",
+        "transmission": "CVT（模拟10挡）",
+        "length_mm": 4695,
+        "width_mm": 1780,
+        "height_mm": 1435,
+        "wheelbase_mm": 2750,
+        "fuel_grade": "92",
+        "official_fuel_l_100km": 6.25,
+        "official_standard": "WLTC",
+        "low_soc_fuel_l_100km": null,
+        "real_world_fuel_l_100km": 6.96,
+        "real_world_sample_n": 28,
+        "ev_range_km": null,
+        "ev_range_standard": null,
+        "electric_kwh_100km": null,
+        "ranking_energy": {
+          "type": "real_world_fuel",
+          "value": 6.96,
+          "unit": "L/100km"
+        },
+        "core_confidence": 0.98,
+        "feature_confidence": 0.85,
+        "sources": [
+          {
+            "type": "exact_trim_params",
+            "url": "https://www.carmucn.com/features/89626"
+          },
+          {
+            "type": "owner_fuel",
+            "url": "https://www.xiaoxiongyouhao.com/modelyh/58977.html"
+          }
+        ],
+        "issues": []
+      },
+      "feature_matrix": {
+        "status": "partial_or_exact_source_required",
+        "policy": "只有精确trim来源明确给出的配置才允许true/false；未精确核验字段必须为null，不允许series_year_tier补齐。",
+        "recommended_fields": [
+          "esp",
+          "airbags",
+          "aeb",
+          "fcw",
+          "ldw",
+          "lka",
+          "lane_centering",
+          "bsd",
+          "dow",
+          "acc",
+          "camera_360",
+          "front_radar",
+          "rear_radar",
+          "auto_park",
+          "power_driver_seat",
+          "power_passenger_seat",
+          "seat_heating",
+          "seat_ventilation",
+          "panoramic_sunroof",
+          "power_tailgate",
+          "rear_ac_vents",
+          "dual_zone_climate",
+          "keyless_entry",
+          "wireless_charge",
+          "hud",
+          "full_lcd_cluster",
+          "ota"
+        ]
+      }
+    },
+    {
+      "original_rank": 27,
+      "listing": {
+        "sku": "357211011",
+        "title": "海鸥 2024款 荣耀版 305KM 活力版",
+        "display_price_wan": 4.99,
+        "price_type": "标价",
+        "plate_year": 2024,
+        "mileage_wan_km": 3.46,
+        "source": "https://raw.githubusercontent.com/fancyfx/dongchedi-wuhan-shop/main/shortlist-ranked.json"
+      },
+      "verified_core": {
+        "powertrain": "bev",
+        "body_type": "小型两厢车",
+        "seats": 4,
+        "engine": null,
+        "transmission": "单速固定齿比",
+        "length_mm": 3780,
+        "width_mm": 1715,
+        "height_mm": 1540,
+        "wheelbase_mm": 2500,
+        "fuel_grade": null,
+        "official_fuel_l_100km": null,
+        "official_standard": null,
+        "low_soc_fuel_l_100km": null,
+        "real_world_fuel_l_100km": null,
+        "real_world_sample_n": null,
+        "ev_range_km": 305,
+        "ev_range_standard": "CLTC",
+        "electric_kwh_100km": 9.6,
+        "ranking_energy": {
+          "type": "electricity",
+          "value": 9.6,
+          "unit": "kWh/100km"
+        },
+        "core_confidence": 0.99,
+        "feature_confidence": 0.3,
+        "sources": [
+          {
+            "type": "exact_trim_params",
+            "url": "https://www.dongchedi.com/auto/params-carIds-98807"
+          }
+        ],
+        "issues": [
+          "仓库近似配置曾给入不属于活力版的高级功能；小型4座空间与用户‘空间大’目标不符",
+          "BEV必须按kWh成本比较，不能转换成虚拟L/100km和燃油车直接排序"
+        ]
+      },
+      "feature_matrix": {
+        "status": "partial_or_exact_source_required",
+        "policy": "只有精确trim来源明确给出的配置才允许true/false；未精确核验字段必须为null，不允许series_year_tier补齐。",
+        "recommended_fields": [
+          "esp",
+          "airbags",
+          "aeb",
+          "fcw",
+          "ldw",
+          "lka",
+          "lane_centering",
+          "bsd",
+          "dow",
+          "acc",
+          "camera_360",
+          "front_radar",
+          "rear_radar",
+          "auto_park",
+          "power_driver_seat",
+          "power_passenger_seat",
+          "seat_heating",
+          "seat_ventilation",
+          "panoramic_sunroof",
+          "power_tailgate",
+          "rear_ac_vents",
+          "dual_zone_climate",
+          "keyless_entry",
+          "wireless_charge",
+          "hud",
+          "full_lcd_cluster",
+          "ota"
+        ]
+      }
+    },
+    {
+      "original_rank": 28,
+      "listing": {
+        "sku": "357250770",
+        "title": "帝豪 2023款 第4代 冠军版 1.5L CVT豪华型",
+        "display_price_wan": 4.09,
+        "price_type": "分期",
+        "plate_year": 2023,
+        "mileage_wan_km": 2.75,
+        "source": "https://raw.githubusercontent.com/fancyfx/dongchedi-wuhan-shop/main/shortlist-ranked.json"
+      },
+      "verified_core": {
+        "powertrain": "ice",
+        "body_type": "紧凑型车",
+        "seats": 5,
+        "engine": "1.5L 127马力 L4",
+        "transmission": "CVT",
+        "length_mm": 4638,
+        "width_mm": 1820,
+        "height_mm": 1460,
+        "wheelbase_mm": 2650,
+        "fuel_grade": "92",
+        "official_fuel_l_100km": 5.82,
+        "official_standard": "WLTC",
+        "low_soc_fuel_l_100km": null,
+        "real_world_fuel_l_100km": 7.51,
+        "real_world_sample_n": null,
+        "ev_range_km": null,
+        "ev_range_standard": null,
+        "electric_kwh_100km": null,
+        "ranking_energy": {
+          "type": "real_world_fuel",
+          "value": 7.51,
+          "unit": "L/100km"
+        },
+        "core_confidence": 0.98,
+        "feature_confidence": 0.85,
+        "sources": [
+          {
+            "type": "exact_trim_params",
+            "url": "https://detail.zol.com.cn/1975/1974847/param.shtml"
+          },
+          {
+            "type": "owner_fuel",
+            "url": "https://www.xiaoxiongyouhao.com/chexiyh/3556.html"
+          }
+        ],
+        "issues": []
+      },
+      "feature_matrix": {
+        "status": "partial_or_exact_source_required",
+        "policy": "只有精确trim来源明确给出的配置才允许true/false；未精确核验字段必须为null，不允许series_year_tier补齐。",
+        "recommended_fields": [
+          "esp",
+          "airbags",
+          "aeb",
+          "fcw",
+          "ldw",
+          "lka",
+          "lane_centering",
+          "bsd",
+          "dow",
+          "acc",
+          "camera_360",
+          "front_radar",
+          "rear_radar",
+          "auto_park",
+          "power_driver_seat",
+          "power_passenger_seat",
+          "seat_heating",
+          "seat_ventilation",
+          "panoramic_sunroof",
+          "power_tailgate",
+          "rear_ac_vents",
+          "dual_zone_climate",
+          "keyless_entry",
+          "wireless_charge",
+          "hud",
+          "full_lcd_cluster",
+          "ota"
+        ]
+      }
+    },
+    {
+      "original_rank": 29,
+      "listing": {
+        "sku": "357100389",
+        "title": "缤越 2023款 1.5T DCT铂金版",
+        "display_price_wan": 5.19,
+        "price_type": "标价",
+        "plate_year": 2024,
+        "mileage_wan_km": 4.98,
+        "source": "https://raw.githubusercontent.com/fancyfx/dongchedi-wuhan-shop/main/shortlist-ranked.json"
+      },
+      "verified_core": {
+        "powertrain": "ice",
+        "body_type": "小型SUV",
+        "seats": 5,
+        "engine": "1.5T 181马力 L4",
+        "transmission": "7挡湿式双离合",
+        "length_mm": 4330,
+        "width_mm": 1800,
+        "height_mm": 1609,
+        "wheelbase_mm": 2600,
+        "fuel_grade": "92",
+        "official_fuel_l_100km": 6.35,
+        "official_standard": "WLTC",
+        "low_soc_fuel_l_100km": null,
+        "real_world_fuel_l_100km": 7.32,
+        "real_world_sample_n": 154,
+        "ev_range_km": null,
+        "ev_range_standard": null,
+        "electric_kwh_100km": null,
+        "ranking_energy": {
+          "type": "real_world_fuel",
+          "value": 7.32,
+          "unit": "L/100km"
+        },
+        "core_confidence": 0.99,
+        "feature_confidence": 0.85,
+        "sources": [
+          {
+            "type": "exact_trim_params",
+            "url": "https://detail.zol.com.cn/1975/1974799/param.shtml"
+          },
+          {
+            "type": "owner_fuel",
+            "url": "https://www.xiaoxiongyouhao.com/modelyh/63060.html"
+          }
+        ],
+        "issues": []
+      },
+      "feature_matrix": {
+        "status": "partial_or_exact_source_required",
+        "policy": "只有精确trim来源明确给出的配置才允许true/false；未精确核验字段必须为null，不允许series_year_tier补齐。",
+        "recommended_fields": [
+          "esp",
+          "airbags",
+          "aeb",
+          "fcw",
+          "ldw",
+          "lka",
+          "lane_centering",
+          "bsd",
+          "dow",
+          "acc",
+          "camera_360",
+          "front_radar",
+          "rear_radar",
+          "auto_park",
+          "power_driver_seat",
+          "power_passenger_seat",
+          "seat_heating",
+          "seat_ventilation",
+          "panoramic_sunroof",
+          "power_tailgate",
+          "rear_ac_vents",
+          "dual_zone_climate",
+          "keyless_entry",
+          "wireless_charge",
+          "hud",
+          "full_lcd_cluster",
+          "ota"
+        ]
+      }
+    },
+    {
+      "original_rank": 30,
+      "listing": {
+        "sku": "357298372",
+        "title": "缤越 2024款 1.5T DCT龙腾版",
+        "display_price_wan": 5.39,
+        "price_type": "标价",
+        "plate_year": 2024,
+        "mileage_wan_km": 1.22,
+        "source": "https://raw.githubusercontent.com/fancyfx/dongchedi-wuhan-shop/main/shortlist-ranked.json"
+      },
+      "verified_core": {
+        "powertrain": "ice",
+        "body_type": "小型SUV",
+        "seats": 5,
+        "engine": "1.5T 181马力 L4",
+        "transmission": "7挡湿式双离合",
+        "length_mm": 4330,
+        "width_mm": 1800,
+        "height_mm": 1609,
+        "wheelbase_mm": 2600,
+        "fuel_grade": "92",
+        "official_fuel_l_100km": 6.35,
+        "official_standard": "WLTC",
+        "low_soc_fuel_l_100km": null,
+        "real_world_fuel_l_100km": 7.46,
+        "real_world_sample_n": 122,
+        "ev_range_km": null,
+        "ev_range_standard": null,
+        "electric_kwh_100km": null,
+        "ranking_energy": {
+          "type": "real_world_fuel",
+          "value": 7.46,
+          "unit": "L/100km"
+        },
+        "core_confidence": 0.99,
+        "feature_confidence": 0.8,
+        "sources": [
+          {
+            "type": "exact_trim_series_params",
+            "url": "https://www.dongchedi.com/auto/params-carIds-110288-110478-239207-241072-98897-89103-89617-89100-75456"
+          },
+          {
+            "type": "owner_fuel",
+            "url": "https://www.xiaoxiongyouhao.com/modelyh/66959.html"
+          }
+        ],
+        "issues": [
+          "原算法未奖励1.22万公里低里程和2024上牌的新车龄"
+        ]
+      },
+      "feature_matrix": {
+        "status": "partial_or_exact_source_required",
+        "policy": "只有精确trim来源明确给出的配置才允许true/false；未精确核验字段必须为null，不允许series_year_tier补齐。",
+        "recommended_fields": [
+          "esp",
+          "airbags",
+          "aeb",
+          "fcw",
+          "ldw",
+          "lka",
+          "lane_centering",
+          "bsd",
+          "dow",
+          "acc",
+          "camera_360",
+          "front_radar",
+          "rear_radar",
+          "auto_park",
+          "power_driver_seat",
+          "power_passenger_seat",
+          "seat_heating",
+          "seat_ventilation",
+          "panoramic_sunroof",
+          "power_tailgate",
+          "rear_ac_vents",
+          "dual_zone_climate",
+          "keyless_entry",
+          "wireless_charge",
+          "hud",
+          "full_lcd_cluster",
+          "ota"
+        ]
+      }
+    }
+  ]
+}

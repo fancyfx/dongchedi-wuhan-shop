@@ -33,19 +33,22 @@
   "captured_at": "2026-11-02T16:39:04.628239+08:00",
   "viewport": "390x844",
   "user_agent": "WeChat MicroMessenger iPhone (API + attempted page emulation; CDP UA override blocked)",
-  "sort_preference": "composite_total_score",
-  "notes": "列表接口默认 sort=0。shortlist 为过滤后按综合总得分排序的前30辆。封面签名 URL 会过期，以 images/{sku}.jpg 为准。综合总得分权重：高配40%＞空间25%＞油耗15%＞便宜15%＞SUV5%。配置分基于公开真实参配特征（非标题档位词）；主机厂商由标题映射；车主口碑含独立缺点(cons)专节，来自公开网页搜索（非详情页）。硬筛另排除短续航纯电（≤300km 或微型代步车系），后续不入库；硬筛仅保留角标含「直营」的车源，非直营后续不入库。",
-  "sort_method": "composite_total_score_real_specs",
-  "ranked_at": "2026-11-02T18:47:14+08:00",
+  "sort_preference": "v2_fixed_anchor_total_score",
+  "notes": "算法版本 v2.0.0。固定锚点评分；能源场景 no_home_charging；油价92=8.0/95=8.5，家用电=0.8；分期价+0.5万不确定性；前30条核验参数已覆盖；series_year_tier高级配置置null；短名单为过滤后按V2总分排序前30。",
+  "sort_method": "ranking_v2_fixed_anchors",
+  "ranked_at": "2026-11-02T20:03:27+08:00",
   "ranked_count": 146,
   "sort_weights": {
-    "config": 0.4,
-    "space": 0.25,
-    "fuel": 0.15,
-    "price": 0.15,
-    "suv": 0.05
+    "price": 0.25,
+    "config": 0.2,
+    "operating_cost": 0.2,
+    "space": 0.15,
+    "age": 0.05,
+    "mileage": 0.05,
+    "body_preference": 0.05,
+    "data_quality": 0.05
   },
-  "sort_formula": "total_score = 0.40*config_norm + 0.25*space_norm + 0.15*fuel_norm + 0.15*price_score + 0.05*suv_score; config/space/fuel = min-max(real_specs_proxy) over filtered n=146; price_score = clip((6-price_wan)/6*100,0,100); suv_score = 100 if SUV else 0",
+  "sort_formula": "total = 0.25*price + 0.20*config + 0.20*operating_cost + 0.15*space + 0.05*age + 0.05*mileage + 0.05*body_preference + 0.05*data_quality; fixed anchors (no cohort min-max); operating_cost from energy_cost_yuan_100km; finance display +0.5万 reserve when price_type=分期",
   "manufacturer_coverage": {
     "total": 146,
     "inferred_count": 3,
@@ -154,7 +157,7 @@
   "filtered_count": 146,
   "excluded_short_range_bev_count": 0,
   "excluded_short_range_bev": [],
-  "filter_pipeline": "shop_id=118608 → price≤6 → mileage≤10万km → age≤10年 → exclude_short_range_bev(max=300km / micro series); after=146 excluded=0→直营",
+  "filter_pipeline": "shop_id=118608 → price≤6 → mileage≤10万km → age≤10年 → exclude_short_range_bev; before=146 after=146",
   "config_scoring": {
     "method": "real_specs",
     "forbidden": "title_tier_word_heuristic",
@@ -189,5 +192,18 @@
   "zhiying_filter": "仅直营（badges 含「直营」）",
   "owner_reviews_found_cars": 146,
   "owner_reviews_placeholder_cars": 0,
-  "owner_reviews_updated": "2026-11-02"
+  "owner_reviews_updated": "2026-11-02",
+  "score_version": "v2.0.0",
+  "energy_prices": {
+    "gas_92_yuan_l": 8.0,
+    "gas_95_yuan_l": 8.5,
+    "home_electricity_yuan_kwh": 0.8,
+    "public_electricity_yuan_kwh": 1.5,
+    "wltc_fallback_multiplier": 1.15,
+    "nedc_fallback_multiplier": 1.2
+  },
+  "energy_scenario": "no_home_charging",
+  "finance_reserve_wan": 0.5,
+  "verified_specs_file": "data/vehicle-specs-verified.json",
+  "verified_sku_count": 30
 }

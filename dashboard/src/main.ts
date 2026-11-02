@@ -13,6 +13,15 @@ type SortScores = {
   suv_score?: number
   total_score?: number
   note?: string
+  config_score?: number
+  operating_cost_score?: number
+  space_score?: number
+  age_score?: number
+  mileage_score?: number
+  body_preference_score?: number
+  data_quality_score?: number
+  effective_price_wan?: number
+  score_version?: string
 }
 
 type OwnerReviews = {
@@ -62,6 +71,11 @@ type Listing = {
   owner_reviews?: OwnerReviews
   specs?: Specs
   detailed_config?: Specs
+  score_version?: string
+  effective_price_wan?: number
+  needs_cash_quote?: boolean
+  condition_gate?: string
+  score_warnings?: string[]
 }
 
 type Meta = {
@@ -78,6 +92,10 @@ type Meta = {
   sort_preference?: string | string[]
   sort_weights?: Record<string, number>
   sort_formula?: string
+  score_version?: string
+  energy_scenario?: string
+  energy_prices?: Record<string, number>
+  finance_reserve_wan?: number
 }
 
 type SortKey = 'recommend' | 'price' | 'year' | 'mileage' | 'config' | 'score'
@@ -217,7 +235,7 @@ function cardHtml(item: Listing): string {
   const score = item.sort_scores
   const total = totalOf(item)
   const scoreText = score
-    ? `总分 ${total.toFixed(1)} · 配${(score.config_norm ?? score.config_proxy).toFixed(0)} · 空${(score.space_norm ?? score.space_proxy).toFixed(0)} · 油${(score.fuel_norm ?? score.fuel_proxy).toFixed(0)}`
+    ? `总分 ${total.toFixed(1)} · 价${(score.price_score ?? 0).toFixed(0)} · 配${(score.config_score ?? score.config_norm ?? score.config_proxy).toFixed(0)} · 成本${(score.operating_cost_score ?? score.fuel_norm ?? score.fuel_proxy).toFixed(0)} · 空${(score.space_score ?? score.space_norm ?? score.space_proxy).toFixed(0)}`
     : `总分 ${total.toFixed(1)}`
 
   const manu = item.manufacturer || '未知厂商'
@@ -303,14 +321,29 @@ function cardHtml(item: Listing): string {
       <div class="meta-row">${esc(yearLine)}</div>
       <div class="price-row">
         <div class="price">${item.price.toFixed(2)}<small>万</small></div>
-        <div class="price-type">${esc(item.price_type || '标价')}</div>
+        <div class="price-type">${esc(item.price_type || '标价')}${
+          item.needs_cash_quote && item.effective_price_wan != null
+            ? ` · 估${Number(item.effective_price_wan).toFixed(2)}万`
+            : ''
+        }</div>
       </div>
       <div class="tags">${tags.map((t) => `<span class="tag">${esc(t)}</span>`).join('')}</div>
       ${specsHtml}
       ${evalHtml}
       ${reviewHtml}
+      ${
+        item.needs_cash_quote || item.condition_gate === 'MANUAL_REVIEW' || (item.score_warnings || []).length
+          ? `<div class="warn">${
+              item.condition_gate === 'MANUAL_REVIEW' ? '⚠️ 待人工确认，不应直接作为购买推荐。' : ''
+            }${
+              item.needs_cash_quote
+                ? `分期展示价需询现金价；排序估算 ${Number(item.effective_price_wan ?? item.price).toFixed(2)} 万。`
+                : ''
+            }${esc((item.score_warnings || []).slice(0, 2).join('；'))}</div>`
+          : ''
+      }
       <div class="footer-row">
-        <span class="score">得分排名 #${scoreRank} · ${esc(scoreText)}</span>
+        <span class="score">全场得分排名 #${scoreRank} · ${esc(scoreText)}</span>
         <a class="btn-link" href="${esc(item.detail_url)}" target="_blank" rel="noopener noreferrer">详情</a>
       </div>
     </div>
@@ -329,9 +362,17 @@ function renderShell() {
       '排除短续航纯电(≤300km/微型代步)',
   ].join(' · ')
   const w = meta?.sort_weights
-  const weightText = w
-    ? `综合总分：配置${Math.round(w.config * 100)}% + 空间${Math.round(w.space * 100)}% + 油耗${Math.round(w.fuel * 100)}% + 价格${Math.round(w.price * 100)}% + SUV${Math.round(w.suv * 100)}%`
-    : '综合总分：配置40% + 空间25% + 油耗15% + 价格15% + SUV5%'
+  const ep = meta?.energy_prices
+  const ver = meta?.score_version || 'v2.0.0'
+  const scenario = meta?.energy_scenario || 'no_home_charging'
+  const weightText = w && w.operating_cost != null
+    ? `算法 ${ver} · 场景 ${scenario} · 权重：价格${Math.round((w.price || 0) * 100)}% + 配置${Math.round((w.config || 0) * 100)}% + 使用成本${Math.round((w.operating_cost || 0) * 100)}% + 空间${Math.round((w.space || 0) * 100)}% + 车龄${Math.round((w.age || 0) * 100)}% + 里程${Math.round((w.mileage || 0) * 100)}% + 车身${Math.round((w.body_preference || 0) * 100)}% + 数据质量${Math.round((w.data_quality || 0) * 100)}%`
+    : w
+      ? `综合总分：配置${Math.round(Number(w.config) * 100)}% + 空间${Math.round(Number(w.space) * 100)}% + 油耗${Math.round(Number((w as any).fuel) * 100)}% + 价格${Math.round(Number(w.price) * 100)}% + SUV${Math.round(Number((w as any).suv) * 100)}%`
+      : '算法 v2.0.0'
+  const energyText = ep
+    ? `油价 92# ${ep.gas_92_yuan_l ?? 8}/L · 95# ${ep.gas_95_yuan_l ?? 8.5}/L · 家用电 ${ep.home_electricity_yuan_kwh ?? 0.8}/kWh · 分期不确定预留 ${meta?.finance_reserve_wan ?? 0.5} 万`
+    : ''
 
   app.innerHTML = `
     <header class="header">
@@ -341,6 +382,7 @@ function renderShell() {
       </div>
       <div class="sub">${esc(shop)}（shop_id ${esc(meta?.shop_id || '118608')}） · 硬筛：${esc(filters)}</div>
       <div class="sort-rule">${esc(weightText)}</div>
+      ${energyText ? `<div class="sort-rule energy-rule">${esc(energyText)}</div>` : ''}
       <div class="data-links">
         <span>原始数据（给 LLM / 下载）：</span>
         <a href="/data/" target="_blank" rel="noopener noreferrer">数据目录</a>
