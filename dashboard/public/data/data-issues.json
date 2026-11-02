@@ -162,7 +162,7 @@
     "price_basis": "display",
     "_age_years": 10.333333333333334,
     "score_version": "v2.2.0",
-    "score_v1": 57.7,
+    "score_v1": null,
     "condition_gate": "DATA_ISSUE",
     "score_reasons": [],
     "score_warnings": [
@@ -370,7 +370,7 @@
     "price_basis": "display",
     "_age_years": 7.333333333333333,
     "score_version": "v2.2.0",
-    "score_v1": 55.2,
+    "score_v1": null,
     "condition_gate": "DATA_ISSUE",
     "score_reasons": [],
     "score_warnings": [
@@ -579,7 +579,7 @@
     "finance_reserve_wan": 0.5,
     "_age_years": 10.333333333333334,
     "score_version": "v2.2.0",
-    "score_v1": 55.0,
+    "score_v1": null,
     "condition_gate": "DATA_ISSUE",
     "score_reasons": [],
     "score_warnings": [
@@ -790,7 +790,7 @@
     "price_basis": "display",
     "_age_years": 8.333333333333334,
     "score_version": "v2.2.0",
-    "score_v1": 55.0,
+    "score_v1": null,
     "condition_gate": "DATA_ISSUE",
     "score_reasons": [],
     "score_warnings": [
@@ -1002,7 +1002,7 @@
     "finance_reserve_wan": 0.5,
     "_age_years": 8.333333333333334,
     "score_version": "v2.2.0",
-    "score_v1": 55.0,
+    "score_v1": null,
     "condition_gate": "DATA_ISSUE",
     "score_reasons": [],
     "score_warnings": [
@@ -1210,7 +1210,7 @@
     "finance_reserve_wan": 0.5,
     "_age_years": 9.333333333333334,
     "score_version": "v2.2.0",
-    "score_v1": 61.5,
+    "score_v1": null,
     "condition_gate": "DATA_ISSUE",
     "score_reasons": [],
     "score_warnings": [
@@ -1418,7 +1418,7 @@
     "price_basis": "display",
     "_age_years": 6.333333333333333,
     "score_version": "v2.2.0",
-    "score_v1": 59.3,
+    "score_v1": null,
     "condition_gate": "DATA_ISSUE",
     "score_reasons": [],
     "score_warnings": [
@@ -1627,7 +1627,7 @@
     "price_basis": "display",
     "_age_years": 8.333333333333334,
     "score_version": "v2.2.0",
-    "score_v1": 59.5,
+    "score_v1": null,
     "condition_gate": "DATA_ISSUE",
     "score_reasons": [],
     "score_warnings": [
@@ -1831,7 +1831,7 @@
     "price_basis": "display",
     "_age_years": 5.333333333333333,
     "score_version": "v2.2.0",
-    "score_v1": 57.7,
+    "score_v1": null,
     "condition_gate": "DATA_ISSUE",
     "score_reasons": [],
     "score_warnings": [
@@ -2039,7 +2039,7 @@
     "finance_reserve_wan": 0.5,
     "_age_years": 5.333333333333333,
     "score_version": "v2.2.0",
-    "score_v1": 58.2,
+    "score_v1": null,
     "condition_gate": "DATA_ISSUE",
     "score_reasons": [],
     "score_warnings": [
@@ -2248,7 +2248,7 @@
     "price_basis": "display",
     "_age_years": 8.333333333333334,
     "score_version": "v2.2.0",
-    "score_v1": 57.5,
+    "score_v1": null,
     "condition_gate": "DATA_ISSUE",
     "score_reasons": [],
     "score_warnings": [
@@ -2453,7 +2453,7 @@
     "finance_reserve_wan": 0.5,
     "_age_years": 7.333333333333333,
     "score_version": "v2.2.0",
-    "score_v1": 53.4,
+    "score_v1": null,
     "condition_gate": "DATA_ISSUE",
     "score_reasons": [],
     "score_warnings": [
@@ -2663,7 +2663,7 @@
     "price_basis": "display",
     "_age_years": 7.333333333333333,
     "score_version": "v2.2.0",
-    "score_v1": 57.3,
+    "score_v1": null,
     "condition_gate": "DATA_ISSUE",
     "score_reasons": [],
     "score_warnings": [
@@ -2874,7 +2874,7 @@
     "finance_reserve_wan": 0.5,
     "_age_years": 7.333333333333333,
     "score_version": "v2.2.0",
-    "score_v1": 53.4,
+    "score_v1": null,
     "condition_gate": "DATA_ISSUE",
     "score_reasons": [],
     "score_warnings": [
@@ -3081,7 +3081,7 @@
     "price_basis": "display",
     "_age_years": 9.333333333333334,
     "score_version": "v2.2.0",
-    "score_v1": 55.4,
+    "score_v1": null,
     "condition_gate": "DATA_ISSUE",
     "score_reasons": [],
     "score_warnings": [
@@ -3291,7 +3291,7 @@
     "price_basis": "display",
     "_age_years": 4.333333333333333,
     "score_version": "v2.2.0",
-    "score_v1": 61.1,
+    "score_v1": null,
     "condition_gate": "DATA_ISSUE",
     "score_reasons": [],
     "score_warnings": [
@@ -3502,7 +3502,7 @@
     "price_basis": "display",
     "_age_years": 5.333333333333333,
     "score_version": "v2.2.0",
-    "score_v1": 58.5,
+    "score_v1": null,
     "condition_gate": "DATA_ISSUE",
     "score_reasons": [],
     "score_warnings": [
@@ -3709,7 +3709,7 @@
     "price_basis": "display",
     "_age_years": 3.3333333333333335,
     "score_version": "v2.2.0",
-    "score_v1": 59.6,
+    "score_v1": null,
     "condition_gate": "DATA_ISSUE",
     "score_reasons": [],
     "score_warnings": [
@@ -3921,7 +3921,7 @@
     "price_basis": "display",
     "_age_years": 6.333333333333333,
     "score_version": "v2.2.0",
-    "score_v1": 56.1,
+    "score_v1": null,
     "condition_gate": "DATA_ISSUE",
     "score_reasons": [],
     "score_warnings": [
@@ -4127,7 +4127,7 @@
     "price_basis": "display",
     "_age_years": 8.333333333333334,
     "score_version": "v2.2.0",
-    "score_v1": 56.9,
+    "score_v1": null,
     "condition_gate": "DATA_ISSUE",
     "score_reasons": [],
     "score_warnings": [
@@ -4337,7 +4337,7 @@
     "finance_reserve_wan": 0.5,
     "_age_years": 6.333333333333333,
     "score_version": "v2.2.0",
-    "score_v1": 52.9,
+    "score_v1": null,
     "condition_gate": "DATA_ISSUE",
     "score_reasons": [],
     "score_warnings": [
@@ -4545,7 +4545,7 @@
     "price_basis": "display",
     "_age_years": 4.333333333333333,
     "score_version": "v2.2.0",
-    "score_v1": 58.5,
+    "score_v1": null,
     "condition_gate": "DATA_ISSUE",
     "score_reasons": [],
     "score_warnings": [
@@ -4753,7 +4753,7 @@
     "price_basis": "display",
     "_age_years": 3.3333333333333335,
     "score_version": "v2.2.0",
-    "score_v1": 57.2,
+    "score_v1": null,
     "condition_gate": "DATA_ISSUE",
     "score_reasons": [],
     "score_warnings": [
@@ -4965,7 +4965,7 @@
     "finance_reserve_wan": 0.5,
     "_age_years": 3.3333333333333335,
     "score_version": "v2.2.0",
-    "score_v1": 51.5,
+    "score_v1": null,
     "condition_gate": "DATA_ISSUE",
     "score_reasons": [],
     "score_warnings": [
@@ -5181,7 +5181,7 @@
     "price_basis": "display",
     "_age_years": 5.333333333333333,
     "score_version": "v2.2.0",
-    "score_v1": 50.1,
+    "score_v1": null,
     "condition_gate": "DATA_ISSUE",
     "score_reasons": [],
     "score_warnings": [
@@ -5397,7 +5397,7 @@
     "price_basis": "display",
     "_age_years": 5.333333333333333,
     "score_version": "v2.2.0",
-    "score_v1": 55.4,
+    "score_v1": null,
     "condition_gate": "DATA_ISSUE",
     "score_reasons": [],
     "score_warnings": [
@@ -5606,7 +5606,7 @@
     "finance_reserve_wan": 0.5,
     "_age_years": 8.333333333333334,
     "score_version": "v2.2.0",
-    "score_v1": 55.7,
+    "score_v1": null,
     "condition_gate": "DATA_ISSUE",
     "score_reasons": [],
     "score_warnings": [
@@ -5812,7 +5812,7 @@
     "price_basis": "display",
     "_age_years": 5.333333333333333,
     "score_version": "v2.2.0",
-    "score_v1": 56.5,
+    "score_v1": null,
     "condition_gate": "DATA_ISSUE",
     "score_reasons": [],
     "score_warnings": [
@@ -6021,7 +6021,7 @@
     "price_basis": "display",
     "_age_years": 5.333333333333333,
     "score_version": "v2.2.0",
-    "score_v1": 57.5,
+    "score_v1": null,
     "condition_gate": "DATA_ISSUE",
     "score_reasons": [],
     "score_warnings": [
@@ -6231,7 +6231,7 @@
     "price_basis": "display",
     "_age_years": 3.3333333333333335,
     "score_version": "v2.2.0",
-    "score_v1": 57.1,
+    "score_v1": null,
     "condition_gate": "DATA_ISSUE",
     "score_reasons": [],
     "score_warnings": [
@@ -6444,7 +6444,7 @@
     "finance_reserve_wan": 0.5,
     "_age_years": 2.3333333333333335,
     "score_version": "v2.2.0",
-    "score_v1": 50.2,
+    "score_v1": null,
     "condition_gate": "DATA_ISSUE",
     "score_reasons": [],
     "score_warnings": [
@@ -6667,7 +6667,7 @@
     "finance_reserve_wan": 0.5,
     "_age_years": 7.333333333333333,
     "score_version": "v2.2.0",
-    "score_v1": 53.7,
+    "score_v1": null,
     "condition_gate": "DATA_ISSUE",
     "score_reasons": [],
     "score_warnings": [
@@ -6873,7 +6873,7 @@
     "price_basis": "display",
     "_age_years": 10.333333333333334,
     "score_version": "v2.2.0",
-    "score_v1": 50.6,
+    "score_v1": null,
     "condition_gate": "DATA_ISSUE",
     "score_reasons": [],
     "score_warnings": [
@@ -7080,7 +7080,7 @@
     "finance_reserve_wan": 0.5,
     "_age_years": 5.333333333333333,
     "score_version": "v2.2.0",
-    "score_v1": 55.0,
+    "score_v1": null,
     "condition_gate": "DATA_ISSUE",
     "score_reasons": [],
     "score_warnings": [
@@ -7289,7 +7289,7 @@
     "price_basis": "display",
     "_age_years": 5.333333333333333,
     "score_version": "v2.2.0",
-    "score_v1": 53.3,
+    "score_v1": null,
     "condition_gate": "DATA_ISSUE",
     "score_reasons": [],
     "score_warnings": [
@@ -7496,7 +7496,7 @@
     "price_basis": "display",
     "_age_years": 6.333333333333333,
     "score_version": "v2.2.0",
-    "score_v1": 55.8,
+    "score_v1": null,
     "condition_gate": "DATA_ISSUE",
     "score_reasons": [],
     "score_warnings": [
@@ -7704,7 +7704,7 @@
     "finance_reserve_wan": 0.5,
     "_age_years": 7.333333333333333,
     "score_version": "v2.2.0",
-    "score_v1": 47.5,
+    "score_v1": null,
     "condition_gate": "DATA_ISSUE",
     "score_reasons": [],
     "score_warnings": [
@@ -7910,7 +7910,7 @@
     "price_basis": "display",
     "_age_years": 8.333333333333334,
     "score_version": "v2.2.0",
-    "score_v1": 55.2,
+    "score_v1": null,
     "condition_gate": "DATA_ISSUE",
     "score_reasons": [],
     "score_warnings": [
@@ -8117,7 +8117,7 @@
     "price_basis": "display",
     "_age_years": 10.333333333333334,
     "score_version": "v2.2.0",
-    "score_v1": 49.3,
+    "score_v1": null,
     "condition_gate": "DATA_ISSUE",
     "score_reasons": [],
     "score_warnings": [
@@ -8325,7 +8325,7 @@
     "finance_reserve_wan": 0.5,
     "_age_years": 9.333333333333334,
     "score_version": "v2.2.0",
-    "score_v1": 57.0,
+    "score_v1": null,
     "condition_gate": "DATA_ISSUE",
     "score_reasons": [],
     "score_warnings": [
@@ -8531,7 +8531,7 @@
     "price_basis": "display",
     "_age_years": 5.333333333333333,
     "score_version": "v2.2.0",
-    "score_v1": 57.5,
+    "score_v1": null,
     "condition_gate": "DATA_ISSUE",
     "score_reasons": [],
     "score_warnings": [
@@ -8744,7 +8744,7 @@
     "price_basis": "display",
     "_age_years": 5.333333333333333,
     "score_version": "v2.2.0",
-    "score_v1": 52.5,
+    "score_v1": null,
     "condition_gate": "DATA_ISSUE",
     "score_reasons": [],
     "score_warnings": [
@@ -8954,7 +8954,7 @@
     "price_basis": "display",
     "_age_years": 6.333333333333333,
     "score_version": "v2.2.0",
-    "score_v1": 47.3,
+    "score_v1": null,
     "condition_gate": "DATA_ISSUE",
     "score_reasons": [],
     "score_warnings": [
@@ -9165,7 +9165,7 @@
     "finance_reserve_wan": 0.5,
     "_age_years": 5.333333333333333,
     "score_version": "v2.2.0",
-    "score_v1": 54.3,
+    "score_v1": null,
     "condition_gate": "DATA_ISSUE",
     "score_reasons": [],
     "score_warnings": [
@@ -9373,7 +9373,7 @@
     "price_basis": "display",
     "_age_years": 8.333333333333334,
     "score_version": "v2.2.0",
-    "score_v1": 50.3,
+    "score_v1": null,
     "condition_gate": "DATA_ISSUE",
     "score_reasons": [],
     "score_warnings": [
@@ -9580,7 +9580,7 @@
     "finance_reserve_wan": 0.5,
     "_age_years": 6.333333333333333,
     "score_version": "v2.2.0",
-    "score_v1": 51.9,
+    "score_v1": null,
     "condition_gate": "DATA_ISSUE",
     "score_reasons": [],
     "score_warnings": [
@@ -9796,7 +9796,7 @@
     "finance_reserve_wan": 0.5,
     "_age_years": 1.3333333333333333,
     "score_version": "v2.2.0",
-    "score_v1": 49.6,
+    "score_v1": null,
     "condition_gate": "DATA_ISSUE",
     "score_reasons": [],
     "score_warnings": [
@@ -10012,7 +10012,7 @@
     "price_basis": "display",
     "_age_years": 6.333333333333333,
     "score_version": "v2.2.0",
-    "score_v1": 54.5,
+    "score_v1": null,
     "condition_gate": "DATA_ISSUE",
     "score_reasons": [],
     "score_warnings": [
@@ -10221,7 +10221,7 @@
     "price_basis": "display",
     "_age_years": 8.333333333333334,
     "score_version": "v2.2.0",
-    "score_v1": 55.7,
+    "score_v1": null,
     "condition_gate": "DATA_ISSUE",
     "score_reasons": [],
     "score_warnings": [
@@ -10430,7 +10430,7 @@
     "price_basis": "display",
     "_age_years": 9.333333333333334,
     "score_version": "v2.2.0",
-    "score_v1": 51.4,
+    "score_v1": null,
     "condition_gate": "DATA_ISSUE",
     "score_reasons": [],
     "score_warnings": [
@@ -10634,7 +10634,7 @@
     "price_basis": "display",
     "_age_years": 8.333333333333334,
     "score_version": "v2.2.0",
-    "score_v1": 48.1,
+    "score_v1": null,
     "condition_gate": "DATA_ISSUE",
     "score_reasons": [],
     "score_warnings": [
@@ -10841,7 +10841,7 @@
     "price_basis": "display",
     "_age_years": 3.3333333333333335,
     "score_version": "v2.2.0",
-    "score_v1": 49.0,
+    "score_v1": null,
     "condition_gate": "DATA_ISSUE",
     "score_reasons": [],
     "score_warnings": [
@@ -11060,7 +11060,7 @@
     "price_basis": "display",
     "_age_years": 6.333333333333333,
     "score_version": "v2.2.0",
-    "score_v1": 56.7,
+    "score_v1": null,
     "condition_gate": "DATA_ISSUE",
     "score_reasons": [],
     "score_warnings": [
@@ -11271,7 +11271,7 @@
     "finance_reserve_wan": 0.5,
     "_age_years": 6.333333333333333,
     "score_version": "v2.2.0",
-    "score_v1": 51.5,
+    "score_v1": null,
     "condition_gate": "DATA_ISSUE",
     "score_reasons": [],
     "score_warnings": [
@@ -11477,7 +11477,7 @@
     "price_basis": "display",
     "_age_years": 7.333333333333333,
     "score_version": "v2.2.0",
-    "score_v1": 51.3,
+    "score_v1": null,
     "condition_gate": "DATA_ISSUE",
     "score_reasons": [],
     "score_warnings": [
@@ -11683,7 +11683,7 @@
     "price_basis": "display",
     "_age_years": 5.333333333333333,
     "score_version": "v2.2.0",
-    "score_v1": 52.6,
+    "score_v1": null,
     "condition_gate": "DATA_ISSUE",
     "score_reasons": [],
     "score_warnings": [
@@ -11892,7 +11892,7 @@
     "price_basis": "display",
     "_age_years": 9.333333333333334,
     "score_version": "v2.2.0",
-    "score_v1": 48.6,
+    "score_v1": null,
     "condition_gate": "DATA_ISSUE",
     "score_reasons": [],
     "score_warnings": [
@@ -12098,7 +12098,7 @@
     "price_basis": "display",
     "_age_years": 4.333333333333333,
     "score_version": "v2.2.0",
-    "score_v1": 50.8,
+    "score_v1": null,
     "condition_gate": "DATA_ISSUE",
     "score_reasons": [],
     "score_warnings": [
@@ -12307,7 +12307,7 @@
     "price_basis": "display",
     "_age_years": 9.333333333333334,
     "score_version": "v2.2.0",
-    "score_v1": 52.9,
+    "score_v1": null,
     "condition_gate": "DATA_ISSUE",
     "score_reasons": [],
     "score_warnings": [
@@ -12516,7 +12516,7 @@
     "finance_reserve_wan": 0.5,
     "_age_years": 7.333333333333333,
     "score_version": "v2.2.0",
-    "score_v1": 53.7,
+    "score_v1": null,
     "condition_gate": "DATA_ISSUE",
     "score_reasons": [],
     "score_warnings": [
@@ -12722,7 +12722,7 @@
     "price_basis": "display",
     "_age_years": 9.333333333333334,
     "score_version": "v2.2.0",
-    "score_v1": 52.1,
+    "score_v1": null,
     "condition_gate": "DATA_ISSUE",
     "score_reasons": [],
     "score_warnings": [
@@ -12931,7 +12931,7 @@
     "finance_reserve_wan": 0.5,
     "_age_years": 2.3333333333333335,
     "score_version": "v2.2.0",
-    "score_v1": 55.5,
+    "score_v1": null,
     "condition_gate": "DATA_ISSUE",
     "score_reasons": [],
     "score_warnings": [
@@ -13141,7 +13141,7 @@
     "price_basis": "display",
     "_age_years": 2.3333333333333335,
     "score_version": "v2.2.0",
-    "score_v1": 53.6,
+    "score_v1": null,
     "condition_gate": "DATA_ISSUE",
     "score_reasons": [],
     "score_warnings": [
@@ -13350,7 +13350,7 @@
     "price_basis": "display",
     "_age_years": 4.333333333333333,
     "score_version": "v2.2.0",
-    "score_v1": 55.1,
+    "score_v1": null,
     "condition_gate": "DATA_ISSUE",
     "score_reasons": [],
     "score_warnings": [
@@ -13561,7 +13561,7 @@
     "finance_reserve_wan": 0.5,
     "_age_years": 8.333333333333334,
     "score_version": "v2.2.0",
-    "score_v1": 50.2,
+    "score_v1": null,
     "condition_gate": "DATA_ISSUE",
     "score_reasons": [],
     "score_warnings": [
@@ -13767,7 +13767,7 @@
     "price_basis": "display",
     "_age_years": 5.333333333333333,
     "score_version": "v2.2.0",
-    "score_v1": 52.4,
+    "score_v1": null,
     "condition_gate": "DATA_ISSUE",
     "score_reasons": [],
     "score_warnings": [
@@ -13977,7 +13977,7 @@
     "price_basis": "display",
     "_age_years": 6.333333333333333,
     "score_version": "v2.2.0",
-    "score_v1": 55.6,
+    "score_v1": null,
     "condition_gate": "DATA_ISSUE",
     "score_reasons": [],
     "score_warnings": [
@@ -14189,7 +14189,7 @@
     "finance_reserve_wan": 0.5,
     "_age_years": 4.333333333333333,
     "score_version": "v2.2.0",
-    "score_v1": 46.1,
+    "score_v1": null,
     "condition_gate": "DATA_ISSUE",
     "score_reasons": [],
     "score_warnings": [
@@ -14400,7 +14400,7 @@
     "finance_reserve_wan": 0.5,
     "_age_years": 6.333333333333333,
     "score_version": "v2.2.0",
-    "score_v1": 47.5,
+    "score_v1": null,
     "condition_gate": "DATA_ISSUE",
     "score_reasons": [],
     "score_warnings": [
@@ -14611,7 +14611,7 @@
     "finance_reserve_wan": 0.5,
     "_age_years": 6.333333333333333,
     "score_version": "v2.2.0",
-    "score_v1": 53.3,
+    "score_v1": null,
     "condition_gate": "DATA_ISSUE",
     "score_reasons": [],
     "score_warnings": [
@@ -14820,7 +14820,7 @@
     "price_basis": "display",
     "_age_years": 5.333333333333333,
     "score_version": "v2.2.0",
-    "score_v1": 48.5,
+    "score_v1": null,
     "condition_gate": "DATA_ISSUE",
     "score_reasons": [],
     "score_warnings": [
@@ -15038,7 +15038,7 @@
     "price_basis": "display",
     "_age_years": 4.333333333333333,
     "score_version": "v2.2.0",
-    "score_v1": 54.5,
+    "score_v1": null,
     "condition_gate": "DATA_ISSUE",
     "score_reasons": [],
     "score_warnings": [
@@ -15248,7 +15248,7 @@
     "finance_reserve_wan": 0.5,
     "_age_years": 6.333333333333333,
     "score_version": "v2.2.0",
-    "score_v1": 50.1,
+    "score_v1": null,
     "condition_gate": "DATA_ISSUE",
     "score_reasons": [],
     "score_warnings": [
@@ -15462,7 +15462,7 @@
     "finance_reserve_wan": 0.5,
     "_age_years": 1.3333333333333333,
     "score_version": "v2.2.0",
-    "score_v1": 54.6,
+    "score_v1": null,
     "condition_gate": "DATA_ISSUE",
     "score_reasons": [],
     "score_warnings": [
@@ -15673,7 +15673,7 @@
     "finance_reserve_wan": 0.5,
     "_age_years": 5.333333333333333,
     "score_version": "v2.2.0",
-    "score_v1": 53.5,
+    "score_v1": null,
     "condition_gate": "DATA_ISSUE",
     "score_reasons": [],
     "score_warnings": [
@@ -15885,7 +15885,7 @@
     "finance_reserve_wan": 0.5,
     "_age_years": 8.333333333333334,
     "score_version": "v2.2.0",
-    "score_v1": 47.8,
+    "score_v1": null,
     "condition_gate": "DATA_ISSUE",
     "score_reasons": [],
     "score_warnings": [
@@ -16092,7 +16092,7 @@
     "price_basis": "display",
     "_age_years": 8.333333333333334,
     "score_version": "v2.2.0",
-    "score_v1": 53.0,
+    "score_v1": null,
     "condition_gate": "DATA_ISSUE",
     "score_reasons": [],
     "score_warnings": [
@@ -16297,7 +16297,7 @@
     "price_basis": "display",
     "_age_years": 6.333333333333333,
     "score_version": "v2.2.0",
-    "score_v1": 52.2,
+    "score_v1": null,
     "condition_gate": "DATA_ISSUE",
     "score_reasons": [],
     "score_warnings": [
@@ -16617,7 +16617,7 @@
     "finance_reserve_wan": 0.5,
     "_age_years": 3.3333333333333335,
     "score_version": "v2.2.0",
-    "score_v1": 53.1,
+    "score_v1": null,
     "condition_gate": "DATA_ISSUE",
     "score_reasons": [],
     "score_warnings": [
@@ -16825,7 +16825,7 @@
     "price_basis": "display",
     "_age_years": 6.333333333333333,
     "score_version": "v2.2.0",
-    "score_v1": 50.1,
+    "score_v1": null,
     "condition_gate": "DATA_ISSUE",
     "score_reasons": [],
     "score_warnings": [
@@ -17035,7 +17035,7 @@
     "finance_reserve_wan": 0.5,
     "_age_years": 5.333333333333333,
     "score_version": "v2.2.0",
-    "score_v1": 52.6,
+    "score_v1": null,
     "condition_gate": "DATA_ISSUE",
     "score_reasons": [],
     "score_warnings": [
@@ -17243,7 +17243,7 @@
     "price_basis": "display",
     "_age_years": 8.333333333333334,
     "score_version": "v2.2.0",
-    "score_v1": 50.8,
+    "score_v1": null,
     "condition_gate": "DATA_ISSUE",
     "score_reasons": [],
     "score_warnings": [
@@ -17450,7 +17450,7 @@
     "finance_reserve_wan": 0.5,
     "_age_years": 4.333333333333333,
     "score_version": "v2.2.0",
-    "score_v1": 46.1,
+    "score_v1": null,
     "condition_gate": "DATA_ISSUE",
     "score_reasons": [],
     "score_warnings": [
@@ -17661,7 +17661,7 @@
     "finance_reserve_wan": 0.5,
     "_age_years": 5.333333333333333,
     "score_version": "v2.2.0",
-    "score_v1": 52.4,
+    "score_v1": null,
     "condition_gate": "DATA_ISSUE",
     "score_reasons": [],
     "score_warnings": [
@@ -17876,7 +17876,7 @@
     "price_basis": "display",
     "_age_years": 5.333333333333333,
     "score_version": "v2.2.0",
-    "score_v1": 54.2,
+    "score_v1": null,
     "condition_gate": "DATA_ISSUE",
     "score_reasons": [],
     "score_warnings": [
@@ -18089,7 +18089,7 @@
     "price_basis": "display",
     "_age_years": 1.3333333333333333,
     "score_version": "v2.2.0",
-    "score_v1": 44.1,
+    "score_v1": null,
     "condition_gate": "DATA_ISSUE",
     "score_reasons": [],
     "score_warnings": [
@@ -18309,7 +18309,7 @@
     "finance_reserve_wan": 0.5,
     "_age_years": 6.333333333333333,
     "score_version": "v2.2.0",
-    "score_v1": 49.6,
+    "score_v1": null,
     "condition_gate": "DATA_ISSUE",
     "score_reasons": [],
     "score_warnings": [
@@ -18521,7 +18521,7 @@
     "finance_reserve_wan": 0.5,
     "_age_years": 5.333333333333333,
     "score_version": "v2.2.0",
-    "score_v1": 47.9,
+    "score_v1": null,
     "condition_gate": "DATA_ISSUE",
     "score_reasons": [],
     "score_warnings": [
@@ -18732,7 +18732,7 @@
     "price_basis": "display",
     "_age_years": 9.333333333333334,
     "score_version": "v2.2.0",
-    "score_v1": 48.7,
+    "score_v1": null,
     "condition_gate": "DATA_ISSUE",
     "score_reasons": [],
     "score_warnings": [
@@ -18939,7 +18939,7 @@
     "price_basis": "display",
     "_age_years": 7.333333333333333,
     "score_version": "v2.2.0",
-    "score_v1": 45.0,
+    "score_v1": null,
     "condition_gate": "DATA_ISSUE",
     "score_reasons": [],
     "score_warnings": [
@@ -19149,7 +19149,7 @@
     "finance_reserve_wan": 0.5,
     "_age_years": 4.333333333333333,
     "score_version": "v2.2.0",
-    "score_v1": 47.8,
+    "score_v1": null,
     "condition_gate": "DATA_ISSUE",
     "score_reasons": [],
     "score_warnings": [
@@ -19361,7 +19361,7 @@
     "finance_reserve_wan": 0.5,
     "_age_years": 7.333333333333333,
     "score_version": "v2.2.0",
-    "score_v1": 46.9,
+    "score_v1": null,
     "condition_gate": "DATA_ISSUE",
     "score_reasons": [],
     "score_warnings": [
@@ -19571,7 +19571,7 @@
     "price_basis": "display",
     "_age_years": 5.333333333333333,
     "score_version": "v2.2.0",
-    "score_v1": 48.4,
+    "score_v1": null,
     "condition_gate": "DATA_ISSUE",
     "score_reasons": [],
     "score_warnings": [
@@ -19778,7 +19778,7 @@
     "price_basis": "display",
     "_age_years": 5.333333333333333,
     "score_version": "v2.2.0",
-    "score_v1": 49.7,
+    "score_v1": null,
     "condition_gate": "DATA_ISSUE",
     "score_reasons": [],
     "score_warnings": [
@@ -19989,7 +19989,7 @@
     "price_basis": "display",
     "_age_years": 7.333333333333333,
     "score_version": "v2.2.0",
-    "score_v1": 50.7,
+    "score_v1": null,
     "condition_gate": "DATA_ISSUE",
     "score_reasons": [],
     "score_warnings": [
@@ -20196,7 +20196,7 @@
     "price_basis": "display",
     "_age_years": 3.3333333333333335,
     "score_version": "v2.2.0",
-    "score_v1": 51.6,
+    "score_v1": null,
     "condition_gate": "DATA_ISSUE",
     "score_reasons": [],
     "score_warnings": [
@@ -20409,7 +20409,7 @@
     "price_basis": "display",
     "_age_years": 6.333333333333333,
     "score_version": "v2.2.0",
-    "score_v1": 52.1,
+    "score_v1": null,
     "condition_gate": "DATA_ISSUE",
     "score_reasons": [],
     "score_warnings": [
@@ -20619,7 +20619,7 @@
     "finance_reserve_wan": 0.5,
     "_age_years": 5.333333333333333,
     "score_version": "v2.2.0",
-    "score_v1": 48.6,
+    "score_v1": null,
     "condition_gate": "DATA_ISSUE",
     "score_reasons": [],
     "score_warnings": [
@@ -20830,7 +20830,7 @@
     "finance_reserve_wan": 0.5,
     "_age_years": 7.333333333333333,
     "score_version": "v2.2.0",
-    "score_v1": 47.7,
+    "score_v1": null,
     "condition_gate": "DATA_ISSUE",
     "score_reasons": [],
     "score_warnings": [
@@ -21039,7 +21039,7 @@
     "price_basis": "display",
     "_age_years": 7.333333333333333,
     "score_version": "v2.2.0",
-    "score_v1": 47.2,
+    "score_v1": null,
     "condition_gate": "DATA_ISSUE",
     "score_reasons": [],
     "score_warnings": [
@@ -21249,7 +21249,7 @@
     "price_basis": "display",
     "_age_years": 5.333333333333333,
     "score_version": "v2.2.0",
-    "score_v1": 52.2,
+    "score_v1": null,
     "condition_gate": "DATA_ISSUE",
     "score_reasons": [],
     "score_warnings": [
@@ -21462,7 +21462,7 @@
     "finance_reserve_wan": 0.5,
     "_age_years": 3.3333333333333335,
     "score_version": "v2.2.0",
-    "score_v1": 52.9,
+    "score_v1": null,
     "condition_gate": "DATA_ISSUE",
     "score_reasons": [],
     "score_warnings": [
@@ -21675,7 +21675,7 @@
     "finance_reserve_wan": 0.5,
     "_age_years": 0.3333333333333333,
     "score_version": "v2.2.0",
-    "score_v1": 50.5,
+    "score_v1": null,
     "condition_gate": "DATA_ISSUE",
     "score_reasons": [],
     "score_warnings": [
@@ -21885,7 +21885,7 @@
     "price_basis": "display",
     "_age_years": 5.333333333333333,
     "score_version": "v2.2.0",
-    "score_v1": 46.3,
+    "score_v1": null,
     "condition_gate": "DATA_ISSUE",
     "score_reasons": [],
     "score_warnings": [
@@ -22096,7 +22096,7 @@
     "finance_reserve_wan": 0.5,
     "_age_years": 6.333333333333333,
     "score_version": "v2.2.0",
-    "score_v1": 46.3,
+    "score_v1": null,
     "condition_gate": "DATA_ISSUE",
     "score_reasons": [],
     "score_warnings": [
@@ -22307,7 +22307,7 @@
     "finance_reserve_wan": 0.5,
     "_age_years": 8.333333333333334,
     "score_version": "v2.2.0",
-    "score_v1": 43.8,
+    "score_v1": null,
     "condition_gate": "DATA_ISSUE",
     "score_reasons": [],
     "score_warnings": [
@@ -22518,7 +22518,7 @@
     "finance_reserve_wan": 0.5,
     "_age_years": 4.333333333333333,
     "score_version": "v2.2.0",
-    "score_v1": 47.9,
+    "score_v1": null,
     "condition_gate": "DATA_ISSUE",
     "score_reasons": [],
     "score_warnings": [
@@ -22729,7 +22729,7 @@
     "finance_reserve_wan": 0.5,
     "_age_years": 6.333333333333333,
     "score_version": "v2.2.0",
-    "score_v1": 48.2,
+    "score_v1": null,
     "condition_gate": "DATA_ISSUE",
     "score_reasons": [],
     "score_warnings": [
@@ -22940,7 +22940,7 @@
     "finance_reserve_wan": 0.5,
     "_age_years": 6.333333333333333,
     "score_version": "v2.2.0",
-    "score_v1": 49.2,
+    "score_v1": null,
     "condition_gate": "DATA_ISSUE",
     "score_reasons": [],
     "score_warnings": [
@@ -23151,7 +23151,7 @@
     "finance_reserve_wan": 0.5,
     "_age_years": 6.333333333333333,
     "score_version": "v2.2.0",
-    "score_v1": 48.2,
+    "score_v1": null,
     "condition_gate": "DATA_ISSUE",
     "score_reasons": [],
     "score_warnings": [
@@ -23370,7 +23370,7 @@
     "finance_reserve_wan": 0.5,
     "_age_years": 2.3333333333333335,
     "score_version": "v2.2.0",
-    "score_v1": 40.8,
+    "score_v1": null,
     "condition_gate": "DATA_ISSUE",
     "score_reasons": [],
     "score_warnings": [
@@ -23593,7 +23593,7 @@
     "price_basis": "display",
     "_age_years": 1.3333333333333333,
     "score_version": "v2.2.0",
-    "score_v1": 48.6,
+    "score_v1": null,
     "condition_gate": "DATA_ISSUE",
     "score_reasons": [],
     "score_warnings": [
@@ -23809,7 +23809,7 @@
     "finance_reserve_wan": 0.5,
     "_age_years": 3.3333333333333335,
     "score_version": "v2.2.0",
-    "score_v1": 45.9,
+    "score_v1": null,
     "condition_gate": "DATA_ISSUE",
     "score_reasons": [],
     "score_warnings": [
@@ -24022,7 +24022,7 @@
     "price_basis": "display",
     "_age_years": 5.333333333333333,
     "score_version": "v2.2.0",
-    "score_v1": 45.9,
+    "score_v1": null,
     "condition_gate": "DATA_ISSUE",
     "score_reasons": [],
     "score_warnings": [
@@ -24231,7 +24231,7 @@
     "finance_reserve_wan": 0.5,
     "_age_years": 8.333333333333334,
     "score_version": "v2.2.0",
-    "score_v1": 39.9,
+    "score_v1": null,
     "condition_gate": "DATA_ISSUE",
     "score_reasons": [],
     "score_warnings": [

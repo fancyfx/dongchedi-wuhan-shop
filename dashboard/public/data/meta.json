@@ -36,7 +36,7 @@
   "sort_preference": "v2_fixed_anchor_total_score_exact_trim_only",
   "notes": "算法版本 v2.2.0。仅 exact-trim 且配置覆盖率>=60%的车辆参与评分；评分车辆 25，数据异常/待补全 115。缺详细配置、空间、价格、里程、车龄或能耗任一关键数据时不再给中性分，统一进入数据异常 Tab。",
   "sort_method": "ranking_v2_fixed_anchors_with_hard_data_gate",
-  "ranked_at": "2026-11-02T23:13:47+08:00",
+  "ranked_at": "2026-11-03T07:15:31+08:00",
   "ranked_count": 25,
   "sort_weights": {
     "price": 0.15,

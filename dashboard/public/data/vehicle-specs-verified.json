@@ -1,7 +1,7 @@
 {
   "schema_version": "3.0-exact-trim",
   "generated_at": "2026-11-02",
-  "configuration_policy": "exact-trim-only; automated Dongchedi exact trim sync; no approximate fallback",
+  "configuration_policy": "exact-trim-only; SKU-detail + Dongchedi public exact-trim sync; no approximate fallback",
   "trim_files": [
     "specs/exact-trims-1.json",
     "specs/exact-trims-2.json",
