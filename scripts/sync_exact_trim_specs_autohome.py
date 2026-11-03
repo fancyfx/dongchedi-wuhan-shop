@@ -21,7 +21,7 @@ import subprocess
 import tarfile
 import time
 import zlib
-from dataclasses import dataclass
+from dataclasses import dataclass, replace
 from difflib import SequenceMatcher
 from pathlib import Path
 from typing import Any
@@ -373,23 +373,92 @@ def build_autohome_trim(candidate: Candidate, score: float) -> tuple[str, dict[s
     dq["trim_match"] = round(score, 3)
     dq["source_snapshot"] = candidate.snapshot
     dq["known_issues"] = [] if leaf_n >= 25 else ["汽车之家该车型可核验配置字段较少"]
-    trim["sources"] = [
+    live = str(candidate.snapshot).startswith("live") or str(candidate.source_path).startswith("live:")
+    sources = [
         {
             "url": f"https://car.autohome.com.cn/config/spec/{candidate.spec_id}.html",
-            "source_type": "autohome_exact_trim",
-            "authority_tier": 2,
+            "source_type": "autohome_live_config" if live else "autohome_exact_trim",
+            "authority_tier": 1 if live else 2,
             "series_id": candidate.series_id,
             "spec_id": candidate.spec_id,
-        },
-        {
-            "url": "https://github.com/swoiow/autohome",
-            "source_type": "autohome_parameter_dataset",
-            "authority_tier": 2,
-            "snapshot": candidate.snapshot,
-            "source_path": candidate.source_path,
-        },
+            "parameter_source": "live_page" if live else "vault_or_main_csv",
+        }
     ]
+    if not live:
+        sources.append(
+            {
+                "url": "https://github.com/swoiow/autohome",
+                "source_type": "autohome_parameter_dataset",
+                "authority_tier": 2,
+                "snapshot": candidate.snapshot,
+                "source_path": candidate.source_path,
+            }
+        )
+    else:
+        sources.append(
+            {
+                "url": "https://github.com/swoiow/autohome",
+                "source_type": "autohome_parameter_dataset",
+                "authority_tier": 3,
+                "snapshot": "identity_match_only",
+                "source_path": candidate.source_path,
+                "note": "vault/main used for exact-trim identity; parameters from live page",
+            }
+        )
+    trim["sources"] = sources
     return trim_id, trim
+
+
+def enrich_candidates_from_live(
+    matched: list[tuple[Any, Candidate, float, str]],
+    *,
+    enabled: bool = True,
+) -> dict[str, Any]:
+    """Prefer live config-page rows for every matched spec_id.
+
+    Identity still comes from vault/main exact-trim matching. When a live fetch
+    fails, the original vault/main rows are kept unchanged (nulls stay null).
+    """
+    stats = {"enabled": enabled, "attempted": 0, "enriched": 0, "failed": 0, "skipped": 0}
+    if not enabled or not matched:
+        stats["skipped"] = len(matched)
+        return stats
+    try:
+        import autohome_live_config as live
+    except Exception as exc:
+        print(f"live config module unavailable: {exc}")
+        stats["failed"] = len(matched)
+        return stats
+
+    spec_ids = sorted({c.spec_id for _, c, _, _ in matched})
+    stats["attempted"] = len(spec_ids)
+    try:
+        fetched = live.fetch_specs(spec_ids)
+    except Exception as exc:
+        print(f"live config fetch failed, keeping vault rows: {type(exc).__name__}: {exc}")
+        stats["failed"] = len(spec_ids)
+        return stats
+
+    enriched_ids: set[int] = set()
+    for idx, (item_meta, candidate, score, source_kind) in enumerate(matched):
+        rows = live.rows_for_spec(candidate.spec_id, fetched)
+        if not rows:
+            continue
+        merged = live.merge_prefer_live(candidate.rows, rows)
+        try:
+            import autohome_exact_rules as _rules
+            merged = _rules.canonicalize_rows(merged)
+        except Exception:
+            pass
+        matched[idx] = (item_meta, live.apply_live_rows(candidate, merged), score, source_kind)
+        enriched_ids.add(candidate.spec_id)
+    stats["enriched"] = len(enriched_ids)
+    stats["failed"] = stats["attempted"] - stats["enriched"]
+    print(
+        f"live config enrichment: specs={stats['attempted']} "
+        f"enriched={stats['enriched']} failed={stats['failed']}"
+    )
+    return stats
 
 
 def main() -> None:
@@ -409,10 +478,13 @@ def main() -> None:
     source = AutoHomeSource(AUTOHOME_MAIN, AUTOHOME_VAULTS)
     report_rows: list[dict[str, Any]] = []
     matched = skipped = failed = 0
-    source_counts = {"main": 0, "historical": 0}
+    source_counts = {"main": 0, "historical": 0, "live_enriched": 0}
     current_cache: dict[str, list[Candidate]] = {}
     history_cache: dict[tuple[str, int], list[Candidate]] = {}
+    pending: list[tuple[dict[str, Any], Candidate, float, str]] = []
+    live_enabled = os.environ.get("AUTOHOME_LIVE_CONFIG", "1") not in ("0", "false", "False")
 
+    # Phase 1: exact-trim identity match against vault/main only.
     for idx, item in enumerate(listings, 1):
         sku = str(item.get("sku") or "")
         title = str(item.get("title") or "")
@@ -453,6 +525,21 @@ def main() -> None:
                 print(f"[{idx}/{len(listings)}] unmatched {title} {row['reason']}")
                 continue
 
+            pending.append((row, candidate, score, source_kind))
+            print(f"[{idx}/{len(listings)}] identity  {title} spec={candidate.spec_id} via {source_kind}")
+        except Exception as exc:
+            failed += 1
+            row["reason"] = f"sync_error:{type(exc).__name__}:{exc}"
+            report_rows.append(row)
+            print(f"[{idx}/{len(listings)}] unmatched {title} {row['reason']}")
+
+    # Phase 2: prefer live config-page parameters for every matched spec_id.
+    live_stats = enrich_candidates_from_live(pending, enabled=live_enabled)
+    source_counts["live_enriched"] = int(live_stats.get("enriched") or 0)
+
+    # Phase 3: coverage gate + trim build after live merge.
+    for row, candidate, score, source_kind in pending:
+        try:
             leaf_probe = base.build_trim(
                 candidate.title,
                 candidate.spec_id,
@@ -468,17 +555,20 @@ def main() -> None:
                         "matched_trim": candidate.title,
                         "trim_match": round(score, 3),
                         "config_rows": len(candidate.rows),
+                        "spec_id": candidate.spec_id,
+                        "snapshot": candidate.snapshot,
                     }
                 )
                 failed += 1
                 report_rows.append(row)
+                print(f"build-skip {row['title']} {row['reason']}")
                 continue
 
             trim_id, trim = build_autohome_trim(candidate, score)
             auto["trims"][trim_id] = trim
-            existing_map[sku] = trim_id
+            existing_map[row["sku"]] = trim_id
             matched += 1
-            source_counts[source_kind] += 1
+            source_counts[source_kind] = source_counts.get(source_kind, 0) + 1
             row.update(
                 {
                     "status": "matched",
@@ -491,13 +581,16 @@ def main() -> None:
                     "snapshot": candidate.snapshot,
                     "config_rows": len(candidate.rows),
                     "verified_feature_fields": leaf_n,
+                    "live_enriched": str(candidate.snapshot).startswith("live"),
                 }
             )
+            report_rows.append(row)
+            print(f"matched   {row['title']} rows={len(candidate.rows)} leaf={leaf_n} snap={candidate.snapshot}")
         except Exception as exc:
             failed += 1
             row["reason"] = f"sync_error:{type(exc).__name__}:{exc}"
-        report_rows.append(row)
-        print(f"[{idx}/{len(listings)}] {row['status']:9} {title} {row.get('reason', '')}")
+            report_rows.append(row)
+            print(f"build-fail {row.get('title')} {row['reason']}")
 
     rel_auto = "specs/exact-trims-auto.json"
     trim_files = list(index.get("trim_files") or [])
@@ -507,7 +600,8 @@ def main() -> None:
     index["sku_to_trim"] = dict(sorted(existing_map.items()))
     index["generated_at"] = time.strftime("%Y-%m-%d")
     index["configuration_policy"] = (
-        "exact-trim-only; AutoHome current/historical exact-trim dataset; no legacy/approximate fallback"
+        "exact-trim-only; AutoHome live config page preferred for parameters; "
+        "vault/main CSV for identity only; no legacy/approximate fallback"
     )
     base.dump(base.AUTO_SHARD, auto)
     base.dump(base.INDEX, index)
@@ -516,12 +610,16 @@ def main() -> None:
         {
             "generated_at": time.strftime("%Y-%m-%dT%H:%M:%S%z"),
             "source": str(src.relative_to(ROOT)),
-            "strategy": "existing V3 -> AutoHome main exact trim -> AutoHome vaults exact trim -> unverified",
+            "strategy": (
+                "existing V3 -> AutoHome main/vault exact-trim identity -> "
+                "live config page parameters -> unverified"
+            ),
             "total_listings": len(listings),
             "existing_or_skipped": skipped,
             "newly_matched": matched,
             "unmatched": failed,
             "source_counts": source_counts,
+            "live_enrichment": live_stats,
             "exact_match_threshold": MIN_MATCH,
             "ambiguity_gap": MIN_GAP,
             "rows": report_rows,
@@ -530,7 +628,7 @@ def main() -> None:
     print(
         f"AutoHome exact sync complete: total={len(listings)} existing={skipped} "
         f"matched={matched} unmatched={failed} main={source_counts['main']} "
-        f"historical={source_counts['historical']}"
+        f"historical={source_counts['historical']} live={source_counts['live_enriched']}"
     )
 
 

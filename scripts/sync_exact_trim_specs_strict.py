@@ -60,6 +60,7 @@ _original_build = impl.build_autohome_trim
 
 
 def build_autohome_trim_strict(candidate, score: float):
+    candidate = rules.canonicalize_candidate(candidate)
     trim_id, trim = _original_build(candidate, score)
     return trim_id, rules.enrich_trim(trim, candidate.rows)
 

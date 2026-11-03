@@ -69,8 +69,24 @@ def canonicalize_rows(raw: dict[str, str]) -> dict[str, str]:
     rows = {str(k): _clean(v) for k, v in raw.items()}
 
     # Official legacy energy labels.
-    _put(rows, "NEDC综合油耗", _first(rows, "工信部综合油耗(L/100km)", "工信部综合油耗"))
+    _put(rows, "NEDC综合油耗", _first(rows, "工信部综合油耗(L/100km)", "工信部综合油耗", "NEDC综合油耗(L/100km)"))
     _put(rows, "NEDC纯电续航里程", _first(rows, "工信部续航里程(km)", "工信部续航里程"))
+    _put(rows, "WLTC综合油耗", _first(rows, "WLTC综合油耗(L/100km)", "WLTC综合油耗"))
+
+    # Live AutoHome page label variants.
+    _put(rows, "车身稳定控制", _first(rows, "车身稳定控制(ESC/ESP/DSC等)", "车身稳定控制"))
+    _put(rows, "主动刹车", _first(rows, "主动刹车/主动安全系统", "主动刹车"))
+    _put(rows, "车道偏离预警", _first(rows, "车道偏离预警系统", "车道偏离预警"))
+    _put(rows, "车道保持辅助", _first(rows, "车道保持辅助系统", "车道保持辅助"))
+    _put(rows, "道路交通标识识别", _first(rows, "道路交通标识识别", "交通标志识别"))
+    tpms = _first(rows, "胎压显示", "胎压监测功能")
+    if tpms is not None:
+        if "显示" in str(tpms) or tpms == "●":
+            _put(rows, "胎压显示", "●")
+        elif tpms in ("-", "--", "无"):
+            _put(rows, "胎压显示", "-")
+        else:
+            _put(rows, "胎压显示", tpms)
 
     # Historical naming variants.
     _put(rows, "中控屏幕尺寸", _first(rows, "中控台彩色大屏尺寸", "中控屏幕尺寸", "中控彩色液晶屏"))
@@ -84,6 +100,13 @@ def canonicalize_rows(raw: dict[str, str]) -> dict[str, str]:
     _put(rows, "车道保持辅助系统", _first(rows, "车道保持辅助系统", "车道保持辅助"))
     _put(rows, "CarPlay", _first(rows, "CarPlay", "Apple CarPlay"))
     _put(rows, "CarLife", _first(rows, "CarLife", "百度CarLife"))
+    phone = _first(rows, "手机互联/映射", "手机互联")
+    if phone not in (None, "", "-", "--", "无"):
+        _put(rows, "手机互联/映射", "●" if "○" not in phone else phone)
+        if "carplay" in phone.lower() or "CarPlay" in phone:
+            _put(rows, "CarPlay", "●")
+        if "carlife" in phone.lower() or "CarLife" in phone:
+            _put(rows, "CarLife", "●")
 
     # 360 camera: only an explicit panoramic/360 source can map to 360.
     panorama = _first(rows, "全景摄像头")

@@ -34,10 +34,10 @@
   "viewport": "390x844",
   "user_agent": "WeChat MicroMessenger iPhone (API + attempted page emulation; CDP UA override blocked)",
   "sort_preference": "v2_fixed_anchor_total_score_exact_trim_only",
-  "notes": "算法版本 v2.2.0。仅 exact-trim 且配置覆盖率>=60%的车辆参与评分；评分车辆 59，数据异常/待补全 81。缺详细配置、空间、价格、里程、车龄或能耗任一关键数据时不再给中性分，统一进入数据异常 Tab。",
+  "notes": "算法版本 v2.2.0。仅 exact-trim 且配置覆盖率>=60%的车辆参与评分；评分车辆 78，数据异常/待补全 62。缺详细配置、空间、价格、里程、车龄或能耗任一关键数据时不再给中性分，统一进入数据异常 Tab。",
   "sort_method": "ranking_v2_fixed_anchors_with_hard_data_gate",
-  "ranked_at": "2026-11-03T08:20:29+08:00",
-  "ranked_count": 59,
+  "ranked_at": "2026-11-03T08:45:50+08:00",
+  "ranked_count": 78,
   "sort_weights": {
     "price": 0.15,
     "config": 0.3,
@@ -157,7 +157,7 @@
   "filtered_count": 140,
   "excluded_short_range_bev_count": 0,
   "excluded_short_range_bev": [],
-  "filter_pipeline": "shop_id=118608 → hard filters → exact-trim/data-quality gate; source=140 filtered=140 ranked=59 data_issues=81",
+  "filter_pipeline": "shop_id=118608 → hard filters → exact-trim/data-quality gate; source=140 filtered=140 ranked=78 data_issues=62",
   "config_scoring": {
     "method": "exact_trim_full_parameters",
     "approximate_fallback": false,
@@ -187,7 +187,7 @@
   "excluded_over_budget_cash_count": 6,
   "excluded_over_budget_cash_file": "data/excluded-over-budget-cash.json",
   "price_refresh_file": "data/price-refresh-detail.json",
-  "data_issue_count": 81,
+  "data_issue_count": 62,
   "data_quality_policy": {
     "exact_trim_only": true,
     "min_config_coverage": 0.6,
@@ -195,7 +195,7 @@
     "issues_file": "data/data-issues.json"
   },
   "configuration_generation": "new_full_exact_trim_only",
-  "configuration_source_policy": "AutoHome exact-trim/full-parameter data only; legacy config shards and approximate fallback forbidden",
+  "configuration_source_policy": "AutoHome live config pages preferred for parameters; vault/main CSV for exact-trim identity; legacy/approximate forbidden",
   "configuration_refresh_mode": "local_only",
   "configuration_refresh_command": "python3 scripts/local_refresh.py",
   "legacy_configuration_compatible": false

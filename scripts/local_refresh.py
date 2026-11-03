@@ -3,7 +3,7 @@
 
 This replaces the former GitHub Actions data workflow. It performs, in order:
 1. prepare/update AutoHome current + historical repositories under .external/;
-2. rebuild exact-trim configuration from scratch using the new full parameters;
+2. rebuild exact-trim configuration from vault/main identity + live autohome.com.cn config pages;
 3. recalculate rankings and data-issue routing;
 4. run regression tests;
 5. build the dashboard;
@@ -88,11 +88,22 @@ def prepare_vault_repo() -> None:
     run("git", "checkout", "-B", "vaults", "FETCH_HEAD", cwd=AUTOHOME_VAULTS)
 
 
+def prepare_live_runtime() -> None:
+    """Chrome + puppeteer-core used to decode live AutoHome config pages."""
+    try:
+        import autohome_live_config as live
+    except Exception as exc:
+        raise SystemExit(f"autohome live config helper import failed: {exc}") from exc
+    live.ensure_runtime()
+    print("AutoHome live fetch runtime ready (Chrome + puppeteer-core)")
+
+
 def prepare_sources() -> None:
     ensure_program("git")
     ensure_zstandard()
     prepare_main_repo()
     prepare_vault_repo()
+    prepare_live_runtime()
     print("AutoHome main:", capture("git", "rev-parse", "HEAD", cwd=AUTOHOME_MAIN))
     print("AutoHome vaults:", capture("git", "rev-parse", "HEAD", cwd=AUTOHOME_VAULTS))
 
@@ -106,7 +117,7 @@ def clean_legacy_meta() -> None:
 
     meta["configuration_generation"] = "new_full_exact_trim_only"
     meta["configuration_source_policy"] = (
-        "AutoHome exact-trim/full-parameter data only; legacy config shards and approximate fallback forbidden"
+        "AutoHome live config pages preferred for parameters; vault/main CSV for exact-trim identity; legacy/approximate forbidden"
     )
     meta["configuration_refresh_mode"] = "local_only"
     meta["configuration_refresh_command"] = "python3 scripts/local_refresh.py"
@@ -168,6 +179,7 @@ def main() -> None:
         ensure_zstandard()
         if not (AUTOHOME_MAIN / ".git").exists() or not (AUTOHOME_VAULTS / ".git").exists():
             raise SystemExit("--skip-source-update requested but .external AutoHome repos are missing")
+        prepare_live_runtime()
 
     env = os.environ.copy()
     env["AUTOHOME_MAIN_REPO"] = str(AUTOHOME_MAIN)
@@ -181,6 +193,7 @@ def main() -> None:
 
     run(sys.executable, "scripts/tests/test_autohome_sync.py")
     run(sys.executable, "scripts/tests/test_autohome_rules.py")
+    run(sys.executable, "scripts/tests/test_autohome_live.py")
     run_env(sys.executable, "scripts/sync_exact_trim_specs_strict.py")
     run(sys.executable, "scripts/rerank_v2.py")
     clean_legacy_meta()
