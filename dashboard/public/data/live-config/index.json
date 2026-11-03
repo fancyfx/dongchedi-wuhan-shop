@@ -1,0 +1,631 @@
+{
+  "schema_version": "autohome-live-config-tree-1",
+  "source": "car.autohome.com.cn/config/spec",
+  "generated_at": "2026-11-03T11:25:42+08:00",
+  "legend": {
+    "standard": "●",
+    "optional": "○",
+    "absent": "-"
+  },
+  "spec_count": 76,
+  "specs": {
+    "25892": {
+      "title": "思域 2016款 220TURBO CVT豪华版",
+      "url": "https://car.autohome.com.cn/config/spec/25892.html",
+      "section_count": 22,
+      "item_count": 167,
+      "file": "25892.json"
+    },
+    "26346": {
+      "title": "骐达TIIDA 2016款 1.6L CVT智行版",
+      "url": "https://car.autohome.com.cn/config/spec/26346.html",
+      "section_count": 21,
+      "item_count": 160,
+      "file": "26346.json"
+    },
+    "28440": {
+      "title": "传祺GS4 2017款 235T 手动两驱舒适版",
+      "url": "https://car.autohome.com.cn/config/spec/28440.html",
+      "section_count": 21,
+      "item_count": 167,
+      "file": "28440.json"
+    },
+    "29512": {
+      "title": "天籁 2016款 改款 2.0L XL舒适版",
+      "url": "https://car.autohome.com.cn/config/spec/29512.html",
+      "section_count": 21,
+      "item_count": 167,
+      "file": "29512.json"
+    },
+    "29700": {
+      "title": "威驰FS 2017款 1.5L 手动锋驰版",
+      "url": "https://car.autohome.com.cn/config/spec/29700.html",
+      "section_count": 21,
+      "item_count": 158,
+      "file": "29700.json"
+    },
+    "29830": {
+      "title": "名图 2017款 1.8L 自动尊贵型DLX 国V",
+      "url": "https://car.autohome.com.cn/config/spec/29830.html",
+      "section_count": 22,
+      "item_count": 158,
+      "file": "29830.json"
+    },
+    "30102": {
+      "title": "名图 2017款 1.8L 自动智能型GLS 国V",
+      "url": "https://car.autohome.com.cn/config/spec/30102.html",
+      "section_count": 22,
+      "item_count": 158,
+      "file": "30102.json"
+    },
+    "30532": {
+      "title": "逍客 2017款 2.0L CVT豪华版 国V",
+      "url": "https://car.autohome.com.cn/config/spec/30532.html",
+      "section_count": 21,
+      "item_count": 161,
+      "file": "30532.json"
+    },
+    "31147": {
+      "title": "欧蓝德 2018款 2.4L 四驱精英版 5座",
+      "url": "https://car.autohome.com.cn/config/spec/31147.html",
+      "section_count": 22,
+      "item_count": 164,
+      "file": "31147.json"
+    },
+    "31446": {
+      "title": "天逸 C5 AIRCROSS 2017款 380THP 豪华型",
+      "url": "https://car.autohome.com.cn/config/spec/31446.html",
+      "section_count": 21,
+      "item_count": 166,
+      "file": "31446.json"
+    },
+    "31570": {
+      "title": "甲壳虫 2018款 180TSI 宜乐型",
+      "url": "https://car.autohome.com.cn/config/spec/31570.html",
+      "section_count": 21,
+      "item_count": 157,
+      "file": "31570.json"
+    },
+    "32189": {
+      "title": "英朗 2018款 18T 自动精英型",
+      "url": "https://car.autohome.com.cn/config/spec/32189.html",
+      "section_count": 21,
+      "item_count": 160,
+      "file": "32189.json"
+    },
+    "32481": {
+      "title": "C-TREK蔚领 2018款 1.5L 自动舒适型",
+      "url": "https://car.autohome.com.cn/config/spec/32481.html",
+      "section_count": 22,
+      "item_count": 165,
+      "file": "32481.json"
+    },
+    "33158": {
+      "title": "迈锐宝XL 2018款 530T 自动锐逸版",
+      "url": "https://car.autohome.com.cn/config/spec/33158.html",
+      "section_count": 23,
+      "item_count": 165,
+      "file": "33158.json"
+    },
+    "33403": {
+      "title": "柯迪亚克 2018款 改款 TSI330 7座两驱豪华优享版",
+      "url": "https://car.autohome.com.cn/config/spec/33403.html",
+      "section_count": 21,
+      "item_count": 167,
+      "file": "33403.json"
+    },
+    "33980": {
+      "title": "帝豪GS 2018款 领潮版 1.4T 自动臻尚智联型",
+      "url": "https://car.autohome.com.cn/config/spec/33980.html",
+      "section_count": 21,
+      "item_count": 160,
+      "file": "33980.json"
+    },
+    "33985": {
+      "title": "奔驰GLA 2018款 GLA 200 时尚型",
+      "url": "https://car.autohome.com.cn/config/spec/33985.html",
+      "section_count": 22,
+      "item_count": 171,
+      "file": "33985.json"
+    },
+    "34142": {
+      "title": "帝豪GS 2018款 领潮版 1.4T 自动领尚智联型",
+      "url": "https://car.autohome.com.cn/config/spec/34142.html",
+      "section_count": 21,
+      "item_count": 160,
+      "file": "34142.json"
+    },
+    "34751": {
+      "title": "领克02 2018款 1.5T DCT两驱劲Pro版 国V",
+      "url": "https://car.autohome.com.cn/config/spec/34751.html",
+      "section_count": 21,
+      "item_count": 178,
+      "file": "34751.json"
+    },
+    "34766": {
+      "title": "Polo 2018款 1.5L 自动安享型",
+      "url": "https://car.autohome.com.cn/config/spec/34766.html",
+      "section_count": 22,
+      "item_count": 161,
+      "file": "34766.json"
+    },
+    "36262": {
+      "title": "科沃兹 2019款 320 自动欣享天窗版",
+      "url": "https://car.autohome.com.cn/config/spec/36262.html",
+      "section_count": 21,
+      "item_count": 154,
+      "file": "36262.json"
+    },
+    "38006": {
+      "title": "朗逸 2019款 1.5L 自动风尚版 国VI",
+      "url": "https://car.autohome.com.cn/config/spec/38006.html",
+      "section_count": 21,
+      "item_count": 156,
+      "file": "38006.json"
+    },
+    "38546": {
+      "title": "逍客 2019款 2.0L CVT豪华版",
+      "url": "https://car.autohome.com.cn/config/spec/38546.html",
+      "section_count": 21,
+      "item_count": 157,
+      "file": "38546.json"
+    },
+    "38845": {
+      "title": "领克03 2019款 2.0TD 自动劲Pro版",
+      "url": "https://car.autohome.com.cn/config/spec/38845.html",
+      "section_count": 21,
+      "item_count": 177,
+      "file": "38845.json"
+    },
+    "38920": {
+      "title": "领克03 2019款 1.5TD DCT劲版 国VI",
+      "url": "https://car.autohome.com.cn/config/spec/38920.html",
+      "section_count": 21,
+      "item_count": 177,
+      "file": "38920.json"
+    },
+    "39642": {
+      "title": "帝豪GS 2019款 1.4T CVT雅",
+      "url": "https://car.autohome.com.cn/config/spec/39642.html",
+      "section_count": 21,
+      "item_count": 162,
+      "file": "39642.json"
+    },
+    "41644": {
+      "title": "自由侠 2019款 220T 自动领先版",
+      "url": "https://car.autohome.com.cn/config/spec/41644.html",
+      "section_count": 21,
+      "item_count": 164,
+      "file": "41644.json"
+    },
+    "43240": {
+      "title": "领克06 2020款 1.5T 耀Halo",
+      "url": "https://car.autohome.com.cn/config/spec/43240.html",
+      "section_count": 21,
+      "item_count": 195,
+      "file": "43240.json"
+    },
+    "43587": {
+      "title": "昕锐 2020款 1.5L 自动舒适版",
+      "url": "https://car.autohome.com.cn/config/spec/43587.html",
+      "section_count": 21,
+      "item_count": 159,
+      "file": "43587.json"
+    },
+    "44047": {
+      "title": "高尔夫·嘉旅 2020款 280TSI 自动好奇型",
+      "url": "https://car.autohome.com.cn/config/spec/44047.html",
+      "section_count": 22,
+      "item_count": 163,
+      "file": "44047.json"
+    },
+    "46385": {
+      "title": "欧拉白猫 2020款 360km 标准型",
+      "url": "https://car.autohome.com.cn/config/spec/46385.html",
+      "section_count": 22,
+      "item_count": 147,
+      "file": "46385.json"
+    },
+    "47239": {
+      "title": "飞度 2021款 1.5L CVT潮享版",
+      "url": "https://car.autohome.com.cn/config/spec/47239.html",
+      "section_count": 21,
+      "item_count": 167,
+      "file": "47239.json"
+    },
+    "47877": {
+      "title": "英朗 2021款 改款 典范 1.5L 自动精英型",
+      "url": "https://car.autohome.com.cn/config/spec/47877.html",
+      "section_count": 21,
+      "item_count": 163,
+      "file": "47877.json"
+    },
+    "48021": {
+      "title": "伊兰特 2021款 1.5L CVT LUX尊贵版",
+      "url": "https://car.autohome.com.cn/config/spec/48021.html",
+      "section_count": 22,
+      "item_count": 171,
+      "file": "48021.json"
+    },
+    "49440": {
+      "title": "卡罗拉 2021款 1.2T S-CVT先锋PLUS版",
+      "url": "https://car.autohome.com.cn/config/spec/49440.html",
+      "section_count": 23,
+      "item_count": 188,
+      "file": "49440.json"
+    },
+    "49472": {
+      "title": "哈弗H6 2021款 第三代 2.0T 自动两驱Max",
+      "url": "https://car.autohome.com.cn/config/spec/49472.html",
+      "section_count": 21,
+      "item_count": 197,
+      "file": "49472.json"
+    },
+    "49954": {
+      "title": "科沃兹 2021款 325T 自动欣悦版",
+      "url": "https://car.autohome.com.cn/config/spec/49954.html",
+      "section_count": 21,
+      "item_count": 162,
+      "file": "49954.json"
+    },
+    "50365": {
+      "title": "奕炫 2021款 230T 自动追影骑士版",
+      "url": "https://car.autohome.com.cn/config/spec/50365.html",
+      "section_count": 21,
+      "item_count": 173,
+      "file": "50365.json"
+    },
+    "50511": {
+      "title": "远景X3 2021款 PRO 1.5L CVT尊贵型",
+      "url": "https://car.autohome.com.cn/config/spec/50511.html",
+      "section_count": 21,
+      "item_count": 162,
+      "file": "50511.json"
+    },
+    "51191": {
+      "title": "捷达VA3 2021款 1.5L 自动向上人生版",
+      "url": "https://car.autohome.com.cn/config/spec/51191.html",
+      "section_count": 21,
+      "item_count": 162,
+      "file": "51191.json"
+    },
+    "51393": {
+      "title": "雪铁龙C3-XR 2021款 190THP DCT致尚版",
+      "url": "https://car.autohome.com.cn/config/spec/51393.html",
+      "section_count": 21,
+      "item_count": 161,
+      "file": "51393.json"
+    },
+    "51546": {
+      "title": "奕泽IZOA 2021款 2.0L 奕享版",
+      "url": "https://car.autohome.com.cn/config/spec/51546.html",
+      "section_count": 23,
+      "item_count": 184,
+      "file": "51546.json"
+    },
+    "52053": {
+      "title": "逸动DT 2021款 1.6L 自动豪华型",
+      "url": "https://car.autohome.com.cn/config/spec/52053.html",
+      "section_count": 21,
+      "item_count": 161,
+      "file": "52053.json"
+    },
+    "53140": {
+      "title": "远景X6 2021款 PRO 1.4T 自动尊贵型",
+      "url": "https://car.autohome.com.cn/config/spec/53140.html",
+      "section_count": 21,
+      "item_count": 163,
+      "file": "53140.json"
+    },
+    "53316": {
+      "title": "轩逸 2022款 经典 1.6XL CVT豪华版",
+      "url": "https://car.autohome.com.cn/config/spec/53316.html",
+      "section_count": 23,
+      "item_count": 187,
+      "file": "53316.json"
+    },
+    "53770": {
+      "title": "科鲁泽 2022款 320 自动悦享天窗版",
+      "url": "https://car.autohome.com.cn/config/spec/53770.html",
+      "section_count": 21,
+      "item_count": 166,
+      "file": "53770.json"
+    },
+    "54037": {
+      "title": "迈锐宝XL 2022款 535T 自动锐动版",
+      "url": "https://car.autohome.com.cn/config/spec/54037.html",
+      "section_count": 21,
+      "item_count": 172,
+      "file": "54037.json"
+    },
+    "54631": {
+      "title": "长安CS35PLUS 2021款 改款 蓝鲸NE 1.4T DCT豪华型",
+      "url": "https://car.autohome.com.cn/config/spec/54631.html",
+      "section_count": 21,
+      "item_count": 166,
+      "file": "54631.json"
+    },
+    "54766": {
+      "title": "YARiS L 致炫 2022款 致炫X 1.5L CVT领先PLUS版",
+      "url": "https://car.autohome.com.cn/config/spec/54766.html",
+      "section_count": 21,
+      "item_count": 161,
+      "file": "54766.json"
+    },
+    "54910": {
+      "title": "君威 2021款 552T 精英型",
+      "url": "https://car.autohome.com.cn/config/spec/54910.html",
+      "section_count": 21,
+      "item_count": 181,
+      "file": "54910.json"
+    },
+    "55338": {
+      "title": "长安UNI-V 2022款 1.5T 尊贵型",
+      "url": "https://car.autohome.com.cn/config/spec/55338.html",
+      "section_count": 22,
+      "item_count": 190,
+      "file": "55338.json"
+    },
+    "57247": {
+      "title": "逸动 2022款 PLUS 1.6L GDI 手动豪华型",
+      "url": "https://car.autohome.com.cn/config/spec/57247.html",
+      "section_count": 21,
+      "item_count": 167,
+      "file": "57247.json"
+    },
+    "57451": {
+      "title": "宝来 2023款 200TSI DSG智行版",
+      "url": "https://car.autohome.com.cn/config/spec/57451.html",
+      "section_count": 22,
+      "item_count": 174,
+      "file": "57451.json"
+    },
+    "57452": {
+      "title": "宝来 2023款 200TSI DSG智行PRO版",
+      "url": "https://car.autohome.com.cn/config/spec/57452.html",
+      "section_count": 22,
+      "item_count": 172,
+      "file": "57452.json"
+    },
+    "58101": {
+      "title": "标致408 2022款 1.6T 追光版",
+      "url": "https://car.autohome.com.cn/config/spec/58101.html",
+      "section_count": 21,
+      "item_count": 167,
+      "file": "58101.json"
+    },
+    "58109": {
+      "title": "星瑞 2023款 2.0TD 尊贵型",
+      "url": "https://car.autohome.com.cn/config/spec/58109.html",
+      "section_count": 21,
+      "item_count": 184,
+      "file": "58109.json"
+    },
+    "59448": {
+      "title": "锐程PLUS 2023款 1.5T DCT尊贵型",
+      "url": "https://car.autohome.com.cn/config/spec/59448.html",
+      "section_count": 21,
+      "item_count": 184,
+      "file": "59448.json"
+    },
+    "60073": {
+      "title": "轩逸 2023款 1.6L CVT悦享版",
+      "url": "https://car.autohome.com.cn/config/spec/60073.html",
+      "section_count": 23,
+      "item_count": 199,
+      "file": "60073.json"
+    },
+    "61643": {
+      "title": "长安UNI-T 2023款 第二代 1.5T 旗舰型",
+      "url": "https://car.autohome.com.cn/config/spec/61643.html",
+      "section_count": 21,
+      "item_count": 187,
+      "file": "61643.json"
+    },
+    "61783": {
+      "title": "零跑T03 2023款 310轻享版",
+      "url": "https://car.autohome.com.cn/config/spec/61783.html",
+      "section_count": 22,
+      "item_count": 179,
+      "file": "61783.json"
+    },
+    "62090": {
+      "title": "影豹 2023款 270T DCT J15版",
+      "url": "https://car.autohome.com.cn/config/spec/62090.html",
+      "section_count": 24,
+      "item_count": 203,
+      "file": "62090.json"
+    },
+    "62222": {
+      "title": "帝豪 2023款 第4代冠军版 1.5L CVT豪华型",
+      "url": "https://car.autohome.com.cn/config/spec/62222.html",
+      "section_count": 21,
+      "item_count": 169,
+      "file": "62222.json"
+    },
+    "62910": {
+      "title": "逸动 2023款 畅享版 PLUS 蓝鲸NE 1.4T GDI DCT尊贵版",
+      "url": "https://car.autohome.com.cn/config/spec/62910.html",
+      "section_count": 21,
+      "item_count": 164,
+      "file": "62910.json"
+    },
+    "63060": {
+      "title": "缤越 2023款 1.5T DCT铂金版",
+      "url": "https://car.autohome.com.cn/config/spec/63060.html",
+      "section_count": 21,
+      "item_count": 172,
+      "file": "63060.json"
+    },
+    "64038": {
+      "title": "吉利几何E萤火虫 2024款 301km 流光",
+      "url": "https://car.autohome.com.cn/config/spec/64038.html",
+      "section_count": 22,
+      "item_count": 179,
+      "file": "64038.json"
+    },
+    "66519": {
+      "title": "奕炫 2024款 1.5L 自动劲速版",
+      "url": "https://car.autohome.com.cn/config/spec/66519.html",
+      "section_count": 21,
+      "item_count": 168,
+      "file": "66519.json"
+    },
+    "66743": {
+      "title": "秦PLUS 2024款 荣耀版 DM-i 55KM领先型",
+      "url": "https://car.autohome.com.cn/config/spec/66743.html",
+      "section_count": 23,
+      "item_count": 225,
+      "file": "66743.json"
+    },
+    "66911": {
+      "title": "零跑T03 2024款 310舒享版",
+      "url": "https://car.autohome.com.cn/config/spec/66911.html",
+      "section_count": 22,
+      "item_count": 173,
+      "file": "66911.json"
+    },
+    "66959": {
+      "title": "缤越 2024款 1.5T DCT 龙腾",
+      "url": "https://car.autohome.com.cn/config/spec/66959.html",
+      "section_count": 21,
+      "item_count": 160,
+      "file": "66959.json"
+    },
+    "67024": {
+      "title": "海鸥 2024款 荣耀版 305km 活力版",
+      "url": "https://car.autohome.com.cn/config/spec/67024.html",
+      "section_count": 22,
+      "item_count": 178,
+      "file": "67024.json"
+    },
+    "68428": {
+      "title": "帝豪 2025款 第4代 1.5L CVT龙腾版",
+      "url": "https://car.autohome.com.cn/config/spec/68428.html",
+      "section_count": 21,
+      "item_count": 172,
+      "file": "68428.json"
+    },
+    "69070": {
+      "title": "海鸥 2025款 405km 飞翔版",
+      "url": "https://car.autohome.com.cn/config/spec/69070.html",
+      "section_count": 22,
+      "item_count": 204,
+      "file": "69070.json"
+    },
+    "71690": {
+      "title": "海鸥 2025款 智驾版 305km 活力版",
+      "url": "https://car.autohome.com.cn/config/spec/71690.html",
+      "section_count": 22,
+      "item_count": 204,
+      "file": "71690.json"
+    },
+    "71891": {
+      "title": "零跑T03 2025款 310舒享版",
+      "url": "https://car.autohome.com.cn/config/spec/71891.html",
+      "section_count": 22,
+      "item_count": 175,
+      "file": "71891.json"
+    },
+    "73650": {
+      "title": "MG5 2026款 180DVVT 全球抢先版",
+      "url": "https://car.autohome.com.cn/config/spec/73650.html",
+      "section_count": 21,
+      "item_count": 165,
+      "file": "73650.json"
+    },
+    "74339": {
+      "title": "荣威i5 2026款 1.5L CVT豪华版",
+      "url": "https://car.autohome.com.cn/config/spec/74339.html",
+      "section_count": 21,
+      "item_count": 163,
+      "file": "74339.json"
+    }
+  },
+  "sku_to_spec": {
+    "357301752": 49472,
+    "357149730": 61643,
+    "357232005": 34751,
+    "357261882": 43240,
+    "357319061": 43240,
+    "356933838": 33980,
+    "357156086": 58109,
+    "356994816": 58109,
+    "357250766": 62090,
+    "356938379": 55338,
+    "357211018": 57247,
+    "357337443": 59448,
+    "356872119": 57452,
+    "357127553": 38845,
+    "357275248": 31446,
+    "357246142": 39642,
+    "357211014": 66743,
+    "357088396": 33158,
+    "357320599": 51393,
+    "356670011": 51393,
+    "356892961": 34142,
+    "357350759": 54037,
+    "357252968": 48021,
+    "357002835": 64038,
+    "357184721": 50365,
+    "357250770": 62222,
+    "357205109": 57451,
+    "357168539": 66519,
+    "356905902": 49954,
+    "357334203": 33403,
+    "357006776": 32189,
+    "356796737": 71891,
+    "357228775": 47877,
+    "357184320": 73650,
+    "357160656": 58101,
+    "357410184": 26346,
+    "357220895": 62910,
+    "357239398": 68428,
+    "357250769": 52053,
+    "357100614": 38920,
+    "357151407": 53770,
+    "357149711": 53140,
+    "357001086": 28440,
+    "357275132": 47877,
+    "357295564": 29830,
+    "357152531": 54910,
+    "357192150": 38546,
+    "357211030": 41644,
+    "357140215": 49440,
+    "357357693": 51546,
+    "357192191": 53316,
+    "356905845": 38006,
+    "357236920": 47877,
+    "357246284": 30102,
+    "357319139": 30532,
+    "356871818": 43587,
+    "357098152": 54910,
+    "357265571": 29512,
+    "357192193": 31147,
+    "357166936": 36262,
+    "357097175": 74339,
+    "357204978": 69070,
+    "357230255": 50511,
+    "357263877": 29700,
+    "357211012": 60073,
+    "356829961": 38006,
+    "357100389": 63060,
+    "356845779": 71690,
+    "356998324": 51191,
+    "356902463": 33985,
+    "357298372": 66959,
+    "357228147": 44047,
+    "357328438": 32481,
+    "357184176": 25892,
+    "357178943": 54766,
+    "356865895": 47239,
+    "356868757": 34766,
+    "356587369": 31570,
+    "357211017": 71105,
+    "356595514": 61783,
+    "357228868": 46385,
+    "356796728": 66911,
+    "357171771": 54631,
+    "357211011": 67024
+  }
+}

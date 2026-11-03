@@ -113,8 +113,9 @@ a { color: inherit; text-decoration: none; }
 .data-issue-panel li span { color: #8d9caf; font-size: 10px; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; }
 .issue-foot { margin-top: 8px; padding-top: 7px; border-top: 1px solid rgba(255,255,255,.08); color: var(--muted); font-size: 11px; }
 
-.footer-row { display: flex; justify-content: space-between; align-items: center; gap: 8px; margin-top: auto; padding-top: 4px; }
-.score { font-size: 11px; color: #6f829a; }
+.footer-row { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px; margin-top: auto; padding-top: 4px; }
+.footer-actions { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 6px; margin-left: auto; max-width: 100%; }
+.score { font-size: 11px; color: #6f829a; min-width: 0; }
 .btn-link { flex: none; font-size: 12px; color: var(--accent); border: 1px solid rgba(61,214,198,.35); border-radius: 999px; padding: 5px 10px; }
 .btn-link:hover { background: rgba(61,214,198,.1); }
 .empty { text-align: center; color: var(--muted); padding: 48px 12px; border: 1px dashed var(--border); border-radius: var(--radius); }

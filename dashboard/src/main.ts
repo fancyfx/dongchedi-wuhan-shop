@@ -1,4 +1,5 @@
 import './style.css'
+import { isConfigRoute, renderConfigPage } from './config-page'
 
 type DataIssue = {
   code: string
@@ -331,7 +332,10 @@ function cardHtml(item: Listing): string {
         : ''}
       <div class="footer-row">
         <span class="score">${issueMode ? '详细数据补齐前不参与评分' : `全场得分排名 #${rank} · ${esc(scoreText)}`}</span>
-        <a class="btn-link" href="${esc(item.detail_url)}" target="_blank" rel="noopener noreferrer">详情</a>
+        <span class="footer-actions">
+          <a class="btn-link" href="?sku=${encodeURIComponent(item.sku)}">查看完整配置</a>
+          <a class="btn-link" href="${esc(item.detail_url)}" target="_blank" rel="noopener noreferrer">详情</a>
+        </span>
       </div>
     </div>
   </article>`
@@ -460,6 +464,10 @@ function renderList() {
 }
 
 async function boot() {
+  if (isConfigRoute()) {
+    await renderConfigPage(app)
+    return
+  }
   app.innerHTML = `<div class="loading">正在加载车源数据…</div>`
   try {
     const [listRes, issueRes, metaRes] = await Promise.all([

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-03T08:45:49+0800",
+  "generated_at": "2026-11-03T11:22:03+0800",
   "source": "car.autohome.com.cn/config/spec",
   "results": {
     "49472": {
@@ -201,8 +201,10 @@
         "车内PM2.5过滤装置": "●",
         "负离子发生器": "-"
       },
+      "section_count": 21,
+      "map_size": 220,
       "url": "https://car.autohome.com.cn/config/spec/49472.html",
-      "map_size": 220
+      "fetched_at": "2026-11-03T03:19:29.289Z"
     },
     "25892": {
       "spec_id": 25892,
@@ -372,8 +374,10 @@
         "车载空气净化器": "-",
         "车内PM2.5过滤装置": "-"
       },
+      "section_count": 22,
       "map_size": 218,
-      "url": "https://car.autohome.com.cn/config/spec/25892.html"
+      "url": "https://car.autohome.com.cn/config/spec/25892.html",
+      "fetched_at": "2026-11-03T03:20:05.037Z"
     },
     "26346": {
       "spec_id": 26346,
@@ -537,8 +541,10 @@
         "车载空气净化器": "-",
         "车内PM2.5过滤装置": "-"
       },
+      "section_count": 21,
       "map_size": 207,
-      "url": "https://car.autohome.com.cn/config/spec/26346.html"
+      "url": "https://car.autohome.com.cn/config/spec/26346.html",
+      "fetched_at": "2026-11-03T03:20:06.609Z"
     },
     "28440": {
       "spec_id": 28440,
@@ -709,8 +715,10 @@
         "车载空气净化器": "-",
         "车内PM2.5过滤装置": "-"
       },
+      "section_count": 21,
       "map_size": 215,
-      "url": "https://car.autohome.com.cn/config/spec/28440.html"
+      "url": "https://car.autohome.com.cn/config/spec/28440.html",
+      "fetched_at": "2026-11-03T03:20:14.460Z"
     },
     "29512": {
       "spec_id": 29512,
@@ -881,8 +889,10 @@
         "车内PM2.5过滤装置": "-",
         "负离子发生器": "-"
       },
+      "section_count": 21,
       "map_size": 213,
-      "url": "https://car.autohome.com.cn/config/spec/29512.html"
+      "url": "https://car.autohome.com.cn/config/spec/29512.html",
+      "fetched_at": "2026-11-03T03:20:16.179Z"
     },
     "29700": {
       "spec_id": 29700,
@@ -1044,8 +1054,10 @@
         "车载空气净化器": "-",
         "车内PM2.5过滤装置": "-"
       },
+      "section_count": 21,
       "map_size": 208,
-      "url": "https://car.autohome.com.cn/config/spec/29700.html"
+      "url": "https://car.autohome.com.cn/config/spec/29700.html",
+      "fetched_at": "2026-11-03T03:20:17.778Z"
     },
     "29830": {
       "spec_id": 29830,
@@ -1206,8 +1218,10 @@
         "车内PM2.5过滤装置": "●",
         "负离子发生器": "●"
       },
+      "section_count": 22,
       "map_size": 209,
-      "url": "https://car.autohome.com.cn/config/spec/29830.html"
+      "url": "https://car.autohome.com.cn/config/spec/29830.html",
+      "fetched_at": "2026-11-03T03:20:19.426Z"
     },
     "30102": {
       "spec_id": 30102,
@@ -1368,8 +1382,10 @@
         "车内PM2.5过滤装置": "●",
         "负离子发生器": "●"
       },
+      "section_count": 22,
       "map_size": 209,
-      "url": "https://car.autohome.com.cn/config/spec/30102.html"
+      "url": "https://car.autohome.com.cn/config/spec/30102.html",
+      "fetched_at": "2026-11-03T03:20:21.086Z"
     },
     "30532": {
       "spec_id": 30532,
@@ -1534,8 +1550,10 @@
         "车载空气净化器": "-",
         "车内PM2.5过滤装置": "-"
       },
+      "section_count": 21,
       "map_size": 210,
-      "url": "https://car.autohome.com.cn/config/spec/30532.html"
+      "url": "https://car.autohome.com.cn/config/spec/30532.html",
+      "fetched_at": "2026-11-03T03:20:22.879Z"
     },
     "31147": {
       "spec_id": 31147,
@@ -1703,8 +1721,10 @@
         "车载空气净化器": "-",
         "车内PM2.5过滤装置": "-"
       },
+      "section_count": 22,
       "map_size": 212,
-      "url": "https://car.autohome.com.cn/config/spec/31147.html"
+      "url": "https://car.autohome.com.cn/config/spec/31147.html",
+      "fetched_at": "2026-11-03T03:20:24.717Z"
     },
     "31446": {
       "spec_id": 31446,
@@ -1874,8 +1894,10 @@
         "车载空气净化器": "-",
         "车内PM2.5过滤装置": "-"
       },
+      "section_count": 21,
       "map_size": 207,
-      "url": "https://car.autohome.com.cn/config/spec/31446.html"
+      "url": "https://car.autohome.com.cn/config/spec/31446.html",
+      "fetched_at": "2026-11-03T03:20:26.458Z"
     },
     "31570": {
       "spec_id": 31570,
@@ -2036,8 +2058,10 @@
         "车载空气净化器": "-",
         "车内PM2.5过滤装置": "-"
       },
+      "section_count": 21,
       "map_size": 206,
-      "url": "https://car.autohome.com.cn/config/spec/31570.html"
+      "url": "https://car.autohome.com.cn/config/spec/31570.html",
+      "fetched_at": "2026-11-03T03:20:28.256Z"
     },
     "32189": {
       "spec_id": 32189,
@@ -2201,8 +2225,10 @@
         "车载空气净化器": "-",
         "车内PM2.5过滤装置": "-"
       },
+      "section_count": 21,
       "map_size": 203,
-      "url": "https://car.autohome.com.cn/config/spec/32189.html"
+      "url": "https://car.autohome.com.cn/config/spec/32189.html",
+      "fetched_at": "2026-11-03T03:20:30.043Z"
     },
     "32481": {
       "spec_id": 32481,
@@ -2368,8 +2394,10 @@
         "车载空气净化器": "-",
         "车内PM2.5过滤装置": "●"
       },
+      "section_count": 22,
       "map_size": 216,
-      "url": "https://car.autohome.com.cn/config/spec/32481.html"
+      "url": "https://car.autohome.com.cn/config/spec/32481.html",
+      "fetched_at": "2026-11-03T03:20:31.741Z"
     },
     "33158": {
       "spec_id": 33158,
@@ -2538,8 +2566,10 @@
         "车载空气净化器": "-",
         "车内PM2.5过滤装置": "●"
       },
+      "section_count": 23,
       "map_size": 208,
-      "url": "https://car.autohome.com.cn/config/spec/33158.html"
+      "url": "https://car.autohome.com.cn/config/spec/33158.html",
+      "fetched_at": "2026-11-03T03:20:33.820Z"
     },
     "33403": {
       "spec_id": 33403,
@@ -2710,8 +2740,10 @@
         "车载空气净化器": "-",
         "车内PM2.5过滤装置": "●"
       },
+      "section_count": 21,
       "map_size": 216,
-      "url": "https://car.autohome.com.cn/config/spec/33403.html"
+      "url": "https://car.autohome.com.cn/config/spec/33403.html",
+      "fetched_at": "2026-11-03T03:20:35.750Z"
     },
     "33980": {
       "spec_id": 33980,
@@ -2875,8 +2907,10 @@
         "车载空气净化器": "●",
         "车内PM2.5过滤装置": "-"
       },
+      "section_count": 21,
       "map_size": 210,
-      "url": "https://car.autohome.com.cn/config/spec/33980.html"
+      "url": "https://car.autohome.com.cn/config/spec/33980.html",
+      "fetched_at": "2026-11-03T03:20:37.444Z"
     },
     "33985": {
       "spec_id": 33985,
@@ -3047,8 +3081,10 @@
         "车载空气净化器": "-",
         "车内PM2.5过滤装置": "-"
       },
+      "section_count": 22,
       "map_size": 209,
-      "url": "https://car.autohome.com.cn/config/spec/33985.html"
+      "url": "https://car.autohome.com.cn/config/spec/33985.html",
+      "fetched_at": "2026-11-03T03:20:39.095Z"
     },
     "34142": {
       "spec_id": 34142,
@@ -3212,8 +3248,10 @@
         "车载空气净化器": "●",
         "车内PM2.5过滤装置": "-"
       },
+      "section_count": 21,
       "map_size": 210,
-      "url": "https://car.autohome.com.cn/config/spec/34142.html"
+      "url": "https://car.autohome.com.cn/config/spec/34142.html",
+      "fetched_at": "2026-11-03T03:20:40.977Z"
     },
     "34751": {
       "spec_id": 34751,
@@ -3395,8 +3433,10 @@
         "车载空气净化器": "-",
         "车内PM2.5过滤装置": "-"
       },
+      "section_count": 21,
       "map_size": 209,
-      "url": "https://car.autohome.com.cn/config/spec/34751.html"
+      "url": "https://car.autohome.com.cn/config/spec/34751.html",
+      "fetched_at": "2026-11-03T03:20:42.915Z"
     },
     "34766": {
       "spec_id": 34766,
@@ -3558,8 +3598,10 @@
         "车载空气净化器": "-",
         "车内PM2.5过滤装置": "-"
       },
+      "section_count": 22,
       "map_size": 207,
-      "url": "https://car.autohome.com.cn/config/spec/34766.html"
+      "url": "https://car.autohome.com.cn/config/spec/34766.html",
+      "fetched_at": "2026-11-03T03:20:44.680Z"
     },
     "36262": {
       "spec_id": 36262,
@@ -3717,8 +3759,10 @@
         "车载空气净化器": "-",
         "车内PM2.5过滤装置": "●"
       },
+      "section_count": 21,
       "map_size": 207,
-      "url": "https://car.autohome.com.cn/config/spec/36262.html"
+      "url": "https://car.autohome.com.cn/config/spec/36262.html",
+      "fetched_at": "2026-11-03T03:20:46.319Z"
     },
     "38006": {
       "spec_id": 38006,
@@ -3878,8 +3922,10 @@
         "车载空气净化器": "-",
         "车内PM2.5过滤装置": "●"
       },
+      "section_count": 21,
       "map_size": 212,
-      "url": "https://car.autohome.com.cn/config/spec/38006.html"
+      "url": "https://car.autohome.com.cn/config/spec/38006.html",
+      "fetched_at": "2026-11-03T03:20:48.119Z"
     },
     "38546": {
       "spec_id": 38546,
@@ -4040,8 +4086,10 @@
         "车载空气净化器": "-",
         "车内PM2.5过滤装置": "●"
       },
+      "section_count": 21,
       "map_size": 205,
-      "url": "https://car.autohome.com.cn/config/spec/38546.html"
+      "url": "https://car.autohome.com.cn/config/spec/38546.html",
+      "fetched_at": "2026-11-03T03:20:49.721Z"
     },
     "38845": {
       "spec_id": 38845,
@@ -4222,8 +4270,10 @@
         "车载空气净化器": "-",
         "车内PM2.5过滤装置": "●"
       },
+      "section_count": 21,
       "map_size": 208,
-      "url": "https://car.autohome.com.cn/config/spec/38845.html"
+      "url": "https://car.autohome.com.cn/config/spec/38845.html",
+      "fetched_at": "2026-11-03T03:20:51.452Z"
     },
     "38920": {
       "spec_id": 38920,
@@ -4404,8 +4454,10 @@
         "车载空气净化器": "-",
         "车内PM2.5过滤装置": "●"
       },
+      "section_count": 21,
       "map_size": 208,
-      "url": "https://car.autohome.com.cn/config/spec/38920.html"
+      "url": "https://car.autohome.com.cn/config/spec/38920.html",
+      "fetched_at": "2026-11-03T03:20:53.086Z"
     },
     "39642": {
       "spec_id": 39642,
@@ -4571,8 +4623,10 @@
         "车内PM2.5过滤装置": "●",
         "负离子发生器": "●"
       },
+      "section_count": 21,
       "map_size": 208,
-      "url": "https://car.autohome.com.cn/config/spec/39642.html"
+      "url": "https://car.autohome.com.cn/config/spec/39642.html",
+      "fetched_at": "2026-11-03T03:20:54.752Z"
     },
     "41644": {
       "spec_id": 41644,
@@ -4740,8 +4794,10 @@
         "车载空气净化器": "-",
         "车内PM2.5过滤装置": "-"
       },
+      "section_count": 21,
       "map_size": 208,
-      "url": "https://car.autohome.com.cn/config/spec/41644.html"
+      "url": "https://car.autohome.com.cn/config/spec/41644.html",
+      "fetched_at": "2026-11-03T03:20:56.686Z"
     },
     "43240": {
       "spec_id": 43240,
@@ -4940,8 +4996,10 @@
         "车内PM2.5过滤装置": "●",
         "负离子发生器": "●"
       },
+      "section_count": 21,
       "map_size": 203,
-      "url": "https://car.autohome.com.cn/config/spec/43240.html"
+      "url": "https://car.autohome.com.cn/config/spec/43240.html",
+      "fetched_at": "2026-11-03T03:20:58.443Z"
     },
     "43587": {
       "spec_id": 43587,
@@ -5104,8 +5162,10 @@
         "车载空气净化器": "-",
         "车内PM2.5过滤装置": "●"
       },
+      "section_count": 21,
       "map_size": 206,
-      "url": "https://car.autohome.com.cn/config/spec/43587.html"
+      "url": "https://car.autohome.com.cn/config/spec/43587.html",
+      "fetched_at": "2026-11-03T03:21:00.238Z"
     },
     "44047": {
       "spec_id": 44047,
@@ -5271,8 +5331,10 @@
         "车载空气净化器": "-",
         "车内PM2.5过滤装置": "-"
       },
+      "section_count": 22,
       "map_size": 204,
-      "url": "https://car.autohome.com.cn/config/spec/44047.html"
+      "url": "https://car.autohome.com.cn/config/spec/44047.html",
+      "fetched_at": "2026-11-03T03:21:01.985Z"
     },
     "46385": {
       "spec_id": 46385,
@@ -5424,8 +5486,10 @@
         "车载空气净化器": "-",
         "车内PM2.5过滤装置": "●"
       },
+      "section_count": 22,
       "map_size": 192,
-      "url": "https://car.autohome.com.cn/config/spec/46385.html"
+      "url": "https://car.autohome.com.cn/config/spec/46385.html",
+      "fetched_at": "2026-11-03T03:21:03.894Z"
     },
     "47239": {
       "spec_id": 47239,
@@ -5596,8 +5660,10 @@
         "车载空气净化器": "-",
         "车内PM2.5过滤装置": "●"
       },
+      "section_count": 21,
       "map_size": 206,
-      "url": "https://car.autohome.com.cn/config/spec/47239.html"
+      "url": "https://car.autohome.com.cn/config/spec/47239.html",
+      "fetched_at": "2026-11-03T03:21:05.721Z"
     },
     "47877": {
       "spec_id": 47877,
@@ -5764,8 +5830,10 @@
         "车载空气净化器": "-",
         "车内PM2.5过滤装置": "●"
       },
+      "section_count": 21,
       "map_size": 205,
-      "url": "https://car.autohome.com.cn/config/spec/47877.html"
+      "url": "https://car.autohome.com.cn/config/spec/47877.html",
+      "fetched_at": "2026-11-03T03:21:07.490Z"
     },
     "48021": {
       "spec_id": 48021,
@@ -5937,8 +6005,10 @@
         "车载空气净化器": "●",
         "车内PM2.5过滤装置": "●"
       },
+      "section_count": 22,
       "map_size": 208,
-      "url": "https://car.autohome.com.cn/config/spec/48021.html"
+      "url": "https://car.autohome.com.cn/config/spec/48021.html",
+      "fetched_at": "2026-11-03T03:21:09.115Z"
     },
     "49440": {
       "spec_id": 49440,
@@ -6130,8 +6200,10 @@
         "车载空气净化器": "-",
         "车内PM2.5过滤装置": "●"
       },
+      "section_count": 23,
       "map_size": 218,
-      "url": "https://car.autohome.com.cn/config/spec/49440.html"
+      "url": "https://car.autohome.com.cn/config/spec/49440.html",
+      "fetched_at": "2026-11-03T03:21:10.856Z"
     },
     "49954": {
       "spec_id": 49954,
@@ -6297,8 +6369,10 @@
         "车载空气净化器": "-",
         "车内PM2.5过滤装置": "●"
       },
+      "section_count": 21,
       "map_size": 208,
-      "url": "https://car.autohome.com.cn/config/spec/49954.html"
+      "url": "https://car.autohome.com.cn/config/spec/49954.html",
+      "fetched_at": "2026-11-03T03:21:12.605Z"
     },
     "50365": {
       "spec_id": 50365,
@@ -6475,8 +6549,10 @@
         "车载空气净化器": "●",
         "车内PM2.5过滤装置": "●"
       },
+      "section_count": 21,
       "map_size": 204,
-      "url": "https://car.autohome.com.cn/config/spec/50365.html"
+      "url": "https://car.autohome.com.cn/config/spec/50365.html",
+      "fetched_at": "2026-11-03T03:21:14.409Z"
     },
     "50511": {
       "spec_id": 50511,
@@ -6642,8 +6718,10 @@
         "车载空气净化器": "-",
         "车内PM2.5过滤装置": "●"
       },
+      "section_count": 21,
       "map_size": 206,
-      "url": "https://car.autohome.com.cn/config/spec/50511.html"
+      "url": "https://car.autohome.com.cn/config/spec/50511.html",
+      "fetched_at": "2026-11-03T03:21:16.037Z"
     },
     "51191": {
       "spec_id": 51191,
@@ -6809,8 +6887,10 @@
         "车载空气净化器": "-",
         "车内PM2.5过滤装置": "-"
       },
+      "section_count": 21,
       "map_size": 203,
-      "url": "https://car.autohome.com.cn/config/spec/51191.html"
+      "url": "https://car.autohome.com.cn/config/spec/51191.html",
+      "fetched_at": "2026-11-03T03:21:17.629Z"
     },
     "51393": {
       "spec_id": 51393,
@@ -6975,8 +7055,10 @@
         "车载空气净化器": "-",
         "车内PM2.5过滤装置": "-"
       },
+      "section_count": 21,
       "map_size": 203,
-      "url": "https://car.autohome.com.cn/config/spec/51393.html"
+      "url": "https://car.autohome.com.cn/config/spec/51393.html",
+      "fetched_at": "2026-11-03T03:21:19.375Z"
     },
     "51546": {
       "spec_id": 51546,
@@ -7164,8 +7246,10 @@
         "车内PM2.5过滤装置": "●",
         "负离子发生器": "-"
       },
+      "section_count": 23,
       "map_size": 209,
-      "url": "https://car.autohome.com.cn/config/spec/51546.html"
+      "url": "https://car.autohome.com.cn/config/spec/51546.html",
+      "fetched_at": "2026-11-03T03:21:20.910Z"
     },
     "52053": {
       "spec_id": 52053,
@@ -7330,8 +7414,10 @@
         "车载空气净化器": "-",
         "车内PM2.5过滤装置": "●"
       },
+      "section_count": 21,
       "map_size": 207,
-      "url": "https://car.autohome.com.cn/config/spec/52053.html"
+      "url": "https://car.autohome.com.cn/config/spec/52053.html",
+      "fetched_at": "2026-11-03T03:21:22.626Z"
     },
     "53140": {
       "spec_id": 53140,
@@ -7498,8 +7584,10 @@
         "车载空气净化器": "-",
         "车内PM2.5过滤装置": "●"
       },
+      "section_count": 21,
       "map_size": 206,
-      "url": "https://car.autohome.com.cn/config/spec/53140.html"
+      "url": "https://car.autohome.com.cn/config/spec/53140.html",
+      "fetched_at": "2026-11-03T03:21:25.619Z"
     },
     "53316": {
       "spec_id": 53316,
@@ -7690,8 +7778,10 @@
         "车载空气净化器": "-",
         "车内PM2.5过滤装置": "●"
       },
+      "section_count": 23,
       "map_size": 216,
-      "url": "https://car.autohome.com.cn/config/spec/53316.html"
+      "url": "https://car.autohome.com.cn/config/spec/53316.html",
+      "fetched_at": "2026-11-03T03:21:27.402Z"
     },
     "53770": {
       "spec_id": 53770,
@@ -7861,8 +7951,10 @@
         "车载空气净化器": "-",
         "车内PM2.5过滤装置": "●"
       },
+      "section_count": 21,
       "map_size": 203,
-      "url": "https://car.autohome.com.cn/config/spec/53770.html"
+      "url": "https://car.autohome.com.cn/config/spec/53770.html",
+      "fetched_at": "2026-11-03T03:21:28.822Z"
     },
     "54037": {
       "spec_id": 54037,
@@ -8038,8 +8130,10 @@
         "车载空气净化器": "-",
         "车内PM2.5过滤装置": "●"
       },
+      "section_count": 21,
       "map_size": 205,
-      "url": "https://car.autohome.com.cn/config/spec/54037.html"
+      "url": "https://car.autohome.com.cn/config/spec/54037.html",
+      "fetched_at": "2026-11-03T03:21:30.678Z"
     },
     "54631": {
       "spec_id": 54631,
@@ -8209,8 +8303,10 @@
         "车内PM2.5过滤装置": "●",
         "负离子发生器": "-"
       },
+      "section_count": 21,
       "map_size": 207,
-      "url": "https://car.autohome.com.cn/config/spec/54631.html"
+      "url": "https://car.autohome.com.cn/config/spec/54631.html",
+      "fetched_at": "2026-11-03T03:21:32.311Z"
     },
     "54766": {
       "spec_id": 54766,
@@ -8375,8 +8471,10 @@
         "车载空气净化器": "-",
         "车内PM2.5过滤装置": "-"
       },
+      "section_count": 21,
       "map_size": 206,
-      "url": "https://car.autohome.com.cn/config/spec/54766.html"
+      "url": "https://car.autohome.com.cn/config/spec/54766.html",
+      "fetched_at": "2026-11-03T03:21:33.335Z"
     },
     "54910": {
       "spec_id": 54910,
@@ -8561,8 +8659,10 @@
         "负离子发生器": "-",
         "空气质量监测": "●"
       },
+      "section_count": 21,
       "map_size": 206,
-      "url": "https://car.autohome.com.cn/config/spec/54910.html"
+      "url": "https://car.autohome.com.cn/config/spec/54910.html",
+      "fetched_at": "2026-11-03T03:21:34.653Z"
     },
     "55338": {
       "spec_id": 55338,
@@ -8754,8 +8854,10 @@
         "车内PM2.5过滤装置": "-",
         "负离子发生器": "-"
       },
+      "section_count": 22,
       "map_size": 204,
-      "url": "https://car.autohome.com.cn/config/spec/55338.html"
+      "url": "https://car.autohome.com.cn/config/spec/55338.html",
+      "fetched_at": "2026-11-03T03:21:36.003Z"
     },
     "57247": {
       "spec_id": 57247,
@@ -8926,8 +9028,10 @@
         "车载空气净化器": "-",
         "车内PM2.5过滤装置": "●"
       },
+      "section_count": 21,
       "map_size": 207,
-      "url": "https://car.autohome.com.cn/config/spec/57247.html"
+      "url": "https://car.autohome.com.cn/config/spec/57247.html",
+      "fetched_at": "2026-11-03T03:21:37.074Z"
     },
     "57451": {
       "spec_id": 57451,
@@ -9101,8 +9205,10 @@
         "车载空气净化器": "-",
         "车内PM2.5过滤装置": "●"
       },
+      "section_count": 22,
       "map_size": 210,
-      "url": "https://car.autohome.com.cn/config/spec/57451.html"
+      "url": "https://car.autohome.com.cn/config/spec/57451.html",
+      "fetched_at": "2026-11-03T03:21:38.279Z"
     },
     "57452": {
       "spec_id": 57452,
@@ -9276,8 +9382,10 @@
         "车载空气净化器": "-",
         "车内PM2.5过滤装置": "●"
       },
+      "section_count": 22,
       "map_size": 210,
-      "url": "https://car.autohome.com.cn/config/spec/57452.html"
+      "url": "https://car.autohome.com.cn/config/spec/57452.html",
+      "fetched_at": "2026-11-03T03:21:39.511Z"
     },
     "58101": {
       "spec_id": 58101,
@@ -9448,8 +9556,10 @@
         "车载空气净化器": "-",
         "车内PM2.5过滤装置": "●"
       },
+      "section_count": 21,
       "map_size": 203,
-      "url": "https://car.autohome.com.cn/config/spec/58101.html"
+      "url": "https://car.autohome.com.cn/config/spec/58101.html",
+      "fetched_at": "2026-11-03T03:21:40.604Z"
     },
     "58109": {
       "spec_id": 58109,
@@ -9637,8 +9747,10 @@
         "负离子发生器": "-",
         "车内香氛装置": "●"
       },
+      "section_count": 21,
       "map_size": 206,
-      "url": "https://car.autohome.com.cn/config/spec/58109.html"
+      "url": "https://car.autohome.com.cn/config/spec/58109.html",
+      "fetched_at": "2026-11-03T03:21:41.702Z"
     },
     "59448": {
       "spec_id": 59448,
@@ -9826,8 +9938,10 @@
         "车内PM2.5过滤装置": "●",
         "负离子发生器": "●"
       },
+      "section_count": 21,
       "map_size": 202,
-      "url": "https://car.autohome.com.cn/config/spec/59448.html"
+      "url": "https://car.autohome.com.cn/config/spec/59448.html",
+      "fetched_at": "2026-11-03T03:21:42.836Z"
     },
     "60073": {
       "spec_id": 60073,
@@ -10030,8 +10144,10 @@
         "车载空气净化器": "-",
         "车内PM2.5过滤装置": "●"
       },
+      "section_count": 23,
       "map_size": 219,
-      "url": "https://car.autohome.com.cn/config/spec/60073.html"
+      "url": "https://car.autohome.com.cn/config/spec/60073.html",
+      "fetched_at": "2026-11-03T03:21:44.149Z"
     },
     "61643": {
       "spec_id": 61643,
@@ -10222,8 +10338,10 @@
         "负离子发生器": "●",
         "车内香氛装置": "●"
       },
+      "section_count": 21,
       "map_size": 203,
-      "url": "https://car.autohome.com.cn/config/spec/61643.html"
+      "url": "https://car.autohome.com.cn/config/spec/61643.html",
+      "fetched_at": "2026-11-03T03:21:45.353Z"
     },
     "61783": {
       "spec_id": 61783,
@@ -10405,8 +10523,10 @@
         "车载空气净化器": "-",
         "车内PM2.5过滤装置": "-"
       },
+      "section_count": 22,
       "map_size": 195,
-      "url": "https://car.autohome.com.cn/config/spec/61783.html"
+      "url": "https://car.autohome.com.cn/config/spec/61783.html",
+      "fetched_at": "2026-11-03T03:21:46.567Z"
     },
     "62090": {
       "spec_id": 62090,
@@ -10611,8 +10731,10 @@
         "车内PM2.5过滤装置": "●",
         "负离子发生器": "●"
       },
+      "section_count": 24,
       "map_size": 206,
-      "url": "https://car.autohome.com.cn/config/spec/62090.html"
+      "url": "https://car.autohome.com.cn/config/spec/62090.html",
+      "fetched_at": "2026-11-03T03:21:47.751Z"
     },
     "62222": {
       "spec_id": 62222,
@@ -10785,8 +10907,10 @@
         "车载空气净化器": "-",
         "车内PM2.5过滤装置": "●"
       },
+      "section_count": 21,
       "map_size": 205,
-      "url": "https://car.autohome.com.cn/config/spec/62222.html"
+      "url": "https://car.autohome.com.cn/config/spec/62222.html",
+      "fetched_at": "2026-11-03T03:21:48.879Z"
     },
     "62910": {
       "spec_id": 62910,
@@ -10954,8 +11078,10 @@
         "车载空气净化器": "-",
         "车内PM2.5过滤装置": "●"
       },
+      "section_count": 21,
       "map_size": 201,
-      "url": "https://car.autohome.com.cn/config/spec/62910.html"
+      "url": "https://car.autohome.com.cn/config/spec/62910.html",
+      "fetched_at": "2026-11-03T03:21:49.853Z"
     },
     "63060": {
       "spec_id": 63060,
@@ -11131,8 +11257,10 @@
         "车载空气净化器": "-",
         "车内PM2.5过滤装置": "●"
       },
+      "section_count": 21,
       "map_size": 207,
-      "url": "https://car.autohome.com.cn/config/spec/63060.html"
+      "url": "https://car.autohome.com.cn/config/spec/63060.html",
+      "fetched_at": "2026-11-03T03:21:50.822Z"
     },
     "64038": {
       "spec_id": 64038,
@@ -11315,8 +11443,10 @@
         "车载空气净化器": "-",
         "车内PM2.5过滤装置": "●"
       },
+      "section_count": 22,
       "map_size": 195,
-      "url": "https://car.autohome.com.cn/config/spec/64038.html"
+      "url": "https://car.autohome.com.cn/config/spec/64038.html",
+      "fetched_at": "2026-11-03T03:21:51.985Z"
     },
     "66519": {
       "spec_id": 66519,
@@ -11488,8 +11618,10 @@
         "车载空气净化器": "-",
         "车内PM2.5过滤装置": "●"
       },
+      "section_count": 21,
       "map_size": 202,
-      "url": "https://car.autohome.com.cn/config/spec/66519.html"
+      "url": "https://car.autohome.com.cn/config/spec/66519.html",
+      "fetched_at": "2026-11-03T03:21:53.001Z"
     },
     "66743": {
       "spec_id": 66743,
@@ -11713,8 +11845,10 @@
         "车内PM2.5过滤装置": "●",
         "空气质量监测": "-"
       },
+      "section_count": 23,
       "map_size": 213,
-      "url": "https://car.autohome.com.cn/config/spec/66743.html"
+      "url": "https://car.autohome.com.cn/config/spec/66743.html",
+      "fetched_at": "2026-11-03T03:21:54.232Z"
     },
     "66911": {
       "spec_id": 66911,
@@ -11890,8 +12024,10 @@
         "车载空气净化器": "-",
         "车内PM2.5过滤装置": "-"
       },
+      "section_count": 22,
       "map_size": 195,
-      "url": "https://car.autohome.com.cn/config/spec/66911.html"
+      "url": "https://car.autohome.com.cn/config/spec/66911.html",
+      "fetched_at": "2026-11-03T03:21:55.340Z"
     },
     "66959": {
       "spec_id": 66959,
@@ -12055,8 +12191,10 @@
         "车载空气净化器": "-",
         "车内PM2.5过滤装置": "●"
       },
+      "section_count": 21,
       "map_size": 200,
-      "url": "https://car.autohome.com.cn/config/spec/66959.html"
+      "url": "https://car.autohome.com.cn/config/spec/66959.html",
+      "fetched_at": "2026-11-03T03:21:56.382Z"
     },
     "67024": {
       "spec_id": 67024,
@@ -12239,8 +12377,10 @@
         "车载空气净化器": "-",
         "车内PM2.5过滤装置": "-"
       },
+      "section_count": 22,
       "map_size": 194,
-      "url": "https://car.autohome.com.cn/config/spec/67024.html"
+      "url": "https://car.autohome.com.cn/config/spec/67024.html",
+      "fetched_at": "2026-11-03T03:21:57.383Z"
     },
     "68428": {
       "spec_id": 68428,
@@ -12416,8 +12556,10 @@
         "车载空气净化器": "-",
         "车内PM2.5过滤装置": "●"
       },
+      "section_count": 21,
       "map_size": 208,
-      "url": "https://car.autohome.com.cn/config/spec/68428.html"
+      "url": "https://car.autohome.com.cn/config/spec/68428.html",
+      "fetched_at": "2026-11-03T03:21:58.628Z"
     },
     "69070": {
       "spec_id": 69070,
@@ -12626,8 +12768,10 @@
         "车载空气净化器": "-",
         "车内PM2.5过滤装置": "-"
       },
+      "section_count": 22,
       "map_size": 196,
-      "url": "https://car.autohome.com.cn/config/spec/69070.html"
+      "url": "https://car.autohome.com.cn/config/spec/69070.html",
+      "fetched_at": "2026-11-03T03:21:59.675Z"
     },
     "71690": {
       "spec_id": 71690,
@@ -12836,8 +12980,10 @@
         "车载空气净化器": "-",
         "车内PM2.5过滤装置": "-"
       },
+      "section_count": 22,
       "map_size": 196,
-      "url": "https://car.autohome.com.cn/config/spec/71690.html"
+      "url": "https://car.autohome.com.cn/config/spec/71690.html",
+      "fetched_at": "2026-11-03T03:22:00.722Z"
     },
     "71891": {
       "spec_id": 71891,
@@ -13015,8 +13161,10 @@
         "车载空气净化器": "-",
         "车内PM2.5过滤装置": "-"
       },
+      "section_count": 22,
       "map_size": 194,
-      "url": "https://car.autohome.com.cn/config/spec/71891.html"
+      "url": "https://car.autohome.com.cn/config/spec/71891.html",
+      "fetched_at": "2026-11-03T03:22:01.734Z"
     },
     "73650": {
       "spec_id": 73650,
@@ -13185,8 +13333,10 @@
         "车载空气净化器": "-",
         "车内PM2.5过滤装置": "●"
       },
+      "section_count": 21,
       "map_size": 203,
-      "url": "https://car.autohome.com.cn/config/spec/73650.html"
+      "url": "https://car.autohome.com.cn/config/spec/73650.html",
+      "fetched_at": "2026-11-03T03:22:02.767Z"
     },
     "74339": {
       "spec_id": 74339,
@@ -13353,8 +13503,10 @@
         "车载空气净化器": "-",
         "车内PM2.5过滤装置": "●"
       },
+      "section_count": 21,
       "map_size": 205,
-      "url": "https://car.autohome.com.cn/config/spec/74339.html"
+      "url": "https://car.autohome.com.cn/config/spec/74339.html",
+      "fetched_at": "2026-11-03T03:22:03.786Z"
     }
   }
 }

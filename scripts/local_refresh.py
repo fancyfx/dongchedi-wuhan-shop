@@ -200,6 +200,10 @@ def main() -> None:
     run(sys.executable, "scripts/tests/test_ranking_v2.py")
     validate_new_only_policy()
 
+    import autohome_live_config as live_cfg
+
+    live_cfg.export_live_config_trees()
+
     if not args.skip_dashboard_build:
         ensure_program("npm")
         run("npm", "ci", cwd=ROOT / "dashboard")

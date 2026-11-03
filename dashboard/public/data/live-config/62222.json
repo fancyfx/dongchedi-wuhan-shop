@@ -1,0 +1,1181 @@
+{
+  "schema_version": "autohome-live-config-tree-1",
+  "spec_id": 62222,
+  "title": "帝豪 2023款 第4代冠军版 1.5L CVT豪华型",
+  "url": "https://car.autohome.com.cn/config/spec/62222.html",
+  "fetched_at": "2026-11-03T03:21:48.879Z",
+  "legend": {
+    "standard": "●",
+    "optional": "○",
+    "absent": "-"
+  },
+  "sections": [
+    {
+      "name": "基本参数",
+      "group": "param",
+      "items": [
+        {
+          "name": "车型名称",
+          "value": "帝豪 2023款 第4代冠军版 1.5L CVT豪华型"
+        },
+        {
+          "name": "厂商指导价(元)",
+          "value": "7.89万"
+        },
+        {
+          "name": "厂商",
+          "value": "吉利汽车"
+        },
+        {
+          "name": "级别",
+          "value": "紧凑型车"
+        },
+        {
+          "name": "能源类型",
+          "value": "汽油"
+        },
+        {
+          "name": "环保标准",
+          "value": "国VI"
+        },
+        {
+          "name": "上市时间",
+          "value": "2023.05"
+        },
+        {
+          "name": "最大功率(kW)",
+          "value": "93"
+        },
+        {
+          "name": "最大扭矩(N·m)",
+          "value": "152"
+        },
+        {
+          "name": "变速箱",
+          "value": "CVT无级变速"
+        },
+        {
+          "name": "车身结构",
+          "value": "4门5座三厢车"
+        },
+        {
+          "name": "发动机",
+          "value": "1.5L 127马力 L4"
+        },
+        {
+          "name": "长*宽*高(mm)",
+          "value": "4638*1820*1460"
+        },
+        {
+          "name": "官方0-100km/h加速(s)",
+          "value": "-"
+        },
+        {
+          "name": "最高车速(km/h)",
+          "value": "175"
+        },
+        {
+          "name": "WLTC综合油耗(L/100km)",
+          "value": "5.82"
+        },
+        {
+          "name": "整车质保",
+          "value": "● 四年或15万公里"
+        },
+        {
+          "name": "整备质量(kg)",
+          "value": "1265"
+        },
+        {
+          "name": "最大满载质量(kg)",
+          "value": "1665"
+        }
+      ]
+    },
+    {
+      "name": "车身",
+      "group": "param",
+      "items": [
+        {
+          "name": "长度(mm)",
+          "value": "4638"
+        },
+        {
+          "name": "宽度(mm)",
+          "value": "1820"
+        },
+        {
+          "name": "高度(mm)",
+          "value": "1460"
+        },
+        {
+          "name": "轴距(mm)",
+          "value": "2650"
+        },
+        {
+          "name": "前轮距(mm)",
+          "value": "1549"
+        },
+        {
+          "name": "后轮距(mm)",
+          "value": "1551"
+        },
+        {
+          "name": "接近角(°)",
+          "value": "14"
+        },
+        {
+          "name": "离去角(°)",
+          "value": "15"
+        },
+        {
+          "name": "最小转弯半径(m)",
+          "value": "5.5"
+        },
+        {
+          "name": "车身结构",
+          "value": "三厢车"
+        },
+        {
+          "name": "车门开启方式",
+          "value": "平开门"
+        },
+        {
+          "name": "车门数(个)",
+          "value": "● 4"
+        },
+        {
+          "name": "座位数(个)",
+          "value": "● 5"
+        },
+        {
+          "name": "后备厢容积(L)",
+          "value": "-"
+        },
+        {
+          "name": "风阻系数(Cd)",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "name": "发动机",
+      "group": "param",
+      "items": [
+        {
+          "name": "发动机型号",
+          "value": "BHE15-AFD"
+        },
+        {
+          "name": "排量(mL)",
+          "value": "1499"
+        },
+        {
+          "name": "排量(L)",
+          "value": "1.5"
+        },
+        {
+          "name": "进气形式",
+          "value": "自然吸气"
+        },
+        {
+          "name": "发动机布局",
+          "value": "横置"
+        },
+        {
+          "name": "气缸排列形式",
+          "value": "L"
+        },
+        {
+          "name": "气缸数(个)",
+          "value": "4"
+        },
+        {
+          "name": "每缸气门数(个)",
+          "value": "4"
+        },
+        {
+          "name": "配气机构",
+          "value": "DOHC"
+        },
+        {
+          "name": "最大马力(Ps)",
+          "value": "127"
+        },
+        {
+          "name": "最大功率(kW)",
+          "value": "93"
+        },
+        {
+          "name": "最大功率转速(rpm)",
+          "value": "6300"
+        },
+        {
+          "name": "最大扭矩(N·m)",
+          "value": "152"
+        },
+        {
+          "name": "最大扭矩转速(rpm)",
+          "value": "4000-5000"
+        },
+        {
+          "name": "最大净功率(kW)",
+          "value": "90"
+        },
+        {
+          "name": "发动机特有技术",
+          "value": "DVVT"
+        },
+        {
+          "name": "能源类型",
+          "value": "汽油"
+        },
+        {
+          "name": "燃油标号",
+          "value": "92号"
+        },
+        {
+          "name": "供油方式",
+          "value": "直喷"
+        },
+        {
+          "name": "缸盖材料",
+          "value": "铝合金"
+        },
+        {
+          "name": "缸体材料",
+          "value": "铝合金"
+        },
+        {
+          "name": "环保标准",
+          "value": "国VI"
+        }
+      ]
+    },
+    {
+      "name": "变速箱",
+      "group": "param",
+      "items": [
+        {
+          "name": "简称",
+          "value": "CVT无级变速"
+        },
+        {
+          "name": "挡位个数",
+          "value": "无级变速"
+        },
+        {
+          "name": "变速箱类型",
+          "value": "无级变速箱(CVT)"
+        }
+      ]
+    },
+    {
+      "name": "底盘转向",
+      "group": "param",
+      "items": [
+        {
+          "name": "驱动方式",
+          "value": "● 前置前驱"
+        },
+        {
+          "name": "前悬架类型",
+          "value": "● 麦弗逊式独立悬架"
+        },
+        {
+          "name": "后悬架类型",
+          "value": "● 扭力梁式非独立悬架"
+        },
+        {
+          "name": "助力类型",
+          "value": "● 电动助力"
+        },
+        {
+          "name": "车体结构",
+          "value": "承载式"
+        }
+      ]
+    },
+    {
+      "name": "车轮制动",
+      "group": "param",
+      "items": [
+        {
+          "name": "前制动器类型",
+          "value": "● 通风盘式"
+        },
+        {
+          "name": "后制动器类型",
+          "value": "● 盘式"
+        },
+        {
+          "name": "驻车制动类型",
+          "value": "● 电子驻车"
+        },
+        {
+          "name": "前轮胎规格",
+          "value": "● 195/55 R16"
+        },
+        {
+          "name": "后轮胎规格",
+          "value": "● 195/55 R16"
+        },
+        {
+          "name": "备胎规格",
+          "value": "● 非全尺寸"
+        },
+        {
+          "name": "备胎放置方式",
+          "value": "● 后备厢内"
+        }
+      ]
+    },
+    {
+      "name": "被动安全",
+      "group": "config",
+      "items": [
+        {
+          "name": "主/副驾驶座安全气囊",
+          "value": "主● / 副●"
+        },
+        {
+          "name": "前/后排侧气囊",
+          "value": "-"
+        },
+        {
+          "name": "前/后排头部气囊(气帘)",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "name": "主动安全",
+      "group": "config",
+      "items": [
+        {
+          "name": "ABS防抱死",
+          "value": "●"
+        },
+        {
+          "name": "制动力分配(EBD/CBC等)",
+          "value": "●"
+        },
+        {
+          "name": "刹车辅助(EBA/BAS/BA等)",
+          "value": "●"
+        },
+        {
+          "name": "牵引力控制(ASR/TCS/TRC等)",
+          "value": "●"
+        },
+        {
+          "name": "车身稳定控制(ESC/ESP/DSC等)",
+          "value": "●"
+        },
+        {
+          "name": "胎压监测功能",
+          "value": "● 胎压显示",
+          "lines": [
+            {
+              "name": "胎压显示",
+              "value": "●",
+              "mark": "standard"
+            }
+          ]
+        },
+        {
+          "name": "安全带未系提醒",
+          "value": "● 主驾驶位",
+          "lines": [
+            {
+              "name": "主驾驶位",
+              "value": "●",
+              "mark": "standard"
+            }
+          ]
+        },
+        {
+          "name": "ISOFIX儿童座椅接口",
+          "value": "●"
+        },
+        {
+          "name": "车道偏离预警系统",
+          "value": "-"
+        },
+        {
+          "name": "主动刹车/主动安全系统",
+          "value": "-"
+        },
+        {
+          "name": "疲劳驾驶提示",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "name": "驾驶操控",
+      "group": "config",
+      "items": [
+        {
+          "name": "驾驶模式切换",
+          "value": "● 运动 / ● 经济 / ● 标准/舒适",
+          "lines": [
+            {
+              "name": "运动",
+              "value": "●",
+              "mark": "standard"
+            },
+            {
+              "name": "经济",
+              "value": "●",
+              "mark": "standard"
+            },
+            {
+              "name": "标准/舒适",
+              "value": "●",
+              "mark": "standard"
+            }
+          ]
+        },
+        {
+          "name": "自动驻车",
+          "value": "●"
+        },
+        {
+          "name": "上坡辅助",
+          "value": "●"
+        }
+      ]
+    },
+    {
+      "name": "驾驶硬件",
+      "group": "config",
+      "items": [
+        {
+          "name": "前/后驻车雷达",
+          "value": "前- / 后●"
+        },
+        {
+          "name": "驾驶辅助影像",
+          "value": "● 倒车影像",
+          "lines": [
+            {
+              "name": "倒车影像",
+              "value": "●",
+              "mark": "standard"
+            }
+          ]
+        },
+        {
+          "name": "透明底盘/540度影像",
+          "value": "-"
+        },
+        {
+          "name": "摄像头数量",
+          "value": "● 1个",
+          "lines": [
+            {
+              "name": "1个",
+              "value": "●",
+              "mark": "standard"
+            }
+          ]
+        },
+        {
+          "name": "超声波雷达数量",
+          "value": "● 3个",
+          "lines": [
+            {
+              "name": "3个",
+              "value": "●",
+              "mark": "standard"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "驾驶功能",
+      "group": "config",
+      "items": [
+        {
+          "name": "巡航系统",
+          "value": "● 定速巡航",
+          "lines": [
+            {
+              "name": "定速巡航",
+              "value": "●",
+              "mark": "standard"
+            }
+          ]
+        },
+        {
+          "name": "卫星导航系统",
+          "value": "●"
+        },
+        {
+          "name": "导航路况信息显示",
+          "value": "●"
+        },
+        {
+          "name": "地图品牌",
+          "value": "● 高德",
+          "lines": [
+            {
+              "name": "高德",
+              "value": "●",
+              "mark": "standard"
+            }
+          ]
+        },
+        {
+          "name": "并线辅助",
+          "value": "-"
+        },
+        {
+          "name": "车道保持辅助系统",
+          "value": "-"
+        },
+        {
+          "name": "辅助泊车入位",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "name": "外观/防盗",
+      "group": "config",
+      "items": [
+        {
+          "name": "轮圈材质",
+          "value": "● 铝合金",
+          "lines": [
+            {
+              "name": "铝合金",
+              "value": "●",
+              "mark": "standard"
+            }
+          ]
+        },
+        {
+          "name": "感应后备厢",
+          "value": "-"
+        },
+        {
+          "name": "发动机电子防盗",
+          "value": "●"
+        },
+        {
+          "name": "车内中控锁",
+          "value": "●"
+        },
+        {
+          "name": "钥匙类型",
+          "value": "● 遥控钥匙",
+          "lines": [
+            {
+              "name": "遥控钥匙",
+              "value": "●",
+              "mark": "standard"
+            }
+          ]
+        },
+        {
+          "name": "无钥匙启动系统",
+          "value": "●"
+        },
+        {
+          "name": "无钥匙进入功能",
+          "value": "● 驾驶位",
+          "lines": [
+            {
+              "name": "驾驶位",
+              "value": "●",
+              "mark": "standard"
+            }
+          ]
+        },
+        {
+          "name": "远程启动功能",
+          "value": "●"
+        }
+      ]
+    },
+    {
+      "name": "车外灯光",
+      "group": "config",
+      "items": [
+        {
+          "name": "近光灯光源",
+          "value": "● 卤素",
+          "lines": [
+            {
+              "name": "卤素",
+              "value": "●",
+              "mark": "standard"
+            }
+          ]
+        },
+        {
+          "name": "远光灯光源",
+          "value": "● 卤素",
+          "lines": [
+            {
+              "name": "卤素",
+              "value": "●",
+              "mark": "standard"
+            }
+          ]
+        },
+        {
+          "name": "LED日间行车灯",
+          "value": "●"
+        },
+        {
+          "name": "自适应远近光",
+          "value": "-"
+        },
+        {
+          "name": "自动头灯",
+          "value": "●"
+        },
+        {
+          "name": "车前雾灯",
+          "value": "-"
+        },
+        {
+          "name": "大灯高度可调",
+          "value": "●"
+        },
+        {
+          "name": "大灯延时关闭",
+          "value": "●"
+        }
+      ]
+    },
+    {
+      "name": "天窗/玻璃",
+      "group": "config",
+      "items": [
+        {
+          "name": "天窗类型",
+          "value": "○ 电动天窗",
+          "lines": [
+            {
+              "name": "电动天窗",
+              "value": "○",
+              "mark": "optional"
+            }
+          ]
+        },
+        {
+          "name": "前/后电动车窗",
+          "value": "前● / 后●"
+        },
+        {
+          "name": "车窗一键升降功能",
+          "value": "● 全车",
+          "lines": [
+            {
+              "name": "全车",
+              "value": "●",
+              "mark": "standard"
+            }
+          ]
+        },
+        {
+          "name": "车窗防夹手功能",
+          "value": "●"
+        },
+        {
+          "name": "车内化妆镜",
+          "value": "● 主驾位 / ● 副驾驶",
+          "lines": [
+            {
+              "name": "主驾位",
+              "value": "●",
+              "mark": "standard"
+            },
+            {
+              "name": "副驾驶",
+              "value": "●",
+              "mark": "standard"
+            }
+          ]
+        },
+        {
+          "name": "后雨刷",
+          "value": "-"
+        },
+        {
+          "name": "感应雨刷功能",
+          "value": "● 速度感应式",
+          "lines": [
+            {
+              "name": "速度感应式",
+              "value": "●",
+              "mark": "standard"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "外后视镜",
+      "group": "config",
+      "items": [
+        {
+          "name": "外后视镜功能",
+          "value": "● 电动调节 / ● 后视镜加热",
+          "lines": [
+            {
+              "name": "电动调节",
+              "value": "●",
+              "mark": "standard"
+            },
+            {
+              "name": "后视镜加热",
+              "value": "●",
+              "mark": "standard"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "互联/智能化",
+      "group": "config",
+      "items": [
+        {
+          "name": "中控彩色屏幕",
+          "value": "● 触控液晶屏",
+          "lines": [
+            {
+              "name": "触控液晶屏",
+              "value": "●",
+              "mark": "standard"
+            }
+          ]
+        },
+        {
+          "name": "中控屏幕尺寸",
+          "value": "● 12.3英寸",
+          "lines": [
+            {
+              "name": "12.3英寸",
+              "value": "●",
+              "mark": "standard"
+            }
+          ]
+        },
+        {
+          "name": "蓝牙/车载电话",
+          "value": "●"
+        },
+        {
+          "name": "手机互联/映射",
+          "value": "● 支持HUAWEI HiCar",
+          "lines": [
+            {
+              "name": "支持HUAWEI HiCar",
+              "value": "●",
+              "mark": "standard"
+            }
+          ]
+        },
+        {
+          "name": "语音识别控制系统",
+          "value": "● 多媒体系统 / ● 导航 / ● 电话 / ● 空调 / ○ 天窗",
+          "lines": [
+            {
+              "name": "多媒体系统",
+              "value": "●",
+              "mark": "standard"
+            },
+            {
+              "name": "导航",
+              "value": "●",
+              "mark": "standard"
+            },
+            {
+              "name": "电话",
+              "value": "●",
+              "mark": "standard"
+            },
+            {
+              "name": "空调",
+              "value": "●",
+              "mark": "standard"
+            },
+            {
+              "name": "天窗",
+              "value": "○",
+              "mark": "optional"
+            }
+          ]
+        },
+        {
+          "name": "车载智能系统",
+          "value": "● 吉利银河OS",
+          "lines": [
+            {
+              "name": "吉利银河OS",
+              "value": "●",
+              "mark": "standard"
+            }
+          ]
+        },
+        {
+          "name": "车机智能芯片",
+          "value": "● 亿咖通E02",
+          "lines": [
+            {
+              "name": "亿咖通E02",
+              "value": "●",
+              "mark": "standard"
+            }
+          ]
+        },
+        {
+          "name": "车联网",
+          "value": "●"
+        },
+        {
+          "name": "4G/5G网络",
+          "value": "● 4G",
+          "lines": [
+            {
+              "name": "4G",
+              "value": "●",
+              "mark": "standard"
+            }
+          ]
+        },
+        {
+          "name": "OTA升级",
+          "value": "●"
+        },
+        {
+          "name": "Wi-Fi热点",
+          "value": "●"
+        },
+        {
+          "name": "手机APP远程功能",
+          "value": "● 车门控制 / ● 车窗控制 / ● 车辆启动 / ● 车灯控制 / ● 空调控制 / ● 车况查询/诊断 / ● 车辆定位/寻车",
+          "lines": [
+            {
+              "name": "车门控制",
+              "value": "●",
+              "mark": "standard"
+            },
+            {
+              "name": "车窗控制",
+              "value": "●",
+              "mark": "standard"
+            },
+            {
+              "name": "车辆启动",
+              "value": "●",
+              "mark": "standard"
+            },
+            {
+              "name": "车灯控制",
+              "value": "●",
+              "mark": "standard"
+            },
+            {
+              "name": "空调控制",
+              "value": "●",
+              "mark": "standard"
+            },
+            {
+              "name": "车况查询/诊断",
+              "value": "●",
+              "mark": "standard"
+            },
+            {
+              "name": "车辆定位/寻车",
+              "value": "●",
+              "mark": "standard"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "方向盘/内后视镜",
+      "group": "config",
+      "items": [
+        {
+          "name": "方向盘材质",
+          "value": "● 皮质",
+          "lines": [
+            {
+              "name": "皮质",
+              "value": "●",
+              "mark": "standard"
+            }
+          ]
+        },
+        {
+          "name": "方向盘位置调节",
+          "value": "● 手动上下调节",
+          "lines": [
+            {
+              "name": "手动上下调节",
+              "value": "●",
+              "mark": "standard"
+            }
+          ]
+        },
+        {
+          "name": "换挡形式",
+          "value": "● 机械挡把换挡",
+          "lines": [
+            {
+              "name": "机械挡把换挡",
+              "value": "●",
+              "mark": "standard"
+            }
+          ]
+        },
+        {
+          "name": "多功能方向盘",
+          "value": "●"
+        },
+        {
+          "name": "方向盘加热",
+          "value": "-"
+        },
+        {
+          "name": "方向盘记忆",
+          "value": "-"
+        },
+        {
+          "name": "行车电脑显示屏幕",
+          "value": "● 彩色",
+          "lines": [
+            {
+              "name": "彩色",
+              "value": "●",
+              "mark": "standard"
+            }
+          ]
+        },
+        {
+          "name": "全液晶仪表盘",
+          "value": "-"
+        },
+        {
+          "name": "液晶仪表尺寸",
+          "value": "● 12.3英寸",
+          "lines": [
+            {
+              "name": "12.3英寸",
+              "value": "●",
+              "mark": "standard"
+            }
+          ]
+        },
+        {
+          "name": "内后视镜功能",
+          "value": "● 手动防眩目",
+          "lines": [
+            {
+              "name": "手动防眩目",
+              "value": "●",
+              "mark": "standard"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "车内充电",
+      "group": "config",
+      "items": [
+        {
+          "name": "多媒体/充电接口",
+          "value": "● USB",
+          "lines": [
+            {
+              "name": "USB",
+              "value": "●",
+              "mark": "standard"
+            }
+          ]
+        },
+        {
+          "name": "USB/Type-C接口数量",
+          "value": "● 前排1个/后排1个",
+          "lines": [
+            {
+              "name": "前排1个/后排1个",
+              "value": "●",
+              "mark": "standard"
+            }
+          ]
+        },
+        {
+          "name": "手机无线充电功能",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "name": "座椅配置",
+      "group": "config",
+      "items": [
+        {
+          "name": "座椅材质",
+          "value": "● 仿皮",
+          "lines": [
+            {
+              "name": "仿皮",
+              "value": "●",
+              "mark": "standard"
+            }
+          ]
+        },
+        {
+          "name": "主座椅调节方式",
+          "value": "● 前后调节 / ● 靠背调节 / ● 高低调节(2向)",
+          "lines": [
+            {
+              "name": "前后调节",
+              "value": "●",
+              "mark": "standard"
+            },
+            {
+              "name": "靠背调节",
+              "value": "●",
+              "mark": "standard"
+            },
+            {
+              "name": "高低调节(2向)",
+              "value": "●",
+              "mark": "standard"
+            }
+          ]
+        },
+        {
+          "name": "副座椅调节方式",
+          "value": "● 前后调节 / ● 靠背调节",
+          "lines": [
+            {
+              "name": "前后调节",
+              "value": "●",
+              "mark": "standard"
+            },
+            {
+              "name": "靠背调节",
+              "value": "●",
+              "mark": "standard"
+            }
+          ]
+        },
+        {
+          "name": "主/副驾驶座电动调节",
+          "value": "-"
+        },
+        {
+          "name": "前排座椅功能",
+          "value": "-"
+        },
+        {
+          "name": "电动座椅记忆功能",
+          "value": "-"
+        },
+        {
+          "name": "副驾驶位后排可调节按钮",
+          "value": "-"
+        },
+        {
+          "name": "第二排座椅调节",
+          "value": "-"
+        },
+        {
+          "name": "后排座椅放倒形式",
+          "value": "● 比例放倒",
+          "lines": [
+            {
+              "name": "比例放倒",
+              "value": "●",
+              "mark": "standard"
+            }
+          ]
+        },
+        {
+          "name": "前/后中央扶手",
+          "value": "前● / 后-"
+        },
+        {
+          "name": "后排杯架",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "name": "音响/车内灯光",
+      "group": "config",
+      "items": [
+        {
+          "name": "扬声器品牌名称",
+          "value": "-"
+        },
+        {
+          "name": "扬声器数量",
+          "value": "● 4喇叭",
+          "lines": [
+            {
+              "name": "4喇叭",
+              "value": "●",
+              "mark": "standard"
+            }
+          ]
+        },
+        {
+          "name": "车内环境氛围灯",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "name": "空调/冰箱",
+      "group": "config",
+      "items": [
+        {
+          "name": "空调温度控制方式",
+          "value": "● 自动空调",
+          "lines": [
+            {
+              "name": "自动空调",
+              "value": "●",
+              "mark": "standard"
+            }
+          ]
+        },
+        {
+          "name": "后排独立空调",
+          "value": "-"
+        },
+        {
+          "name": "后座出风口",
+          "value": "●"
+        },
+        {
+          "name": "温度分区控制",
+          "value": "-"
+        },
+        {
+          "name": "车载空气净化器",
+          "value": "-"
+        },
+        {
+          "name": "车内PM2.5过滤装置",
+          "value": "●"
+        }
+      ]
+    }
+  ]
+}
