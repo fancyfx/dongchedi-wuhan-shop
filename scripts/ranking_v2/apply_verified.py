@@ -130,11 +130,13 @@ def _normalize_features(trim_features: dict[str, Any]) -> dict[str, Any]:
 
     carplay = info.get("carplay")
     carlife = info.get("carlife")
-    phone_link = _tri_or([carplay, carlife])
+    phone_link = info.get("phone_link")
+    if phone_link is None:
+        phone_link = _tri_or([carplay, carlife])
 
     return {
         "airbags": _airbag_count(passive),
-        "esp": None,
+        "esp": active.get("esp"),
         "aeb": active.get("aeb"),
         "fcw": active.get("fcw"),
         "ldw": active.get("ldw"),
@@ -162,17 +164,17 @@ def _normalize_features(trim_features: dict[str, Any]) -> dict[str, Any]:
         "remote_start": comfort.get("remote_start"),
         "rear_ac_vents": comfort.get("rear_air_vents"),
         "dual_zone_climate": _is_dual_zone(comfort.get("climate_control")),
-        "leather_seats": None,
-        "full_lcd_cluster": None,
+        "leather_seats": comfort.get("leather_seats"),
+        "full_lcd_cluster": info.get("full_lcd_cluster"),
         "screen_inch": info.get("center_screen_inches"),
         "carplay": carplay,
         "carlife": carlife,
         "phone_link": phone_link,
         "wireless_charge": comfort.get("wireless_phone_charging"),
-        "voice_control": None,
+        "voice_control": info.get("voice_control"),
         "ota": info.get("ota"),
         "hud": comfort.get("hud"),
-        "chip_8155": None,
+        "chip_8155": info.get("chip_8155"),
     }
 
 

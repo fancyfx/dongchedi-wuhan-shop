@@ -52,7 +52,11 @@ def ensure_zstandard() -> None:
     try:
         import zstandard  # noqa: F401
     except ImportError:
-        run(sys.executable, "-m", "pip", "install", "zstandard>=0.25,<0.26")
+        cmd = [sys.executable, "-m", "pip", "install", "zstandard>=0.25,<0.26"]
+        try:
+            subprocess.run(cmd, cwd=str(ROOT), check=True)
+        except subprocess.CalledProcessError:
+            subprocess.run(cmd + ["--break-system-packages"], cwd=str(ROOT), check=True)
 
 
 def prepare_main_repo() -> None:
@@ -65,6 +69,8 @@ def prepare_main_repo() -> None:
 
 
 def prepare_vault_repo() -> None:
+    # Full depth-1 checkout is only ~100MB and avoids promisor on-demand blob
+    # fetches that made historical exact-trim matching unusably slow.
     if not (AUTOHOME_VAULTS / ".git").exists():
         EXTERNAL.mkdir(parents=True, exist_ok=True)
         run(
@@ -72,8 +78,6 @@ def prepare_vault_repo() -> None:
             "clone",
             "--depth",
             "1",
-            "--filter=blob:none",
-            "--no-checkout",
             "--branch",
             "vaults",
             AUTOHOME_URL,
@@ -81,8 +85,7 @@ def prepare_vault_repo() -> None:
         )
         return
     run("git", "fetch", "--depth", "1", "origin", "vaults", cwd=AUTOHOME_VAULTS)
-    run("git", "update-ref", "refs/heads/vaults", "FETCH_HEAD", cwd=AUTOHOME_VAULTS)
-    run("git", "symbolic-ref", "HEAD", "refs/heads/vaults", cwd=AUTOHOME_VAULTS)
+    run("git", "checkout", "-B", "vaults", "FETCH_HEAD", cwd=AUTOHOME_VAULTS)
 
 
 def prepare_sources() -> None:

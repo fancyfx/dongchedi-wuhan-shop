@@ -27,6 +27,10 @@ def test_critical_identity_rejects_wrong_powertrain():
         "海鸥 2025款 405KM 飞翔版",
         "海鸥 2025款 305KM 活力版",
     )
+    assert rules.critical_identity_compatible(
+        "星瑞 2023款 2.0T 尊贵型",
+        "星瑞 2023款 2.0TD 尊贵型",
+    )
 
 
 def test_legacy_aliases_raise_real_coverage_and_energy():

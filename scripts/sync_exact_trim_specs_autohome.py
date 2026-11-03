@@ -47,8 +47,11 @@ class Candidate:
 
 
 def run_git(repo: Path, *args: str, text: bool = True) -> str | bytes:
+    # core.quotepath=false keeps Chinese CSV names as UTF-8 instead of
+    # C-quoted octal escapes, which otherwise breaks series matching and
+    # forces every listing into historical vaults (main=0).
     proc = subprocess.run(
-        ["git", "-C", str(repo), *args],
+        ["git", "-C", str(repo), "-c", "core.quotepath=false", *args],
         check=True,
         stdout=subprocess.PIPE,
         stderr=subprocess.PIPE,
@@ -233,14 +236,29 @@ class AutoHomeSource:
         return out
 
     def _snapshot_rank(self, model_year: int) -> list[str]:
-        target = (model_year + 1) * 12 + 3
+        # Prefer late in the model year. Early next-year snapshots often already
+        # replaced that year with the newer generation (e.g. 2025 海鸥 wiping
+        # 2024 rows from 202501+ archives). When the vault timeline has gaps
+        # (e.g. no 2020/2021 archives), still allow later months so a surviving
+        # year can be found before giving up.
+        target = model_year * 12 + 11
         scored = []
         for month in self.vault_months:
             y, m = int(month[:4]), int(month[4:])
             ordinal = y * 12 + m
-            before_penalty = 60 if y < model_year else 0
-            scored.append((abs(ordinal - target) + before_penalty, month))
-        return [m for _, m in sorted(scored)[:4]]
+            if y < model_year:
+                before_penalty = 220 + (model_year - y) * 80
+            elif ordinal < target - 10:
+                before_penalty = 20
+            else:
+                before_penalty = 0
+            after_penalty = 0
+            if y == model_year + 1 and m >= 7:
+                after_penalty = 24 + m
+            elif y > model_year + 1:
+                after_penalty = (y - model_year) * 36 + m
+            scored.append((abs(ordinal - target) + before_penalty + after_penalty, month))
+        return [m for _, m in sorted(scored)]
 
     @staticmethod
     def _decompress_zstd(payload: bytes) -> bytes:

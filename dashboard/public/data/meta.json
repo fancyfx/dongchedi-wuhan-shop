@@ -34,10 +34,10 @@
   "viewport": "390x844",
   "user_agent": "WeChat MicroMessenger iPhone (API + attempted page emulation; CDP UA override blocked)",
   "sort_preference": "v2_fixed_anchor_total_score_exact_trim_only",
-  "notes": "算法版本 v2.2.0。仅 exact-trim 且配置覆盖率>=60%的车辆参与评分；评分车辆 57，数据异常/待补全 83。缺详细配置、空间、价格、里程、车龄或能耗任一关键数据时不再给中性分，统一进入数据异常 Tab。",
+  "notes": "算法版本 v2.2.0。仅 exact-trim 且配置覆盖率>=60%的车辆参与评分；评分车辆 59，数据异常/待补全 81。缺详细配置、空间、价格、里程、车龄或能耗任一关键数据时不再给中性分，统一进入数据异常 Tab。",
   "sort_method": "ranking_v2_fixed_anchors_with_hard_data_gate",
-  "ranked_at": "2026-11-03T07:43:18+08:00",
-  "ranked_count": 57,
+  "ranked_at": "2026-11-03T08:20:29+08:00",
+  "ranked_count": 59,
   "sort_weights": {
     "price": 0.15,
     "config": 0.3,
@@ -157,38 +157,14 @@
   "filtered_count": 140,
   "excluded_short_range_bev_count": 0,
   "excluded_short_range_bev": [],
-  "filter_pipeline": "shop_id=118608 → hard filters → exact-trim/data-quality gate; source=140 filtered=140 ranked=57 data_issues=83",
+  "filter_pipeline": "shop_id=118608 → hard filters → exact-trim/data-quality gate; source=140 filtered=140 ranked=59 data_issues=81",
   "config_scoring": {
-    "method": "real_specs",
-    "forbidden": "title_tier_word_heuristic",
-    "feature_weights": {
-      "safety": 0.25,
-      "adas": 0.25,
-      "comfort": 0.2,
-      "cabin_tech": 0.15,
-      "powertrain_value": 0.15
-    },
-    "feature_weights_desc": "safety25% + adas25% + comfort20% + cabin_tech15% + powertrain_value15%",
-    "sources": "汽车之家参配/厂商官网/公开参数页（禁止 usedcar_detail）"
-  },
-  "specs_coverage": {
-    "total": 146,
-    "exact": 16,
-    "approx_series_year_tier": 130,
-    "not_found": 0,
-    "found_rate": 1.0,
-    "shortlist_top30_found": 30,
-    "missing": []
+    "method": "exact_trim_full_parameters",
+    "approximate_fallback": false,
+    "legacy_shards_allowed": false,
+    "min_scoring_coverage": 0.6
   },
   "owner_reviews_shortlist_missing_cons": [],
-  "morning_check_weights": {
-    "config": 0.4,
-    "space": 0.25,
-    "fuel": 0.15,
-    "price": 0.15,
-    "suv": 0.05
-  },
-  "morning_check_note": "晨检入库沿用同一硬筛 + 综合分公式 config40/space25/fuel15/price15/suv5；配置分必须来自真实参配，短续航纯电不入库。",
   "zhiying_filter": "仅直营（badges 含「直营」）",
   "owner_reviews_found_cars": 146,
   "owner_reviews_placeholder_cars": 0,
@@ -205,17 +181,22 @@
   "energy_scenario": "no_home_charging",
   "finance_reserve_wan": 0.5,
   "verified_specs_file": "data/vehicle-specs-verified.json",
-  "verified_sku_count": 90,
+  "verified_sku_count": 83,
   "cash_price_source": "m.dcdapp.com/motor/ecom/sophon/guide/card/detail → sku_price.price (全款展示价)",
   "cash_price_note": "列表 product_price 常为分期券后价；看板与排序一律用详情 sku_price 现金价。原65辆分期+3辆券后已回写；现金价>6万的6辆已排除。",
   "excluded_over_budget_cash_count": 6,
   "excluded_over_budget_cash_file": "data/excluded-over-budget-cash.json",
   "price_refresh_file": "data/price-refresh-detail.json",
-  "data_issue_count": 83,
+  "data_issue_count": 81,
   "data_quality_policy": {
     "exact_trim_only": true,
     "min_config_coverage": 0.6,
     "unscored_message": "详细配置数据不足",
     "issues_file": "data/data-issues.json"
-  }
+  },
+  "configuration_generation": "new_full_exact_trim_only",
+  "configuration_source_policy": "AutoHome exact-trim/full-parameter data only; legacy config shards and approximate fallback forbidden",
+  "configuration_refresh_mode": "local_only",
+  "configuration_refresh_command": "python3 scripts/local_refresh.py",
+  "legacy_configuration_compatible": false
 }

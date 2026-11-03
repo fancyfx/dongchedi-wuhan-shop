@@ -84,6 +84,45 @@ def test_ambiguous_match_rejected():
     assert reason == "ambiguous_exact_trim_match"
 
 
+def test_series_from_filename_keeps_chinese_leaf():
+    assert ah.series_from_filename("data/比亚迪_海鸥.csv") == "海鸥"
+    assert ah.norm(ah.series_from_filename("data/比亚迪_海鸥.csv")) == ah.norm("海鸥")
+
+
+def test_repo_paths_do_not_c_quote_unicode(tmp_path):
+    repo = tmp_path / "repo"
+    repo.mkdir()
+    subprocess_run = __import__("subprocess").run
+    subprocess_run(["git", "init"], cwd=repo, check=True, capture_output=True)
+    subprocess_run(["git", "config", "user.email", "t@example.com"], cwd=repo, check=True)
+    subprocess_run(["git", "config", "user.name", "t"], cwd=repo, check=True)
+    data = repo / "data"
+    data.mkdir()
+    csv_path = data / "比亚迪_海鸥.csv"
+    csv_path.write_text("车型名称,1\n海鸥 2025款 305KM 活力版,x\n", encoding="utf-8")
+    subprocess_run(["git", "add", "data"], cwd=repo, check=True, capture_output=True)
+    subprocess_run(["git", "commit", "-m", "add"], cwd=repo, check=True, capture_output=True)
+    paths = ah.repo_paths(repo, "data")
+    assert any(p.endswith("比亚迪_海鸥.csv") for p in paths), paths
+    keys = {ah.norm(ah.series_from_filename(p)) for p in paths}
+    assert ah.norm("海鸥") in keys
+
+
+
+def test_snapshot_rank_prefers_model_year():
+    class Dummy(ah.AutoHomeSource):
+        def __init__(self):
+            self.vault_months = [
+                "202309", "202312", "202403", "202406", "202409", "202411",
+                "202412", "202501", "202502", "202503", "202504",
+            ]
+    ranked = Dummy()._snapshot_rank(2024)
+    assert ranked[0] in {"202411", "202410", "202412", "202409"}
+    # Late next-year snapshots that usually already replaced the year should
+    # rank behind in-year months.
+    assert ranked.index("202411") < ranked.index("202503")
+
+
 def test_vault_decoder():
     import zstandard as zstd
     csv_bytes = matrix("测试车 2021款 1.5T 自动尊贵版")
@@ -103,5 +142,10 @@ if __name__ == "__main__":
     test_unique_exact_match()
     test_year_mismatch_rejected()
     test_ambiguous_match_rejected()
+    test_series_from_filename_keeps_chinese_leaf()
+    import tempfile
+    with tempfile.TemporaryDirectory() as td:
+        test_repo_paths_do_not_c_quote_unicode(__import__("pathlib").Path(td))
+    test_snapshot_rank_prefers_model_year()
     test_vault_decoder()
     print("autohome exact-trim sync tests passed")

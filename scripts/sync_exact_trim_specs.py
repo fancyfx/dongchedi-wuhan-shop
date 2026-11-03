@@ -348,6 +348,7 @@ def build_trim(title: str, car_id: int, series_id: int, rows: dict[str, str], ma
         "tpms_display": tri(find_row(rows, "胎压显示")),
     }
     active = {
+        "esp": tri(find_row(rows, "车身稳定控制")),
         "aeb": tri(find_row(rows, "主动刹车", "主动安全系统")),
         "fcw": tri(find_row(rows, "前方碰撞预警")),
         "ldw": tri(find_row(rows, "车道偏离预警")),
@@ -384,7 +385,12 @@ def build_trim(title: str, car_id: int, series_id: int, rows: dict[str, str], ma
         "front_seat_heating": tri(find_row(rows, "前排座椅加热")),
         "front_seat_ventilation": tri(find_row(rows, "前排座椅通风")),
         "rear_air_vents": tri(find_row(rows, "后座出风口")),
-        "climate_control": "automatic_dual_zone" if tri(find_row(rows, "温度分区控制")) else ("automatic" if tri(find_row(rows, "自动空调")) else None),
+        "climate_control": (
+            "automatic_dual_zone" if tri(find_row(rows, "温度分区控制")) is True
+            else "automatic" if tri(find_row(rows, "自动空调")) is True
+            else "manual" if tri(find_row(rows, "自动空调")) is False
+            else None
+        ),
         "leather_seats": tri(find_row(rows, "真皮座椅", "座椅材质")) if "真皮" in str(find_row(rows, "座椅材质") or "") else None,
     }
     info = {

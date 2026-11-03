@@ -73,10 +73,17 @@ def canonicalize_rows(raw: dict[str, str]) -> dict[str, str]:
     _put(rows, "NEDC纯电续航里程", _first(rows, "工信部续航里程(km)", "工信部续航里程"))
 
     # Historical naming variants.
-    _put(rows, "中控屏幕尺寸", _first(rows, "中控台彩色大屏尺寸", "中控屏幕尺寸"))
-    _put(rows, "无钥匙进入功能", _first(rows, "无钥匙进入系统"))
-    _put(rows, "远程启动功能", _first(rows, "远程启动"))
-    _put(rows, "自动泊车入位", _first(rows, "辅助泊车入位"))
+    _put(rows, "中控屏幕尺寸", _first(rows, "中控台彩色大屏尺寸", "中控屏幕尺寸", "中控彩色液晶屏"))
+    _put(rows, "无钥匙进入功能", _first(rows, "无钥匙进入系统", "无钥匙进入"))
+    _put(rows, "远程启动功能", _first(rows, "远程启动", "遥控启动"))
+    _put(rows, "自动泊车入位", _first(rows, "辅助泊车入位", "自动泊车"))
+    _put(rows, "手机无线充电", _first(rows, "手机无线充电功能", "无线充电"))
+    _put(rows, "倒车影像", _first(rows, "倒车视频影像", "倒车影像系统"))
+    _put(rows, "语音识别控制系统", _first(rows, "语音识别控制系统", "语音控制", "语音助手"))
+    _put(rows, "前方碰撞预警", _first(rows, "前方碰撞预警", "前方碰撞报警"))
+    _put(rows, "车道保持辅助系统", _first(rows, "车道保持辅助系统", "车道保持辅助"))
+    _put(rows, "CarPlay", _first(rows, "CarPlay", "Apple CarPlay"))
+    _put(rows, "CarLife", _first(rows, "CarLife", "百度CarLife"))
 
     # 360 camera: only an explicit panoramic/360 source can map to 360.
     panorama = _first(rows, "全景摄像头")
@@ -165,7 +172,7 @@ def _power_tokens(text: str) -> set[str]:
     s = str(text or "").lower().replace("dm-i", "dmi")
     tokens: set[str] = set()
     for pat in (
-        r"\d+(?:tsi|tdi|tgdi|thp|turbo)(?![a-z0-9])",
+        r"\d+(?:\.\d+)?(?:tsi|tdi|td|tgdi|thp|turbo)(?![a-z0-9])",
         r"\d+(?:\.\d+)?[tl](?![a-z0-9])",
         r"(?<!\d)\d{3}(?!\d)",
     ):
@@ -175,6 +182,30 @@ def _power_tokens(text: str) -> set[str]:
     for rng in re.findall(r"\d{2,4}\s*km", s, flags=re.I):
         tokens.discard(re.sub(r"\s*km", "", rng, flags=re.I))
     return tokens
+
+
+def _normalize_power_token(token: str) -> str:
+    t = str(token or "").lower()
+    # AutoHome often writes 2.0TD while listings say 2.0T for the same family.
+    if t.endswith("tdi"):
+        return t[:-3] + "tsi" if t[:-3] else "tsi"
+    if t.endswith("td"):
+        return t[:-1]
+    return t
+
+
+def _power_compatible(target: set[str], candidate: set[str]) -> bool:
+    if not target and not candidate:
+        return True
+    if target and not candidate:
+        return False
+    if not target and candidate:
+        return True
+    if target == candidate:
+        return True
+    nt = {_normalize_power_token(t) for t in target}
+    nc = {_normalize_power_token(t) for t in candidate}
+    return nt == nc
 
 
 def _range_tokens(text: str) -> set[str]:
@@ -214,9 +245,7 @@ def critical_identity_compatible(target: str, candidate: str) -> bool:
     """Reject high textual-similarity matches with different mechanical identity."""
     target_power = _power_tokens(target)
     candidate_power = _power_tokens(candidate)
-    if target_power and candidate_power and target_power != candidate_power:
-        return False
-    if target_power and not candidate_power:
+    if not _power_compatible(target_power, candidate_power):
         return False
 
     target_range = _range_tokens(target)

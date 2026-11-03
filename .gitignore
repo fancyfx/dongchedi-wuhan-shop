@@ -1,2 +1,5 @@
 scripts/__pycache__/
 .external/
+
+.tmp/
+**/__pycache__/
