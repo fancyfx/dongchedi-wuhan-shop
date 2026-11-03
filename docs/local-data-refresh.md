@@ -42,6 +42,26 @@ python3 scripts/local_refresh.py --skip-source-update
 python3 scripts/local_refresh.py --skip-dashboard-build
 ```
 
+## 看板「今日更新」
+
+每日入库写完 `data/snapshots/YYYYMMDD/changelog.json` 和 `summary.json` 后，在仓库根目录执行：
+
+```bash
+python3 scripts/export_today_updates.py
+```
+
+脚本用 `dashboard/public/data/listings-ranked.json` 的 `rank`（全场 `total_score` 排名）对照 changelog，写出 `dashboard/public/data/today-updates.json`。重点推荐只包含 `change_type` 为 `added` 且排名在 1 到 10 的车。`updated` / `updated_price` 只算信息更新。
+
+`python3 scripts/daily_ingest.py` 把快照写进 `data/snapshots/YYYYMMDD/` 时会顺带导出这份文件。`--snapshot-dir` 指到别的目录时不会导出，需要再跑上面的命令。排名文件更新之后也要再导出一次，否则重点推荐仍用上一次的名次。
+
+演示「新入库且前 10」的标签：
+
+```bash
+python3 scripts/export_today_updates.py --write-fixture
+```
+
+看板打开「今日更新」，或访问 `?tab=today&today=fixture`。没有快照时用 `?tab=today&today=missing`，changelog 为空时用 `?tab=today&today=blank`。
+
 ## 提交要求
 
 本地刷新成功后先检查：

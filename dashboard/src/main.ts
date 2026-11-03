@@ -1,5 +1,19 @@
 import './style.css'
 import { isConfigRoute, renderConfigPage } from './config-page'
+import {
+  alertTagsHtml,
+  fallbackHighlightHtml,
+  fixtureBannerHtml,
+  blankToday,
+  missingToday,
+  normalizeToday,
+  reconcileToday,
+  renderTodayPanel,
+  todayModeFromSearch,
+  type TodayFilter,
+  type TodayMode,
+  type TodayUpdates,
+} from './today'
 
 type DataIssue = {
   code: string
@@ -114,7 +128,7 @@ type Meta = {
 }
 
 type SortKey = 'recommend' | 'price' | 'year' | 'mileage' | 'config' | 'score'
-type TabKey = 'ranked' | 'issues'
+type TabKey = 'ranked' | 'issues' | 'today'
 
 const app = document.querySelector<HTMLDivElement>('#app')!
 
@@ -122,6 +136,8 @@ let rankedListings: Listing[] = []
 let issueListings: Listing[] = []
 let meta: Meta | null = null
 let originalIndex = new Map<string, number>()
+let todayData: TodayUpdates = missingToday('尚未加载')
+let highlightSkus = new Set<string>()
 
 const state = {
   tab: 'ranked' as TabKey,
@@ -132,6 +148,7 @@ const state = {
   official: false,
   mileageMax: '',
   sort: 'recommend' as SortKey,
+  todayFilter: 'all' as TodayFilter,
 }
 
 function esc(s: unknown): string {
@@ -154,7 +171,9 @@ function fmtTime(iso?: string): string {
 }
 
 function currentSource(): Listing[] {
-  return state.tab === 'issues' ? issueListings : rankedListings
+  if (state.tab === 'issues') return issueListings
+  if (state.tab === 'today') return []
+  return rankedListings
 }
 
 function hasOfficial(item: Listing): boolean {
@@ -195,6 +214,7 @@ function filtered(): Listing[] {
     if (
       q &&
       !(
+        item.sku.toLowerCase().includes(q) ||
         item.title.toLowerCase().includes(q) ||
         (item.manufacturer || '').toLowerCase().includes(q) ||
         (item.brand || '').toLowerCase().includes(q)
@@ -287,6 +307,7 @@ function issuePanel(item: Listing): string {
 
 function cardHtml(item: Listing): string {
   const issueMode = state.tab === 'issues' || item.score_eligible === false
+  const featured = highlightSkus.has(item.sku)
   const rank = item.rank ?? 0
   const badges = item.badges || []
   const tags = (item.tags || []).slice(0, 4)
@@ -306,7 +327,7 @@ function cardHtml(item: Listing): string {
   ].join('')
 
   return `
-  <article class="card ${issueMode ? 'issue-card' : ''}">
+  <article class="card ${issueMode ? 'issue-card' : ''} ${featured ? 'highlight-card' : ''}" data-sku="${esc(item.sku)}" data-highlight="${featured ? 'true' : 'false'}">
     <div class="cover">
       <img src="${img}" alt="${esc(item.title)}" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='grid';" />
       <div class="placeholder" style="display:none">暂无封面</div>
@@ -316,6 +337,7 @@ function cardHtml(item: Listing): string {
         : `<div class="score-badge">#${rank}<span class="score-badge-pts">${total?.toFixed(1) ?? '—'}</span></div>`}
     </div>
     <div class="body">
+      ${featured ? alertTagsHtml() : ''}
       <div class="manu-line">${esc(manu)}${esc(brand)}</div>
       <div class="title" title="${esc(item.title)}">${esc(item.title)}</div>
       <div class="meta-row">${esc(yearLine)}</div>
@@ -339,6 +361,61 @@ function cardHtml(item: Listing): string {
       </div>
     </div>
   </article>`
+}
+
+function applyToday(next: TodayUpdates) {
+  todayData = reconcileToday(next, rankedListings, issueListings)
+  highlightSkus = new Set(todayData.highlights.map((item) => item.sku))
+}
+
+async function pullToday(): Promise<TodayUpdates> {
+  const mode = todayModeFromSearch(location.search)
+  if (mode === 'missing') {
+    return missingToday('未加载今日快照。入库完成后在仓库根目录运行 python3 scripts/export_today_updates.py。')
+  }
+  if (mode === 'blank') return blankToday()
+  const path = mode === 'fixture' ? '/data/today-updates.fixture.json' : '/data/today-updates.json'
+  try {
+    const res = await fetch(path)
+    if (!res.ok) {
+      return missingToday(
+        mode === 'fixture'
+          ? `演示数据不存在（${path} HTTP ${res.status}）。`
+          : `还没有今日更新文件（${path} HTTP ${res.status}）。在仓库根目录运行 python3 scripts/export_today_updates.py。`,
+      )
+    }
+    return normalizeToday(await res.json())
+  } catch (err) {
+    const msg = err instanceof Error ? err.message : String(err)
+    return missingToday(`今日更新数据读取失败：${msg}`)
+  }
+}
+
+function rememberTab(next: TabKey) {
+  const url = new URL(location.href)
+  if (next === 'ranked') url.searchParams.delete('tab')
+  else url.searchParams.set('tab', next)
+  history.replaceState(null, '', `${url.pathname}${url.search}${url.hash}`)
+}
+
+async function setTodayMode(mode: TodayMode) {
+  const url = new URL(location.href)
+  if (mode === 'live') url.searchParams.delete('today')
+  else url.searchParams.set('today', mode)
+  history.replaceState(null, '', `${url.pathname}${url.search}${url.hash}`)
+  applyToday(await pullToday())
+  renderShell()
+}
+
+function highlightCardsHtml(): string {
+  if (!todayData.highlights.length) return ''
+  const bySku = new Map(rankedListings.map((item) => [item.sku, item]))
+  return `<div class="grid today-highlight-grid">${todayData.highlights
+    .map((item) => {
+      const listing = bySku.get(item.sku)
+      return listing ? cardHtml(listing) : fallbackHighlightHtml(item)
+    })
+    .join('')}</div>`
 }
 
 function renderShell() {
@@ -367,8 +444,11 @@ function renderShell() {
         <a href="/data/listings-ranked.json" target="_blank" rel="noopener noreferrer">参与评分 JSON</a>
         <a href="/data/data-issues.json" target="_blank" rel="noopener noreferrer">数据异常 JSON</a>
         <a href="/data/meta.json" target="_blank" rel="noopener noreferrer">meta</a>
+        <a href="/data/today-updates.json" target="_blank" rel="noopener noreferrer">今日更新 JSON</a>
+        <a href="/data/today-updates.fixture.json" target="_blank" rel="noopener noreferrer">重点推荐演示 JSON</a>
       </div>
     </header>
+    ${todayModeFromSearch(location.search) === 'fixture' ? fixtureBannerHtml() : ''}
 
     <nav class="data-tabs" aria-label="车源数据状态">
       <button class="data-tab ${state.tab === 'ranked' ? 'active' : ''}" data-tab="ranked">
@@ -377,10 +457,19 @@ function renderShell() {
       <button class="data-tab ${state.tab === 'issues' ? 'active issue' : ''}" data-tab="issues">
         数据异常 / 待补全 <span>${issueListings.length}</span>
       </button>
+      <button class="data-tab ${state.tab === 'today' ? 'active today' : ''} ${todayData.counts.highlights > 0 ? 'has-highlight' : ''}" data-tab="today">
+        今日更新 <span>${todayData.has_snapshot ? todayData.counts.total : 0}</span>
+      </button>
     </nav>
     ${state.tab === 'issues' ? `<div class="issue-notice"><strong>这里的车辆不参与任何排名。</strong> 详细配置不足会直接显示“详细配置数据不足”；今后价格、里程、车龄、空间、能耗等关键数据异常也统一进入这里。</div>` : ''}
-
-    <section class="stats" id="stats">
+    ${state.tab === 'today' ? renderTodayPanel({
+      data: todayData,
+      filter: state.todayFilter,
+      fixtureMode: todayModeFromSearch(location.search) === 'fixture',
+      onBoard: new Set(rankedListings.map((item) => item.sku)),
+      highlightCardsHtml: highlightCardsHtml(),
+    }) : ''}
+    ${state.tab === 'today' ? '' : `<section class="stats" id="stats">
       <div class="stat"><div class="label">${state.tab === 'ranked' ? '评分车源' : '异常车源'}</div><div class="value" id="stat-count">${allStats.count}</div></div>
       <div class="stat"><div class="label">均价</div><div class="value price" id="stat-avg">${allStats.count ? allStats.avg.toFixed(2) + '万' : '—'}</div></div>
       <div class="stat"><div class="label">最低价</div><div class="value price" id="stat-min">${allStats.count ? allStats.min.toFixed(2) + '万' : '—'}</div></div>
@@ -390,7 +479,7 @@ function renderShell() {
     </section>
 
     <section class="controls">
-      <div class="field"><label for="q">关键词（标题/厂商）</label><input id="q" type="search" placeholder="如：哈弗 / 比亚迪 / 秦PLUS" value="${esc(state.q)}" /></div>
+      <div class="field"><label for="q">关键词（标题/厂商/SKU）</label><input id="q" type="search" placeholder="如：哈弗 / 比亚迪 / 秦PLUS" value="${esc(state.q)}" /></div>
       <div class="field"><label for="priceMin">最低价（万）</label><input id="priceMin" type="number" min="0" step="0.1" placeholder="不限" value="${esc(state.priceMin)}" /></div>
       <div class="field"><label for="priceMax">最高价（万）</label><input id="priceMax" type="number" min="0" step="0.1" placeholder="不限" value="${esc(state.priceMax)}" /></div>
       <div class="field"><label for="mileageMax">里程上限（万公里）</label><input id="mileageMax" type="number" min="0" step="0.1" placeholder="不限" value="${esc(state.mileageMax)}" /></div>
@@ -406,10 +495,10 @@ function renderShell() {
     </section>
 
     <div class="toolbar"><div id="result-count">显示 ${allStats.count} / ${source.length} 辆</div><div>${state.tab === 'ranked' ? '仅数据完整车辆参与综合评分' : '待补全车辆不会影响榜单排名'}</div></div>
-    <section class="grid" id="grid"></section>
+    <section class="grid" id="grid"></section>`}
   `
   bindControls()
-  renderList()
+  if (state.tab !== 'today') renderList()
 }
 
 function bindControls() {
@@ -419,6 +508,37 @@ function bindControls() {
       if (!next || next === state.tab) return
       state.tab = next
       state.sort = 'recommend'
+      rememberTab(next)
+      renderShell()
+    })
+  })
+
+  document.getElementById('today-use-fixture')?.addEventListener('click', () => {
+    void setTodayMode('fixture')
+  })
+  document.getElementById('today-use-live')?.addEventListener('click', () => {
+    void setTodayMode('live')
+  })
+  document.querySelectorAll<HTMLButtonElement>('[data-today-filter]').forEach((button) => {
+    button.addEventListener('click', () => {
+      const next = button.dataset.todayFilter as TodayFilter
+      if (!next || next === state.todayFilter) return
+      state.todayFilter = next
+      renderShell()
+    })
+  })
+  document.querySelectorAll<HTMLButtonElement>('[data-jump-sku]').forEach((button) => {
+    button.addEventListener('click', () => {
+      const sku = button.dataset.jumpSku || ''
+      state.tab = 'ranked'
+      state.q = sku
+      state.priceMin = ''
+      state.priceMax = ''
+      state.mileageMax = ''
+      state.suv = 'all'
+      state.official = false
+      state.sort = 'recommend'
+      rememberTab('ranked')
       renderShell()
     })
   })
@@ -470,6 +590,9 @@ async function boot() {
   }
   app.innerHTML = `<div class="loading">正在加载车源数据…</div>`
   try {
+    const requested = new URLSearchParams(location.search).get('tab')
+    if (requested === 'today' || requested === 'issues' || requested === 'ranked') state.tab = requested
+    const todayPromise = pullToday()
     const [listRes, issueRes, metaRes] = await Promise.all([
       fetch('/data/listings-ranked.json'),
       fetch('/data/data-issues.json'),
@@ -482,6 +605,7 @@ async function boot() {
     issueListings = await issueRes.json()
     meta = await metaRes.json()
     originalIndex = new Map([...rankedListings, ...issueListings].map((x, i) => [x.sku, i]))
+    applyToday(await todayPromise)
     renderShell()
   } catch (err) {
     const msg = err instanceof Error ? err.message : String(err)

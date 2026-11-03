@@ -10,6 +10,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts"))
 
+from display_gate import DISPLAY_LIMIT, apply_display_flags, display_sort_key  # noqa: E402
 from filters import FILTER_META, filter_listings  # noqa: E402
 from ranking_v2.apply_verified import apply_verified_to_listings, load_verified_by_sku  # noqa: E402
 from ranking_v2.config import ENERGY, FINANCE, SCORE_VERSION, WEIGHTS  # noqa: E402
@@ -45,6 +46,94 @@ def issue_evaluation(issues: list[dict]) -> str:
     return "；".join(messages[:4]) + "，不参与评分。"
 
 
+def score_one(item: dict) -> dict:
+    """Score one listing in place. Eligible rows keep a V2 total; others stay unscored."""
+    brand, manu, inferred = map_manufacturer(item["title"])
+    item["brand"] = brand
+    item["manufacturer"] = manu
+    item["manufacturer_inferred"] = inferred
+    item["series"] = series_key(item["title"])
+    item.setdefault("owner_reviews", {"summary": "", "sources": [], "found": False})
+
+    old_total = item.get("total_score")
+    old_ss = dict(item.get("sort_scores") or {})
+    quality = assess_score_eligibility(item)
+    item["score_eligible"] = bool(quality["eligible"])
+    item["data_issues"] = quality["issues"]
+    item["config_coverage"] = round(float(quality["config_coverage"]), 4)
+    item["energy_confidence"] = round(float(quality["energy_confidence"]), 3)
+
+    if not quality["eligible"]:
+        item["score_version"] = SCORE_VERSION
+        item["score_v1"] = old_total
+        item["total_score"] = None
+        item["rank"] = None
+        item["condition_gate"] = "DATA_ISSUE"
+        item["evaluation"] = issue_evaluation(quality["issues"])
+        item["score_reasons"] = []
+        item["score_warnings"] = [x["message"] for x in quality["issues"]]
+        item["sort_scores"] = {
+            "score_version": SCORE_VERSION,
+            "total_score": None,
+            "config_score": None,
+            "config_norm": None,
+            "config_proxy": None,
+            "is_suv": "suv" in str((item.get("specs") or {}).get("body_type") or "").lower(),
+            "price": item.get("price"),
+            "effective_price_wan": item.get("effective_price_wan"),
+            "condition_gate": "DATA_ISSUE",
+            "note": "数据不足，不参与评分",
+        }
+        return item
+
+    result = score_listing(item)
+    if result["condition_gate"] == "REJECT":
+        result["total_score"] = -1.0
+
+    item["score_version"] = SCORE_VERSION
+    item["score_v1"] = old_total
+    item["total_score"] = result["total_score"]
+    item["condition_gate"] = result["condition_gate"]
+    item["evaluation"] = build_evaluation(item, result)
+    item["score_reasons"] = result["reasons"]
+    item["score_warnings"] = result["warnings"]
+    item["confidence"] = result["confidence"]
+    item["sort_scores"] = {
+        **old_ss,
+        "score_version": SCORE_VERSION,
+        "total_score": result["total_score"],
+        "price_score": result["scores"]["price"],
+        "config_score": result["scores"]["config"],
+        "operating_cost_score": result["scores"]["operating_cost"],
+        "space_score": result["scores"]["space"],
+        "age_score": result["scores"]["age"],
+        "mileage_score": result["scores"]["mileage"],
+        "body_preference_score": result["scores"]["body_preference"],
+        "data_quality_score": result["scores"]["data_quality"],
+        "config_norm": result["scores"]["config"],
+        "space_norm": result["scores"]["space"],
+        "fuel_norm": result["scores"]["operating_cost"],
+        "suv_score": result["scores"]["body_preference"],
+        "config_proxy": result["scores"]["config"],
+        "space_proxy": result["scores"]["space"],
+        "fuel_proxy": result["scores"]["operating_cost"],
+        "is_suv": result["is_suv"],
+        "price": item.get("price"),
+        "effective_price_wan": result["effective_price_wan"],
+        "weights": dict(WEIGHTS),
+        "energy": result["energy"],
+        "confidence": result["confidence"],
+        "reasons": result["reasons"],
+        "warnings": result["warnings"],
+        "condition_gate": result["condition_gate"],
+        "note": (
+            f"V2 fixed anchors score_version={SCORE_VERSION}; "
+            f"exact-trim gate passed; weights={WEIGHTS}; scenario={ENERGY['default_scenario']}"
+        ),
+    }
+    return item
+
+
 def main() -> None:
     verified_path = ROOT / "data" / "vehicle-specs-verified.json"
     # listings-filtered retains the complete post-hard-filter inventory, including
@@ -73,105 +162,14 @@ def main() -> None:
     data_issues: list[dict] = []
 
     for item in listings:
-        brand, manu, inferred = map_manufacturer(item["title"])
-        item["brand"] = brand
-        item["manufacturer"] = manu
-        item["manufacturer_inferred"] = inferred
-        item["series"] = series_key(item["title"])
-        item.setdefault("owner_reviews", {"summary": "", "sources": [], "found": False})
-
-        old_total = item.get("total_score")
-        old_ss = dict(item.get("sort_scores") or {})
-        quality = assess_score_eligibility(item)
-        item["score_eligible"] = bool(quality["eligible"])
-        item["data_issues"] = quality["issues"]
-        item["config_coverage"] = round(float(quality["config_coverage"]), 4)
-        item["energy_confidence"] = round(float(quality["energy_confidence"]), 3)
-
-        if not quality["eligible"]:
-            item["score_version"] = SCORE_VERSION
-            item["score_v1"] = old_total
-            item["total_score"] = None
-            item["rank"] = None
-            item["condition_gate"] = "DATA_ISSUE"
-            item["evaluation"] = issue_evaluation(quality["issues"])
-            item["score_reasons"] = []
-            item["score_warnings"] = [x["message"] for x in quality["issues"]]
-            item["sort_scores"] = {
-                "score_version": SCORE_VERSION,
-                "total_score": None,
-                "config_score": None,
-                "config_norm": None,
-                "config_proxy": None,
-                "is_suv": "suv" in str((item.get("specs") or {}).get("body_type") or "").lower(),
-                "price": item.get("price"),
-                "effective_price_wan": item.get("effective_price_wan"),
-                "condition_gate": "DATA_ISSUE",
-                "note": "数据不足，不参与评分",
-            }
+        score_one(item)
+        if item.get("score_eligible"):
+            ranked.append(item)
+        else:
             data_issues.append(item)
-            continue
 
-        result = score_listing(item)
-        if result["condition_gate"] == "REJECT":
-            result["total_score"] = -1.0
-
-        item["score_version"] = SCORE_VERSION
-        item["score_v1"] = old_total
-        item["total_score"] = result["total_score"]
-        item["condition_gate"] = result["condition_gate"]
-        item["evaluation"] = build_evaluation(item, result)
-        item["score_reasons"] = result["reasons"]
-        item["score_warnings"] = result["warnings"]
-        item["confidence"] = result["confidence"]
-
-        ss = {
-            **old_ss,
-            "score_version": SCORE_VERSION,
-            "total_score": result["total_score"],
-            "price_score": result["scores"]["price"],
-            "config_score": result["scores"]["config"],
-            "operating_cost_score": result["scores"]["operating_cost"],
-            "space_score": result["scores"]["space"],
-            "age_score": result["scores"]["age"],
-            "mileage_score": result["scores"]["mileage"],
-            "body_preference_score": result["scores"]["body_preference"],
-            "data_quality_score": result["scores"]["data_quality"],
-            "config_norm": result["scores"]["config"],
-            "space_norm": result["scores"]["space"],
-            "fuel_norm": result["scores"]["operating_cost"],
-            "suv_score": result["scores"]["body_preference"],
-            "config_proxy": result["scores"]["config"],
-            "space_proxy": result["scores"]["space"],
-            "fuel_proxy": result["scores"]["operating_cost"],
-            "is_suv": result["is_suv"],
-            "price": item.get("price"),
-            "effective_price_wan": result["effective_price_wan"],
-            "weights": dict(WEIGHTS),
-            "energy": result["energy"],
-            "confidence": result["confidence"],
-            "reasons": result["reasons"],
-            "warnings": result["warnings"],
-            "condition_gate": result["condition_gate"],
-            "note": (
-                f"V2 fixed anchors score_version={SCORE_VERSION}; "
-                f"exact-trim gate passed; weights={WEIGHTS}; scenario={ENERGY['default_scenario']}"
-            ),
-        }
-        item["sort_scores"] = ss
-        ranked.append(item)
-
-    ranked.sort(
-        key=lambda x: (
-            0 if x.get("condition_gate") != "REJECT" else 1,
-            -float(x.get("total_score") or 0),
-            -float((x.get("sort_scores") or {}).get("price_score") or 0),
-            float(x.get("effective_price_wan") or x.get("price") or 99),
-            float(x.get("mileage_wan") or 99),
-        )
-    )
-    for i, item in enumerate(ranked, 1):
-        item["rank"] = i
+    ranked.sort(key=display_sort_key)
+    display, below = apply_display_flags(ranked)
 
     # Stable issue ordering: config gaps first, then price/title for inspection.
     data_issues.sort(
@@ -184,9 +182,9 @@ def main() -> None:
 
     tz = timezone(timedelta(hours=8))
     now = datetime.now(tz).isoformat(timespec="seconds")
-    shortlist = ranked[:30]
+    shortlist = display[:30]
     cheapest = sorted(
-        ranked,
+        display,
         key=lambda x: (
             float(x.get("effective_price_wan") or x["price"]),
             -float(x.get("total_score") or 0),
@@ -221,7 +219,11 @@ def main() -> None:
     meta["verified_specs_file"] = "data/vehicle-specs-verified.json"
     meta["verified_sku_count"] = len(verified)
     meta["ranked_at"] = now
-    meta["ranked_count"] = len(ranked)
+    meta["ranked_count"] = len(display)
+    meta["library_scored_count"] = len(ranked)
+    meta["below_display_count"] = len(below)
+    meta["display_limit"] = DISPLAY_LIMIT
+    meta["display_score_floor"] = display[-1]["total_score"] if display else None
     meta["data_issue_count"] = len(data_issues)
     meta["filtered_count"] = len(listings)
     meta["excluded_short_range_bev_count"] = len(excluded)
@@ -235,19 +237,25 @@ def main() -> None:
     }
     meta["notes"] = (
         f"算法版本 {SCORE_VERSION}。仅 exact-trim 且配置覆盖率>=60%的车辆参与评分；"
-        f"评分车辆 {len(ranked)}，数据异常/待补全 {len(data_issues)}。"
+        f"评分车辆 {len(ranked)}，看板展示前 {len(display)} 名，低于展示线 {len(below)}，"
+        f"数据异常/待补全 {len(data_issues)}。"
         "缺详细配置、空间、价格、里程、车龄或能耗任一关键数据时不再给中性分，统一进入数据异常 Tab。"
     )
     meta["filter_pipeline"] = (
-        f"shop_id=118608 → hard filters → exact-trim/data-quality gate; "
-        f"source={n_before} filtered={len(listings)} ranked={len(ranked)} data_issues={len(data_issues)}"
+        f"shop_id=118608 → hard filters → exact-trim/data-quality gate → top {len(display)} display; "
+        f"source={n_before} filtered={len(listings)} scored={len(ranked)} "
+        f"display={len(display)} below={len(below)} data_issues={len(data_issues)}"
     )
 
-    # Ranked is strictly score-eligible. Filtered remains the complete inventory
-    # so later reruns and exact-trim sync can continue repairing issue rows.
+    # listings-ranked.json is the board display set (top 100). Filtered keeps
+    # every admitted car, including scored rows that fell below the display line.
+    for item in data_issues:
+        item["display"] = False
+        item["rank"] = None
     all_filtered = ranked + data_issues
     for p in (ROOT / "listings-ranked.json", ROOT / "data" / "listings-ranked.json"):
-        dump_json(p, ranked)
+        dump_json(p, display)
+    dump_json(ROOT / "data" / "listings-below-display.json", below)
     for p in (ROOT / "listings-filtered.json", ROOT / "data" / "listings-filtered.json"):
         dump_json(p, all_filtered)
     for p in (ROOT / "shortlist-ranked.json", ROOT / "data" / "shortlist-ranked.json"):
@@ -274,9 +282,9 @@ def main() -> None:
                 dump_json(dash / name, json.loads(srcp.read_text(encoding="utf-8")))
 
     print(f"SRC {src}")
-    print(f"SCORE_VERSION {SCORE_VERSION} FILTERED {len(listings)} RANKED {len(ranked)} DATA_ISSUES {len(data_issues)} VERIFIED {len(verified)}")
+    print(f"SCORE_VERSION {SCORE_VERSION} FILTERED {len(listings)} SCORED {len(ranked)} DISPLAY {len(display)} BELOW {len(below)} DATA_ISSUES {len(data_issues)} VERIFIED {len(verified)}")
     print("TOP15")
-    for x in ranked[:15]:
+    for x in display[:15]:
         en = (x.get("sort_scores") or {}).get("energy") or {}
         print(
             f"{x['rank']:2} | {x['total_score']:5.1f} | eff={x.get('effective_price_wan')} | "

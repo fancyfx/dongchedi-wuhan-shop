@@ -1,0 +1,40 @@
+{
+  "started_at": "2026-11-03T17:42:52+08:00",
+  "dry_run": true,
+  "skip_live_fetch": true,
+  "fixtures": ".tmp/ingest-probe",
+  "limit": 3,
+  "display_limit": 100,
+  "catalog_dir": "/workspace/dongchedi-wuhan-shop/data",
+  "snapshot_dir": "/workspace/dongchedi-wuhan-shop/data/snapshots/20261103",
+  "pages": 1,
+  "shop_cards": 3,
+  "details": 2,
+  "detail_errors": 1,
+  "hard_kept": 2,
+  "hard_rejected": 1,
+  "threshold": 44.2,
+  "changelog_counts": {
+    "rejected_hard_filter": 1,
+    "display_dropped": 27
+  },
+  "display_count": 100,
+  "below_display_count": 27,
+  "issue_count": 13,
+  "inventory_count": 140,
+  "catalog_written": false,
+  "specs_committed": 0,
+  "score": {
+    "scored": 0,
+    "live_match_attempted": 0,
+    "live_matched": 0,
+    "specs_error": null
+  },
+  "snapshot_files": [
+    "list-page-00.json",
+    "detail-356587369.json.gz",
+    "detail-356881737.json.gz",
+    "detail-357261851-error.json",
+    "changelog.json"
+  ]
+}

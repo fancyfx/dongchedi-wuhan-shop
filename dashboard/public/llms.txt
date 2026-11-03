@@ -11,6 +11,8 @@
 - 元信息与筛条件/权重: https://dongchedi-wuhan-dashboard.vercel.app/data/meta.json
 - 短名单: https://dongchedi-wuhan-dashboard.vercel.app/data/shortlist-ranked.json
 - 按车系口碑库: https://dongchedi-wuhan-dashboard.vercel.app/data/owner-reviews-by-series.json
+- 今日更新: /data/today-updates.json （由 data/snapshots/YYYYMMDD 导出。重点推荐 = 新入库 added 且全场 rank ≤ 10）
+- 重点推荐演示: /data/today-updates.fixture.json
 
 ## 硬筛（入库）
 - 店: 懂车帝汽车商城·武汉店 shop_id=118608

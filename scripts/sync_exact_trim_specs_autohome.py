@@ -589,11 +589,18 @@ def enrich_candidates_from_live(
     return stats
 
 
-def main() -> None:
-    src = next((p for p in base.SOURCE_CANDIDATES if p.exists()), None)
-    if src is None:
-        raise SystemExit("no filtered listing source")
-    listings = json.loads(src.read_text(encoding="utf-8"))
+def sync_listings(
+    listings: list[dict[str, Any]],
+    *,
+    live: bool | None = None,
+    persist: bool = True,
+    write_report: bool = True,
+    source_label: str = "listings",
+) -> dict[str, Any]:
+    """Match listings missing from sku_to_trim. Does not reset the store.
+
+    persist=False returns new trims in memory and leaves the index untouched.
+    """
     index = json.loads(base.INDEX.read_text(encoding="utf-8"))
     existing_map = {str(k): str(v) for k, v in (index.get("sku_to_trim") or {}).items()}
     auto: dict[str, Any] = {"schema_version": "3.0-exact-trim", "trims": {}}
@@ -610,7 +617,11 @@ def main() -> None:
     current_cache: dict[str, list[Candidate]] = {}
     history_cache: dict[tuple[str, int], list[Candidate]] = {}
     pending: list[tuple[dict[str, Any], Candidate, float, str]] = []
-    live_enabled = os.environ.get("AUTOHOME_LIVE_CONFIG", "1") not in ("0", "false", "False")
+    newly_verified: dict[str, dict[str, Any]] = {}
+    if live is None:
+        live_enabled = os.environ.get("AUTOHOME_LIVE_CONFIG", "1") not in ("0", "false", "False")
+    else:
+        live_enabled = bool(live)
 
     # Phase 1: exact-trim identity match against vault/main only.
     for idx, item in enumerate(listings, 1):
@@ -716,8 +727,13 @@ def main() -> None:
                 continue
 
             trim_id, trim = build_autohome_trim(candidate, score)
+            trim["trim_id"] = trim_id
             auto["trims"][trim_id] = trim
             existing_map[row["sku"]] = trim_id
+            newly_verified[str(row["sku"])] = {
+                "listing": {"sku": str(row["sku"]), "trim_id": trim_id},
+                "trim": trim,
+            }
             matched += 1
             source_counts[source_kind] = source_counts.get(source_kind, 0) + 1
             row.update(
@@ -754,33 +770,80 @@ def main() -> None:
         "exact-trim-only; AutoHome live config page preferred for parameters; "
         "vault/main CSV for identity only; no legacy/approximate fallback"
     )
-    base.dump(base.AUTO_SHARD, auto)
-    base.dump(base.INDEX, index)
-    base.dump(
-        base.REPORT,
-        {
-            "generated_at": time.strftime("%Y-%m-%dT%H:%M:%S%z"),
-            "source": str(src.relative_to(ROOT)),
-            "strategy": (
-                "existing V3 -> AutoHome main/vault exact-trim identity -> "
-                "live config page parameters -> unverified"
-            ),
-            "total_listings": len(listings),
-            "existing_or_skipped": skipped,
-            "newly_matched": matched,
-            "unmatched": failed,
-            "source_counts": source_counts,
-            "live_enrichment": live_stats,
-            "exact_match_threshold": MIN_MATCH,
-            "ambiguity_gap": MIN_GAP,
-            "rows": report_rows,
-        },
-    )
+    report = {
+        "generated_at": time.strftime("%Y-%m-%dT%H:%M:%S%z"),
+        "source": source_label,
+        "strategy": (
+            "existing V3 -> AutoHome main/vault exact-trim identity -> "
+            "live config page parameters -> unverified"
+        ),
+        "total_listings": len(listings),
+        "existing_or_skipped": skipped,
+        "newly_matched": matched,
+        "unmatched": failed,
+        "source_counts": source_counts,
+        "live_enrichment": live_stats,
+        "exact_match_threshold": MIN_MATCH,
+        "ambiguity_gap": MIN_GAP,
+        "rows": report_rows,
+    }
+    if persist:
+        base.dump(base.AUTO_SHARD, auto)
+        base.dump(base.INDEX, index)
+        if write_report:
+            base.dump(base.REPORT, report)
     print(
         f"AutoHome exact sync complete: total={len(listings)} existing={skipped} "
         f"matched={matched} unmatched={failed} main={source_counts['main']} "
         f"historical={source_counts['historical']} live_catalog={source_counts.get('live_catalog', 0)} "
-        f"live={source_counts['live_enriched']}"
+        f"live={source_counts['live_enriched']} persist={persist}"
+    )
+    return {
+        "verified": newly_verified,
+        "matched": matched,
+        "failed": failed,
+        "skipped": skipped,
+        "report": report,
+    }
+
+
+def commit_verified(verified_by_sku: dict[str, dict[str, Any]]) -> int:
+    """Merge already-built trims into the on-disk index. Does not reset it."""
+    if not verified_by_sku:
+        return 0
+    index = json.loads(base.INDEX.read_text(encoding="utf-8"))
+    auto: dict[str, Any] = {"schema_version": "3.0-exact-trim", "trims": {}}
+    if base.AUTO_SHARD.exists():
+        auto.update(json.loads(base.AUTO_SHARD.read_text(encoding="utf-8")))
+        auto.setdefault("trims", {})
+    mapping = {str(k): str(v) for k, v in (index.get("sku_to_trim") or {}).items()}
+    written = 0
+    for sku, record in verified_by_sku.items():
+        trim = dict((record or {}).get("trim") or {})
+        trim_id = str(trim.get("trim_id") or (record.get("listing") or {}).get("trim_id") or "")
+        if not trim_id:
+            continue
+        trim["trim_id"] = trim_id
+        auto["trims"][trim_id] = trim
+        mapping[str(sku)] = trim_id
+        written += 1
+    index["sku_to_trim"] = dict(sorted(mapping.items()))
+    index["generated_at"] = time.strftime("%Y-%m-%d")
+    base.dump(base.AUTO_SHARD, auto)
+    base.dump(base.INDEX, index)
+    return written
+
+
+def main() -> None:
+    src = next((p for p in base.SOURCE_CANDIDATES if p.exists()), None)
+    if src is None:
+        raise SystemExit("no filtered listing source")
+    listings = json.loads(src.read_text(encoding="utf-8"))
+    sync_listings(
+        listings,
+        persist=True,
+        write_report=True,
+        source_label=str(src.relative_to(ROOT)),
     )
 
 

@@ -150,9 +150,14 @@ def validate_new_only_policy() -> None:
     ranked = json.loads((ROOT / "data" / "listings-ranked.json").read_text(encoding="utf-8"))
     issues = json.loads((ROOT / "data" / "data-issues.json").read_text(encoding="utf-8"))
     filtered = json.loads((ROOT / "data" / "listings-filtered.json").read_text(encoding="utf-8"))
-    assert len(filtered) == len(ranked) + len(issues)
+    below_path = ROOT / "data" / "listings-below-display.json"
+    below = json.loads(below_path.read_text(encoding="utf-8")) if below_path.exists() else []
+    assert len(ranked) <= 100
+    assert all(x.get("display") is not False for x in ranked)
+    assert len(filtered) == len(ranked) + len(below) + len(issues)
     assert all(x.get("score_eligible") is True for x in ranked)
     assert all(x.get("score_eligible") is False for x in issues)
+    assert all(x.get("score_eligible") is not False for x in below)
     print(
         f"validated new-only config: mapped={len(mapping)} ranked={len(ranked)} "
         f"issues={len(issues)} filtered={len(filtered)}"

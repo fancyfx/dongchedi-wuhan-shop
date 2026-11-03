@@ -1,0 +1,162 @@
+{
+  "schema": "today-updates/v1",
+  "date": "fixture",
+  "generated_at": "2026-11-03T18:10:45+08:00",
+  "source": "fixture",
+  "has_snapshot": true,
+  "changelog_empty": false,
+  "snapshot_dir": null,
+  "note": "演示数据，不是今日真实入库。重点推荐只有新入库且全场排名 ≤ 10：第 1 名和第 8 名。第 11 名虽然新入库，但不在前 10。第 2 名只是价格更新，第 5 名只是信息更新，即使排进前 10 也不是重点推荐。",
+  "rules": {
+    "highlight": "change_type == added AND rank >= 1 AND rank <= 10",
+    "rank": "listings-ranked.json rank，全场 total_score 得分排名，1 最好",
+    "info_updated": [
+      "updated",
+      "updated_price"
+    ]
+  },
+  "summary": {
+    "dry_run": true,
+    "demo": true,
+    "catalog_written": false
+  },
+  "counts": {
+    "added": 3,
+    "updated": 1,
+    "updated_price": 1,
+    "info_updated": 2,
+    "highlights": 2,
+    "display_dropped": 1,
+    "rejected_hard_filter": 1,
+    "rejected_below_top100": 0,
+    "removed_hard_filter": 0,
+    "detail_failed": 0,
+    "not_admitted": 1,
+    "other": 0,
+    "total": 7
+  },
+  "source_files": {
+    "ranked": "dashboard/public/data/listings-ranked.json"
+  },
+  "highlights": [
+    {
+      "sku": "357301752",
+      "title": "哈弗H6 2021款 第三代 2.0T 自动两驱Max版",
+      "change_type": "added",
+      "old_price": null,
+      "new_price": 5.19,
+      "old_score": null,
+      "new_score": 65.6,
+      "rank": 1,
+      "reason": null,
+      "at": "2026-11-03T18:10:45+08:00",
+      "highlight": true
+    },
+    {
+      "sku": "357261882",
+      "title": "领克06 2020款 1.5T 耀Halo",
+      "change_type": "added",
+      "old_price": null,
+      "new_price": 4.79,
+      "old_score": null,
+      "new_score": 60.2,
+      "rank": 8,
+      "reason": null,
+      "at": "2026-11-03T18:10:45+08:00",
+      "highlight": true
+    }
+  ],
+  "items": [
+    {
+      "sku": "357301752",
+      "title": "哈弗H6 2021款 第三代 2.0T 自动两驱Max版",
+      "change_type": "added",
+      "old_price": null,
+      "new_price": 5.19,
+      "old_score": null,
+      "new_score": 65.6,
+      "rank": 1,
+      "reason": null,
+      "at": "2026-11-03T18:10:45+08:00",
+      "highlight": true
+    },
+    {
+      "sku": "357261882",
+      "title": "领克06 2020款 1.5T 耀Halo",
+      "change_type": "added",
+      "old_price": null,
+      "new_price": 4.79,
+      "old_score": null,
+      "new_score": 60.2,
+      "rank": 8,
+      "reason": null,
+      "at": "2026-11-03T18:10:45+08:00",
+      "highlight": true
+    },
+    {
+      "sku": "357168649",
+      "title": "长安UNI-T 2020款 1.5T 旗舰型",
+      "change_type": "added",
+      "old_price": null,
+      "new_price": 4.99,
+      "old_score": null,
+      "new_score": 59.3,
+      "rank": 11,
+      "reason": null,
+      "at": "2026-11-03T18:10:45+08:00",
+      "highlight": false
+    },
+    {
+      "sku": "357149730",
+      "title": "长安UNI-T 2023款 第二代 1.5T 旗舰型",
+      "change_type": "updated_price",
+      "old_price": 6.39,
+      "new_price": 5.99,
+      "old_score": 65.1,
+      "new_score": 65.1,
+      "rank": 2,
+      "reason": "fixture_price_change",
+      "at": "2026-11-03T18:10:45+08:00",
+      "highlight": false
+    },
+    {
+      "sku": "357355582",
+      "title": "长城大狗 2021款 1.5T 两驱 边牧-旺财版",
+      "change_type": "updated",
+      "old_price": 5.49,
+      "new_price": 5.49,
+      "old_score": 61.8,
+      "new_score": 61.8,
+      "rank": 5,
+      "reason": "fixture_info_change",
+      "at": "2026-11-03T18:10:45+08:00",
+      "highlight": false
+    },
+    {
+      "sku": "357097175",
+      "title": "荣威i5 2026款 1.5L CVT豪华版",
+      "change_type": "display_dropped",
+      "old_price": 5.59,
+      "new_price": 5.59,
+      "old_score": 44.2,
+      "new_score": 44.2,
+      "rank": null,
+      "reason": "outside_top100_display",
+      "at": "2026-11-03T18:10:45+08:00",
+      "highlight": false
+    },
+    {
+      "sku": "357261851",
+      "title": "星愿 2026款 310km 梦想版",
+      "change_type": "rejected_hard_filter",
+      "old_price": null,
+      "new_price": null,
+      "old_score": null,
+      "new_score": null,
+      "rank": null,
+      "reason": "missing_cash_price",
+      "at": "2026-11-03T18:10:45+08:00",
+      "highlight": false
+    }
+  ]
+}
