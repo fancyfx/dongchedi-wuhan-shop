@@ -78,7 +78,9 @@ def safe_vault_files(self, month: str):
     try:
         return _original_vault_files(self, month)
     except Exception as exc:
+        # Cache the miss. A broken month otherwise re-reads and re-raises on every listing.
         print(f"AutoHome vault {month} skipped: {type(exc).__name__}: {exc}")
+        self.vault_cache[month] = {}
         return {}
 
 

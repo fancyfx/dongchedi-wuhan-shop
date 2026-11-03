@@ -264,6 +264,326 @@ def _transmission_compatible(a: str | None, b: str | None) -> bool:
     return False
 
 
+# Live year-catalog fallback. These checks run only after the strict
+# title-score matcher has already failed, so existing exact hits stay put.
+_POWER_RE = re.compile(
+    r"\d+(?:\.\d+)?(?:tsi|tdi|tgdi|tci|thp|gdit|gdi|dvvt|tfsi|td|[tl])(?![a-z0-9])"
+    r"|\d{2}\s*tfsi"
+    r"|\d+(?:\.\d+)?x[elv](?![a-z0-9])",
+    re.I,
+)
+_NOISE_RE = re.compile(
+    r"20\d{2}款"
+    r"|\d+(?:\.\d+)?(?:tsi|tdi|tgdi|tci|thp|gdit|gdi|dvvt|tfsi|td|[tl])(?![a-z0-9])"
+    r"|\d{2}\s*tfsi"
+    r"|\d+(?:\.\d+)?(?=\s*x[elv])"
+    r"|\d{2,4}\s*km"
+    r"|国vi|国v|国六|国五"
+    r"|dct|dsg|cvt|at|mt"
+    r"|手自一体|双离合|自动|手动"
+    r"|全时四驱|四驱|两驱|前驱"
+    r"|[4-9]座"
+    r"|两厢|三厢|sportback|limousine"
+    r"|蓝鲸ne|蓝鲸"
+    r"|第[一二三四五1-5]代"
+    r"|改款三|改款二|改款"
+    r"|dmi|电池",
+    re.I,
+)
+_SUFFIX_PREFIXES = {"国潮版", "经典", "北京"}
+# Listing series names that are not the AutoHome catalog name. Only the
+# residual comparison uses these; the first-pass series id lookup stays as-is.
+_SERIES_RESIDUAL_ALIASES = {
+    "唐dm": ("唐新能源",),
+}
+
+
+def _norm_power_token(token: str) -> str:
+    t = re.sub(r"\s+", "", str(token or "").lower())
+    # 1.6XE / 1.6XV is Nissan's 1.6L grade code, not a different displacement.
+    m = re.fullmatch(r"(\d+(?:\.\d+)?)x[elv]", t)
+    if m:
+        return m.group(1) + "l"
+    if t.endswith(("tdi", "tgdi", "tci", "gdit")):
+        return t
+    if t.endswith("td"):
+        return t[:-1]
+    return t
+
+
+def power_signature(text: str) -> set[str]:
+    found = {_norm_power_token(raw) for raw in _POWER_RE.findall(str(text or ""))}
+    return {t for t in found if t}
+
+
+def emission_code(text: str) -> str | None:
+    s = str(text or "").upper().replace("国六", "国VI").replace("国五", "国V")
+    if "国VI" in s:
+        return "vi"
+    if re.search(r"国V(?!I)", s):
+        return "v"
+    return None
+
+
+def drive_code(text: str) -> str | None:
+    s = str(text or "")
+    if any(x in s for x in ("四驱", "4驱", "全时四驱")) or re.search(r"\b(?:awd|4wd)\b", s, re.I):
+        return "4"
+    if any(x in s for x in ("两驱", "前驱", "2驱")):
+        return "2"
+    return None
+
+
+def facelift_level(text: str) -> int:
+    s = str(text or "")
+    if "改款三" in s:
+        return 3
+    if "改款二" in s:
+        return 2
+    if "改款" in s:
+        return 1
+    return 0
+
+
+def generation_level(text: str) -> int:
+    m = re.search(r"第([一二三四五1-5])代", str(text or ""))
+    if not m:
+        return 0
+    return {"一": 1, "二": 2, "三": 3, "四": 4, "五": 5, "1": 1, "2": 2, "3": 3, "4": 4, "5": 5}[m.group(1)]
+
+
+def _soft_norm(text: str) -> str:
+    s = str(text or "").lower().replace("dm-i", "dmi").replace("dm i", "dmi")
+    for src, dst in {
+        "旗舰型": "旗舰版",
+        "尊贵型": "尊贵版",
+        "豪华型": "豪华版",
+        "精英型": "精英版",
+    }.items():
+        s = s.replace(src, dst)
+    # 捷达等用「悦享型」，懂车帝标题常写「悦享版」。只统一这个字，Pro/+ 仍保留。
+    s = s.replace("型", "版")
+    return re.sub(r"[^0-9a-z\u4e00-\u9fff+]+", "", s)
+
+
+def trim_residual(title: str, series: str) -> str:
+    s = re.sub(r"dm[\s-]*i", "dmi", str(title or ""), flags=re.I)
+    series_tokens = [series, series.replace(" ", "")]
+    if series.endswith(" DM"):
+        series_tokens.append(series[:-3].strip())
+    series_key = re.sub(r"[^0-9a-z\u4e00-\u9fff]+", "", str(series or "").lower())
+    series_tokens.extend(_SERIES_RESIDUAL_ALIASES.get(series_key, ()))
+    for token in sorted({t for t in series_tokens if t}, key=len, reverse=True):
+        s = s.replace(token, " ")
+    s = _NOISE_RE.sub(" ", s)
+    return _soft_norm(s)
+
+
+def trim_alignment(listing: str, candidate: str, series: str) -> str:
+    left = trim_residual(listing, series)
+    right = trim_residual(candidate, series)
+    if len(left) < 2:
+        return ""
+    if left == right:
+        return "exact"
+    if right.endswith(left):
+        prefix = right[: len(right) - len(left)]
+        if prefix in _SUFFIX_PREFIXES or re.fullmatch(r"[a-z0-9]+", prefix or ""):
+            return "suffix"
+    return ""
+
+
+def _trans_ok(left: str | None, right: str | None) -> bool:
+    if not left or not right:
+        return True
+    if left == right:
+        return True
+    # DSG is Volkswagen's name for a dual-clutch box; titles rewrite it as DCT/双离合.
+    if {left, right} <= {"dct", "dsg"}:
+        return True
+    if left == "auto" and right != "manual":
+        return True
+    if right == "auto" and left != "manual":
+        return True
+    return False
+
+
+def _candidate_text(candidate, *labels: str) -> str:
+    rows = getattr(candidate, "rows", None) or {}
+    for label in labels:
+        value = rows.get(label)
+        if value:
+            return str(value)
+    for key, value in rows.items():
+        if value and any(label in str(key) for label in labels):
+            return str(value)
+    return ""
+
+
+def _wheelbase_mm(candidate) -> int | None:
+    raw = _candidate_text(candidate, "轴距(mm)", "轴距")
+    m = re.search(r"\d{3,4}", raw)
+    if not m:
+        return None
+    value = int(m.group(0))
+    if 2000 <= value <= 4000:
+        return value
+    return None
+
+
+def _body_conflict(left: str, right: str) -> bool:
+    forms = ("两厢", "三厢", "sportback", "limousine")
+    a = {f for f in forms if f in left.lower()}
+    b = {f for f in forms if f in right.lower()}
+    return bool(a and b and a != b)
+
+
+def _blocks(listing: str, candidate, series: str) -> list[str]:
+    title = str(getattr(candidate, "title", "") or "")
+    blocks: list[str] = []
+    listed_power = power_signature(listing)
+    cand_power = power_signature(title) or power_signature(_candidate_text(candidate, "发动机"))
+    if listed_power and cand_power and listed_power != cand_power:
+        blocks.append("power")
+    gear = _candidate_text(candidate, "变速箱")
+    if not _trans_ok(_transmission(listing), _transmission(title) or _transmission(gear)):
+        blocks.append("trans")
+    left_em, right_em = emission_code(listing), emission_code(title)
+    if left_em and right_em and left_em != right_em:
+        blocks.append("emission")
+    drive_src = title + _candidate_text(candidate, "驱动方式")
+    left_drive, right_drive = drive_code(listing), drive_code(drive_src)
+    if left_drive and right_drive and left_drive != right_drive:
+        blocks.append("drive")
+    left_seats = set(re.findall(r"([4-9])座", listing))
+    right_seats = set(re.findall(r"([4-9])座", title))
+    if left_seats and right_seats and left_seats != right_seats:
+        blocks.append("seats")
+    if _body_conflict(listing, title):
+        blocks.append("body")
+    left_range = _range_tokens(listing)
+    right_range = _range_tokens(title)
+    if left_range and right_range and left_range != right_range:
+        blocks.append("range")
+    if facelift_level(listing) != facelift_level(title):
+        blocks.append("facelift")
+    cand_gen = generation_level(title)
+    if cand_gen and generation_level(listing) != cand_gen:
+        blocks.append("generation")
+    if not trim_alignment(listing, title, series):
+        blocks.append("trim")
+    return blocks
+
+
+def _alignment_basis(listing: str, candidate, listing_wb: int | None) -> str:
+    title = str(candidate.title)
+    tags = ["档位"]
+    if power_signature(listing) and (power_signature(title) or power_signature(_candidate_text(candidate, "发动机"))):
+        tags.append("动力")
+    if _transmission(listing) and (_transmission(title) or _transmission(_candidate_text(candidate, "变速箱"))):
+        tags.append("变速箱")
+    if emission_code(listing) and emission_code(title) == emission_code(listing):
+        tags.append("排放")
+    if drive_code(listing) and drive_code(title + _candidate_text(candidate, "驱动方式")) == drive_code(listing):
+        tags.append("驱动")
+    if _range_tokens(listing) and _range_tokens(title) == _range_tokens(listing):
+        tags.append("续航")
+    cand_wb = _wheelbase_mm(candidate)
+    if listing_wb and cand_wb and abs(cand_wb - int(listing_wb)) <= 15:
+        tags.append("轴距")
+    if "第二代" in listing and "国潮" in title:
+        tags.append("第二代=国潮版")
+    return "+".join(tags)
+
+
+def identity_choose(title: str, series: str, candidates, listing_wheelbase: int | None = None):
+    """Unique trim + power + gearbox (+ wheelbase / explicit title tokens).
+
+    Returns (candidate, reason, basis). A candidate is returned only when one
+    spec survives. Powertrain, gearbox and facelift conflicts never get forced
+    through. Listing wheelbase is a tie-break only; it does not override the title.
+    """
+    target_year = None
+    m = re.search(r"(20\d{2})款", str(title or ""))
+    if m:
+        target_year = int(m.group(1))
+    same_year = []
+    for cand in candidates:
+        cm = re.search(r"(20\d{2})款", str(getattr(cand, "title", "") or ""))
+        if target_year is None or (cm and int(cm.group(1)) == target_year):
+            same_year.append(cand)
+    if target_year is None:
+        return None, "listing_model_year_missing", ""
+    if not same_year:
+        return None, "model_year_not_found", ""
+
+    scored = []
+    for cand in same_year:
+        blocks = _blocks(title, cand, series)
+        hit = trim_alignment(title, str(cand.title), series)
+        scored.append((cand, blocks, hit))
+    ok = [item for item in scored if not item[1]]
+
+    def _fail() -> str:
+        aligned = [item for item in scored if item[2]]
+        if len(ok) > 1:
+            return "ambiguous_exact_trim_match"
+        if aligned and all(any(b in item[1] for b in ("power", "trans", "range")) for item in aligned):
+            return "critical_identity_mismatch"
+        if any(any(b in item[1] for b in ("facelift", "generation")) for item in aligned):
+            return "generation_conflict"
+        if any("trans" in item[1] or "power" in item[1] for item in aligned):
+            return "critical_identity_mismatch"
+        return "exact_trim_similarity_below_threshold"
+
+    if not ok:
+        return None, _fail(), ""
+
+    series_key = re.sub(r"[^0-9a-z\u4e00-\u9fff]+", "", str(series or "").lower())
+    if "哈弗h6" in series_key and "第二代" in title and "第三代" not in title:
+        # 2021 第二代同时有改款前都市版和国潮版，轴距都是 2680。
+        # 用户确认「第二代 + 都市版」挂国潮版，不挂改款前那一档。
+        guochao = [item for item in ok if "国潮" in str(item[0].title)]
+        if len(guochao) == 1:
+            ok = guochao
+
+    exact = [item for item in ok if item[2] == "exact"]
+    pool = exact or ok
+    if len(pool) > 1 and emission_code(title):
+        explicit = [item for item in pool if emission_code(item[0].title) == emission_code(title)]
+        if len(explicit) == 1:
+            pool = explicit
+    if len(pool) > 1 and drive_code(title):
+        explicit = [
+            item
+            for item in pool
+            if drive_code(item[0].title + _candidate_text(item[0], "驱动方式")) == drive_code(title)
+        ]
+        if len(explicit) == 1:
+            pool = explicit
+    if len(pool) > 1 and listing_wheelbase:
+        try:
+            want = int(listing_wheelbase)
+        except (TypeError, ValueError):
+            want = 0
+        if 2000 <= want <= 4000:
+            close, far = [], False
+            for item in pool:
+                wb = _wheelbase_mm(item[0])
+                if wb is None:
+                    continue
+                if abs(wb - want) <= 15:
+                    close.append(item)
+                elif abs(wb - want) >= 40:
+                    far = True
+            if len(close) == 1 and far:
+                pool = close
+    if len(pool) != 1:
+        return None, "ambiguous_exact_trim_match" if len(pool) > 1 else _fail(), ""
+    chosen = pool[0][0]
+    return chosen, "", _alignment_basis(title, chosen, listing_wheelbase)
+
+
 def critical_identity_compatible(target: str, candidate: str) -> bool:
     """Reject high textual-similarity matches with different mechanical identity."""
     target_power = _power_tokens(target)

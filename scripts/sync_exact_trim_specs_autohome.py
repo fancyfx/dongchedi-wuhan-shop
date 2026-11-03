@@ -20,6 +20,7 @@ import re
 import subprocess
 import tarfile
 import time
+import urllib.request
 import zlib
 from dataclasses import dataclass, replace
 from difflib import SequenceMatcher
@@ -34,6 +35,14 @@ AUTOHOME_VAULTS = Path(os.environ.get("AUTOHOME_VAULTS_REPO", ROOT / ".external"
 MIN_MATCH = 0.86
 MIN_GAP = 0.045
 MIN_FEATURES = 18
+PARAM_CACHE = ROOT / ".tmp" / "ah-param-cache"
+# 参配页年款目录用的 series id。模糊匹配会把「唐DM」收成汽油「唐」、
+# 「秦PLUS DM」对不上「秦PLUS」。只影响补匹配，不改第一轮标题分。
+LIVE_SERIES_ALIASES = {
+    "秦plusdm": 5964,
+    "秦plus": 5964,
+    "唐dm": 3430,
+}
 
 
 @dataclass(frozen=True)
@@ -339,6 +348,125 @@ class AutoHomeSource:
                 return candidates
         return []
 
+    def live_series_id(self, series: str) -> int | None:
+        key = norm(series)
+        if key in LIVE_SERIES_ALIASES:
+            return LIVE_SERIES_ALIASES[key]
+        return self._series_id(series)
+
+    def live_year_candidates(self, series: str, model_year: int) -> list[Candidate]:
+        """Same-year specs from the autohome.com.cn parameter catalog.
+
+        Vault snapshots only keep the years on sale that month, so a 2016
+        trim is often absent. The catalog is the same source as the config
+        page; full parameter rows still come from the live config fetch.
+        """
+        sid = self.live_series_id(series)
+        if not sid or not model_year:
+            return []
+        payload = _load_param_year(sid, model_year)
+        result = payload.get("result") or {}
+        title_ids: dict[str, int] = {}
+        for group in result.get("titlelist") or []:
+            for item in group.get("items") or []:
+                name = str(item.get("itemname") or "")
+                if name and item.get("titleid") is not None:
+                    title_ids[name] = int(item["titleid"])
+
+        def cell(spec: dict, *names: str) -> str:
+            wanted = {title_ids[name] for name in names if name in title_ids}
+            if not wanted:
+                return ""
+            for row in spec.get("paramconflist") or []:
+                if int(row.get("titleid") or 0) not in wanted:
+                    continue
+                if row.get("itemname"):
+                    return str(row["itemname"])
+                parts = [str(sub.get("name")) for sub in (row.get("sublist") or []) if sub.get("name")]
+                return " ".join(parts)
+            return ""
+
+        out: list[Candidate] = []
+        for spec in result.get("datalist") or []:
+            try:
+                spec_id = int(spec.get("specid"))
+            except (TypeError, ValueError):
+                continue
+            title = cell(spec, "车型名称") or str(spec.get("specname") or "").strip()
+            if not title:
+                continue
+            if "款" not in title:
+                specname = str(spec.get("specname") or "").strip()
+                title = f"{series} {specname}".strip()
+            rows = {
+                "车型名称": title,
+                "发动机": cell(spec, "发动机"),
+                "变速箱": cell(spec, "变速箱"),
+                "轴距(mm)": cell(spec, "轴距(mm)", "轴距"),
+                "驱动方式": cell(spec, "驱动方式"),
+                "排量(mL)": cell(spec, "排量(mL)"),
+            }
+            rows = {k: v for k, v in rows.items() if v}
+            out.append(
+                Candidate(
+                    spec_id,
+                    title,
+                    rows,
+                    f"autohome:param:{sid}:{model_year}",
+                    f"param:{sid}:{model_year}",
+                    sid,
+                )
+            )
+        return out
+
+
+def _load_param_year(series_id: int, model_year: int) -> dict[str, Any]:
+    PARAM_CACHE.mkdir(parents=True, exist_ok=True)
+    path = PARAM_CACHE / f"{series_id}-{model_year}.json"
+    if path.exists() and path.stat().st_size > 80:
+        try:
+            return json.loads(path.read_text(encoding="utf-8"))
+        except Exception:
+            pass
+    url = (
+        "https://car-web-api.autohome.com.cn/car/param/getParamConf"
+        f"?mode=1&site=1&seriesid={series_id}&year={model_year}"
+    )
+    req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
+    with urllib.request.urlopen(req, timeout=40) as resp:
+        raw = resp.read()
+    path.write_bytes(raw)
+    time.sleep(0.12)
+    return json.loads(raw)
+
+
+def _dedupe_candidates(candidates: list[Candidate]) -> list[Candidate]:
+    best: dict[int, Candidate] = {}
+    for cand in candidates:
+        old = best.get(cand.spec_id)
+        if old is None or len(cand.rows) > len(old.rows):
+            best[cand.spec_id] = cand
+    return list(best.values())
+
+
+def _listing_wheelbase(item: dict[str, Any]) -> int | None:
+    specs = item.get("specs") or item.get("detailed_config") or {}
+    try:
+        value = int(specs.get("wheelbase_mm") or 0)
+    except (TypeError, ValueError):
+        return None
+    if 2000 <= value <= 4000:
+        return value
+    return None
+
+
+def _candidate_source_kind(chosen: Candidate, main_pool: list[Candidate], hist_pool: list[Candidate]) -> str:
+    if any(c.spec_id == chosen.spec_id and c.snapshot == "main" for c in main_pool):
+        return "main"
+    if any(c.spec_id == chosen.spec_id and not str(c.snapshot).startswith("param") for c in hist_pool):
+        return "historical"
+    return "live_catalog"
+
 
 def choose_exact(title: str, series: str, candidates: list[Candidate]) -> tuple[Candidate | None, float, str]:
     target_year = year_of(title)
@@ -478,7 +606,7 @@ def main() -> None:
     source = AutoHomeSource(AUTOHOME_MAIN, AUTOHOME_VAULTS)
     report_rows: list[dict[str, Any]] = []
     matched = skipped = failed = 0
-    source_counts = {"main": 0, "historical": 0, "live_enriched": 0}
+    source_counts = {"main": 0, "historical": 0, "live_catalog": 0, "live_enriched": 0}
     current_cache: dict[str, list[Candidate]] = {}
     history_cache: dict[tuple[str, int], list[Candidate]] = {}
     pending: list[tuple[dict[str, Any], Candidate, float, str]] = []
@@ -517,6 +645,29 @@ def main() -> None:
                     source_kind = "historical"
                 elif reason in ("model_year_not_found", "exact_trim_similarity_below_threshold"):
                     reason = hr or reason
+
+            if candidate is None and model_year:
+                import autohome_exact_rules as rules
+
+                listing_wb = _listing_wheelbase(item)
+                try:
+                    live = source.live_year_candidates(series, model_year)
+                except Exception as exc:
+                    live = []
+                    print(f"param catalog {series} {model_year} skipped: {type(exc).__name__}: {exc}")
+                pool = _dedupe_candidates(
+                    [c for c in current_cache[series] if year_of(c.title) == model_year]
+                    + [c for c in history_cache.get((series, model_year), []) if year_of(c.title) == model_year]
+                    + live
+                )
+                fc, fr, basis = rules.identity_choose(title, series, pool, listing_wb)
+                if fc is not None:
+                    candidate, score, reason = fc, title_score(title, fc.title, series), ""
+                    source_kind = _candidate_source_kind(fc, current_cache[series], history_cache.get((series, model_year), []))
+                    row["match_basis"] = basis
+                    row["identity_link"] = True
+                elif fr:
+                    reason = fr
 
             if candidate is None:
                 row.update({"reason": reason or "exact_trim_match_not_found", "trim_match": round(score, 3)})
@@ -628,7 +779,8 @@ def main() -> None:
     print(
         f"AutoHome exact sync complete: total={len(listings)} existing={skipped} "
         f"matched={matched} unmatched={failed} main={source_counts['main']} "
-        f"historical={source_counts['historical']} live={source_counts['live_enriched']}"
+        f"historical={source_counts['historical']} live_catalog={source_counts.get('live_catalog', 0)} "
+        f"live={source_counts['live_enriched']}"
     )
 
 
