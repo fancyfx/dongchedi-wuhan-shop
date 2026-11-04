@@ -1,13 +1,13 @@
 {
   "schema_version": "autohome-live-config-tree-1",
   "source": "car.autohome.com.cn/config/spec",
-  "generated_at": "2026-11-03T14:44:45+08:00",
+  "generated_at": "2026-11-04T11:54:31+08:00",
   "legend": {
     "standard": "●",
     "optional": "○",
     "absent": "-"
   },
-  "spec_count": 130,
+  "spec_count": 143,
   "specs": {
     "21170": {
       "title": "雪铁龙C3-XR 2015款 1.6L 自动先锋型",
@@ -51,12 +51,26 @@
       "item_count": 160,
       "file": "26346.json"
     },
+    "26911": {
+      "title": "智跑 2016款 2.0L 自动两驱版DLX",
+      "url": "https://car.autohome.com.cn/config/spec/26911.html",
+      "section_count": 21,
+      "item_count": 157,
+      "file": "26911.json"
+    },
     "26941": {
       "title": "荣威RX5 2016款 20T 两驱自动互联网智享版",
       "url": "https://car.autohome.com.cn/config/spec/26941.html",
       "section_count": 22,
       "item_count": 165,
       "file": "26941.json"
+    },
+    "27757": {
+      "title": "瑞风S3 2017款 1.6L CVT豪华型",
+      "url": "https://car.autohome.com.cn/config/spec/27757.html",
+      "section_count": 22,
+      "item_count": 162,
+      "file": "27757.json"
     },
     "27775": {
       "title": "速腾 2017款 230TSI 自动舒适型",
@@ -121,6 +135,13 @@
       "item_count": 169,
       "file": "30123.json"
     },
+    "30531": {
+      "title": "逍客 2017款 2.0L CVT智享版 国V",
+      "url": "https://car.autohome.com.cn/config/spec/30531.html",
+      "section_count": 21,
+      "item_count": 161,
+      "file": "30531.json"
+    },
     "30532": {
       "title": "逍客 2017款 2.0L CVT豪华版 国V",
       "url": "https://car.autohome.com.cn/config/spec/30532.html",
@@ -169,6 +190,13 @@
       "section_count": 21,
       "item_count": 160,
       "file": "32189.json"
+    },
+    "32219": {
+      "title": "威朗 2018款 三厢 15S 自动领先型",
+      "url": "https://car.autohome.com.cn/config/spec/32219.html",
+      "section_count": 21,
+      "item_count": 160,
+      "file": "32219.json"
     },
     "32481": {
       "title": "C-TREK蔚领 2018款 1.5L 自动舒适型",
@@ -240,6 +268,13 @@
       "item_count": 161,
       "file": "34766.json"
     },
+    "34944": {
+      "title": "smart forfour 2018款 0.9T 66千瓦先锋版",
+      "url": "https://car.autohome.com.cn/config/spec/34944.html",
+      "section_count": 21,
+      "item_count": 157,
+      "file": "34944.json"
+    },
     "35062": {
       "title": "唐新能源 2018款 DM 2.0T 全时四驱智联创享型 7座 国V",
       "url": "https://car.autohome.com.cn/config/spec/35062.html",
@@ -268,6 +303,13 @@
       "item_count": 154,
       "file": "36262.json"
     },
+    "36310": {
+      "title": "宝马X1 2019款 sDrive18Li 尊享型",
+      "url": "https://car.autohome.com.cn/config/spec/36310.html",
+      "section_count": 22,
+      "item_count": 172,
+      "file": "36310.json"
+    },
     "36623": {
       "title": "奥迪A3 2019款 Sportback 35 TFSI 时尚型 国V",
       "url": "https://car.autohome.com.cn/config/spec/36623.html",
@@ -281,6 +323,13 @@
       "section_count": 22,
       "item_count": 166,
       "file": "37272.json"
+    },
+    "37985": {
+      "title": "君威 2019款 20T 精英型 国VI",
+      "url": "https://car.autohome.com.cn/config/spec/37985.html",
+      "section_count": 21,
+      "item_count": 166,
+      "file": "37985.json"
     },
     "38006": {
       "title": "朗逸 2019款 1.5L 自动风尚版 国VI",
@@ -302,6 +351,13 @@
       "section_count": 21,
       "item_count": 157,
       "file": "38546.json"
+    },
+    "38572": {
+      "title": "宝来 2019款 宝来·传奇 1.5L 自动时尚型 国V",
+      "url": "https://car.autohome.com.cn/config/spec/38572.html",
+      "section_count": 21,
+      "item_count": 165,
+      "file": "38572.json"
     },
     "38845": {
       "title": "领克03 2019款 2.0TD 自动劲Pro版",
@@ -330,6 +386,13 @@
       "section_count": 21,
       "item_count": 162,
       "file": "39642.json"
+    },
+    "40162": {
+      "title": "艾瑞泽5 2019款 PRO 1.5L 手动青春版 国VI",
+      "url": "https://car.autohome.com.cn/config/spec/40162.html",
+      "section_count": 21,
+      "item_count": 160,
+      "file": "40162.json"
     },
     "41024": {
       "title": "博越 2020款 1.5TD 自动智联PRO",
@@ -548,6 +611,13 @@
       "item_count": 163,
       "file": "48457.json"
     },
+    "48460": {
+      "title": "影豹 2021款 270T DCT J16版",
+      "url": "https://car.autohome.com.cn/config/spec/48460.html",
+      "section_count": 22,
+      "item_count": 184,
+      "file": "48460.json"
+    },
     "48880": {
       "title": "途铠 2021款 1.5L 自动舒适版",
       "url": "https://car.autohome.com.cn/config/spec/48880.html",
@@ -639,6 +709,13 @@
       "item_count": 161,
       "file": "52053.json"
     },
+    "52941": {
+      "title": "哈弗H6S 2022款 2.0T 两驱智跑版",
+      "url": "https://car.autohome.com.cn/config/spec/52941.html",
+      "section_count": 24,
+      "item_count": 213,
+      "file": "52941.json"
+    },
     "53140": {
       "title": "远景X6 2021款 PRO 1.4T 自动尊贵型",
       "url": "https://car.autohome.com.cn/config/spec/53140.html",
@@ -659,6 +736,13 @@
       "section_count": 21,
       "item_count": 166,
       "file": "53770.json"
+    },
+    "53990": {
+      "title": "朗逸 2022款 280TSI DSG舒适版",
+      "url": "https://car.autohome.com.cn/config/spec/53990.html",
+      "section_count": 22,
+      "item_count": 162,
+      "file": "53990.json"
     },
     "54037": {
       "title": "迈锐宝XL 2022款 535T 自动锐动版",
@@ -877,6 +961,13 @@
       "item_count": 204,
       "file": "69070.json"
     },
+    "69719": {
+      "title": "纳米01 2024款 焕新版 330 Plus智+",
+      "url": "https://car.autohome.com.cn/config/spec/69719.html",
+      "section_count": 22,
+      "item_count": 181,
+      "file": "69719.json"
+    },
     "71504": {
       "title": "秦PLUS 2025款 DM-i 智驾版 55KM领先型",
       "url": "https://car.autohome.com.cn/config/spec/71504.html",
@@ -926,9 +1017,11 @@
     "357014230": 60082,
     "357149717": 31106,
     "357355582": 49336,
+    "357422342": 52941,
     "357107727": 46124,
     "357232005": 34751,
     "357261882": 43240,
+    "357420143": 48460,
     "357211013": 31105,
     "356998318": 41568,
     "357168649": 43340,
@@ -937,6 +1030,7 @@
     "356933838": 33980,
     "357156086": 58109,
     "356994816": 58109,
+    "357014273": 69719,
     "357250766": 62090,
     "357158863": 26941,
     "357307243": 41157,
@@ -952,8 +1046,10 @@
     "356872119": 57452,
     "357127553": 38845,
     "357211009": 47888,
+    "357430898": 51393,
     "357275248": 31446,
     "357246142": 39642,
+    "357426093": 71504,
     "357211014": 66743,
     "357088396": 33158,
     "357350550": 25684,
@@ -968,11 +1064,13 @@
     "357018303": 48457,
     "357252968": 48021,
     "357247792": 47293,
+    "357422353": 32219,
     "357002835": 64038,
     "356774603": 43498,
     "357184721": 50365,
     "357143231": 47342,
     "357250770": 62222,
+    "357443738": 47342,
     "357205109": 57451,
     "357168539": 66519,
     "356773034": 61235,
@@ -993,6 +1091,7 @@
     "357250769": 52053,
     "357100614": 38920,
     "356856951": 46527,
+    "357410302": 26911,
     "357192192": 36081,
     "357151407": 53770,
     "357172826": 35278,
@@ -1000,6 +1099,7 @@
     "357001086": 28440,
     "357149732": 46100,
     "357142040": 41219,
+    "357438116": 37985,
     "357166246": 29051,
     "357275132": 47877,
     "357295564": 29830,
@@ -1051,9 +1151,9 @@
     "356796725": 27775,
     "356881737": 25904,
     "357296089": 36623,
+    "356796728": 66911,
     "356595514": 61783,
     "357228868": 46385,
-    "356796728": 66911,
     "357171771": 54631,
     "356651013": 48055,
     "357211011": 67024,

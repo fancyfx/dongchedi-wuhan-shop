@@ -14,7 +14,11 @@
     "max_bev_range_km": 300,
     "exclude_short_range_bev_desc": "排除续航≤300km 的纯电，以及无法解析续航的微型/城市代步纯电（宏光MINIEV/Lumin/熊猫/之光EV/Air ev 等）；插混/增程与续航>300 纯电保留",
     "require_zhiying": true,
-    "require_zhiying_desc": "角标须含「直营」；非直营不入库、不进短名单与看板"
+    "require_zhiying_desc": "直营角标，或列表 is_self_trade_car / source_type_name 以「自营」开头；非自营且非直营不入库。标题里的「直营」营销字样不算。",
+    "shop_id": "118608",
+    "price_max_wan": 6.0,
+    "mileage_max_wan": 10.0,
+    "age_max_years": 10
   },
   "price_filter": "<=6万",
   "mileage_filter": "<=10万公里",
@@ -34,10 +38,10 @@
   "viewport": "390x844",
   "user_agent": "WeChat MicroMessenger iPhone (API + attempted page emulation; CDP UA override blocked)",
   "sort_preference": "v2_fixed_anchor_total_score_exact_trim_only",
-  "notes": "算法版本 v2.2.0。仅 exact-trim 且配置覆盖率>=60%的车辆参与评分；评分车辆 127，数据异常/待补全 13。缺详细配置、空间、价格、里程、车龄或能耗任一关键数据时不再给中性分，统一进入数据异常 Tab。",
+  "notes": "算法版本 v2.2.0。仅 exact-trim 且配置覆盖率>=60%的车辆参与评分；评分车辆 136，看板展示前 100 名，低于展示线 36，数据异常/待补全 13。缺详细配置、空间、价格、里程、车龄或能耗任一关键数据时不再给中性分，统一进入数据异常 Tab。",
   "sort_method": "ranking_v2_fixed_anchors_with_hard_data_gate",
-  "ranked_at": "2026-11-03T14:44:44+08:00",
-  "ranked_count": 127,
+  "ranked_at": "2026-11-04T11:54:30+08:00",
+  "ranked_count": 100,
   "sort_weights": {
     "price": 0.15,
     "config": 0.3,
@@ -154,10 +158,10 @@
   "bev_filter": "排除续航≤300km 的纯电，以及无法解析续航的微型/城市代步纯电（宏光MINIEV/Lumin/熊猫/之光EV/Air ev 等）；插混/增程与续航>300 纯电保留",
   "exclude_short_range_bev": true,
   "max_bev_range_km": 300,
-  "filtered_count": 140,
+  "filtered_count": 149,
   "excluded_short_range_bev_count": 0,
   "excluded_short_range_bev": [],
-  "filter_pipeline": "shop_id=118608 → hard filters → exact-trim/data-quality gate; source=140 filtered=140 ranked=127 data_issues=13",
+  "filter_pipeline": "shop_id=118608 → hard filters → exact-trim/data-quality gate → top 100 display; source=149 filtered=149 scored=136 display=100 below=36 data_issues=13",
   "config_scoring": {
     "method": "exact_trim_full_parameters",
     "approximate_fallback": false,
@@ -181,7 +185,7 @@
   "energy_scenario": "no_home_charging",
   "finance_reserve_wan": 0.5,
   "verified_specs_file": "data/vehicle-specs-verified.json",
-  "verified_sku_count": 137,
+  "verified_sku_count": 146,
   "cash_price_source": "m.dcdapp.com/motor/ecom/sophon/guide/card/detail → sku_price.price (全款展示价)",
   "cash_price_note": "列表 product_price 常为分期券后价；看板与排序一律用详情 sku_price 现金价。原65辆分期+3辆券后已回写；现金价>6万的6辆已排除。",
   "excluded_over_budget_cash_count": 6,
@@ -198,5 +202,11 @@
   "configuration_source_policy": "AutoHome live config pages preferred for parameters; vault/main CSV for exact-trim identity; legacy/approximate forbidden",
   "configuration_refresh_mode": "local_only",
   "configuration_refresh_command": "python3 scripts/local_refresh.py",
-  "legacy_configuration_compatible": false
+  "legacy_configuration_compatible": false,
+  "library_scored_count": 136,
+  "below_display_count": 36,
+  "display_limit": 100,
+  "display_score_floor": 45.2,
+  "ingest_score_threshold": 44.2,
+  "ingest_at": "2026-11-04T11:42:40+08:00"
 }
