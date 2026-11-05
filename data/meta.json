@@ -40,7 +40,7 @@
   "sort_preference": "v2_fixed_anchor_total_score_exact_trim_only",
   "notes": "算法版本 v2.2.0。仅 exact-trim 且配置覆盖率>=60%的车辆参与评分；评分车辆 136，看板展示前 100 名，低于展示线 36，数据异常/待补全 13。缺详细配置、空间、价格、里程、车龄或能耗任一关键数据时不再给中性分，统一进入数据异常 Tab。",
   "sort_method": "ranking_v2_fixed_anchors_with_hard_data_gate",
-  "ranked_at": "2026-11-04T11:54:30+08:00",
+  "ranked_at": "2026-11-05T09:43:32+08:00",
   "ranked_count": 100,
   "sort_weights": {
     "price": 0.15,
@@ -207,6 +207,6 @@
   "below_display_count": 36,
   "display_limit": 100,
   "display_score_floor": 45.2,
-  "ingest_score_threshold": 44.2,
-  "ingest_at": "2026-11-04T11:42:40+08:00"
+  "ingest_score_threshold": 45.2,
+  "ingest_at": "2026-11-05T09:34:19+08:00"
 }
