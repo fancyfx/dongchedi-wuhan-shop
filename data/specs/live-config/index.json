@@ -1,13 +1,13 @@
 {
   "schema_version": "autohome-live-config-tree-1",
   "source": "car.autohome.com.cn/config/spec",
-  "generated_at": "2026-11-05T09:43:32+08:00",
+  "generated_at": "2026-11-06T09:47:15+08:00",
   "legend": {
     "standard": "●",
     "optional": "○",
     "absent": "-"
   },
-  "spec_count": 143,
+  "spec_count": 146,
   "specs": {
     "21170": {
       "title": "雪铁龙C3-XR 2015款 1.6L 自动先锋型",
@@ -288,6 +288,13 @@
       "section_count": 21,
       "item_count": 168,
       "file": "35278.json"
+    },
+    "35476": {
+      "title": "奇骏 2019款 2.0L CVT舒适版 2WD",
+      "url": "https://car.autohome.com.cn/config/spec/35476.html",
+      "section_count": 22,
+      "item_count": 165,
+      "file": "35476.json"
     },
     "36081": {
       "title": "轩逸 2019款 1.6XV CVT智联尊享版 国VI",
@@ -723,6 +730,13 @@
       "item_count": 163,
       "file": "53140.json"
     },
+    "53187": {
+      "title": "长安欧尚X5 2021款 1.6L CVT尊享型",
+      "url": "https://car.autohome.com.cn/config/spec/53187.html",
+      "section_count": 21,
+      "item_count": 179,
+      "file": "53187.json"
+    },
     "53316": {
       "title": "轩逸 2022款 经典 1.6XL CVT豪华版",
       "url": "https://car.autohome.com.cn/config/spec/53316.html",
@@ -947,6 +961,13 @@
       "item_count": 178,
       "file": "67024.json"
     },
+    "67683": {
+      "title": "长安启源A05经典 2024款 真香版 70 超越型",
+      "url": "https://car.autohome.com.cn/config/spec/67683.html",
+      "section_count": 23,
+      "item_count": 216,
+      "file": "67683.json"
+    },
     "68428": {
       "title": "帝豪 2025款 第4代 1.5L CVT龙腾版",
       "url": "https://car.autohome.com.cn/config/spec/68428.html",
@@ -1034,6 +1055,7 @@
     "357250766": 62090,
     "357158863": 26941,
     "357307243": 41157,
+    "357452723": 67683,
     "356579334": 38163,
     "356630207": 51178,
     "357172812": 46863,
@@ -1095,6 +1117,7 @@
     "357192192": 36081,
     "357151407": 53770,
     "357172826": 35278,
+    "357458430": 53187,
     "357149711": 53140,
     "357001086": 28440,
     "357149732": 46100,

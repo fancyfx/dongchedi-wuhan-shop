@@ -18047,6 +18047,271 @@
         }
       ],
       "trim_id": "trim_ah_fc2ee9cfd8f5"
+    },
+    "trim_ah_c1f3d3d3fa70": {
+      "canonical_title": "长安欧尚X5 2021款 1.6L CVT尊享型",
+      "msrp_wan": 8.69,
+      "core_specs": {
+        "powertrain": "ice",
+        "body_type": "紧凑型SUV",
+        "seats": null,
+        "engine": "●",
+        "transmission": "无级变速箱(CVT)",
+        "length_mm": 4490,
+        "width_mm": 1860,
+        "height_mm": 1580,
+        "wheelbase_mm": 2710,
+        "fuel_grade": "92",
+        "official_fuel_l_100km": 6.3,
+        "official_standard": "NEDC",
+        "low_soc_fuel_l_100km": null,
+        "real_world_fuel_l_100km": null,
+        "real_world_sample_n": null,
+        "ev_range_km": null,
+        "ev_range_standard": null,
+        "electric_kwh_100km": null,
+        "ranking_energy": {
+          "type": "official_nedc_with_uncertainty",
+          "value": 6.3,
+          "unit": "L/100km",
+          "fallback_multiplier_recommended": 1.2
+        }
+      },
+      "features": {
+        "passive_safety": {
+          "front_airbags": true,
+          "front_side_airbags": true,
+          "curtain_airbags": false,
+          "tpms_display": true
+        },
+        "active_safety": {
+          "esp": true,
+          "aeb": false,
+          "fcw": false,
+          "ldw": false,
+          "lka": false,
+          "lane_centering": null,
+          "bsd": false,
+          "dow": null,
+          "rear_collision_warning": null,
+          "traffic_sign_recognition": false,
+          "fatigue_warning": true
+        },
+        "parking_adas": {
+          "front_parking_radar": false,
+          "rear_parking_radar": true,
+          "reverse_camera": null,
+          "surround_360": null,
+          "transparent_chassis_540": null,
+          "cruise": "fixed",
+          "adas_level": null,
+          "auto_park": false,
+          "remote_park": null
+        },
+        "comfort": {
+          "sunroof": "single_openable",
+          "power_tailgate": false,
+          "hands_free_tailgate": false,
+          "keyless_entry": true,
+          "keyless_start": true,
+          "remote_start": false,
+          "hud": false,
+          "wireless_phone_charging": false,
+          "driver_power_seat": false,
+          "passenger_power_seat": false,
+          "front_seat_heating": false,
+          "front_seat_ventilation": false,
+          "rear_air_vents": false,
+          "climate_control": "automatic",
+          "leather_seats": false
+        },
+        "infotainment": {
+          "center_screen_inches": 10.25,
+          "instrument_screen_inches": 7.0,
+          "carplay": null,
+          "carlife": null,
+          "connected_car": true,
+          "ota": true,
+          "speaker_count": 6,
+          "branded_audio": "-",
+          "voice_control": true,
+          "full_lcd_cluster": false,
+          "chip_8155": null,
+          "phone_link": true
+        },
+        "lighting": {
+          "headlights": "LED",
+          "auto_headlights": true,
+          "adaptive_high_beam": false
+        },
+        "wheels": {
+          "front_tire": "-",
+          "rear_tire": "-"
+        },
+        "optional_or_uncertain_features": []
+      },
+      "data_quality": {
+        "core_confidence": 0.99,
+        "feature_confidence": "high",
+        "verified_non_null_feature_leaf_count": 41,
+        "scoring_rule": "Only exact-trim standard features may score. null/optional features score 0.",
+        "known_issues": [],
+        "identity_source": "autohome_exact_trim",
+        "series_match": 1.0,
+        "trim_match": 1.0,
+        "source_snapshot": "live"
+      },
+      "sources": [
+        {
+          "url": "https://car.autohome.com.cn/config/spec/53187.html",
+          "source_type": "autohome_live_config",
+          "authority_tier": 1,
+          "series_id": 5748,
+          "spec_id": 53187,
+          "parameter_source": "live_page"
+        },
+        {
+          "url": "https://github.com/swoiow/autohome",
+          "source_type": "autohome_parameter_dataset",
+          "authority_tier": 3,
+          "snapshot": "identity_match_only",
+          "source_path": "live:config/spec/53187.html",
+          "note": "vault/main used for exact-trim identity; parameters from live page"
+        }
+      ],
+      "trim_id": "trim_ah_c1f3d3d3fa70"
+    },
+    "trim_ah_a9688c3197dc": {
+      "canonical_title": "长安启源A05 2024款 真香版 70 超越型",
+      "msrp_wan": 8.49,
+      "core_specs": {
+        "powertrain": "phev",
+        "body_type": "紧凑型车",
+        "seats": null,
+        "engine": "●",
+        "transmission": "电子无级变速箱(E-CVT)",
+        "length_mm": 4785,
+        "width_mm": 1840,
+        "height_mm": 1460,
+        "wheelbase_mm": 2765,
+        "fuel_grade": "92",
+        "official_fuel_l_100km": 1.98,
+        "official_standard": "WLTC",
+        "low_soc_fuel_l_100km": 4.58,
+        "real_world_fuel_l_100km": null,
+        "real_world_sample_n": null,
+        "ev_range_km": 70.0,
+        "ev_range_standard": "CLTC",
+        "electric_kwh_100km": 10.8,
+        "ranking_energy": {
+          "type": "low_soc_fuel",
+          "value": 4.58,
+          "unit": "L/100km"
+        }
+      },
+      "features": {
+        "passive_safety": {
+          "front_airbags": true,
+          "front_side_airbags": true,
+          "curtain_airbags": true,
+          "tpms_display": true
+        },
+        "active_safety": {
+          "esp": true,
+          "aeb": false,
+          "fcw": false,
+          "ldw": true,
+          "lka": false,
+          "lane_centering": null,
+          "bsd": false,
+          "dow": false,
+          "rear_collision_warning": false,
+          "traffic_sign_recognition": false,
+          "fatigue_warning": false
+        },
+        "parking_adas": {
+          "front_parking_radar": false,
+          "rear_parking_radar": true,
+          "reverse_camera": null,
+          "surround_360": true,
+          "transparent_chassis_540": true,
+          "cruise": "fixed",
+          "adas_level": "-",
+          "auto_park": false,
+          "remote_park": null
+        },
+        "comfort": {
+          "sunroof": "single_openable",
+          "power_tailgate": false,
+          "hands_free_tailgate": null,
+          "keyless_entry": true,
+          "keyless_start": true,
+          "remote_start": false,
+          "hud": null,
+          "wireless_phone_charging": false,
+          "driver_power_seat": true,
+          "passenger_power_seat": true,
+          "front_seat_heating": false,
+          "front_seat_ventilation": false,
+          "rear_air_vents": true,
+          "climate_control": "automatic",
+          "leather_seats": false
+        },
+        "infotainment": {
+          "center_screen_inches": 13.2,
+          "instrument_screen_inches": 10.25,
+          "carplay": null,
+          "carlife": null,
+          "connected_car": true,
+          "ota": true,
+          "speaker_count": 6,
+          "branded_audio": "-",
+          "voice_control": true,
+          "full_lcd_cluster": false,
+          "chip_8155": null,
+          "phone_link": true
+        },
+        "lighting": {
+          "headlights": "LED",
+          "auto_headlights": true,
+          "adaptive_high_beam": false
+        },
+        "wheels": {
+          "front_tire": "-",
+          "rear_tire": "-"
+        },
+        "optional_or_uncertain_features": []
+      },
+      "data_quality": {
+        "core_confidence": 0.969,
+        "feature_confidence": "high",
+        "verified_non_null_feature_leaf_count": 44,
+        "scoring_rule": "Only exact-trim standard features may score. null/optional features score 0.",
+        "known_issues": [],
+        "identity_source": "autohome_exact_trim",
+        "series_match": 1.0,
+        "trim_match": 0.952,
+        "source_snapshot": "live"
+      },
+      "sources": [
+        {
+          "url": "https://car.autohome.com.cn/config/spec/67683.html",
+          "source_type": "autohome_live_config",
+          "authority_tier": 1,
+          "series_id": 7314,
+          "spec_id": 67683,
+          "parameter_source": "live_page"
+        },
+        {
+          "url": "https://github.com/swoiow/autohome",
+          "source_type": "autohome_parameter_dataset",
+          "authority_tier": 3,
+          "snapshot": "identity_match_only",
+          "source_path": "live:config/spec/67683.html",
+          "note": "vault/main used for exact-trim identity; parameters from live page"
+        }
+      ],
+      "trim_id": "trim_ah_a9688c3197dc"
     }
   },
   "configuration_policy": "new-full-config-only; AutoHome exact-trim parameters only; legacy shards/approximate config forbidden"

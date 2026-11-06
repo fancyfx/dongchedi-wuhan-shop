@@ -121,7 +121,7 @@
       "found": true,
       "cons_note": null
     },
-    "rank": 85,
+    "rank": 87,
     "specs": {
       "length_mm": 4510,
       "width_mm": 1852,
@@ -363,7 +363,7 @@
     "data_issues": [],
     "config_coverage": 0.8173,
     "energy_confidence": 0.55,
-    "library_rank": 85,
+    "library_rank": 87,
     "display": true
   },
   {
@@ -489,7 +489,7 @@
       "found": true,
       "cons_note": null
     },
-    "rank": 70,
+    "rank": 71,
     "specs": {
       "length_mm": 4262,
       "width_mm": 1748,
@@ -731,7 +731,7 @@
     "data_issues": [],
     "config_coverage": 0.6827,
     "energy_confidence": 0.55,
-    "library_rank": 70,
+    "library_rank": 71,
     "display": true
   },
   {
@@ -861,7 +861,7 @@
       "found": true,
       "cons_note": null
     },
-    "rank": 46,
+    "rank": 47,
     "specs": {
       "length_mm": 4440,
       "width_mm": 1833,
@@ -1102,7 +1102,7 @@
     "data_issues": [],
     "config_coverage": 0.8269,
     "energy_confidence": 0.55,
-    "library_rank": 46,
+    "library_rank": 47,
     "display": true
   },
   {
@@ -2538,9 +2538,9 @@
       "note": "V2 fixed anchors score_version=v2.2.0; exact-trim gate passed; weights={'price': 0.15, 'config': 0.3, 'operating_cost': 0.15, 'space': 0.2, 'age': 0.05, 'mileage': 0.05, 'body_preference': 0.05, 'data_quality': 0.05}; scenario=no_home_charging"
     },
     "ingest_status": "added",
-    "library_rank": 80,
+    "library_rank": 81,
     "display": true,
-    "rank": 80
+    "rank": 81
   },
   {
     "sku": "357349654",
@@ -2665,7 +2665,7 @@
       "found": true,
       "cons_note": null
     },
-    "rank": 26,
+    "rank": 27,
     "specs": {
       "length_mm": 4519,
       "width_mm": 1831,
@@ -2904,7 +2904,7 @@
     "data_issues": [],
     "config_coverage": 0.8654,
     "energy_confidence": 0.55,
-    "library_rank": 26,
+    "library_rank": 27,
     "display": true
   },
   {
@@ -3036,7 +3036,7 @@
       "found": true,
       "cons_note": null
     },
-    "rank": 28,
+    "rank": 29,
     "specs": {
       "length_mm": 4730,
       "width_mm": 1820,
@@ -3281,7 +3281,7 @@
     "data_issues": [],
     "config_coverage": 0.8077,
     "energy_confidence": 0.55,
-    "library_rank": 28,
+    "library_rank": 29,
     "display": true
   },
   {
@@ -3405,7 +3405,7 @@
       "found": true,
       "cons_note": null
     },
-    "rank": 40,
+    "rank": 41,
     "specs": {
       "length_mm": 4330,
       "width_mm": 1800,
@@ -3649,7 +3649,7 @@
     "data_issues": [],
     "config_coverage": 0.8269,
     "energy_confidence": 0.55,
-    "library_rank": 40,
+    "library_rank": 41,
     "display": true,
     "cash_price_wan": 2.99,
     "cash_price_fen": 2990000,
@@ -3786,7 +3786,7 @@
       "found": true,
       "cons_note": null
     },
-    "rank": 56,
+    "rank": 57,
     "specs": {
       "length_mm": 4660,
       "width_mm": 1812,
@@ -4028,7 +4028,7 @@
     "data_issues": [],
     "config_coverage": 0.9231,
     "energy_confidence": 0.55,
-    "library_rank": 56,
+    "library_rank": 57,
     "display": true
   },
   {
@@ -4153,7 +4153,7 @@
       "found": true,
       "cons_note": null
     },
-    "rank": 64,
+    "rank": 65,
     "specs": {
       "length_mm": 4474,
       "width_mm": 1730,
@@ -4398,7 +4398,7 @@
     "data_issues": [],
     "config_coverage": 0.7596,
     "energy_confidence": 0.65,
-    "library_rank": 64,
+    "library_rank": 65,
     "display": true
   },
   {
@@ -4522,7 +4522,7 @@
       "found": true,
       "cons_note": null
     },
-    "rank": 66,
+    "rank": 67,
     "specs": {
       "length_mm": 4609,
       "width_mm": 1798,
@@ -4761,7 +4761,7 @@
     "data_issues": [],
     "config_coverage": 0.8173,
     "energy_confidence": 0.55,
-    "library_rank": 66,
+    "library_rank": 67,
     "display": true
   },
   {
@@ -4887,7 +4887,7 @@
       "found": true,
       "cons_note": null
     },
-    "rank": 77,
+    "rank": 78,
     "specs": {
       "length_mm": 4575,
       "width_mm": 1750,
@@ -5132,7 +5132,7 @@
     "data_issues": [],
     "config_coverage": 0.7596,
     "energy_confidence": 0.55,
-    "library_rank": 77,
+    "library_rank": 78,
     "display": true
   },
   {
@@ -5258,7 +5258,7 @@
       "found": true,
       "cons_note": null
     },
-    "rank": 95,
+    "rank": 97,
     "specs": {
       "length_mm": 4240,
       "width_mm": 1805,
@@ -5501,7 +5501,7 @@
     "data_issues": [],
     "config_coverage": 0.8077,
     "energy_confidence": 0.55,
-    "library_rank": 95,
+    "library_rank": 97,
     "display": true
   },
   {
@@ -5993,7 +5993,7 @@
       "found": true,
       "cons_note": null
     },
-    "rank": 38,
+    "rank": 39,
     "specs": {
       "length_mm": 4440,
       "width_mm": 1833,
@@ -6234,7 +6234,7 @@
     "data_issues": [],
     "config_coverage": 0.8462,
     "energy_confidence": 0.55,
-    "library_rank": 38,
+    "library_rank": 39,
     "display": true
   },
   {
@@ -6360,7 +6360,7 @@
       "found": true,
       "cons_note": null
     },
-    "rank": 47,
+    "rank": 48,
     "specs": {
       "length_mm": 4660,
       "width_mm": 1812,
@@ -6602,7 +6602,7 @@
     "data_issues": [],
     "config_coverage": 0.7308,
     "energy_confidence": 0.55,
-    "library_rank": 47,
+    "library_rank": 48,
     "display": true
   },
   {
@@ -6927,9 +6927,9 @@
       "note": "V2 fixed anchors score_version=v2.2.0; exact-trim gate passed; weights={'price': 0.15, 'config': 0.3, 'operating_cost': 0.15, 'space': 0.2, 'age': 0.05, 'mileage': 0.05, 'body_preference': 0.05, 'data_quality': 0.05}; scenario=no_home_charging"
     },
     "ingest_status": "added",
-    "library_rank": 53,
+    "library_rank": 54,
     "display": true,
-    "rank": 53
+    "rank": 54
   },
   {
     "sku": "356670011",
@@ -7052,7 +7052,7 @@
       "found": true,
       "cons_note": null
     },
-    "rank": 33,
+    "rank": 34,
     "specs": {
       "length_mm": 4288,
       "width_mm": 1748,
@@ -7296,7 +7296,7 @@
     "data_issues": [],
     "config_coverage": 0.7885,
     "energy_confidence": 0.65,
-    "library_rank": 33,
+    "library_rank": 34,
     "display": true,
     "cash_price_wan": 3.39,
     "cash_price_fen": 3390000,
@@ -7633,9 +7633,9 @@
       "note": "V2 fixed anchors score_version=v2.2.0; exact-trim gate passed; weights={'price': 0.15, 'config': 0.3, 'operating_cost': 0.15, 'space': 0.2, 'age': 0.05, 'mileage': 0.05, 'body_preference': 0.05, 'data_quality': 0.05}; scenario=no_home_charging"
     },
     "ingest_status": "added",
-    "library_rank": 36,
+    "library_rank": 37,
     "display": true,
-    "rank": 36
+    "rank": 37
   },
   {
     "sku": "357320599",
@@ -7759,7 +7759,7 @@
       "found": true,
       "cons_note": null
     },
-    "rank": 44,
+    "rank": 45,
     "specs": {
       "length_mm": 4288,
       "width_mm": 1748,
@@ -8001,7 +8001,7 @@
     "data_issues": [],
     "config_coverage": 0.7885,
     "energy_confidence": 0.65,
-    "library_rank": 44,
+    "library_rank": 45,
     "display": true
   },
   {
@@ -8125,7 +8125,7 @@
       "found": true,
       "cons_note": null
     },
-    "rank": 71,
+    "rank": 72,
     "specs": {
       "length_mm": 4609,
       "width_mm": 1798,
@@ -8367,7 +8367,7 @@
     "data_issues": [],
     "config_coverage": 0.8077,
     "energy_confidence": 0.65,
-    "library_rank": 71,
+    "library_rank": 72,
     "display": true
   },
   {
@@ -8860,7 +8860,7 @@
       "found": true,
       "cons_note": null
     },
-    "rank": 29,
+    "rank": 30,
     "specs": {
       "length_mm": 4610,
       "width_mm": 1830,
@@ -9105,7 +9105,7 @@
     "data_issues": [],
     "config_coverage": 0.7308,
     "energy_confidence": 0.55,
-    "library_rank": 29,
+    "library_rank": 30,
     "display": true
   },
   {
@@ -9228,7 +9228,7 @@
       "found": true,
       "cons_note": null
     },
-    "rank": 50,
+    "rank": 51,
     "specs": {
       "length_mm": 4675,
       "width_mm": 1842,
@@ -9472,7 +9472,7 @@
     "data_issues": [],
     "config_coverage": 0.7885,
     "energy_confidence": 0.55,
-    "library_rank": 50,
+    "library_rank": 51,
     "display": true
   },
   {
@@ -9595,7 +9595,7 @@
       "found": true,
       "cons_note": null
     },
-    "rank": 24,
+    "rank": 25,
     "specs": {
       "length_mm": 4700,
       "width_mm": 1860,
@@ -9851,7 +9851,7 @@
     "first_registration_time": "1616342400",
     "detail_shop_id": "118608",
     "ingest_status": "updated_price",
-    "library_rank": 24,
+    "library_rank": 25,
     "display": true
   },
   {
@@ -9981,7 +9981,7 @@
       "found": true,
       "cons_note": null
     },
-    "rank": 81,
+    "rank": 82,
     "specs": {
       "length_mm": 4631,
       "width_mm": 1760,
@@ -10223,7 +10223,7 @@
     "data_issues": [],
     "config_coverage": 0.8462,
     "energy_confidence": 0.55,
-    "library_rank": 81,
+    "library_rank": 82,
     "display": true
   },
   {
@@ -10714,7 +10714,7 @@
       "found": true,
       "cons_note": null
     },
-    "rank": 82,
+    "rank": 83,
     "specs": {
       "length_mm": 4614,
       "width_mm": 1798,
@@ -10959,7 +10959,7 @@
     "data_issues": [],
     "config_coverage": 0.8077,
     "energy_confidence": 0.65,
-    "library_rank": 82,
+    "library_rank": 83,
     "display": true
   }
 ]
