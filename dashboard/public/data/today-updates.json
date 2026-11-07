@@ -1,11 +1,11 @@
 {
   "schema": "today-updates/v1",
-  "date": "20261106",
-  "generated_at": "2026-11-06T09:47:04+08:00",
+  "date": "20261107",
+  "generated_at": "2026-11-07T09:56:55+08:00",
   "source": "snapshot",
   "has_snapshot": true,
   "changelog_empty": false,
-  "snapshot_dir": "data/snapshots/20261106",
+  "snapshot_dir": "data/snapshots/20261107",
   "note": null,
   "rules": {
     "highlight": "change_type == added AND rank >= 1 AND rank <= 10",
@@ -16,57 +16,45 @@
     ]
   },
   "summary": {
-    "started_at": "2026-11-06T09:34:09+08:00",
+    "started_at": "2026-11-07T09:42:01+08:00",
     "dry_run": false,
-    "threshold": 45.2,
+    "threshold": 45.5,
     "display_count": 100,
-    "below_display_count": 38,
+    "below_display_count": 39,
     "issue_count": 13,
-    "inventory_count": 151,
+    "inventory_count": 152,
     "catalog_written": true,
     "changelog_counts": {
       "rejected_hard_filter": 21,
       "rejected_below_top100": 7,
-      "updated": 1,
-      "added": 2,
-      "display_dropped": 2
+      "added": 1,
+      "updated_price": 1,
+      "display_dropped": 1,
+      "detail_failed": 1
     }
   },
   "counts": {
-    "added": 2,
-    "updated": 1,
-    "updated_price": 0,
+    "added": 1,
+    "updated": 0,
+    "updated_price": 1,
     "info_updated": 1,
     "highlights": 0,
-    "display_dropped": 2,
+    "display_dropped": 1,
     "rejected_hard_filter": 21,
     "rejected_below_top100": 7,
     "removed_hard_filter": 0,
-    "detail_failed": 0,
-    "not_admitted": 28,
+    "detail_failed": 1,
+    "not_admitted": 29,
     "other": 0,
-    "total": 33
+    "total": 32
   },
   "source_files": {
-    "changelog": "data/snapshots/20261106/changelog.json",
-    "summary": "data/snapshots/20261106/summary.json",
+    "changelog": "data/snapshots/20261107/changelog.json",
+    "summary": "data/snapshots/20261107/summary.json",
     "ranked": "dashboard/public/data/listings-ranked.json"
   },
   "highlights": [],
   "items": [
-    {
-      "sku": "357230067",
-      "title": "天籁 2020款 改款 2.0L XL 舒适版",
-      "change_type": "rejected_hard_filter",
-      "old_price": null,
-      "new_price": 6.29,
-      "old_score": null,
-      "new_score": null,
-      "rank": null,
-      "reason": "price_6.29_gt_6",
-      "at": "2026-11-06T09:34:09+08:00",
-      "highlight": false
-    },
     {
       "sku": "357261851",
       "title": "星愿 2026款 310km 梦想版",
@@ -77,7 +65,20 @@
       "new_score": null,
       "rank": null,
       "reason": "price_6.09_gt_6",
-      "at": "2026-11-06T09:34:09+08:00",
+      "at": "2026-11-07T09:42:01+08:00",
+      "highlight": false
+    },
+    {
+      "sku": "357230067",
+      "title": "天籁 2020款 改款 2.0L XL 舒适版",
+      "change_type": "rejected_hard_filter",
+      "old_price": null,
+      "new_price": 6.29,
+      "old_score": null,
+      "new_score": null,
+      "rank": null,
+      "reason": "price_6.29_gt_6",
+      "at": "2026-11-07T09:42:01+08:00",
       "highlight": false
     },
     {
@@ -90,7 +91,7 @@
       "new_score": null,
       "rank": null,
       "reason": "price_6.29_gt_6",
-      "at": "2026-11-06T09:34:09+08:00",
+      "at": "2026-11-07T09:42:01+08:00",
       "highlight": false
     },
     {
@@ -103,7 +104,7 @@
       "new_score": null,
       "rank": null,
       "reason": "price_6.29_gt_6",
-      "at": "2026-11-06T09:34:09+08:00",
+      "at": "2026-11-07T09:42:01+08:00",
       "highlight": false
     },
     {
@@ -116,7 +117,7 @@
       "new_score": null,
       "rank": null,
       "reason": "price_6.19_gt_6",
-      "at": "2026-11-06T09:34:09+08:00",
+      "at": "2026-11-07T09:42:01+08:00",
       "highlight": false
     },
     {
@@ -129,20 +130,7 @@
       "new_score": null,
       "rank": null,
       "reason": "price_6.19_gt_6",
-      "at": "2026-11-06T09:34:09+08:00",
-      "highlight": false
-    },
-    {
-      "sku": "357036051",
-      "title": "凌尚 2023款 2.0L 豪华版",
-      "change_type": "rejected_hard_filter",
-      "old_price": null,
-      "new_price": 6.19,
-      "old_score": null,
-      "new_score": null,
-      "rank": null,
-      "reason": "price_6.19_gt_6",
-      "at": "2026-11-06T09:34:09+08:00",
+      "at": "2026-11-07T09:42:01+08:00",
       "highlight": false
     },
     {
@@ -155,20 +143,7 @@
       "new_score": null,
       "rank": null,
       "reason": "price_6.19_gt_6",
-      "at": "2026-11-06T09:34:09+08:00",
-      "highlight": false
-    },
-    {
-      "sku": "357250772",
-      "title": "长安UNI-V 2022款 1.5T 尊贵型",
-      "change_type": "rejected_hard_filter",
-      "old_price": null,
-      "new_price": 6.19,
-      "old_score": null,
-      "new_score": null,
-      "rank": null,
-      "reason": "price_6.19_gt_6",
-      "at": "2026-11-06T09:34:09+08:00",
+      "at": "2026-11-07T09:42:01+08:00",
       "highlight": false
     },
     {
@@ -181,7 +156,20 @@
       "new_score": null,
       "rank": null,
       "reason": "price_6.19_gt_6",
-      "at": "2026-11-06T09:34:09+08:00",
+      "at": "2026-11-07T09:42:01+08:00",
+      "highlight": false
+    },
+    {
+      "sku": "357250772",
+      "title": "长安UNI-V 2022款 1.5T 尊贵型",
+      "change_type": "rejected_hard_filter",
+      "old_price": null,
+      "new_price": 6.19,
+      "old_score": null,
+      "new_score": null,
+      "rank": null,
+      "reason": "price_6.19_gt_6",
+      "at": "2026-11-07T09:42:01+08:00",
       "highlight": false
     },
     {
@@ -194,7 +182,20 @@
       "new_score": null,
       "rank": null,
       "reason": "price_6.29_gt_6",
-      "at": "2026-11-06T09:34:09+08:00",
+      "at": "2026-11-07T09:42:01+08:00",
+      "highlight": false
+    },
+    {
+      "sku": "357219257",
+      "title": "海豚 2023款 自由版",
+      "change_type": "rejected_hard_filter",
+      "old_price": null,
+      "new_price": 6.19,
+      "old_score": null,
+      "new_score": null,
+      "rank": null,
+      "reason": "price_6.19_gt_6",
+      "at": "2026-11-07T09:42:01+08:00",
       "highlight": false
     },
     {
@@ -207,7 +208,7 @@
       "new_score": null,
       "rank": null,
       "reason": "price_6.09_gt_6",
-      "at": "2026-11-06T09:34:09+08:00",
+      "at": "2026-11-07T09:42:01+08:00",
       "highlight": false
     },
     {
@@ -220,20 +221,7 @@
       "new_score": null,
       "rank": null,
       "reason": "pure_bev_range_200km_le_300",
-      "at": "2026-11-06T09:34:09+08:00",
-      "highlight": false
-    },
-    {
-      "sku": "357402984",
-      "title": "五菱之光EV 2025款 进取型",
-      "change_type": "rejected_hard_filter",
-      "old_price": null,
-      "new_price": 4.89,
-      "old_score": null,
-      "new_score": null,
-      "rank": null,
-      "reason": "micro_city_bev_series_no_parsed_range",
-      "at": "2026-11-06T09:34:09+08:00",
+      "at": "2026-11-07T09:42:01+08:00",
       "highlight": false
     },
     {
@@ -246,7 +234,7 @@
       "new_score": null,
       "rank": null,
       "reason": "pure_bev_range_205km_le_300",
-      "at": "2026-11-06T09:34:09+08:00",
+      "at": "2026-11-07T09:42:01+08:00",
       "highlight": false
     },
     {
@@ -259,20 +247,20 @@
       "new_score": null,
       "rank": null,
       "reason": "price_6.19_gt_6",
-      "at": "2026-11-06T09:34:09+08:00",
+      "at": "2026-11-07T09:42:01+08:00",
       "highlight": false
     },
     {
-      "sku": "357219214",
-      "title": "五菱宏光MINIEV 2022款 自在款 磷酸铁锂",
+      "sku": "357402984",
+      "title": "五菱之光EV 2025款 进取型",
       "change_type": "rejected_hard_filter",
       "old_price": null,
-      "new_price": 2.09,
+      "new_price": 4.89,
       "old_score": null,
       "new_score": null,
       "rank": null,
       "reason": "micro_city_bev_series_no_parsed_range",
-      "at": "2026-11-06T09:34:09+08:00",
+      "at": "2026-11-07T09:42:01+08:00",
       "highlight": false
     },
     {
@@ -285,7 +273,20 @@
       "new_score": null,
       "rank": null,
       "reason": "pure_bev_range_210km_le_300",
-      "at": "2026-11-06T09:34:09+08:00",
+      "at": "2026-11-07T09:42:01+08:00",
+      "highlight": false
+    },
+    {
+      "sku": "357219214",
+      "title": "五菱宏光MINIEV 2022款 自在款 磷酸铁锂",
+      "change_type": "rejected_hard_filter",
+      "old_price": null,
+      "new_price": 2.09,
+      "old_score": null,
+      "new_score": null,
+      "rank": null,
+      "reason": "micro_city_bev_series_no_parsed_range",
+      "at": "2026-11-07T09:42:01+08:00",
       "highlight": false
     },
     {
@@ -298,7 +299,7 @@
       "new_score": null,
       "rank": null,
       "reason": "micro_city_bev_series_no_parsed_range",
-      "at": "2026-11-06T09:34:09+08:00",
+      "at": "2026-11-07T09:42:01+08:00",
       "highlight": false
     },
     {
@@ -311,7 +312,7 @@
       "new_score": null,
       "rank": null,
       "reason": "pure_bev_range_200km_le_300",
-      "at": "2026-11-06T09:34:09+08:00",
+      "at": "2026-11-07T09:42:01+08:00",
       "highlight": false
     },
     {
@@ -324,7 +325,20 @@
       "new_score": null,
       "rank": null,
       "reason": "pure_bev_range_210km_le_300",
-      "at": "2026-11-06T09:34:09+08:00",
+      "at": "2026-11-07T09:42:01+08:00",
+      "highlight": false
+    },
+    {
+      "sku": "357467784",
+      "title": "马自达3 昂克赛拉 2021款 2.0L 自动质雅版",
+      "change_type": "rejected_below_top100",
+      "old_price": null,
+      "new_price": 5.79,
+      "old_score": null,
+      "new_score": 45.0,
+      "rank": null,
+      "reason": "score_below_threshold",
+      "at": "2026-11-07T09:42:01+08:00",
       "highlight": false
     },
     {
@@ -337,7 +351,7 @@
       "new_score": 43.4,
       "rank": null,
       "reason": "score_below_threshold",
-      "at": "2026-11-06T09:34:09+08:00",
+      "at": "2026-11-07T09:42:01+08:00",
       "highlight": false
     },
     {
@@ -350,20 +364,33 @@
       "new_score": 41.9,
       "rank": null,
       "reason": "score_below_threshold",
-      "at": "2026-11-06T09:34:09+08:00",
+      "at": "2026-11-07T09:42:01+08:00",
       "highlight": false
     },
     {
-      "sku": "357426093",
-      "title": "秦PLUS DM 2025款 智驾版 DM-i 55KM 领先型",
-      "change_type": "updated",
-      "old_price": 5.39,
-      "new_price": 5.39,
-      "old_score": 51.7,
-      "new_score": 51.7,
-      "rank": 40,
+      "sku": "357467348",
+      "title": "轩逸 2019款 1.6XV CVT智联尊享版 国VI",
+      "change_type": "added",
+      "old_price": null,
+      "new_price": 3.79,
+      "old_score": null,
+      "new_score": 47.9,
+      "rank": 73,
       "reason": null,
-      "at": "2026-11-06T09:34:09+08:00",
+      "at": "2026-11-07T09:42:01+08:00",
+      "highlight": false
+    },
+    {
+      "sku": "357456151",
+      "title": "奇骏 2019款 2.0L CVT舒适版 2WD",
+      "change_type": "rejected_below_top100",
+      "old_price": null,
+      "new_price": 5.29,
+      "old_score": null,
+      "new_score": 45.3,
+      "rank": null,
+      "reason": "score_below_threshold",
+      "at": "2026-11-07T09:42:01+08:00",
       "highlight": false
     },
     {
@@ -376,33 +403,20 @@
       "new_score": 44.6,
       "rank": null,
       "reason": "score_below_threshold",
-      "at": "2026-11-06T09:34:09+08:00",
+      "at": "2026-11-07T09:42:01+08:00",
       "highlight": false
     },
     {
-      "sku": "357422345",
-      "title": "逍客 2017款 2.0L CVT智享版 国V",
-      "change_type": "rejected_below_top100",
-      "old_price": null,
-      "new_price": 5.09,
-      "old_score": null,
-      "new_score": 41.1,
+      "sku": "356868757",
+      "title": "Polo 2018款 1.5L 自动安享型",
+      "change_type": "updated_price",
+      "old_price": 3.99,
+      "new_price": 3.79,
+      "old_score": 36.5,
+      "new_score": 37.5,
       "rank": null,
-      "reason": "score_below_threshold",
-      "at": "2026-11-06T09:34:09+08:00",
-      "highlight": false
-    },
-    {
-      "sku": "357452723",
-      "title": "长安启源A05经典 2024款 真香版 70 超越型",
-      "change_type": "added",
-      "old_price": null,
-      "new_price": 5.09,
-      "old_score": null,
-      "new_score": 55.7,
-      "rank": 23,
       "reason": null,
-      "at": "2026-11-06T09:34:09+08:00",
+      "at": "2026-11-07T09:42:01+08:00",
       "highlight": false
     },
     {
@@ -415,7 +429,7 @@
       "new_score": null,
       "rank": null,
       "reason": "no_score",
-      "at": "2026-11-06T09:34:09+08:00",
+      "at": "2026-11-07T09:42:01+08:00",
       "highlight": false
     },
     {
@@ -428,59 +442,33 @@
       "new_score": 44.5,
       "rank": null,
       "reason": "score_below_threshold",
-      "at": "2026-11-06T09:34:09+08:00",
+      "at": "2026-11-07T09:42:01+08:00",
       "highlight": false
     },
     {
-      "sku": "357458430",
-      "title": "长安欧尚X5 2021款 1.6L CVT尊享型",
-      "change_type": "added",
-      "old_price": null,
-      "new_price": 5.19,
-      "old_score": null,
-      "new_score": 46.8,
-      "rank": 85,
-      "reason": null,
-      "at": "2026-11-06T09:34:09+08:00",
-      "highlight": false
-    },
-    {
-      "sku": "357456151",
-      "title": "奇骏 2019款 2.0L CVT舒适版 2WD",
-      "change_type": "rejected_below_top100",
-      "old_price": null,
-      "new_price": 5.29,
-      "old_score": null,
-      "new_score": 45.3,
-      "rank": null,
-      "reason": "not_in_display_top100",
-      "at": "2026-11-06T09:34:09+08:00",
-      "highlight": false
-    },
-    {
-      "sku": "356905845",
-      "title": "朗逸 2019款 启航 1.5L 自动风尚版 国VI",
+      "sku": "357192191",
+      "title": "轩逸 2022款 经典 1.6 XL CVT豪华版",
       "change_type": "display_dropped",
-      "old_price": 4.29,
-      "new_price": 4.29,
-      "old_score": 45.4,
-      "new_score": 45.4,
+      "old_price": 4.59,
+      "new_price": 4.59,
+      "old_score": 45.5,
+      "new_score": 45.5,
       "rank": null,
       "reason": "outside_top100_display",
-      "at": "2026-11-06T09:34:09+08:00",
+      "at": "2026-11-07T09:42:01+08:00",
       "highlight": false
     },
     {
-      "sku": "357236920",
-      "title": "英朗 2021款 改款 典范 1.5L 自动精英型",
-      "change_type": "display_dropped",
-      "old_price": 4.39,
-      "new_price": 4.39,
-      "old_score": 45.2,
-      "new_score": 45.2,
-      "rank": null,
-      "reason": "outside_top100_display",
-      "at": "2026-11-06T09:34:09+08:00",
+      "sku": "357232005",
+      "title": "领克02 2018款 1.5T DCT两驱劲Pro版 国V",
+      "change_type": "detail_failed",
+      "old_price": 4.89,
+      "new_price": null,
+      "old_score": 60.3,
+      "new_score": null,
+      "rank": 8,
+      "reason": "missing_cash_price:URLError: <urlopen error _ssl.c:1012: The handshake operation timed out>",
+      "at": "2026-11-07T09:42:01+08:00",
       "highlight": false
     }
   ]
