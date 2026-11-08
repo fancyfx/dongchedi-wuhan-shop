@@ -4350,6 +4350,332 @@
     "display": true
   },
   {
+    "sku": "357463780",
+    "title": "锐程CC 2021款 蓝鲸版 1.5T DCT尊贵型",
+    "shop_id": "118608",
+    "shop_name": "懂车帝汽车商城•武汉店",
+    "series": "锐程CC",
+    "brand": "长安",
+    "mileage_wan": 4.02,
+    "model_year": 2021,
+    "plate_year": 2021,
+    "year": "2021年/4.02万公里",
+    "city": "武汉",
+    "tags": [
+      "0.4万首付"
+    ],
+    "badges": [
+      "直营"
+    ],
+    "is_self_trade_car": true,
+    "source_type": "2",
+    "source_type_name": "自营-个人",
+    "fuel_form": "1",
+    "cover": "https://p3-dcd-sign.byteimg.com/tos-cn-i-f042mdwyw7/347798b16c3241f1a4a5e4ba5b7518ec~tplv-f042mdwyw7-auto-webp:480:0.jpg?rk3s=4892dee6&x-expires=1795312209&x-signature=iq3%2FJF%2FLDPYgECKYFwuW1%2Bt34IM%3D&psm=motor.sh.pack",
+    "detail_url": "https://m.dcdapp.com/motor/feoffline/usedcar_detail/detail.html?sku_id=357463780&shop_id=118608",
+    "list_price_wan": 4.19,
+    "first_registration_time": "1621872000",
+    "price_type": "现金价",
+    "prefix": "现金价",
+    "cash_price_fen": 4190000,
+    "cash_price_str": "4.19",
+    "cash_price_wan": 4.19,
+    "price": 4.19,
+    "detail_shop_id": "118608",
+    "specs": {
+      "length_mm": 4800,
+      "width_mm": 1825,
+      "height_mm": 1465,
+      "wheelbase_mm": 2770,
+      "seats": null,
+      "body_type": "紧凑型车",
+      "engine": "1.5T 180马力 L4",
+      "transmission": "7挡湿式双离合",
+      "fuel_grade": "92",
+      "official_fuel_l_100km": 6.2,
+      "official_standard": "NEDC",
+      "low_soc_fuel_l_100km": null,
+      "real_world_fuel_l_100km": null,
+      "real_world_sample_n": null,
+      "electric_kwh_100km": null,
+      "ev_range_km": null,
+      "ev_range_standard": null,
+      "ranking_energy": {
+        "type": "official_nedc_with_uncertainty",
+        "value": 6.2,
+        "unit": "L/100km",
+        "fallback_multiplier_recommended": 1.2
+      },
+      "powertrain": "ice",
+      "powertrain_type": "ice",
+      "features": {
+        "airbags": 6,
+        "esp": true,
+        "aeb": true,
+        "fcw": null,
+        "ldw": false,
+        "lka": false,
+        "lane_centering": null,
+        "bsd": false,
+        "dow": null,
+        "acc": true,
+        "cruise": "全速自适应巡航",
+        "camera_360": true,
+        "transparent_chassis": null,
+        "front_radar": true,
+        "rear_radar": true,
+        "auto_park": false,
+        "remote_park": null,
+        "power_driver_seat": true,
+        "power_passenger_seat": true,
+        "seat_heating": true,
+        "seat_ventilation": null,
+        "panoramic_sunroof": true,
+        "power_tailgate": null,
+        "keyless_entry": true,
+        "remote_start": false,
+        "rear_ac_vents": true,
+        "dual_zone_climate": null,
+        "leather_seats": false,
+        "full_lcd_cluster": true,
+        "screen_inch": 10.25,
+        "carplay": null,
+        "carlife": null,
+        "phone_link": false,
+        "wireless_charge": false,
+        "voice_control": true,
+        "ota": true,
+        "hud": null,
+        "chip_8155": null
+      },
+      "airbags": 6,
+      "screen_inch": 10.25,
+      "match_level": "exact_trim",
+      "trim_id": "trim_ah_6ea1a444da10",
+      "canonical_title": "锐程CC 2021款 蓝鲸版 1.5T DCT尊贵型",
+      "specs_found": true,
+      "specs_approx": false,
+      "verified": true,
+      "verification_schema": "3.0-exact-trim-detailed",
+      "configuration_source": "exact_trim_v3",
+      "core_confidence": 0.99,
+      "feature_confidence": 0.95,
+      "verification_issues": [],
+      "verification_sources": [
+        {
+          "url": "https://car.autohome.com.cn/config/spec/46712.html",
+          "source_type": "autohome_live_config",
+          "authority_tier": 1,
+          "series_id": 5461,
+          "spec_id": 46712,
+          "parameter_source": "live_page"
+        },
+        {
+          "url": "https://github.com/swoiow/autohome",
+          "source_type": "autohome_parameter_dataset",
+          "authority_tier": 3,
+          "snapshot": "identity_match_only",
+          "source_path": "live:config/spec/46712.html",
+          "note": "vault/main used for exact-trim identity; parameters from live page"
+        }
+      ]
+    },
+    "detailed_config": {
+      "length_mm": 4800,
+      "width_mm": 1825,
+      "height_mm": 1465,
+      "wheelbase_mm": 2770,
+      "seats": null,
+      "body_type": "紧凑型车",
+      "engine": "1.5T 180马力 L4",
+      "transmission": "7挡湿式双离合",
+      "fuel_grade": "92",
+      "official_fuel_l_100km": 6.2,
+      "official_standard": "NEDC",
+      "low_soc_fuel_l_100km": null,
+      "real_world_fuel_l_100km": null,
+      "real_world_sample_n": null,
+      "electric_kwh_100km": null,
+      "ev_range_km": null,
+      "ev_range_standard": null,
+      "ranking_energy": {
+        "type": "official_nedc_with_uncertainty",
+        "value": 6.2,
+        "unit": "L/100km",
+        "fallback_multiplier_recommended": 1.2
+      },
+      "powertrain": "ice",
+      "powertrain_type": "ice",
+      "features": {
+        "airbags": 6,
+        "esp": true,
+        "aeb": true,
+        "fcw": null,
+        "ldw": false,
+        "lka": false,
+        "lane_centering": null,
+        "bsd": false,
+        "dow": null,
+        "acc": true,
+        "cruise": "全速自适应巡航",
+        "camera_360": true,
+        "transparent_chassis": null,
+        "front_radar": true,
+        "rear_radar": true,
+        "auto_park": false,
+        "remote_park": null,
+        "power_driver_seat": true,
+        "power_passenger_seat": true,
+        "seat_heating": true,
+        "seat_ventilation": null,
+        "panoramic_sunroof": true,
+        "power_tailgate": null,
+        "keyless_entry": true,
+        "remote_start": false,
+        "rear_ac_vents": true,
+        "dual_zone_climate": null,
+        "leather_seats": false,
+        "full_lcd_cluster": true,
+        "screen_inch": 10.25,
+        "carplay": null,
+        "carlife": null,
+        "phone_link": false,
+        "wireless_charge": false,
+        "voice_control": true,
+        "ota": true,
+        "hud": null,
+        "chip_8155": null
+      },
+      "airbags": 6,
+      "screen_inch": 10.25,
+      "match_level": "exact_trim",
+      "trim_id": "trim_ah_6ea1a444da10",
+      "canonical_title": "锐程CC 2021款 蓝鲸版 1.5T DCT尊贵型",
+      "specs_found": true,
+      "specs_approx": false,
+      "verified": true,
+      "verification_schema": "3.0-exact-trim-detailed",
+      "configuration_source": "exact_trim_v3",
+      "core_confidence": 0.99,
+      "feature_confidence": 0.95,
+      "verification_issues": [],
+      "verification_sources": [
+        {
+          "url": "https://car.autohome.com.cn/config/spec/46712.html",
+          "source_type": "autohome_live_config",
+          "authority_tier": 1,
+          "series_id": 5461,
+          "spec_id": 46712,
+          "parameter_source": "live_page"
+        },
+        {
+          "url": "https://github.com/swoiow/autohome",
+          "source_type": "autohome_parameter_dataset",
+          "authority_tier": 3,
+          "snapshot": "identity_match_only",
+          "source_path": "live:config/spec/46712.html",
+          "note": "vault/main used for exact-trim identity; parameters from live page"
+        }
+      ]
+    },
+    "display_price_wan": 4.19,
+    "effective_price_wan": 4.19,
+    "price_confidence": 0.95,
+    "needs_cash_quote": false,
+    "price_basis": "cash",
+    "manufacturer": "长安汽车",
+    "manufacturer_inferred": false,
+    "owner_reviews": {
+      "summary": "",
+      "sources": [],
+      "found": false
+    },
+    "score_eligible": true,
+    "data_issues": [],
+    "config_coverage": 0.7212,
+    "energy_confidence": 0.55,
+    "_age_years": 5.333333333333333,
+    "score_version": "v2.2.0",
+    "score_v1": 59.5,
+    "total_score": 59.5,
+    "condition_gate": "PASS",
+    "evaluation": "可比价格 4.19 万；轿车/两厢，车身偏好分较低；能源成本约 59.52 元/100km（official_nedc_with_uncertainty: 7.4399999999999995L/100km）。",
+    "score_reasons": [
+      "可比价格 4.19 万",
+      "轿车/两厢，车身偏好分较低",
+      "能源成本约 59.52 元/100km（official_nedc_with_uncertainty: 7.4399999999999995L/100km）"
+    ],
+    "score_warnings": [],
+    "confidence": {
+      "price": 0.95,
+      "config": 0.721,
+      "energy": 0.55,
+      "core_specs": 0.99,
+      "age": 0.7,
+      "space": 0.825
+    },
+    "sort_scores": {
+      "score_version": "v2.2.0",
+      "total_score": 59.5,
+      "price_score": 60.33,
+      "config_score": 52.08,
+      "operating_cost_score": 44.9,
+      "space_score": 73.62,
+      "age_score": 63.67,
+      "mileage_score": 81.8,
+      "body_preference_score": 40.0,
+      "data_quality_score": 81.72,
+      "config_norm": 52.08,
+      "space_norm": 73.62,
+      "fuel_norm": 44.9,
+      "suv_score": 40.0,
+      "config_proxy": 52.08,
+      "space_proxy": 73.62,
+      "fuel_proxy": 44.9,
+      "is_suv": false,
+      "price": 4.19,
+      "effective_price_wan": 4.19,
+      "weights": {
+        "price": 0.15,
+        "config": 0.3,
+        "operating_cost": 0.15,
+        "space": 0.2,
+        "age": 0.05,
+        "mileage": 0.05,
+        "body_preference": 0.05,
+        "data_quality": 0.05
+      },
+      "energy": {
+        "cost_yuan_100km": 59.52,
+        "type": "official_nedc_with_uncertainty",
+        "value": 7.4399999999999995,
+        "unit": "L/100km",
+        "fuel_grade": "92",
+        "scenario": "no_home_charging"
+      },
+      "confidence": {
+        "price": 0.95,
+        "config": 0.721,
+        "energy": 0.55,
+        "core_specs": 0.99,
+        "age": 0.7,
+        "space": 0.825
+      },
+      "reasons": [
+        "可比价格 4.19 万",
+        "轿车/两厢，车身偏好分较低",
+        "能源成本约 59.52 元/100km（official_nedc_with_uncertainty: 7.4399999999999995L/100km）"
+      ],
+      "warnings": [],
+      "condition_gate": "PASS",
+      "note": "V2 fixed anchors score_version=v2.2.0; exact-trim gate passed; weights={'price': 0.15, 'config': 0.3, 'operating_cost': 0.15, 'space': 0.2, 'age': 0.05, 'mileage': 0.05, 'body_preference': 0.05, 'data_quality': 0.05}; scenario=no_home_charging"
+    },
+    "ingest_status": "added",
+    "library_rank": 13,
+    "display": true,
+    "rank": 13
+  },
+  {
     "sku": "357168649",
     "title": "长安UNI-T 2020款 1.5T 旗舰型",
     "price": 4.99,
@@ -4476,7 +4802,7 @@
       "found": true,
       "cons_note": null
     },
-    "rank": 13,
+    "rank": 14,
     "specs": {
       "length_mm": 4515,
       "width_mm": 1870,
@@ -4720,7 +5046,7 @@
     "data_issues": [],
     "config_coverage": 0.75,
     "energy_confidence": 0.55,
-    "library_rank": 13,
+    "library_rank": 14,
     "display": true
   },
   {
@@ -4844,7 +5170,7 @@
       "found": true,
       "cons_note": null
     },
-    "rank": 14,
+    "rank": 15,
     "specs": {
       "length_mm": 4462,
       "width_mm": 1857,
@@ -5085,7 +5411,7 @@
     "data_issues": [],
     "config_coverage": 0.8173,
     "energy_confidence": 0.55,
-    "library_rank": 14,
+    "library_rank": 15,
     "display": true
   },
   {
@@ -5210,7 +5536,7 @@
       "found": true,
       "cons_note": null
     },
-    "rank": 15,
+    "rank": 16,
     "specs": {
       "length_mm": 4340,
       "width_mm": 1820,
@@ -5452,7 +5778,7 @@
     "data_issues": [],
     "config_coverage": 0.9038,
     "energy_confidence": 0.65,
-    "library_rank": 15,
+    "library_rank": 16,
     "display": true
   },
   {
@@ -5583,7 +5909,7 @@
       "found": true,
       "cons_note": null
     },
-    "rank": 16,
+    "rank": 17,
     "specs": {
       "length_mm": 4440,
       "width_mm": 1833,
@@ -5826,7 +6152,7 @@
     "data_issues": [],
     "config_coverage": 0.8269,
     "energy_confidence": 0.55,
-    "library_rank": 16,
+    "library_rank": 17,
     "display": true
   },
   {
@@ -5956,7 +6282,7 @@
       "found": true,
       "cons_note": null
     },
-    "rank": 17,
+    "rank": 18,
     "specs": {
       "length_mm": 4785,
       "width_mm": 1869,
@@ -6201,7 +6527,7 @@
     "data_issues": [],
     "config_coverage": 0.9038,
     "energy_confidence": 0.55,
-    "library_rank": 17,
+    "library_rank": 18,
     "display": true
   },
   {
@@ -6331,7 +6657,7 @@
       "found": true,
       "cons_note": null
     },
-    "rank": 18,
+    "rank": 19,
     "specs": {
       "length_mm": 4785,
       "width_mm": 1869,
@@ -6576,7 +6902,7 @@
     "data_issues": [],
     "config_coverage": 0.9038,
     "energy_confidence": 0.55,
-    "library_rank": 18,
+    "library_rank": 19,
     "display": true
   },
   {
@@ -6902,9 +7228,9 @@
       "note": "V2 fixed anchors score_version=v2.2.0; exact-trim gate passed; weights={'price': 0.15, 'config': 0.3, 'operating_cost': 0.15, 'space': 0.2, 'age': 0.05, 'mileage': 0.05, 'body_preference': 0.05, 'data_quality': 0.05}; scenario=no_home_charging"
     },
     "ingest_status": "added",
-    "library_rank": 19,
+    "library_rank": 20,
     "display": true,
-    "rank": 19
+    "rank": 20
   },
   {
     "sku": "357250766",
@@ -7030,7 +7356,7 @@
       "found": true,
       "cons_note": null
     },
-    "rank": 20,
+    "rank": 21,
     "specs": {
       "length_mm": 4700,
       "width_mm": 1850,
@@ -7275,7 +7601,7 @@
     "data_issues": [],
     "config_coverage": 0.8365,
     "energy_confidence": 0.65,
-    "library_rank": 20,
+    "library_rank": 21,
     "display": true
   },
   {
@@ -7400,7 +7726,7 @@
       "found": true,
       "cons_note": null
     },
-    "rank": 21,
+    "rank": 22,
     "specs": {
       "length_mm": 4545,
       "width_mm": 1855,
@@ -7642,7 +7968,7 @@
     "data_issues": [],
     "config_coverage": 0.6827,
     "energy_confidence": 0.55,
-    "library_rank": 21,
+    "library_rank": 22,
     "display": true
   },
   {
@@ -7768,7 +8094,7 @@
       "found": true,
       "cons_note": null
     },
-    "rank": 22,
+    "rank": 23,
     "specs": {
       "length_mm": 4660,
       "width_mm": 1812,
@@ -8010,7 +8336,7 @@
     "data_issues": [],
     "config_coverage": 0.7692,
     "energy_confidence": 0.55,
-    "library_rank": 22,
+    "library_rank": 23,
     "display": true
   },
   {
@@ -8333,9 +8659,9 @@
       "note": "V2 fixed anchors score_version=v2.2.0; exact-trim gate passed; weights={'price': 0.15, 'config': 0.3, 'operating_cost': 0.15, 'space': 0.2, 'age': 0.05, 'mileage': 0.05, 'body_preference': 0.05, 'data_quality': 0.05}; scenario=no_home_charging"
     },
     "ingest_status": "added",
-    "library_rank": 23,
+    "library_rank": 24,
     "display": true,
-    "rank": 23
+    "rank": 24
   },
   {
     "sku": "356579334",
@@ -8464,7 +8790,7 @@
       "found": true,
       "cons_note": null
     },
-    "rank": 24,
+    "rank": 25,
     "specs": {
       "length_mm": 4700,
       "width_mm": 1865,
@@ -8709,7 +9035,7 @@
     "data_issues": [],
     "config_coverage": 0.7692,
     "energy_confidence": 0.55,
-    "library_rank": 24,
+    "library_rank": 25,
     "display": true
   },
   {
@@ -8832,7 +9158,7 @@
       "found": true,
       "cons_note": null
     },
-    "rank": 25,
+    "rank": 26,
     "specs": {
       "length_mm": 4700,
       "width_mm": 1860,
@@ -9088,8 +9414,334 @@
     "first_registration_time": "1616342400",
     "detail_shop_id": "118608",
     "ingest_status": "updated_price",
-    "library_rank": 25,
+    "library_rank": 26,
     "display": true
+  },
+  {
+    "sku": "357426428",
+    "title": "伊兰特 2022款 1.5L CVT LUX尊贵版",
+    "shop_id": "118608",
+    "shop_name": "懂车帝汽车商城•武汉店",
+    "series": "伊兰特",
+    "brand": "现代",
+    "mileage_wan": 4.38,
+    "model_year": 2022,
+    "plate_year": 2023,
+    "year": "2023年/4.38万公里",
+    "city": "武汉",
+    "tags": [
+      "0.5万首付"
+    ],
+    "badges": [
+      "直营"
+    ],
+    "is_self_trade_car": true,
+    "source_type": "2",
+    "source_type_name": "自营-个人",
+    "fuel_form": "1",
+    "cover": "https://p3-dcd-sign.byteimg.com/tos-cn-i-f042mdwyw7/42740626a9c9434e895819077751d543~tplv-f042mdwyw7-auto-webp:480:0.jpg?rk3s=4892dee6&x-expires=1795311811&x-signature=5eLU6a%2Fb078FrdWlYQp2hKlx8ho%3D&psm=motor.sh.pack",
+    "detail_url": "https://m.dcdapp.com/motor/feoffline/usedcar_detail/detail.html?sku_id=357426428&shop_id=118608",
+    "list_price_wan": 5.29,
+    "first_registration_time": "1681142400",
+    "price_type": "现金价",
+    "prefix": "现金价",
+    "cash_price_fen": 5290000,
+    "cash_price_str": "5.29",
+    "cash_price_wan": 5.29,
+    "price": 5.29,
+    "detail_shop_id": "118608",
+    "specs": {
+      "length_mm": 4680,
+      "width_mm": 1810,
+      "height_mm": 1415,
+      "wheelbase_mm": 2720,
+      "seats": null,
+      "body_type": "紧凑型车",
+      "engine": "●",
+      "transmission": "无级变速箱(CVT)",
+      "fuel_grade": "92",
+      "official_fuel_l_100km": 5.55,
+      "official_standard": "WLTC",
+      "low_soc_fuel_l_100km": null,
+      "real_world_fuel_l_100km": null,
+      "real_world_sample_n": null,
+      "electric_kwh_100km": null,
+      "ev_range_km": null,
+      "ev_range_standard": null,
+      "ranking_energy": {
+        "type": "official_wltc_with_uncertainty",
+        "value": 5.55,
+        "unit": "L/100km",
+        "fallback_multiplier_recommended": 1.15
+      },
+      "powertrain": "ice",
+      "powertrain_type": "ice",
+      "features": {
+        "airbags": 6,
+        "esp": true,
+        "aeb": true,
+        "fcw": true,
+        "ldw": true,
+        "lka": true,
+        "lane_centering": true,
+        "bsd": false,
+        "dow": false,
+        "acc": false,
+        "cruise": "定速巡航",
+        "camera_360": null,
+        "transparent_chassis": null,
+        "front_radar": true,
+        "rear_radar": true,
+        "auto_park": false,
+        "remote_park": null,
+        "power_driver_seat": true,
+        "power_passenger_seat": true,
+        "seat_heating": true,
+        "seat_ventilation": null,
+        "panoramic_sunroof": false,
+        "power_tailgate": false,
+        "keyless_entry": true,
+        "remote_start": false,
+        "rear_ac_vents": true,
+        "dual_zone_climate": null,
+        "leather_seats": false,
+        "full_lcd_cluster": false,
+        "screen_inch": 10.25,
+        "carplay": null,
+        "carlife": true,
+        "phone_link": true,
+        "wireless_charge": true,
+        "voice_control": true,
+        "ota": false,
+        "hud": false,
+        "chip_8155": null
+      },
+      "airbags": 6,
+      "screen_inch": 10.25,
+      "match_level": "exact_trim",
+      "trim_id": "trim_ah_fc58799ddb9a",
+      "canonical_title": "伊兰特 2022款 1.5L CVT LUX尊贵版",
+      "specs_found": true,
+      "specs_approx": false,
+      "verified": true,
+      "verification_schema": "3.0-exact-trim-detailed",
+      "configuration_source": "exact_trim_v3",
+      "core_confidence": 0.99,
+      "feature_confidence": 0.95,
+      "verification_issues": [],
+      "verification_sources": [
+        {
+          "url": "https://car.autohome.com.cn/config/spec/55563.html",
+          "source_type": "autohome_live_config",
+          "authority_tier": 1,
+          "series_id": 51,
+          "spec_id": 55563,
+          "parameter_source": "live_page"
+        },
+        {
+          "url": "https://github.com/swoiow/autohome",
+          "source_type": "autohome_parameter_dataset",
+          "authority_tier": 3,
+          "snapshot": "identity_match_only",
+          "source_path": "live:config/spec/55563.html",
+          "note": "vault/main used for exact-trim identity; parameters from live page"
+        }
+      ]
+    },
+    "detailed_config": {
+      "length_mm": 4680,
+      "width_mm": 1810,
+      "height_mm": 1415,
+      "wheelbase_mm": 2720,
+      "seats": null,
+      "body_type": "紧凑型车",
+      "engine": "●",
+      "transmission": "无级变速箱(CVT)",
+      "fuel_grade": "92",
+      "official_fuel_l_100km": 5.55,
+      "official_standard": "WLTC",
+      "low_soc_fuel_l_100km": null,
+      "real_world_fuel_l_100km": null,
+      "real_world_sample_n": null,
+      "electric_kwh_100km": null,
+      "ev_range_km": null,
+      "ev_range_standard": null,
+      "ranking_energy": {
+        "type": "official_wltc_with_uncertainty",
+        "value": 5.55,
+        "unit": "L/100km",
+        "fallback_multiplier_recommended": 1.15
+      },
+      "powertrain": "ice",
+      "powertrain_type": "ice",
+      "features": {
+        "airbags": 6,
+        "esp": true,
+        "aeb": true,
+        "fcw": true,
+        "ldw": true,
+        "lka": true,
+        "lane_centering": true,
+        "bsd": false,
+        "dow": false,
+        "acc": false,
+        "cruise": "定速巡航",
+        "camera_360": null,
+        "transparent_chassis": null,
+        "front_radar": true,
+        "rear_radar": true,
+        "auto_park": false,
+        "remote_park": null,
+        "power_driver_seat": true,
+        "power_passenger_seat": true,
+        "seat_heating": true,
+        "seat_ventilation": null,
+        "panoramic_sunroof": false,
+        "power_tailgate": false,
+        "keyless_entry": true,
+        "remote_start": false,
+        "rear_ac_vents": true,
+        "dual_zone_climate": null,
+        "leather_seats": false,
+        "full_lcd_cluster": false,
+        "screen_inch": 10.25,
+        "carplay": null,
+        "carlife": true,
+        "phone_link": true,
+        "wireless_charge": true,
+        "voice_control": true,
+        "ota": false,
+        "hud": false,
+        "chip_8155": null
+      },
+      "airbags": 6,
+      "screen_inch": 10.25,
+      "match_level": "exact_trim",
+      "trim_id": "trim_ah_fc58799ddb9a",
+      "canonical_title": "伊兰特 2022款 1.5L CVT LUX尊贵版",
+      "specs_found": true,
+      "specs_approx": false,
+      "verified": true,
+      "verification_schema": "3.0-exact-trim-detailed",
+      "configuration_source": "exact_trim_v3",
+      "core_confidence": 0.99,
+      "feature_confidence": 0.95,
+      "verification_issues": [],
+      "verification_sources": [
+        {
+          "url": "https://car.autohome.com.cn/config/spec/55563.html",
+          "source_type": "autohome_live_config",
+          "authority_tier": 1,
+          "series_id": 51,
+          "spec_id": 55563,
+          "parameter_source": "live_page"
+        },
+        {
+          "url": "https://github.com/swoiow/autohome",
+          "source_type": "autohome_parameter_dataset",
+          "authority_tier": 3,
+          "snapshot": "identity_match_only",
+          "source_path": "live:config/spec/55563.html",
+          "note": "vault/main used for exact-trim identity; parameters from live page"
+        }
+      ]
+    },
+    "display_price_wan": 5.29,
+    "effective_price_wan": 5.29,
+    "price_confidence": 0.95,
+    "needs_cash_quote": false,
+    "price_basis": "cash",
+    "manufacturer": "北京现代",
+    "manufacturer_inferred": false,
+    "owner_reviews": {
+      "summary": "",
+      "sources": [],
+      "found": false
+    },
+    "score_eligible": true,
+    "data_issues": [],
+    "config_coverage": 0.8269,
+    "energy_confidence": 0.65,
+    "_age_years": 3.3333333333333335,
+    "score_version": "v2.2.0",
+    "score_v1": 53.9,
+    "total_score": 53.9,
+    "condition_gate": "PASS",
+    "evaluation": "可比价格 5.29 万；轿车/两厢，车身偏好分较低；能源成本约 51.06 元/100km（official_wltc_with_uncertainty: 6.382499999999999L/100km）。",
+    "score_reasons": [
+      "可比价格 5.29 万",
+      "轿车/两厢，车身偏好分较低",
+      "能源成本约 51.06 元/100km（official_wltc_with_uncertainty: 6.382499999999999L/100km）"
+    ],
+    "score_warnings": [],
+    "confidence": {
+      "price": 0.95,
+      "config": 0.827,
+      "energy": 0.65,
+      "core_specs": 0.99,
+      "age": 0.7,
+      "space": 0.825
+    },
+    "sort_scores": {
+      "score_version": "v2.2.0",
+      "total_score": 53.9,
+      "price_score": 23.67,
+      "config_score": 49.2,
+      "operating_cost_score": 52.22,
+      "space_score": 64.7,
+      "age_score": 86.67,
+      "mileage_score": 78.2,
+      "body_preference_score": 40.0,
+      "data_quality_score": 92.22,
+      "config_norm": 49.2,
+      "space_norm": 64.7,
+      "fuel_norm": 52.22,
+      "suv_score": 40.0,
+      "config_proxy": 49.2,
+      "space_proxy": 64.7,
+      "fuel_proxy": 52.22,
+      "is_suv": false,
+      "price": 5.29,
+      "effective_price_wan": 5.29,
+      "weights": {
+        "price": 0.15,
+        "config": 0.3,
+        "operating_cost": 0.15,
+        "space": 0.2,
+        "age": 0.05,
+        "mileage": 0.05,
+        "body_preference": 0.05,
+        "data_quality": 0.05
+      },
+      "energy": {
+        "cost_yuan_100km": 51.06,
+        "type": "official_wltc_with_uncertainty",
+        "value": 6.382499999999999,
+        "unit": "L/100km",
+        "fuel_grade": "92",
+        "scenario": "no_home_charging"
+      },
+      "confidence": {
+        "price": 0.95,
+        "config": 0.827,
+        "energy": 0.65,
+        "core_specs": 0.99,
+        "age": 0.7,
+        "space": 0.825
+      },
+      "reasons": [
+        "可比价格 5.29 万",
+        "轿车/两厢，车身偏好分较低",
+        "能源成本约 51.06 元/100km（official_wltc_with_uncertainty: 6.382499999999999L/100km）"
+      ],
+      "warnings": [],
+      "condition_gate": "PASS",
+      "note": "V2 fixed anchors score_version=v2.2.0; exact-trim gate passed; weights={'price': 0.15, 'config': 0.3, 'operating_cost': 0.15, 'space': 0.2, 'age': 0.05, 'mileage': 0.05, 'body_preference': 0.05, 'data_quality': 0.05}; scenario=no_home_charging"
+    },
+    "ingest_status": "added",
+    "library_rank": 27,
+    "display": true,
+    "rank": 27
   },
   {
     "sku": "357172812",
@@ -9214,7 +9866,7 @@
       "found": true,
       "cons_note": null
     },
-    "rank": 26,
+    "rank": 28,
     "specs": {
       "length_mm": 4986,
       "width_mm": 1861,
@@ -9459,7 +10111,7 @@
     "data_issues": [],
     "config_coverage": 0.8077,
     "energy_confidence": 0.65,
-    "library_rank": 26,
+    "library_rank": 28,
     "display": true
   },
   {
@@ -9585,7 +10237,7 @@
       "found": true,
       "cons_note": null
     },
-    "rank": 27,
+    "rank": 29,
     "specs": {
       "length_mm": 4519,
       "width_mm": 1831,
@@ -9824,7 +10476,7 @@
     "data_issues": [],
     "config_coverage": 0.8654,
     "energy_confidence": 0.55,
-    "library_rank": 27,
+    "library_rank": 29,
     "display": true
   },
   {
@@ -9951,7 +10603,7 @@
       "found": true,
       "cons_note": null
     },
-    "rank": 28,
+    "rank": 30,
     "specs": {
       "length_mm": 4680,
       "width_mm": 1838,
@@ -10196,7 +10848,7 @@
     "data_issues": [],
     "config_coverage": 0.9327,
     "energy_confidence": 0.65,
-    "library_rank": 28,
+    "library_rank": 30,
     "display": true
   },
   {
@@ -10328,7 +10980,7 @@
       "found": true,
       "cons_note": null
     },
-    "rank": 29,
+    "rank": 31,
     "specs": {
       "length_mm": 4730,
       "width_mm": 1820,
@@ -10573,7 +11225,7 @@
     "data_issues": [],
     "config_coverage": 0.8077,
     "energy_confidence": 0.55,
-    "library_rank": 29,
+    "library_rank": 31,
     "display": true
   },
   {
@@ -10698,7 +11350,7 @@
       "found": true,
       "cons_note": null
     },
-    "rank": 30,
+    "rank": 32,
     "specs": {
       "length_mm": 4610,
       "width_mm": 1830,
@@ -10943,7 +11595,7 @@
     "data_issues": [],
     "config_coverage": 0.7308,
     "energy_confidence": 0.55,
-    "library_rank": 30,
+    "library_rank": 32,
     "display": true
   },
   {
@@ -11067,7 +11719,7 @@
       "found": true,
       "cons_note": null
     },
-    "rank": 31,
+    "rank": 33,
     "specs": {
       "length_mm": 4652,
       "width_mm": 1843,
@@ -11309,7 +11961,7 @@
     "data_issues": [],
     "config_coverage": 0.7019,
     "energy_confidence": 0.55,
-    "library_rank": 31,
+    "library_rank": 33,
     "display": true
   },
   {
@@ -11438,7 +12090,7 @@
       "found": true,
       "cons_note": null
     },
-    "rank": 32,
+    "rank": 34,
     "specs": {
       "length_mm": 4800,
       "width_mm": 1825,
@@ -11681,7 +12333,7 @@
     "data_issues": [],
     "config_coverage": 0.9327,
     "energy_confidence": 0.65,
-    "library_rank": 32,
+    "library_rank": 34,
     "display": true
   },
   {
@@ -11808,7 +12460,7 @@
       "found": true,
       "cons_note": null
     },
-    "rank": 33,
+    "rank": 35,
     "specs": {
       "length_mm": 4672,
       "width_mm": 1815,
@@ -12054,7 +12706,7 @@
     "data_issues": [],
     "config_coverage": 0.7596,
     "energy_confidence": 0.65,
-    "library_rank": 33,
+    "library_rank": 35,
     "display": true
   },
   {
@@ -12178,7 +12830,7 @@
       "found": true,
       "cons_note": null
     },
-    "rank": 34,
+    "rank": 36,
     "specs": {
       "length_mm": 4288,
       "width_mm": 1748,
@@ -12422,7 +13074,7 @@
     "data_issues": [],
     "config_coverage": 0.7885,
     "energy_confidence": 0.65,
-    "library_rank": 34,
+    "library_rank": 36,
     "display": true,
     "cash_price_wan": 3.39,
     "cash_price_fen": 3390000,
@@ -12560,7 +13212,7 @@
       "found": true,
       "cons_note": null
     },
-    "rank": 35,
+    "rank": 37,
     "specs": {
       "length_mm": 4657,
       "width_mm": 1840,
@@ -12806,7 +13458,7 @@
     "data_issues": [],
     "config_coverage": 0.7788,
     "energy_confidence": 0.55,
-    "library_rank": 35,
+    "library_rank": 37,
     "display": true
   },
   {
@@ -12931,7 +13583,7 @@
       "found": true,
       "cons_note": null
     },
-    "rank": 36,
+    "rank": 38,
     "specs": {
       "length_mm": 4545,
       "width_mm": 1856,
@@ -13176,7 +13828,7 @@
     "data_issues": [],
     "config_coverage": 0.7885,
     "energy_confidence": 0.55,
-    "library_rank": 36,
+    "library_rank": 38,
     "display": true
   },
   {
@@ -13501,9 +14153,9 @@
       "note": "V2 fixed anchors score_version=v2.2.0; exact-trim gate passed; weights={'price': 0.15, 'config': 0.3, 'operating_cost': 0.15, 'space': 0.2, 'age': 0.05, 'mileage': 0.05, 'body_preference': 0.05, 'data_quality': 0.05}; scenario=no_home_charging"
     },
     "ingest_status": "added",
-    "library_rank": 37,
+    "library_rank": 39,
     "display": true,
-    "rank": 37
+    "rank": 39
   },
   {
     "sku": "357275248",
@@ -13627,7 +14279,7 @@
       "found": true,
       "cons_note": null
     },
-    "rank": 38,
+    "rank": 40,
     "specs": {
       "length_mm": 4510,
       "width_mm": 1860,
@@ -13869,7 +14521,7 @@
     "data_issues": [],
     "config_coverage": 0.7404,
     "energy_confidence": 0.55,
-    "library_rank": 38,
+    "library_rank": 40,
     "display": true
   },
   {
@@ -13996,7 +14648,7 @@
       "found": true,
       "cons_note": null
     },
-    "rank": 39,
+    "rank": 41,
     "specs": {
       "length_mm": 4440,
       "width_mm": 1833,
@@ -14237,7 +14889,7 @@
     "data_issues": [],
     "config_coverage": 0.8462,
     "energy_confidence": 0.55,
-    "library_rank": 39,
+    "library_rank": 41,
     "display": true
   },
   {
@@ -14562,9 +15214,9 @@
       "note": "V2 fixed anchors score_version=v2.2.0; exact-trim gate passed; weights={'price': 0.15, 'config': 0.3, 'operating_cost': 0.15, 'space': 0.2, 'age': 0.05, 'mileage': 0.05, 'body_preference': 0.05, 'data_quality': 0.05}; scenario=no_home_charging"
     },
     "ingest_status": "updated",
-    "library_rank": 40,
+    "library_rank": 42,
     "display": true,
-    "rank": 40
+    "rank": 42
   },
   {
     "sku": "356670871",
@@ -14687,7 +15339,7 @@
       "found": true,
       "cons_note": null
     },
-    "rank": 41,
+    "rank": 43,
     "specs": {
       "length_mm": 4330,
       "width_mm": 1800,
@@ -14931,7 +15583,7 @@
     "data_issues": [],
     "config_coverage": 0.8269,
     "energy_confidence": 0.55,
-    "library_rank": 41,
+    "library_rank": 43,
     "display": true,
     "cash_price_wan": 2.99,
     "cash_price_fen": 2990000,
@@ -15076,7 +15728,7 @@
       "found": true,
       "cons_note": null
     },
-    "rank": 42,
+    "rank": 44,
     "specs": {
       "length_mm": 4765,
       "width_mm": 1837,
@@ -15319,7 +15971,7 @@
     "data_issues": [],
     "config_coverage": 0.8462,
     "energy_confidence": 0.9,
-    "library_rank": 42,
+    "library_rank": 44,
     "display": true
   },
   {
@@ -15443,7 +16095,7 @@
       "found": true,
       "cons_note": null
     },
-    "rank": 43,
+    "rank": 45,
     "specs": {
       "length_mm": 4923,
       "width_mm": 1854,
@@ -15684,7 +16336,7 @@
     "data_issues": [],
     "config_coverage": 0.8654,
     "energy_confidence": 0.55,
-    "library_rank": 43,
+    "library_rank": 45,
     "display": true
   },
   {
@@ -15810,7 +16462,7 @@
       "found": true,
       "cons_note": null
     },
-    "rank": 44,
+    "rank": 46,
     "specs": {
       "length_mm": 5018,
       "width_mm": 1866,
@@ -16052,7 +16704,7 @@
     "data_issues": [],
     "config_coverage": 0.7596,
     "energy_confidence": 0.55,
-    "library_rank": 44,
+    "library_rank": 46,
     "display": true
   },
   {
@@ -16177,7 +16829,7 @@
       "found": true,
       "cons_note": null
     },
-    "rank": 45,
+    "rank": 47,
     "specs": {
       "length_mm": 4288,
       "width_mm": 1748,
@@ -16419,7 +17071,7 @@
     "data_issues": [],
     "config_coverage": 0.7885,
     "energy_confidence": 0.65,
-    "library_rank": 45,
+    "library_rank": 47,
     "display": true
   },
   {
@@ -16551,7 +17203,7 @@
       "found": true,
       "cons_note": null
     },
-    "rank": 46,
+    "rank": 48,
     "specs": {
       "length_mm": 4540,
       "width_mm": 1860,
@@ -16797,7 +17449,7 @@
     "data_issues": [],
     "config_coverage": 0.8365,
     "energy_confidence": 0.65,
-    "library_rank": 46,
+    "library_rank": 48,
     "display": true
   },
   {
@@ -16927,7 +17579,7 @@
       "found": true,
       "cons_note": null
     },
-    "rank": 47,
+    "rank": 49,
     "specs": {
       "length_mm": 4440,
       "width_mm": 1833,
@@ -17168,7 +17820,7 @@
     "data_issues": [],
     "config_coverage": 0.8269,
     "energy_confidence": 0.55,
-    "library_rank": 47,
+    "library_rank": 49,
     "display": true
   },
   {
@@ -17294,7 +17946,7 @@
       "found": true,
       "cons_note": null
     },
-    "rank": 48,
+    "rank": 50,
     "specs": {
       "length_mm": 4660,
       "width_mm": 1812,
@@ -17536,7 +18188,7 @@
     "data_issues": [],
     "config_coverage": 0.7308,
     "energy_confidence": 0.55,
-    "library_rank": 48,
+    "library_rank": 50,
     "display": true
   },
   {
@@ -17662,7 +18314,7 @@
       "found": true,
       "cons_note": null
     },
-    "rank": 49,
+    "rank": 51,
     "specs": {
       "length_mm": 4933,
       "width_mm": 1854,
@@ -17904,7 +18556,7 @@
     "data_issues": [],
     "config_coverage": 0.7981,
     "energy_confidence": 0.65,
-    "library_rank": 49,
+    "library_rank": 51,
     "display": true
   },
   {
@@ -18036,7 +18688,7 @@
       "found": true,
       "cons_note": null
     },
-    "rank": 50,
+    "rank": 52,
     "specs": {
       "length_mm": 4645,
       "width_mm": 1860,
@@ -18283,7 +18935,7 @@
     "data_issues": [],
     "config_coverage": 0.875,
     "energy_confidence": 0.65,
-    "library_rank": 50,
+    "library_rank": 52,
     "display": true
   },
   {
@@ -18406,7 +19058,7 @@
       "found": true,
       "cons_note": null
     },
-    "rank": 51,
+    "rank": 53,
     "specs": {
       "length_mm": 4675,
       "width_mm": 1842,
@@ -18650,7 +19302,7 @@
     "data_issues": [],
     "config_coverage": 0.7885,
     "energy_confidence": 0.55,
-    "library_rank": 51,
+    "library_rank": 53,
     "display": true
   },
   {
@@ -18776,7 +19428,7 @@
       "found": true,
       "cons_note": null
     },
-    "rank": 52,
+    "rank": 54,
     "specs": {
       "length_mm": 4680,
       "width_mm": 1810,
@@ -19020,7 +19672,7 @@
     "data_issues": [],
     "config_coverage": 0.7212,
     "energy_confidence": 0.55,
-    "library_rank": 52,
+    "library_rank": 54,
     "display": true
   },
   {
@@ -19150,7 +19802,7 @@
       "found": true,
       "cons_note": null
     },
-    "rank": 53,
+    "rank": 55,
     "specs": {
       "length_mm": 4690,
       "width_mm": 1865,
@@ -19392,7 +20044,7 @@
     "data_issues": [],
     "config_coverage": 0.7981,
     "energy_confidence": 0.55,
-    "library_rank": 53,
+    "library_rank": 55,
     "display": true
   },
   {
@@ -19717,9 +20369,9 @@
       "note": "V2 fixed anchors score_version=v2.2.0; exact-trim gate passed; weights={'price': 0.15, 'config': 0.3, 'operating_cost': 0.15, 'space': 0.2, 'age': 0.05, 'mileage': 0.05, 'body_preference': 0.05, 'data_quality': 0.05}; scenario=no_home_charging"
     },
     "ingest_status": "added",
-    "library_rank": 54,
+    "library_rank": 56,
     "display": true,
-    "rank": 54
+    "rank": 56
   },
   {
     "sku": "357002835",
@@ -19844,7 +20496,7 @@
       "found": true,
       "cons_note": null
     },
-    "rank": 55,
+    "rank": 57,
     "specs": {
       "length_mm": 4006,
       "width_mm": 1765,
@@ -20087,7 +20739,7 @@
     "data_issues": [],
     "config_coverage": 0.7885,
     "energy_confidence": 0.85,
-    "library_rank": 55,
+    "library_rank": 57,
     "display": true
   },
   {
@@ -20212,7 +20864,7 @@
       "found": true,
       "cons_note": null
     },
-    "rank": 56,
+    "rank": 58,
     "specs": {
       "length_mm": 4624,
       "width_mm": 1841,
@@ -20456,7 +21108,7 @@
     "data_issues": [],
     "config_coverage": 0.7596,
     "energy_confidence": 0.55,
-    "library_rank": 56,
+    "library_rank": 58,
     "display": true
   },
   {
@@ -20581,7 +21233,7 @@
       "found": true,
       "cons_note": null
     },
-    "rank": 57,
+    "rank": 59,
     "specs": {
       "length_mm": 4660,
       "width_mm": 1812,
@@ -20823,7 +21475,7 @@
     "data_issues": [],
     "config_coverage": 0.9231,
     "energy_confidence": 0.55,
-    "library_rank": 57,
+    "library_rank": 59,
     "display": true
   },
   {
@@ -20950,7 +21602,7 @@
       "found": true,
       "cons_note": null
     },
-    "rank": 58,
+    "rank": 60,
     "specs": {
       "length_mm": 4933,
       "width_mm": 1854,
@@ -21193,7 +21845,7 @@
     "data_issues": [],
     "config_coverage": 0.7019,
     "energy_confidence": 0.55,
-    "library_rank": 58,
+    "library_rank": 60,
     "display": true
   },
   {
@@ -21321,7 +21973,7 @@
       "found": true,
       "cons_note": null
     },
-    "rank": 59,
+    "rank": 61,
     "specs": {
       "length_mm": 4638,
       "width_mm": 1820,
@@ -21567,7 +22219,7 @@
     "data_issues": [],
     "config_coverage": 0.7692,
     "energy_confidence": 0.65,
-    "library_rank": 59,
+    "library_rank": 61,
     "display": true
   },
   {
@@ -21892,9 +22544,9 @@
       "note": "V2 fixed anchors score_version=v2.2.0; exact-trim gate passed; weights={'price': 0.15, 'config': 0.3, 'operating_cost': 0.15, 'space': 0.2, 'age': 0.05, 'mileage': 0.05, 'body_preference': 0.05, 'data_quality': 0.05}; scenario=no_home_charging"
     },
     "ingest_status": "added",
-    "library_rank": 60,
+    "library_rank": 62,
     "display": true,
-    "rank": 60
+    "rank": 62
   },
   {
     "sku": "357205109",
@@ -22019,7 +22671,7 @@
       "found": true,
       "cons_note": null
     },
-    "rank": 61,
+    "rank": 63,
     "specs": {
       "length_mm": 4672,
       "width_mm": 1815,
@@ -22265,7 +22917,7 @@
     "data_issues": [],
     "config_coverage": 0.7308,
     "energy_confidence": 0.65,
-    "library_rank": 61,
+    "library_rank": 63,
     "display": true
   },
   {
@@ -22392,7 +23044,7 @@
       "found": true,
       "cons_note": null
     },
-    "rank": 62,
+    "rank": 64,
     "specs": {
       "length_mm": 4670,
       "width_mm": 1812,
@@ -22638,7 +23290,7 @@
     "data_issues": [],
     "config_coverage": 0.7404,
     "energy_confidence": 0.65,
-    "library_rank": 62,
+    "library_rank": 64,
     "display": true
   },
   {
@@ -22772,7 +23424,7 @@
       "found": true,
       "cons_note": null
     },
-    "rank": 63,
+    "rank": 65,
     "specs": {
       "length_mm": 4765,
       "width_mm": 1837,
@@ -23015,7 +23667,7 @@
     "data_issues": [],
     "config_coverage": 0.8365,
     "energy_confidence": 0.9,
-    "library_rank": 63,
+    "library_rank": 65,
     "display": true
   },
   {
@@ -23149,7 +23801,7 @@
       "found": true,
       "cons_note": null
     },
-    "rank": 64,
+    "rank": 66,
     "specs": {
       "length_mm": 4780,
       "width_mm": 1837,
@@ -23392,7 +24044,7 @@
     "data_issues": [],
     "config_coverage": 0.8462,
     "energy_confidence": 0.9,
-    "library_rank": 64,
+    "library_rank": 66,
     "display": true
   },
   {
@@ -23517,7 +24169,7 @@
       "found": true,
       "cons_note": null
     },
-    "rank": 65,
+    "rank": 67,
     "specs": {
       "length_mm": 4474,
       "width_mm": 1730,
@@ -23762,7 +24414,7 @@
     "data_issues": [],
     "config_coverage": 0.7596,
     "energy_confidence": 0.65,
-    "library_rank": 65,
+    "library_rank": 67,
     "display": true
   },
   {
@@ -23889,7 +24541,7 @@
       "found": true,
       "cons_note": null
     },
-    "rank": 66,
+    "rank": 68,
     "specs": {
       "length_mm": 4698,
       "width_mm": 1883,
@@ -24132,7 +24784,7 @@
     "data_issues": [],
     "config_coverage": 0.6731,
     "energy_confidence": 0.55,
-    "library_rank": 66,
+    "library_rank": 68,
     "display": true
   },
   {
@@ -24256,7 +24908,7 @@
       "found": true,
       "cons_note": null
     },
-    "rank": 67,
+    "rank": 69,
     "specs": {
       "length_mm": 4609,
       "width_mm": 1798,
@@ -24495,7 +25147,7 @@
     "data_issues": [],
     "config_coverage": 0.8173,
     "energy_confidence": 0.55,
-    "library_rank": 67,
+    "library_rank": 69,
     "display": true
   },
   {
@@ -24621,7 +25273,7 @@
       "found": true,
       "cons_note": null
     },
-    "rank": 68,
+    "rank": 70,
     "specs": {
       "length_mm": 4544,
       "width_mm": 1831,
@@ -24864,7 +25516,7 @@
     "data_issues": [],
     "config_coverage": 0.7404,
     "energy_confidence": 0.55,
-    "library_rank": 68,
+    "library_rank": 70,
     "display": true
   },
   {
@@ -24988,7 +25640,7 @@
       "found": true,
       "cons_note": null
     },
-    "rank": 69,
+    "rank": 71,
     "specs": {
       "length_mm": 4510,
       "width_mm": 1850,
@@ -25231,7 +25883,7 @@
     "data_issues": [],
     "config_coverage": 0.7692,
     "energy_confidence": 0.55,
-    "library_rank": 69,
+    "library_rank": 71,
     "display": true
   },
   {
@@ -25362,7 +26014,7 @@
       "found": true,
       "cons_note": null
     },
-    "rank": 70,
+    "rank": 72,
     "specs": {
       "length_mm": 3620,
       "width_mm": 1652,
@@ -25606,7 +26258,7 @@
     "data_issues": [],
     "config_coverage": 0.7596,
     "energy_confidence": 0.85,
-    "library_rank": 70,
+    "library_rank": 72,
     "display": true
   },
   {
@@ -25732,7 +26384,7 @@
       "found": true,
       "cons_note": null
     },
-    "rank": 71,
+    "rank": 73,
     "specs": {
       "length_mm": 4262,
       "width_mm": 1748,
@@ -25974,7 +26626,7 @@
     "data_issues": [],
     "config_coverage": 0.6827,
     "energy_confidence": 0.55,
-    "library_rank": 71,
+    "library_rank": 73,
     "display": true
   },
   {
@@ -26098,7 +26750,7 @@
       "found": true,
       "cons_note": null
     },
-    "rank": 72,
+    "rank": 74,
     "specs": {
       "length_mm": 4609,
       "width_mm": 1798,
@@ -26340,7 +26992,7 @@
     "data_issues": [],
     "config_coverage": 0.8077,
     "energy_confidence": 0.65,
-    "library_rank": 72,
+    "library_rank": 74,
     "display": true
   },
   {
@@ -26665,9 +27317,9 @@
       "note": "V2 fixed anchors score_version=v2.2.0; exact-trim gate passed; weights={'price': 0.15, 'config': 0.3, 'operating_cost': 0.15, 'space': 0.2, 'age': 0.05, 'mileage': 0.05, 'body_preference': 0.05, 'data_quality': 0.05}; scenario=no_home_charging"
     },
     "ingest_status": "added",
-    "library_rank": 73,
+    "library_rank": 75,
     "display": true,
-    "rank": 73
+    "rank": 75
   },
   {
     "sku": "357184320",
@@ -26795,7 +27447,7 @@
       "found": true,
       "cons_note": null
     },
-    "rank": 74,
+    "rank": 76,
     "specs": {
       "length_mm": 4715,
       "width_mm": 1842,
@@ -27041,7 +27693,7 @@
     "data_issues": [],
     "config_coverage": 0.7404,
     "energy_confidence": 0.65,
-    "library_rank": 74,
+    "library_rank": 76,
     "display": true
   },
   {
@@ -27165,7 +27817,7 @@
       "found": true,
       "cons_note": null
     },
-    "rank": 75,
+    "rank": 77,
     "specs": {
       "length_mm": 4750,
       "width_mm": 1820,
@@ -27409,7 +28061,7 @@
     "data_issues": [],
     "config_coverage": 0.7885,
     "energy_confidence": 0.65,
-    "library_rank": 75,
+    "library_rank": 77,
     "display": true
   },
   {
@@ -27539,7 +28191,7 @@
       "found": true,
       "cons_note": null
     },
-    "rank": 76,
+    "rank": 78,
     "specs": {
       "length_mm": 4393,
       "width_mm": 1766,
@@ -27781,7 +28433,7 @@
     "data_issues": [],
     "config_coverage": 0.8365,
     "energy_confidence": 0.55,
-    "library_rank": 76,
+    "library_rank": 78,
     "display": true
   },
   {
@@ -27909,7 +28561,7 @@
       "found": true,
       "cons_note": null
     },
-    "rank": 77,
+    "rank": 79,
     "specs": {
       "length_mm": 4730,
       "width_mm": 1820,
@@ -28153,7 +28805,7 @@
     "data_issues": [],
     "config_coverage": 0.8269,
     "energy_confidence": 0.65,
-    "library_rank": 77,
+    "library_rank": 79,
     "display": true
   },
   {
@@ -28278,7 +28930,7 @@
       "found": true,
       "cons_note": null
     },
-    "rank": 78,
+    "rank": 80,
     "specs": {
       "length_mm": 4638,
       "width_mm": 1820,
@@ -28522,7 +29174,7 @@
     "data_issues": [],
     "config_coverage": 0.7692,
     "energy_confidence": 0.65,
-    "library_rank": 78,
+    "library_rank": 80,
     "display": true
   },
   {
@@ -28648,7 +29300,7 @@
       "found": true,
       "cons_note": null
     },
-    "rank": 79,
+    "rank": 81,
     "specs": {
       "length_mm": 4575,
       "width_mm": 1750,
@@ -28893,7 +29545,7 @@
     "data_issues": [],
     "config_coverage": 0.7596,
     "energy_confidence": 0.55,
-    "library_rank": 79,
+    "library_rank": 81,
     "display": true
   },
   {
@@ -29018,7 +29670,7 @@
       "found": true,
       "cons_note": null
     },
-    "rank": 80,
+    "rank": 82,
     "specs": {
       "length_mm": 4657,
       "width_mm": 1840,
@@ -29259,7 +29911,7 @@
     "data_issues": [],
     "config_coverage": 0.8654,
     "energy_confidence": 0.55,
-    "library_rank": 80,
+    "library_rank": 82,
     "display": true
   },
   {
@@ -29387,7 +30039,7 @@
       "found": true,
       "cons_note": null
     },
-    "rank": 81,
+    "rank": 83,
     "specs": {
       "length_mm": 4635,
       "width_mm": 1780,
@@ -29633,7 +30285,7 @@
     "data_issues": [],
     "config_coverage": 0.7981,
     "energy_confidence": 0.55,
-    "library_rank": 81,
+    "library_rank": 83,
     "display": true
   },
   {
@@ -29960,9 +30612,9 @@
       "note": "V2 fixed anchors score_version=v2.2.0; exact-trim gate passed; weights={'price': 0.15, 'config': 0.3, 'operating_cost': 0.15, 'space': 0.2, 'age': 0.05, 'mileage': 0.05, 'body_preference': 0.05, 'data_quality': 0.05}; scenario=no_home_charging"
     },
     "ingest_status": "added",
-    "library_rank": 82,
+    "library_rank": 84,
     "display": true,
-    "rank": 82
+    "rank": 84
   },
   {
     "sku": "357192192",
@@ -30091,7 +30743,7 @@
       "found": true,
       "cons_note": null
     },
-    "rank": 83,
+    "rank": 85,
     "specs": {
       "length_mm": 4631,
       "width_mm": 1760,
@@ -30333,7 +30985,7 @@
     "data_issues": [],
     "config_coverage": 0.8462,
     "energy_confidence": 0.55,
-    "library_rank": 83,
+    "library_rank": 85,
     "display": true
   },
   {
@@ -30459,7 +31111,7 @@
       "found": true,
       "cons_note": null
     },
-    "rank": 84,
+    "rank": 86,
     "specs": {
       "length_mm": 4614,
       "width_mm": 1798,
@@ -30704,7 +31356,7 @@
     "data_issues": [],
     "config_coverage": 0.8077,
     "energy_confidence": 0.65,
-    "library_rank": 84,
+    "library_rank": 86,
     "display": true
   },
   {
@@ -30828,7 +31480,7 @@
       "found": true,
       "cons_note": null
     },
-    "rank": 85,
+    "rank": 87,
     "specs": {
       "length_mm": 4318,
       "width_mm": 1819,
@@ -31072,7 +31724,7 @@
     "data_issues": [],
     "config_coverage": 0.7019,
     "energy_confidence": 0.55,
-    "library_rank": 85,
+    "library_rank": 87,
     "display": true
   },
   {
@@ -31399,9 +32051,9 @@
       "note": "V2 fixed anchors score_version=v2.2.0; exact-trim gate passed; weights={'price': 0.15, 'config': 0.3, 'operating_cost': 0.15, 'space': 0.2, 'age': 0.05, 'mileage': 0.05, 'body_preference': 0.05, 'data_quality': 0.05}; scenario=no_home_charging"
     },
     "ingest_status": "added",
-    "library_rank": 86,
+    "library_rank": 88,
     "display": true,
-    "rank": 86
+    "rank": 88
   },
   {
     "sku": "357149711",
@@ -31528,7 +32180,7 @@
       "found": true,
       "cons_note": null
     },
-    "rank": 87,
+    "rank": 89,
     "specs": {
       "length_mm": 4518,
       "width_mm": 1834,
@@ -31772,7 +32424,7 @@
     "data_issues": [],
     "config_coverage": 0.7692,
     "energy_confidence": 0.55,
-    "library_rank": 87,
+    "library_rank": 89,
     "display": true
   },
   {
@@ -31897,7 +32549,7 @@
       "found": true,
       "cons_note": null
     },
-    "rank": 88,
+    "rank": 90,
     "specs": {
       "length_mm": 4510,
       "width_mm": 1852,
@@ -32139,7 +32791,7 @@
     "data_issues": [],
     "config_coverage": 0.8173,
     "energy_confidence": 0.55,
-    "library_rank": 88,
+    "library_rank": 90,
     "display": true
   },
   {
@@ -32265,7 +32917,7 @@
       "found": true,
       "cons_note": null
     },
-    "rank": 89,
+    "rank": 91,
     "specs": {
       "length_mm": 4218,
       "width_mm": 1760,
@@ -32510,7 +33162,7 @@
     "data_issues": [],
     "config_coverage": 0.7404,
     "energy_confidence": 0.55,
-    "library_rank": 89,
+    "library_rank": 91,
     "display": true
   },
   {
@@ -32638,7 +33290,7 @@
       "found": true,
       "cons_note": null
     },
-    "rank": 90,
+    "rank": 92,
     "specs": {
       "length_mm": 4419,
       "width_mm": 1841,
@@ -32881,7 +33533,7 @@
     "data_issues": [],
     "config_coverage": 0.7404,
     "energy_confidence": 0.55,
-    "library_rank": 90,
+    "library_rank": 92,
     "display": true
   },
   {
@@ -33208,9 +33860,9 @@
       "note": "V2 fixed anchors score_version=v2.2.0; exact-trim gate passed; weights={'price': 0.15, 'config': 0.3, 'operating_cost': 0.15, 'space': 0.2, 'age': 0.05, 'mileage': 0.05, 'body_preference': 0.05, 'data_quality': 0.05}; scenario=no_home_charging"
     },
     "ingest_status": "added",
-    "library_rank": 91,
+    "library_rank": 93,
     "display": true,
-    "rank": 91
+    "rank": 93
   },
   {
     "sku": "357166246",
@@ -33334,7 +33986,7 @@
       "found": true,
       "cons_note": null
     },
-    "rank": 92,
+    "rank": 94,
     "specs": {
       "length_mm": 4469,
       "width_mm": 1795,
@@ -33576,7 +34228,7 @@
     "data_issues": [],
     "config_coverage": 0.6538,
     "energy_confidence": 0.55,
-    "library_rank": 92,
+    "library_rank": 94,
     "display": true
   },
   {
@@ -33700,7 +34352,7 @@
       "found": true,
       "cons_note": null
     },
-    "rank": 93,
+    "rank": 95,
     "specs": {
       "length_mm": 4609,
       "width_mm": 1798,
@@ -33942,7 +34594,7 @@
     "data_issues": [],
     "config_coverage": 0.8077,
     "energy_confidence": 0.65,
-    "library_rank": 93,
+    "library_rank": 95,
     "display": true
   },
   {
@@ -34066,7 +34718,7 @@
       "found": true,
       "cons_note": null
     },
-    "rank": 94,
+    "rank": 96,
     "specs": {
       "length_mm": 4710,
       "width_mm": 1820,
@@ -34307,7 +34959,7 @@
     "data_issues": [],
     "config_coverage": 0.8173,
     "energy_confidence": 0.55,
-    "library_rank": 94,
+    "library_rank": 96,
     "display": true
   },
   {
@@ -34432,7 +35084,7 @@
       "found": true,
       "cons_note": null
     },
-    "rank": 95,
+    "rank": 97,
     "specs": {
       "length_mm": 4904,
       "width_mm": 1863,
@@ -34677,7 +35329,7 @@
     "data_issues": [],
     "config_coverage": 0.7981,
     "energy_confidence": 0.55,
-    "library_rank": 95,
+    "library_rank": 97,
     "display": true
   },
   {
@@ -34802,7 +35454,7 @@
       "found": true,
       "cons_note": null
     },
-    "rank": 96,
+    "rank": 98,
     "specs": {
       "length_mm": 4350,
       "width_mm": 1825,
@@ -35047,7 +35699,7 @@
     "data_issues": [],
     "config_coverage": 0.7788,
     "energy_confidence": 0.65,
-    "library_rank": 96,
+    "library_rank": 98,
     "display": true
   },
   {
@@ -35174,7 +35826,7 @@
       "found": true,
       "cons_note": null
     },
-    "rank": 97,
+    "rank": 99,
     "specs": {
       "length_mm": 4401,
       "width_mm": 1837,
@@ -35420,7 +36072,7 @@
     "data_issues": [],
     "config_coverage": 0.8462,
     "energy_confidence": 0.55,
-    "library_rank": 97,
+    "library_rank": 99,
     "display": true
   },
   {
@@ -35546,7 +36198,7 @@
       "found": true,
       "cons_note": null
     },
-    "rank": 98,
+    "rank": 100,
     "specs": {
       "length_mm": 4240,
       "width_mm": 1805,
@@ -35788,747 +36440,6 @@
     "score_eligible": true,
     "data_issues": [],
     "config_coverage": 0.8077,
-    "energy_confidence": 0.55,
-    "library_rank": 98,
-    "display": true
-  },
-  {
-    "sku": "357140215",
-    "title": "卡罗拉 2021款 1.2T S-CVT先锋PLUS版",
-    "price": 5.4,
-    "price_type": "标价",
-    "prefix": "分期价",
-    "extra": "领券优惠价",
-    "extras": [
-      "领券优惠价",
-      "分期直减3000元"
-    ],
-    "year": "2021年 / 4.28万公里 / 武汉",
-    "plate_year": 2021,
-    "model_year": 2021,
-    "mileage_wan": 4.28,
-    "city": "武汉",
-    "tags": [
-      "性价比极佳",
-      "放心检8.0分"
-    ],
-    "badges": [
-      "官方保",
-      "直营"
-    ],
-    "cover": "https://p3-dcd-sign.byteimg.com/tos-cn-i-f042mdwyw7/b6d8e982384341599692c669a5215286~tplv-f042mdwyw7-original:800:0.image?lk3s=416a877a&x-expires=1796200585&x-signature=Vspyk53BRGdzaw4HxlcUV9DJ2lo%3D&psm=motor.sophon.product",
-    "detail_url": "https://m.dcdapp.com/motor/feoffline/usedcar_detail/detail.html?sku_id=357140215&shop_id=118608",
-    "shop_id": "118608",
-    "image_file": "/workspace/dongchedi-wuhan-shop/images/357140215.jpg",
-    "banner": "分期直减3000元",
-    "sort_scores": {
-      "score_version": "v2.2.0",
-      "total_score": 45.6,
-      "config_score": 33.36,
-      "config_norm": 33.36,
-      "config_proxy": 33.36,
-      "is_suv": false,
-      "price": 5.4,
-      "effective_price_wan": 5.4,
-      "condition_gate": "PASS",
-      "note": "V2 fixed anchors score_version=v2.2.0; exact-trim gate passed; weights={'price': 0.15, 'config': 0.3, 'operating_cost': 0.15, 'space': 0.2, 'age': 0.05, 'mileage': 0.05, 'body_preference': 0.05, 'data_quality': 0.05}; scenario=no_home_charging",
-      "price_score": 20.0,
-      "operating_cost_score": 50.44,
-      "space_score": 59.02,
-      "age_score": 63.67,
-      "mileage_score": 79.2,
-      "body_preference_score": 40.0,
-      "data_quality_score": 81.72,
-      "space_norm": 59.02,
-      "fuel_norm": 50.44,
-      "suv_score": 40.0,
-      "space_proxy": 59.02,
-      "fuel_proxy": 50.44,
-      "weights": {
-        "price": 0.15,
-        "config": 0.3,
-        "operating_cost": 0.15,
-        "space": 0.2,
-        "age": 0.05,
-        "mileage": 0.05,
-        "body_preference": 0.05,
-        "data_quality": 0.05
-      },
-      "energy": {
-        "cost_yuan_100km": 52.8,
-        "type": "official_nedc_with_uncertainty",
-        "value": 6.6,
-        "unit": "L/100km",
-        "fuel_grade": "92",
-        "scenario": "no_home_charging"
-      },
-      "confidence": {
-        "price": 0.9,
-        "config": 0.865,
-        "energy": 0.55,
-        "core_specs": 0.99,
-        "age": 0.7,
-        "space": 0.825
-      },
-      "reasons": [
-        "可比价格 5.4 万",
-        "轿车/两厢，车身偏好分较低",
-        "能源成本约 52.8 元/100km（official_nedc_with_uncertainty: 6.6L/100km）"
-      ],
-      "warnings": []
-    },
-    "brand": "丰田",
-    "manufacturer": "一汽丰田",
-    "manufacturer_inferred": false,
-    "total_score": 45.6,
-    "evaluation": "可比价格 5.4 万；轿车/两厢，车身偏好分较低；能源成本约 52.8 元/100km（official_nedc_with_uncertainty: 6.6L/100km）。",
-    "series": "卡罗拉",
-    "owner_reviews": {
-      "summary": "丰田家轿省心保值标杆。槽点：1.2T动力平淡、配置少于自主、后排一般、轮胎偏磨。",
-      "pros": [
-        "可靠保值",
-        "油耗友好",
-        "养车省心"
-      ],
-      "cons": [
-        "动力平淡（1.2T）",
-        "配置少于自主",
-        "后排一般",
-        "轮胎偏磨"
-      ],
-      "drawbacks": [
-        "动力平淡（1.2T）",
-        "配置少于自主",
-        "后排一般",
-        "轮胎偏磨"
-      ],
-      "sources": [
-        {
-          "title": "卡罗拉口碑检索（汽车之家）",
-          "url": "https://sou.autohome.com.cn/zonghe?q=%E5%8D%A1%E7%BD%97%E6%8B%89+%E5%8F%A3%E7%A2%91"
-        },
-        {
-          "title": "紧凑型车口碑榜含卡罗拉（汽车之家）",
-          "url": "https://k.autohome.com.cn/a1/"
-        }
-      ],
-      "found": true,
-      "cons_note": null
-    },
-    "rank": 99,
-    "specs": {
-      "length_mm": 4635,
-      "width_mm": 1780,
-      "height_mm": 1455,
-      "wheelbase_mm": 2700,
-      "seats": null,
-      "body_type": "紧凑型车",
-      "engine": "●",
-      "transmission": "无级变速箱(CVT)",
-      "fuel_grade": "92",
-      "official_fuel_l_100km": 5.5,
-      "official_standard": "NEDC",
-      "low_soc_fuel_l_100km": null,
-      "real_world_fuel_l_100km": null,
-      "real_world_sample_n": null,
-      "electric_kwh_100km": null,
-      "ev_range_km": null,
-      "ev_range_standard": "CLTC",
-      "ranking_energy": {
-        "type": "official_nedc_with_uncertainty",
-        "value": 5.5,
-        "unit": "L/100km",
-        "fallback_multiplier_recommended": 1.2
-      },
-      "powertrain": "ice",
-      "powertrain_type": "ice",
-      "features": {
-        "airbags": 6,
-        "esp": true,
-        "aeb": true,
-        "fcw": false,
-        "ldw": true,
-        "lka": true,
-        "lane_centering": false,
-        "bsd": false,
-        "dow": null,
-        "acc": true,
-        "cruise": "全速自适应巡航",
-        "camera_360": null,
-        "transparent_chassis": null,
-        "front_radar": false,
-        "rear_radar": false,
-        "auto_park": false,
-        "remote_park": null,
-        "power_driver_seat": false,
-        "power_passenger_seat": false,
-        "seat_heating": false,
-        "seat_ventilation": false,
-        "panoramic_sunroof": false,
-        "power_tailgate": false,
-        "keyless_entry": false,
-        "remote_start": false,
-        "rear_ac_vents": false,
-        "dual_zone_climate": false,
-        "leather_seats": false,
-        "full_lcd_cluster": false,
-        "screen_inch": 8.0,
-        "carplay": null,
-        "carlife": true,
-        "phone_link": true,
-        "wireless_charge": false,
-        "voice_control": false,
-        "ota": false,
-        "hud": false,
-        "chip_8155": null
-      },
-      "airbags": 6,
-      "screen_inch": 8.0,
-      "match_level": "exact_trim",
-      "trim_id": "trim_ah_3fed01484df6",
-      "canonical_title": "卡罗拉 2021款 1.2T S-CVT先锋PLUS版",
-      "specs_found": true,
-      "specs_approx": false,
-      "verified": true,
-      "verification_schema": "3.0-exact-trim-detailed",
-      "configuration_source": "exact_trim_v3",
-      "core_confidence": 0.99,
-      "feature_confidence": 0.95,
-      "verification_issues": [],
-      "verification_sources": [
-        {
-          "url": "https://car.autohome.com.cn/config/spec/49440.html",
-          "source_type": "autohome_live_config",
-          "authority_tier": 1,
-          "series_id": 526,
-          "spec_id": 49440,
-          "parameter_source": "live_page"
-        },
-        {
-          "url": "https://github.com/swoiow/autohome",
-          "source_type": "autohome_parameter_dataset",
-          "authority_tier": 3,
-          "snapshot": "identity_match_only",
-          "source_path": "live:config/spec/49440.html",
-          "note": "vault/main used for exact-trim identity; parameters from live page"
-        }
-      ]
-    },
-    "detailed_config": {
-      "length_mm": 4635,
-      "width_mm": 1780,
-      "height_mm": 1455,
-      "wheelbase_mm": 2700,
-      "seats": null,
-      "body_type": "紧凑型车",
-      "engine": "●",
-      "transmission": "无级变速箱(CVT)",
-      "fuel_grade": "92",
-      "official_fuel_l_100km": 5.5,
-      "official_standard": "NEDC",
-      "low_soc_fuel_l_100km": null,
-      "real_world_fuel_l_100km": null,
-      "real_world_sample_n": null,
-      "electric_kwh_100km": null,
-      "ev_range_km": null,
-      "ev_range_standard": "CLTC",
-      "ranking_energy": {
-        "type": "official_nedc_with_uncertainty",
-        "value": 5.5,
-        "unit": "L/100km",
-        "fallback_multiplier_recommended": 1.2
-      },
-      "powertrain": "ice",
-      "powertrain_type": "ice",
-      "features": {
-        "airbags": 6,
-        "esp": true,
-        "aeb": true,
-        "fcw": false,
-        "ldw": true,
-        "lka": true,
-        "lane_centering": false,
-        "bsd": false,
-        "dow": null,
-        "acc": true,
-        "cruise": "全速自适应巡航",
-        "camera_360": null,
-        "transparent_chassis": null,
-        "front_radar": false,
-        "rear_radar": false,
-        "auto_park": false,
-        "remote_park": null,
-        "power_driver_seat": false,
-        "power_passenger_seat": false,
-        "seat_heating": false,
-        "seat_ventilation": false,
-        "panoramic_sunroof": false,
-        "power_tailgate": false,
-        "keyless_entry": false,
-        "remote_start": false,
-        "rear_ac_vents": false,
-        "dual_zone_climate": false,
-        "leather_seats": false,
-        "full_lcd_cluster": false,
-        "screen_inch": 8.0,
-        "carplay": null,
-        "carlife": true,
-        "phone_link": true,
-        "wireless_charge": false,
-        "voice_control": false,
-        "ota": false,
-        "hud": false,
-        "chip_8155": null
-      },
-      "airbags": 6,
-      "screen_inch": 8.0,
-      "match_level": "exact_trim",
-      "trim_id": "trim_ah_3fed01484df6",
-      "canonical_title": "卡罗拉 2021款 1.2T S-CVT先锋PLUS版",
-      "specs_found": true,
-      "specs_approx": false,
-      "verified": true,
-      "verification_schema": "3.0-exact-trim-detailed",
-      "configuration_source": "exact_trim_v3",
-      "core_confidence": 0.99,
-      "feature_confidence": 0.95,
-      "verification_issues": [],
-      "verification_sources": [
-        {
-          "url": "https://car.autohome.com.cn/config/spec/49440.html",
-          "source_type": "autohome_live_config",
-          "authority_tier": 1,
-          "series_id": 526,
-          "spec_id": 49440,
-          "parameter_source": "live_page"
-        },
-        {
-          "url": "https://github.com/swoiow/autohome",
-          "source_type": "autohome_parameter_dataset",
-          "authority_tier": 3,
-          "snapshot": "identity_match_only",
-          "source_path": "live:config/spec/49440.html",
-          "note": "vault/main used for exact-trim identity; parameters from live page"
-        }
-      ]
-    },
-    "display_price_wan": 5.4,
-    "effective_price_wan": 5.4,
-    "price_confidence": 0.9,
-    "needs_cash_quote": false,
-    "price_basis": "display",
-    "finance_reserve_wan": 0.5,
-    "_age_years": 5.333333333333333,
-    "score_version": "v2.2.0",
-    "score_v1": 45.6,
-    "condition_gate": "PASS",
-    "score_reasons": [
-      "可比价格 5.4 万",
-      "轿车/两厢，车身偏好分较低",
-      "能源成本约 52.8 元/100km（official_nedc_with_uncertainty: 6.6L/100km）"
-    ],
-    "score_warnings": [],
-    "confidence": {
-      "price": 0.9,
-      "config": 0.865,
-      "energy": 0.55,
-      "core_specs": 0.99,
-      "age": 0.7,
-      "space": 0.825
-    },
-    "price_refresh": {
-      "fetched_at": "2026-11-02T20:20+08:00",
-      "source": "card/detail.sku_price",
-      "cash_price_wan": 5.4,
-      "finance_discount_price_wan": 5.1,
-      "previous_price_wan": 5.1,
-      "previous_price_type": "分期",
-      "tags": [
-        "问题车终身回购",
-        "7天无忧购",
-        "60天整车质保",
-        "1年/3万公里延保",
-        "分期券后价",
-        "领券优惠价",
-        "分期直减券3000元",
-        "送1940元深度整备保养",
-        "送359元全车深度质检",
-        "送1年3万公里核心零部件延保"
-      ]
-    },
-    "score_eligible": true,
-    "data_issues": [],
-    "config_coverage": 0.8654,
-    "energy_confidence": 0.55,
-    "library_rank": 99,
-    "display": true
-  },
-  {
-    "sku": "357357693",
-    "title": "奕泽IZOA 2021款 2.0L 奕享版",
-    "price": 5.99,
-    "price_type": "标价",
-    "prefix": "标价",
-    "extra": "限时物流补贴",
-    "extras": [
-      "限时物流补贴"
-    ],
-    "year": "2021年 / 4.25万公里 / 武汉",
-    "plate_year": 2021,
-    "model_year": 2021,
-    "mileage_wan": 4.25,
-    "city": "武汉",
-    "tags": [
-      "性价比极佳",
-      "已检测",
-      "新上",
-      "原版原漆",
-      "0过户",
-      "内饰如新"
-    ],
-    "badges": [
-      "官方保",
-      "直营"
-    ],
-    "cover": "https://p9-dcd-sign.byteimg.com/tos-cn-i-f042mdwyw7/1bbd01b9e81a43c98f40b24f29051df1~tplv-resize:800:0.image?lk3s=416a877a&x-expires=1796200596&x-signature=7SNeZVeIP1nNxtYKiWoDJaabE1M%3D&psm=motor.sophon.product",
-    "detail_url": "https://m.dcdapp.com/motor/feoffline/usedcar_detail/detail.html?sku_id=357357693&shop_id=118608",
-    "shop_id": "118608",
-    "image_file": "/workspace/dongchedi-wuhan-shop/images/357357693.jpg",
-    "banner": "",
-    "sort_scores": {
-      "score_version": "v2.2.0",
-      "total_score": 45.6,
-      "config_score": 42.51,
-      "config_norm": 42.51,
-      "config_proxy": 42.51,
-      "is_suv": true,
-      "price": 5.99,
-      "effective_price_wan": 5.99,
-      "condition_gate": "PASS",
-      "note": "V2 fixed anchors score_version=v2.2.0; exact-trim gate passed; weights={'price': 0.15, 'config': 0.3, 'operating_cost': 0.15, 'space': 0.2, 'age': 0.05, 'mileage': 0.05, 'body_preference': 0.05, 'data_quality': 0.05}; scenario=no_home_charging",
-      "price_score": 0.33,
-      "operating_cost_score": 48.86,
-      "space_score": 49.91,
-      "age_score": 63.67,
-      "mileage_score": 79.5,
-      "body_preference_score": 85.0,
-      "data_quality_score": 81.72,
-      "space_norm": 49.91,
-      "fuel_norm": 48.86,
-      "suv_score": 85.0,
-      "space_proxy": 49.91,
-      "fuel_proxy": 48.86,
-      "weights": {
-        "price": 0.15,
-        "config": 0.3,
-        "operating_cost": 0.15,
-        "space": 0.2,
-        "age": 0.05,
-        "mileage": 0.05,
-        "body_preference": 0.05,
-        "data_quality": 0.05
-      },
-      "energy": {
-        "cost_yuan_100km": 54.72,
-        "type": "official_nedc_with_uncertainty",
-        "value": 6.84,
-        "unit": "L/100km",
-        "fuel_grade": "92",
-        "scenario": "no_home_charging"
-      },
-      "confidence": {
-        "price": 0.9,
-        "config": 0.865,
-        "energy": 0.55,
-        "core_specs": 0.99,
-        "age": 0.7,
-        "space": 0.825
-      },
-      "reasons": [
-        "可比价格 5.99 万",
-        "车身 小型SUV 符合偏好",
-        "能源成本约 54.72 元/100km（official_nedc_with_uncertainty: 6.84L/100km）"
-      ],
-      "warnings": []
-    },
-    "brand": "丰田",
-    "manufacturer": "一汽丰田",
-    "manufacturer_inferred": false,
-    "total_score": 45.6,
-    "evaluation": "可比价格 5.99 万；车身 小型SUV 符合偏好；能源成本约 54.72 元/100km（official_nedc_with_uncertainty: 6.84L/100km）。",
-    "series": "奕泽IZOA",
-    "owner_reviews": {
-      "summary": "丰田小型SUV可靠。槽点：后排小、动力平淡、配置少，价格偏高时不值。",
-      "pros": [
-        "可靠保值",
-        "城市灵活"
-      ],
-      "cons": [
-        "后排小",
-        "动力平淡",
-        "配置少",
-        "价格偏高时不值"
-      ],
-      "drawbacks": [
-        "后排小",
-        "动力平淡",
-        "配置少",
-        "价格偏高时不值"
-      ],
-      "sources": [
-        {
-          "title": "奕泽口碑检索（汽车之家）",
-          "url": "https://sou.autohome.com.cn/zonghe?q=%E5%A5%95%E6%B3%BD+%E5%8F%A3%E7%A2%91"
-        },
-        {
-          "title": "奕泽论坛",
-          "url": "https://club.autohome.com.cn/bbs/forum-c-5283-1.html"
-        }
-      ],
-      "found": true,
-      "cons_note": null
-    },
-    "rank": 100,
-    "specs": {
-      "length_mm": 4390,
-      "width_mm": 1795,
-      "height_mm": 1565,
-      "wheelbase_mm": 2640,
-      "seats": null,
-      "body_type": "小型SUV",
-      "engine": "●",
-      "transmission": "无级变速箱(CVT)",
-      "fuel_grade": "92",
-      "official_fuel_l_100km": 5.7,
-      "official_standard": "NEDC",
-      "low_soc_fuel_l_100km": null,
-      "real_world_fuel_l_100km": null,
-      "real_world_sample_n": null,
-      "electric_kwh_100km": null,
-      "ev_range_km": null,
-      "ev_range_standard": "CLTC",
-      "ranking_energy": {
-        "type": "official_nedc_with_uncertainty",
-        "value": 5.7,
-        "unit": "L/100km",
-        "fallback_multiplier_recommended": 1.2
-      },
-      "powertrain": "ice",
-      "powertrain_type": "ice",
-      "features": {
-        "airbags": 6,
-        "esp": true,
-        "aeb": true,
-        "fcw": true,
-        "ldw": true,
-        "lka": true,
-        "lane_centering": true,
-        "bsd": false,
-        "dow": null,
-        "acc": true,
-        "cruise": "全速自适应巡航",
-        "camera_360": null,
-        "transparent_chassis": null,
-        "front_radar": false,
-        "rear_radar": false,
-        "auto_park": false,
-        "remote_park": null,
-        "power_driver_seat": false,
-        "power_passenger_seat": false,
-        "seat_heating": false,
-        "seat_ventilation": false,
-        "panoramic_sunroof": false,
-        "power_tailgate": false,
-        "keyless_entry": true,
-        "remote_start": false,
-        "rear_ac_vents": false,
-        "dual_zone_climate": false,
-        "leather_seats": false,
-        "full_lcd_cluster": false,
-        "screen_inch": 9.0,
-        "carplay": null,
-        "carlife": null,
-        "phone_link": false,
-        "wireless_charge": false,
-        "voice_control": true,
-        "ota": false,
-        "hud": false,
-        "chip_8155": null
-      },
-      "airbags": 6,
-      "screen_inch": 9.0,
-      "match_level": "exact_trim",
-      "trim_id": "trim_ah_fe92077eceba",
-      "canonical_title": "奕泽IZOA 2021款 2.0L 奕享版",
-      "specs_found": true,
-      "specs_approx": false,
-      "verified": true,
-      "verification_schema": "3.0-exact-trim-detailed",
-      "configuration_source": "exact_trim_v3",
-      "core_confidence": 0.99,
-      "feature_confidence": 0.95,
-      "verification_issues": [],
-      "verification_sources": [
-        {
-          "url": "https://car.autohome.com.cn/config/spec/51546.html",
-          "source_type": "autohome_live_config",
-          "authority_tier": 1,
-          "series_id": 4646,
-          "spec_id": 51546,
-          "parameter_source": "live_page"
-        },
-        {
-          "url": "https://github.com/swoiow/autohome",
-          "source_type": "autohome_parameter_dataset",
-          "authority_tier": 3,
-          "snapshot": "identity_match_only",
-          "source_path": "live:config/spec/51546.html",
-          "note": "vault/main used for exact-trim identity; parameters from live page"
-        }
-      ]
-    },
-    "detailed_config": {
-      "length_mm": 4390,
-      "width_mm": 1795,
-      "height_mm": 1565,
-      "wheelbase_mm": 2640,
-      "seats": null,
-      "body_type": "小型SUV",
-      "engine": "●",
-      "transmission": "无级变速箱(CVT)",
-      "fuel_grade": "92",
-      "official_fuel_l_100km": 5.7,
-      "official_standard": "NEDC",
-      "low_soc_fuel_l_100km": null,
-      "real_world_fuel_l_100km": null,
-      "real_world_sample_n": null,
-      "electric_kwh_100km": null,
-      "ev_range_km": null,
-      "ev_range_standard": "CLTC",
-      "ranking_energy": {
-        "type": "official_nedc_with_uncertainty",
-        "value": 5.7,
-        "unit": "L/100km",
-        "fallback_multiplier_recommended": 1.2
-      },
-      "powertrain": "ice",
-      "powertrain_type": "ice",
-      "features": {
-        "airbags": 6,
-        "esp": true,
-        "aeb": true,
-        "fcw": true,
-        "ldw": true,
-        "lka": true,
-        "lane_centering": true,
-        "bsd": false,
-        "dow": null,
-        "acc": true,
-        "cruise": "全速自适应巡航",
-        "camera_360": null,
-        "transparent_chassis": null,
-        "front_radar": false,
-        "rear_radar": false,
-        "auto_park": false,
-        "remote_park": null,
-        "power_driver_seat": false,
-        "power_passenger_seat": false,
-        "seat_heating": false,
-        "seat_ventilation": false,
-        "panoramic_sunroof": false,
-        "power_tailgate": false,
-        "keyless_entry": true,
-        "remote_start": false,
-        "rear_ac_vents": false,
-        "dual_zone_climate": false,
-        "leather_seats": false,
-        "full_lcd_cluster": false,
-        "screen_inch": 9.0,
-        "carplay": null,
-        "carlife": null,
-        "phone_link": false,
-        "wireless_charge": false,
-        "voice_control": true,
-        "ota": false,
-        "hud": false,
-        "chip_8155": null
-      },
-      "airbags": 6,
-      "screen_inch": 9.0,
-      "match_level": "exact_trim",
-      "trim_id": "trim_ah_fe92077eceba",
-      "canonical_title": "奕泽IZOA 2021款 2.0L 奕享版",
-      "specs_found": true,
-      "specs_approx": false,
-      "verified": true,
-      "verification_schema": "3.0-exact-trim-detailed",
-      "configuration_source": "exact_trim_v3",
-      "core_confidence": 0.99,
-      "feature_confidence": 0.95,
-      "verification_issues": [],
-      "verification_sources": [
-        {
-          "url": "https://car.autohome.com.cn/config/spec/51546.html",
-          "source_type": "autohome_live_config",
-          "authority_tier": 1,
-          "series_id": 4646,
-          "spec_id": 51546,
-          "parameter_source": "live_page"
-        },
-        {
-          "url": "https://github.com/swoiow/autohome",
-          "source_type": "autohome_parameter_dataset",
-          "authority_tier": 3,
-          "snapshot": "identity_match_only",
-          "source_path": "live:config/spec/51546.html",
-          "note": "vault/main used for exact-trim identity; parameters from live page"
-        }
-      ]
-    },
-    "display_price_wan": 5.99,
-    "effective_price_wan": 5.99,
-    "price_confidence": 0.9,
-    "needs_cash_quote": false,
-    "price_basis": "display",
-    "_age_years": 5.333333333333333,
-    "score_version": "v2.2.0",
-    "score_v1": 45.6,
-    "condition_gate": "PASS",
-    "score_reasons": [
-      "可比价格 5.99 万",
-      "车身 小型SUV 符合偏好",
-      "能源成本约 54.72 元/100km（official_nedc_with_uncertainty: 6.84L/100km）"
-    ],
-    "score_warnings": [],
-    "confidence": {
-      "price": 0.9,
-      "config": 0.865,
-      "energy": 0.55,
-      "core_specs": 0.99,
-      "age": 0.7,
-      "space": 0.825
-    },
-    "price_refresh": {
-      "fetched_at": "2026-11-02T20:20+08:00",
-      "source": "card/detail.sku_price",
-      "cash_price_wan": 5.99,
-      "finance_discount_price_wan": null,
-      "previous_price_wan": 5.99,
-      "previous_price_type": "标价",
-      "tags": [
-        "问题车终身回购",
-        "7天无忧购",
-        "60天整车质保",
-        "1年/3万公里延保",
-        "预售价",
-        "送1940元深度整备保养",
-        "送359元全车深度质检",
-        "送1年3万公里核心零部件延保"
-      ]
-    },
-    "score_eligible": true,
-    "data_issues": [],
-    "config_coverage": 0.8654,
     "energy_confidence": 0.55,
     "library_rank": 100,
     "display": true

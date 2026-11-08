@@ -1,13 +1,13 @@
 {
   "schema_version": "autohome-live-config-tree-1",
   "source": "car.autohome.com.cn/config/spec",
-  "generated_at": "2026-11-07T09:56:55+08:00",
+  "generated_at": "2026-11-08T09:52:30+08:00",
   "legend": {
     "standard": "●",
     "optional": "○",
     "absent": "-"
   },
-  "spec_count": 147,
+  "spec_count": 149,
   "specs": {
     "21170": {
       "title": "雪铁龙C3-XR 2015款 1.6L 自动先锋型",
@@ -541,6 +541,13 @@
       "item_count": 188,
       "file": "46527.json"
     },
+    "46712": {
+      "title": "锐程CC 2021款 蓝鲸版 1.5T DCT尊贵型",
+      "url": "https://car.autohome.com.cn/config/spec/46712.html",
+      "section_count": 21,
+      "item_count": 163,
+      "file": "46712.json"
+    },
     "46863": {
       "title": "博瑞 2021款 1.8T 领航版",
       "url": "https://car.autohome.com.cn/config/spec/46863.html",
@@ -807,6 +814,13 @@
       "item_count": 190,
       "file": "55338.json"
     },
+    "55563": {
+      "title": "伊兰特 2022款 1.5L CVT LUX尊贵版",
+      "url": "https://car.autohome.com.cn/config/spec/55563.html",
+      "section_count": 22,
+      "item_count": 182,
+      "file": "55563.json"
+    },
     "56459": {
       "title": "传祺GS3 2022款 POWER 270T 自动劲享版",
       "url": "https://car.autohome.com.cn/config/spec/56459.html",
@@ -1052,6 +1066,7 @@
     "357420143": 48460,
     "357211013": 31105,
     "356998318": 41568,
+    "357463780": 46712,
     "357168649": 43340,
     "357295571": 42111,
     "357319061": 43240,
@@ -1065,6 +1080,7 @@
     "357452723": 67683,
     "356579334": 38163,
     "356630207": 51178,
+    "357426428": 55563,
     "357172812": 46863,
     "357349654": 33354,
     "356938379": 55338,
