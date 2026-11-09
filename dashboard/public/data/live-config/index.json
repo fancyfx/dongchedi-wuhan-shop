@@ -1,13 +1,13 @@
 {
   "schema_version": "autohome-live-config-tree-1",
   "source": "car.autohome.com.cn/config/spec",
-  "generated_at": "2026-11-08T09:52:30+08:00",
+  "generated_at": "2026-11-09T09:48:18+08:00",
   "legend": {
     "standard": "●",
     "optional": "○",
     "absent": "-"
   },
-  "spec_count": 149,
+  "spec_count": 151,
   "specs": {
     "21170": {
       "title": "雪铁龙C3-XR 2015款 1.6L 自动先锋型",
@@ -457,6 +457,13 @@
       "item_count": 168,
       "file": "42111.json"
     },
+    "42740": {
+      "title": "哈弗F7 2020款 1.5T 两驱i潮",
+      "url": "https://car.autohome.com.cn/config/spec/42740.html",
+      "section_count": 22,
+      "item_count": 170,
+      "file": "42740.json"
+    },
     "42951": {
       "title": "KX3傲跑 2020款 1.5L CVT潮流版",
       "url": "https://car.autohome.com.cn/config/spec/42951.html",
@@ -729,6 +736,13 @@
       "section_count": 21,
       "item_count": 161,
       "file": "52053.json"
+    },
+    "52937": {
+      "title": "哈弗H6 2021款 第三代 1.5T 自动两驱Supreme+",
+      "url": "https://car.autohome.com.cn/config/spec/52937.html",
+      "section_count": 21,
+      "item_count": 197,
+      "file": "52937.json"
     },
     "52941": {
       "title": "哈弗H6S 2022款 2.0T 两驱智跑版",
@@ -1054,8 +1068,10 @@
     }
   },
   "sku_to_spec": {
+    "357480334": 52937,
     "357301752": 49472,
     "357149730": 61643,
+    "357479219": 42740,
     "357014230": 60082,
     "357149717": 31106,
     "357355582": 49336,

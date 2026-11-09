@@ -1,5 +1,331 @@
 [
   {
+    "sku": "357480334",
+    "title": "哈弗H6 2021款 第三代 1.5GDIT 自动Supreme版",
+    "shop_id": "118608",
+    "shop_name": "懂车帝汽车商城•武汉店",
+    "series": "哈弗H6",
+    "brand": "哈弗",
+    "mileage_wan": 6.09,
+    "model_year": 2021,
+    "plate_year": 2020,
+    "year": "2020年/6.09万公里",
+    "city": "武汉",
+    "tags": [
+      "0.4万首付"
+    ],
+    "badges": [
+      "直营"
+    ],
+    "is_self_trade_car": true,
+    "source_type": "2",
+    "source_type_name": "自营-个人",
+    "fuel_form": "1",
+    "cover": "https://p3-dcd-sign.byteimg.com/tos-cn-i-f042mdwyw7/f2af0341a7a24165bbade5bc542fb783~tplv-f042mdwyw7-auto-webp:480:0.jpg?rk3s=4892dee6&x-expires=1795397858&x-signature=kL24YfhqHZmfufbUSq39wh0qOs0%3D&psm=motor.sh.pack",
+    "detail_url": "https://m.dcdapp.com/motor/feoffline/usedcar_detail/detail.html?sku_id=357480334&shop_id=118608",
+    "list_price_wan": 4.49,
+    "first_registration_time": "1605628800",
+    "price_type": "现金价",
+    "prefix": "现金价",
+    "cash_price_fen": 4490000,
+    "cash_price_str": "4.49",
+    "cash_price_wan": 4.49,
+    "price": 4.49,
+    "detail_shop_id": "118608",
+    "specs": {
+      "length_mm": 4683,
+      "width_mm": 1886,
+      "height_mm": 1730,
+      "wheelbase_mm": 2738,
+      "seats": null,
+      "body_type": "紧凑型SUV",
+      "engine": "●",
+      "transmission": "湿式双离合变速箱(DCT)",
+      "fuel_grade": "92",
+      "official_fuel_l_100km": 6.93,
+      "official_standard": "WLTC",
+      "low_soc_fuel_l_100km": null,
+      "real_world_fuel_l_100km": null,
+      "real_world_sample_n": null,
+      "electric_kwh_100km": null,
+      "ev_range_km": null,
+      "ev_range_standard": null,
+      "ranking_energy": {
+        "type": "official_wltc_with_uncertainty",
+        "value": 6.93,
+        "unit": "L/100km",
+        "fallback_multiplier_recommended": 1.15
+      },
+      "powertrain": "ice",
+      "powertrain_type": "ice",
+      "features": {
+        "airbags": 6,
+        "esp": true,
+        "aeb": true,
+        "fcw": true,
+        "ldw": true,
+        "lka": true,
+        "lane_centering": true,
+        "bsd": true,
+        "dow": true,
+        "acc": true,
+        "cruise": "全速自适应巡航",
+        "camera_360": true,
+        "transparent_chassis": true,
+        "front_radar": true,
+        "rear_radar": true,
+        "auto_park": true,
+        "remote_park": null,
+        "power_driver_seat": true,
+        "power_passenger_seat": true,
+        "seat_heating": true,
+        "seat_ventilation": null,
+        "panoramic_sunroof": true,
+        "power_tailgate": true,
+        "keyless_entry": true,
+        "remote_start": false,
+        "rear_ac_vents": true,
+        "dual_zone_climate": true,
+        "leather_seats": false,
+        "full_lcd_cluster": true,
+        "screen_inch": 12.3,
+        "carplay": true,
+        "carlife": null,
+        "phone_link": true,
+        "wireless_charge": true,
+        "voice_control": true,
+        "ota": true,
+        "hud": true,
+        "chip_8155": null
+      },
+      "airbags": 6,
+      "screen_inch": 12.3,
+      "match_level": "exact_trim",
+      "trim_id": "trim_ah_24dc1d3fdddf",
+      "canonical_title": "哈弗H6 2021款 第三代 1.5T 自动两驱Supreme+",
+      "specs_found": true,
+      "specs_approx": false,
+      "verified": true,
+      "verification_schema": "3.0-exact-trim-detailed",
+      "configuration_source": "exact_trim_v3",
+      "core_confidence": 0.94,
+      "feature_confidence": 0.95,
+      "verification_issues": [],
+      "verification_sources": [
+        {
+          "url": "https://car.autohome.com.cn/config/spec/52937.html",
+          "source_type": "autohome_live_config",
+          "authority_tier": 1,
+          "series_id": 2123,
+          "spec_id": 52937,
+          "parameter_source": "live_page"
+        },
+        {
+          "url": "https://github.com/swoiow/autohome",
+          "source_type": "autohome_parameter_dataset",
+          "authority_tier": 3,
+          "snapshot": "identity_match_only",
+          "source_path": "live:config/spec/52937.html",
+          "note": "vault/main used for exact-trim identity; parameters from live page"
+        }
+      ]
+    },
+    "detailed_config": {
+      "length_mm": 4683,
+      "width_mm": 1886,
+      "height_mm": 1730,
+      "wheelbase_mm": 2738,
+      "seats": null,
+      "body_type": "紧凑型SUV",
+      "engine": "●",
+      "transmission": "湿式双离合变速箱(DCT)",
+      "fuel_grade": "92",
+      "official_fuel_l_100km": 6.93,
+      "official_standard": "WLTC",
+      "low_soc_fuel_l_100km": null,
+      "real_world_fuel_l_100km": null,
+      "real_world_sample_n": null,
+      "electric_kwh_100km": null,
+      "ev_range_km": null,
+      "ev_range_standard": null,
+      "ranking_energy": {
+        "type": "official_wltc_with_uncertainty",
+        "value": 6.93,
+        "unit": "L/100km",
+        "fallback_multiplier_recommended": 1.15
+      },
+      "powertrain": "ice",
+      "powertrain_type": "ice",
+      "features": {
+        "airbags": 6,
+        "esp": true,
+        "aeb": true,
+        "fcw": true,
+        "ldw": true,
+        "lka": true,
+        "lane_centering": true,
+        "bsd": true,
+        "dow": true,
+        "acc": true,
+        "cruise": "全速自适应巡航",
+        "camera_360": true,
+        "transparent_chassis": true,
+        "front_radar": true,
+        "rear_radar": true,
+        "auto_park": true,
+        "remote_park": null,
+        "power_driver_seat": true,
+        "power_passenger_seat": true,
+        "seat_heating": true,
+        "seat_ventilation": null,
+        "panoramic_sunroof": true,
+        "power_tailgate": true,
+        "keyless_entry": true,
+        "remote_start": false,
+        "rear_ac_vents": true,
+        "dual_zone_climate": true,
+        "leather_seats": false,
+        "full_lcd_cluster": true,
+        "screen_inch": 12.3,
+        "carplay": true,
+        "carlife": null,
+        "phone_link": true,
+        "wireless_charge": true,
+        "voice_control": true,
+        "ota": true,
+        "hud": true,
+        "chip_8155": null
+      },
+      "airbags": 6,
+      "screen_inch": 12.3,
+      "match_level": "exact_trim",
+      "trim_id": "trim_ah_24dc1d3fdddf",
+      "canonical_title": "哈弗H6 2021款 第三代 1.5T 自动两驱Supreme+",
+      "specs_found": true,
+      "specs_approx": false,
+      "verified": true,
+      "verification_schema": "3.0-exact-trim-detailed",
+      "configuration_source": "exact_trim_v3",
+      "core_confidence": 0.94,
+      "feature_confidence": 0.95,
+      "verification_issues": [],
+      "verification_sources": [
+        {
+          "url": "https://car.autohome.com.cn/config/spec/52937.html",
+          "source_type": "autohome_live_config",
+          "authority_tier": 1,
+          "series_id": 2123,
+          "spec_id": 52937,
+          "parameter_source": "live_page"
+        },
+        {
+          "url": "https://github.com/swoiow/autohome",
+          "source_type": "autohome_parameter_dataset",
+          "authority_tier": 3,
+          "snapshot": "identity_match_only",
+          "source_path": "live:config/spec/52937.html",
+          "note": "vault/main used for exact-trim identity; parameters from live page"
+        }
+      ]
+    },
+    "display_price_wan": 4.49,
+    "effective_price_wan": 4.49,
+    "price_confidence": 0.95,
+    "needs_cash_quote": false,
+    "price_basis": "cash",
+    "manufacturer": "长城汽车",
+    "manufacturer_inferred": false,
+    "owner_reviews": {
+      "summary": "",
+      "sources": [],
+      "found": false
+    },
+    "score_eligible": true,
+    "data_issues": [],
+    "config_coverage": 0.9231,
+    "energy_confidence": 0.65,
+    "_age_years": 6.333333333333333,
+    "score_version": "v2.2.0",
+    "score_v1": 69.6,
+    "total_score": 69.6,
+    "condition_gate": "PASS",
+    "evaluation": "可比价格 4.49 万；车身 紧凑型SUV 符合偏好；能源成本约 63.76 元/100km（official_wltc_with_uncertainty: 7.969499999999999L/100km）。",
+    "score_reasons": [
+      "可比价格 4.49 万",
+      "车身 紧凑型SUV 符合偏好",
+      "能源成本约 63.76 元/100km（official_wltc_with_uncertainty: 7.969499999999999L/100km）"
+    ],
+    "score_warnings": [],
+    "confidence": {
+      "price": 0.95,
+      "config": 0.923,
+      "energy": 0.65,
+      "core_specs": 0.94,
+      "age": 0.7,
+      "space": 0.825
+    },
+    "sort_scores": {
+      "score_version": "v2.2.0",
+      "total_score": 69.6,
+      "price_score": 50.33,
+      "config_score": 87.28,
+      "operating_cost_score": 39.83,
+      "space_score": 73.47,
+      "age_score": 50.83,
+      "mileage_score": 61.1,
+      "body_preference_score": 100.0,
+      "data_quality_score": 91.32,
+      "config_norm": 87.28,
+      "space_norm": 73.47,
+      "fuel_norm": 39.83,
+      "suv_score": 100.0,
+      "config_proxy": 87.28,
+      "space_proxy": 73.47,
+      "fuel_proxy": 39.83,
+      "is_suv": true,
+      "price": 4.49,
+      "effective_price_wan": 4.49,
+      "weights": {
+        "price": 0.15,
+        "config": 0.3,
+        "operating_cost": 0.15,
+        "space": 0.2,
+        "age": 0.05,
+        "mileage": 0.05,
+        "body_preference": 0.05,
+        "data_quality": 0.05
+      },
+      "energy": {
+        "cost_yuan_100km": 63.76,
+        "type": "official_wltc_with_uncertainty",
+        "value": 7.969499999999999,
+        "unit": "L/100km",
+        "fuel_grade": "92",
+        "scenario": "no_home_charging"
+      },
+      "confidence": {
+        "price": 0.95,
+        "config": 0.923,
+        "energy": 0.65,
+        "core_specs": 0.94,
+        "age": 0.7,
+        "space": 0.825
+      },
+      "reasons": [
+        "可比价格 4.49 万",
+        "车身 紧凑型SUV 符合偏好",
+        "能源成本约 63.76 元/100km（official_wltc_with_uncertainty: 7.969499999999999L/100km）"
+      ],
+      "warnings": [],
+      "condition_gate": "PASS",
+      "note": "V2 fixed anchors score_version=v2.2.0; exact-trim gate passed; weights={'price': 0.15, 'config': 0.3, 'operating_cost': 0.15, 'space': 0.2, 'age': 0.05, 'mileage': 0.05, 'body_preference': 0.05, 'data_quality': 0.05}; scenario=no_home_charging"
+    },
+    "ingest_status": "added",
+    "library_rank": 1,
+    "display": true,
+    "rank": 1
+  },
+  {
     "sku": "357301752",
     "title": "哈弗H6 2021款 第三代 2.0T 自动两驱Max版",
     "price": 5.19,
@@ -125,7 +451,7 @@
       "found": true,
       "cons_note": null
     },
-    "rank": 1,
+    "rank": 2,
     "specs": {
       "length_mm": 4653,
       "width_mm": 1886,
@@ -368,7 +694,7 @@
     "data_issues": [],
     "config_coverage": 0.9231,
     "energy_confidence": 0.65,
-    "library_rank": 1,
+    "library_rank": 2,
     "display": true
   },
   {
@@ -498,7 +824,7 @@
       "found": true,
       "cons_note": null
     },
-    "rank": 2,
+    "rank": 3,
     "specs": {
       "length_mm": 4535,
       "width_mm": 1870,
@@ -742,8 +1068,334 @@
     "data_issues": [],
     "config_coverage": 0.9327,
     "energy_confidence": 0.65,
-    "library_rank": 2,
+    "library_rank": 3,
     "display": true
+  },
+  {
+    "sku": "357479219",
+    "title": "哈弗F7 2020款 1.5T 两驱i潮",
+    "shop_id": "118608",
+    "shop_name": "懂车帝汽车商城•武汉店",
+    "series": "哈弗F7",
+    "brand": "哈弗",
+    "mileage_wan": 5.0,
+    "model_year": 2020,
+    "plate_year": 2020,
+    "year": "2020年/5万公里",
+    "city": "武汉",
+    "tags": [
+      "0.4万首付"
+    ],
+    "badges": [
+      "直营"
+    ],
+    "is_self_trade_car": true,
+    "source_type": "8",
+    "source_type_name": "自营-企业",
+    "fuel_form": "1",
+    "cover": "https://p3-dcd-sign.byteimg.com/tos-cn-i-f042mdwyw7/0268701b7a9b44c6888b2ecc2413e6fe~tplv-f042mdwyw7-auto-webp:480:0.jpg?rk3s=4892dee6&x-expires=1795398267&x-signature=z8TPuJNECES2jfDfq4i5NkiLtMo%3D&psm=motor.sh.pack",
+    "detail_url": "https://m.dcdapp.com/motor/feoffline/usedcar_detail/detail.html?sku_id=357479219&shop_id=118608",
+    "list_price_wan": 3.99,
+    "first_registration_time": "1592928000",
+    "price_type": "现金价",
+    "prefix": "现金价",
+    "cash_price_fen": 3990000,
+    "cash_price_str": "3.99",
+    "cash_price_wan": 3.99,
+    "price": 3.99,
+    "detail_shop_id": "118608",
+    "specs": {
+      "length_mm": 4620,
+      "width_mm": 1846,
+      "height_mm": 1690,
+      "wheelbase_mm": 2725,
+      "seats": null,
+      "body_type": "紧凑型SUV",
+      "engine": "1.5T 169马力 L4",
+      "transmission": "7挡湿式双离合",
+      "fuel_grade": "92",
+      "official_fuel_l_100km": 6.8,
+      "official_standard": "NEDC",
+      "low_soc_fuel_l_100km": null,
+      "real_world_fuel_l_100km": null,
+      "real_world_sample_n": null,
+      "electric_kwh_100km": null,
+      "ev_range_km": null,
+      "ev_range_standard": null,
+      "ranking_energy": {
+        "type": "official_nedc_with_uncertainty",
+        "value": 6.8,
+        "unit": "L/100km",
+        "fallback_multiplier_recommended": 1.2
+      },
+      "powertrain": "ice",
+      "powertrain_type": "ice",
+      "features": {
+        "airbags": 6,
+        "esp": true,
+        "aeb": true,
+        "fcw": null,
+        "ldw": true,
+        "lka": true,
+        "lane_centering": null,
+        "bsd": true,
+        "dow": null,
+        "acc": true,
+        "cruise": "ACC自适应巡航",
+        "camera_360": true,
+        "transparent_chassis": null,
+        "front_radar": true,
+        "rear_radar": true,
+        "auto_park": true,
+        "remote_park": null,
+        "power_driver_seat": true,
+        "power_passenger_seat": true,
+        "seat_heating": true,
+        "seat_ventilation": true,
+        "panoramic_sunroof": true,
+        "power_tailgate": null,
+        "keyless_entry": true,
+        "remote_start": false,
+        "rear_ac_vents": true,
+        "dual_zone_climate": null,
+        "leather_seats": false,
+        "full_lcd_cluster": true,
+        "screen_inch": 9.0,
+        "carplay": null,
+        "carlife": null,
+        "phone_link": true,
+        "wireless_charge": true,
+        "voice_control": true,
+        "ota": true,
+        "hud": null,
+        "chip_8155": null
+      },
+      "airbags": 6,
+      "screen_inch": 9.0,
+      "match_level": "exact_trim",
+      "trim_id": "trim_ah_2bae94b35020",
+      "canonical_title": "哈弗F7 2020款 1.5T 两驱i潮",
+      "specs_found": true,
+      "specs_approx": false,
+      "verified": true,
+      "verification_schema": "3.0-exact-trim-detailed",
+      "configuration_source": "exact_trim_v3",
+      "core_confidence": 0.99,
+      "feature_confidence": 0.95,
+      "verification_issues": [],
+      "verification_sources": [
+        {
+          "url": "https://car.autohome.com.cn/config/spec/42740.html",
+          "source_type": "autohome_live_config",
+          "authority_tier": 1,
+          "series_id": 4898,
+          "spec_id": 42740,
+          "parameter_source": "live_page"
+        },
+        {
+          "url": "https://github.com/swoiow/autohome",
+          "source_type": "autohome_parameter_dataset",
+          "authority_tier": 3,
+          "snapshot": "identity_match_only",
+          "source_path": "live:config/spec/42740.html",
+          "note": "vault/main used for exact-trim identity; parameters from live page"
+        }
+      ]
+    },
+    "detailed_config": {
+      "length_mm": 4620,
+      "width_mm": 1846,
+      "height_mm": 1690,
+      "wheelbase_mm": 2725,
+      "seats": null,
+      "body_type": "紧凑型SUV",
+      "engine": "1.5T 169马力 L4",
+      "transmission": "7挡湿式双离合",
+      "fuel_grade": "92",
+      "official_fuel_l_100km": 6.8,
+      "official_standard": "NEDC",
+      "low_soc_fuel_l_100km": null,
+      "real_world_fuel_l_100km": null,
+      "real_world_sample_n": null,
+      "electric_kwh_100km": null,
+      "ev_range_km": null,
+      "ev_range_standard": null,
+      "ranking_energy": {
+        "type": "official_nedc_with_uncertainty",
+        "value": 6.8,
+        "unit": "L/100km",
+        "fallback_multiplier_recommended": 1.2
+      },
+      "powertrain": "ice",
+      "powertrain_type": "ice",
+      "features": {
+        "airbags": 6,
+        "esp": true,
+        "aeb": true,
+        "fcw": null,
+        "ldw": true,
+        "lka": true,
+        "lane_centering": null,
+        "bsd": true,
+        "dow": null,
+        "acc": true,
+        "cruise": "ACC自适应巡航",
+        "camera_360": true,
+        "transparent_chassis": null,
+        "front_radar": true,
+        "rear_radar": true,
+        "auto_park": true,
+        "remote_park": null,
+        "power_driver_seat": true,
+        "power_passenger_seat": true,
+        "seat_heating": true,
+        "seat_ventilation": true,
+        "panoramic_sunroof": true,
+        "power_tailgate": null,
+        "keyless_entry": true,
+        "remote_start": false,
+        "rear_ac_vents": true,
+        "dual_zone_climate": null,
+        "leather_seats": false,
+        "full_lcd_cluster": true,
+        "screen_inch": 9.0,
+        "carplay": null,
+        "carlife": null,
+        "phone_link": true,
+        "wireless_charge": true,
+        "voice_control": true,
+        "ota": true,
+        "hud": null,
+        "chip_8155": null
+      },
+      "airbags": 6,
+      "screen_inch": 9.0,
+      "match_level": "exact_trim",
+      "trim_id": "trim_ah_2bae94b35020",
+      "canonical_title": "哈弗F7 2020款 1.5T 两驱i潮",
+      "specs_found": true,
+      "specs_approx": false,
+      "verified": true,
+      "verification_schema": "3.0-exact-trim-detailed",
+      "configuration_source": "exact_trim_v3",
+      "core_confidence": 0.99,
+      "feature_confidence": 0.95,
+      "verification_issues": [],
+      "verification_sources": [
+        {
+          "url": "https://car.autohome.com.cn/config/spec/42740.html",
+          "source_type": "autohome_live_config",
+          "authority_tier": 1,
+          "series_id": 4898,
+          "spec_id": 42740,
+          "parameter_source": "live_page"
+        },
+        {
+          "url": "https://github.com/swoiow/autohome",
+          "source_type": "autohome_parameter_dataset",
+          "authority_tier": 3,
+          "snapshot": "identity_match_only",
+          "source_path": "live:config/spec/42740.html",
+          "note": "vault/main used for exact-trim identity; parameters from live page"
+        }
+      ]
+    },
+    "display_price_wan": 3.99,
+    "effective_price_wan": 3.99,
+    "price_confidence": 0.95,
+    "needs_cash_quote": false,
+    "price_basis": "cash",
+    "manufacturer": "长城汽车",
+    "manufacturer_inferred": false,
+    "owner_reviews": {
+      "summary": "",
+      "sources": [],
+      "found": false
+    },
+    "score_eligible": true,
+    "data_issues": [],
+    "config_coverage": 0.7692,
+    "energy_confidence": 0.55,
+    "_age_years": 6.333333333333333,
+    "score_version": "v2.2.0",
+    "score_v1": 65.0,
+    "total_score": 65.0,
+    "condition_gate": "PASS",
+    "evaluation": "可比价格 3.99 万；车身 紧凑型SUV 符合偏好；能源成本约 65.28 元/100km（official_nedc_with_uncertainty: 8.16L/100km）。",
+    "score_reasons": [
+      "可比价格 3.99 万",
+      "车身 紧凑型SUV 符合偏好",
+      "能源成本约 65.28 元/100km（official_nedc_with_uncertainty: 8.16L/100km）"
+    ],
+    "score_warnings": [],
+    "confidence": {
+      "price": 0.95,
+      "config": 0.769,
+      "energy": 0.55,
+      "core_specs": 0.99,
+      "age": 0.7,
+      "space": 0.825
+    },
+    "sort_scores": {
+      "score_version": "v2.2.0",
+      "total_score": 65.0,
+      "price_score": 67.0,
+      "config_score": 67.01,
+      "operating_cost_score": 40.14,
+      "space_score": 67.96,
+      "age_score": 50.83,
+      "mileage_score": 72.0,
+      "body_preference_score": 100.0,
+      "data_quality_score": 81.72,
+      "config_norm": 67.01,
+      "space_norm": 67.96,
+      "fuel_norm": 40.14,
+      "suv_score": 100.0,
+      "config_proxy": 67.01,
+      "space_proxy": 67.96,
+      "fuel_proxy": 40.14,
+      "is_suv": true,
+      "price": 3.99,
+      "effective_price_wan": 3.99,
+      "weights": {
+        "price": 0.15,
+        "config": 0.3,
+        "operating_cost": 0.15,
+        "space": 0.2,
+        "age": 0.05,
+        "mileage": 0.05,
+        "body_preference": 0.05,
+        "data_quality": 0.05
+      },
+      "energy": {
+        "cost_yuan_100km": 65.28,
+        "type": "official_nedc_with_uncertainty",
+        "value": 8.16,
+        "unit": "L/100km",
+        "fuel_grade": "92",
+        "scenario": "no_home_charging"
+      },
+      "confidence": {
+        "price": 0.95,
+        "config": 0.769,
+        "energy": 0.55,
+        "core_specs": 0.99,
+        "age": 0.7,
+        "space": 0.825
+      },
+      "reasons": [
+        "可比价格 3.99 万",
+        "车身 紧凑型SUV 符合偏好",
+        "能源成本约 65.28 元/100km（official_nedc_with_uncertainty: 8.16L/100km）"
+      ],
+      "warnings": [],
+      "condition_gate": "PASS",
+      "note": "V2 fixed anchors score_version=v2.2.0; exact-trim gate passed; weights={'price': 0.15, 'config': 0.3, 'operating_cost': 0.15, 'space': 0.2, 'age': 0.05, 'mileage': 0.05, 'body_preference': 0.05, 'data_quality': 0.05}; scenario=no_home_charging"
+    },
+    "ingest_status": "added",
+    "library_rank": 4,
+    "display": true,
+    "rank": 4
   },
   {
     "sku": "357014230",
@@ -867,7 +1519,7 @@
       "found": true,
       "cons_note": null
     },
-    "rank": 3,
+    "rank": 5,
     "specs": {
       "length_mm": 4770,
       "width_mm": 1840,
@@ -1111,7 +1763,7 @@
     "data_issues": [],
     "config_coverage": 0.8846,
     "energy_confidence": 0.65,
-    "library_rank": 3,
+    "library_rank": 5,
     "display": true
   },
   {
@@ -1235,7 +1887,7 @@
       "found": true,
       "cons_note": null
     },
-    "rank": 4,
+    "rank": 6,
     "specs": {
       "length_mm": 4462,
       "width_mm": 1857,
@@ -1476,7 +2128,7 @@
     "data_issues": [],
     "config_coverage": 0.8173,
     "energy_confidence": 0.55,
-    "library_rank": 4,
+    "library_rank": 6,
     "display": true
   },
   {
@@ -1602,7 +2254,7 @@
       "found": true,
       "cons_note": null
     },
-    "rank": 5,
+    "rank": 7,
     "specs": {
       "length_mm": 4620,
       "width_mm": 1890,
@@ -1845,7 +2497,7 @@
     "data_issues": [],
     "config_coverage": 0.9038,
     "energy_confidence": 0.65,
-    "library_rank": 5,
+    "library_rank": 7,
     "display": true
   },
   {
@@ -2170,9 +2822,9 @@
       "note": "V2 fixed anchors score_version=v2.2.0; exact-trim gate passed; weights={'price': 0.15, 'config': 0.3, 'operating_cost': 0.15, 'space': 0.2, 'age': 0.05, 'mileage': 0.05, 'body_preference': 0.05, 'data_quality': 0.05}; scenario=no_home_charging"
     },
     "ingest_status": "added",
-    "library_rank": 6,
+    "library_rank": 8,
     "display": true,
-    "rank": 6
+    "rank": 8
   },
   {
     "sku": "357107727",
@@ -2296,7 +2948,7 @@
       "found": true,
       "cons_note": null
     },
-    "rank": 7,
+    "rank": 9,
     "specs": {
       "length_mm": 4625,
       "width_mm": 1860,
@@ -2541,7 +3193,7 @@
     "data_issues": [],
     "config_coverage": 0.7885,
     "energy_confidence": 0.55,
-    "library_rank": 7,
+    "library_rank": 9,
     "display": true
   },
   {
@@ -2669,7 +3321,7 @@
       "found": true,
       "cons_note": null
     },
-    "rank": 8,
+    "rank": 10,
     "specs": {
       "length_mm": 4448,
       "width_mm": 1890,
@@ -2911,7 +3563,7 @@
     "data_issues": [],
     "config_coverage": 0.8654,
     "energy_confidence": 0.55,
-    "library_rank": 8,
+    "library_rank": 10,
     "display": true
   },
   {
@@ -3037,7 +3689,7 @@
       "found": true,
       "cons_note": null
     },
-    "rank": 9,
+    "rank": 11,
     "specs": {
       "length_mm": 4340,
       "width_mm": 1820,
@@ -3282,7 +3934,7 @@
     "data_issues": [],
     "config_coverage": 0.9038,
     "energy_confidence": 0.65,
-    "library_rank": 9,
+    "library_rank": 11,
     "display": true
   },
   {
@@ -3609,9 +4261,9 @@
       "note": "V2 fixed anchors score_version=v2.2.0; exact-trim gate passed; weights={'price': 0.15, 'config': 0.3, 'operating_cost': 0.15, 'space': 0.2, 'age': 0.05, 'mileage': 0.05, 'body_preference': 0.05, 'data_quality': 0.05}; scenario=no_home_charging"
     },
     "ingest_status": "added",
-    "library_rank": 10,
+    "library_rank": 12,
     "display": true,
-    "rank": 10
+    "rank": 12
   },
   {
     "sku": "357211013",
@@ -3735,7 +4387,7 @@
       "found": true,
       "cons_note": null
     },
-    "rank": 11,
+    "rank": 13,
     "specs": {
       "length_mm": 4462,
       "width_mm": 1857,
@@ -3978,7 +4630,7 @@
     "data_issues": [],
     "config_coverage": 0.8173,
     "energy_confidence": 0.55,
-    "library_rank": 11,
+    "library_rank": 13,
     "display": true
   },
   {
@@ -4102,7 +4754,7 @@
       "found": true,
       "cons_note": null
     },
-    "rank": 12,
+    "rank": 14,
     "specs": {
       "length_mm": 4760,
       "width_mm": 1931,
@@ -4346,7 +4998,7 @@
     "data_issues": [],
     "config_coverage": 0.7692,
     "energy_confidence": 0.55,
-    "library_rank": 12,
+    "library_rank": 14,
     "display": true
   },
   {
@@ -4671,9 +5323,9 @@
       "note": "V2 fixed anchors score_version=v2.2.0; exact-trim gate passed; weights={'price': 0.15, 'config': 0.3, 'operating_cost': 0.15, 'space': 0.2, 'age': 0.05, 'mileage': 0.05, 'body_preference': 0.05, 'data_quality': 0.05}; scenario=no_home_charging"
     },
     "ingest_status": "added",
-    "library_rank": 13,
+    "library_rank": 15,
     "display": true,
-    "rank": 13
+    "rank": 15
   },
   {
     "sku": "357168649",
@@ -4802,7 +5454,7 @@
       "found": true,
       "cons_note": null
     },
-    "rank": 14,
+    "rank": 16,
     "specs": {
       "length_mm": 4515,
       "width_mm": 1870,
@@ -5046,7 +5698,7 @@
     "data_issues": [],
     "config_coverage": 0.75,
     "energy_confidence": 0.55,
-    "library_rank": 14,
+    "library_rank": 16,
     "display": true
   },
   {
@@ -5170,7 +5822,7 @@
       "found": true,
       "cons_note": null
     },
-    "rank": 15,
+    "rank": 17,
     "specs": {
       "length_mm": 4462,
       "width_mm": 1857,
@@ -5411,7 +6063,7 @@
     "data_issues": [],
     "config_coverage": 0.8173,
     "energy_confidence": 0.55,
-    "library_rank": 15,
+    "library_rank": 17,
     "display": true
   },
   {
@@ -5536,7 +6188,7 @@
       "found": true,
       "cons_note": null
     },
-    "rank": 16,
+    "rank": 18,
     "specs": {
       "length_mm": 4340,
       "width_mm": 1820,
@@ -5778,7 +6430,7 @@
     "data_issues": [],
     "config_coverage": 0.9038,
     "energy_confidence": 0.65,
-    "library_rank": 16,
+    "library_rank": 18,
     "display": true
   },
   {
@@ -5909,7 +6561,7 @@
       "found": true,
       "cons_note": null
     },
-    "rank": 17,
+    "rank": 19,
     "specs": {
       "length_mm": 4440,
       "width_mm": 1833,
@@ -6152,7 +6804,7 @@
     "data_issues": [],
     "config_coverage": 0.8269,
     "energy_confidence": 0.55,
-    "library_rank": 17,
+    "library_rank": 19,
     "display": true
   },
   {
@@ -6282,7 +6934,7 @@
       "found": true,
       "cons_note": null
     },
-    "rank": 18,
+    "rank": 20,
     "specs": {
       "length_mm": 4785,
       "width_mm": 1869,
@@ -6527,7 +7179,7 @@
     "data_issues": [],
     "config_coverage": 0.9038,
     "energy_confidence": 0.55,
-    "library_rank": 18,
+    "library_rank": 20,
     "display": true
   },
   {
@@ -6657,7 +7309,7 @@
       "found": true,
       "cons_note": null
     },
-    "rank": 19,
+    "rank": 21,
     "specs": {
       "length_mm": 4785,
       "width_mm": 1869,
@@ -6902,7 +7554,7 @@
     "data_issues": [],
     "config_coverage": 0.9038,
     "energy_confidence": 0.55,
-    "library_rank": 19,
+    "library_rank": 21,
     "display": true
   },
   {
@@ -7228,9 +7880,9 @@
       "note": "V2 fixed anchors score_version=v2.2.0; exact-trim gate passed; weights={'price': 0.15, 'config': 0.3, 'operating_cost': 0.15, 'space': 0.2, 'age': 0.05, 'mileage': 0.05, 'body_preference': 0.05, 'data_quality': 0.05}; scenario=no_home_charging"
     },
     "ingest_status": "added",
-    "library_rank": 20,
+    "library_rank": 22,
     "display": true,
-    "rank": 20
+    "rank": 22
   },
   {
     "sku": "357250766",
@@ -7356,7 +8008,7 @@
       "found": true,
       "cons_note": null
     },
-    "rank": 21,
+    "rank": 23,
     "specs": {
       "length_mm": 4700,
       "width_mm": 1850,
@@ -7601,7 +8253,7 @@
     "data_issues": [],
     "config_coverage": 0.8365,
     "energy_confidence": 0.65,
-    "library_rank": 21,
+    "library_rank": 23,
     "display": true
   },
   {
@@ -7726,7 +8378,7 @@
       "found": true,
       "cons_note": null
     },
-    "rank": 22,
+    "rank": 24,
     "specs": {
       "length_mm": 4545,
       "width_mm": 1855,
@@ -7968,7 +8620,7 @@
     "data_issues": [],
     "config_coverage": 0.6827,
     "energy_confidence": 0.55,
-    "library_rank": 22,
+    "library_rank": 24,
     "display": true
   },
   {
@@ -8094,7 +8746,7 @@
       "found": true,
       "cons_note": null
     },
-    "rank": 23,
+    "rank": 25,
     "specs": {
       "length_mm": 4660,
       "width_mm": 1812,
@@ -8336,7 +8988,7 @@
     "data_issues": [],
     "config_coverage": 0.7692,
     "energy_confidence": 0.55,
-    "library_rank": 23,
+    "library_rank": 25,
     "display": true
   },
   {
@@ -8659,9 +9311,9 @@
       "note": "V2 fixed anchors score_version=v2.2.0; exact-trim gate passed; weights={'price': 0.15, 'config': 0.3, 'operating_cost': 0.15, 'space': 0.2, 'age': 0.05, 'mileage': 0.05, 'body_preference': 0.05, 'data_quality': 0.05}; scenario=no_home_charging"
     },
     "ingest_status": "added",
-    "library_rank": 24,
+    "library_rank": 26,
     "display": true,
-    "rank": 24
+    "rank": 26
   },
   {
     "sku": "356579334",
@@ -8790,7 +9442,7 @@
       "found": true,
       "cons_note": null
     },
-    "rank": 25,
+    "rank": 27,
     "specs": {
       "length_mm": 4700,
       "width_mm": 1865,
@@ -9035,7 +9687,7 @@
     "data_issues": [],
     "config_coverage": 0.7692,
     "energy_confidence": 0.55,
-    "library_rank": 25,
+    "library_rank": 27,
     "display": true
   },
   {
@@ -9158,7 +9810,7 @@
       "found": true,
       "cons_note": null
     },
-    "rank": 26,
+    "rank": 28,
     "specs": {
       "length_mm": 4700,
       "width_mm": 1860,
@@ -9414,7 +10066,7 @@
     "first_registration_time": "1616342400",
     "detail_shop_id": "118608",
     "ingest_status": "updated_price",
-    "library_rank": 26,
+    "library_rank": 28,
     "display": true
   },
   {
@@ -9739,9 +10391,9 @@
       "note": "V2 fixed anchors score_version=v2.2.0; exact-trim gate passed; weights={'price': 0.15, 'config': 0.3, 'operating_cost': 0.15, 'space': 0.2, 'age': 0.05, 'mileage': 0.05, 'body_preference': 0.05, 'data_quality': 0.05}; scenario=no_home_charging"
     },
     "ingest_status": "added",
-    "library_rank": 27,
+    "library_rank": 29,
     "display": true,
-    "rank": 27
+    "rank": 29
   },
   {
     "sku": "357172812",
@@ -9866,7 +10518,7 @@
       "found": true,
       "cons_note": null
     },
-    "rank": 28,
+    "rank": 30,
     "specs": {
       "length_mm": 4986,
       "width_mm": 1861,
@@ -10110,743 +10762,6 @@
     "score_eligible": true,
     "data_issues": [],
     "config_coverage": 0.8077,
-    "energy_confidence": 0.65,
-    "library_rank": 28,
-    "display": true
-  },
-  {
-    "sku": "357349654",
-    "title": "博越 2018款 1.8TD 自动两驱智联型4G互联版",
-    "price": 2.89,
-    "price_type": "标价",
-    "prefix": "标价",
-    "extra": "特价省200元",
-    "extras": [
-      "特价省200元"
-    ],
-    "year": "2018年 / 6.01万公里 / 武汉",
-    "plate_year": 2018,
-    "model_year": 2018,
-    "mileage_wan": 6.01,
-    "city": "武汉",
-    "tags": [
-      "性价比极佳",
-      "已检测",
-      "新上",
-      "0过户"
-    ],
-    "badges": [
-      "官方保",
-      "直营"
-    ],
-    "cover": "https://p3-dcd-sign.byteimg.com/tos-cn-i-f042mdwyw7/7b0bc34e4d7049c29ed8b91f61064ed3~tplv-f042mdwyw7-original:800:0.image?lk3s=416a877a&x-expires=1796200589&x-signature=ALvoB2L2FknPqMrmURcOVEqrvDY%3D&psm=motor.sophon.product",
-    "detail_url": "https://m.dcdapp.com/motor/feoffline/usedcar_detail/detail.html?sku_id=357349654&shop_id=118608",
-    "shop_id": "118608",
-    "image_file": "/workspace/dongchedi-wuhan-shop/images/357349654.jpg",
-    "banner": "",
-    "sort_scores": {
-      "score_version": "v2.2.0",
-      "total_score": 53.6,
-      "config_score": 28.37,
-      "config_norm": 28.37,
-      "config_proxy": 28.37,
-      "is_suv": true,
-      "price": 2.89,
-      "effective_price_wan": 2.89,
-      "condition_gate": "PASS",
-      "note": "V2 fixed anchors score_version=v2.2.0; exact-trim gate passed; weights={'price': 0.15, 'config': 0.3, 'operating_cost': 0.15, 'space': 0.2, 'age': 0.05, 'mileage': 0.05, 'body_preference': 0.05, 'data_quality': 0.05}; scenario=no_home_charging",
-      "price_score": 100.0,
-      "operating_cost_score": 32.22,
-      "space_score": 58.76,
-      "age_score": 26.67,
-      "mileage_score": 61.9,
-      "body_preference_score": 100.0,
-      "data_quality_score": 81.72,
-      "space_norm": 58.76,
-      "fuel_norm": 32.22,
-      "suv_score": 100.0,
-      "space_proxy": 58.76,
-      "fuel_proxy": 32.22,
-      "weights": {
-        "price": 0.15,
-        "config": 0.3,
-        "operating_cost": 0.15,
-        "space": 0.2,
-        "age": 0.05,
-        "mileage": 0.05,
-        "body_preference": 0.05,
-        "data_quality": 0.05
-      },
-      "energy": {
-        "cost_yuan_100km": 74.88,
-        "type": "official_nedc_with_uncertainty",
-        "value": 9.36,
-        "unit": "L/100km",
-        "fuel_grade": "92",
-        "scenario": "no_home_charging"
-      },
-      "confidence": {
-        "price": 0.9,
-        "config": 0.865,
-        "energy": 0.55,
-        "core_specs": 0.99,
-        "age": 0.7,
-        "space": 0.825
-      },
-      "reasons": [
-        "可比价格 2.89 万",
-        "车身 紧凑型SUV 符合偏好",
-        "能源成本约 74.88 元/100km（official_nedc_with_uncertainty: 9.36L/100km）"
-      ],
-      "warnings": []
-    },
-    "brand": "吉利",
-    "manufacturer": "吉利汽车",
-    "manufacturer_inferred": false,
-    "total_score": 53.6,
-    "evaluation": "可比价格 2.89 万；车身 紧凑型SUV 符合偏好；能源成本约 74.88 元/100km（official_nedc_with_uncertainty: 9.36L/100km）。",
-    "series": "博越",
-    "owner_reviews": {
-      "summary": "吉利SUV销量功臣，空间配置性价比高。槽点：早期小毛病/异响、车机体验一般、油耗中等、漆面偏软。",
-      "pros": [
-        "空间配置性价比",
-        "家用SUV成熟"
-      ],
-      "cons": [
-        "早期小毛病/异响",
-        "车机体验一般",
-        "油耗中等",
-        "漆面偏软"
-      ],
-      "drawbacks": [
-        "早期小毛病/异响",
-        "车机体验一般",
-        "油耗中等",
-        "漆面偏软"
-      ],
-      "sources": [
-        {
-          "title": "博越口碑检索（汽车之家）",
-          "url": "https://sou.autohome.com.cn/zonghe?q=%E5%8D%9A%E8%B6%8A+%E5%8F%A3%E7%A2%91"
-        },
-        {
-          "title": "车质网博越检索",
-          "url": "https://www.12365auto.com/search?keyword=%E5%8D%9A%E8%B6%8A"
-        }
-      ],
-      "found": true,
-      "cons_note": null
-    },
-    "rank": 29,
-    "specs": {
-      "length_mm": 4519,
-      "width_mm": 1831,
-      "height_mm": 1694,
-      "wheelbase_mm": 2670,
-      "seats": null,
-      "body_type": "紧凑型SUV",
-      "engine": "●",
-      "transmission": "手自一体变速箱(AT)",
-      "fuel_grade": "92",
-      "official_fuel_l_100km": 7.8,
-      "official_standard": "NEDC",
-      "low_soc_fuel_l_100km": null,
-      "real_world_fuel_l_100km": null,
-      "real_world_sample_n": null,
-      "electric_kwh_100km": null,
-      "ev_range_km": null,
-      "ev_range_standard": null,
-      "ranking_energy": {
-        "type": "official_nedc_with_uncertainty",
-        "value": 7.8,
-        "unit": "L/100km",
-        "fallback_multiplier_recommended": 1.2
-      },
-      "powertrain": "ice",
-      "powertrain_type": "ice",
-      "features": {
-        "airbags": 4,
-        "esp": true,
-        "aeb": false,
-        "fcw": null,
-        "ldw": false,
-        "lka": false,
-        "lane_centering": null,
-        "bsd": false,
-        "dow": null,
-        "acc": false,
-        "cruise": "定速巡航",
-        "camera_360": false,
-        "transparent_chassis": null,
-        "front_radar": true,
-        "rear_radar": true,
-        "auto_park": false,
-        "remote_park": null,
-        "power_driver_seat": true,
-        "power_passenger_seat": true,
-        "seat_heating": true,
-        "seat_ventilation": false,
-        "panoramic_sunroof": true,
-        "power_tailgate": false,
-        "keyless_entry": true,
-        "remote_start": false,
-        "rear_ac_vents": true,
-        "dual_zone_climate": true,
-        "leather_seats": false,
-        "full_lcd_cluster": false,
-        "screen_inch": 8.0,
-        "carplay": true,
-        "carlife": true,
-        "phone_link": true,
-        "wireless_charge": false,
-        "voice_control": true,
-        "ota": true,
-        "hud": false,
-        "chip_8155": null
-      },
-      "airbags": 4,
-      "screen_inch": 8.0,
-      "match_level": "exact_trim",
-      "trim_id": "trim_ah_d382c26d0d3e",
-      "canonical_title": "博越 2018款 1.8TD 自动两驱智联型4G互联版",
-      "specs_found": true,
-      "specs_approx": false,
-      "verified": true,
-      "verification_schema": "3.0-exact-trim-detailed",
-      "configuration_source": "exact_trim_v3",
-      "core_confidence": 0.99,
-      "feature_confidence": 0.95,
-      "verification_issues": [],
-      "verification_sources": [
-        {
-          "url": "https://car.autohome.com.cn/config/spec/33354.html",
-          "source_type": "autohome_live_config",
-          "authority_tier": 1,
-          "series_id": 3788,
-          "spec_id": 33354,
-          "parameter_source": "live_page"
-        },
-        {
-          "url": "https://github.com/swoiow/autohome",
-          "source_type": "autohome_parameter_dataset",
-          "authority_tier": 3,
-          "snapshot": "identity_match_only",
-          "source_path": "live:config/spec/33354.html",
-          "note": "vault/main used for exact-trim identity; parameters from live page"
-        }
-      ]
-    },
-    "detailed_config": {
-      "length_mm": 4519,
-      "width_mm": 1831,
-      "height_mm": 1694,
-      "wheelbase_mm": 2670,
-      "seats": null,
-      "body_type": "紧凑型SUV",
-      "engine": "●",
-      "transmission": "手自一体变速箱(AT)",
-      "fuel_grade": "92",
-      "official_fuel_l_100km": 7.8,
-      "official_standard": "NEDC",
-      "low_soc_fuel_l_100km": null,
-      "real_world_fuel_l_100km": null,
-      "real_world_sample_n": null,
-      "electric_kwh_100km": null,
-      "ev_range_km": null,
-      "ev_range_standard": null,
-      "ranking_energy": {
-        "type": "official_nedc_with_uncertainty",
-        "value": 7.8,
-        "unit": "L/100km",
-        "fallback_multiplier_recommended": 1.2
-      },
-      "powertrain": "ice",
-      "powertrain_type": "ice",
-      "features": {
-        "airbags": 4,
-        "esp": true,
-        "aeb": false,
-        "fcw": null,
-        "ldw": false,
-        "lka": false,
-        "lane_centering": null,
-        "bsd": false,
-        "dow": null,
-        "acc": false,
-        "cruise": "定速巡航",
-        "camera_360": false,
-        "transparent_chassis": null,
-        "front_radar": true,
-        "rear_radar": true,
-        "auto_park": false,
-        "remote_park": null,
-        "power_driver_seat": true,
-        "power_passenger_seat": true,
-        "seat_heating": true,
-        "seat_ventilation": false,
-        "panoramic_sunroof": true,
-        "power_tailgate": false,
-        "keyless_entry": true,
-        "remote_start": false,
-        "rear_ac_vents": true,
-        "dual_zone_climate": true,
-        "leather_seats": false,
-        "full_lcd_cluster": false,
-        "screen_inch": 8.0,
-        "carplay": true,
-        "carlife": true,
-        "phone_link": true,
-        "wireless_charge": false,
-        "voice_control": true,
-        "ota": true,
-        "hud": false,
-        "chip_8155": null
-      },
-      "airbags": 4,
-      "screen_inch": 8.0,
-      "match_level": "exact_trim",
-      "trim_id": "trim_ah_d382c26d0d3e",
-      "canonical_title": "博越 2018款 1.8TD 自动两驱智联型4G互联版",
-      "specs_found": true,
-      "specs_approx": false,
-      "verified": true,
-      "verification_schema": "3.0-exact-trim-detailed",
-      "configuration_source": "exact_trim_v3",
-      "core_confidence": 0.99,
-      "feature_confidence": 0.95,
-      "verification_issues": [],
-      "verification_sources": [
-        {
-          "url": "https://car.autohome.com.cn/config/spec/33354.html",
-          "source_type": "autohome_live_config",
-          "authority_tier": 1,
-          "series_id": 3788,
-          "spec_id": 33354,
-          "parameter_source": "live_page"
-        },
-        {
-          "url": "https://github.com/swoiow/autohome",
-          "source_type": "autohome_parameter_dataset",
-          "authority_tier": 3,
-          "snapshot": "identity_match_only",
-          "source_path": "live:config/spec/33354.html",
-          "note": "vault/main used for exact-trim identity; parameters from live page"
-        }
-      ]
-    },
-    "display_price_wan": 2.89,
-    "effective_price_wan": 2.89,
-    "price_confidence": 0.9,
-    "needs_cash_quote": false,
-    "price_basis": "display",
-    "_age_years": 8.333333333333334,
-    "score_version": "v2.2.0",
-    "score_v1": 53.6,
-    "condition_gate": "PASS",
-    "score_reasons": [
-      "可比价格 2.89 万",
-      "车身 紧凑型SUV 符合偏好",
-      "能源成本约 74.88 元/100km（official_nedc_with_uncertainty: 9.36L/100km）"
-    ],
-    "score_warnings": [],
-    "confidence": {
-      "price": 0.9,
-      "config": 0.865,
-      "energy": 0.55,
-      "core_specs": 0.99,
-      "age": 0.7,
-      "space": 0.825
-    },
-    "price_refresh": {
-      "fetched_at": "2026-11-02T20:20+08:00",
-      "source": "card/detail.sku_price",
-      "cash_price_wan": 2.89,
-      "finance_discount_price_wan": null,
-      "previous_price_wan": 2.89,
-      "previous_price_type": "标价",
-      "tags": [
-        "问题车终身回购",
-        "问题车/调表车终身回购",
-        "预售价",
-        "送359元全车深度质检",
-        "送220元洗车服务"
-      ]
-    },
-    "score_eligible": true,
-    "data_issues": [],
-    "config_coverage": 0.8654,
-    "energy_confidence": 0.55,
-    "library_rank": 29,
-    "display": true
-  },
-  {
-    "sku": "356938379",
-    "title": "长安UNI-V 2022款 1.5T 尊贵型",
-    "price": 5.99,
-    "price_type": "标价",
-    "prefix": "分期价",
-    "extra": "领券优惠价",
-    "extras": [
-      "领券优惠价",
-      "分期直减3000元"
-    ],
-    "year": "2023年 / 4.17万公里 / 武汉",
-    "plate_year": 2023,
-    "model_year": 2022,
-    "mileage_wan": 4.17,
-    "city": "武汉",
-    "tags": [
-      "性价比合理",
-      "放心检8.3分"
-    ],
-    "badges": [
-      "官方保",
-      "直营"
-    ],
-    "cover": "https://p3-dcd-sign.byteimg.com/tos-cn-i-f042mdwyw7/55525f1368f3487385d647320efbac4f~tplv-resize:800:0.image?lk3s=416a877a&x-expires=1796200581&x-signature=Bk4%2F3F%2BSFIqG5UcNA7udva%2BW%2BWw%3D&psm=motor.sophon.product",
-    "detail_url": "https://m.dcdapp.com/motor/feoffline/usedcar_detail/detail.html?sku_id=356938379&shop_id=118608",
-    "shop_id": "118608",
-    "image_file": "/workspace/dongchedi-wuhan-shop/images/356938379.jpg",
-    "banner": "分期直减3000元",
-    "sort_scores": {
-      "config_proxy": 58.07,
-      "space_proxy": 70.88,
-      "fuel_proxy": 46.21,
-      "is_suv": false,
-      "price": 5.99,
-      "note": "V2 fixed anchors score_version=v2.2.0; exact-trim gate passed; weights={'price': 0.15, 'config': 0.3, 'operating_cost': 0.15, 'space': 0.2, 'age': 0.05, 'mileage': 0.05, 'body_preference': 0.05, 'data_quality': 0.05}; scenario=no_home_charging",
-      "config_norm": 58.07,
-      "space_norm": 70.88,
-      "fuel_norm": 46.21,
-      "price_score": 0.33,
-      "suv_score": 40.0,
-      "total_score": 53.5,
-      "weights": {
-        "price": 0.15,
-        "config": 0.3,
-        "operating_cost": 0.15,
-        "space": 0.2,
-        "age": 0.05,
-        "mileage": 0.05,
-        "body_preference": 0.05,
-        "data_quality": 0.05
-      },
-      "config_source": "real_specs",
-      "score_version": "v2.2.0",
-      "config_score": 58.07,
-      "operating_cost_score": 46.21,
-      "space_score": 70.88,
-      "age_score": 86.67,
-      "mileage_score": 80.3,
-      "body_preference_score": 40.0,
-      "data_quality_score": 92.22,
-      "effective_price_wan": 5.99,
-      "energy": {
-        "cost_yuan_100km": 57.22,
-        "type": "official_wltc_with_uncertainty",
-        "value": 7.153,
-        "unit": "L/100km",
-        "fuel_grade": "92",
-        "scenario": "no_home_charging"
-      },
-      "confidence": {
-        "price": 0.9,
-        "config": 0.933,
-        "energy": 0.65,
-        "core_specs": 0.99,
-        "age": 0.7,
-        "space": 0.825
-      },
-      "reasons": [
-        "可比价格 5.99 万",
-        "轿车/两厢，车身偏好分较低",
-        "能源成本约 57.22 元/100km（official_wltc_with_uncertainty: 7.153L/100km）"
-      ],
-      "warnings": [],
-      "condition_gate": "PASS"
-    },
-    "brand": "长安UNI",
-    "manufacturer": "长安汽车",
-    "manufacturer_inferred": false,
-    "total_score": 53.5,
-    "evaluation": "可比价格 5.99 万；轿车/两厢，车身偏好分较低；能源成本约 57.22 元/100km（official_wltc_with_uncertainty: 7.153L/100km）。",
-    "series": "长安UNI-V",
-    "owner_reviews": {
-      "summary": "外观运动、动力与座舱科技感好评多（之家约4.52）。溜背后排头部空间与视野一般，胎噪/隔音、双离合顿挫与轮胎偏磨是常见槽点。",
-      "pros": [
-        "外观运动",
-        "操控灵活",
-        "座舱科技感"
-      ],
-      "cons": [
-        "后排头部空间一般",
-        "溜背视野受限",
-        "双离合顿挫",
-        "轮胎偏磨"
-      ],
-      "drawbacks": [
-        "后排头部空间一般",
-        "溜背视野受限",
-        "双离合顿挫",
-        "轮胎偏磨"
-      ],
-      "sources": [
-        {
-          "title": "UNI-V汽车之家口碑",
-          "url": "https://k.autohome.com.cn/6335"
-        },
-        {
-          "title": "UNI-V口碑摘要标签（汽车之家）",
-          "url": "https://k.autohome.com.cn/6335/stopselling?g=&summarykey=2206902"
-        }
-      ],
-      "found": true,
-      "cons_note": null
-    },
-    "rank": 30,
-    "specs": {
-      "length_mm": 4680,
-      "width_mm": 1838,
-      "height_mm": 1430,
-      "wheelbase_mm": 2750,
-      "seats": null,
-      "body_type": "紧凑型车",
-      "engine": "●",
-      "transmission": "湿式双离合变速箱(DCT)",
-      "fuel_grade": "92",
-      "official_fuel_l_100km": 6.22,
-      "official_standard": "WLTC",
-      "low_soc_fuel_l_100km": null,
-      "real_world_fuel_l_100km": null,
-      "real_world_sample_n": null,
-      "electric_kwh_100km": null,
-      "ev_range_km": null,
-      "ev_range_standard": null,
-      "ranking_energy": {
-        "type": "official_wltc_with_uncertainty",
-        "value": 6.22,
-        "unit": "L/100km",
-        "fallback_multiplier_recommended": 1.15
-      },
-      "powertrain": "ice",
-      "powertrain_type": "ice",
-      "features": {
-        "airbags": 6,
-        "esp": true,
-        "aeb": true,
-        "fcw": true,
-        "ldw": true,
-        "lka": false,
-        "lane_centering": false,
-        "bsd": false,
-        "dow": false,
-        "acc": true,
-        "cruise": "全速自适应巡航",
-        "camera_360": true,
-        "transparent_chassis": true,
-        "front_radar": true,
-        "rear_radar": true,
-        "auto_park": false,
-        "remote_park": false,
-        "power_driver_seat": true,
-        "power_passenger_seat": true,
-        "seat_heating": false,
-        "seat_ventilation": false,
-        "panoramic_sunroof": true,
-        "power_tailgate": true,
-        "keyless_entry": true,
-        "remote_start": false,
-        "rear_ac_vents": true,
-        "dual_zone_climate": null,
-        "leather_seats": false,
-        "full_lcd_cluster": true,
-        "screen_inch": 10.3,
-        "carplay": null,
-        "carlife": null,
-        "phone_link": true,
-        "wireless_charge": true,
-        "voice_control": true,
-        "ota": true,
-        "hud": false,
-        "chip_8155": null
-      },
-      "airbags": 6,
-      "screen_inch": 10.3,
-      "match_level": "exact_trim",
-      "trim_id": "trim_ah_4c0ab217a5e7",
-      "canonical_title": "长安UNI-V 2022款 1.5T 尊贵型",
-      "specs_found": true,
-      "specs_approx": false,
-      "verified": true,
-      "verification_schema": "3.0-exact-trim-detailed",
-      "configuration_source": "exact_trim_v3",
-      "core_confidence": 0.99,
-      "feature_confidence": 0.95,
-      "verification_issues": [],
-      "verification_sources": [
-        {
-          "url": "https://car.autohome.com.cn/config/spec/55338.html",
-          "source_type": "autohome_live_config",
-          "authority_tier": 1,
-          "series_id": 6335,
-          "spec_id": 55338,
-          "parameter_source": "live_page"
-        },
-        {
-          "url": "https://github.com/swoiow/autohome",
-          "source_type": "autohome_parameter_dataset",
-          "authority_tier": 3,
-          "snapshot": "identity_match_only",
-          "source_path": "live:config/spec/55338.html",
-          "note": "vault/main used for exact-trim identity; parameters from live page"
-        }
-      ]
-    },
-    "detailed_config": {
-      "length_mm": 4680,
-      "width_mm": 1838,
-      "height_mm": 1430,
-      "wheelbase_mm": 2750,
-      "seats": null,
-      "body_type": "紧凑型车",
-      "engine": "●",
-      "transmission": "湿式双离合变速箱(DCT)",
-      "fuel_grade": "92",
-      "official_fuel_l_100km": 6.22,
-      "official_standard": "WLTC",
-      "low_soc_fuel_l_100km": null,
-      "real_world_fuel_l_100km": null,
-      "real_world_sample_n": null,
-      "electric_kwh_100km": null,
-      "ev_range_km": null,
-      "ev_range_standard": null,
-      "ranking_energy": {
-        "type": "official_wltc_with_uncertainty",
-        "value": 6.22,
-        "unit": "L/100km",
-        "fallback_multiplier_recommended": 1.15
-      },
-      "powertrain": "ice",
-      "powertrain_type": "ice",
-      "features": {
-        "airbags": 6,
-        "esp": true,
-        "aeb": true,
-        "fcw": true,
-        "ldw": true,
-        "lka": false,
-        "lane_centering": false,
-        "bsd": false,
-        "dow": false,
-        "acc": true,
-        "cruise": "全速自适应巡航",
-        "camera_360": true,
-        "transparent_chassis": true,
-        "front_radar": true,
-        "rear_radar": true,
-        "auto_park": false,
-        "remote_park": false,
-        "power_driver_seat": true,
-        "power_passenger_seat": true,
-        "seat_heating": false,
-        "seat_ventilation": false,
-        "panoramic_sunroof": true,
-        "power_tailgate": true,
-        "keyless_entry": true,
-        "remote_start": false,
-        "rear_ac_vents": true,
-        "dual_zone_climate": null,
-        "leather_seats": false,
-        "full_lcd_cluster": true,
-        "screen_inch": 10.3,
-        "carplay": null,
-        "carlife": null,
-        "phone_link": true,
-        "wireless_charge": true,
-        "voice_control": true,
-        "ota": true,
-        "hud": false,
-        "chip_8155": null
-      },
-      "airbags": 6,
-      "screen_inch": 10.3,
-      "match_level": "exact_trim",
-      "trim_id": "trim_ah_4c0ab217a5e7",
-      "canonical_title": "长安UNI-V 2022款 1.5T 尊贵型",
-      "specs_found": true,
-      "specs_approx": false,
-      "verified": true,
-      "verification_schema": "3.0-exact-trim-detailed",
-      "configuration_source": "exact_trim_v3",
-      "core_confidence": 0.99,
-      "feature_confidence": 0.95,
-      "verification_issues": [],
-      "verification_sources": [
-        {
-          "url": "https://car.autohome.com.cn/config/spec/55338.html",
-          "source_type": "autohome_live_config",
-          "authority_tier": 1,
-          "series_id": 6335,
-          "spec_id": 55338,
-          "parameter_source": "live_page"
-        },
-        {
-          "url": "https://github.com/swoiow/autohome",
-          "source_type": "autohome_parameter_dataset",
-          "authority_tier": 3,
-          "snapshot": "identity_match_only",
-          "source_path": "live:config/spec/55338.html",
-          "note": "vault/main used for exact-trim identity; parameters from live page"
-        }
-      ]
-    },
-    "display_price_wan": 5.99,
-    "effective_price_wan": 5.99,
-    "price_confidence": 0.9,
-    "needs_cash_quote": false,
-    "price_basis": "display",
-    "finance_reserve_wan": 0.5,
-    "_age_years": 3.3333333333333335,
-    "score_version": "v2.2.0",
-    "score_v1": 53.5,
-    "condition_gate": "PASS",
-    "score_reasons": [
-      "可比价格 5.99 万",
-      "轿车/两厢，车身偏好分较低",
-      "能源成本约 57.22 元/100km（official_wltc_with_uncertainty: 7.153L/100km）"
-    ],
-    "score_warnings": [],
-    "confidence": {
-      "price": 0.9,
-      "config": 0.933,
-      "energy": 0.65,
-      "core_specs": 0.99,
-      "age": 0.7,
-      "space": 0.825
-    },
-    "price_refresh": {
-      "fetched_at": "2026-11-02T20:20+08:00",
-      "source": "card/detail.sku_price",
-      "cash_price_wan": 5.99,
-      "finance_discount_price_wan": 5.69,
-      "previous_price_wan": 5.69,
-      "previous_price_type": "分期",
-      "tags": [
-        "问题车终身回购",
-        "7天无忧购",
-        "60天整车质保",
-        "1年/3万公里延保",
-        "分期券后价",
-        "领券优惠价",
-        "分期直减券3000元",
-        "送1940元深度整备保养",
-        "送359元全车深度质检",
-        "送1年3万公里核心零部件延保"
-      ]
-    },
-    "score_eligible": true,
-    "data_issues": [],
-    "config_coverage": 0.9327,
     "energy_confidence": 0.65,
     "library_rank": 30,
     "display": true
