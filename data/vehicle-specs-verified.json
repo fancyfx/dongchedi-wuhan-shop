@@ -1,6 +1,6 @@
 {
   "schema_version": "3.0-exact-trim",
-  "generated_at": "2026-11-10",
+  "generated_at": "2026-11-11",
   "configuration_policy": "new-full-config-only; AutoHome exact-trim parameters only; legacy shards/approximate config forbidden",
   "trim_files": [
     "specs/exact-trims-auto.json"
@@ -117,6 +117,7 @@
     "357250766": "trim_ah_e248f9088ada",
     "357250769": "trim_ah_76fec0a382ca",
     "357250770": "trim_ah_061a61794bf4",
+    "357250772": "trim_ah_4c0ab217a5e7",
     "357252968": "trim_ah_2543102bf9af",
     "357261882": "trim_ah_d6f72522639b",
     "357263877": "trim_ah_25aa9701e3a0",
@@ -156,12 +157,21 @@
     "357438116": "trim_ah_5a0b3ef2c5de",
     "357443738": "trim_ah_5c42f34af9b3",
     "357452723": "trim_ah_a9688c3197dc",
+    "357454042": "trim_ah_ab79bc9e9a80",
     "357458430": "trim_ah_c1f3d3d3fa70",
     "357463780": "trim_ah_6ea1a444da10",
     "357467348": "trim_ah_0f17ddc81f52",
+    "357477114": "trim_ah_c1ca33536881",
+    "357477655": "trim_ah_7d5c8cde0d95",
     "357479219": "trim_ah_2bae94b35020",
     "357480334": "trim_ah_24dc1d3fdddf",
     "357492472": "trim_ah_3cf33970b624",
-    "357493701": "trim_ah_e022f76ab0d8"
+    "357493701": "trim_ah_e022f76ab0d8",
+    "357500050": "trim_ah_2ff657a1f051",
+    "357501557": "trim_ah_43b5b5714afd",
+    "357501558": "trim_ah_11d922a31477",
+    "357501560": "trim_ah_a4358b75bd3a",
+    "357501805": "trim_ah_6b4a99f0ce62",
+    "357501821": "trim_ah_b61bf01bdc07"
   }
 }
