@@ -3253,28 +3253,27 @@
   {
     "sku": "357211011",
     "title": "海鸥 2024款 荣耀版 305KM 活力版",
-    "price": 4.99,
-    "price_type": "标价",
-    "prefix": "标价",
+    "price": 4.79,
+    "price_type": "现金价",
+    "prefix": "现金价",
     "extra": "限时物流补贴",
     "extras": [
       "限时物流补贴"
     ],
-    "year": "2024年 / 3.46万公里 / 武汉",
+    "year": "2024年/3.46万公里",
     "plate_year": 2024,
     "model_year": 2024,
     "mileage_wan": 3.46,
     "city": "武汉",
     "tags": [
-      "性价比合理",
-      "放心检8.7分",
-      "三电质保"
+      "0.4万首付",
+      "直降2000元"
     ],
     "badges": [
       "官方保",
       "直营"
     ],
-    "cover": "https://p9-dcd-sign.byteimg.com/tos-cn-i-f042mdwyw7/5769a60c635141adac1ada8cdf2f199f~tplv-resize:800:0.image?lk3s=416a877a&x-expires=1796200601&x-signature=nPE7IO8e6fDC5vu1AxIkYYp7lKI%3D&psm=motor.sophon.product",
+    "cover": "https://p3-dcd-sign.byteimg.com/tos-cn-i-f042mdwyw7/5769a60c635141adac1ada8cdf2f199f~tplv-f042mdwyw7-auto-webp:480:0.jpg?rk3s=4892dee6&x-expires=1795658296&x-signature=dE5AjTbhoYZFK%2B6fB1cii8YKD%2FM%3D&psm=motor.sh.pack",
     "detail_url": "https://m.dcdapp.com/motor/feoffline/usedcar_detail/detail.html?sku_id=357211011&shop_id=118608",
     "shop_id": "118608",
     "image_file": "/workspace/dongchedi-wuhan-shop/images/357211011.jpg",
@@ -3286,8 +3285,8 @@
       "config_norm": null,
       "config_proxy": null,
       "is_suv": false,
-      "price": 4.99,
-      "effective_price_wan": 4.99,
+      "price": 4.79,
+      "effective_price_wan": 4.79,
       "condition_gate": "DATA_ISSUE",
       "note": "数据不足，不参与评分"
     },
@@ -3520,11 +3519,11 @@
         }
       ]
     },
-    "display_price_wan": 4.99,
-    "effective_price_wan": 4.99,
-    "price_confidence": 0.9,
+    "display_price_wan": 4.79,
+    "effective_price_wan": 4.79,
+    "price_confidence": 0.95,
     "needs_cash_quote": false,
-    "price_basis": "display",
+    "price_basis": "cash",
     "_age_years": 2.3333333333333335,
     "score_version": "v2.2.0",
     "score_v1": null,
@@ -3572,34 +3571,45 @@
     ],
     "config_coverage": 0.7981,
     "energy_confidence": 0.0,
-    "display": false
+    "display": false,
+    "cash_price_wan": 4.79,
+    "cash_price_fen": 4790000,
+    "cash_price_str": "4.79",
+    "list_price_wan": 4.49,
+    "is_self_trade_car": true,
+    "source_type": "2",
+    "source_type_name": "自营-个人",
+    "fuel_form": "4",
+    "shop_name": "懂车帝汽车商城•武汉店",
+    "first_registration_time": "1721836800",
+    "detail_shop_id": "118608",
+    "ingest_status": "updated_price"
   },
   {
     "sku": "357215359",
     "title": "唐DM 2018款 DM 2.0T 全时四驱智联创享型 7座 国V",
-    "price": 5.19,
-    "price_type": "标价",
-    "prefix": "分期价",
+    "price": 4.99,
+    "price_type": "现金价",
+    "prefix": "现金价",
     "extra": "领券优惠价",
     "extras": [
       "领券优惠价",
       "分期直减2000元"
     ],
-    "year": "2018年 / 5.96万公里 / 武汉",
+    "year": "2018年/5.96万公里",
     "plate_year": 2018,
     "model_year": 2018,
     "mileage_wan": 5.96,
     "city": "武汉",
     "tags": [
-      "性价比极佳",
-      "放心检8.2分",
-      "三电质保"
+      "直降2000元",
+      "0.5万首付"
     ],
     "badges": [
       "官方保",
       "直营"
     ],
-    "cover": "https://p9-dcd-sign.byteimg.com/tos-cn-i-f042mdwyw7/58bf0601969845188c7cd921d06b6303~tplv-resize:800:0.image?lk3s=416a877a&x-expires=1796200574&x-signature=OTJx2Gtzkaf0s65xCG%2B7WL7sPqE%3D&psm=motor.sophon.product",
+    "cover": "https://p3-dcd-sign.byteimg.com/tos-cn-i-f042mdwyw7/58bf0601969845188c7cd921d06b6303~tplv-f042mdwyw7-auto-webp:480:0.jpg?rk3s=4892dee6&x-expires=1795658060&x-signature=r2PksurtPkYwnxUiboJgGPnncZI%3D&psm=motor.sh.pack",
     "detail_url": "https://m.dcdapp.com/motor/feoffline/usedcar_detail/detail.html?sku_id=357215359&shop_id=118608",
     "shop_id": "118608",
     "image_file": "/workspace/dongchedi-wuhan-shop/images/357215359.jpg",
@@ -3611,8 +3621,8 @@
       "config_norm": null,
       "config_proxy": null,
       "is_suv": true,
-      "price": 5.19,
-      "effective_price_wan": 5.19,
+      "price": 4.99,
+      "effective_price_wan": 4.99,
       "condition_gate": "DATA_ISSUE",
       "note": "数据不足，不参与评分"
     },
@@ -3845,11 +3855,11 @@
         }
       ]
     },
-    "display_price_wan": 5.19,
-    "effective_price_wan": 5.19,
-    "price_confidence": 0.9,
+    "display_price_wan": 4.99,
+    "effective_price_wan": 4.99,
+    "price_confidence": 0.95,
     "needs_cash_quote": false,
-    "price_basis": "display",
+    "price_basis": "cash",
     "finance_reserve_wan": 0.5,
     "_age_years": 8.333333333333334,
     "score_version": "v2.2.0",
@@ -3898,6 +3908,18 @@
     ],
     "config_coverage": 0.7212,
     "energy_confidence": 0.0,
-    "display": false
+    "display": false,
+    "cash_price_wan": 4.99,
+    "cash_price_fen": 4990000,
+    "cash_price_str": "4.99",
+    "list_price_wan": 4.69,
+    "is_self_trade_car": true,
+    "source_type": "2",
+    "source_type_name": "自营-个人",
+    "fuel_form": "6",
+    "shop_name": "懂车帝汽车商城•武汉店",
+    "first_registration_time": "1545926400",
+    "detail_shop_id": "118608",
+    "ingest_status": "updated_price"
   }
 ]
