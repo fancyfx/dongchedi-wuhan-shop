@@ -20969,6 +20969,139 @@
         }
       ],
       "trim_id": "trim_ah_1cd57347e2d8"
+    },
+    "trim_ah_6fae9f50a950": {
+      "canonical_title": "MG6 2019款 20T 自动运动版",
+      "msrp_wan": 11.98,
+      "core_specs": {
+        "powertrain": "ice",
+        "body_type": "紧凑型车",
+        "seats": null,
+        "engine": "1.5T 169马力 L4",
+        "transmission": "7挡干式双离合",
+        "length_mm": 4695,
+        "width_mm": 1848,
+        "height_mm": 1462,
+        "wheelbase_mm": 2715,
+        "fuel_grade": "92",
+        "official_fuel_l_100km": 5.9,
+        "official_standard": "NEDC",
+        "low_soc_fuel_l_100km": null,
+        "real_world_fuel_l_100km": null,
+        "real_world_sample_n": null,
+        "ev_range_km": null,
+        "ev_range_standard": null,
+        "electric_kwh_100km": null,
+        "ranking_energy": {
+          "type": "official_nedc_with_uncertainty",
+          "value": 5.9,
+          "unit": "L/100km",
+          "fallback_multiplier_recommended": 1.2
+        }
+      },
+      "features": {
+        "passive_safety": {
+          "front_airbags": true,
+          "front_side_airbags": true,
+          "curtain_airbags": false,
+          "tpms_display": true
+        },
+        "active_safety": {
+          "esp": true,
+          "aeb": false,
+          "fcw": null,
+          "ldw": false,
+          "lka": false,
+          "lane_centering": null,
+          "bsd": false,
+          "dow": null,
+          "rear_collision_warning": null,
+          "traffic_sign_recognition": null,
+          "fatigue_warning": false
+        },
+        "parking_adas": {
+          "front_parking_radar": false,
+          "rear_parking_radar": true,
+          "reverse_camera": null,
+          "surround_360": null,
+          "transparent_chassis_540": null,
+          "cruise": "fixed",
+          "adas_level": null,
+          "auto_park": false,
+          "remote_park": null
+        },
+        "comfort": {
+          "sunroof": "single_openable",
+          "power_tailgate": null,
+          "hands_free_tailgate": null,
+          "keyless_entry": true,
+          "keyless_start": true,
+          "remote_start": false,
+          "hud": null,
+          "wireless_phone_charging": false,
+          "driver_power_seat": true,
+          "passenger_power_seat": true,
+          "front_seat_heating": false,
+          "front_seat_ventilation": false,
+          "rear_air_vents": true,
+          "climate_control": "manual",
+          "leather_seats": false
+        },
+        "infotainment": {
+          "center_screen_inches": 8.0,
+          "instrument_screen_inches": null,
+          "carplay": true,
+          "carlife": true,
+          "connected_car": false,
+          "ota": false,
+          "speaker_count": 6,
+          "branded_audio": "-",
+          "voice_control": true,
+          "full_lcd_cluster": false,
+          "chip_8155": null,
+          "phone_link": true
+        },
+        "lighting": {
+          "headlights": "LED",
+          "auto_headlights": true,
+          "adaptive_high_beam": false
+        },
+        "wheels": {
+          "front_tire": "-",
+          "rear_tire": "-"
+        },
+        "optional_or_uncertain_features": []
+      },
+      "data_quality": {
+        "core_confidence": 0.99,
+        "feature_confidence": "high",
+        "verified_non_null_feature_leaf_count": 37,
+        "scoring_rule": "Only exact-trim standard features may score. null/optional features score 0.",
+        "known_issues": [],
+        "identity_source": "autohome_exact_trim",
+        "series_match": 1.0,
+        "trim_match": 1.0,
+        "source_snapshot": "live"
+      },
+      "sources": [
+        {
+          "url": "https://car.autohome.com.cn/config/spec/39105.html",
+          "source_type": "autohome_live_config",
+          "authority_tier": 1,
+          "series_id": 835,
+          "spec_id": 39105,
+          "parameter_source": "live_page"
+        },
+        {
+          "url": "https://github.com/swoiow/autohome",
+          "source_type": "autohome_parameter_dataset",
+          "authority_tier": 3,
+          "snapshot": "identity_match_only",
+          "source_path": "live:config/spec/39105.html",
+          "note": "vault/main used for exact-trim identity; parameters from live page"
+        }
+      ],
+      "trim_id": "trim_ah_6fae9f50a950"
     }
   },
   "configuration_policy": "new-full-config-only; AutoHome exact-trim parameters only; legacy shards/approximate config forbidden"

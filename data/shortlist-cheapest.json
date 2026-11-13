@@ -321,9 +321,9 @@
       "note": "V2 fixed anchors score_version=v2.2.0; exact-trim gate passed; weights={'price': 0.15, 'config': 0.3, 'operating_cost': 0.15, 'space': 0.2, 'age': 0.05, 'mileage': 0.05, 'body_preference': 0.05, 'data_quality': 0.05}; scenario=no_home_charging"
     },
     "ingest_status": "added",
-    "library_rank": 67,
+    "library_rank": 68,
     "display": true,
-    "rank": 67
+    "rank": 68
   },
   {
     "sku": "357198641",
@@ -447,7 +447,7 @@
       "found": true,
       "cons_note": null
     },
-    "rank": 96,
+    "rank": 97,
     "specs": {
       "length_mm": 4262,
       "width_mm": 1748,
@@ -689,7 +689,7 @@
     "data_issues": [],
     "config_coverage": 0.6827,
     "energy_confidence": 0.55,
-    "library_rank": 96,
+    "library_rank": 97,
     "display": true,
     "cash_price_wan": 1.99,
     "cash_price_fen": 1990000,
@@ -1209,7 +1209,7 @@
       "found": true,
       "cons_note": null
     },
-    "rank": 61,
+    "rank": 62,
     "specs": {
       "length_mm": 4440,
       "width_mm": 1833,
@@ -1450,7 +1450,7 @@
     "data_issues": [],
     "config_coverage": 0.8269,
     "energy_confidence": 0.55,
-    "library_rank": 61,
+    "library_rank": 62,
     "display": true,
     "cash_price_wan": 2.39,
     "cash_price_fen": 2390000,
@@ -1787,9 +1787,9 @@
       "note": "V2 fixed anchors score_version=v2.2.0; exact-trim gate passed; weights={'price': 0.15, 'config': 0.3, 'operating_cost': 0.15, 'space': 0.2, 'age': 0.05, 'mileage': 0.05, 'body_preference': 0.05, 'data_quality': 0.05}; scenario=no_home_charging"
     },
     "ingest_status": "added",
-    "library_rank": 74,
+    "library_rank": 76,
     "display": true,
-    "rank": 74
+    "rank": 76
   },
   {
     "sku": "357492472",
@@ -2113,9 +2113,9 @@
       "note": "V2 fixed anchors score_version=v2.2.0; exact-trim gate passed; weights={'price': 0.15, 'config': 0.3, 'operating_cost': 0.15, 'space': 0.2, 'age': 0.05, 'mileage': 0.05, 'body_preference': 0.05, 'data_quality': 0.05}; scenario=no_home_charging"
     },
     "ingest_status": "added",
-    "library_rank": 82,
+    "library_rank": 83,
     "display": true,
-    "rank": 82
+    "rank": 83
   },
   {
     "sku": "356933838",
@@ -2813,9 +2813,9 @@
       "note": "V2 fixed anchors score_version=v2.2.0; exact-trim gate passed; weights={'price': 0.15, 'config': 0.3, 'operating_cost': 0.15, 'space': 0.2, 'age': 0.05, 'mileage': 0.05, 'body_preference': 0.05, 'data_quality': 0.05}; scenario=no_home_charging"
     },
     "ingest_status": "added",
-    "library_rank": 46,
+    "library_rank": 47,
     "display": true,
-    "rank": 46
+    "rank": 47
   },
   {
     "sku": "356905902",
@@ -2939,7 +2939,7 @@
       "found": true,
       "cons_note": null
     },
-    "rank": 85,
+    "rank": 86,
     "specs": {
       "length_mm": 4474,
       "width_mm": 1730,
@@ -3184,7 +3184,7 @@
     "data_issues": [],
     "config_coverage": 0.7596,
     "energy_confidence": 0.65,
-    "library_rank": 85,
+    "library_rank": 86,
     "display": true,
     "cash_price_wan": 2.69,
     "cash_price_fen": 2690000,
@@ -3320,7 +3320,7 @@
       "found": true,
       "cons_note": null
     },
-    "rank": 90,
+    "rank": 91,
     "specs": {
       "length_mm": 4609,
       "width_mm": 1798,
@@ -3559,7 +3559,7 @@
     "data_issues": [],
     "config_coverage": 0.8173,
     "energy_confidence": 0.55,
-    "library_rank": 90,
+    "library_rank": 91,
     "display": true,
     "cash_price_wan": 2.69,
     "cash_price_fen": 2690000,
@@ -3943,6 +3943,332 @@
     "display": true
   },
   {
+    "sku": "357517790",
+    "title": "MG6 2019款 20T 自动运动版",
+    "shop_id": "118608",
+    "shop_name": "懂车帝汽车商城•武汉店",
+    "series": "MG6",
+    "brand": "名爵",
+    "mileage_wan": 6.85,
+    "model_year": 2019,
+    "plate_year": 2020,
+    "year": "2020年/6.85万公里",
+    "city": "武汉",
+    "tags": [
+      "0.6万首付"
+    ],
+    "badges": [
+      "直营"
+    ],
+    "is_self_trade_car": true,
+    "source_type": "8",
+    "source_type_name": "自营-企业",
+    "fuel_form": "1",
+    "cover": "https://p9-dcd-sign.byteimg.com/tos-cn-i-f042mdwyw7/9261380c022d442aaa7d4128e17a383a~tplv-f042mdwyw7-auto-webp:480:0.jpg?rk3s=4892dee6&x-expires=1795744505&x-signature=ZRgenE2Ysb72WoAC7ls1kRqmxy8%3D&psm=motor.sh.pack",
+    "detail_url": "https://m.dcdapp.com/motor/feoffline/usedcar_detail/detail.html?sku_id=357517790&shop_id=118608",
+    "list_price_wan": 2.79,
+    "first_registration_time": "1578931200",
+    "price_type": "现金价",
+    "prefix": "现金价",
+    "cash_price_fen": 2790000,
+    "cash_price_str": "2.79",
+    "cash_price_wan": 2.79,
+    "price": 2.79,
+    "detail_shop_id": "118608",
+    "specs": {
+      "length_mm": 4695,
+      "width_mm": 1848,
+      "height_mm": 1462,
+      "wheelbase_mm": 2715,
+      "seats": null,
+      "body_type": "紧凑型车",
+      "engine": "1.5T 169马力 L4",
+      "transmission": "7挡干式双离合",
+      "fuel_grade": "92",
+      "official_fuel_l_100km": 5.9,
+      "official_standard": "NEDC",
+      "low_soc_fuel_l_100km": null,
+      "real_world_fuel_l_100km": null,
+      "real_world_sample_n": null,
+      "electric_kwh_100km": null,
+      "ev_range_km": null,
+      "ev_range_standard": null,
+      "ranking_energy": {
+        "type": "official_nedc_with_uncertainty",
+        "value": 5.9,
+        "unit": "L/100km",
+        "fallback_multiplier_recommended": 1.2
+      },
+      "powertrain": "ice",
+      "powertrain_type": "ice",
+      "features": {
+        "airbags": 4,
+        "esp": true,
+        "aeb": false,
+        "fcw": null,
+        "ldw": false,
+        "lka": false,
+        "lane_centering": null,
+        "bsd": false,
+        "dow": null,
+        "acc": false,
+        "cruise": "定速巡航",
+        "camera_360": null,
+        "transparent_chassis": null,
+        "front_radar": false,
+        "rear_radar": true,
+        "auto_park": false,
+        "remote_park": null,
+        "power_driver_seat": true,
+        "power_passenger_seat": true,
+        "seat_heating": false,
+        "seat_ventilation": false,
+        "panoramic_sunroof": false,
+        "power_tailgate": null,
+        "keyless_entry": true,
+        "remote_start": false,
+        "rear_ac_vents": true,
+        "dual_zone_climate": false,
+        "leather_seats": false,
+        "full_lcd_cluster": false,
+        "screen_inch": 8.0,
+        "carplay": true,
+        "carlife": true,
+        "phone_link": true,
+        "wireless_charge": false,
+        "voice_control": true,
+        "ota": false,
+        "hud": null,
+        "chip_8155": null
+      },
+      "airbags": 4,
+      "screen_inch": 8.0,
+      "match_level": "exact_trim",
+      "trim_id": "trim_ah_6fae9f50a950",
+      "canonical_title": "MG6 2019款 20T 自动运动版",
+      "specs_found": true,
+      "specs_approx": false,
+      "verified": true,
+      "verification_schema": "3.0-exact-trim-detailed",
+      "configuration_source": "exact_trim_v3",
+      "core_confidence": 0.99,
+      "feature_confidence": 0.95,
+      "verification_issues": [],
+      "verification_sources": [
+        {
+          "url": "https://car.autohome.com.cn/config/spec/39105.html",
+          "source_type": "autohome_live_config",
+          "authority_tier": 1,
+          "series_id": 835,
+          "spec_id": 39105,
+          "parameter_source": "live_page"
+        },
+        {
+          "url": "https://github.com/swoiow/autohome",
+          "source_type": "autohome_parameter_dataset",
+          "authority_tier": 3,
+          "snapshot": "identity_match_only",
+          "source_path": "live:config/spec/39105.html",
+          "note": "vault/main used for exact-trim identity; parameters from live page"
+        }
+      ]
+    },
+    "detailed_config": {
+      "length_mm": 4695,
+      "width_mm": 1848,
+      "height_mm": 1462,
+      "wheelbase_mm": 2715,
+      "seats": null,
+      "body_type": "紧凑型车",
+      "engine": "1.5T 169马力 L4",
+      "transmission": "7挡干式双离合",
+      "fuel_grade": "92",
+      "official_fuel_l_100km": 5.9,
+      "official_standard": "NEDC",
+      "low_soc_fuel_l_100km": null,
+      "real_world_fuel_l_100km": null,
+      "real_world_sample_n": null,
+      "electric_kwh_100km": null,
+      "ev_range_km": null,
+      "ev_range_standard": null,
+      "ranking_energy": {
+        "type": "official_nedc_with_uncertainty",
+        "value": 5.9,
+        "unit": "L/100km",
+        "fallback_multiplier_recommended": 1.2
+      },
+      "powertrain": "ice",
+      "powertrain_type": "ice",
+      "features": {
+        "airbags": 4,
+        "esp": true,
+        "aeb": false,
+        "fcw": null,
+        "ldw": false,
+        "lka": false,
+        "lane_centering": null,
+        "bsd": false,
+        "dow": null,
+        "acc": false,
+        "cruise": "定速巡航",
+        "camera_360": null,
+        "transparent_chassis": null,
+        "front_radar": false,
+        "rear_radar": true,
+        "auto_park": false,
+        "remote_park": null,
+        "power_driver_seat": true,
+        "power_passenger_seat": true,
+        "seat_heating": false,
+        "seat_ventilation": false,
+        "panoramic_sunroof": false,
+        "power_tailgate": null,
+        "keyless_entry": true,
+        "remote_start": false,
+        "rear_ac_vents": true,
+        "dual_zone_climate": false,
+        "leather_seats": false,
+        "full_lcd_cluster": false,
+        "screen_inch": 8.0,
+        "carplay": true,
+        "carlife": true,
+        "phone_link": true,
+        "wireless_charge": false,
+        "voice_control": true,
+        "ota": false,
+        "hud": null,
+        "chip_8155": null
+      },
+      "airbags": 4,
+      "screen_inch": 8.0,
+      "match_level": "exact_trim",
+      "trim_id": "trim_ah_6fae9f50a950",
+      "canonical_title": "MG6 2019款 20T 自动运动版",
+      "specs_found": true,
+      "specs_approx": false,
+      "verified": true,
+      "verification_schema": "3.0-exact-trim-detailed",
+      "configuration_source": "exact_trim_v3",
+      "core_confidence": 0.99,
+      "feature_confidence": 0.95,
+      "verification_issues": [],
+      "verification_sources": [
+        {
+          "url": "https://car.autohome.com.cn/config/spec/39105.html",
+          "source_type": "autohome_live_config",
+          "authority_tier": 1,
+          "series_id": 835,
+          "spec_id": 39105,
+          "parameter_source": "live_page"
+        },
+        {
+          "url": "https://github.com/swoiow/autohome",
+          "source_type": "autohome_parameter_dataset",
+          "authority_tier": 3,
+          "snapshot": "identity_match_only",
+          "source_path": "live:config/spec/39105.html",
+          "note": "vault/main used for exact-trim identity; parameters from live page"
+        }
+      ]
+    },
+    "display_price_wan": 2.79,
+    "effective_price_wan": 2.79,
+    "price_confidence": 0.95,
+    "needs_cash_quote": false,
+    "price_basis": "cash",
+    "manufacturer": "上汽集团",
+    "manufacturer_inferred": false,
+    "owner_reviews": {
+      "summary": "",
+      "sources": [],
+      "found": false
+    },
+    "score_eligible": true,
+    "data_issues": [],
+    "config_coverage": 0.75,
+    "energy_confidence": 0.55,
+    "_age_years": 6.333333333333333,
+    "score_version": "v2.2.0",
+    "score_v1": 53.8,
+    "total_score": 53.8,
+    "condition_gate": "PASS",
+    "evaluation": "可比价格 2.79 万；轿车/两厢，车身偏好分较低；能源成本约 56.64 元/100km（official_nedc_with_uncertainty: 7.08L/100km）。",
+    "score_reasons": [
+      "可比价格 2.79 万",
+      "轿车/两厢，车身偏好分较低",
+      "能源成本约 56.64 元/100km（official_nedc_with_uncertainty: 7.08L/100km）"
+    ],
+    "score_warnings": [],
+    "confidence": {
+      "price": 0.95,
+      "config": 0.75,
+      "energy": 0.55,
+      "core_specs": 0.99,
+      "age": 0.7,
+      "space": 0.825
+    },
+    "sort_scores": {
+      "score_version": "v2.2.0",
+      "total_score": 53.8,
+      "price_score": 100.0,
+      "config_score": 22.6,
+      "operating_cost_score": 47.27,
+      "space_score": 68.16,
+      "age_score": 50.83,
+      "mileage_score": 53.5,
+      "body_preference_score": 40.0,
+      "data_quality_score": 81.72,
+      "config_norm": 22.6,
+      "space_norm": 68.16,
+      "fuel_norm": 47.27,
+      "suv_score": 40.0,
+      "config_proxy": 22.6,
+      "space_proxy": 68.16,
+      "fuel_proxy": 47.27,
+      "is_suv": false,
+      "price": 2.79,
+      "effective_price_wan": 2.79,
+      "weights": {
+        "price": 0.15,
+        "config": 0.3,
+        "operating_cost": 0.15,
+        "space": 0.2,
+        "age": 0.05,
+        "mileage": 0.05,
+        "body_preference": 0.05,
+        "data_quality": 0.05
+      },
+      "energy": {
+        "cost_yuan_100km": 56.64,
+        "type": "official_nedc_with_uncertainty",
+        "value": 7.08,
+        "unit": "L/100km",
+        "fuel_grade": "92",
+        "scenario": "no_home_charging"
+      },
+      "confidence": {
+        "price": 0.95,
+        "config": 0.75,
+        "energy": 0.55,
+        "core_specs": 0.99,
+        "age": 0.7,
+        "space": 0.825
+      },
+      "reasons": [
+        "可比价格 2.79 万",
+        "轿车/两厢，车身偏好分较低",
+        "能源成本约 56.64 元/100km（official_nedc_with_uncertainty: 7.08L/100km）"
+      ],
+      "warnings": [],
+      "condition_gate": "PASS",
+      "note": "V2 fixed anchors score_version=v2.2.0; exact-trim gate passed; weights={'price': 0.15, 'config': 0.3, 'operating_cost': 0.15, 'space': 0.2, 'age': 0.05, 'mileage': 0.05, 'body_preference': 0.05, 'data_quality': 0.05}; scenario=no_home_charging"
+    },
+    "ingest_status": "added",
+    "library_rank": 38,
+    "display": true,
+    "rank": 38
+  },
+  {
     "sku": "356670871",
     "title": "缤越 2019款 运动款 260T DCT游侠 国VI",
     "price": 2.85,
@@ -4063,7 +4389,7 @@
       "found": true,
       "cons_note": null
     },
-    "rank": 57,
+    "rank": 58,
     "specs": {
       "length_mm": 4330,
       "width_mm": 1800,
@@ -4307,7 +4633,7 @@
     "data_issues": [],
     "config_coverage": 0.8269,
     "energy_confidence": 0.55,
-    "library_rank": 57,
+    "library_rank": 58,
     "display": true,
     "cash_price_wan": 2.85,
     "cash_price_fen": 2850000,
@@ -4445,7 +4771,7 @@
       "found": true,
       "cons_note": null
     },
-    "rank": 38,
+    "rank": 39,
     "specs": {
       "length_mm": 4519,
       "width_mm": 1831,
@@ -4684,7 +5010,7 @@
     "data_issues": [],
     "config_coverage": 0.8654,
     "energy_confidence": 0.55,
-    "library_rank": 38,
+    "library_rank": 39,
     "display": true
   },
   {
@@ -5573,7 +5899,7 @@
       "found": true,
       "cons_note": null
     },
-    "rank": 42,
+    "rank": 43,
     "specs": {
       "length_mm": 4730,
       "width_mm": 1820,
@@ -5818,7 +6144,7 @@
     "data_issues": [],
     "config_coverage": 0.8077,
     "energy_confidence": 0.55,
-    "library_rank": 42,
+    "library_rank": 43,
     "display": true
   },
   {
@@ -5943,7 +6269,7 @@
       "found": true,
       "cons_note": null
     },
-    "rank": 76,
+    "rank": 78,
     "specs": {
       "length_mm": 4660,
       "width_mm": 1812,
@@ -6185,7 +6511,7 @@
     "data_issues": [],
     "config_coverage": 0.9231,
     "energy_confidence": 0.55,
-    "library_rank": 76,
+    "library_rank": 78,
     "display": true
   },
   {
@@ -6309,7 +6635,7 @@
       "found": true,
       "cons_note": null
     },
-    "rank": 47,
+    "rank": 48,
     "specs": {
       "length_mm": 4288,
       "width_mm": 1748,
@@ -6551,7 +6877,7 @@
     "data_issues": [],
     "config_coverage": 0.7885,
     "energy_confidence": 0.65,
-    "library_rank": 47,
+    "library_rank": 48,
     "display": true,
     "cash_price_wan": 3.19,
     "cash_price_fen": 3190000,
@@ -6690,7 +7016,7 @@
       "found": true,
       "cons_note": null
     },
-    "rank": 55,
+    "rank": 56,
     "specs": {
       "length_mm": 4440,
       "width_mm": 1833,
@@ -6931,7 +7257,7 @@
     "data_issues": [],
     "config_coverage": 0.8462,
     "energy_confidence": 0.55,
-    "library_rank": 55,
+    "library_rank": 56,
     "display": true
   },
   {
@@ -7057,7 +7383,7 @@
       "found": true,
       "cons_note": null
     },
-    "rank": 62,
+    "rank": 63,
     "specs": {
       "length_mm": 4660,
       "width_mm": 1812,
@@ -7299,7 +7625,7 @@
     "data_issues": [],
     "config_coverage": 0.7308,
     "energy_confidence": 0.55,
-    "library_rank": 62,
+    "library_rank": 63,
     "display": true
   },
   {
@@ -7624,9 +7950,9 @@
       "note": "V2 fixed anchors score_version=v2.2.0; exact-trim gate passed; weights={'price': 0.15, 'config': 0.3, 'operating_cost': 0.15, 'space': 0.2, 'age': 0.05, 'mileage': 0.05, 'body_preference': 0.05, 'data_quality': 0.05}; scenario=no_home_charging"
     },
     "ingest_status": "added",
-    "library_rank": 71,
+    "library_rank": 73,
     "display": true,
-    "rank": 71
+    "rank": 73
   },
   {
     "sku": "357018303",
@@ -7749,7 +8075,7 @@
       "found": true,
       "cons_note": null
     },
-    "rank": 54,
+    "rank": 55,
     "specs": {
       "length_mm": 4675,
       "width_mm": 1842,
@@ -7993,7 +8319,7 @@
     "data_issues": [],
     "config_coverage": 0.7885,
     "energy_confidence": 0.55,
-    "library_rank": 54,
+    "library_rank": 55,
     "display": true,
     "cash_price_wan": 3.36,
     "cash_price_fen": 3360000,
@@ -8710,9 +9036,9 @@
       "note": "V2 fixed anchors score_version=v2.2.0; exact-trim gate passed; weights={'price': 0.15, 'config': 0.3, 'operating_cost': 0.15, 'space': 0.2, 'age': 0.05, 'mileage': 0.05, 'body_preference': 0.05, 'data_quality': 0.05}; scenario=no_home_charging"
     },
     "ingest_status": "added",
-    "library_rank": 52,
+    "library_rank": 53,
     "display": true,
-    "rank": 52
+    "rank": 53
   },
   {
     "sku": "357228026",
@@ -9217,7 +9543,7 @@
       "found": true,
       "cons_note": null
     },
-    "rank": 97,
+    "rank": 98,
     "specs": {
       "length_mm": 4609,
       "width_mm": 1798,
@@ -9459,7 +9785,7 @@
     "data_issues": [],
     "config_coverage": 0.8077,
     "energy_confidence": 0.65,
-    "library_rank": 97,
+    "library_rank": 98,
     "display": true
   },
   {
@@ -9589,7 +9915,7 @@
       "found": true,
       "cons_note": null
     },
-    "rank": 98,
+    "rank": 99,
     "specs": {
       "length_mm": 4631,
       "width_mm": 1760,
@@ -9831,7 +10157,7 @@
     "data_issues": [],
     "config_coverage": 0.8462,
     "energy_confidence": 0.55,
-    "library_rank": 98,
+    "library_rank": 99,
     "display": true,
     "cash_price_wan": 3.69,
     "cash_price_fen": 3690000,
@@ -10603,331 +10929,5 @@
     "first_registration_time": "1492617600",
     "detail_shop_id": "118608",
     "ingest_status": "updated_price"
-  },
-  {
-    "sku": "357501558",
-    "title": "标致4008 2018款 350THP 精英版",
-    "shop_id": "118608",
-    "shop_name": "懂车帝汽车商城•武汉店",
-    "series": "标致4008",
-    "brand": "标致",
-    "mileage_wan": 7.31,
-    "model_year": 2018,
-    "plate_year": 2019,
-    "year": "2019年/7.31万公里",
-    "city": "武汉",
-    "tags": [
-      "0.4万首付"
-    ],
-    "badges": [
-      "直营"
-    ],
-    "is_self_trade_car": true,
-    "source_type": "2",
-    "source_type_name": "自营-个人",
-    "fuel_form": "1",
-    "cover": "https://p3-dcd-sign.byteimg.com/tos-cn-i-f042mdwyw7/f1f90ebb8b0841e49f13880f8868c0ae~tplv-f042mdwyw7-auto-webp:480:0.jpg?rk3s=4892dee6&x-expires=1795571776&x-signature=3bP9fmkqhjr6es1pJYdl1mj%2FjXY%3D&psm=motor.sh.pack",
-    "detail_url": "https://m.dcdapp.com/motor/feoffline/usedcar_detail/detail.html?sku_id=357501558&shop_id=118608",
-    "list_price_wan": 3.79,
-    "first_registration_time": "1550505600",
-    "price_type": "现金价",
-    "prefix": "现金价",
-    "cash_price_fen": 3790000,
-    "cash_price_str": "3.79",
-    "cash_price_wan": 3.79,
-    "price": 3.79,
-    "detail_shop_id": "118608",
-    "specs": {
-      "length_mm": 4510,
-      "width_mm": 1850,
-      "height_mm": 1662,
-      "wheelbase_mm": 2730,
-      "seats": null,
-      "body_type": "紧凑型SUV",
-      "engine": "●",
-      "transmission": "手自一体变速箱(AT)",
-      "fuel_grade": "92",
-      "official_fuel_l_100km": 6.4,
-      "official_standard": "NEDC",
-      "low_soc_fuel_l_100km": null,
-      "real_world_fuel_l_100km": null,
-      "real_world_sample_n": null,
-      "electric_kwh_100km": null,
-      "ev_range_km": null,
-      "ev_range_standard": null,
-      "ranking_energy": {
-        "type": "official_nedc_with_uncertainty",
-        "value": 6.4,
-        "unit": "L/100km",
-        "fallback_multiplier_recommended": 1.2
-      },
-      "powertrain": "ice",
-      "powertrain_type": "ice",
-      "features": {
-        "airbags": 6,
-        "esp": true,
-        "aeb": false,
-        "fcw": null,
-        "ldw": false,
-        "lka": false,
-        "lane_centering": null,
-        "bsd": false,
-        "dow": null,
-        "acc": false,
-        "cruise": "定速巡航",
-        "camera_360": false,
-        "transparent_chassis": null,
-        "front_radar": false,
-        "rear_radar": true,
-        "auto_park": false,
-        "remote_park": null,
-        "power_driver_seat": true,
-        "power_passenger_seat": null,
-        "seat_heating": null,
-        "seat_ventilation": false,
-        "panoramic_sunroof": true,
-        "power_tailgate": false,
-        "keyless_entry": true,
-        "remote_start": false,
-        "rear_ac_vents": true,
-        "dual_zone_climate": true,
-        "leather_seats": true,
-        "full_lcd_cluster": true,
-        "screen_inch": 8.0,
-        "carplay": true,
-        "carlife": null,
-        "phone_link": true,
-        "wireless_charge": false,
-        "voice_control": false,
-        "ota": false,
-        "hud": false,
-        "chip_8155": null
-      },
-      "airbags": 6,
-      "screen_inch": 8.0,
-      "match_level": "exact_trim",
-      "trim_id": "trim_ah_11d922a31477",
-      "canonical_title": "标致4008 2018款 350THP 精英版",
-      "specs_found": true,
-      "specs_approx": false,
-      "verified": true,
-      "verification_schema": "3.0-exact-trim-detailed",
-      "configuration_source": "exact_trim_v3",
-      "core_confidence": 0.99,
-      "feature_confidence": 0.95,
-      "verification_issues": [],
-      "verification_sources": [
-        {
-          "url": "https://car.autohome.com.cn/config/spec/33441.html",
-          "source_type": "autohome_live_config",
-          "authority_tier": 1,
-          "series_id": 4167,
-          "spec_id": 33441,
-          "parameter_source": "live_page"
-        },
-        {
-          "url": "https://github.com/swoiow/autohome",
-          "source_type": "autohome_parameter_dataset",
-          "authority_tier": 3,
-          "snapshot": "identity_match_only",
-          "source_path": "live:config/spec/33441.html",
-          "note": "vault/main used for exact-trim identity; parameters from live page"
-        }
-      ]
-    },
-    "detailed_config": {
-      "length_mm": 4510,
-      "width_mm": 1850,
-      "height_mm": 1662,
-      "wheelbase_mm": 2730,
-      "seats": null,
-      "body_type": "紧凑型SUV",
-      "engine": "●",
-      "transmission": "手自一体变速箱(AT)",
-      "fuel_grade": "92",
-      "official_fuel_l_100km": 6.4,
-      "official_standard": "NEDC",
-      "low_soc_fuel_l_100km": null,
-      "real_world_fuel_l_100km": null,
-      "real_world_sample_n": null,
-      "electric_kwh_100km": null,
-      "ev_range_km": null,
-      "ev_range_standard": null,
-      "ranking_energy": {
-        "type": "official_nedc_with_uncertainty",
-        "value": 6.4,
-        "unit": "L/100km",
-        "fallback_multiplier_recommended": 1.2
-      },
-      "powertrain": "ice",
-      "powertrain_type": "ice",
-      "features": {
-        "airbags": 6,
-        "esp": true,
-        "aeb": false,
-        "fcw": null,
-        "ldw": false,
-        "lka": false,
-        "lane_centering": null,
-        "bsd": false,
-        "dow": null,
-        "acc": false,
-        "cruise": "定速巡航",
-        "camera_360": false,
-        "transparent_chassis": null,
-        "front_radar": false,
-        "rear_radar": true,
-        "auto_park": false,
-        "remote_park": null,
-        "power_driver_seat": true,
-        "power_passenger_seat": null,
-        "seat_heating": null,
-        "seat_ventilation": false,
-        "panoramic_sunroof": true,
-        "power_tailgate": false,
-        "keyless_entry": true,
-        "remote_start": false,
-        "rear_ac_vents": true,
-        "dual_zone_climate": true,
-        "leather_seats": true,
-        "full_lcd_cluster": true,
-        "screen_inch": 8.0,
-        "carplay": true,
-        "carlife": null,
-        "phone_link": true,
-        "wireless_charge": false,
-        "voice_control": false,
-        "ota": false,
-        "hud": false,
-        "chip_8155": null
-      },
-      "airbags": 6,
-      "screen_inch": 8.0,
-      "match_level": "exact_trim",
-      "trim_id": "trim_ah_11d922a31477",
-      "canonical_title": "标致4008 2018款 350THP 精英版",
-      "specs_found": true,
-      "specs_approx": false,
-      "verified": true,
-      "verification_schema": "3.0-exact-trim-detailed",
-      "configuration_source": "exact_trim_v3",
-      "core_confidence": 0.99,
-      "feature_confidence": 0.95,
-      "verification_issues": [],
-      "verification_sources": [
-        {
-          "url": "https://car.autohome.com.cn/config/spec/33441.html",
-          "source_type": "autohome_live_config",
-          "authority_tier": 1,
-          "series_id": 4167,
-          "spec_id": 33441,
-          "parameter_source": "live_page"
-        },
-        {
-          "url": "https://github.com/swoiow/autohome",
-          "source_type": "autohome_parameter_dataset",
-          "authority_tier": 3,
-          "snapshot": "identity_match_only",
-          "source_path": "live:config/spec/33441.html",
-          "note": "vault/main used for exact-trim identity; parameters from live page"
-        }
-      ]
-    },
-    "display_price_wan": 3.79,
-    "effective_price_wan": 3.79,
-    "price_confidence": 0.95,
-    "needs_cash_quote": false,
-    "price_basis": "cash",
-    "manufacturer": "东风标致",
-    "manufacturer_inferred": false,
-    "owner_reviews": {
-      "summary": "",
-      "sources": [],
-      "found": false
-    },
-    "score_eligible": true,
-    "data_issues": [],
-    "config_coverage": 0.8173,
-    "energy_confidence": 0.55,
-    "_age_years": 7.333333333333333,
-    "score_version": "v2.2.0",
-    "score_v1": 53.3,
-    "total_score": 53.3,
-    "condition_gate": "PASS",
-    "evaluation": "可比价格 3.79 万；车身 紧凑型SUV 符合偏好；能源成本约 61.44 元/100km（official_nedc_with_uncertainty: 7.68L/100km）。",
-    "score_reasons": [
-      "可比价格 3.79 万",
-      "车身 紧凑型SUV 符合偏好",
-      "能源成本约 61.44 元/100km（official_nedc_with_uncertainty: 7.68L/100km）"
-    ],
-    "score_warnings": [],
-    "confidence": {
-      "price": 0.95,
-      "config": 0.817,
-      "energy": 0.55,
-      "core_specs": 0.99,
-      "age": 0.7,
-      "space": 0.825
-    },
-    "sort_scores": {
-      "score_version": "v2.2.0",
-      "total_score": 53.3,
-      "price_score": 73.67,
-      "config_score": 29.57,
-      "operating_cost_score": 43.31,
-      "space_score": 67.28,
-      "age_score": 38.33,
-      "mileage_score": 48.9,
-      "body_preference_score": 100.0,
-      "data_quality_score": 81.72,
-      "config_norm": 29.57,
-      "space_norm": 67.28,
-      "fuel_norm": 43.31,
-      "suv_score": 100.0,
-      "config_proxy": 29.57,
-      "space_proxy": 67.28,
-      "fuel_proxy": 43.31,
-      "is_suv": true,
-      "price": 3.79,
-      "effective_price_wan": 3.79,
-      "weights": {
-        "price": 0.15,
-        "config": 0.3,
-        "operating_cost": 0.15,
-        "space": 0.2,
-        "age": 0.05,
-        "mileage": 0.05,
-        "body_preference": 0.05,
-        "data_quality": 0.05
-      },
-      "energy": {
-        "cost_yuan_100km": 61.44,
-        "type": "official_nedc_with_uncertainty",
-        "value": 7.68,
-        "unit": "L/100km",
-        "fuel_grade": "92",
-        "scenario": "no_home_charging"
-      },
-      "confidence": {
-        "price": 0.95,
-        "config": 0.817,
-        "energy": 0.55,
-        "core_specs": 0.99,
-        "age": 0.7,
-        "space": 0.825
-      },
-      "reasons": [
-        "可比价格 3.79 万",
-        "车身 紧凑型SUV 符合偏好",
-        "能源成本约 61.44 元/100km（official_nedc_with_uncertainty: 7.68L/100km）"
-      ],
-      "warnings": [],
-      "condition_gate": "PASS",
-      "note": "V2 fixed anchors score_version=v2.2.0; exact-trim gate passed; weights={'price': 0.15, 'config': 0.3, 'operating_cost': 0.15, 'space': 0.2, 'age': 0.05, 'mileage': 0.05, 'body_preference': 0.05, 'data_quality': 0.05}; scenario=no_home_charging"
-    },
-    "ingest_status": "added",
-    "library_rank": 43,
-    "display": true,
-    "rank": 43
   }
 ]
