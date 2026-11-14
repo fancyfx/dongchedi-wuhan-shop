@@ -14382,6 +14382,332 @@
     "rank": 40
   },
   {
+    "sku": "357541794",
+    "title": "五菱Nano EV 2021款 玩乐款-高功率版",
+    "shop_id": "118608",
+    "shop_name": "懂车帝汽车商城•武汉店",
+    "series": "五菱Nano EV",
+    "brand": "五菱",
+    "mileage_wan": 1.57,
+    "model_year": 2021,
+    "plate_year": 2022,
+    "year": "2022年/1.57万公里",
+    "city": "武汉",
+    "tags": [
+      "0.5万首付"
+    ],
+    "badges": [
+      "直营"
+    ],
+    "is_self_trade_car": true,
+    "source_type": "2",
+    "source_type_name": "自营-个人",
+    "fuel_form": "4",
+    "cover": "https://p9-dcd-sign.byteimg.com/tos-cn-i-f042mdwyw7/f3697a37e9654c1f86d9660e7d0a0ab0~tplv-f042mdwyw7-auto-webp:480:0.jpg?rk3s=4892dee6&x-expires=1795831020&x-signature=ZHwBVeoWqzrLZ%2F26%2Bl%2BolVnPJ6Q%3D&psm=motor.sh.pack",
+    "detail_url": "https://m.dcdapp.com/motor/feoffline/usedcar_detail/detail.html?sku_id=357541794&shop_id=118608",
+    "list_price_wan": 2.49,
+    "first_registration_time": "1669392000",
+    "price_type": "现金价",
+    "prefix": "现金价",
+    "cash_price_fen": 2490000,
+    "cash_price_str": "2.49",
+    "cash_price_wan": 2.49,
+    "price": 2.49,
+    "detail_shop_id": "118608",
+    "specs": {
+      "length_mm": 2497,
+      "width_mm": 1526,
+      "height_mm": 1616,
+      "wheelbase_mm": 1600,
+      "seats": null,
+      "body_type": "微型车",
+      "engine": null,
+      "transmission": "固定齿比变速箱",
+      "fuel_grade": null,
+      "official_fuel_l_100km": null,
+      "official_standard": null,
+      "low_soc_fuel_l_100km": null,
+      "real_world_fuel_l_100km": null,
+      "real_world_sample_n": null,
+      "electric_kwh_100km": 9.9,
+      "ev_range_km": 305.0,
+      "ev_range_standard": "NEDC",
+      "ranking_energy": {
+        "type": "electricity",
+        "value": 9.9,
+        "unit": "kWh/100km"
+      },
+      "powertrain": "bev",
+      "powertrain_type": "bev",
+      "features": {
+        "airbags": 2,
+        "esp": false,
+        "aeb": false,
+        "fcw": null,
+        "ldw": false,
+        "lka": false,
+        "lane_centering": null,
+        "bsd": false,
+        "dow": null,
+        "acc": false,
+        "cruise": null,
+        "camera_360": null,
+        "transparent_chassis": null,
+        "front_radar": false,
+        "rear_radar": true,
+        "auto_park": false,
+        "remote_park": null,
+        "power_driver_seat": false,
+        "power_passenger_seat": false,
+        "seat_heating": false,
+        "seat_ventilation": false,
+        "panoramic_sunroof": false,
+        "power_tailgate": false,
+        "keyless_entry": false,
+        "remote_start": null,
+        "rear_ac_vents": false,
+        "dual_zone_climate": false,
+        "leather_seats": false,
+        "full_lcd_cluster": true,
+        "screen_inch": null,
+        "carplay": null,
+        "carlife": null,
+        "phone_link": false,
+        "wireless_charge": false,
+        "voice_control": true,
+        "ota": false,
+        "hud": null,
+        "chip_8155": null
+      },
+      "airbags": 2,
+      "screen_inch": null,
+      "match_level": "exact_trim",
+      "trim_id": "trim_ah_15110f348135",
+      "canonical_title": "五菱NanoEV 2021款 玩乐款-高功率版",
+      "specs_found": true,
+      "specs_approx": false,
+      "verified": true,
+      "verification_schema": "3.0-exact-trim-detailed",
+      "configuration_source": "exact_trim_v3",
+      "core_confidence": 0.99,
+      "feature_confidence": 0.95,
+      "verification_issues": [],
+      "verification_sources": [
+        {
+          "url": "https://car.autohome.com.cn/config/spec/55597.html",
+          "source_type": "autohome_live_config",
+          "authority_tier": 1,
+          "series_id": 6121,
+          "spec_id": 55597,
+          "parameter_source": "live_page"
+        },
+        {
+          "url": "https://github.com/swoiow/autohome",
+          "source_type": "autohome_parameter_dataset",
+          "authority_tier": 3,
+          "snapshot": "identity_match_only",
+          "source_path": "live:config/spec/55597.html",
+          "note": "vault/main used for exact-trim identity; parameters from live page"
+        }
+      ]
+    },
+    "detailed_config": {
+      "length_mm": 2497,
+      "width_mm": 1526,
+      "height_mm": 1616,
+      "wheelbase_mm": 1600,
+      "seats": null,
+      "body_type": "微型车",
+      "engine": null,
+      "transmission": "固定齿比变速箱",
+      "fuel_grade": null,
+      "official_fuel_l_100km": null,
+      "official_standard": null,
+      "low_soc_fuel_l_100km": null,
+      "real_world_fuel_l_100km": null,
+      "real_world_sample_n": null,
+      "electric_kwh_100km": 9.9,
+      "ev_range_km": 305.0,
+      "ev_range_standard": "NEDC",
+      "ranking_energy": {
+        "type": "electricity",
+        "value": 9.9,
+        "unit": "kWh/100km"
+      },
+      "powertrain": "bev",
+      "powertrain_type": "bev",
+      "features": {
+        "airbags": 2,
+        "esp": false,
+        "aeb": false,
+        "fcw": null,
+        "ldw": false,
+        "lka": false,
+        "lane_centering": null,
+        "bsd": false,
+        "dow": null,
+        "acc": false,
+        "cruise": null,
+        "camera_360": null,
+        "transparent_chassis": null,
+        "front_radar": false,
+        "rear_radar": true,
+        "auto_park": false,
+        "remote_park": null,
+        "power_driver_seat": false,
+        "power_passenger_seat": false,
+        "seat_heating": false,
+        "seat_ventilation": false,
+        "panoramic_sunroof": false,
+        "power_tailgate": false,
+        "keyless_entry": false,
+        "remote_start": null,
+        "rear_ac_vents": false,
+        "dual_zone_climate": false,
+        "leather_seats": false,
+        "full_lcd_cluster": true,
+        "screen_inch": null,
+        "carplay": null,
+        "carlife": null,
+        "phone_link": false,
+        "wireless_charge": false,
+        "voice_control": true,
+        "ota": false,
+        "hud": null,
+        "chip_8155": null
+      },
+      "airbags": 2,
+      "screen_inch": null,
+      "match_level": "exact_trim",
+      "trim_id": "trim_ah_15110f348135",
+      "canonical_title": "五菱NanoEV 2021款 玩乐款-高功率版",
+      "specs_found": true,
+      "specs_approx": false,
+      "verified": true,
+      "verification_schema": "3.0-exact-trim-detailed",
+      "configuration_source": "exact_trim_v3",
+      "core_confidence": 0.99,
+      "feature_confidence": 0.95,
+      "verification_issues": [],
+      "verification_sources": [
+        {
+          "url": "https://car.autohome.com.cn/config/spec/55597.html",
+          "source_type": "autohome_live_config",
+          "authority_tier": 1,
+          "series_id": 6121,
+          "spec_id": 55597,
+          "parameter_source": "live_page"
+        },
+        {
+          "url": "https://github.com/swoiow/autohome",
+          "source_type": "autohome_parameter_dataset",
+          "authority_tier": 3,
+          "snapshot": "identity_match_only",
+          "source_path": "live:config/spec/55597.html",
+          "note": "vault/main used for exact-trim identity; parameters from live page"
+        }
+      ]
+    },
+    "display_price_wan": 2.49,
+    "effective_price_wan": 2.49,
+    "price_confidence": 0.95,
+    "needs_cash_quote": false,
+    "price_basis": "cash",
+    "manufacturer": "上汽通用五菱",
+    "manufacturer_inferred": false,
+    "owner_reviews": {
+      "summary": "",
+      "sources": [],
+      "found": false
+    },
+    "score_eligible": true,
+    "data_issues": [],
+    "config_coverage": 0.7212,
+    "energy_confidence": 0.85,
+    "_age_years": 4.333333333333333,
+    "score_version": "v2.2.0",
+    "score_v1": 53.5,
+    "total_score": 53.5,
+    "condition_gate": "PASS",
+    "evaluation": "可比价格 2.49 万；里程 1.57 万公里，里程优势明显；轿车/两厢，车身偏好分较低。",
+    "score_reasons": [
+      "可比价格 2.49 万",
+      "里程 1.57 万公里，里程优势明显",
+      "轿车/两厢，车身偏好分较低",
+      "能源成本约 7.92 元/100km（electricity: 9.9kWh/100km）"
+    ],
+    "score_warnings": [],
+    "confidence": {
+      "price": 0.95,
+      "config": 0.721,
+      "energy": 0.85,
+      "core_specs": 0.99,
+      "age": 0.7,
+      "space": 0.825
+    },
+    "sort_scores": {
+      "score_version": "v2.2.0",
+      "total_score": 53.5,
+      "price_score": 100.0,
+      "config_score": 17.41,
+      "operating_cost_score": 92.5,
+      "space_score": 23.0,
+      "age_score": 76.0,
+      "mileage_score": 97.15,
+      "body_preference_score": 30.0,
+      "data_quality_score": 92.22,
+      "config_norm": 17.41,
+      "space_norm": 23.0,
+      "fuel_norm": 92.5,
+      "suv_score": 30.0,
+      "config_proxy": 17.41,
+      "space_proxy": 23.0,
+      "fuel_proxy": 92.5,
+      "is_suv": false,
+      "price": 2.49,
+      "effective_price_wan": 2.49,
+      "weights": {
+        "price": 0.15,
+        "config": 0.3,
+        "operating_cost": 0.15,
+        "space": 0.2,
+        "age": 0.05,
+        "mileage": 0.05,
+        "body_preference": 0.05,
+        "data_quality": 0.05
+      },
+      "energy": {
+        "cost_yuan_100km": 7.92,
+        "type": "electricity",
+        "value": 9.9,
+        "unit": "kWh/100km",
+        "fuel_grade": "92",
+        "scenario": "no_home_charging"
+      },
+      "confidence": {
+        "price": 0.95,
+        "config": 0.721,
+        "energy": 0.85,
+        "core_specs": 0.99,
+        "age": 0.7,
+        "space": 0.825
+      },
+      "reasons": [
+        "可比价格 2.49 万",
+        "里程 1.57 万公里，里程优势明显",
+        "轿车/两厢，车身偏好分较低",
+        "能源成本约 7.92 元/100km（electricity: 9.9kWh/100km）"
+      ],
+      "warnings": [],
+      "condition_gate": "PASS",
+      "note": "V2 fixed anchors score_version=v2.2.0; exact-trim gate passed; weights={'price': 0.15, 'config': 0.3, 'operating_cost': 0.15, 'space': 0.2, 'age': 0.05, 'mileage': 0.05, 'body_preference': 0.05, 'data_quality': 0.05}; scenario=no_home_charging"
+    },
+    "ingest_status": "added",
+    "library_rank": 41,
+    "display": true,
+    "rank": 41
+  },
+  {
     "sku": "357211009",
     "title": "传祺GS4 2021款 270T 自动智联科技版",
     "price": 4.69,
@@ -14503,7 +14829,7 @@
       "found": true,
       "cons_note": null
     },
-    "rank": 41,
+    "rank": 42,
     "specs": {
       "length_mm": 4545,
       "width_mm": 1856,
@@ -14748,7 +15074,7 @@
     "data_issues": [],
     "config_coverage": 0.7885,
     "energy_confidence": 0.55,
-    "library_rank": 41,
+    "library_rank": 42,
     "display": true,
     "cash_price_wan": 4.69,
     "cash_price_fen": 4690000,
@@ -15088,9 +15414,9 @@
       "note": "V2 fixed anchors score_version=v2.2.0; exact-trim gate passed; weights={'price': 0.15, 'config': 0.3, 'operating_cost': 0.15, 'space': 0.2, 'age': 0.05, 'mileage': 0.05, 'body_preference': 0.05, 'data_quality': 0.05}; scenario=no_home_charging"
     },
     "ingest_status": "added",
-    "library_rank": 42,
+    "library_rank": 43,
     "display": true,
-    "rank": 42
+    "rank": 43
   },
   {
     "sku": "357211018",
@@ -15221,7 +15547,7 @@
       "found": true,
       "cons_note": null
     },
-    "rank": 43,
+    "rank": 44,
     "specs": {
       "length_mm": 4730,
       "width_mm": 1820,
@@ -15466,7 +15792,7 @@
     "data_issues": [],
     "config_coverage": 0.8077,
     "energy_confidence": 0.55,
-    "library_rank": 43,
+    "library_rank": 44,
     "display": true
   },
   {
@@ -15791,9 +16117,9 @@
       "note": "V2 fixed anchors score_version=v2.2.0; exact-trim gate passed; weights={'price': 0.15, 'config': 0.3, 'operating_cost': 0.15, 'space': 0.2, 'age': 0.05, 'mileage': 0.05, 'body_preference': 0.05, 'data_quality': 0.05}; scenario=no_home_charging"
     },
     "ingest_status": "added",
-    "library_rank": 44,
+    "library_rank": 45,
     "display": true,
-    "rank": 44
+    "rank": 45
   },
   {
     "sku": "357515895",
@@ -16119,9 +16445,9 @@
       "note": "V2 fixed anchors score_version=v2.2.0; exact-trim gate passed; weights={'price': 0.15, 'config': 0.3, 'operating_cost': 0.15, 'space': 0.2, 'age': 0.05, 'mileage': 0.05, 'body_preference': 0.05, 'data_quality': 0.05}; scenario=no_home_charging"
     },
     "ingest_status": "added",
-    "library_rank": 45,
+    "library_rank": 46,
     "display": true,
-    "rank": 45
+    "rank": 46
   },
   {
     "sku": "357337443",
@@ -16249,7 +16575,7 @@
       "found": true,
       "cons_note": null
     },
-    "rank": 46,
+    "rank": 47,
     "specs": {
       "length_mm": 4800,
       "width_mm": 1825,
@@ -16492,7 +16818,7 @@
     "data_issues": [],
     "config_coverage": 0.9327,
     "energy_confidence": 0.65,
-    "library_rank": 46,
+    "library_rank": 47,
     "display": true
   },
   {
@@ -16817,9 +17143,9 @@
       "note": "V2 fixed anchors score_version=v2.2.0; exact-trim gate passed; weights={'price': 0.15, 'config': 0.3, 'operating_cost': 0.15, 'space': 0.2, 'age': 0.05, 'mileage': 0.05, 'body_preference': 0.05, 'data_quality': 0.05}; scenario=no_home_charging"
     },
     "ingest_status": "added",
-    "library_rank": 47,
+    "library_rank": 48,
     "display": true,
-    "rank": 47
+    "rank": 48
   },
   {
     "sku": "357320599",
@@ -16942,7 +17268,7 @@
       "found": true,
       "cons_note": null
     },
-    "rank": 48,
+    "rank": 49,
     "specs": {
       "length_mm": 4288,
       "width_mm": 1748,
@@ -17184,7 +17510,7 @@
     "data_issues": [],
     "config_coverage": 0.7885,
     "energy_confidence": 0.65,
-    "library_rank": 48,
+    "library_rank": 49,
     "display": true,
     "cash_price_wan": 3.19,
     "cash_price_fen": 3190000,
@@ -17323,7 +17649,7 @@
       "found": true,
       "cons_note": null
     },
-    "rank": 49,
+    "rank": 50,
     "specs": {
       "length_mm": 4672,
       "width_mm": 1815,
@@ -17569,7 +17895,7 @@
     "data_issues": [],
     "config_coverage": 0.7596,
     "energy_confidence": 0.65,
-    "library_rank": 49,
+    "library_rank": 50,
     "display": true
   },
   {
@@ -17695,7 +18021,7 @@
       "found": true,
       "cons_note": null
     },
-    "rank": 50,
+    "rank": 51,
     "specs": {
       "length_mm": 4657,
       "width_mm": 1840,
@@ -17941,7 +18267,7 @@
     "data_issues": [],
     "config_coverage": 0.7788,
     "energy_confidence": 0.55,
-    "library_rank": 50,
+    "library_rank": 51,
     "display": true
   },
   {
@@ -18071,7 +18397,7 @@
       "found": true,
       "cons_note": null
     },
-    "rank": 51,
+    "rank": 52,
     "specs": {
       "length_mm": 4765,
       "width_mm": 1837,
@@ -18314,7 +18640,7 @@
     "data_issues": [],
     "config_coverage": 0.8462,
     "energy_confidence": 0.9,
-    "library_rank": 51,
+    "library_rank": 52,
     "display": true,
     "cash_price_wan": 4.92,
     "cash_price_fen": 4920000,
@@ -18457,7 +18783,7 @@
       "found": true,
       "cons_note": null
     },
-    "rank": 52,
+    "rank": 53,
     "specs": {
       "length_mm": 4540,
       "width_mm": 1860,
@@ -18703,7 +19029,7 @@
     "data_issues": [],
     "config_coverage": 0.8365,
     "energy_confidence": 0.65,
-    "library_rank": 52,
+    "library_rank": 53,
     "display": true,
     "cash_price_wan": 5.29,
     "cash_price_fen": 5290000,
@@ -19040,9 +19366,9 @@
       "note": "V2 fixed anchors score_version=v2.2.0; exact-trim gate passed; weights={'price': 0.15, 'config': 0.3, 'operating_cost': 0.15, 'space': 0.2, 'age': 0.05, 'mileage': 0.05, 'body_preference': 0.05, 'data_quality': 0.05}; scenario=no_home_charging"
     },
     "ingest_status": "added",
-    "library_rank": 53,
+    "library_rank": 54,
     "display": true,
-    "rank": 53
+    "rank": 54
   },
   {
     "sku": "357275248",
@@ -19166,7 +19492,7 @@
       "found": true,
       "cons_note": null
     },
-    "rank": 54,
+    "rank": 55,
     "specs": {
       "length_mm": 4510,
       "width_mm": 1860,
@@ -19408,7 +19734,7 @@
     "data_issues": [],
     "config_coverage": 0.7404,
     "energy_confidence": 0.55,
-    "library_rank": 54,
+    "library_rank": 55,
     "display": true
   },
   {
@@ -19532,7 +19858,7 @@
       "found": true,
       "cons_note": null
     },
-    "rank": 55,
+    "rank": 56,
     "specs": {
       "length_mm": 4675,
       "width_mm": 1842,
@@ -19776,7 +20102,7 @@
     "data_issues": [],
     "config_coverage": 0.7885,
     "energy_confidence": 0.55,
-    "library_rank": 55,
+    "library_rank": 56,
     "display": true,
     "cash_price_wan": 3.36,
     "cash_price_fen": 3360000,
@@ -19915,7 +20241,7 @@
       "found": true,
       "cons_note": null
     },
-    "rank": 56,
+    "rank": 57,
     "specs": {
       "length_mm": 4440,
       "width_mm": 1833,
@@ -20156,7 +20482,7 @@
     "data_issues": [],
     "config_coverage": 0.8462,
     "energy_confidence": 0.55,
-    "library_rank": 56,
+    "library_rank": 57,
     "display": true
   },
   {
@@ -20481,9 +20807,9 @@
       "note": "V2 fixed anchors score_version=v2.2.0; exact-trim gate passed; weights={'price': 0.15, 'config': 0.3, 'operating_cost': 0.15, 'space': 0.2, 'age': 0.05, 'mileage': 0.05, 'body_preference': 0.05, 'data_quality': 0.05}; scenario=no_home_charging"
     },
     "ingest_status": "updated",
-    "library_rank": 57,
+    "library_rank": 58,
     "display": true,
-    "rank": 57
+    "rank": 58
   },
   {
     "sku": "356670871",
@@ -20606,7 +20932,7 @@
       "found": true,
       "cons_note": null
     },
-    "rank": 58,
+    "rank": 59,
     "specs": {
       "length_mm": 4330,
       "width_mm": 1800,
@@ -20850,7 +21176,7 @@
     "data_issues": [],
     "config_coverage": 0.8269,
     "energy_confidence": 0.55,
-    "library_rank": 58,
+    "library_rank": 59,
     "display": true,
     "cash_price_wan": 2.85,
     "cash_price_fen": 2850000,
@@ -21189,9 +21515,9 @@
       "note": "V2 fixed anchors score_version=v2.2.0; exact-trim gate passed; weights={'price': 0.15, 'config': 0.3, 'operating_cost': 0.15, 'space': 0.2, 'age': 0.05, 'mileage': 0.05, 'body_preference': 0.05, 'data_quality': 0.05}; scenario=no_home_charging"
     },
     "ingest_status": "added",
-    "library_rank": 59,
+    "library_rank": 60,
     "display": true,
-    "rank": 59
+    "rank": 60
   },
   {
     "sku": "357088396",
@@ -21314,7 +21640,7 @@
       "found": true,
       "cons_note": null
     },
-    "rank": 60,
+    "rank": 61,
     "specs": {
       "length_mm": 4923,
       "width_mm": 1854,
@@ -21555,7 +21881,7 @@
     "data_issues": [],
     "config_coverage": 0.8654,
     "energy_confidence": 0.55,
-    "library_rank": 60,
+    "library_rank": 61,
     "display": true
   },
   {
@@ -21681,7 +22007,7 @@
       "found": true,
       "cons_note": null
     },
-    "rank": 61,
+    "rank": 62,
     "specs": {
       "length_mm": 5018,
       "width_mm": 1866,
@@ -21923,7 +22249,7 @@
     "data_issues": [],
     "config_coverage": 0.7596,
     "energy_confidence": 0.55,
-    "library_rank": 61,
+    "library_rank": 62,
     "display": true
   },
   {
@@ -22052,7 +22378,7 @@
       "found": true,
       "cons_note": null
     },
-    "rank": 62,
+    "rank": 63,
     "specs": {
       "length_mm": 4440,
       "width_mm": 1833,
@@ -22293,7 +22619,7 @@
     "data_issues": [],
     "config_coverage": 0.8269,
     "energy_confidence": 0.55,
-    "library_rank": 62,
+    "library_rank": 63,
     "display": true,
     "cash_price_wan": 2.39,
     "cash_price_fen": 2390000,
@@ -22431,7 +22757,7 @@
       "found": true,
       "cons_note": null
     },
-    "rank": 63,
+    "rank": 64,
     "specs": {
       "length_mm": 4660,
       "width_mm": 1812,
@@ -22673,8 +22999,336 @@
     "data_issues": [],
     "config_coverage": 0.7308,
     "energy_confidence": 0.55,
-    "library_rank": 63,
+    "library_rank": 64,
     "display": true
+  },
+  {
+    "sku": "357542875",
+    "title": "雪铁龙C3-XR 2021款 190THP DCT致尚版",
+    "shop_id": "118608",
+    "shop_name": "懂车帝汽车商城•武汉店",
+    "series": "雪铁龙C3-XR",
+    "brand": "雪铁龙",
+    "mileage_wan": 2.06,
+    "model_year": 2021,
+    "plate_year": 2023,
+    "year": "2023年/2.06万公里",
+    "city": "武汉",
+    "tags": [
+      "0.4万首付"
+    ],
+    "badges": [
+      "直营"
+    ],
+    "is_self_trade_car": true,
+    "source_type": "2",
+    "source_type_name": "自营-个人",
+    "fuel_form": "1",
+    "cover": "https://p3-dcd-sign.byteimg.com/tos-cn-i-f042mdwyw7/73b41b4364434df0a5f94b9b401a4cfc~tplv-f042mdwyw7-auto-webp:480:0.jpg?rk3s=4892dee6&x-expires=1795830678&x-signature=VqiUXryPUtk2iyl6Bsl3EeDYZR4%3D&psm=motor.sh.pack",
+    "detail_url": "https://m.dcdapp.com/motor/feoffline/usedcar_detail/detail.html?sku_id=357542875&shop_id=118608",
+    "list_price_wan": 3.89,
+    "first_registration_time": "1679587200",
+    "price_type": "现金价",
+    "prefix": "现金价",
+    "cash_price_fen": 3890000,
+    "cash_price_str": "3.89",
+    "cash_price_wan": 3.89,
+    "price": 3.89,
+    "detail_shop_id": "118608",
+    "specs": {
+      "length_mm": 4288,
+      "width_mm": 1748,
+      "height_mm": 1557,
+      "wheelbase_mm": 2655,
+      "seats": null,
+      "body_type": "小型SUV",
+      "engine": "●",
+      "transmission": "湿式双离合变速箱(DCT)",
+      "fuel_grade": "92",
+      "official_fuel_l_100km": 5.98,
+      "official_standard": "WLTC",
+      "low_soc_fuel_l_100km": null,
+      "real_world_fuel_l_100km": null,
+      "real_world_sample_n": null,
+      "electric_kwh_100km": null,
+      "ev_range_km": null,
+      "ev_range_standard": null,
+      "ranking_energy": {
+        "type": "official_wltc_with_uncertainty",
+        "value": 5.98,
+        "unit": "L/100km",
+        "fallback_multiplier_recommended": 1.15
+      },
+      "powertrain": "ice",
+      "powertrain_type": "ice",
+      "features": {
+        "airbags": 6,
+        "esp": true,
+        "aeb": false,
+        "fcw": null,
+        "ldw": false,
+        "lka": false,
+        "lane_centering": null,
+        "bsd": false,
+        "dow": null,
+        "acc": false,
+        "cruise": null,
+        "camera_360": null,
+        "transparent_chassis": null,
+        "front_radar": false,
+        "rear_radar": true,
+        "auto_park": false,
+        "remote_park": null,
+        "power_driver_seat": false,
+        "power_passenger_seat": false,
+        "seat_heating": false,
+        "seat_ventilation": false,
+        "panoramic_sunroof": false,
+        "power_tailgate": false,
+        "keyless_entry": false,
+        "remote_start": false,
+        "rear_ac_vents": false,
+        "dual_zone_climate": false,
+        "leather_seats": false,
+        "full_lcd_cluster": false,
+        "screen_inch": 9.0,
+        "carplay": null,
+        "carlife": true,
+        "phone_link": true,
+        "wireless_charge": false,
+        "voice_control": true,
+        "ota": false,
+        "hud": false,
+        "chip_8155": null
+      },
+      "airbags": 6,
+      "screen_inch": 9.0,
+      "match_level": "exact_trim",
+      "trim_id": "trim_ah_f4ff85f62652",
+      "canonical_title": "雪铁龙C3-XR 2021款 190THP DCT致尚版",
+      "specs_found": true,
+      "specs_approx": false,
+      "verified": true,
+      "verification_schema": "3.0-exact-trim-detailed",
+      "configuration_source": "exact_trim_v3",
+      "core_confidence": 0.99,
+      "feature_confidence": 0.95,
+      "verification_issues": [],
+      "verification_sources": [
+        {
+          "url": "https://car.autohome.com.cn/config/spec/51393.html",
+          "source_type": "autohome_live_config",
+          "authority_tier": 1,
+          "series_id": 3429,
+          "spec_id": 51393,
+          "parameter_source": "live_page"
+        },
+        {
+          "url": "https://github.com/swoiow/autohome",
+          "source_type": "autohome_parameter_dataset",
+          "authority_tier": 3,
+          "snapshot": "identity_match_only",
+          "source_path": "live:config/spec/51393.html",
+          "note": "vault/main used for exact-trim identity; parameters from live page"
+        }
+      ]
+    },
+    "detailed_config": {
+      "length_mm": 4288,
+      "width_mm": 1748,
+      "height_mm": 1557,
+      "wheelbase_mm": 2655,
+      "seats": null,
+      "body_type": "小型SUV",
+      "engine": "●",
+      "transmission": "湿式双离合变速箱(DCT)",
+      "fuel_grade": "92",
+      "official_fuel_l_100km": 5.98,
+      "official_standard": "WLTC",
+      "low_soc_fuel_l_100km": null,
+      "real_world_fuel_l_100km": null,
+      "real_world_sample_n": null,
+      "electric_kwh_100km": null,
+      "ev_range_km": null,
+      "ev_range_standard": null,
+      "ranking_energy": {
+        "type": "official_wltc_with_uncertainty",
+        "value": 5.98,
+        "unit": "L/100km",
+        "fallback_multiplier_recommended": 1.15
+      },
+      "powertrain": "ice",
+      "powertrain_type": "ice",
+      "features": {
+        "airbags": 6,
+        "esp": true,
+        "aeb": false,
+        "fcw": null,
+        "ldw": false,
+        "lka": false,
+        "lane_centering": null,
+        "bsd": false,
+        "dow": null,
+        "acc": false,
+        "cruise": null,
+        "camera_360": null,
+        "transparent_chassis": null,
+        "front_radar": false,
+        "rear_radar": true,
+        "auto_park": false,
+        "remote_park": null,
+        "power_driver_seat": false,
+        "power_passenger_seat": false,
+        "seat_heating": false,
+        "seat_ventilation": false,
+        "panoramic_sunroof": false,
+        "power_tailgate": false,
+        "keyless_entry": false,
+        "remote_start": false,
+        "rear_ac_vents": false,
+        "dual_zone_climate": false,
+        "leather_seats": false,
+        "full_lcd_cluster": false,
+        "screen_inch": 9.0,
+        "carplay": null,
+        "carlife": true,
+        "phone_link": true,
+        "wireless_charge": false,
+        "voice_control": true,
+        "ota": false,
+        "hud": false,
+        "chip_8155": null
+      },
+      "airbags": 6,
+      "screen_inch": 9.0,
+      "match_level": "exact_trim",
+      "trim_id": "trim_ah_f4ff85f62652",
+      "canonical_title": "雪铁龙C3-XR 2021款 190THP DCT致尚版",
+      "specs_found": true,
+      "specs_approx": false,
+      "verified": true,
+      "verification_schema": "3.0-exact-trim-detailed",
+      "configuration_source": "exact_trim_v3",
+      "core_confidence": 0.99,
+      "feature_confidence": 0.95,
+      "verification_issues": [],
+      "verification_sources": [
+        {
+          "url": "https://car.autohome.com.cn/config/spec/51393.html",
+          "source_type": "autohome_live_config",
+          "authority_tier": 1,
+          "series_id": 3429,
+          "spec_id": 51393,
+          "parameter_source": "live_page"
+        },
+        {
+          "url": "https://github.com/swoiow/autohome",
+          "source_type": "autohome_parameter_dataset",
+          "authority_tier": 3,
+          "snapshot": "identity_match_only",
+          "source_path": "live:config/spec/51393.html",
+          "note": "vault/main used for exact-trim identity; parameters from live page"
+        }
+      ]
+    },
+    "display_price_wan": 3.89,
+    "effective_price_wan": 3.89,
+    "price_confidence": 0.95,
+    "needs_cash_quote": false,
+    "price_basis": "cash",
+    "manufacturer": "东风雪铁龙",
+    "manufacturer_inferred": false,
+    "owner_reviews": {
+      "summary": "",
+      "sources": [],
+      "found": false
+    },
+    "score_eligible": true,
+    "data_issues": [],
+    "config_coverage": 0.7885,
+    "energy_confidence": 0.65,
+    "_age_years": 3.3333333333333335,
+    "score_version": "v2.2.0",
+    "score_v1": 51.1,
+    "total_score": 51.1,
+    "condition_gate": "PASS",
+    "evaluation": "可比价格 3.89 万；里程 2.06 万公里，里程优势明显；车身 小型SUV 符合偏好。",
+    "score_reasons": [
+      "可比价格 3.89 万",
+      "里程 2.06 万公里，里程优势明显",
+      "车身 小型SUV 符合偏好",
+      "能源成本约 55.02 元/100km（official_wltc_with_uncertainty: 6.877L/100km）"
+    ],
+    "score_warnings": [],
+    "confidence": {
+      "price": 0.95,
+      "config": 0.788,
+      "energy": 0.65,
+      "core_specs": 0.99,
+      "age": 0.7,
+      "space": 0.825
+    },
+    "sort_scores": {
+      "score_version": "v2.2.0",
+      "total_score": 51.1,
+      "price_score": 70.33,
+      "config_score": 20.43,
+      "operating_cost_score": 48.36,
+      "space_score": 46.05,
+      "age_score": 86.67,
+      "mileage_score": 94.7,
+      "body_preference_score": 85.0,
+      "data_quality_score": 92.22,
+      "config_norm": 20.43,
+      "space_norm": 46.05,
+      "fuel_norm": 48.36,
+      "suv_score": 85.0,
+      "config_proxy": 20.43,
+      "space_proxy": 46.05,
+      "fuel_proxy": 48.36,
+      "is_suv": true,
+      "price": 3.89,
+      "effective_price_wan": 3.89,
+      "weights": {
+        "price": 0.15,
+        "config": 0.3,
+        "operating_cost": 0.15,
+        "space": 0.2,
+        "age": 0.05,
+        "mileage": 0.05,
+        "body_preference": 0.05,
+        "data_quality": 0.05
+      },
+      "energy": {
+        "cost_yuan_100km": 55.02,
+        "type": "official_wltc_with_uncertainty",
+        "value": 6.877,
+        "unit": "L/100km",
+        "fuel_grade": "92",
+        "scenario": "no_home_charging"
+      },
+      "confidence": {
+        "price": 0.95,
+        "config": 0.788,
+        "energy": 0.65,
+        "core_specs": 0.99,
+        "age": 0.7,
+        "space": 0.825
+      },
+      "reasons": [
+        "可比价格 3.89 万",
+        "里程 2.06 万公里，里程优势明显",
+        "车身 小型SUV 符合偏好",
+        "能源成本约 55.02 元/100km（official_wltc_with_uncertainty: 6.877L/100km）"
+      ],
+      "warnings": [],
+      "condition_gate": "PASS",
+      "note": "V2 fixed anchors score_version=v2.2.0; exact-trim gate passed; weights={'price': 0.15, 'config': 0.3, 'operating_cost': 0.15, 'space': 0.2, 'age': 0.05, 'mileage': 0.05, 'body_preference': 0.05, 'data_quality': 0.05}; scenario=no_home_charging"
+    },
+    "ingest_status": "added",
+    "library_rank": 65,
+    "display": true,
+    "rank": 65
   },
   {
     "sku": "357002835",
@@ -22798,7 +23452,7 @@
       "found": true,
       "cons_note": null
     },
-    "rank": 64,
+    "rank": 66,
     "specs": {
       "length_mm": 4006,
       "width_mm": 1765,
@@ -23041,7 +23695,7 @@
     "data_issues": [],
     "config_coverage": 0.7885,
     "energy_confidence": 0.85,
-    "library_rank": 64,
+    "library_rank": 66,
     "display": true,
     "cash_price_wan": 4.19,
     "cash_price_fen": 4190000,
@@ -23179,7 +23833,7 @@
       "found": true,
       "cons_note": null
     },
-    "rank": 65,
+    "rank": 67,
     "specs": {
       "length_mm": 4933,
       "width_mm": 1854,
@@ -23421,7 +24075,7 @@
     "data_issues": [],
     "config_coverage": 0.7981,
     "energy_confidence": 0.65,
-    "library_rank": 65,
+    "library_rank": 67,
     "display": true
   },
   {
@@ -23553,7 +24207,7 @@
       "found": true,
       "cons_note": null
     },
-    "rank": 66,
+    "rank": 68,
     "specs": {
       "length_mm": 4645,
       "width_mm": 1860,
@@ -23800,7 +24454,7 @@
     "data_issues": [],
     "config_coverage": 0.875,
     "energy_confidence": 0.65,
-    "library_rank": 66,
+    "library_rank": 68,
     "display": true
   },
   {
@@ -23925,7 +24579,7 @@
       "found": true,
       "cons_note": null
     },
-    "rank": 67,
+    "rank": 69,
     "specs": {
       "length_mm": 4624,
       "width_mm": 1841,
@@ -24169,7 +24823,7 @@
     "data_issues": [],
     "config_coverage": 0.7596,
     "energy_confidence": 0.55,
-    "library_rank": 67,
+    "library_rank": 69,
     "display": true,
     "cash_price_wan": 4.49,
     "cash_price_fen": 4490000,
@@ -24505,9 +25159,9 @@
       "note": "V2 fixed anchors score_version=v2.2.0; exact-trim gate passed; weights={'price': 0.15, 'config': 0.3, 'operating_cost': 0.15, 'space': 0.2, 'age': 0.05, 'mileage': 0.05, 'body_preference': 0.05, 'data_quality': 0.05}; scenario=no_home_charging"
     },
     "ingest_status": "added",
-    "library_rank": 68,
+    "library_rank": 70,
     "display": true,
-    "rank": 68
+    "rank": 70
   },
   {
     "sku": "357143231",
@@ -24632,7 +25286,7 @@
       "found": true,
       "cons_note": null
     },
-    "rank": 69,
+    "rank": 71,
     "specs": {
       "length_mm": 4933,
       "width_mm": 1854,
@@ -24875,7 +25529,7 @@
     "data_issues": [],
     "config_coverage": 0.7019,
     "energy_confidence": 0.55,
-    "library_rank": 69,
+    "library_rank": 71,
     "display": true,
     "cash_price_wan": 4.83,
     "cash_price_fen": 4830000,
@@ -25013,7 +25667,7 @@
       "found": true,
       "cons_note": null
     },
-    "rank": 70,
+    "rank": 72,
     "specs": {
       "length_mm": 4680,
       "width_mm": 1810,
@@ -25257,7 +25911,7 @@
     "data_issues": [],
     "config_coverage": 0.7212,
     "energy_confidence": 0.55,
-    "library_rank": 70,
+    "library_rank": 72,
     "display": true
   },
   {
@@ -25387,7 +26041,7 @@
       "found": true,
       "cons_note": null
     },
-    "rank": 71,
+    "rank": 73,
     "specs": {
       "length_mm": 4690,
       "width_mm": 1865,
@@ -25629,7 +26283,7 @@
     "data_issues": [],
     "config_coverage": 0.7981,
     "energy_confidence": 0.55,
-    "library_rank": 71,
+    "library_rank": 73,
     "display": true
   },
   {
@@ -25955,9 +26609,9 @@
       "note": "V2 fixed anchors score_version=v2.2.0; exact-trim gate passed; weights={'price': 0.15, 'config': 0.3, 'operating_cost': 0.15, 'space': 0.2, 'age': 0.05, 'mileage': 0.05, 'body_preference': 0.05, 'data_quality': 0.05}; scenario=no_home_charging"
     },
     "ingest_status": "updated_price",
-    "library_rank": 72,
+    "library_rank": 74,
     "display": true,
-    "rank": 72
+    "rank": 74
   },
   {
     "sku": "357422353",
@@ -26281,9 +26935,9 @@
       "note": "V2 fixed anchors score_version=v2.2.0; exact-trim gate passed; weights={'price': 0.15, 'config': 0.3, 'operating_cost': 0.15, 'space': 0.2, 'age': 0.05, 'mileage': 0.05, 'body_preference': 0.05, 'data_quality': 0.05}; scenario=no_home_charging"
     },
     "ingest_status": "added",
-    "library_rank": 73,
+    "library_rank": 75,
     "display": true,
-    "rank": 73
+    "rank": 75
   },
   {
     "sku": "357228241",
@@ -26412,7 +27066,7 @@
       "found": true,
       "cons_note": null
     },
-    "rank": 74,
+    "rank": 76,
     "specs": {
       "length_mm": 4780,
       "width_mm": 1837,
@@ -26655,7 +27309,7 @@
     "data_issues": [],
     "config_coverage": 0.8462,
     "energy_confidence": 0.9,
-    "library_rank": 74,
+    "library_rank": 76,
     "display": true,
     "cash_price_wan": 5.79,
     "cash_price_fen": 5790000,
@@ -26994,9 +27648,337 @@
       "note": "V2 fixed anchors score_version=v2.2.0; exact-trim gate passed; weights={'price': 0.15, 'config': 0.3, 'operating_cost': 0.15, 'space': 0.2, 'age': 0.05, 'mileage': 0.05, 'body_preference': 0.05, 'data_quality': 0.05}; scenario=no_home_charging"
     },
     "ingest_status": "added",
-    "library_rank": 75,
+    "library_rank": 77,
     "display": true,
-    "rank": 75
+    "rank": 77
+  },
+  {
+    "sku": "357545126",
+    "title": "瑞虎7 PLUS 2021款 1.5T CVT尊贵型",
+    "shop_id": "118608",
+    "shop_name": "懂车帝汽车商城•武汉店",
+    "series": "瑞虎7 PLUS",
+    "brand": "奇瑞",
+    "mileage_wan": 8.15,
+    "model_year": 2021,
+    "plate_year": 2021,
+    "year": "2021年/8.15万公里",
+    "city": "武汉",
+    "tags": [
+      "0.4万首付"
+    ],
+    "badges": [
+      "直营"
+    ],
+    "is_self_trade_car": true,
+    "source_type": "2",
+    "source_type_name": "自营-个人",
+    "fuel_form": "1",
+    "cover": "https://p9-dcd-sign.byteimg.com/tos-cn-i-f042mdwyw7/e5dfe37da09b409d8778382e41e472ca~tplv-f042mdwyw7-auto-webp:480:0.jpg?rk3s=4892dee6&x-expires=1795831020&x-signature=y8SBDz3%2FV9Hij4w4xNtI7wPvrsQ%3D&psm=motor.sh.pack",
+    "detail_url": "https://m.dcdapp.com/motor/feoffline/usedcar_detail/detail.html?sku_id=357545126&shop_id=118608",
+    "list_price_wan": 4.28,
+    "first_registration_time": "1638460800",
+    "price_type": "现金价",
+    "prefix": "现金价",
+    "cash_price_fen": 4280000,
+    "cash_price_str": "4.28",
+    "cash_price_wan": 4.28,
+    "price": 4.28,
+    "detail_shop_id": "118608",
+    "specs": {
+      "length_mm": 4500,
+      "width_mm": 1842,
+      "height_mm": 1746,
+      "wheelbase_mm": 2670,
+      "seats": null,
+      "body_type": "紧凑型SUV",
+      "engine": "●",
+      "transmission": "无级变速箱(CVT)",
+      "fuel_grade": "92",
+      "official_fuel_l_100km": 6.8,
+      "official_standard": "NEDC",
+      "low_soc_fuel_l_100km": null,
+      "real_world_fuel_l_100km": null,
+      "real_world_sample_n": null,
+      "electric_kwh_100km": null,
+      "ev_range_km": null,
+      "ev_range_standard": null,
+      "ranking_energy": {
+        "type": "official_nedc_with_uncertainty",
+        "value": 6.8,
+        "unit": "L/100km",
+        "fallback_multiplier_recommended": 1.2
+      },
+      "powertrain": "ice",
+      "powertrain_type": "ice",
+      "features": {
+        "airbags": 4,
+        "esp": true,
+        "aeb": false,
+        "fcw": false,
+        "ldw": false,
+        "lka": false,
+        "lane_centering": false,
+        "bsd": false,
+        "dow": false,
+        "acc": false,
+        "cruise": "定速巡航",
+        "camera_360": true,
+        "transparent_chassis": null,
+        "front_radar": false,
+        "rear_radar": true,
+        "auto_park": false,
+        "remote_park": null,
+        "power_driver_seat": true,
+        "power_passenger_seat": true,
+        "seat_heating": false,
+        "seat_ventilation": false,
+        "panoramic_sunroof": true,
+        "power_tailgate": false,
+        "keyless_entry": true,
+        "remote_start": false,
+        "rear_ac_vents": true,
+        "dual_zone_climate": false,
+        "leather_seats": false,
+        "full_lcd_cluster": true,
+        "screen_inch": 12.3,
+        "carplay": true,
+        "carlife": true,
+        "phone_link": true,
+        "wireless_charge": false,
+        "voice_control": true,
+        "ota": true,
+        "hud": false,
+        "chip_8155": null
+      },
+      "airbags": 4,
+      "screen_inch": 12.3,
+      "match_level": "exact_trim",
+      "trim_id": "trim_ah_ef9ef1eedaf4",
+      "canonical_title": "瑞虎7 PLUS 2021款 1.5T CVT尊贵型",
+      "specs_found": true,
+      "specs_approx": false,
+      "verified": true,
+      "verification_schema": "3.0-exact-trim-detailed",
+      "configuration_source": "exact_trim_v3",
+      "core_confidence": 0.99,
+      "feature_confidence": 0.95,
+      "verification_issues": [],
+      "verification_sources": [
+        {
+          "url": "https://car.autohome.com.cn/config/spec/52759.html",
+          "source_type": "autohome_live_config",
+          "authority_tier": 1,
+          "series_id": 6288,
+          "spec_id": 52759,
+          "parameter_source": "live_page"
+        },
+        {
+          "url": "https://github.com/swoiow/autohome",
+          "source_type": "autohome_parameter_dataset",
+          "authority_tier": 3,
+          "snapshot": "identity_match_only",
+          "source_path": "live:config/spec/52759.html",
+          "note": "vault/main used for exact-trim identity; parameters from live page"
+        }
+      ]
+    },
+    "detailed_config": {
+      "length_mm": 4500,
+      "width_mm": 1842,
+      "height_mm": 1746,
+      "wheelbase_mm": 2670,
+      "seats": null,
+      "body_type": "紧凑型SUV",
+      "engine": "●",
+      "transmission": "无级变速箱(CVT)",
+      "fuel_grade": "92",
+      "official_fuel_l_100km": 6.8,
+      "official_standard": "NEDC",
+      "low_soc_fuel_l_100km": null,
+      "real_world_fuel_l_100km": null,
+      "real_world_sample_n": null,
+      "electric_kwh_100km": null,
+      "ev_range_km": null,
+      "ev_range_standard": null,
+      "ranking_energy": {
+        "type": "official_nedc_with_uncertainty",
+        "value": 6.8,
+        "unit": "L/100km",
+        "fallback_multiplier_recommended": 1.2
+      },
+      "powertrain": "ice",
+      "powertrain_type": "ice",
+      "features": {
+        "airbags": 4,
+        "esp": true,
+        "aeb": false,
+        "fcw": false,
+        "ldw": false,
+        "lka": false,
+        "lane_centering": false,
+        "bsd": false,
+        "dow": false,
+        "acc": false,
+        "cruise": "定速巡航",
+        "camera_360": true,
+        "transparent_chassis": null,
+        "front_radar": false,
+        "rear_radar": true,
+        "auto_park": false,
+        "remote_park": null,
+        "power_driver_seat": true,
+        "power_passenger_seat": true,
+        "seat_heating": false,
+        "seat_ventilation": false,
+        "panoramic_sunroof": true,
+        "power_tailgate": false,
+        "keyless_entry": true,
+        "remote_start": false,
+        "rear_ac_vents": true,
+        "dual_zone_climate": false,
+        "leather_seats": false,
+        "full_lcd_cluster": true,
+        "screen_inch": 12.3,
+        "carplay": true,
+        "carlife": true,
+        "phone_link": true,
+        "wireless_charge": false,
+        "voice_control": true,
+        "ota": true,
+        "hud": false,
+        "chip_8155": null
+      },
+      "airbags": 4,
+      "screen_inch": 12.3,
+      "match_level": "exact_trim",
+      "trim_id": "trim_ah_ef9ef1eedaf4",
+      "canonical_title": "瑞虎7 PLUS 2021款 1.5T CVT尊贵型",
+      "specs_found": true,
+      "specs_approx": false,
+      "verified": true,
+      "verification_schema": "3.0-exact-trim-detailed",
+      "configuration_source": "exact_trim_v3",
+      "core_confidence": 0.99,
+      "feature_confidence": 0.95,
+      "verification_issues": [],
+      "verification_sources": [
+        {
+          "url": "https://car.autohome.com.cn/config/spec/52759.html",
+          "source_type": "autohome_live_config",
+          "authority_tier": 1,
+          "series_id": 6288,
+          "spec_id": 52759,
+          "parameter_source": "live_page"
+        },
+        {
+          "url": "https://github.com/swoiow/autohome",
+          "source_type": "autohome_parameter_dataset",
+          "authority_tier": 3,
+          "snapshot": "identity_match_only",
+          "source_path": "live:config/spec/52759.html",
+          "note": "vault/main used for exact-trim identity; parameters from live page"
+        }
+      ]
+    },
+    "display_price_wan": 4.28,
+    "effective_price_wan": 4.28,
+    "price_confidence": 0.95,
+    "needs_cash_quote": false,
+    "price_basis": "cash",
+    "manufacturer": "奇瑞汽车",
+    "manufacturer_inferred": false,
+    "owner_reviews": {
+      "summary": "",
+      "sources": [],
+      "found": false
+    },
+    "score_eligible": true,
+    "data_issues": [],
+    "config_coverage": 0.9712,
+    "energy_confidence": 0.55,
+    "_age_years": 5.333333333333333,
+    "score_version": "v2.2.0",
+    "score_v1": 49.7,
+    "total_score": 49.7,
+    "condition_gate": "PASS",
+    "evaluation": "可比价格 4.28 万；里程 8.15 万公里偏高；车身 紧凑型SUV 符合偏好。",
+    "score_reasons": [
+      "可比价格 4.28 万",
+      "里程 8.15 万公里偏高",
+      "车身 紧凑型SUV 符合偏好",
+      "能源成本约 65.28 元/100km（official_nedc_with_uncertainty: 8.16L/100km）"
+    ],
+    "score_warnings": [],
+    "confidence": {
+      "price": 0.95,
+      "config": 0.971,
+      "energy": 0.55,
+      "core_specs": 0.99,
+      "age": 0.7,
+      "space": 0.825
+    },
+    "sort_scores": {
+      "score_version": "v2.2.0",
+      "total_score": 49.7,
+      "price_score": 57.33,
+      "config_score": 29.46,
+      "operating_cost_score": 40.14,
+      "space_score": 59.58,
+      "age_score": 63.67,
+      "mileage_score": 40.35,
+      "body_preference_score": 100.0,
+      "data_quality_score": 81.72,
+      "config_norm": 29.46,
+      "space_norm": 59.58,
+      "fuel_norm": 40.14,
+      "suv_score": 100.0,
+      "config_proxy": 29.46,
+      "space_proxy": 59.58,
+      "fuel_proxy": 40.14,
+      "is_suv": true,
+      "price": 4.28,
+      "effective_price_wan": 4.28,
+      "weights": {
+        "price": 0.15,
+        "config": 0.3,
+        "operating_cost": 0.15,
+        "space": 0.2,
+        "age": 0.05,
+        "mileage": 0.05,
+        "body_preference": 0.05,
+        "data_quality": 0.05
+      },
+      "energy": {
+        "cost_yuan_100km": 65.28,
+        "type": "official_nedc_with_uncertainty",
+        "value": 8.16,
+        "unit": "L/100km",
+        "fuel_grade": "92",
+        "scenario": "no_home_charging"
+      },
+      "confidence": {
+        "price": 0.95,
+        "config": 0.971,
+        "energy": 0.55,
+        "core_specs": 0.99,
+        "age": 0.7,
+        "space": 0.825
+      },
+      "reasons": [
+        "可比价格 4.28 万",
+        "里程 8.15 万公里偏高",
+        "车身 紧凑型SUV 符合偏好",
+        "能源成本约 65.28 元/100km（official_nedc_with_uncertainty: 8.16L/100km）"
+      ],
+      "warnings": [],
+      "condition_gate": "PASS",
+      "note": "V2 fixed anchors score_version=v2.2.0; exact-trim gate passed; weights={'price': 0.15, 'config': 0.3, 'operating_cost': 0.15, 'space': 0.2, 'age': 0.05, 'mileage': 0.05, 'body_preference': 0.05, 'data_quality': 0.05}; scenario=no_home_charging"
+    },
+    "ingest_status": "added",
+    "library_rank": 78,
+    "display": true,
+    "rank": 78
   },
   {
     "sku": "357501560",
@@ -27005,10 +27987,10 @@
     "shop_name": "懂车帝汽车商城•武汉店",
     "series": "英朗",
     "brand": "别克",
-    "mileage_wan": 4.13,
+    "mileage_wan": 4.14,
     "model_year": 2019,
     "plate_year": 2019,
-    "year": "2019年/4.13万公里",
+    "year": "2019年/4.14万公里",
     "city": "武汉",
     "tags": [
       "0.5万首付"
@@ -27020,7 +28002,7 @@
     "source_type": "2",
     "source_type_name": "自营-个人",
     "fuel_form": "1",
-    "cover": "https://p3-dcd-sign.byteimg.com/tos-cn-i-f042mdwyw7/c0cd812c68a54c16b63894442b831b5f~tplv-f042mdwyw7-auto-webp:480:0.jpg?rk3s=4892dee6&x-expires=1795572030&x-signature=X6KW8ClnW76qNFHJnk3NEBkolHM%3D&psm=motor.sh.pack",
+    "cover": "https://p3-dcd-sign.byteimg.com/tos-cn-i-f042mdwyw7/837ff217c3234e4988044d7964d63f74~tplv-f042mdwyw7-auto-webp:480:0.jpg?rk3s=4892dee6&x-expires=1795830963&x-signature=UzWeBForW%2FWw%2BEH3T8q8TuBpYto%3D&psm=motor.sh.pack",
     "detail_url": "https://m.dcdapp.com/motor/feoffline/usedcar_detail/detail.html?sku_id=357501560&shop_id=118608",
     "list_price_wan": 2.59,
     "first_registration_time": "1567526400",
@@ -27271,7 +28253,7 @@
       "operating_cost_score": 52.82,
       "space_score": 53.46,
       "age_score": 38.33,
-      "mileage_score": 80.7,
+      "mileage_score": 80.6,
       "body_preference_score": 40.0,
       "data_quality_score": 81.72,
       "config_norm": 13.06,
@@ -27319,10 +28301,10 @@
       "condition_gate": "PASS",
       "note": "V2 fixed anchors score_version=v2.2.0; exact-trim gate passed; weights={'price': 0.15, 'config': 0.3, 'operating_cost': 0.15, 'space': 0.2, 'age': 0.05, 'mileage': 0.05, 'body_preference': 0.05, 'data_quality': 0.05}; scenario=no_home_charging"
     },
-    "ingest_status": "added",
-    "library_rank": 76,
+    "ingest_status": "updated",
+    "library_rank": 79,
     "display": true,
-    "rank": 76
+    "rank": 79
   },
   {
     "sku": "357232750",
@@ -27447,7 +28429,7 @@
       "found": true,
       "cons_note": null
     },
-    "rank": 77,
+    "rank": 80,
     "specs": {
       "length_mm": 4544,
       "width_mm": 1831,
@@ -27690,7 +28672,7 @@
     "data_issues": [],
     "config_coverage": 0.7404,
     "energy_confidence": 0.55,
-    "library_rank": 77,
+    "library_rank": 80,
     "display": true,
     "cash_price_wan": 4.59,
     "cash_price_fen": 4590000,
@@ -27827,7 +28809,7 @@
       "found": true,
       "cons_note": null
     },
-    "rank": 78,
+    "rank": 81,
     "specs": {
       "length_mm": 4660,
       "width_mm": 1812,
@@ -28069,7 +29051,7 @@
     "data_issues": [],
     "config_coverage": 0.9231,
     "energy_confidence": 0.55,
-    "library_rank": 78,
+    "library_rank": 81,
     "display": true
   },
   {
@@ -28196,7 +29178,7 @@
       "found": true,
       "cons_note": null
     },
-    "rank": 79,
+    "rank": 82,
     "specs": {
       "length_mm": 4393,
       "width_mm": 1766,
@@ -28438,7 +29420,7 @@
     "data_issues": [],
     "config_coverage": 0.8365,
     "energy_confidence": 0.55,
-    "library_rank": 79,
+    "library_rank": 82,
     "display": true,
     "cash_price_wan": 3.99,
     "cash_price_fen": 3990000,
@@ -28578,7 +29560,7 @@
       "found": true,
       "cons_note": null
     },
-    "rank": 80,
+    "rank": 83,
     "specs": {
       "length_mm": 4638,
       "width_mm": 1820,
@@ -28824,7 +29806,7 @@
     "data_issues": [],
     "config_coverage": 0.7692,
     "energy_confidence": 0.65,
-    "library_rank": 80,
+    "library_rank": 83,
     "display": true
   },
   {
@@ -29154,9 +30136,9 @@
       "note": "V2 fixed anchors score_version=v2.2.0; exact-trim gate passed; weights={'price': 0.15, 'config': 0.3, 'operating_cost': 0.15, 'space': 0.2, 'age': 0.05, 'mileage': 0.05, 'body_preference': 0.05, 'data_quality': 0.05}; scenario=no_home_charging"
     },
     "ingest_status": "added",
-    "library_rank": 81,
+    "library_rank": 84,
     "display": true,
-    "rank": 81
+    "rank": 84
   },
   {
     "sku": "357205109",
@@ -29281,7 +30263,7 @@
       "found": true,
       "cons_note": null
     },
-    "rank": 82,
+    "rank": 85,
     "specs": {
       "length_mm": 4672,
       "width_mm": 1815,
@@ -29527,7 +30509,7 @@
     "data_issues": [],
     "config_coverage": 0.7308,
     "energy_confidence": 0.65,
-    "library_rank": 82,
+    "library_rank": 85,
     "display": true
   },
   {
@@ -29852,9 +30834,9 @@
       "note": "V2 fixed anchors score_version=v2.2.0; exact-trim gate passed; weights={'price': 0.15, 'config': 0.3, 'operating_cost': 0.15, 'space': 0.2, 'age': 0.05, 'mileage': 0.05, 'body_preference': 0.05, 'data_quality': 0.05}; scenario=no_home_charging"
     },
     "ingest_status": "added",
-    "library_rank": 83,
+    "library_rank": 86,
     "display": true,
-    "rank": 83
+    "rank": 86
   },
   {
     "sku": "357168539",
@@ -29980,7 +30962,7 @@
       "found": true,
       "cons_note": null
     },
-    "rank": 84,
+    "rank": 87,
     "specs": {
       "length_mm": 4670,
       "width_mm": 1812,
@@ -30226,7 +31208,7 @@
     "data_issues": [],
     "config_coverage": 0.7404,
     "energy_confidence": 0.65,
-    "library_rank": 84,
+    "library_rank": 87,
     "display": true
   },
   {
@@ -30360,7 +31342,7 @@
       "found": true,
       "cons_note": null
     },
-    "rank": 85,
+    "rank": 88,
     "specs": {
       "length_mm": 4765,
       "width_mm": 1837,
@@ -30603,7 +31585,7 @@
     "data_issues": [],
     "config_coverage": 0.8365,
     "energy_confidence": 0.9,
-    "library_rank": 85,
+    "library_rank": 88,
     "display": true
   },
   {
@@ -30728,7 +31710,7 @@
       "found": true,
       "cons_note": null
     },
-    "rank": 86,
+    "rank": 89,
     "specs": {
       "length_mm": 4474,
       "width_mm": 1730,
@@ -30973,7 +31955,7 @@
     "data_issues": [],
     "config_coverage": 0.7596,
     "energy_confidence": 0.65,
-    "library_rank": 86,
+    "library_rank": 89,
     "display": true,
     "cash_price_wan": 2.69,
     "cash_price_fen": 2690000,
@@ -31109,7 +32091,7 @@
       "found": true,
       "cons_note": null
     },
-    "rank": 87,
+    "rank": 90,
     "specs": {
       "length_mm": 4750,
       "width_mm": 1820,
@@ -31353,7 +32335,7 @@
     "data_issues": [],
     "config_coverage": 0.7885,
     "energy_confidence": 0.65,
-    "library_rank": 87,
+    "library_rank": 90,
     "display": true,
     "cash_price_wan": 5.19,
     "cash_price_fen": 5190000,
@@ -31492,7 +32474,7 @@
       "found": true,
       "cons_note": null
     },
-    "rank": 88,
+    "rank": 91,
     "specs": {
       "length_mm": 4698,
       "width_mm": 1883,
@@ -31735,7 +32717,7 @@
     "data_issues": [],
     "config_coverage": 0.6731,
     "energy_confidence": 0.55,
-    "library_rank": 88,
+    "library_rank": 91,
     "display": true
   },
   {
@@ -32061,9 +33043,9 @@
       "note": "V2 fixed anchors score_version=v2.2.0; exact-trim gate passed; weights={'price': 0.15, 'config': 0.3, 'operating_cost': 0.15, 'space': 0.2, 'age': 0.05, 'mileage': 0.05, 'body_preference': 0.05, 'data_quality': 0.05}; scenario=no_home_charging"
     },
     "ingest_status": "added",
-    "library_rank": 89,
+    "library_rank": 92,
     "display": true,
-    "rank": 89
+    "rank": 92
   },
   {
     "sku": "357220895",
@@ -32191,7 +33173,7 @@
       "found": true,
       "cons_note": null
     },
-    "rank": 90,
+    "rank": 93,
     "specs": {
       "length_mm": 4730,
       "width_mm": 1820,
@@ -32435,7 +33417,7 @@
     "data_issues": [],
     "config_coverage": 0.8269,
     "energy_confidence": 0.65,
-    "library_rank": 90,
+    "library_rank": 93,
     "display": true,
     "cash_price_wan": 4.49,
     "cash_price_fen": 4490000,
@@ -32571,7 +33553,7 @@
       "found": true,
       "cons_note": null
     },
-    "rank": 91,
+    "rank": 94,
     "specs": {
       "length_mm": 4609,
       "width_mm": 1798,
@@ -32810,7 +33792,7 @@
     "data_issues": [],
     "config_coverage": 0.8173,
     "energy_confidence": 0.55,
-    "library_rank": 91,
+    "library_rank": 94,
     "display": true,
     "cash_price_wan": 2.69,
     "cash_price_fen": 2690000,
@@ -32946,7 +33928,7 @@
       "found": true,
       "cons_note": null
     },
-    "rank": 92,
+    "rank": 95,
     "specs": {
       "length_mm": 4510,
       "width_mm": 1850,
@@ -33189,7 +34171,7 @@
     "data_issues": [],
     "config_coverage": 0.7692,
     "energy_confidence": 0.55,
-    "library_rank": 92,
+    "library_rank": 95,
     "display": true
   },
   {
@@ -33514,9 +34496,9 @@
       "note": "V2 fixed anchors score_version=v2.2.0; exact-trim gate passed; weights={'price': 0.15, 'config': 0.3, 'operating_cost': 0.15, 'space': 0.2, 'age': 0.05, 'mileage': 0.05, 'body_preference': 0.05, 'data_quality': 0.05}; scenario=no_home_charging"
     },
     "ingest_status": "added",
-    "library_rank": 93,
+    "library_rank": 96,
     "display": true,
-    "rank": 93
+    "rank": 96
   },
   {
     "sku": "357100614",
@@ -33639,7 +34621,7 @@
       "found": true,
       "cons_note": null
     },
-    "rank": 94,
+    "rank": 97,
     "specs": {
       "length_mm": 4657,
       "width_mm": 1840,
@@ -33880,7 +34862,7 @@
     "data_issues": [],
     "config_coverage": 0.8654,
     "energy_confidence": 0.55,
-    "library_rank": 94,
+    "library_rank": 97,
     "display": true,
     "cash_price_wan": 4.69,
     "cash_price_fen": 4690000,
@@ -34023,7 +35005,7 @@
       "found": true,
       "cons_note": null
     },
-    "rank": 95,
+    "rank": 98,
     "specs": {
       "length_mm": 3620,
       "width_mm": 1652,
@@ -34267,7 +35249,7 @@
     "data_issues": [],
     "config_coverage": 0.7596,
     "energy_confidence": 0.85,
-    "library_rank": 95,
+    "library_rank": 98,
     "display": true
   },
   {
@@ -34395,7 +35377,7 @@
       "found": true,
       "cons_note": null
     },
-    "rank": 96,
+    "rank": 99,
     "specs": {
       "length_mm": 4518,
       "width_mm": 1834,
@@ -34639,7 +35621,7 @@
     "data_issues": [],
     "config_coverage": 0.7692,
     "energy_confidence": 0.55,
-    "library_rank": 96,
+    "library_rank": 99,
     "display": true,
     "cash_price_wan": 4.59,
     "cash_price_fen": 4590000,
@@ -34776,7 +35758,7 @@
       "found": true,
       "cons_note": null
     },
-    "rank": 97,
+    "rank": 100,
     "specs": {
       "length_mm": 4262,
       "width_mm": 1748,
@@ -35018,7 +36000,7 @@
     "data_issues": [],
     "config_coverage": 0.6827,
     "energy_confidence": 0.55,
-    "library_rank": 97,
+    "library_rank": 100,
     "display": true,
     "cash_price_wan": 1.99,
     "cash_price_fen": 1990000,
@@ -35154,7 +36136,7 @@
       "found": true,
       "cons_note": null
     },
-    "rank": 98,
+    "rank": null,
     "specs": {
       "length_mm": 4609,
       "width_mm": 1798,
@@ -35396,8 +36378,8 @@
     "data_issues": [],
     "config_coverage": 0.8077,
     "energy_confidence": 0.65,
-    "library_rank": 98,
-    "display": true
+    "library_rank": 101,
+    "display": false
   },
   {
     "sku": "357192192",
@@ -35526,7 +36508,7 @@
       "found": true,
       "cons_note": null
     },
-    "rank": 99,
+    "rank": null,
     "specs": {
       "length_mm": 4631,
       "width_mm": 1760,
@@ -35768,8 +36750,8 @@
     "data_issues": [],
     "config_coverage": 0.8462,
     "energy_confidence": 0.55,
-    "library_rank": 99,
-    "display": true,
+    "library_rank": 102,
+    "display": false,
     "cash_price_wan": 3.69,
     "cash_price_fen": 3690000,
     "cash_price_str": "3.69",
@@ -36105,9 +37087,9 @@
       "note": "V2 fixed anchors score_version=v2.2.0; exact-trim gate passed; weights={'price': 0.15, 'config': 0.3, 'operating_cost': 0.15, 'space': 0.2, 'age': 0.05, 'mileage': 0.05, 'body_preference': 0.05, 'data_quality': 0.05}; scenario=no_home_charging"
     },
     "ingest_status": "updated",
-    "library_rank": 100,
-    "display": true,
-    "rank": 100
+    "library_rank": 103,
+    "display": false,
+    "rank": null
   },
   {
     "sku": "357184320",
@@ -36481,7 +37463,7 @@
     "data_issues": [],
     "config_coverage": 0.7404,
     "energy_confidence": 0.65,
-    "library_rank": 101,
+    "library_rank": 104,
     "display": false
   },
   {
@@ -36851,7 +37833,7 @@
     "data_issues": [],
     "config_coverage": 0.7404,
     "energy_confidence": 0.55,
-    "library_rank": 102,
+    "library_rank": 105,
     "display": false,
     "cash_price_wan": 4.89,
     "cash_price_fen": 4890000,
@@ -37190,7 +38172,7 @@
       "note": "V2 fixed anchors score_version=v2.2.0; exact-trim gate passed; weights={'price': 0.15, 'config': 0.3, 'operating_cost': 0.15, 'space': 0.2, 'age': 0.05, 'mileage': 0.05, 'body_preference': 0.05, 'data_quality': 0.05}; scenario=no_home_charging"
     },
     "ingest_status": "added",
-    "library_rank": 103,
+    "library_rank": 106,
     "display": false,
     "rank": null
   },
@@ -37561,7 +38543,7 @@
     "data_issues": [],
     "config_coverage": 0.8077,
     "energy_confidence": 0.65,
-    "library_rank": 104,
+    "library_rank": 107,
     "display": false,
     "cash_price_wan": 3.76,
     "cash_price_fen": 3760000,
@@ -37942,7 +38924,7 @@
     "data_issues": [],
     "config_coverage": 0.7692,
     "energy_confidence": 0.65,
-    "library_rank": 105,
+    "library_rank": 108,
     "display": false
   },
   {
@@ -38313,7 +39295,7 @@
     "data_issues": [],
     "config_coverage": 0.7596,
     "energy_confidence": 0.55,
-    "library_rank": 106,
+    "library_rank": 109,
     "display": false
   },
   {
@@ -38687,7 +39669,7 @@
     "data_issues": [],
     "config_coverage": 0.7981,
     "energy_confidence": 0.55,
-    "library_rank": 107,
+    "library_rank": 110,
     "display": false
   },
   {
@@ -39014,7 +39996,7 @@
       "note": "V2 fixed anchors score_version=v2.2.0; exact-trim gate passed; weights={'price': 0.15, 'config': 0.3, 'operating_cost': 0.15, 'space': 0.2, 'age': 0.05, 'mileage': 0.05, 'body_preference': 0.05, 'data_quality': 0.05}; scenario=no_home_charging"
     },
     "ingest_status": "added",
-    "library_rank": 108,
+    "library_rank": 111,
     "display": false,
     "rank": null
   },
@@ -39385,7 +40367,7 @@
     "data_issues": [],
     "config_coverage": 0.7404,
     "energy_confidence": 0.55,
-    "library_rank": 109,
+    "library_rank": 112,
     "display": false,
     "cash_price_wan": 3.89,
     "cash_price_fen": 3890000,
@@ -39765,7 +40747,7 @@
     "data_issues": [],
     "config_coverage": 0.7019,
     "energy_confidence": 0.55,
-    "library_rank": 110,
+    "library_rank": 113,
     "display": false
   },
   {
@@ -40135,7 +41117,7 @@
     "data_issues": [],
     "config_coverage": 0.8173,
     "energy_confidence": 0.55,
-    "library_rank": 111,
+    "library_rank": 114,
     "display": false,
     "cash_price_wan": 3.99,
     "cash_price_fen": 3990000,
@@ -40474,7 +41456,7 @@
       "note": "V2 fixed anchors score_version=v2.2.0; exact-trim gate passed; weights={'price': 0.15, 'config': 0.3, 'operating_cost': 0.15, 'space': 0.2, 'age': 0.05, 'mileage': 0.05, 'body_preference': 0.05, 'data_quality': 0.05}; scenario=no_home_charging"
     },
     "ingest_status": "added",
-    "library_rank": 112,
+    "library_rank": 115,
     "display": false,
     "rank": null
   },
@@ -40845,7 +41827,7 @@
     "data_issues": [],
     "config_coverage": 0.7981,
     "energy_confidence": 0.55,
-    "library_rank": 113,
+    "library_rank": 116,
     "display": false,
     "cash_price_wan": 5.69,
     "cash_price_fen": 5690000,
@@ -41228,7 +42210,7 @@
     "data_issues": [],
     "config_coverage": 0.8654,
     "energy_confidence": 0.55,
-    "library_rank": 114,
+    "library_rank": 117,
     "display": false,
     "cash_price_wan": 5.19,
     "cash_price_fen": 5190000,
@@ -41609,7 +42591,7 @@
     "data_issues": [],
     "config_coverage": 0.8077,
     "energy_confidence": 0.55,
-    "library_rank": 115,
+    "library_rank": 118,
     "display": false,
     "cash_price_wan": 2.99,
     "cash_price_fen": 2990000,
@@ -41991,7 +42973,7 @@
     "data_issues": [],
     "config_coverage": 0.7788,
     "energy_confidence": 0.65,
-    "library_rank": 116,
+    "library_rank": 119,
     "display": false,
     "cash_price_wan": 4.39,
     "cash_price_fen": 4390000,
@@ -42331,7 +43313,7 @@
       "note": "V2 fixed anchors score_version=v2.2.0; exact-trim gate passed; weights={'price': 0.15, 'config': 0.3, 'operating_cost': 0.15, 'space': 0.2, 'age': 0.05, 'mileage': 0.05, 'body_preference': 0.05, 'data_quality': 0.05}; scenario=no_home_charging"
     },
     "ingest_status": "added",
-    "library_rank": 117,
+    "library_rank": 120,
     "display": false,
     "rank": null
   },
@@ -42700,7 +43682,7 @@
     "data_issues": [],
     "config_coverage": 0.8173,
     "energy_confidence": 0.55,
-    "library_rank": 118,
+    "library_rank": 121,
     "display": false,
     "cash_price_wan": 1.59,
     "cash_price_fen": 1590000,
@@ -43080,7 +44062,7 @@
     "data_issues": [],
     "config_coverage": 0.8077,
     "energy_confidence": 0.65,
-    "library_rank": 119,
+    "library_rank": 122,
     "display": false,
     "cash_price_wan": 4.19,
     "cash_price_fen": 4190000,
@@ -43462,7 +44444,7 @@
     "data_issues": [],
     "config_coverage": 0.7981,
     "energy_confidence": 0.55,
-    "library_rank": 120,
+    "library_rank": 123,
     "display": false,
     "cash_price_wan": 5.59,
     "cash_price_fen": 5590000,
@@ -43801,7 +44783,7 @@
       "note": "V2 fixed anchors score_version=v2.2.0; exact-trim gate passed; weights={'price': 0.15, 'config': 0.3, 'operating_cost': 0.15, 'space': 0.2, 'age': 0.05, 'mileage': 0.05, 'body_preference': 0.05, 'data_quality': 0.05}; scenario=no_home_charging"
     },
     "ingest_status": "added",
-    "library_rank": 121,
+    "library_rank": 124,
     "display": false,
     "rank": null
   },
@@ -44169,7 +45151,7 @@
     "data_issues": [],
     "config_coverage": 0.6538,
     "energy_confidence": 0.55,
-    "library_rank": 122,
+    "library_rank": 125,
     "display": false
   },
   {
@@ -44535,7 +45517,7 @@
     "data_issues": [],
     "config_coverage": 0.8077,
     "energy_confidence": 0.65,
-    "library_rank": 123,
+    "library_rank": 126,
     "display": false
   },
   {
@@ -44900,7 +45882,7 @@
     "data_issues": [],
     "config_coverage": 0.8173,
     "energy_confidence": 0.55,
-    "library_rank": 124,
+    "library_rank": 127,
     "display": false
   },
   {
@@ -45270,7 +46252,7 @@
     "data_issues": [],
     "config_coverage": 0.7404,
     "energy_confidence": 0.55,
-    "library_rank": 125,
+    "library_rank": 128,
     "display": false,
     "cash_price_wan": 5.39,
     "cash_price_fen": 5390000,
@@ -45654,7 +46636,7 @@
     "data_issues": [],
     "config_coverage": 0.7788,
     "energy_confidence": 0.65,
-    "library_rank": 126,
+    "library_rank": 129,
     "display": false,
     "cash_price_wan": 5.29,
     "cash_price_fen": 5290000,
@@ -46039,7 +47021,7 @@
     "data_issues": [],
     "config_coverage": 0.8462,
     "energy_confidence": 0.55,
-    "library_rank": 127,
+    "library_rank": 130,
     "display": false
   },
   {
@@ -46409,7 +47391,7 @@
     "data_issues": [],
     "config_coverage": 0.8654,
     "energy_confidence": 0.55,
-    "library_rank": 128,
+    "library_rank": 131,
     "display": false
   },
   {
@@ -46785,7 +47767,7 @@
     "data_issues": [],
     "config_coverage": 0.8654,
     "energy_confidence": 0.55,
-    "library_rank": 129,
+    "library_rank": 132,
     "display": false
   },
   {
@@ -47152,7 +48134,7 @@
     "data_issues": [],
     "config_coverage": 0.7212,
     "energy_confidence": 0.55,
-    "library_rank": 130,
+    "library_rank": 133,
     "display": false,
     "cash_price_wan": 4.19,
     "cash_price_fen": 4190000,
@@ -47535,7 +48517,7 @@
     "data_issues": [],
     "config_coverage": 0.7692,
     "energy_confidence": 0.55,
-    "library_rank": 131,
+    "library_rank": 134,
     "display": false,
     "cash_price_wan": 3.27,
     "cash_price_fen": 3270000,
@@ -47915,7 +48897,7 @@
     "data_issues": [],
     "config_coverage": 0.8654,
     "energy_confidence": 0.55,
-    "library_rank": 132,
+    "library_rank": 135,
     "display": false
   },
   {
@@ -48286,7 +49268,7 @@
     "data_issues": [],
     "config_coverage": 0.8654,
     "energy_confidence": 0.55,
-    "library_rank": 133,
+    "library_rank": 136,
     "display": false
   },
   {
@@ -48653,7 +49635,7 @@
     "data_issues": [],
     "config_coverage": 0.6923,
     "energy_confidence": 0.55,
-    "library_rank": 134,
+    "library_rank": 137,
     "display": false,
     "cash_price_wan": 4.19,
     "cash_price_fen": 4190000,
@@ -49035,7 +50017,7 @@
     "data_issues": [],
     "config_coverage": 0.7019,
     "energy_confidence": 0.55,
-    "library_rank": 135,
+    "library_rank": 138,
     "display": false,
     "cash_price_wan": 4.39,
     "cash_price_fen": 4390000,
@@ -49422,7 +50404,7 @@
     "data_issues": [],
     "config_coverage": 0.8173,
     "energy_confidence": 0.85,
-    "library_rank": 136,
+    "library_rank": 139,
     "display": false,
     "cash_price_wan": 5.69,
     "cash_price_fen": 5690000,
@@ -49799,7 +50781,7 @@
     "data_issues": [],
     "config_coverage": 0.8462,
     "energy_confidence": 0.55,
-    "library_rank": 137,
+    "library_rank": 140,
     "display": false
   },
   {
@@ -50166,7 +51148,7 @@
     "data_issues": [],
     "config_coverage": 0.8462,
     "energy_confidence": 0.55,
-    "library_rank": 138,
+    "library_rank": 141,
     "display": false
   },
   {
@@ -50538,7 +51520,7 @@
     "data_issues": [],
     "config_coverage": 0.8173,
     "energy_confidence": 0.55,
-    "library_rank": 139,
+    "library_rank": 142,
     "display": false,
     "cash_price_wan": 3.89,
     "cash_price_fen": 3890000,
@@ -50919,7 +51901,7 @@
     "data_issues": [],
     "config_coverage": 0.7788,
     "energy_confidence": 0.65,
-    "library_rank": 140,
+    "library_rank": 143,
     "display": false,
     "cash_price_wan": 4.89,
     "cash_price_fen": 4890000,
@@ -51300,7 +52282,7 @@
     "data_issues": [],
     "config_coverage": 0.8462,
     "energy_confidence": 0.55,
-    "library_rank": 141,
+    "library_rank": 144,
     "display": false
   },
   {
@@ -51672,7 +52654,7 @@
     "data_issues": [],
     "config_coverage": 0.8462,
     "energy_confidence": 0.55,
-    "library_rank": 142,
+    "library_rank": 145,
     "display": false
   },
   {
@@ -52047,7 +53029,7 @@
     "data_issues": [],
     "config_coverage": 0.6923,
     "energy_confidence": 0.65,
-    "library_rank": 143,
+    "library_rank": 146,
     "display": false,
     "cash_price_wan": 5.69,
     "cash_price_fen": 5690000,
@@ -52434,7 +53416,7 @@
     "data_issues": [],
     "config_coverage": 0.8365,
     "energy_confidence": 0.65,
-    "library_rank": 144,
+    "library_rank": 147,
     "display": false,
     "cash_price_wan": 5.79,
     "cash_price_fen": 5790000,
@@ -52821,7 +53803,7 @@
     "data_issues": [],
     "config_coverage": 0.8654,
     "energy_confidence": 0.85,
-    "library_rank": 145,
+    "library_rank": 148,
     "display": false,
     "cash_price_wan": 4.89,
     "cash_price_fen": 4890000,
@@ -53213,7 +54195,7 @@
     "data_issues": [],
     "config_coverage": 0.7885,
     "energy_confidence": 0.55,
-    "library_rank": 146,
+    "library_rank": 149,
     "display": false
   },
   {
@@ -53582,7 +54564,7 @@
     "data_issues": [],
     "config_coverage": 0.8173,
     "energy_confidence": 0.55,
-    "library_rank": 147,
+    "library_rank": 150,
     "display": false
   },
   {
@@ -53947,7 +54929,7 @@
     "data_issues": [],
     "config_coverage": 0.7212,
     "energy_confidence": 0.55,
-    "library_rank": 148,
+    "library_rank": 151,
     "display": false,
     "cash_price_wan": 3.75,
     "cash_price_fen": 3750000,
@@ -54329,7 +55311,7 @@
     "data_issues": [],
     "config_coverage": 0.7596,
     "energy_confidence": 0.65,
-    "library_rank": 149,
+    "library_rank": 152,
     "display": false,
     "cash_price_wan": 4.29,
     "cash_price_fen": 4290000,
@@ -54713,7 +55695,7 @@
     "data_issues": [],
     "config_coverage": 0.7885,
     "energy_confidence": 0.55,
-    "library_rank": 150,
+    "library_rank": 153,
     "display": false,
     "cash_price_wan": 5.59,
     "cash_price_fen": 5590000,
@@ -55093,7 +56075,7 @@
     "data_issues": [],
     "config_coverage": 0.8654,
     "energy_confidence": 0.55,
-    "library_rank": 151,
+    "library_rank": 154,
     "display": false,
     "cash_price_wan": 4.69,
     "cash_price_fen": 4690000,
@@ -55470,7 +56452,7 @@
     "data_issues": [],
     "config_coverage": 0.8173,
     "energy_confidence": 0.55,
-    "library_rank": 152,
+    "library_rank": 155,
     "display": false,
     "cash_price_wan": 4.21,
     "cash_price_fen": 4210000,
@@ -55852,7 +56834,7 @@
     "data_issues": [],
     "config_coverage": 0.7212,
     "energy_confidence": 0.55,
-    "library_rank": 153,
+    "library_rank": 156,
     "display": false
   },
   {
@@ -56223,7 +57205,7 @@
     "data_issues": [],
     "config_coverage": 0.7788,
     "energy_confidence": 0.65,
-    "library_rank": 154,
+    "library_rank": 157,
     "display": false
   },
   {
@@ -56593,7 +57575,7 @@
     "data_issues": [],
     "config_coverage": 0.6827,
     "energy_confidence": 0.55,
-    "library_rank": 155,
+    "library_rank": 158,
     "display": false
   },
   {
@@ -56962,7 +57944,7 @@
     "data_issues": [],
     "config_coverage": 0.7788,
     "energy_confidence": 0.65,
-    "library_rank": 156,
+    "library_rank": 159,
     "display": false,
     "cash_price_wan": 5.39,
     "cash_price_fen": 5390000,
@@ -57343,7 +58325,7 @@
     "data_issues": [],
     "config_coverage": 0.6923,
     "energy_confidence": 0.55,
-    "library_rank": 157,
+    "library_rank": 160,
     "display": false,
     "cash_price_wan": 3.79,
     "cash_price_fen": 3790000,
@@ -57722,7 +58704,7 @@
     "data_issues": [],
     "config_coverage": 0.8462,
     "energy_confidence": 0.55,
-    "library_rank": 158,
+    "library_rank": 161,
     "display": false
   },
   {
@@ -58093,7 +59075,7 @@
     "data_issues": [],
     "config_coverage": 0.7596,
     "energy_confidence": 0.65,
-    "library_rank": 159,
+    "library_rank": 162,
     "display": false,
     "cash_price_wan": 4.63,
     "cash_price_fen": 4630000,
@@ -58478,7 +59460,7 @@
     "data_issues": [],
     "config_coverage": 0.8365,
     "energy_confidence": 0.55,
-    "library_rank": 160,
+    "library_rank": 163,
     "display": false,
     "cash_price_wan": 4.59,
     "cash_price_fen": 4590000,
@@ -58857,7 +59839,7 @@
     "data_issues": [],
     "config_coverage": 0.8077,
     "energy_confidence": 0.55,
-    "library_rank": 161,
+    "library_rank": 164,
     "display": false,
     "cash_price_wan": 3.59,
     "cash_price_fen": 3590000,
@@ -59239,7 +60221,7 @@
     "data_issues": [],
     "config_coverage": 0.8654,
     "energy_confidence": 0.55,
-    "library_rank": 162,
+    "library_rank": 165,
     "display": false
   },
   {

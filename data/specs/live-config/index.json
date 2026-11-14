@@ -1,13 +1,13 @@
 {
   "schema_version": "autohome-live-config-tree-1",
   "source": "car.autohome.com.cn/config/spec",
-  "generated_at": "2026-11-13T10:05:27+08:00",
+  "generated_at": "2026-11-14T09:59:32+08:00",
   "legend": {
     "standard": "●",
     "optional": "○",
     "absent": "-"
   },
-  "spec_count": 180,
+  "spec_count": 188,
   "specs": {
     "21170": {
       "title": "雪铁龙C3-XR 2015款 1.6L 自动先锋型",
@@ -254,6 +254,20 @@
       "item_count": 165,
       "file": "32481.json"
     },
+    "32483": {
+      "title": "C-TREK蔚领 2018款 1.5L 自动豪华型",
+      "url": "https://car.autohome.com.cn/config/spec/32483.html",
+      "section_count": 22,
+      "item_count": 165,
+      "file": "32483.json"
+    },
+    "32626": {
+      "title": "远景 2018款 1.5L 手动幸福版",
+      "url": "https://car.autohome.com.cn/config/spec/32626.html",
+      "section_count": 21,
+      "item_count": 154,
+      "file": "32626.json"
+    },
     "33158": {
       "title": "迈锐宝XL 2018款 530T 自动锐逸版",
       "url": "https://car.autohome.com.cn/config/spec/33158.html",
@@ -274,6 +288,13 @@
       "section_count": 21,
       "item_count": 160,
       "file": "33354.json"
+    },
+    "33364": {
+      "title": "帝豪 2018款 1.5L CVT向上互联版",
+      "url": "https://car.autohome.com.cn/config/spec/33364.html",
+      "section_count": 21,
+      "item_count": 154,
+      "file": "33364.json"
     },
     "33403": {
       "title": "柯迪亚克 2018款 改款 TSI330 7座两驱豪华优享版",
@@ -393,6 +414,13 @@
       "section_count": 21,
       "item_count": 159,
       "file": "36425.json"
+    },
+    "36537": {
+      "title": "蓝鸟 2019款 1.6L CVT智联智酷版 国VI",
+      "url": "https://car.autohome.com.cn/config/spec/36537.html",
+      "section_count": 21,
+      "item_count": 159,
+      "file": "36537.json"
     },
     "36623": {
       "title": "奥迪A3 2019款 Sportback 35 TFSI 时尚型 国V",
@@ -625,6 +653,13 @@
       "item_count": 159,
       "file": "43587.json"
     },
+    "43916": {
+      "title": "本田XR-V 2020款 1.5L CVT舒适版",
+      "url": "https://car.autohome.com.cn/config/spec/43916.html",
+      "section_count": 21,
+      "item_count": 168,
+      "file": "43916.json"
+    },
     "44047": {
       "title": "高尔夫·嘉旅 2020款 280TSI 自动好奇型",
       "url": "https://car.autohome.com.cn/config/spec/44047.html",
@@ -765,6 +800,13 @@
       "item_count": 184,
       "file": "48460.json"
     },
+    "48482": {
+      "title": "速腾 2021款 280TSI DSG豪华智联版",
+      "url": "https://car.autohome.com.cn/config/spec/48482.html",
+      "section_count": 22,
+      "item_count": 172,
+      "file": "48482.json"
+    },
     "48880": {
       "title": "途铠 2021款 1.5L 自动舒适版",
       "url": "https://car.autohome.com.cn/config/spec/48880.html",
@@ -869,6 +911,13 @@
       "section_count": 21,
       "item_count": 167,
       "file": "52533.json"
+    },
+    "52759": {
+      "title": "瑞虎7 PLUS 2021款 1.5T CVT尊贵型",
+      "url": "https://car.autohome.com.cn/config/spec/52759.html",
+      "section_count": 21,
+      "item_count": 180,
+      "file": "52759.json"
     },
     "52843": {
       "title": "零跑T03 2021款 400微糖版",
@@ -995,6 +1044,13 @@
       "section_count": 22,
       "item_count": 182,
       "file": "55563.json"
+    },
+    "55597": {
+      "title": "五菱NanoEV 2021款 玩乐款-高功率版",
+      "url": "https://car.autohome.com.cn/config/spec/55597.html",
+      "section_count": 22,
+      "item_count": 165,
+      "file": "55597.json"
     },
     "56459": {
       "title": "传祺GS3 2022款 POWER 270T 自动劲享版",
@@ -1311,6 +1367,7 @@
     "357517790": 39105,
     "357349654": 33354,
     "357477655": 46832,
+    "357541794": 55597,
     "357211009": 47888,
     "357250772": 55338,
     "357211018": 57247,
@@ -1334,6 +1391,7 @@
     "357350550": 25684,
     "356892961": 34142,
     "357409941": 47859,
+    "357542875": 51393,
     "357002835": 64038,
     "357350759": 54037,
     "357204629": 50164,
@@ -1346,6 +1404,7 @@
     "357422353": 32219,
     "357228241": 71504,
     "357501557": 61686,
+    "357545126": 52759,
     "357501560": 38482,
     "357232750": 41024,
     "357184721": 50365,
