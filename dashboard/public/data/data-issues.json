@@ -2605,7 +2605,7 @@
   {
     "sku": "356651013",
     "title": "欧拉好猫 2021款 400km标准续航 维纳斯版 磷酸铁锂电池",
-    "price": 4.49,
+    "price": 4.29,
     "price_type": "现金价",
     "prefix": "现金价",
     "extra": "直降2000元",
@@ -2618,14 +2618,13 @@
     "mileage_wan": 7.51,
     "city": "武汉",
     "tags": [
-      "直降3000元",
       "0.4万首付"
     ],
     "badges": [
       "官方保",
       "直营"
     ],
-    "cover": "https://p3-dcd-sign.byteimg.com/tos-cn-i-f042mdwyw7/7d2b2ee0678e441d9a0508398da9ebd7~tplv-f042mdwyw7-auto-webp:480:0.jpg?rk3s=4892dee6&x-expires=1795484812&x-signature=B8vXMfBdghf2bHi6RbcPnEInT%2BU%3D&psm=motor.sh.pack",
+    "cover": "https://p9-dcd-sign.byteimg.com/tos-cn-i-f042mdwyw7/7d2b2ee0678e441d9a0508398da9ebd7~tplv-f042mdwyw7-auto-webp:480:0.jpg?rk3s=4892dee6&x-expires=1795917077&x-signature=AJdTnBcBDc0aOZnLk046KSsEMPk%3D&psm=motor.sh.pack",
     "detail_url": "https://m.dcdapp.com/motor/feoffline/usedcar_detail/detail.html?sku_id=356651013&shop_id=118608",
     "shop_id": "118608",
     "image_file": "/workspace/dongchedi-wuhan-shop/images/356651013.jpg",
@@ -2637,8 +2636,8 @@
       "config_norm": null,
       "config_proxy": null,
       "is_suv": false,
-      "price": 4.49,
-      "effective_price_wan": 4.49,
+      "price": 4.29,
+      "effective_price_wan": 4.29,
       "condition_gate": "DATA_ISSUE",
       "note": "数据不足，不参与评分"
     },
@@ -2867,8 +2866,8 @@
         }
       ]
     },
-    "display_price_wan": 4.49,
-    "effective_price_wan": 4.49,
+    "display_price_wan": 4.29,
+    "effective_price_wan": 4.29,
     "price_confidence": 0.95,
     "needs_cash_quote": false,
     "price_basis": "cash",
@@ -2920,17 +2919,18 @@
     "config_coverage": 0.6442,
     "energy_confidence": 0.0,
     "display": false,
-    "cash_price_wan": 4.49,
-    "cash_price_fen": 4490000,
-    "cash_price_str": "4.49",
-    "list_price_wan": 4.49,
+    "cash_price_wan": 4.29,
+    "cash_price_fen": 4290000,
+    "cash_price_str": "4.29",
+    "list_price_wan": 3.99,
     "is_self_trade_car": true,
-    "source_type": "0",
+    "source_type": "2",
     "fuel_form": "4",
     "shop_name": "懂车帝汽车商城•武汉店",
     "first_registration_time": "1639670400",
     "detail_shop_id": "118608",
-    "ingest_status": "updated_price"
+    "ingest_status": "updated_price",
+    "source_type_name": "自营-个人"
   },
   {
     "sku": "357171771",
