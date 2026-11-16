@@ -1,13 +1,13 @@
 {
   "schema_version": "autohome-live-config-tree-1",
   "source": "car.autohome.com.cn/config/spec",
-  "generated_at": "2026-11-15T09:59:38+08:00",
+  "generated_at": "2026-11-16T10:01:14+08:00",
   "legend": {
     "standard": "●",
     "optional": "○",
     "absent": "-"
   },
-  "spec_count": 190,
+  "spec_count": 195,
   "specs": {
     "21170": {
       "title": "雪铁龙C3-XR 2015款 1.6L 自动先锋型",
@@ -548,6 +548,13 @@
       "item_count": 174,
       "file": "41024.json"
     },
+    "41025": {
+      "title": "博越 2020款 1.8TD DCT智慧PRO",
+      "url": "https://car.autohome.com.cn/config/spec/41025.html",
+      "section_count": 21,
+      "item_count": 174,
+      "file": "41025.json"
+    },
     "41157": {
       "title": "奕炫 2020款 230T 自动炫酷版",
       "url": "https://car.autohome.com.cn/config/spec/41157.html",
@@ -716,6 +723,13 @@
       "item_count": 188,
       "file": "46527.json"
     },
+    "46671": {
+      "title": "雪铁龙C3-XR 2020款 230THP DCT C-Series 潮享版",
+      "url": "https://car.autohome.com.cn/config/spec/46671.html",
+      "section_count": 21,
+      "item_count": 155,
+      "file": "46671.json"
+    },
     "46712": {
       "title": "锐程CC 2021款 蓝鲸版 1.5T DCT尊贵型",
       "url": "https://car.autohome.com.cn/config/spec/46712.html",
@@ -848,6 +862,13 @@
       "section_count": 21,
       "item_count": 197,
       "file": "49472.json"
+    },
+    "49793": {
+      "title": "零跑T03 2021款 400轻享版 磷酸铁锂",
+      "url": "https://car.autohome.com.cn/config/spec/49793.html",
+      "section_count": 22,
+      "item_count": 168,
+      "file": "49793.json"
     },
     "49954": {
       "title": "科沃兹 2021款 325T 自动欣悦版",
@@ -1143,6 +1164,13 @@
       "item_count": 183,
       "file": "60442.json"
     },
+    "60607": {
+      "title": "五菱缤果 2023款 333km 灵犀互联款",
+      "url": "https://car.autohome.com.cn/config/spec/60607.html",
+      "section_count": 23,
+      "item_count": 169,
+      "file": "60607.json"
+    },
     "61235": {
       "title": "秦PLUS 2023款 冠军版 DM-i 120KM领先型",
       "url": "https://car.autohome.com.cn/config/spec/61235.html",
@@ -1205,6 +1233,13 @@
       "section_count": 21,
       "item_count": 164,
       "file": "62910.json"
+    },
+    "63021": {
+      "title": "科鲁泽 2024款 1.5L 双离合悦享版",
+      "url": "https://car.autohome.com.cn/config/spec/63021.html",
+      "section_count": 21,
+      "item_count": 170,
+      "file": "63021.json"
     },
     "63060": {
       "title": "缤越 2023款 1.5T DCT铂金版",
@@ -1363,6 +1398,7 @@
     "356933838": 33980,
     "357156086": 58109,
     "357014273": 69719,
+    "357538551": 41025,
     "357250766": 62090,
     "357158863": 26941,
     "357526681": 45754,
@@ -1388,6 +1424,7 @@
     "357250772": 55338,
     "357211018": 57247,
     "357501558": 33441,
+    "357530824": 46671,
     "357337443": 59448,
     "357493701": 27232,
     "357320599": 51393,
