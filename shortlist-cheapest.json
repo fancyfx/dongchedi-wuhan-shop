@@ -321,9 +321,9 @@
       "note": "V2 fixed anchors score_version=v2.2.0; exact-trim gate passed; weights={'price': 0.15, 'config': 0.3, 'operating_cost': 0.15, 'space': 0.2, 'age': 0.05, 'mileage': 0.05, 'body_preference': 0.05, 'data_quality': 0.05}; scenario=no_home_charging"
     },
     "ingest_status": "added",
-    "library_rank": 73,
+    "library_rank": 74,
     "display": true,
-    "rank": 73
+    "rank": 74
   },
   {
     "sku": "357158863",
@@ -830,7 +830,7 @@
       "found": true,
       "cons_note": null
     },
-    "rank": 66,
+    "rank": 67,
     "specs": {
       "length_mm": 4440,
       "width_mm": 1833,
@@ -1071,7 +1071,7 @@
     "data_issues": [],
     "config_coverage": 0.8269,
     "energy_confidence": 0.55,
-    "library_rank": 66,
+    "library_rank": 67,
     "display": true,
     "cash_price_wan": 2.39,
     "cash_price_fen": 2390000,
@@ -7657,7 +7657,7 @@
       "found": true,
       "cons_note": null
     },
-    "rank": 67,
+    "rank": 68,
     "specs": {
       "length_mm": 4660,
       "width_mm": 1812,
@@ -7899,7 +7899,7 @@
     "data_issues": [],
     "config_coverage": 0.7308,
     "energy_confidence": 0.55,
-    "library_rank": 67,
+    "library_rank": 68,
     "display": true
   },
   {

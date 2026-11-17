@@ -1,13 +1,13 @@
 {
   "schema_version": "autohome-live-config-tree-1",
   "source": "car.autohome.com.cn/config/spec",
-  "generated_at": "2026-11-16T10:01:14+08:00",
+  "generated_at": "2026-11-17T10:02:53+08:00",
   "legend": {
     "standard": "●",
     "optional": "○",
     "absent": "-"
   },
-  "spec_count": 195,
+  "spec_count": 200,
   "specs": {
     "21170": {
       "title": "雪铁龙C3-XR 2015款 1.6L 自动先锋型",
@@ -274,6 +274,13 @@
       "section_count": 21,
       "item_count": 154,
       "file": "32626.json"
+    },
+    "33086": {
+      "title": "唐新能源 2018款 DM 2.0T 全时四驱智联创领型 7座 国V",
+      "url": "https://car.autohome.com.cn/config/spec/33086.html",
+      "section_count": 25,
+      "item_count": 200,
+      "file": "33086.json"
     },
     "33158": {
       "title": "迈锐宝XL 2018款 530T 自动锐逸版",
@@ -989,6 +996,13 @@
       "item_count": 179,
       "file": "53187.json"
     },
+    "53309": {
+      "title": "轩逸 2022款 1.6L XL CVT悦享版",
+      "url": "https://car.autohome.com.cn/config/spec/53309.html",
+      "section_count": 23,
+      "item_count": 187,
+      "file": "53309.json"
+    },
     "53316": {
       "title": "轩逸 2022款 经典 1.6XL CVT豪华版",
       "url": "https://car.autohome.com.cn/config/spec/53316.html",
@@ -1003,12 +1017,26 @@
       "item_count": 179,
       "file": "53438.json"
     },
+    "53532": {
+      "title": "凌派 2022款 180Turbo CVT豪华版",
+      "url": "https://car.autohome.com.cn/config/spec/53532.html",
+      "section_count": 23,
+      "item_count": 196,
+      "file": "53532.json"
+    },
     "53770": {
       "title": "科鲁泽 2022款 320 自动悦享天窗版",
       "url": "https://car.autohome.com.cn/config/spec/53770.html",
       "section_count": 21,
       "item_count": 166,
       "file": "53770.json"
+    },
+    "53883": {
+      "title": "标致2008 2022款 230THP THE ONE",
+      "url": "https://car.autohome.com.cn/config/spec/53883.html",
+      "section_count": 22,
+      "item_count": 162,
+      "file": "53883.json"
     },
     "53990": {
       "title": "朗逸 2022款 280TSI DSG舒适版",
@@ -1290,6 +1318,13 @@
       "item_count": 160,
       "file": "66959.json"
     },
+    "66986": {
+      "title": "标致408 2024款 360THP 龘龘款 罗曼尼版",
+      "url": "https://car.autohome.com.cn/config/spec/66986.html",
+      "section_count": 21,
+      "item_count": 166,
+      "file": "66986.json"
+    },
     "67024": {
       "title": "海鸥 2024款 荣耀版 305km 活力版",
       "url": "https://car.autohome.com.cn/config/spec/67024.html",
@@ -1441,6 +1476,7 @@
     "357511144": 55563,
     "357088396": 33158,
     "357350550": 25684,
+    "357247792": 47293,
     "356892961": 34142,
     "357409941": 47859,
     "357542875": 51393,
@@ -1451,7 +1487,6 @@
     "357501805": 30370,
     "357143231": 47342,
     "357252968": 48021,
-    "357247792": 47293,
     "357443738": 47342,
     "357422353": 32219,
     "357228241": 71504,
