@@ -326,6 +326,334 @@
     "rank": 1
   },
   {
+    "sku": "357566508",
+    "title": "魏牌 VV7 2017款 2.0T 旗舰型",
+    "shop_id": "118608",
+    "shop_name": "懂车帝汽车商城•武汉店",
+    "series": "魏牌 VV7",
+    "brand": "魏牌",
+    "mileage_wan": 8.45,
+    "model_year": 2017,
+    "plate_year": 2017,
+    "year": "2017年/8.45万公里",
+    "city": "武汉",
+    "tags": [
+      "0.3万首付"
+    ],
+    "badges": [
+      "直营"
+    ],
+    "is_self_trade_car": true,
+    "source_type": "2",
+    "source_type_name": "自营-个人",
+    "fuel_form": "1",
+    "cover": "https://p3-dcd-sign.byteimg.com/tos-cn-i-f042mdwyw7/1c1d3b9bce874c179cdd15001861d800~tplv-f042mdwyw7-auto-webp:480:0.jpg?rk3s=4892dee6&x-expires=1796176756&x-signature=hetGxOZgB63hTtRquVQZdOf6Ol8%3D&psm=motor.sh.pack",
+    "detail_url": "https://m.dcdapp.com/motor/feoffline/usedcar_detail/detail.html?sku_id=357566508&shop_id=118608",
+    "list_price_wan": 3.29,
+    "first_registration_time": "1506268800",
+    "price_type": "现金价",
+    "prefix": "现金价",
+    "cash_price_fen": 3290000,
+    "cash_price_str": "3.29",
+    "cash_price_wan": 3.29,
+    "price": 3.29,
+    "detail_shop_id": "118608",
+    "specs": {
+      "length_mm": 4765,
+      "width_mm": 1931,
+      "height_mm": 1655,
+      "wheelbase_mm": 2950,
+      "seats": null,
+      "body_type": "中型SUV",
+      "engine": "2.0T 234马力 L4",
+      "transmission": "7挡湿式双离合",
+      "fuel_grade": "92",
+      "official_fuel_l_100km": 8.0,
+      "official_standard": "NEDC",
+      "low_soc_fuel_l_100km": null,
+      "real_world_fuel_l_100km": null,
+      "real_world_sample_n": null,
+      "electric_kwh_100km": null,
+      "ev_range_km": null,
+      "ev_range_standard": null,
+      "ranking_energy": {
+        "type": "official_nedc_with_uncertainty",
+        "value": 8.0,
+        "unit": "L/100km",
+        "fallback_multiplier_recommended": 1.2
+      },
+      "powertrain": "ice",
+      "powertrain_type": "ice",
+      "features": {
+        "airbags": 6,
+        "esp": true,
+        "aeb": true,
+        "fcw": null,
+        "ldw": true,
+        "lka": true,
+        "lane_centering": null,
+        "bsd": true,
+        "dow": null,
+        "acc": true,
+        "cruise": "ACC自适应巡航",
+        "camera_360": true,
+        "transparent_chassis": null,
+        "front_radar": true,
+        "rear_radar": true,
+        "auto_park": null,
+        "remote_park": null,
+        "power_driver_seat": true,
+        "power_passenger_seat": true,
+        "seat_heating": true,
+        "seat_ventilation": true,
+        "panoramic_sunroof": true,
+        "power_tailgate": true,
+        "keyless_entry": true,
+        "remote_start": null,
+        "rear_ac_vents": true,
+        "dual_zone_climate": true,
+        "leather_seats": true,
+        "full_lcd_cluster": true,
+        "screen_inch": 9.0,
+        "carplay": null,
+        "carlife": true,
+        "phone_link": true,
+        "wireless_charge": false,
+        "voice_control": true,
+        "ota": false,
+        "hud": null,
+        "chip_8155": null
+      },
+      "airbags": 6,
+      "screen_inch": 9.0,
+      "match_level": "exact_trim",
+      "trim_id": "trim_ah_b7a00e1681d0",
+      "canonical_title": "魏牌 VV7 2017款 2.0T 旗舰型",
+      "specs_found": true,
+      "specs_approx": false,
+      "verified": true,
+      "verification_schema": "3.0-exact-trim-detailed",
+      "configuration_source": "exact_trim_v3",
+      "core_confidence": 0.99,
+      "feature_confidence": 0.95,
+      "verification_issues": [],
+      "verification_sources": [
+        {
+          "url": "https://car.autohome.com.cn/config/spec/30059.html",
+          "source_type": "autohome_live_config",
+          "authority_tier": 1,
+          "series_id": 4252,
+          "spec_id": 30059,
+          "parameter_source": "live_page"
+        },
+        {
+          "url": "https://github.com/swoiow/autohome",
+          "source_type": "autohome_parameter_dataset",
+          "authority_tier": 3,
+          "snapshot": "identity_match_only",
+          "source_path": "live:config/spec/30059.html",
+          "note": "vault/main used for exact-trim identity; parameters from live page"
+        }
+      ]
+    },
+    "detailed_config": {
+      "length_mm": 4765,
+      "width_mm": 1931,
+      "height_mm": 1655,
+      "wheelbase_mm": 2950,
+      "seats": null,
+      "body_type": "中型SUV",
+      "engine": "2.0T 234马力 L4",
+      "transmission": "7挡湿式双离合",
+      "fuel_grade": "92",
+      "official_fuel_l_100km": 8.0,
+      "official_standard": "NEDC",
+      "low_soc_fuel_l_100km": null,
+      "real_world_fuel_l_100km": null,
+      "real_world_sample_n": null,
+      "electric_kwh_100km": null,
+      "ev_range_km": null,
+      "ev_range_standard": null,
+      "ranking_energy": {
+        "type": "official_nedc_with_uncertainty",
+        "value": 8.0,
+        "unit": "L/100km",
+        "fallback_multiplier_recommended": 1.2
+      },
+      "powertrain": "ice",
+      "powertrain_type": "ice",
+      "features": {
+        "airbags": 6,
+        "esp": true,
+        "aeb": true,
+        "fcw": null,
+        "ldw": true,
+        "lka": true,
+        "lane_centering": null,
+        "bsd": true,
+        "dow": null,
+        "acc": true,
+        "cruise": "ACC自适应巡航",
+        "camera_360": true,
+        "transparent_chassis": null,
+        "front_radar": true,
+        "rear_radar": true,
+        "auto_park": null,
+        "remote_park": null,
+        "power_driver_seat": true,
+        "power_passenger_seat": true,
+        "seat_heating": true,
+        "seat_ventilation": true,
+        "panoramic_sunroof": true,
+        "power_tailgate": true,
+        "keyless_entry": true,
+        "remote_start": null,
+        "rear_ac_vents": true,
+        "dual_zone_climate": true,
+        "leather_seats": true,
+        "full_lcd_cluster": true,
+        "screen_inch": 9.0,
+        "carplay": null,
+        "carlife": true,
+        "phone_link": true,
+        "wireless_charge": false,
+        "voice_control": true,
+        "ota": false,
+        "hud": null,
+        "chip_8155": null
+      },
+      "airbags": 6,
+      "screen_inch": 9.0,
+      "match_level": "exact_trim",
+      "trim_id": "trim_ah_b7a00e1681d0",
+      "canonical_title": "魏牌 VV7 2017款 2.0T 旗舰型",
+      "specs_found": true,
+      "specs_approx": false,
+      "verified": true,
+      "verification_schema": "3.0-exact-trim-detailed",
+      "configuration_source": "exact_trim_v3",
+      "core_confidence": 0.99,
+      "feature_confidence": 0.95,
+      "verification_issues": [],
+      "verification_sources": [
+        {
+          "url": "https://car.autohome.com.cn/config/spec/30059.html",
+          "source_type": "autohome_live_config",
+          "authority_tier": 1,
+          "series_id": 4252,
+          "spec_id": 30059,
+          "parameter_source": "live_page"
+        },
+        {
+          "url": "https://github.com/swoiow/autohome",
+          "source_type": "autohome_parameter_dataset",
+          "authority_tier": 3,
+          "snapshot": "identity_match_only",
+          "source_path": "live:config/spec/30059.html",
+          "note": "vault/main used for exact-trim identity; parameters from live page"
+        }
+      ]
+    },
+    "display_price_wan": 3.29,
+    "effective_price_wan": 3.29,
+    "price_confidence": 0.95,
+    "needs_cash_quote": false,
+    "price_basis": "cash",
+    "manufacturer": "长城汽车",
+    "manufacturer_inferred": false,
+    "owner_reviews": {
+      "summary": "",
+      "sources": [],
+      "found": false
+    },
+    "score_eligible": true,
+    "data_issues": [],
+    "config_coverage": 0.7788,
+    "energy_confidence": 0.55,
+    "_age_years": 9.333333333333334,
+    "score_version": "v2.2.0",
+    "score_v1": 67.6,
+    "total_score": 67.6,
+    "condition_gate": "PASS",
+    "evaluation": "可比价格 3.29 万；里程 8.45 万公里偏高；车身 中型SUV 符合偏好。",
+    "score_reasons": [
+      "可比价格 3.29 万",
+      "里程 8.45 万公里偏高",
+      "车身 中型SUV 符合偏好",
+      "能源成本约 76.8 元/100km（official_nedc_with_uncertainty: 9.6L/100km）"
+    ],
+    "score_warnings": [],
+    "confidence": {
+      "price": 0.95,
+      "config": 0.779,
+      "energy": 0.55,
+      "core_specs": 0.99,
+      "age": 0.7,
+      "space": 0.825
+    },
+    "sort_scores": {
+      "score_version": "v2.2.0",
+      "total_score": 67.6,
+      "price_score": 90.33,
+      "config_score": 66.48,
+      "operating_cost_score": 30.64,
+      "space_score": 88.78,
+      "age_score": 16.67,
+      "mileage_score": 37.05,
+      "body_preference_score": 100.0,
+      "data_quality_score": 81.72,
+      "config_norm": 66.48,
+      "space_norm": 88.78,
+      "fuel_norm": 30.64,
+      "suv_score": 100.0,
+      "config_proxy": 66.48,
+      "space_proxy": 88.78,
+      "fuel_proxy": 30.64,
+      "is_suv": true,
+      "price": 3.29,
+      "effective_price_wan": 3.29,
+      "weights": {
+        "price": 0.15,
+        "config": 0.3,
+        "operating_cost": 0.15,
+        "space": 0.2,
+        "age": 0.05,
+        "mileage": 0.05,
+        "body_preference": 0.05,
+        "data_quality": 0.05
+      },
+      "energy": {
+        "cost_yuan_100km": 76.8,
+        "type": "official_nedc_with_uncertainty",
+        "value": 9.6,
+        "unit": "L/100km",
+        "fuel_grade": "92",
+        "scenario": "no_home_charging"
+      },
+      "confidence": {
+        "price": 0.95,
+        "config": 0.779,
+        "energy": 0.55,
+        "core_specs": 0.99,
+        "age": 0.7,
+        "space": 0.825
+      },
+      "reasons": [
+        "可比价格 3.29 万",
+        "里程 8.45 万公里偏高",
+        "车身 中型SUV 符合偏好",
+        "能源成本约 76.8 元/100km（official_nedc_with_uncertainty: 9.6L/100km）"
+      ],
+      "warnings": [],
+      "condition_gate": "PASS",
+      "note": "V2 fixed anchors score_version=v2.2.0; exact-trim gate passed; weights={'price': 0.15, 'config': 0.3, 'operating_cost': 0.15, 'space': 0.2, 'age': 0.05, 'mileage': 0.05, 'body_preference': 0.05, 'data_quality': 0.05}; scenario=no_home_charging"
+    },
+    "ingest_status": "added",
+    "library_rank": 2,
+    "display": true,
+    "rank": 2
+  },
+  {
     "sku": "357301752",
     "title": "哈弗H6 2021款 第三代 2.0T 自动两驱Max版",
     "price": 5.19,
@@ -451,7 +779,7 @@
       "found": true,
       "cons_note": null
     },
-    "rank": 2,
+    "rank": 3,
     "specs": {
       "length_mm": 4653,
       "width_mm": 1886,
@@ -694,7 +1022,7 @@
     "data_issues": [],
     "config_coverage": 0.9231,
     "energy_confidence": 0.65,
-    "library_rank": 2,
+    "library_rank": 3,
     "display": true
   },
   {
@@ -819,7 +1147,7 @@
       "found": true,
       "cons_note": null
     },
-    "rank": 3,
+    "rank": 4,
     "specs": {
       "length_mm": 4770,
       "width_mm": 1840,
@@ -1063,7 +1391,7 @@
     "data_issues": [],
     "config_coverage": 0.8846,
     "energy_confidence": 0.65,
-    "library_rank": 3,
+    "library_rank": 4,
     "display": true,
     "cash_price_wan": 4.68,
     "cash_price_fen": 4680000,
@@ -1205,7 +1533,7 @@
       "found": true,
       "cons_note": null
     },
-    "rank": 4,
+    "rank": 5,
     "specs": {
       "length_mm": 4535,
       "width_mm": 1870,
@@ -1449,7 +1777,7 @@
     "data_issues": [],
     "config_coverage": 0.9327,
     "energy_confidence": 0.65,
-    "library_rank": 4,
+    "library_rank": 5,
     "display": true
   },
   {
@@ -1774,9 +2102,9 @@
       "note": "V2 fixed anchors score_version=v2.2.0; exact-trim gate passed; weights={'price': 0.15, 'config': 0.3, 'operating_cost': 0.15, 'space': 0.2, 'age': 0.05, 'mileage': 0.05, 'body_preference': 0.05, 'data_quality': 0.05}; scenario=no_home_charging"
     },
     "ingest_status": "added",
-    "library_rank": 5,
+    "library_rank": 6,
     "display": true,
-    "rank": 5
+    "rank": 6
   },
   {
     "sku": "357149717",
@@ -1899,7 +2227,7 @@
       "found": true,
       "cons_note": null
     },
-    "rank": 6,
+    "rank": 7,
     "specs": {
       "length_mm": 4462,
       "width_mm": 1857,
@@ -2140,7 +2468,7 @@
     "data_issues": [],
     "config_coverage": 0.8173,
     "energy_confidence": 0.55,
-    "library_rank": 6,
+    "library_rank": 7,
     "display": true,
     "cash_price_wan": 2.99,
     "cash_price_fen": 2990000,
@@ -2278,7 +2606,7 @@
       "found": true,
       "cons_note": null
     },
-    "rank": 7,
+    "rank": 8,
     "specs": {
       "length_mm": 4620,
       "width_mm": 1890,
@@ -2521,7 +2849,7 @@
     "data_issues": [],
     "config_coverage": 0.9038,
     "energy_confidence": 0.65,
-    "library_rank": 7,
+    "library_rank": 8,
     "display": true
   },
   {
@@ -2846,9 +3174,9 @@
       "note": "V2 fixed anchors score_version=v2.2.0; exact-trim gate passed; weights={'price': 0.15, 'config': 0.3, 'operating_cost': 0.15, 'space': 0.2, 'age': 0.05, 'mileage': 0.05, 'body_preference': 0.05, 'data_quality': 0.05}; scenario=no_home_charging"
     },
     "ingest_status": "added",
-    "library_rank": 8,
+    "library_rank": 9,
     "display": true,
-    "rank": 8
+    "rank": 9
   },
   {
     "sku": "356998318",
@@ -2971,7 +3299,7 @@
       "found": true,
       "cons_note": null
     },
-    "rank": 9,
+    "rank": 10,
     "specs": {
       "length_mm": 4760,
       "width_mm": 1931,
@@ -3215,7 +3543,7 @@
     "data_issues": [],
     "config_coverage": 0.7692,
     "energy_confidence": 0.55,
-    "library_rank": 9,
+    "library_rank": 10,
     "display": true,
     "cash_price_wan": 5.29,
     "cash_price_fen": 5290000,
@@ -3352,7 +3680,7 @@
       "found": true,
       "cons_note": null
     },
-    "rank": 10,
+    "rank": 11,
     "specs": {
       "length_mm": 4462,
       "width_mm": 1857,
@@ -3595,7 +3923,7 @@
     "data_issues": [],
     "config_coverage": 0.8173,
     "energy_confidence": 0.55,
-    "library_rank": 10,
+    "library_rank": 11,
     "display": true,
     "cash_price_wan": 3.43,
     "cash_price_fen": 3430000,
@@ -3732,7 +4060,7 @@
       "found": true,
       "cons_note": null
     },
-    "rank": 11,
+    "rank": 12,
     "specs": {
       "length_mm": 4625,
       "width_mm": 1860,
@@ -3977,7 +4305,7 @@
     "data_issues": [],
     "config_coverage": 0.7885,
     "energy_confidence": 0.55,
-    "library_rank": 11,
+    "library_rank": 12,
     "display": true,
     "cash_price_wan": 4.82,
     "cash_price_fen": 4820000,
@@ -4117,7 +4445,7 @@
       "found": true,
       "cons_note": null
     },
-    "rank": 12,
+    "rank": 13,
     "specs": {
       "length_mm": 4448,
       "width_mm": 1890,
@@ -4359,7 +4687,7 @@
     "data_issues": [],
     "config_coverage": 0.8654,
     "energy_confidence": 0.55,
-    "library_rank": 12,
+    "library_rank": 13,
     "display": true
   },
   {
@@ -4485,7 +4813,7 @@
       "found": true,
       "cons_note": null
     },
-    "rank": 13,
+    "rank": 14,
     "specs": {
       "length_mm": 4340,
       "width_mm": 1820,
@@ -4730,7 +5058,7 @@
     "data_issues": [],
     "config_coverage": 0.9038,
     "energy_confidence": 0.65,
-    "library_rank": 13,
+    "library_rank": 14,
     "display": true
   },
   {
@@ -5057,9 +5385,9 @@
       "note": "V2 fixed anchors score_version=v2.2.0; exact-trim gate passed; weights={'price': 0.15, 'config': 0.3, 'operating_cost': 0.15, 'space': 0.2, 'age': 0.05, 'mileage': 0.05, 'body_preference': 0.05, 'data_quality': 0.05}; scenario=no_home_charging"
     },
     "ingest_status": "added",
-    "library_rank": 14,
+    "library_rank": 15,
     "display": true,
-    "rank": 14
+    "rank": 15
   },
   {
     "sku": "357463780",
@@ -5383,9 +5711,9 @@
       "note": "V2 fixed anchors score_version=v2.2.0; exact-trim gate passed; weights={'price': 0.15, 'config': 0.3, 'operating_cost': 0.15, 'space': 0.2, 'age': 0.05, 'mileage': 0.05, 'body_preference': 0.05, 'data_quality': 0.05}; scenario=no_home_charging"
     },
     "ingest_status": "added",
-    "library_rank": 15,
+    "library_rank": 16,
     "display": true,
-    "rank": 15
+    "rank": 16
   },
   {
     "sku": "357168649",
@@ -5514,7 +5842,7 @@
       "found": true,
       "cons_note": null
     },
-    "rank": 16,
+    "rank": 17,
     "specs": {
       "length_mm": 4515,
       "width_mm": 1870,
@@ -5758,7 +6086,7 @@
     "data_issues": [],
     "config_coverage": 0.75,
     "energy_confidence": 0.55,
-    "library_rank": 16,
+    "library_rank": 17,
     "display": true
   },
   {
@@ -5882,7 +6210,7 @@
       "found": true,
       "cons_note": null
     },
-    "rank": 17,
+    "rank": 18,
     "specs": {
       "length_mm": 4462,
       "width_mm": 1857,
@@ -6123,7 +6451,7 @@
     "data_issues": [],
     "config_coverage": 0.8173,
     "energy_confidence": 0.55,
-    "library_rank": 17,
+    "library_rank": 18,
     "display": true
   },
   {
@@ -6253,7 +6581,7 @@
       "found": true,
       "cons_note": null
     },
-    "rank": 18,
+    "rank": 19,
     "specs": {
       "length_mm": 4785,
       "width_mm": 1869,
@@ -6498,7 +6826,7 @@
     "data_issues": [],
     "config_coverage": 0.9038,
     "energy_confidence": 0.55,
-    "library_rank": 18,
+    "library_rank": 19,
     "display": true,
     "cash_price_wan": 5.59,
     "cash_price_fen": 5590000,
@@ -6635,7 +6963,7 @@
       "found": true,
       "cons_note": null
     },
-    "rank": 19,
+    "rank": 20,
     "specs": {
       "length_mm": 4340,
       "width_mm": 1820,
@@ -6877,7 +7205,7 @@
     "data_issues": [],
     "config_coverage": 0.9038,
     "energy_confidence": 0.65,
-    "library_rank": 19,
+    "library_rank": 20,
     "display": true
   },
   {
@@ -7008,7 +7336,7 @@
       "found": true,
       "cons_note": null
     },
-    "rank": 20,
+    "rank": 21,
     "specs": {
       "length_mm": 4440,
       "width_mm": 1833,
@@ -7251,7 +7579,7 @@
     "data_issues": [],
     "config_coverage": 0.8269,
     "energy_confidence": 0.55,
-    "library_rank": 20,
+    "library_rank": 21,
     "display": true
   },
   {
@@ -7381,7 +7709,7 @@
       "found": true,
       "cons_note": null
     },
-    "rank": 21,
+    "rank": 22,
     "specs": {
       "length_mm": 4785,
       "width_mm": 1869,
@@ -7626,7 +7954,7 @@
     "data_issues": [],
     "config_coverage": 0.9038,
     "energy_confidence": 0.55,
-    "library_rank": 21,
+    "library_rank": 22,
     "display": true
   },
   {
@@ -7951,9 +8279,9 @@
       "note": "V2 fixed anchors score_version=v2.2.0; exact-trim gate passed; weights={'price': 0.15, 'config': 0.3, 'operating_cost': 0.15, 'space': 0.2, 'age': 0.05, 'mileage': 0.05, 'body_preference': 0.05, 'data_quality': 0.05}; scenario=no_home_charging"
     },
     "ingest_status": "updated_price",
-    "library_rank": 22,
+    "library_rank": 23,
     "display": true,
-    "rank": 22
+    "rank": 23
   },
   {
     "sku": "357538551",
@@ -8279,9 +8607,9 @@
       "note": "V2 fixed anchors score_version=v2.2.0; exact-trim gate passed; weights={'price': 0.15, 'config': 0.3, 'operating_cost': 0.15, 'space': 0.2, 'age': 0.05, 'mileage': 0.05, 'body_preference': 0.05, 'data_quality': 0.05}; scenario=no_home_charging"
     },
     "ingest_status": "added",
-    "library_rank": 23,
+    "library_rank": 24,
     "display": true,
-    "rank": 23
+    "rank": 24
   },
   {
     "sku": "357250766",
@@ -8407,7 +8735,7 @@
       "found": true,
       "cons_note": null
     },
-    "rank": 24,
+    "rank": 25,
     "specs": {
       "length_mm": 4700,
       "width_mm": 1850,
@@ -8652,7 +8980,7 @@
     "data_issues": [],
     "config_coverage": 0.8365,
     "energy_confidence": 0.65,
-    "library_rank": 24,
+    "library_rank": 25,
     "display": true
   },
   {
@@ -8777,7 +9105,7 @@
       "found": true,
       "cons_note": null
     },
-    "rank": 25,
+    "rank": 26,
     "specs": {
       "length_mm": 4545,
       "width_mm": 1855,
@@ -9019,7 +9347,7 @@
     "data_issues": [],
     "config_coverage": 0.6827,
     "energy_confidence": 0.55,
-    "library_rank": 25,
+    "library_rank": 26,
     "display": true,
     "cash_price_wan": 2.39,
     "cash_price_fen": 2390000,
@@ -9358,9 +9686,9 @@
       "note": "V2 fixed anchors score_version=v2.2.0; exact-trim gate passed; weights={'price': 0.15, 'config': 0.3, 'operating_cost': 0.15, 'space': 0.2, 'age': 0.05, 'mileage': 0.05, 'body_preference': 0.05, 'data_quality': 0.05}; scenario=no_home_charging"
     },
     "ingest_status": "added",
-    "library_rank": 26,
+    "library_rank": 27,
     "display": true,
-    "rank": 26
+    "rank": 27
   },
   {
     "sku": "357501821",
@@ -9682,9 +10010,9 @@
       "note": "V2 fixed anchors score_version=v2.2.0; exact-trim gate passed; weights={'price': 0.15, 'config': 0.3, 'operating_cost': 0.15, 'space': 0.2, 'age': 0.05, 'mileage': 0.05, 'body_preference': 0.05, 'data_quality': 0.05}; scenario=no_home_charging"
     },
     "ingest_status": "added",
-    "library_rank": 27,
+    "library_rank": 28,
     "display": true,
-    "rank": 27
+    "rank": 28
   },
   {
     "sku": "357052771",
@@ -10009,9 +10337,9 @@
       "note": "V2 fixed anchors score_version=v2.2.0; exact-trim gate passed; weights={'price': 0.15, 'config': 0.3, 'operating_cost': 0.15, 'space': 0.2, 'age': 0.05, 'mileage': 0.05, 'body_preference': 0.05, 'data_quality': 0.05}; scenario=no_home_charging"
     },
     "ingest_status": "added",
-    "library_rank": 28,
+    "library_rank": 29,
     "display": true,
-    "rank": 28
+    "rank": 29
   },
   {
     "sku": "357307243",
@@ -10136,7 +10464,7 @@
       "found": true,
       "cons_note": null
     },
-    "rank": 29,
+    "rank": 30,
     "specs": {
       "length_mm": 4660,
       "width_mm": 1812,
@@ -10378,333 +10706,7 @@
     "data_issues": [],
     "config_coverage": 0.7692,
     "energy_confidence": 0.55,
-    "library_rank": 29,
-    "display": true
-  },
-  {
-    "sku": "357454042",
-    "title": "哈弗H6 2023款 国潮版 1.5T 自动冠军版",
-    "shop_id": "118608",
-    "shop_name": "懂车帝汽车商城•武汉店",
-    "series": "哈弗H6",
-    "brand": "哈弗",
-    "mileage_wan": 5.52,
-    "model_year": 2023,
-    "plate_year": 2023,
-    "year": "2023年/5.52万公里",
-    "city": "武汉",
-    "tags": [
-      "0.5万首付"
-    ],
-    "badges": [
-      "直营"
-    ],
-    "is_self_trade_car": true,
-    "source_type": "2",
-    "source_type_name": "自营-个人",
-    "fuel_form": "1",
-    "cover": "https://p3-dcd-sign.byteimg.com/tos-cn-i-f042mdwyw7/12c4a206334041b494f01f766b9c5981~tplv-f042mdwyw7-auto-webp:480:0.jpg?rk3s=4892dee6&x-expires=1795572030&x-signature=7AoX8CnVR5iP7hh%2Fgx%2BnoIaCy2E%3D&psm=motor.sh.pack",
-    "detail_url": "https://m.dcdapp.com/motor/feoffline/usedcar_detail/detail.html?sku_id=357454042&shop_id=118608",
-    "list_price_wan": 5.39,
-    "first_registration_time": "1689782400",
-    "price_type": "现金价",
-    "prefix": "现金价",
-    "cash_price_fen": 5390000,
-    "cash_price_str": "5.39",
-    "cash_price_wan": 5.39,
-    "price": 5.39,
-    "detail_shop_id": "118608",
-    "specs": {
-      "length_mm": 4645,
-      "width_mm": 1860,
-      "height_mm": 1720,
-      "wheelbase_mm": 2680,
-      "seats": null,
-      "body_type": "紧凑型SUV",
-      "engine": "●",
-      "transmission": "湿式双离合变速箱(DCT)",
-      "fuel_grade": "92",
-      "official_fuel_l_100km": 7.68,
-      "official_standard": "WLTC",
-      "low_soc_fuel_l_100km": null,
-      "real_world_fuel_l_100km": null,
-      "real_world_sample_n": null,
-      "electric_kwh_100km": null,
-      "ev_range_km": null,
-      "ev_range_standard": null,
-      "ranking_energy": {
-        "type": "official_wltc_with_uncertainty",
-        "value": 7.68,
-        "unit": "L/100km",
-        "fallback_multiplier_recommended": 1.15
-      },
-      "powertrain": "ice",
-      "powertrain_type": "ice",
-      "features": {
-        "airbags": 6,
-        "esp": true,
-        "aeb": true,
-        "fcw": true,
-        "ldw": true,
-        "lka": true,
-        "lane_centering": true,
-        "bsd": false,
-        "dow": false,
-        "acc": true,
-        "cruise": "ACC自适应巡航",
-        "camera_360": true,
-        "transparent_chassis": false,
-        "front_radar": false,
-        "rear_radar": true,
-        "auto_park": false,
-        "remote_park": false,
-        "power_driver_seat": true,
-        "power_passenger_seat": true,
-        "seat_heating": false,
-        "seat_ventilation": false,
-        "panoramic_sunroof": true,
-        "power_tailgate": false,
-        "keyless_entry": true,
-        "remote_start": false,
-        "rear_ac_vents": true,
-        "dual_zone_climate": null,
-        "leather_seats": false,
-        "full_lcd_cluster": null,
-        "screen_inch": 12.3,
-        "carplay": null,
-        "carlife": null,
-        "phone_link": true,
-        "wireless_charge": true,
-        "voice_control": true,
-        "ota": false,
-        "hud": false,
-        "chip_8155": null
-      },
-      "airbags": 6,
-      "screen_inch": 12.3,
-      "match_level": "exact_trim",
-      "trim_id": "trim_ah_ab79bc9e9a80",
-      "canonical_title": "哈弗H6 2023款 国潮版 1.5T 自动冠军版",
-      "specs_found": true,
-      "specs_approx": false,
-      "verified": true,
-      "verification_schema": "3.0-exact-trim-detailed",
-      "configuration_source": "exact_trim_v3",
-      "core_confidence": 0.99,
-      "feature_confidence": 0.95,
-      "verification_issues": [],
-      "verification_sources": [
-        {
-          "url": "https://car.autohome.com.cn/config/spec/62820.html",
-          "source_type": "autohome_live_config",
-          "authority_tier": 1,
-          "series_id": 2123,
-          "spec_id": 62820,
-          "parameter_source": "live_page"
-        },
-        {
-          "url": "https://github.com/swoiow/autohome",
-          "source_type": "autohome_parameter_dataset",
-          "authority_tier": 3,
-          "snapshot": "identity_match_only",
-          "source_path": "live:config/spec/62820.html",
-          "note": "vault/main used for exact-trim identity; parameters from live page"
-        }
-      ]
-    },
-    "detailed_config": {
-      "length_mm": 4645,
-      "width_mm": 1860,
-      "height_mm": 1720,
-      "wheelbase_mm": 2680,
-      "seats": null,
-      "body_type": "紧凑型SUV",
-      "engine": "●",
-      "transmission": "湿式双离合变速箱(DCT)",
-      "fuel_grade": "92",
-      "official_fuel_l_100km": 7.68,
-      "official_standard": "WLTC",
-      "low_soc_fuel_l_100km": null,
-      "real_world_fuel_l_100km": null,
-      "real_world_sample_n": null,
-      "electric_kwh_100km": null,
-      "ev_range_km": null,
-      "ev_range_standard": null,
-      "ranking_energy": {
-        "type": "official_wltc_with_uncertainty",
-        "value": 7.68,
-        "unit": "L/100km",
-        "fallback_multiplier_recommended": 1.15
-      },
-      "powertrain": "ice",
-      "powertrain_type": "ice",
-      "features": {
-        "airbags": 6,
-        "esp": true,
-        "aeb": true,
-        "fcw": true,
-        "ldw": true,
-        "lka": true,
-        "lane_centering": true,
-        "bsd": false,
-        "dow": false,
-        "acc": true,
-        "cruise": "ACC自适应巡航",
-        "camera_360": true,
-        "transparent_chassis": false,
-        "front_radar": false,
-        "rear_radar": true,
-        "auto_park": false,
-        "remote_park": false,
-        "power_driver_seat": true,
-        "power_passenger_seat": true,
-        "seat_heating": false,
-        "seat_ventilation": false,
-        "panoramic_sunroof": true,
-        "power_tailgate": false,
-        "keyless_entry": true,
-        "remote_start": false,
-        "rear_ac_vents": true,
-        "dual_zone_climate": null,
-        "leather_seats": false,
-        "full_lcd_cluster": null,
-        "screen_inch": 12.3,
-        "carplay": null,
-        "carlife": null,
-        "phone_link": true,
-        "wireless_charge": true,
-        "voice_control": true,
-        "ota": false,
-        "hud": false,
-        "chip_8155": null
-      },
-      "airbags": 6,
-      "screen_inch": 12.3,
-      "match_level": "exact_trim",
-      "trim_id": "trim_ah_ab79bc9e9a80",
-      "canonical_title": "哈弗H6 2023款 国潮版 1.5T 自动冠军版",
-      "specs_found": true,
-      "specs_approx": false,
-      "verified": true,
-      "verification_schema": "3.0-exact-trim-detailed",
-      "configuration_source": "exact_trim_v3",
-      "core_confidence": 0.99,
-      "feature_confidence": 0.95,
-      "verification_issues": [],
-      "verification_sources": [
-        {
-          "url": "https://car.autohome.com.cn/config/spec/62820.html",
-          "source_type": "autohome_live_config",
-          "authority_tier": 1,
-          "series_id": 2123,
-          "spec_id": 62820,
-          "parameter_source": "live_page"
-        },
-        {
-          "url": "https://github.com/swoiow/autohome",
-          "source_type": "autohome_parameter_dataset",
-          "authority_tier": 3,
-          "snapshot": "identity_match_only",
-          "source_path": "live:config/spec/62820.html",
-          "note": "vault/main used for exact-trim identity; parameters from live page"
-        }
-      ]
-    },
-    "display_price_wan": 5.39,
-    "effective_price_wan": 5.39,
-    "price_confidence": 0.95,
-    "needs_cash_quote": false,
-    "price_basis": "cash",
-    "manufacturer": "长城汽车",
-    "manufacturer_inferred": false,
-    "owner_reviews": {
-      "summary": "",
-      "sources": [],
-      "found": false
-    },
-    "score_eligible": true,
-    "data_issues": [],
-    "config_coverage": 0.9038,
-    "energy_confidence": 0.65,
-    "_age_years": 3.3333333333333335,
-    "score_version": "v2.2.0",
-    "score_v1": 55.8,
-    "total_score": 55.8,
-    "condition_gate": "PASS",
-    "evaluation": "可比价格 5.39 万；车身 紧凑型SUV 符合偏好；能源成本约 70.66 元/100km（official_wltc_with_uncertainty: 8.831999999999999L/100km）。",
-    "score_reasons": [
-      "可比价格 5.39 万",
-      "车身 紧凑型SUV 符合偏好",
-      "能源成本约 70.66 元/100km（official_wltc_with_uncertainty: 8.831999999999999L/100km）"
-    ],
-    "score_warnings": [],
-    "confidence": {
-      "price": 0.95,
-      "config": 0.904,
-      "energy": 0.65,
-      "core_specs": 0.99,
-      "age": 0.7,
-      "space": 0.825
-    },
-    "sort_scores": {
-      "score_version": "v2.2.0",
-      "total_score": 55.8,
-      "price_score": 20.33,
-      "config_score": 58.69,
-      "operating_cost_score": 33.11,
-      "space_score": 64.42,
-      "age_score": 86.67,
-      "mileage_score": 66.8,
-      "body_preference_score": 100.0,
-      "data_quality_score": 92.22,
-      "config_norm": 58.69,
-      "space_norm": 64.42,
-      "fuel_norm": 33.11,
-      "suv_score": 100.0,
-      "config_proxy": 58.69,
-      "space_proxy": 64.42,
-      "fuel_proxy": 33.11,
-      "is_suv": true,
-      "price": 5.39,
-      "effective_price_wan": 5.39,
-      "weights": {
-        "price": 0.15,
-        "config": 0.3,
-        "operating_cost": 0.15,
-        "space": 0.2,
-        "age": 0.05,
-        "mileage": 0.05,
-        "body_preference": 0.05,
-        "data_quality": 0.05
-      },
-      "energy": {
-        "cost_yuan_100km": 70.66,
-        "type": "official_wltc_with_uncertainty",
-        "value": 8.831999999999999,
-        "unit": "L/100km",
-        "fuel_grade": "92",
-        "scenario": "no_home_charging"
-      },
-      "confidence": {
-        "price": 0.95,
-        "config": 0.904,
-        "energy": 0.65,
-        "core_specs": 0.99,
-        "age": 0.7,
-        "space": 0.825
-      },
-      "reasons": [
-        "可比价格 5.39 万",
-        "车身 紧凑型SUV 符合偏好",
-        "能源成本约 70.66 元/100km（official_wltc_with_uncertainty: 8.831999999999999L/100km）"
-      ],
-      "warnings": [],
-      "condition_gate": "PASS",
-      "note": "V2 fixed anchors score_version=v2.2.0; exact-trim gate passed; weights={'price': 0.15, 'config': 0.3, 'operating_cost': 0.15, 'space': 0.2, 'age': 0.05, 'mileage': 0.05, 'body_preference': 0.05, 'data_quality': 0.05}; scenario=no_home_charging"
-    },
-    "ingest_status": "added",
     "library_rank": 30,
-    "display": true,
-    "rank": 30
+    "display": true
   }
 ]

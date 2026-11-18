@@ -1,6 +1,6 @@
 {
   "schema_version": "3.0-exact-trim",
-  "generated_at": "2026-11-16",
+  "generated_at": "2026-11-18",
   "configuration_policy": "new-full-config-only; AutoHome exact-trim parameters only; legacy shards/approximate config forbidden",
   "trim_files": [
     "specs/exact-trims-auto.json"
@@ -182,7 +182,10 @@
     "357530824": "trim_ah_4dcd6be4e802",
     "357538551": "trim_ah_06d0acfc3d7d",
     "357541794": "trim_ah_15110f348135",
+    "357542080": "trim_ah_c67ccf86304d",
     "357542875": "trim_ah_f4ff85f62652",
-    "357545126": "trim_ah_ef9ef1eedaf4"
+    "357545126": "trim_ah_ef9ef1eedaf4",
+    "357566508": "trim_ah_b7a00e1681d0",
+    "357576346": "trim_ah_21a9cbcf3afa"
   }
 }
