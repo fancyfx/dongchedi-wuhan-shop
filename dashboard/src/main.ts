@@ -4,8 +4,10 @@ import {
   coverImgHtml,
   esc,
   gearboxClass,
+  miniMetersHtml,
   renderCompareDrawerBody,
   renderDetailDrawerBody,
+  renderFilterSheetBody,
   renderMethodologyModalBody,
   scoreBarsHtml,
 } from './drawer'
@@ -36,7 +38,7 @@ const state = {
   q: '',
   priceMax: '',
   activeSku: null as string | null,
-  drawerMode: null as null | 'detail' | 'today' | 'compare' | 'methodology',
+  drawerMode: null as null | 'detail' | 'today' | 'compare' | 'methodology' | 'filter',
   todayFilter: 'all' as TodayFilter,
   compareSkus: [] as string[],
 }
@@ -46,7 +48,14 @@ function fmtTime(iso?: string): string {
   try {
     const d = new Date(iso)
     if (Number.isNaN(d.getTime())) return iso
-    return d.toLocaleString('zh-CN', { month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit', hour12: false, timeZone: 'Asia/Shanghai' })
+    return d.toLocaleString('zh-CN', {
+      month: '2-digit',
+      day: '2-digit',
+      hour: '2-digit',
+      minute: '2-digit',
+      hour12: false,
+      timeZone: 'Asia/Shanghai',
+    })
   } catch {
     return iso
   }
@@ -163,9 +172,10 @@ function cardInnerHtml(item: Listing, hero = false): string {
   const total = item.total_score ?? item.sort_scores?.total_score
   const compared = state.compareSkus.includes(item.sku)
   const isNewTop = highlightSkus.has(item.sku)
+  const topClass = item.rank && item.rank <= 3 ? `top-card-${item.rank}` : ''
   const yearMile = [
-    item.plate_year ? `${item.plate_year}年上牌` : '',
-    item.mileage_wan != null ? `${item.mileage_wan.toFixed(2)}万公里` : '',
+    item.plate_year ? `${item.plate_year}年` : '',
+    item.mileage_wan != null ? `${item.mileage_wan.toFixed(2)}万km` : '',
     item.specs?.body_type || '',
   ]
     .filter(Boolean)
@@ -173,32 +183,35 @@ function cardInnerHtml(item: Listing, hero = false): string {
   const mechLine = [p?.engine_summary, p?.rear_suspension_short, p?.drive_short, p?.fuel_grade]
     .filter(Boolean)
     .join(' · ')
-  const feats = (p?.feature_highlights || []).slice(0, hero ? 7 : 5)
+  const feats = (p?.feature_highlights || []).slice(0, hero ? 7 : 6)
 
   return `
-    <article class="car-card ${hero ? 'hero-card' : ''} ${item.rank === 1 ? 'rank-one' : ''} ${compared ? 'is-compared' : ''}" data-sku="${esc(item.sku)}">
+    <article class="car-card ${hero ? 'hero-card' : ''} ${topClass} ${compared ? 'is-compared' : ''}" data-sku="${esc(item.sku)}">
       <div class="card-media" data-open-detail="${esc(item.sku)}">
         ${coverImgHtml(item)}
         <div class="media-top">
           <span class="rank-chip ${item.rank && item.rank <= 3 ? `top-${item.rank}` : ''}">#${rankNo}</span>
-          ${isNewTop ? `<span class="today-new-chip">今日新进前10</span>` : ''}
+          ${p?.archetype_badge ? `<span class="media-arch">${esc(p.archetype_badge)}</span>` : ''}
+          ${isNewTop ? `<span class="today-new-chip">新进前10</span>` : ''}
           ${p?.discount_fold ? `<span class="fold-chip">${p.discount_fold}折</span>` : ''}
         </div>
-        <button type="button" class="cmp-toggle ${compared ? 'active' : ''}" data-cmp-toggle="${esc(item.sku)}" aria-pressed="${compared ? 'true' : 'false'}">
-          ${compared ? '✓ 已选对比' : '+ 加入对比'}
-        </button>
+        <div class="media-bottom">
+          <button type="button" class="cmp-toggle ${compared ? 'active' : ''}" data-cmp-toggle="${esc(item.sku)}" aria-pressed="${compared ? 'true' : 'false'}">
+            ${compared ? '✓ 已选对比' : '+ 对比'}
+          </button>
+          <span class="media-score">严选 <strong>${total != null ? total.toFixed(1) : '—'}</strong></span>
+        </div>
       </div>
       <div class="card-body">
-        <div class="card-kicker">
-          <span class="arch-tag">${esc(p?.archetype_badge || '严选车源')}</span>
-          <span class="score-pill">严选分 <strong>${total != null ? total.toFixed(1) : '—'}</strong></span>
+        <div class="card-head-meta">
+          <span class="card-sub">${esc(yearMile)}</span>
+          <span class="head-score-desktop">严选分 <strong>${total != null ? total.toFixed(1) : '—'}</strong></span>
         </div>
         <h3 class="card-title" data-open-detail="${esc(item.sku)}" title="${esc(item.title)}">${esc(item.title)}</h3>
-        <div class="card-sub">${esc(yearMile)}</div>
 
         <div class="price-block">
           <span class="cash-price">${Number(item.price).toFixed(2)}<small>万</small></span>
-          ${p?.msrp_wan ? `<span class="msrp-info"><del>指导价 ${p.msrp_wan.toFixed(2)}万</del>${p.saved_wan ? ` · 省${p.saved_wan.toFixed(1)}万` : ''}</span>` : ''}
+          ${p?.msrp_wan ? `<span class="msrp-info"><del>${p.msrp_wan.toFixed(2)}万</del>${p.saved_wan ? `<b class="saved-badge">省${p.saved_wan.toFixed(1)}万</b>` : ''}</span>` : ''}
         </div>
 
         <div class="mech-bar">
@@ -208,14 +221,15 @@ function cardInnerHtml(item: Listing, hero = false): string {
 
         ${feats.length ? `<div class="feat-pills">${feats.map((f) => `<span>${esc(f)}</span>`).join('')}</div>` : ''}
 
-        ${scoreBarsHtml(item, !hero)}
+        ${hero ? `<div class="hero-only-bars">${scoreBarsHtml(item)}</div>` : ''}
+        <div class="card-meters">${miniMetersHtml(item)}</div>
 
         <p class="advisor-line" title="${esc(p?.recommend_reason || item.evaluation || '')}">${esc(p?.recommend_reason || item.evaluation || '')}</p>
 
         <div class="card-actions">
-          <button type="button" class="btn-report" data-open-detail="${esc(item.sku)}">买手深度报告</button>
-          <a class="btn-ghost" href="?sku=${encodeURIComponent(item.sku)}">完整参配</a>
-          <a class="btn-ghost" href="${esc(item.detail_url)}" target="_blank" rel="noopener noreferrer">原车页 ↗</a>
+          <button type="button" class="btn-report" data-open-detail="${esc(item.sku)}">买手报告 &amp; 验车</button>
+          <a class="btn-ghost" href="?sku=${encodeURIComponent(item.sku)}">参配</a>
+          <a class="btn-ghost" href="${esc(item.detail_url)}" target="_blank" rel="noopener noreferrer">原车 ↗</a>
         </div>
       </div>
     </article>`
@@ -226,74 +240,54 @@ function mastheadHtml(): string {
   const vetoed = meta?.vetoed_count ?? '—'
   const reserved = meta?.reserved_count ?? 0
   const rankedCnt = rankedListings.length
-  const bd = meta?.veto_breakdown
-  const vetoDetail = bd
-    ? `新能源 ${bd.ev_phev ?? 0} / 三缸 ${bd.three_cyl ?? 0} / 干式双离合 ${bd.dry_dct ?? 0}`
-    : '纯电插混 / 三缸 / 干式双离合'
   const todayBadge = todayData.has_snapshot
-    ? (todayData.counts.added + todayData.counts.updated_price + todayData.counts.removed_sold)
+    ? todayData.counts.added + todayData.counts.updated_price + todayData.counts.removed_sold
     : 0
 
   return `
     <header class="masthead">
       <div class="masthead-top">
         <div class="brand-lockup">
-          <div class="eyebrow">DONGCHEDI WUHAN · CURATED TOP 30</div>
-          <h1>武汉店二手车看板 · Top 30 严选推荐</h1>
-          <p class="lead">专为「平时不开、仅节假日偶尔开、高配低价且好维护」重写算法与展厅体验。已实时清理全部已售车，锁单车辆自动隐藏。</p>
+          <div class="eyebrow">DONGCHEDI WUHAN · TOP 30</div>
+          <h1>武汉严选 · Top 30</h1>
+          <p class="lead">节假日低频用车买手严选：剔除纯电插混、三缸与干式双离合，实时清理已售并隐藏锁单。</p>
         </div>
         <div class="masthead-actions">
-          <button type="button" class="action-pill" id="btn-open-methodology">选车铁律 &amp; 权重说明</button>
+          <button type="button" class="action-pill" id="btn-open-methodology">选车铁律</button>
           <button type="button" class="action-pill accent" id="btn-open-today">
-            今日数据变动
-            ${todayBadge > 0 ? `<span class="action-count">${todayBadge}</span>` : ''}
+            今日变动${todayBadge > 0 ? `<span class="action-count">${todayBadge}</span>` : ''}
           </button>
         </div>
       </div>
 
-      <div class="funnel-strip">
-        <div class="funnel-step">
-          <span>在售库存</span>
-          <strong>${onSale} 台</strong>
-        </div>
-        <div class="funnel-arrow">→</div>
-        <div class="funnel-step veto">
-          <span>四大铁律剔除</span>
-          <strong>-${vetoed} 台</strong>
-          <small>${esc(vetoDetail)}</small>
-        </div>
-        ${reserved > 0 ? `
-        <div class="funnel-arrow">→</div>
-        <div class="funnel-step muted">
-          <span>锁单隐藏</span>
-          <strong>${reserved} 台</strong>
-        </div>` : ''}
-        <div class="funnel-arrow">→</div>
-        <div class="funnel-step final">
-          <span>严选入榜</span>
-          <strong>Top ${rankedCnt}</strong>
-          <small>更新于 ${esc(fmtTime(meta?.ranked_at))}</small>
-        </div>
+      <div class="funnel-strip" aria-label="数据清洗漏斗">
+        <span class="funnel-chip">在售 <b>${onSale}</b></span>
+        <span class="funnel-sep">→</span>
+        <span class="funnel-chip veto">铁律否决 <b>-${vetoed}</b></span>
+        ${reserved > 0 ? `<span class="funnel-sep">→</span><span class="funnel-chip muted">锁单藏 <b>${reserved}</b></span>` : ''}
+        <span class="funnel-sep">→</span>
+        <span class="funnel-chip final">严选 <b>Top ${rankedCnt}</b></span>
+        <span class="funnel-time">更新 ${esc(fmtTime(meta?.ranked_at))}</span>
       </div>
     </header>`
 }
 
-function filterBarHtml(shown: Listing[]): string {
+function stickyBarHtml(shown: Listing[]): string {
   const counts = presetCounts()
   const presets: [PresetKey, string][] = [
-    ['all', `全部严选 (${counts.all})`],
-    ['at', `成熟 AT (${counts.at})`],
-    ['under5', `5万以内 (${counts.under5})`],
-    ['lowmile', `4万km内 (${counts.lowmile})`],
-    ['suv', `SUV / 四驱 (${counts.suv})`],
-    ['sedan_b', `B级高速轿 (${counts.sedan_b})`],
-    ['l2', `带L2智驾 (${counts.l2})`],
+    ['all', `全部 ${counts.all}`],
+    ['at', `成熟AT ${counts.at}`],
+    ['under5', `5万内 ${counts.under5}`],
+    ['lowmile', `4万km内 ${counts.lowmile}`],
+    ['suv', `SUV/四驱 ${counts.suv}`],
+    ['sedan_b', `B级轿 ${counts.sedan_b}`],
+    ['l2', `L2智驾 ${counts.l2}`],
   ]
   const avgPrice = shown.length ? (shown.reduce((a, b) => a + b.price, 0) / shown.length).toFixed(2) : '—'
-  const minPrice = shown.length ? Math.min(...shown.map((x) => x.price)).toFixed(2) : '—'
+  const activeFilterCount = (state.q.trim() ? 1 : 0) + (state.priceMax ? 1 : 0)
 
   return `
-    <section class="filter-dock" aria-label="筛选与排序">
+    <section class="sticky-bar" aria-label="筛选与排序">
       <div class="preset-row">
         ${presets
           .map(
@@ -302,27 +296,31 @@ function filterBarHtml(shown: Listing[]): string {
           )
           .join('')}
       </div>
-      <div class="filter-controls">
-        <div class="ctrl-search">
-          <input id="ctrl-q" type="search" placeholder="搜车型 / 品牌 / SKU（如 君威 / 爱信 / 探界者）" value="${esc(state.q)}" />
+      <div class="bar-ctrl-row">
+        <div class="bar-stats">
+          <strong>${shown.length}</strong><span class="bar-total">/${rankedListings.length}台</span>
+          <span class="bar-avg">均价 <b>${avgPrice}万</b></span>
+          ${state.q.trim() ? `<button type="button" class="active-chip" id="btn-clear-q">${esc(state.q.trim())} ×</button>` : ''}
+          ${state.priceMax ? `<button type="button" class="active-chip" id="btn-clear-pmax">≤${esc(state.priceMax)}万 ×</button>` : ''}
         </div>
-        <div class="ctrl-item">
-          <label for="ctrl-pmax">最高价(万)</label>
-          <input id="ctrl-pmax" type="number" min="0" max="6" step="0.1" placeholder="6.0" value="${esc(state.priceMax)}" />
+
+        <div class="desktop-only-inputs">
+          <input id="ctrl-q" type="search" placeholder="搜车型 / 品牌 / SKU" value="${esc(state.q)}" />
+          <input id="ctrl-pmax" type="number" min="0" max="6" step="0.1" placeholder="最高价(万)" value="${esc(state.priceMax)}" />
         </div>
-        <div class="ctrl-item">
-          <label for="ctrl-sort">排序</label>
-          <select id="ctrl-sort">
-            <option value="recommend" ${state.sort === 'recommend' ? 'selected' : ''}>V3 综合严选分</option>
-            <option value="powertrain" ${state.sort === 'powertrain' ? 'selected' : ''}>三大件最稳</option>
-            <option value="config" ${state.sort === 'config' ? 'selected' : ''}>配置最丰富</option>
-            <option value="discount" ${state.sort === 'discount' ? 'selected' : ''}>折旧最狠 (几折)</option>
-            <option value="price" ${state.sort === 'price' ? 'selected' : ''}>最低现金价</option>
-            <option value="mileage" ${state.sort === 'mileage' ? 'selected' : ''}>最低表显里程</option>
+
+        <div class="bar-actions">
+          <select id="ctrl-sort" aria-label="排序方式">
+            <option value="recommend" ${state.sort === 'recommend' ? 'selected' : ''}>综合严选</option>
+            <option value="powertrain" ${state.sort === 'powertrain' ? 'selected' : ''}>三大件稳</option>
+            <option value="config" ${state.sort === 'config' ? 'selected' : ''}>高配优先</option>
+            <option value="discount" ${state.sort === 'discount' ? 'selected' : ''}>折数最低</option>
+            <option value="price" ${state.sort === 'price' ? 'selected' : ''}>价格最低</option>
+            <option value="mileage" ${state.sort === 'mileage' ? 'selected' : ''}>里程最低</option>
           </select>
-        </div>
-        <div class="ctrl-summary">
-          显示 <strong>${shown.length}</strong> / ${rankedListings.length} 台 · 均价 <b>${avgPrice}万</b> · 起价 <b>${minPrice}万</b>
+          <button type="button" class="filter-sheet-btn ${activeFilterCount > 0 ? 'has-active' : ''}" id="btn-open-filter">
+            筛选${activeFilterCount > 0 ? `<span class="fs-badge">${activeFilterCount}</span>` : ''}
+          </button>
         </div>
       </div>
     </section>`
@@ -336,19 +334,19 @@ function compareBarHtml(): string {
   return `
     <div class="compare-dock">
       <div class="cmp-dock-list">
-        <span class="cmp-dock-label">已选对比 (${selected.length}/3)：</span>
-        ${selected.map((x) => `<span class="cmp-chip">#${x.rank} ${esc(x.series || x.title.slice(0, 10))} <button type="button" data-cmp-remove="${esc(x.sku)}">×</button></span>`).join('')}
+        <span class="cmp-dock-label">对比 (${selected.length}/3)</span>
+        ${selected.map((x) => `<span class="cmp-chip">#${x.rank} ${esc(x.series || x.title.slice(0, 8))} <button type="button" data-cmp-remove="${esc(x.sku)}">×</button></span>`).join('')}
       </div>
       <div class="cmp-dock-actions">
         <button type="button" class="btn-clear-cmp" id="btn-clear-cmp">清空</button>
         <button type="button" class="btn-open-cmp" id="btn-open-cmp" ${selected.length < 2 ? 'disabled' : ''}>
-          ${selected.length < 2 ? '再选 1 台开始对比' : `横向对比 (${selected.length} 台)`}
+          ${selected.length < 2 ? '再选1台' : `对比 ${selected.length} 台`}
         </button>
       </div>
     </div>`
 }
 
-function drawerHostHtml(): string {
+function drawerHostHtml(shownCount: number): string {
   if (!state.drawerMode) return ''
   let title = ''
   let body = ''
@@ -368,6 +366,16 @@ function drawerHostHtml(): string {
     title = `严选车源横向对比（${selected.length} 台）`
     body = renderCompareDrawerBody(selected)
     extraCls = 'extra-wide'
+  } else if (state.drawerMode === 'filter') {
+    title = '搜索、预算与排序'
+    body = renderFilterSheetBody({
+      q: state.q,
+      priceMax: state.priceMax,
+      sort: state.sort,
+      shownCount,
+      totalCount: rankedListings.length,
+    })
+    extraCls = 'compact-sheet'
   } else if (state.drawerMode === 'methodology') {
     title = 'V3 选车铁律与评分方法论'
     body = renderMethodologyModalBody()
@@ -388,6 +396,7 @@ function drawerHostHtml(): string {
   return `
     <div class="drawer-backdrop" id="drawer-backdrop">
       <aside class="drawer-panel ${extraCls}" role="dialog" aria-modal="true" aria-label="${esc(title)}">
+        <div class="sheet-handle" aria-hidden="true"><span></span></div>
         <div class="drawer-top">
           <strong>${esc(title)}</strong>
           <button type="button" class="drawer-close" id="btn-close-drawer" aria-label="关闭">✕</button>
@@ -397,10 +406,13 @@ function drawerHostHtml(): string {
     </div>`
 }
 
-function renderCatalogSection(): string {
-  const shown = filteredListings()
+function renderCatalogSection(shown: Listing[]): string {
   if (!shown.length) {
-    return `<div class="empty-state">当前筛选条件下没有入围 Top 30 车源，点击“全部严选”即可重置。</div>`
+    return `
+      <div class="empty-state">
+        <p>当前筛选条件下没有入围 Top 30 车源</p>
+        <button type="button" class="btn-report" id="btn-empty-reset">恢复全部 30 台</button>
+      </div>`
   }
   const usePodium = isDefaultView() && shown.length >= 3
   if (!usePodium) {
@@ -413,31 +425,36 @@ function renderCatalogSection(): string {
     <section class="podium-section">
       <div class="sec-head">
         <h2>买手头号三甲 · Top 3</h2>
-        <span>机械可靠性 × 节假日刚需高配 × 高折旧性价比综合最优</span>
+        <span>机械可靠性 × 节假日高配 × 高折旧性价比</span>
       </div>
       <div class="podium-lead">${cardInnerHtml(top1, true)}</div>
       <div class="podium-runners">${top23.map((x) => cardInnerHtml(x, false)).join('')}</div>
     </section>
-    ${rest.length ? `
+    ${
+      rest.length
+        ? `
     <section class="catalog-section">
       <div class="sec-head">
         <h2>严选阵容 · 第 4 – ${shown.length} 名</h2>
-        <span>点击任意卡片查看针对性验车清单与完整车主口碑</span>
+        <span>点卡片看针对性验车清单与真实口碑</span>
       </div>
       <div class="cards-grid">${rest.map((x) => cardInnerHtml(x, false)).join('')}</div>
-    </section>` : ''}`
+    </section>`
+        : ''
+    }`
 }
 
 function renderApp() {
   const shown = filteredListings()
+  document.body.classList.toggle('no-scroll', Boolean(state.drawerMode))
   app.innerHTML = `
     <div class="page-shell">
       ${mastheadHtml()}
       ${todayModeFromSearch(location.search) === 'fixture' ? fixtureBannerHtml() : ''}
-      ${filterBarHtml(shown)}
-      <main id="catalog-main">${renderCatalogSection()}</main>
+      ${stickyBarHtml(shown)}
+      <main id="catalog-main">${renderCatalogSection(shown)}</main>
       <footer class="site-footer">
-        <span>数据口径：懂车帝汽车商城·武汉店（shop_id=118608）实车与现金价 + 汽车之家实测参配 + 车质网公开口碑</span>
+        <span>懂车帝汽车商城·武汉店（shop_id=118608）实时现金价 + 汽车之家实测参配 + 车质网口碑</span>
         <span class="footer-links">
           <a href="/data/listings-ranked.json" target="_blank" rel="noopener noreferrer">Top 30 JSON</a>
           <a href="/data/meta.json" target="_blank" rel="noopener noreferrer">Meta</a>
@@ -446,7 +463,7 @@ function renderApp() {
       </footer>
     </div>
     ${compareBarHtml()}
-    ${drawerHostHtml()}
+    ${drawerHostHtml(shown.length)}
   `
   bindEvents()
 }
@@ -493,6 +510,75 @@ function bindEvents() {
   const sortSel = document.getElementById('ctrl-sort') as HTMLSelectElement | null
   sortSel?.addEventListener('change', () => {
     state.sort = (sortSel.value as SortKey) || 'recommend'
+    renderApp()
+  })
+
+  document.getElementById('btn-clear-q')?.addEventListener('click', () => {
+    state.q = ''
+    renderApp()
+  })
+  document.getElementById('btn-clear-pmax')?.addEventListener('click', () => {
+    state.priceMax = ''
+    renderApp()
+  })
+  document.getElementById('btn-empty-reset')?.addEventListener('click', () => {
+    state.preset = 'all'
+    state.q = ''
+    state.priceMax = ''
+    state.sort = 'recommend'
+    renderApp()
+  })
+
+  document.getElementById('btn-open-filter')?.addEventListener('click', () => {
+    state.drawerMode = 'filter'
+    renderApp()
+  })
+
+  // Filter Sheet bindings
+  const sheetQ = document.getElementById('sheet-q') as HTMLInputElement | null
+  sheetQ?.addEventListener('input', () => {
+    state.q = sheetQ.value
+    const applyBtn = document.getElementById('btn-sheet-apply')
+    if (applyBtn) {
+      applyBtn.textContent = `查看 ${filteredListings().length} / ${rankedListings.length} 台严选`
+    }
+  })
+  const sheetPmax = document.getElementById('sheet-pmax') as HTMLInputElement | null
+  sheetPmax?.addEventListener('input', () => {
+    state.priceMax = sheetPmax.value
+    const applyBtn = document.getElementById('btn-sheet-apply')
+    if (applyBtn) {
+      applyBtn.textContent = `查看 ${filteredListings().length} / ${rankedListings.length} 台严选`
+    }
+  })
+  document.querySelectorAll<HTMLButtonElement>('[data-sheet-kw]').forEach((btn) => {
+    btn.addEventListener('click', () => {
+      const kw = btn.dataset.sheetKw || ''
+      state.q = state.q.trim() === kw ? '' : kw
+      renderApp()
+    })
+  })
+  document.querySelectorAll<HTMLButtonElement>('[data-sheet-pmax]').forEach((btn) => {
+    btn.addEventListener('click', () => {
+      state.priceMax = btn.dataset.sheetPmax ?? ''
+      renderApp()
+    })
+  })
+  document.querySelectorAll<HTMLButtonElement>('[data-sheet-sort]').forEach((btn) => {
+    btn.addEventListener('click', () => {
+      state.sort = (btn.dataset.sheetSort as SortKey) || 'recommend'
+      renderApp()
+    })
+  })
+  document.getElementById('btn-sheet-reset')?.addEventListener('click', () => {
+    state.preset = 'all'
+    state.q = ''
+    state.priceMax = ''
+    state.sort = 'recommend'
+    renderApp()
+  })
+  document.getElementById('btn-sheet-apply')?.addEventListener('click', () => {
+    state.drawerMode = null
     renderApp()
   })
 

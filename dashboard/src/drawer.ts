@@ -1,4 +1,4 @@
-import type { Listing } from './types'
+import type { Listing, SortKey } from './types'
 
 export function esc(s: unknown): string {
   return String(s ?? '')
@@ -33,6 +33,31 @@ export function gearboxClass(tier?: string): string {
   return 'gb-other'
 }
 
+export function miniMetersHtml(item: Listing): string {
+  const ss = item.sort_scores
+  const dims: { label: string; val: number | null | undefined; cls: string }[] = [
+    { label: '三大件', val: ss?.powertrain_score, cls: 'dim-pt' },
+    { label: '配置', val: ss?.config_score, cls: 'dim-cfg' },
+    { label: '性价比', val: ss?.value_price_score ?? ss?.price_score, cls: 'dim-val' },
+    { label: '车况', val: ss?.condition_score, cls: 'dim-cond' },
+    { label: '空间', val: ss?.space_score, cls: 'dim-sp' },
+  ]
+  return `
+    <div class="mini-meters">
+      ${dims
+        .map((d) => {
+          const v = typeof d.val === 'number' && Number.isFinite(d.val) ? Math.max(0, Math.min(100, d.val)) : 0
+          return `
+            <div class="mm-cell">
+              <span class="mm-lbl">${d.label}</span>
+              <strong class="mm-num">${typeof d.val === 'number' ? d.val.toFixed(0) : '—'}</strong>
+              <span class="mm-track"><span class="mm-fill ${d.cls}" style="width:${v.toFixed(0)}%"></span></span>
+            </div>`
+        })
+        .join('')}
+    </div>`
+}
+
 export function scoreBarsHtml(item: Listing, compact = false): string {
   const ss = item.sort_scores
   const dims: { label: string; val: number | null | undefined; cls: string }[] = [
@@ -58,6 +83,77 @@ export function scoreBarsHtml(item: Listing, compact = false): string {
     </div>`
 }
 
+export function renderFilterSheetBody(opts: {
+  q: string
+  priceMax: string
+  sort: SortKey
+  shownCount: number
+  totalCount: number
+}): string {
+  const hotKeywords = ['领克03', '探界者', '君威', '迈锐宝XL', '奕泽', '伊兰特', '传祺GS4', '锐程CC']
+  const budgetOptions: [string, string][] = [
+    ['', '不限预算'],
+    ['4', '≤ 4万'],
+    ['4.5', '≤ 4.5万'],
+    ['5', '≤ 5万'],
+    ['5.5', '≤ 5.5万'],
+  ]
+  const sortOptions: [SortKey, string][] = [
+    ['recommend', 'V3 综合严选'],
+    ['powertrain', '三大件最稳'],
+    ['config', '配置最丰富'],
+    ['discount', '折旧最狠(折数)'],
+    ['price', '最低现金价'],
+    ['mileage', '最低表显里程'],
+  ]
+
+  return `
+    <div class="filter-sheet-body">
+      <div class="fs-group">
+        <label class="fs-label" for="sheet-q">搜索车型 / 品牌 / SKU</label>
+        <input id="sheet-q" class="fs-input" type="search" placeholder="输入关键词，如 君威、爱信、探界者…" value="${esc(opts.q)}" />
+        <div class="fs-chips">
+          ${hotKeywords
+            .map(
+              (kw) =>
+                `<button type="button" class="fs-chip ${opts.q.trim() === kw ? 'active' : ''}" data-sheet-kw="${esc(kw)}">${esc(kw)}</button>`,
+            )
+            .join('')}
+        </div>
+      </div>
+
+      <div class="fs-group">
+        <label class="fs-label" for="sheet-pmax">全款现金价上限（万）</label>
+        <div class="fs-chips">
+          ${budgetOptions
+            .map(
+              ([val, lbl]) =>
+                `<button type="button" class="fs-chip ${opts.priceMax === val ? 'active' : ''}" data-sheet-pmax="${esc(val)}">${esc(lbl)}</button>`,
+            )
+            .join('')}
+        </div>
+        <input id="sheet-pmax" class="fs-input fs-input-num" type="number" inputmode="decimal" min="0" max="6" step="0.1" placeholder="自定义上限，例如 4.8" value="${esc(opts.priceMax)}" />
+      </div>
+
+      <div class="fs-group">
+        <div class="fs-label">排序方式</div>
+        <div class="fs-sort-grid">
+          ${sortOptions
+            .map(
+              ([val, lbl]) =>
+                `<button type="button" class="fs-sort-btn ${opts.sort === val ? 'active' : ''}" data-sheet-sort="${val}">${esc(lbl)}</button>`,
+            )
+            .join('')}
+        </div>
+      </div>
+
+      <div class="fs-footer">
+        <button type="button" class="btn-secondary" id="btn-sheet-reset">重置条件</button>
+        <button type="button" class="btn-primary" id="btn-sheet-apply">查看 ${opts.shownCount} / ${opts.totalCount} 台严选</button>
+      </div>
+    </div>`
+}
+
 export function renderDetailDrawerBody(item: Listing): string {
   const p = item.v3_profile
   const sp = item.specs || item.detailed_config || {}
@@ -72,7 +168,11 @@ export function renderDetailDrawerBody(item: Listing): string {
   const boolCls = (v: unknown) => (v === true ? 'yes' : 'no')
 
   const featMatrix: [string, string, string][] = [
-    ['主被动气囊', (sp.airbags ?? feat.airbags) != null ? `${sp.airbags ?? feat.airbags} 气囊` : '未明示', (Number(sp.airbags ?? feat.airbags ?? 0) >= 6 ? 'yes' : 'no')],
+    [
+      '主被动气囊',
+      (sp.airbags ?? feat.airbags) != null ? `${sp.airbags ?? feat.airbags} 气囊` : '未明示',
+      Number(sp.airbags ?? feat.airbags ?? 0) >= 6 ? 'yes' : 'no',
+    ],
     ['AEB 主动刹车', boolMark(feat.aeb), boolCls(feat.aeb)],
     ['自适应巡航', feat.cruise ? String(feat.cruise) : boolMark(feat.acc), feat.acc ? 'yes' : 'no'],
     ['车道保持/居中', boolMark(Boolean(feat.lka || feat.lane_centering)), boolCls(Boolean(feat.lka || feat.lane_centering))],
@@ -80,7 +180,11 @@ export function renderDetailDrawerBody(item: Listing): string {
     ['360 全景影像', boolMark(feat.camera_360), boolCls(feat.camera_360)],
     ['前排座椅加热', boolMark(feat.seat_heating), boolCls(feat.seat_heating)],
     ['前排座椅通风', boolMark(feat.seat_ventilation), boolCls(feat.seat_ventilation)],
-    ['电动座椅调节', feat.power_driver_seat ? (feat.power_passenger_seat ? '主/副驾双电调' : '主驾电调') : '手动调节', feat.power_driver_seat ? 'yes' : 'no'],
+    [
+      '电动座椅调节',
+      feat.power_driver_seat ? (feat.power_passenger_seat ? '主/副驾双电调' : '主驾电调') : '手动调节',
+      feat.power_driver_seat ? 'yes' : 'no',
+    ],
     ['CarPlay/互联', feat.carplay ? '● CarPlay' : boolMark(feat.phone_link), feat.carplay || feat.phone_link ? 'yes' : 'no'],
     ['全景天窗', boolMark(feat.panoramic_sunroof), boolCls(feat.panoramic_sunroof)],
     ['电动尾门', boolMark(feat.power_tailgate), boolCls(feat.power_tailgate)],
@@ -177,7 +281,8 @@ export function renderCompareDrawerBody(items: Listing[]): string {
     },
     {
       label: '全款现金价',
-      render: (x) => `<strong class="cmp-price">${Number(x.price).toFixed(2)}万</strong>${x.v3_profile?.discount_fold ? ` <small>(${x.v3_profile.discount_fold}折 / 原${x.v3_profile.msrp_wan}万)</small>` : ''}`,
+      render: (x) =>
+        `<strong class="cmp-price">${Number(x.price).toFixed(2)}万</strong>${x.v3_profile?.discount_fold ? ` <small>(${x.v3_profile.discount_fold}折 / 原${x.v3_profile.msrp_wan}万)</small>` : ''}`,
     },
     {
       label: '上牌 / 里程',
@@ -224,7 +329,7 @@ export function renderCompareDrawerBody(items: Listing[]): string {
       <table class="cmp-table" style="--cmp-cols:${cols}">
         <thead>
           <tr>
-            <th>对比维度</th>
+            <th class="sticky-col">对比维度</th>
             ${items
               .map(
                 (x) => `
@@ -244,7 +349,7 @@ export function renderCompareDrawerBody(items: Listing[]): string {
             .map(
               (r) => `
             <tr>
-              <th>${esc(r.label)}</th>
+              <th class="sticky-col">${esc(r.label)}</th>
               ${items.map((x) => `<td>${r.render(x)}</td>`).join('')}
             </tr>`,
             )
@@ -259,7 +364,7 @@ export function renderMethodologyModalBody(): string {
   return `
     <div class="method-body">
       <div class="method-lead">
-        专为<strong>“平时不开、仅节假日偶尔开、追求高配低价且好维护”</strong>的买手需求重写。彻底剔除旧版 15% 油耗权重与 5% SUV 偏见，确保每台入选车都经得起久停和长途考验。
+        专为<strong>“平时不开、仅节假日偶尔开、高配低价且好维护”</strong>的买手需求重写。彻底剔除旧版 15% 油耗权重与 5% SUV 偏见，确保每台入选车都经得起久停和长途考验。
       </div>
       <div class="method-grid">
         <div class="method-card veto">
