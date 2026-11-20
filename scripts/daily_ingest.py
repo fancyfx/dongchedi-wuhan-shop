@@ -32,11 +32,14 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts"))
 
 from dcd_fetch import (  # noqa: E402
+    FetchError,
     FixtureClient,
     HttpClient,
     fetch_shop_batch,
     load_fixture_dir,
     normalize_card,
+    parse_cash_price,
+    parse_sale_status,
 )
 from display_gate import (  # noqa: E402
     DISPLAY_LIMIT,
@@ -75,6 +78,9 @@ MARKET_KEYS = (
     "brand",
     "first_registration_time",
     "detail_shop_id",
+    "sale_status",
+    "product_status",
+    "status_modify_time",
 )
 SCORE_KEYS = (
     "total_score",
@@ -83,6 +89,9 @@ SCORE_KEYS = (
     "score_v1",
     "sort_scores",
     "condition_gate",
+    "recommendation_gate",
+    "veto_reasons",
+    "v3_profile",
     "evaluation",
     "score_reasons",
     "score_warnings",
@@ -147,6 +156,8 @@ def mile_of(item: dict[str, Any] | None) -> float | None:
 def classify_change(old: dict[str, Any] | None, new: dict[str, Any]) -> str:
     if old is None:
         return "added"
+    if old.get("sale_status") == "reserved" and new.get("sale_status", "on_sale") == "on_sale":
+        return "restored_on_sale"
     changes = []
     if price_of(old) != price_of(new):
         changes.append("price")
@@ -214,17 +225,21 @@ def apply_catalog_update(
     incoming: list[dict[str, Any]],
     rejected_hard: list[dict[str, Any]],
     *,
+    reconciled_missing: dict[str, dict[str, Any]] | None = None,
+    admit_below_threshold: bool = True,
     display_limit: int = DISPLAY_LIMIT,
     now: str,
 ) -> dict[str, Any]:
-    """Diff, top-100 admission, and display split. Does not touch disk."""
+    """Diff, sold/reserved reconciliation, top-N admission, and display split."""
     by_sku: dict[str, dict[str, Any]] = {}
     order: list[str] = []
     for item in inventory:
         sku = str(item.get("sku") or "")
         if not sku or sku in by_sku:
             continue
-        by_sku[sku] = dict(item)
+        row = dict(item)
+        row.setdefault("sale_status", "on_sale")
+        by_sku[sku] = row
         order.append(sku)
     previous_by_sku = {str(item.get("sku")): item for item in previous_ranked if item.get("sku")}
     previous_display = [
@@ -235,6 +250,58 @@ def apply_catalog_update(
 
     def add(change_type: str, item: dict[str, Any] | None, old: dict[str, Any] | None, reason: str | None) -> None:
         changelog.append(_change(change_type, item, old, now=now, reason=reason, threshold=threshold))
+
+    # Reconcile SKUs already in inventory that did not appear in today's list.
+    for sku, info in (reconciled_missing or {}).items():
+        sku = str(sku)
+        old = by_sku.get(sku)
+        if old is None:
+            continue
+        status = str(info.get("status") or "")
+        if status == "sold":
+            by_sku.pop(sku, None)
+            order = [existing for existing in order if existing != sku]
+            add("removed_sold", info.get("item"), old, info.get("reason") or "product_status_0_sold")
+        elif status == "reserved":
+            was_reserved = old.get("sale_status") == "reserved"
+            was_displayed = sku in previous_by_sku
+            old["sale_status"] = "reserved"
+            old["product_status"] = info.get("product_status", 5)
+            if info.get("status_modify_time"):
+                old["status_modify_time"] = info["status_modify_time"]
+            old["display"] = False
+            old["rank"] = None
+            old["ingest_status"] = "reserved"
+            if not was_reserved or was_displayed:
+                add("reserved_hidden", old, old, info.get("reason") or "product_status_5_reserved")
+        elif status == "hard_rejected":
+            by_sku.pop(sku, None)
+            order = [existing for existing in order if existing != sku]
+            add("removed_hard_filter", info.get("item"), old, info.get("reason"))
+        elif status == "on_sale":
+            updated_item = info.get("item")
+            was_reserved = old.get("sale_status") == "reserved"
+            if updated_item:
+                merged = merge_record(old, updated_item)
+                merged["sale_status"] = "on_sale"
+                merged["product_status"] = info.get("product_status", 1)
+                if was_reserved:
+                    merged["ingest_status"] = "restored_on_sale"
+                    by_sku[sku] = merged
+                    add("restored_on_sale", merged, old, "returned_to_on_sale")
+                elif price_of(old) != price_of(updated_item):
+                    merged["ingest_status"] = "updated_price"
+                    by_sku[sku] = merged
+                    add("updated_price", merged, old, None)
+                else:
+                    by_sku[sku] = merged
+            elif was_reserved:
+                old["sale_status"] = "on_sale"
+                old["product_status"] = info.get("product_status", 1)
+                old["ingest_status"] = "restored_on_sale"
+                add("restored_on_sale", old, old, "returned_to_on_sale")
+        elif status == "detail_failed":
+            add("detail_failed", info.get("item"), old, info.get("reason"))
 
     rejected_skus: set[str] = set()
     for item in rejected_hard:
@@ -254,25 +321,56 @@ def apply_catalog_update(
         sku = str(item.get("sku") or "")
         if not sku or sku in rejected_skus:
             continue
+        item_sale = item.get("sale_status") or "on_sale"
         old = by_sku.get(sku)
-        kind = classify_change(old, item)
+        if item_sale == "sold":
+            if old is not None:
+                by_sku.pop(sku, None)
+                order = [existing for existing in order if existing != sku]
+                add("removed_sold", item, old, "product_status_0_sold")
+            continue
+        if item_sale == "reserved":
+            if old is not None:
+                was_reserved = old.get("sale_status") == "reserved"
+                merged = merge_record(old, item)
+                merged["sale_status"] = "reserved"
+                merged["display"] = False
+                merged["rank"] = None
+                merged["ingest_status"] = "reserved"
+                by_sku[sku] = merged
+                if not was_reserved:
+                    add("reserved_hidden", merged, old, "product_status_5_reserved")
+            continue
+
         if old is None:
-            score = numeric_score(item)
-            below = threshold is not None and (score is None or score < threshold - 1e-9)
-            if below:
-                reason = "no_score" if score is None else "score_below_threshold"
-                add("rejected_below_top100", item, None, reason)
-                continue
+            if not admit_below_threshold:
+                score = numeric_score(item)
+                below = threshold is not None and (score is None or score < threshold - 1e-9)
+                if below:
+                    reason = "no_score" if score is None else "score_below_threshold"
+                    add("rejected_below_top100", item, None, reason)
+                    continue
             merged = merge_record(None, item)
+            merged["sale_status"] = "on_sale"
             merged["ingest_status"] = "added"
             by_sku[sku] = merged
             order.append(sku)
             admitted_new.append(sku)
             add("added", merged, None, None)
             continue
+
+        kind = classify_change(old, item)
         if kind == "unchanged":
+            # Ensure stale reserved state or refreshed metadata stays clean
+            if old.get("sale_status") != "on_sale":
+                old["sale_status"] = "on_sale"
+            if "score_eligible" in item:
+                for key in SCORE_KEYS:
+                    if key in item:
+                        old[key] = item[key]
             continue
         merged = merge_record(old, item)
+        merged["sale_status"] = "on_sale"
         merged["ingest_status"] = kind
         by_sku[sku] = merged
         add(kind, merged, old, None)
@@ -288,17 +386,18 @@ def apply_catalog_update(
         return display, {str(item["sku"]) for item in display}
 
     display, display_ids = resplit()
-    rolled = [sku for sku in admitted_new if sku not in display_ids]
-    if rolled:
-        changelog = [
-            row for row in changelog
-            if not (row["change_type"] == "added" and row["sku"] in set(rolled))
-        ]
-        for sku in rolled:
-            item = by_sku.pop(sku)
-            order = [existing for existing in order if existing != sku]
-            add("rejected_below_top100", item, None, "not_in_display_top100")
-        display, display_ids = resplit()
+    if not admit_below_threshold:
+        rolled = [sku for sku in admitted_new if sku not in display_ids]
+        if rolled:
+            changelog = [
+                row for row in changelog
+                if not (row["change_type"] == "added" and row["sku"] in set(rolled))
+            ]
+            for sku in rolled:
+                item = by_sku.pop(sku)
+                order = [existing for existing in order if existing != sku]
+                add("rejected_below_top100", item, None, "not_in_display_top100")
+            display, display_ids = resplit()
 
     for sku, item in by_sku.items():
         if sku not in display_ids:
@@ -307,6 +406,8 @@ def apply_catalog_update(
 
     for sku in previous_display:
         if sku in display_ids or sku not in by_sku:
+            continue
+        if any(row["sku"] == sku and row["change_type"] in {"reserved_hidden", "removed_sold"} for row in changelog):
             continue
         add("display_dropped", by_sku.get(sku), previous_by_sku.get(sku), "outside_top100_display")
 
@@ -390,6 +491,19 @@ def write_catalog(catalog: Path, result: dict[str, Any], *, now: str, threshold:
             source = catalog / name
             if source.exists():
                 (ROOT / name).write_text(source.read_text(encoding="utf-8"), encoding="utf-8")
+        dash = ROOT / "dashboard" / "public" / "data"
+        if dash.exists():
+            for name in (
+                "listings-ranked.json",
+                "listings-filtered.json",
+                "shortlist-ranked.json",
+                "shortlist-cheapest.json",
+                "data-issues.json",
+                "meta.json",
+            ):
+                source = catalog / name
+                if source.exists():
+                    (dash / name).write_text(source.read_text(encoding="utf-8"), encoding="utf-8")
 
 
 def _score_incoming(
@@ -398,11 +512,12 @@ def _score_incoming(
     *,
     skip_live_fetch: bool,
     dry_run: bool,
+    force_rescore_all: bool = False,
 ) -> tuple[list[dict[str, Any]], dict[str, Any]]:
     by_sku = {str(item.get("sku")): item for item in inventory}
     to_score = [
         item for item in kept
-        if classify_change(by_sku.get(str(item.get("sku"))), item) != "unchanged"
+        if force_rescore_all or classify_change(by_sku.get(str(item.get("sku"))), item) != "unchanged"
     ]
     notes: dict[str, Any] = {
         "scored": 0,
@@ -470,10 +585,97 @@ def build_parser() -> argparse.ArgumentParser:
     parser.add_argument("--snapshot-dir", type=Path, default=None)
     parser.add_argument("--catalog-dir", type=Path, default=None, help="默认 data/。测试可指向临时目录")
     parser.add_argument("--date", default=None, help="快照目录名 YYYYMMDD，默认上海时区今天")
-    parser.add_argument("--display-limit", type=int, default=DISPLAY_LIMIT, help="看板展示条数，默认 100")
+    parser.add_argument("--display-limit", type=int, default=DISPLAY_LIMIT, help="看板展示条数，默认 30")
     parser.add_argument("--delay", type=float, default=None, help="详情请求间隔秒数。HTTP 默认 0.15，fixtures 默认 0")
     parser.add_argument("--no-snapshots", action="store_true")
+    parser.add_argument("--no-reconcile", action="store_true", help="跳过对不在列表中的旧库车源做详情对账")
     return parser
+
+
+def _reconcile_missing_inventory(
+    client: Any,
+    inventory: list[dict[str, Any]],
+    seen_skus: set[str],
+    batch: Any,
+    *,
+    skip_live_fetch: bool,
+    dry_run: bool,
+) -> dict[str, dict[str, Any]]:
+    """Fetch detail for known inventory SKUs absent from today's list to prune sold & hide reserved."""
+    missing_rows = [
+        row for row in inventory
+        if str(row.get("sku") or "") and str(row.get("sku") or "") not in seen_skus
+    ]
+    out: dict[str, dict[str, Any]] = {}
+    if not missing_rows:
+        return out
+    from ingest_score import load_verified, prepare_and_score
+
+    verified = load_verified(ROOT)
+    for row in missing_rows:
+        sku = str(row["sku"])
+        try:
+            _st, detail = client.fetch_detail(sku)
+            batch.details[sku] = detail
+        except Exception as exc:
+            status_code = getattr(exc, "status", None)
+            if isinstance(exc, FetchError) and status_code in (404, 410):
+                out[sku] = {"status": "sold", "reason": f"http_{status_code}_gone"}
+            else:
+                batch.detail_errors[sku] = {
+                    "sku": sku,
+                    "error": f"{type(exc).__name__}: {exc}",
+                    "status": status_code,
+                }
+                out[sku] = {"status": "detail_failed", "reason": f"reconcile_detail_error:{type(exc).__name__}"}
+            continue
+
+        sale = parse_sale_status(detail)
+        cash = parse_cash_price(detail)
+        if sale["sale_status"] == "sold":
+            out[sku] = {
+                "status": "sold",
+                "product_status": sale["product_status"],
+                "reason": "product_status_0_sold",
+            }
+            continue
+        if sale["sale_status"] == "reserved":
+            out[sku] = {
+                "status": "reserved",
+                "product_status": sale["product_status"],
+                "status_modify_time": sale["status_modify_time"],
+                "reason": "product_status_5_reserved",
+            }
+            continue
+
+        candidate = dict(row)
+        if cash["cash_price_wan"] is not None:
+            candidate["cash_price_wan"] = cash["cash_price_wan"]
+            candidate["cash_price_fen"] = cash["cash_price_fen"]
+            candidate["cash_price_str"] = cash["cash_price_str"]
+            candidate["price"] = cash["cash_price_wan"]
+        if cash.get("shop_id"):
+            candidate["shop_id"] = str(cash["shop_id"])
+            candidate["detail_shop_id"] = str(cash["shop_id"])
+        candidate["sale_status"] = "on_sale"
+        candidate["product_status"] = sale["product_status"]
+        if sale["status_modify_time"]:
+            candidate["status_modify_time"] = sale["status_modify_time"]
+
+        hard_reason = admission_reason(candidate)
+        if hard_reason:
+            candidate["_reject_reason"] = hard_reason
+            out[sku] = {"status": "hard_rejected", "item": candidate, "reason": hard_reason}
+            continue
+
+        if price_of(row) != price_of(candidate) or row.get("sale_status") == "reserved":
+            candidate = prepare_and_score(candidate, verified)
+        out[sku] = {
+            "status": "on_sale",
+            "product_status": sale["product_status"],
+            "item": candidate,
+        }
+    return out
 
 
 def run(argv: list[str] | None = None) -> dict[str, Any]:
@@ -501,11 +703,14 @@ def run(argv: list[str] | None = None) -> dict[str, Any]:
     batch = fetch_shop_batch(client, page_size=args.page_size, limit=max(0, args.limit))
     inventory, previous_ranked = load_state(catalog)
     known = {str(item.get("sku")) for item in inventory}
+    seen_list_skus: set[str] = set()
     kept: list[dict[str, Any]] = []
     rejected_hard: list[dict[str, Any]] = []
     detail_failed: list[dict[str, Any]] = []
     for card in batch.cards:
         sku = str(((card.get("product") or {}).get("event_info") or {}).get("sku_id") or "")
+        if sku:
+            seen_list_skus.add(sku)
         detail = batch.details.get(sku)
         item = normalize_card(card, detail)
         if sku in batch.detail_errors or item.get("cash_price_wan") in (None, ""):
@@ -525,6 +730,16 @@ def run(argv: list[str] | None = None) -> dict[str, Any]:
             rejected_hard.append(item)
             continue
         kept.append(item)
+    reconciled_missing: dict[str, dict[str, Any]] = {}
+    if args.limit == 0 and not args.no_reconcile:
+        reconciled_missing = _reconcile_missing_inventory(
+            client,
+            inventory,
+            seen_list_skus,
+            batch,
+            skip_live_fetch=args.skip_live_fetch,
+            dry_run=args.dry_run,
+        )
     incoming, score_notes = _score_incoming(
         kept,
         inventory,
@@ -536,6 +751,8 @@ def run(argv: list[str] | None = None) -> dict[str, Any]:
         previous_ranked,
         incoming,
         rejected_hard,
+        reconciled_missing=reconciled_missing,
+        admit_below_threshold=True,
         display_limit=args.display_limit,
         now=started,
     )

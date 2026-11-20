@@ -214,6 +214,38 @@ def test_finance_reserve():
     assert ep2["needs_cash_quote"] is False
 
 
+def test_v3_veto_and_at_preference():
+    verified = {"a": {"trim": _fixture_trim()}, "b": {"trim": _fixture_trim()}}
+    at_trim = _fixture_trim()
+    at_trim["core_specs"]["transmission"] = "6挡手自一体变速箱(AT)"
+    at_trim["core_specs"]["engine"] = "2.0L 自然吸气 L4"
+    verified["a"] = {"trim": at_trim}
+
+    dct_trim = _fixture_trim()
+    dct_trim["core_specs"]["transmission"] = "7挡湿式双离合变速箱(DCT)"
+    verified["b"] = {"trim": dct_trim}
+
+    dry_trim = _fixture_trim()
+    dry_trim["core_specs"]["transmission"] = "7挡干式双离合变速箱(DCT)"
+    verified["c"] = {"trim": dry_trim}
+
+    bev_trim = _fixture_trim()
+    bev_trim["core_specs"]["powertrain"] = "bev"
+    verified["d"] = {"trim": bev_trim}
+
+    base = {"price": 4.8, "price_type": "标价", "mileage_wan": 3.0, "plate_year": 2021, "specs": {}}
+    a, b, c, d = apply_verified_to_listings(
+        [{**base, "sku": "a"}, {**base, "sku": "b"}, {**base, "sku": "c"}, {**base, "sku": "d"}],
+        verified,
+    )
+    ra, rb, rc, rd = score_listing(a), score_listing(b), score_listing(c), score_listing(d)
+    assert ra["recommendation_gate"] == "PASS"
+    assert rb["recommendation_gate"] == "PASS"
+    assert ra["total_score"] > rb["total_score"]
+    assert rc["recommendation_gate"] == "VETO"
+    assert rd["recommendation_gate"] == "VETO"
+
+
 def main():
     tests = [
         test_new_configuration_store_has_no_legacy_shards,
@@ -223,6 +255,7 @@ def main():
         test_phev_does_not_use_combined_for_cross_powertrain,
         test_95_costs_more_than_92,
         test_finance_reserve,
+        test_v3_veto_and_at_preference,
     ]
     failed = 0
     for fn in tests:

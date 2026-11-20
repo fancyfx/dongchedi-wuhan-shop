@@ -46,12 +46,18 @@ def test_payload_splits_highlights_from_other_new_cars() -> None:
             {"sku": "c", "title": "C", "change_type": "added"},
             {"sku": "d", "title": "D", "change_type": "updated_price", "old_price": 6, "new_price": 5},
             {"sku": "e", "title": "E", "change_type": "updated"},
+            {"sku": "f", "title": "F", "change_type": "removed_sold"},
+            {"sku": "g", "title": "G", "change_type": "reserved_hidden"},
+            {"sku": "h", "title": "H", "change_type": "restored_on_sale"},
         ],
         ranks=board_ranks(ranked),
     )
     assert [item["sku"] for item in payload["highlights"]] == ["a", "b"]
     assert payload["counts"]["added"] == 3
-    assert payload["counts"]["info_updated"] == 2
+    assert payload["counts"]["info_updated"] == 3
+    assert payload["counts"]["removed_sold"] == 1
+    assert payload["counts"]["reserved_hidden"] == 1
+    assert payload["counts"]["restored_on_sale"] == 1
     assert payload["counts"]["highlights"] == 2
     assert all(item["change_type"] == "added" and item["rank"] <= 10 for item in payload["highlights"])
 

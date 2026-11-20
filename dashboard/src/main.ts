@@ -1,10 +1,17 @@
 import './style.css'
 import { isConfigRoute, renderConfigPage } from './config-page'
 import {
-  alertTagsHtml,
-  fallbackHighlightHtml,
-  fixtureBannerHtml,
+  coverImgHtml,
+  esc,
+  gearboxClass,
+  renderCompareDrawerBody,
+  renderDetailDrawerBody,
+  renderMethodologyModalBody,
+  scoreBarsHtml,
+} from './drawer'
+import {
   blankToday,
+  fixtureBannerHtml,
   missingToday,
   normalizeToday,
   reconcileToday,
@@ -14,149 +21,24 @@ import {
   type TodayMode,
   type TodayUpdates,
 } from './today'
-
-type DataIssue = {
-  code: string
-  message: string
-  severity?: string
-  field?: string
-}
-
-type SortScores = {
-  config_proxy?: number | null
-  space_proxy?: number | null
-  fuel_proxy?: number | null
-  is_suv?: boolean
-  price?: number
-  config_norm?: number | null
-  space_norm?: number | null
-  fuel_norm?: number | null
-  price_score?: number
-  suv_score?: number
-  total_score?: number | null
-  config_score?: number | null
-  operating_cost_score?: number
-  space_score?: number
-  age_score?: number
-  mileage_score?: number
-  body_preference_score?: number
-  data_quality_score?: number
-  effective_price_wan?: number
-  score_version?: string
-}
-
-type OwnerReviews = {
-  summary?: string
-  pros?: string[]
-  cons?: string[]
-  drawbacks?: string[]
-  sources?: { title: string; url: string }[]
-  found?: boolean
-  cons_note?: string
-}
-
-type Specs = {
-  specs_found?: boolean
-  specs_approx?: boolean
-  verified?: boolean
-  match_level?: string
-  configuration_source?: string
-  powertrain_type?: string
-  engine?: string
-  wheelbase_mm?: number
-  seats?: number
-  body_type?: string
-  features?: Record<string, unknown>
-  source_url?: string
-  notes?: string
-}
-
-type Listing = {
-  sku: string
-  title: string
-  price: number
-  price_type?: string
-  year?: string
-  plate_year?: number
-  model_year?: number
-  mileage_wan?: number
-  city?: string
-  tags?: string[]
-  badges?: string[]
-  detail_url: string
-  shop_id?: string
-  brand?: string
-  manufacturer?: string
-  total_score?: number | null
-  evaluation?: string
-  rank?: number | null
-  sort_scores?: SortScores
-  owner_reviews?: OwnerReviews
-  specs?: Specs
-  detailed_config?: Specs
-  score_version?: string
-  effective_price_wan?: number
-  needs_cash_quote?: boolean
-  condition_gate?: string
-  score_warnings?: string[]
-  score_eligible?: boolean
-  data_issues?: DataIssue[]
-  config_coverage?: number
-}
-
-type Meta = {
-  shop_name?: string
-  shop_id?: string
-  filters?: Record<string, string | number>
-  price_filter?: string
-  mileage_filter?: string
-  age_filter?: string
-  captured_at?: string
-  ranked_at?: string
-  ranked_count?: number
-  data_issue_count?: number
-  filtered_count?: number
-  notes?: string
-  sort_preference?: string | string[]
-  sort_weights?: Record<string, number>
-  sort_formula?: string
-  score_version?: string
-  energy_scenario?: string
-  energy_prices?: Record<string, number>
-  finance_reserve_wan?: number
-  bev_filter?: string
-}
-
-type SortKey = 'recommend' | 'price' | 'year' | 'mileage' | 'config' | 'score'
-type TabKey = 'ranked' | 'issues' | 'today'
+import type { Listing, Meta, PresetKey, SortKey } from './types'
 
 const app = document.querySelector<HTMLDivElement>('#app')!
 
 let rankedListings: Listing[] = []
-let issueListings: Listing[] = []
 let meta: Meta | null = null
-let originalIndex = new Map<string, number>()
 let todayData: TodayUpdates = missingToday('尚未加载')
 let highlightSkus = new Set<string>()
 
 const state = {
-  tab: 'ranked' as TabKey,
-  q: '',
-  priceMin: '',
-  priceMax: '',
-  suv: 'all' as 'all' | 'yes' | 'no',
-  official: false,
-  mileageMax: '',
+  preset: 'all' as PresetKey,
   sort: 'recommend' as SortKey,
+  q: '',
+  priceMax: '',
+  activeSku: null as string | null,
+  drawerMode: null as null | 'detail' | 'today' | 'compare' | 'methodology',
   todayFilter: 'all' as TodayFilter,
-}
-
-function esc(s: unknown): string {
-  return String(s ?? '')
-    .replaceAll('&', '&amp;')
-    .replaceAll('<', '&lt;')
-    .replaceAll('>', '&gt;')
-    .replaceAll('"', '&quot;')
+  compareSkus: [] as string[],
 }
 
 function fmtTime(iso?: string): string {
@@ -164,38 +46,10 @@ function fmtTime(iso?: string): string {
   try {
     const d = new Date(iso)
     if (Number.isNaN(d.getTime())) return iso
-    return d.toLocaleString('zh-CN', { hour12: false, timeZone: 'Asia/Shanghai' }) + '（上海）'
+    return d.toLocaleString('zh-CN', { month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit', hour12: false, timeZone: 'Asia/Shanghai' })
   } catch {
     return iso
   }
-}
-
-function currentSource(): Listing[] {
-  if (state.tab === 'issues') return issueListings
-  if (state.tab === 'today') return []
-  return rankedListings
-}
-
-function hasOfficial(item: Listing): boolean {
-  return (item.badges || []).some((b) => b.includes('直营') || b.includes('官方保'))
-}
-
-function statsOf(items: Listing[]) {
-  if (!items.length) return { count: 0, avg: 0, min: 0, max: 0 }
-  const prices = items.map((x) => Number(x.price)).filter((x) => Number.isFinite(x))
-  if (!prices.length) return { count: items.length, avg: 0, min: 0, max: 0 }
-  const sum = prices.reduce((a, b) => a + b, 0)
-  return {
-    count: items.length,
-    avg: Math.round((sum / prices.length) * 100) / 100,
-    min: Math.min(...prices),
-    max: Math.max(...prices),
-  }
-}
-
-function totalOf(item: Listing): number | null {
-  const value = item.total_score ?? item.sort_scores?.total_score
-  return typeof value === 'number' && Number.isFinite(value) ? value : null
 }
 
 function isSuv(item: Listing): boolean {
@@ -203,314 +57,508 @@ function isSuv(item: Listing): boolean {
   return String(item.specs?.body_type || item.detailed_config?.body_type || '').toLowerCase().includes('suv')
 }
 
-function filtered(): Listing[] {
-  const q = state.q.trim().toLowerCase()
-  const pMin = state.priceMin === '' ? null : Number(state.priceMin)
-  const pMax = state.priceMax === '' ? null : Number(state.priceMax)
-  const mMax = state.mileageMax === '' ? null : Number(state.mileageMax)
-  const source = currentSource()
+function hasL2(item: Listing): boolean {
+  const f = (item.specs?.features || {}) as Record<string, unknown>
+  return Boolean(f.acc && f.aeb && (f.lka || f.lane_centering))
+}
 
-  let rows = source.filter((item) => {
-    if (
-      q &&
-      !(
-        item.sku.toLowerCase().includes(q) ||
-        item.title.toLowerCase().includes(q) ||
-        (item.manufacturer || '').toLowerCase().includes(q) ||
-        (item.brand || '').toLowerCase().includes(q)
-      )
-    ) return false
-    if (pMin != null && !Number.isNaN(pMin) && item.price < pMin) return false
-    if (pMax != null && !Number.isNaN(pMax) && item.price > pMax) return false
-    if (mMax != null && !Number.isNaN(mMax) && (item.mileage_wan ?? 999) > mMax) return false
-    if (state.suv === 'yes' && !isSuv(item)) return false
-    if (state.suv === 'no' && isSuv(item)) return false
-    if (state.official && !hasOfficial(item)) return false
+function matchesPreset(item: Listing, preset: PresetKey): boolean {
+  const p = item.v3_profile
+  const bt = String(item.specs?.body_type || '')
+  switch (preset) {
+    case 'at':
+      return p?.gearbox_tier === 'AT'
+    case 'under5':
+      return Number(item.price) <= 5.0
+    case 'lowmile':
+      return (item.mileage_wan ?? 99) <= 4.0
+    case 'suv':
+      return isSuv(item) || String(p?.drive_short || '').includes('四驱')
+    case 'sedan_b':
+      return bt.includes('中型车')
+    case 'l2':
+      return hasL2(item)
+    default:
+      return true
+  }
+}
+
+function filteredListings(): Listing[] {
+  const q = state.q.trim().toLowerCase()
+  const pMax = state.priceMax === '' ? null : Number(state.priceMax)
+  let rows = rankedListings.filter((item) => {
+    if (!matchesPreset(item, state.preset)) return false
+    if (pMax != null && !Number.isNaN(pMax) && Number(item.price) > pMax) return false
+    if (q) {
+      const hay = [
+        item.sku,
+        item.title,
+        item.brand || '',
+        item.manufacturer || '',
+        item.v3_profile?.gearbox_label || '',
+        item.v3_profile?.archetype_badge || '',
+      ]
+        .join(' ')
+        .toLowerCase()
+      if (!hay.includes(q)) return false
+    }
     return true
   })
 
   rows = [...rows]
-  const idx = (sku: string) => originalIndex.get(sku) ?? 999999
   switch (state.sort) {
     case 'price':
-      rows.sort((a, b) => a.price - b.price || idx(a.sku) - idx(b.sku))
+      rows.sort((a, b) => a.price - b.price || (a.rank ?? 99) - (b.rank ?? 99))
       break
-    case 'year':
-      rows.sort((a, b) => (b.plate_year || b.model_year || 0) - (a.plate_year || a.model_year || 0) || idx(a.sku) - idx(b.sku))
+    case 'discount':
+      rows.sort(
+        (a, b) =>
+          (a.v3_profile?.discount_fold ?? 99) - (b.v3_profile?.discount_fold ?? 99) ||
+          (a.rank ?? 99) - (b.rank ?? 99),
+      )
       break
     case 'mileage':
-      rows.sort((a, b) => (a.mileage_wan ?? 999) - (b.mileage_wan ?? 999) || idx(a.sku) - idx(b.sku))
+      rows.sort((a, b) => (a.mileage_wan ?? 99) - (b.mileage_wan ?? 99) || (a.rank ?? 99) - (b.rank ?? 99))
       break
     case 'config':
-      rows.sort((a, b) => Number(b.sort_scores?.config_proxy ?? -1) - Number(a.sort_scores?.config_proxy ?? -1) || idx(a.sku) - idx(b.sku))
+      rows.sort(
+        (a, b) =>
+          (b.sort_scores?.config_score ?? 0) - (a.sort_scores?.config_score ?? 0) ||
+          (a.rank ?? 99) - (b.rank ?? 99),
+      )
       break
-    case 'score':
+    case 'powertrain':
+      rows.sort(
+        (a, b) =>
+          (b.sort_scores?.powertrain_score ?? 0) - (a.sort_scores?.powertrain_score ?? 0) ||
+          (a.rank ?? 99) - (b.rank ?? 99),
+      )
+      break
     case 'recommend':
     default:
-      if (state.tab === 'issues') {
-        rows.sort((a, b) => idx(a.sku) - idx(b.sku))
-      } else {
-        rows.sort((a, b) => Number(totalOf(b) ?? -999) - Number(totalOf(a) ?? -999) || idx(a.sku) - idx(b.sku))
-      }
+      rows.sort((a, b) => (a.rank ?? 999) - (b.rank ?? 999))
   }
   return rows
 }
 
-function specsHtml(item: Listing): string {
-  const specs = item.specs || item.detailed_config
-  if (state.tab === 'issues' && (!specs?.specs_found || specs?.match_level === 'unverified_config')) {
-    return `<div class="specs muted issue-spec"><strong>详细配置</strong>：详细配置数据不足</div>`
+function isDefaultView(): boolean {
+  return state.preset === 'all' && state.sort === 'recommend' && !state.q.trim() && !state.priceMax
+}
+
+function presetCounts(): Record<PresetKey, number> {
+  return {
+    all: rankedListings.length,
+    at: rankedListings.filter((x) => matchesPreset(x, 'at')).length,
+    under5: rankedListings.filter((x) => matchesPreset(x, 'under5')).length,
+    lowmile: rankedListings.filter((x) => matchesPreset(x, 'lowmile')).length,
+    suv: rankedListings.filter((x) => matchesPreset(x, 'suv')).length,
+    sedan_b: rankedListings.filter((x) => matchesPreset(x, 'sedan_b')).length,
+    l2: rankedListings.filter((x) => matchesPreset(x, 'l2')).length,
   }
-  if (specs?.specs_found) {
-    const bits = [
-      specs.powertrain_type || '',
-      specs.engine || '',
-      specs.wheelbase_mm ? `轴距${specs.wheelbase_mm}` : '',
-      specs.seats ? `${specs.seats}座` : '',
-      specs.body_type || '',
-      specs.verified ? '精确参配' : '',
-    ].filter(Boolean)
-    const feat = specs.features || {}
-    const hi: string[] = []
-    if (feat.aeb) hi.push('AEB')
-    if (feat.cruise) hi.push(String(feat.cruise).slice(0, 16))
-    if (feat.camera_360) hi.push('360影像')
-    if (feat.seat_ventilation) hi.push('座椅通风')
-    return `<div class="specs"><strong>公开参配</strong>：${esc(bits.join(' · '))}${hi.length ? `<div class="spec-hi">${esc(hi.slice(0, 5).join(' · '))}</div>` : ''}</div>`
-  }
-  return `<div class="specs muted issue-spec"><strong>详细配置</strong>：详细配置数据不足</div>`
 }
 
-function reviewHtml(item: Listing): string {
-  const or = item.owner_reviews
-  if (!or) return ''
-  const links = (or.sources || []).slice(0, 3).map((s) => `<a href="${esc(s.url)}" target="_blank" rel="noopener noreferrer">${esc(s.title)}</a>`).join(' · ')
-  const pros = or.pros || []
-  const cons = or.cons || or.drawbacks || []
-  const parts = [
-    or.summary ? `<div class="review-summary"><strong>车主口碑</strong>：${esc(or.summary)}</div>` : '',
-    pros.length ? `<div class="pros"><strong>优点</strong>：${esc(pros.slice(0, 4).join('；'))}</div>` : '',
-    cons.length ? `<div class="cons"><strong>缺点</strong><ul>${cons.slice(0, 6).map((c) => `<li>${esc(c)}</li>`).join('')}</ul></div>` : '',
-    links ? `<div class="sources">${links}</div>` : '',
-  ].filter(Boolean)
-  return parts.length ? `<div class="review">${parts.join('')}</div>` : ''
-}
-
-function issuePanel(item: Listing): string {
-  const issues = item.data_issues || []
-  if (!issues.length && state.tab !== 'issues') return ''
-  const rows = issues.length
-    ? issues.map((x) => `<li><strong>${esc(x.message)}</strong>${x.field ? `<span>${esc(x.field)}</span>` : ''}</li>`).join('')
-    : '<li><strong>数据不足，不参与评分</strong></li>'
-  return `<div class="data-issue-panel"><div class="issue-title">数据异常 / 待补全</div><ul>${rows}</ul><div class="issue-foot">该车辆不会进入综合分、配置分及推荐排名。</div></div>`
-}
-
-function cardHtml(item: Listing): string {
-  const issueMode = state.tab === 'issues' || item.score_eligible === false
-  const featured = highlightSkus.has(item.sku)
-  const rank = item.rank ?? 0
-  const badges = item.badges || []
-  const tags = (item.tags || []).slice(0, 4)
-  const img = `/images/${item.sku}.jpg`
-  const total = totalOf(item)
-  const yearLine = item.year || [item.plate_year ? `${item.plate_year}年` : '', item.mileage_wan != null ? `${item.mileage_wan}万公里` : '', item.city || ''].filter(Boolean).join(' / ')
-  const manu = item.manufacturer || '未知厂商'
-  const brand = item.brand && item.brand !== item.manufacturer ? ` · ${item.brand}` : ''
-  const score = item.sort_scores
-  const scoreText = !issueMode && total != null
-    ? `总分 ${total.toFixed(1)} · 价${Number(score?.price_score ?? 0).toFixed(0)} · 配${Number(score?.config_score ?? score?.config_norm ?? 0).toFixed(0)} · 成本${Number(score?.operating_cost_score ?? score?.fuel_norm ?? 0).toFixed(0)} · 空${Number(score?.space_score ?? score?.space_norm ?? 0).toFixed(0)}`
-    : '未参与评分'
-  const badgeHtml = [
-    ...badges.slice(0, 3).map((b) => `<span class="pill official">${esc(b)}</span>`),
-    isSuv(item) ? `<span class="pill suv">SUV</span>` : '',
-    `<span class="pill manu">${esc(manu)}</span>`,
-  ].join('')
+function cardInnerHtml(item: Listing, hero = false): string {
+  const p = item.v3_profile
+  const rankNo = String(item.rank ?? '—').padStart(2, '0')
+  const total = item.total_score ?? item.sort_scores?.total_score
+  const compared = state.compareSkus.includes(item.sku)
+  const isNewTop = highlightSkus.has(item.sku)
+  const yearMile = [
+    item.plate_year ? `${item.plate_year}年上牌` : '',
+    item.mileage_wan != null ? `${item.mileage_wan.toFixed(2)}万公里` : '',
+    item.specs?.body_type || '',
+  ]
+    .filter(Boolean)
+    .join(' · ')
+  const mechLine = [p?.engine_summary, p?.rear_suspension_short, p?.drive_short, p?.fuel_grade]
+    .filter(Boolean)
+    .join(' · ')
+  const feats = (p?.feature_highlights || []).slice(0, hero ? 7 : 5)
 
   return `
-  <article class="card ${issueMode ? 'issue-card' : ''} ${featured ? 'highlight-card' : ''}" data-sku="${esc(item.sku)}" data-highlight="${featured ? 'true' : 'false'}">
-    <div class="cover">
-      <img src="${img}" alt="${esc(item.title)}" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='grid';" />
-      <div class="placeholder" style="display:none">暂无封面</div>
-      <div class="badges">${badgeHtml}</div>
-      ${issueMode
-        ? `<div class="score-badge issue-badge">未评分</div>`
-        : `<div class="score-badge">#${rank}<span class="score-badge-pts">${total?.toFixed(1) ?? '—'}</span></div>`}
-    </div>
-    <div class="body">
-      ${featured ? alertTagsHtml() : ''}
-      <div class="manu-line">${esc(manu)}${esc(brand)}</div>
-      <div class="title" title="${esc(item.title)}">${esc(item.title)}</div>
-      <div class="meta-row">${esc(yearLine)}</div>
-      <div class="price-row">
-        <div class="price">${Number(item.price).toFixed(2)}<small>万</small></div>
-        <div class="price-type">${esc(item.price_type || '标价')}${item.needs_cash_quote && item.effective_price_wan != null ? ` · 估${Number(item.effective_price_wan).toFixed(2)}万` : ''}</div>
+    <article class="car-card ${hero ? 'hero-card' : ''} ${item.rank === 1 ? 'rank-one' : ''} ${compared ? 'is-compared' : ''}" data-sku="${esc(item.sku)}">
+      <div class="card-media" data-open-detail="${esc(item.sku)}">
+        ${coverImgHtml(item)}
+        <div class="media-top">
+          <span class="rank-chip ${item.rank && item.rank <= 3 ? `top-${item.rank}` : ''}">#${rankNo}</span>
+          ${isNewTop ? `<span class="today-new-chip">今日新进前10</span>` : ''}
+          ${p?.discount_fold ? `<span class="fold-chip">${p.discount_fold}折</span>` : ''}
+        </div>
+        <button type="button" class="cmp-toggle ${compared ? 'active' : ''}" data-cmp-toggle="${esc(item.sku)}" aria-pressed="${compared ? 'true' : 'false'}">
+          ${compared ? '✓ 已选对比' : '+ 加入对比'}
+        </button>
       </div>
-      <div class="tags">${tags.map((t) => `<span class="tag">${esc(t)}</span>`).join('')}</div>
-      ${specsHtml(item)}
-      ${issueMode ? issuePanel(item) : (item.evaluation ? `<div class="eval"><strong>评价</strong>：${esc(item.evaluation)}</div>` : '')}
-      ${reviewHtml(item)}
-      ${!issueMode && (item.needs_cash_quote || item.condition_gate === 'MANUAL_REVIEW' || (item.score_warnings || []).length)
-        ? `<div class="warn">${item.condition_gate === 'MANUAL_REVIEW' ? '⚠️ 待人工确认。' : ''}${item.needs_cash_quote ? `分期展示价需询现金价；排序估算 ${Number(item.effective_price_wan ?? item.price).toFixed(2)} 万。` : ''}${esc((item.score_warnings || []).slice(0, 2).join('；'))}</div>`
-        : ''}
-      <div class="footer-row">
-        <span class="score">${issueMode ? '详细数据补齐前不参与评分' : `全场得分排名 #${rank} · ${esc(scoreText)}`}</span>
-        <span class="footer-actions">
-          <a class="btn-link" href="?sku=${encodeURIComponent(item.sku)}">查看完整配置</a>
-          <a class="btn-link" href="${esc(item.detail_url)}" target="_blank" rel="noopener noreferrer">详情</a>
-        </span>
+      <div class="card-body">
+        <div class="card-kicker">
+          <span class="arch-tag">${esc(p?.archetype_badge || '严选车源')}</span>
+          <span class="score-pill">严选分 <strong>${total != null ? total.toFixed(1) : '—'}</strong></span>
+        </div>
+        <h3 class="card-title" data-open-detail="${esc(item.sku)}" title="${esc(item.title)}">${esc(item.title)}</h3>
+        <div class="card-sub">${esc(yearMile)}</div>
+
+        <div class="price-block">
+          <span class="cash-price">${Number(item.price).toFixed(2)}<small>万</small></span>
+          ${p?.msrp_wan ? `<span class="msrp-info"><del>指导价 ${p.msrp_wan.toFixed(2)}万</del>${p.saved_wan ? ` · 省${p.saved_wan.toFixed(1)}万` : ''}</span>` : ''}
+        </div>
+
+        <div class="mech-bar">
+          <span class="gb-badge ${gearboxClass(p?.gearbox_tier)}">${esc(p?.gearbox_label || '自动')}</span>
+          <span class="mech-text">${esc(mechLine)}</span>
+        </div>
+
+        ${feats.length ? `<div class="feat-pills">${feats.map((f) => `<span>${esc(f)}</span>`).join('')}</div>` : ''}
+
+        ${scoreBarsHtml(item, !hero)}
+
+        <p class="advisor-line" title="${esc(p?.recommend_reason || item.evaluation || '')}">${esc(p?.recommend_reason || item.evaluation || '')}</p>
+
+        <div class="card-actions">
+          <button type="button" class="btn-report" data-open-detail="${esc(item.sku)}">买手深度报告</button>
+          <a class="btn-ghost" href="?sku=${encodeURIComponent(item.sku)}">完整参配</a>
+          <a class="btn-ghost" href="${esc(item.detail_url)}" target="_blank" rel="noopener noreferrer">原车页 ↗</a>
+        </div>
       </div>
-    </div>
-  </article>`
+    </article>`
 }
 
-function applyToday(next: TodayUpdates) {
-  todayData = reconcileToday(next, rankedListings, issueListings)
-  highlightSkus = new Set(todayData.highlights.map((item) => item.sku))
+function mastheadHtml(): string {
+  const onSale = meta?.on_sale_count ?? '—'
+  const vetoed = meta?.vetoed_count ?? '—'
+  const reserved = meta?.reserved_count ?? 0
+  const rankedCnt = rankedListings.length
+  const bd = meta?.veto_breakdown
+  const vetoDetail = bd
+    ? `新能源 ${bd.ev_phev ?? 0} / 三缸 ${bd.three_cyl ?? 0} / 干式双离合 ${bd.dry_dct ?? 0}`
+    : '纯电插混 / 三缸 / 干式双离合'
+  const todayBadge = todayData.has_snapshot
+    ? (todayData.counts.added + todayData.counts.updated_price + todayData.counts.removed_sold)
+    : 0
+
+  return `
+    <header class="masthead">
+      <div class="masthead-top">
+        <div class="brand-lockup">
+          <div class="eyebrow">DONGCHEDI WUHAN · CURATED TOP 30</div>
+          <h1>武汉店二手车看板 · Top 30 严选推荐</h1>
+          <p class="lead">专为「平时不开、仅节假日偶尔开、高配低价且好维护」重写算法与展厅体验。已实时清理全部已售车，锁单车辆自动隐藏。</p>
+        </div>
+        <div class="masthead-actions">
+          <button type="button" class="action-pill" id="btn-open-methodology">选车铁律 &amp; 权重说明</button>
+          <button type="button" class="action-pill accent" id="btn-open-today">
+            今日数据变动
+            ${todayBadge > 0 ? `<span class="action-count">${todayBadge}</span>` : ''}
+          </button>
+        </div>
+      </div>
+
+      <div class="funnel-strip">
+        <div class="funnel-step">
+          <span>在售库存</span>
+          <strong>${onSale} 台</strong>
+        </div>
+        <div class="funnel-arrow">→</div>
+        <div class="funnel-step veto">
+          <span>四大铁律剔除</span>
+          <strong>-${vetoed} 台</strong>
+          <small>${esc(vetoDetail)}</small>
+        </div>
+        ${reserved > 0 ? `
+        <div class="funnel-arrow">→</div>
+        <div class="funnel-step muted">
+          <span>锁单隐藏</span>
+          <strong>${reserved} 台</strong>
+        </div>` : ''}
+        <div class="funnel-arrow">→</div>
+        <div class="funnel-step final">
+          <span>严选入榜</span>
+          <strong>Top ${rankedCnt}</strong>
+          <small>更新于 ${esc(fmtTime(meta?.ranked_at))}</small>
+        </div>
+      </div>
+    </header>`
 }
 
-async function pullToday(): Promise<TodayUpdates> {
-  const mode = todayModeFromSearch(location.search)
-  if (mode === 'missing') {
-    return missingToday('未加载今日快照。入库完成后在仓库根目录运行 python3 scripts/export_today_updates.py。')
-  }
-  if (mode === 'blank') return blankToday()
-  const path = mode === 'fixture' ? '/data/today-updates.fixture.json' : '/data/today-updates.json'
-  try {
-    const res = await fetch(path)
-    if (!res.ok) {
-      return missingToday(
-        mode === 'fixture'
-          ? `演示数据不存在（${path} HTTP ${res.status}）。`
-          : `还没有今日更新文件（${path} HTTP ${res.status}）。在仓库根目录运行 python3 scripts/export_today_updates.py。`,
-      )
+function filterBarHtml(shown: Listing[]): string {
+  const counts = presetCounts()
+  const presets: [PresetKey, string][] = [
+    ['all', `全部严选 (${counts.all})`],
+    ['at', `成熟 AT (${counts.at})`],
+    ['under5', `5万以内 (${counts.under5})`],
+    ['lowmile', `4万km内 (${counts.lowmile})`],
+    ['suv', `SUV / 四驱 (${counts.suv})`],
+    ['sedan_b', `B级高速轿 (${counts.sedan_b})`],
+    ['l2', `带L2智驾 (${counts.l2})`],
+  ]
+  const avgPrice = shown.length ? (shown.reduce((a, b) => a + b.price, 0) / shown.length).toFixed(2) : '—'
+  const minPrice = shown.length ? Math.min(...shown.map((x) => x.price)).toFixed(2) : '—'
+
+  return `
+    <section class="filter-dock" aria-label="筛选与排序">
+      <div class="preset-row">
+        ${presets
+          .map(
+            ([k, label]) =>
+              `<button type="button" class="preset-chip ${state.preset === k ? 'active' : ''}" data-preset="${k}">${esc(label)}</button>`,
+          )
+          .join('')}
+      </div>
+      <div class="filter-controls">
+        <div class="ctrl-search">
+          <input id="ctrl-q" type="search" placeholder="搜车型 / 品牌 / SKU（如 君威 / 爱信 / 探界者）" value="${esc(state.q)}" />
+        </div>
+        <div class="ctrl-item">
+          <label for="ctrl-pmax">最高价(万)</label>
+          <input id="ctrl-pmax" type="number" min="0" max="6" step="0.1" placeholder="6.0" value="${esc(state.priceMax)}" />
+        </div>
+        <div class="ctrl-item">
+          <label for="ctrl-sort">排序</label>
+          <select id="ctrl-sort">
+            <option value="recommend" ${state.sort === 'recommend' ? 'selected' : ''}>V3 综合严选分</option>
+            <option value="powertrain" ${state.sort === 'powertrain' ? 'selected' : ''}>三大件最稳</option>
+            <option value="config" ${state.sort === 'config' ? 'selected' : ''}>配置最丰富</option>
+            <option value="discount" ${state.sort === 'discount' ? 'selected' : ''}>折旧最狠 (几折)</option>
+            <option value="price" ${state.sort === 'price' ? 'selected' : ''}>最低现金价</option>
+            <option value="mileage" ${state.sort === 'mileage' ? 'selected' : ''}>最低表显里程</option>
+          </select>
+        </div>
+        <div class="ctrl-summary">
+          显示 <strong>${shown.length}</strong> / ${rankedListings.length} 台 · 均价 <b>${avgPrice}万</b> · 起价 <b>${minPrice}万</b>
+        </div>
+      </div>
+    </section>`
+}
+
+function compareBarHtml(): string {
+  if (!state.compareSkus.length) return ''
+  const selected = state.compareSkus
+    .map((sku) => rankedListings.find((x) => x.sku === sku))
+    .filter((x): x is Listing => Boolean(x))
+  return `
+    <div class="compare-dock">
+      <div class="cmp-dock-list">
+        <span class="cmp-dock-label">已选对比 (${selected.length}/3)：</span>
+        ${selected.map((x) => `<span class="cmp-chip">#${x.rank} ${esc(x.series || x.title.slice(0, 10))} <button type="button" data-cmp-remove="${esc(x.sku)}">×</button></span>`).join('')}
+      </div>
+      <div class="cmp-dock-actions">
+        <button type="button" class="btn-clear-cmp" id="btn-clear-cmp">清空</button>
+        <button type="button" class="btn-open-cmp" id="btn-open-cmp" ${selected.length < 2 ? 'disabled' : ''}>
+          ${selected.length < 2 ? '再选 1 台开始对比' : `横向对比 (${selected.length} 台)`}
+        </button>
+      </div>
+    </div>`
+}
+
+function drawerHostHtml(): string {
+  if (!state.drawerMode) return ''
+  let title = ''
+  let body = ''
+  let extraCls = ''
+
+  if (state.drawerMode === 'detail' && state.activeSku) {
+    const item = rankedListings.find((x) => x.sku === state.activeSku)
+    if (item) {
+      title = `买手深度报告 · 严选 #${String(item.rank ?? '—').padStart(2, '0')}`
+      body = renderDetailDrawerBody(item)
+      extraCls = 'wide'
     }
-    return normalizeToday(await res.json())
-  } catch (err) {
-    const msg = err instanceof Error ? err.message : String(err)
-    return missingToday(`今日更新数据读取失败：${msg}`)
-  }
-}
-
-function rememberTab(next: TabKey) {
-  const url = new URL(location.href)
-  if (next === 'ranked') url.searchParams.delete('tab')
-  else url.searchParams.set('tab', next)
-  history.replaceState(null, '', `${url.pathname}${url.search}${url.hash}`)
-}
-
-async function setTodayMode(mode: TodayMode) {
-  const url = new URL(location.href)
-  if (mode === 'live') url.searchParams.delete('today')
-  else url.searchParams.set('today', mode)
-  history.replaceState(null, '', `${url.pathname}${url.search}${url.hash}`)
-  applyToday(await pullToday())
-  renderShell()
-}
-
-function highlightCardsHtml(): string {
-  if (!todayData.highlights.length) return ''
-  const bySku = new Map(rankedListings.map((item) => [item.sku, item]))
-  return `<div class="grid today-highlight-grid">${todayData.highlights
-    .map((item) => {
-      const listing = bySku.get(item.sku)
-      return listing ? cardHtml(listing) : fallbackHighlightHtml(item)
-    })
-    .join('')}</div>`
-}
-
-function renderShell() {
-  const source = currentSource()
-  const allStats = statsOf(source)
-  const shop = meta?.shop_name || '懂车帝汽车商城·武汉店'
-  const filters = [
-    meta?.price_filter || meta?.filters?.price || '≤6万',
-    meta?.mileage_filter || meta?.filters?.mileage || '≤10万公里',
-    meta?.age_filter || meta?.filters?.vehicle_age || '≤10年',
-    meta?.bev_filter || (meta?.filters as any)?.exclude_short_range_bev_desc || '排除短续航纯电',
-  ].join(' · ')
-  const w = meta?.sort_weights
-  const ver = meta?.score_version || 'v2'
-  const weightText = w
-    ? `算法 ${ver} · 仅详细配置核验通过车辆评分 · 权重：价格${Math.round((w.price || 0) * 100)}% + 配置${Math.round((w.config || 0) * 100)}% + 使用成本${Math.round((w.operating_cost || 0) * 100)}% + 空间${Math.round((w.space || 0) * 100)}% + 其余${Math.round(((w.age || 0) + (w.mileage || 0) + (w.body_preference || 0) + (w.data_quality || 0)) * 100)}%`
-    : `算法 ${ver}`
-
-  app.innerHTML = `
-    <header class="header">
-      <div class="brand"><h1>武汉店二手车看板</h1><span class="badge-note">非官方 · 本地抓取数据看板</span></div>
-      <div class="sub">${esc(shop)}（shop_id ${esc(meta?.shop_id || '118608')}） · 硬筛：${esc(filters)}</div>
-      <div class="sort-rule">${esc(weightText)}</div>
-      <div class="data-links">
-        <span>数据：</span>
-        <a href="/data/listings-ranked.json" target="_blank" rel="noopener noreferrer">参与评分 JSON</a>
-        <a href="/data/data-issues.json" target="_blank" rel="noopener noreferrer">数据异常 JSON</a>
-        <a href="/data/meta.json" target="_blank" rel="noopener noreferrer">meta</a>
-        <a href="/data/today-updates.json" target="_blank" rel="noopener noreferrer">今日更新 JSON</a>
-        <a href="/data/today-updates.fixture.json" target="_blank" rel="noopener noreferrer">重点推荐演示 JSON</a>
-      </div>
-    </header>
-    ${todayModeFromSearch(location.search) === 'fixture' ? fixtureBannerHtml() : ''}
-
-    <nav class="data-tabs" aria-label="车源数据状态">
-      <button class="data-tab ${state.tab === 'ranked' ? 'active' : ''}" data-tab="ranked">
-        参与评分 <span>${rankedListings.length}</span>
-      </button>
-      <button class="data-tab ${state.tab === 'issues' ? 'active issue' : ''}" data-tab="issues">
-        数据异常 / 待补全 <span>${issueListings.length}</span>
-      </button>
-      <button class="data-tab ${state.tab === 'today' ? 'active today' : ''} ${todayData.counts.highlights > 0 ? 'has-highlight' : ''}" data-tab="today">
-        今日更新 <span>${todayData.has_snapshot ? todayData.counts.total : 0}</span>
-      </button>
-    </nav>
-    ${state.tab === 'issues' ? `<div class="issue-notice"><strong>这里的车辆不参与任何排名。</strong> 详细配置不足会直接显示“详细配置数据不足”；今后价格、里程、车龄、空间、能耗等关键数据异常也统一进入这里。</div>` : ''}
-    ${state.tab === 'today' ? renderTodayPanel({
+  } else if (state.drawerMode === 'compare') {
+    const selected = state.compareSkus
+      .map((sku) => rankedListings.find((x) => x.sku === sku))
+      .filter((x): x is Listing => Boolean(x))
+    title = `严选车源横向对比（${selected.length} 台）`
+    body = renderCompareDrawerBody(selected)
+    extraCls = 'extra-wide'
+  } else if (state.drawerMode === 'methodology') {
+    title = 'V3 选车铁律与评分方法论'
+    body = renderMethodologyModalBody()
+    extraCls = 'wide'
+  } else if (state.drawerMode === 'today') {
+    title = '每日库存与价格对账日志'
+    body = renderTodayPanel({
       data: todayData,
       filter: state.todayFilter,
       fixtureMode: todayModeFromSearch(location.search) === 'fixture',
       onBoard: new Set(rankedListings.map((item) => item.sku)),
-      highlightCardsHtml: highlightCardsHtml(),
-    }) : ''}
-    ${state.tab === 'today' ? '' : `<section class="stats" id="stats">
-      <div class="stat"><div class="label">${state.tab === 'ranked' ? '评分车源' : '异常车源'}</div><div class="value" id="stat-count">${allStats.count}</div></div>
-      <div class="stat"><div class="label">均价</div><div class="value price" id="stat-avg">${allStats.count ? allStats.avg.toFixed(2) + '万' : '—'}</div></div>
-      <div class="stat"><div class="label">最低价</div><div class="value price" id="stat-min">${allStats.count ? allStats.min.toFixed(2) + '万' : '—'}</div></div>
-      <div class="stat"><div class="label">最高价</div><div class="value price" id="stat-max">${allStats.count ? allStats.max.toFixed(2) + '万' : '—'}</div></div>
-      <div class="stat"><div class="label">抓取时间</div><div class="value small-value">${esc(fmtTime(meta?.captured_at))}</div></div>
-      <div class="stat"><div class="label">排序时间</div><div class="value small-value">${esc(fmtTime(meta?.ranked_at))}</div></div>
-    </section>
+      highlightCardsHtml: '',
+    })
+    extraCls = 'wide'
+  }
 
-    <section class="controls">
-      <div class="field"><label for="q">关键词（标题/厂商/SKU）</label><input id="q" type="search" placeholder="如：哈弗 / 比亚迪 / 秦PLUS" value="${esc(state.q)}" /></div>
-      <div class="field"><label for="priceMin">最低价（万）</label><input id="priceMin" type="number" min="0" step="0.1" placeholder="不限" value="${esc(state.priceMin)}" /></div>
-      <div class="field"><label for="priceMax">最高价（万）</label><input id="priceMax" type="number" min="0" step="0.1" placeholder="不限" value="${esc(state.priceMax)}" /></div>
-      <div class="field"><label for="mileageMax">里程上限（万公里）</label><input id="mileageMax" type="number" min="0" step="0.1" placeholder="不限" value="${esc(state.mileageMax)}" /></div>
-      <div class="field"><label for="suv">车型</label><select id="suv"><option value="all" ${state.suv === 'all' ? 'selected' : ''}>全部</option><option value="yes" ${state.suv === 'yes' ? 'selected' : ''}>仅 SUV</option><option value="no" ${state.suv === 'no' ? 'selected' : ''}>非 SUV</option></select></div>
-      <div class="field"><label for="sort">排序</label><select id="sort">
-        <option value="recommend" ${state.sort === 'recommend' ? 'selected' : ''}>${state.tab === 'ranked' ? '综合总分' : '异常优先'}</option>
-        ${state.tab === 'ranked' ? `<option value="score" ${state.sort === 'score' ? 'selected' : ''}>总分</option><option value="config" ${state.sort === 'config' ? 'selected' : ''}>更高配置分</option>` : ''}
-        <option value="price" ${state.sort === 'price' ? 'selected' : ''}>更便宜</option>
-        <option value="year" ${state.sort === 'year' ? 'selected' : ''}>更新上牌</option>
-        <option value="mileage" ${state.sort === 'mileage' ? 'selected' : ''}>更低里程</option>
-      </select></div>
-      <div class="field checkbox"><input id="official" type="checkbox" ${state.official ? 'checked' : ''} /><label for="official">仅直营/官方保</label></div>
-    </section>
-
-    <div class="toolbar"><div id="result-count">显示 ${allStats.count} / ${source.length} 辆</div><div>${state.tab === 'ranked' ? '仅数据完整车辆参与综合评分' : '待补全车辆不会影响榜单排名'}</div></div>
-    <section class="grid" id="grid"></section>`}
-  `
-  bindControls()
-  if (state.tab !== 'today') renderList()
+  if (!body) return ''
+  return `
+    <div class="drawer-backdrop" id="drawer-backdrop">
+      <aside class="drawer-panel ${extraCls}" role="dialog" aria-modal="true" aria-label="${esc(title)}">
+        <div class="drawer-top">
+          <strong>${esc(title)}</strong>
+          <button type="button" class="drawer-close" id="btn-close-drawer" aria-label="关闭">✕</button>
+        </div>
+        <div class="drawer-scroll">${body}</div>
+      </aside>
+    </div>`
 }
 
-function bindControls() {
-  document.querySelectorAll<HTMLButtonElement>('.data-tab').forEach((button) => {
-    button.addEventListener('click', () => {
-      const next = button.dataset.tab as TabKey
-      if (!next || next === state.tab) return
-      state.tab = next
-      state.sort = 'recommend'
-      rememberTab(next)
-      renderShell()
+function renderCatalogSection(): string {
+  const shown = filteredListings()
+  if (!shown.length) {
+    return `<div class="empty-state">当前筛选条件下没有入围 Top 30 车源，点击“全部严选”即可重置。</div>`
+  }
+  const usePodium = isDefaultView() && shown.length >= 3
+  if (!usePodium) {
+    return `<section class="cards-grid">${shown.map((x) => cardInnerHtml(x, false)).join('')}</section>`
+  }
+  const top1 = shown[0]
+  const top23 = shown.slice(1, 3)
+  const rest = shown.slice(3)
+  return `
+    <section class="podium-section">
+      <div class="sec-head">
+        <h2>买手头号三甲 · Top 3</h2>
+        <span>机械可靠性 × 节假日刚需高配 × 高折旧性价比综合最优</span>
+      </div>
+      <div class="podium-lead">${cardInnerHtml(top1, true)}</div>
+      <div class="podium-runners">${top23.map((x) => cardInnerHtml(x, false)).join('')}</div>
+    </section>
+    ${rest.length ? `
+    <section class="catalog-section">
+      <div class="sec-head">
+        <h2>严选阵容 · 第 4 – ${shown.length} 名</h2>
+        <span>点击任意卡片查看针对性验车清单与完整车主口碑</span>
+      </div>
+      <div class="cards-grid">${rest.map((x) => cardInnerHtml(x, false)).join('')}</div>
+    </section>` : ''}`
+}
+
+function renderApp() {
+  const shown = filteredListings()
+  app.innerHTML = `
+    <div class="page-shell">
+      ${mastheadHtml()}
+      ${todayModeFromSearch(location.search) === 'fixture' ? fixtureBannerHtml() : ''}
+      ${filterBarHtml(shown)}
+      <main id="catalog-main">${renderCatalogSection()}</main>
+      <footer class="site-footer">
+        <span>数据口径：懂车帝汽车商城·武汉店（shop_id=118608）实车与现金价 + 汽车之家实测参配 + 车质网公开口碑</span>
+        <span class="footer-links">
+          <a href="/data/listings-ranked.json" target="_blank" rel="noopener noreferrer">Top 30 JSON</a>
+          <a href="/data/meta.json" target="_blank" rel="noopener noreferrer">Meta</a>
+          <a href="/data/today-updates.json" target="_blank" rel="noopener noreferrer">今日变动 JSON</a>
+        </span>
+      </footer>
+    </div>
+    ${compareBarHtml()}
+    ${drawerHostHtml()}
+  `
+  bindEvents()
+}
+
+function toggleCompare(sku: string) {
+  const idx = state.compareSkus.indexOf(sku)
+  if (idx >= 0) {
+    state.compareSkus.splice(idx, 1)
+  } else {
+    if (state.compareSkus.length >= 3) state.compareSkus.shift()
+    state.compareSkus.push(sku)
+  }
+  renderApp()
+}
+
+function bindEvents() {
+  document.querySelectorAll<HTMLButtonElement>('[data-preset]').forEach((btn) => {
+    btn.addEventListener('click', () => {
+      state.preset = (btn.dataset.preset as PresetKey) || 'all'
+      renderApp()
     })
+  })
+
+  const qInput = document.getElementById('ctrl-q') as HTMLInputElement | null
+  if (qInput) {
+    qInput.addEventListener('input', () => {
+      state.q = qInput.value
+      const pos = qInput.selectionStart
+      renderApp()
+      const nextEl = document.getElementById('ctrl-q') as HTMLInputElement | null
+      if (nextEl) {
+        nextEl.focus()
+        if (pos != null) nextEl.setSelectionRange(pos, pos)
+      }
+    })
+  }
+
+  const pMaxInput = document.getElementById('ctrl-pmax') as HTMLInputElement | null
+  pMaxInput?.addEventListener('change', () => {
+    state.priceMax = pMaxInput.value
+    renderApp()
+  })
+
+  const sortSel = document.getElementById('ctrl-sort') as HTMLSelectElement | null
+  sortSel?.addEventListener('change', () => {
+    state.sort = (sortSel.value as SortKey) || 'recommend'
+    renderApp()
+  })
+
+  document.querySelectorAll<HTMLElement>('[data-open-detail]').forEach((el) => {
+    el.addEventListener('click', (e) => {
+      if ((e.target as HTMLElement).closest('[data-cmp-toggle]')) return
+      const sku = el.dataset.openDetail
+      if (!sku) return
+      state.activeSku = sku
+      state.drawerMode = 'detail'
+      renderApp()
+    })
+  })
+
+  document.querySelectorAll<HTMLButtonElement>('[data-cmp-toggle]').forEach((btn) => {
+    btn.addEventListener('click', (e) => {
+      e.stopPropagation()
+      const sku = btn.dataset.cmpToggle
+      if (sku) toggleCompare(sku)
+    })
+  })
+
+  document.querySelectorAll<HTMLButtonElement>('[data-cmp-remove]').forEach((btn) => {
+    btn.addEventListener('click', () => {
+      const sku = btn.dataset.cmpRemove
+      if (!sku) return
+      state.compareSkus = state.compareSkus.filter((s) => s !== sku)
+      if (state.drawerMode === 'compare' && state.compareSkus.length === 0) {
+        state.drawerMode = null
+      }
+      renderApp()
+    })
+  })
+
+  document.getElementById('btn-clear-cmp')?.addEventListener('click', () => {
+    state.compareSkus = []
+    renderApp()
+  })
+
+  document.getElementById('btn-open-cmp')?.addEventListener('click', () => {
+    if (state.compareSkus.length >= 2) {
+      state.drawerMode = 'compare'
+      renderApp()
+    }
+  })
+
+  document.getElementById('btn-open-methodology')?.addEventListener('click', () => {
+    state.drawerMode = 'methodology'
+    renderApp()
+  })
+
+  document.getElementById('btn-open-today')?.addEventListener('click', () => {
+    state.drawerMode = 'today'
+    renderApp()
+  })
+
+  document.getElementById('btn-close-drawer')?.addEventListener('click', () => {
+    state.drawerMode = null
+    renderApp()
+  })
+
+  document.getElementById('drawer-backdrop')?.addEventListener('click', (e) => {
+    if ((e.target as HTMLElement).id === 'drawer-backdrop') {
+      state.drawerMode = null
+      renderApp()
+    }
   })
 
   document.getElementById('today-use-fixture')?.addEventListener('click', () => {
@@ -519,97 +567,80 @@ function bindControls() {
   document.getElementById('today-use-live')?.addEventListener('click', () => {
     void setTodayMode('live')
   })
-  document.querySelectorAll<HTMLButtonElement>('[data-today-filter]').forEach((button) => {
-    button.addEventListener('click', () => {
-      const next = button.dataset.todayFilter as TodayFilter
-      if (!next || next === state.todayFilter) return
-      state.todayFilter = next
-      renderShell()
+  document.querySelectorAll<HTMLButtonElement>('[data-today-filter]').forEach((btn) => {
+    btn.addEventListener('click', () => {
+      state.todayFilter = (btn.dataset.todayFilter as TodayFilter) || 'all'
+      renderApp()
     })
   })
-  document.querySelectorAll<HTMLButtonElement>('[data-jump-sku]').forEach((button) => {
-    button.addEventListener('click', () => {
-      const sku = button.dataset.jumpSku || ''
-      state.tab = 'ranked'
-      state.q = sku
-      state.priceMin = ''
-      state.priceMax = ''
-      state.mileageMax = ''
-      state.suv = 'all'
-      state.official = false
-      state.sort = 'recommend'
-      rememberTab('ranked')
-      renderShell()
+  document.querySelectorAll<HTMLButtonElement>('[data-jump-sku]').forEach((btn) => {
+    btn.addEventListener('click', () => {
+      const sku = btn.dataset.jumpSku || ''
+      state.activeSku = sku
+      state.drawerMode = 'detail'
+      renderApp()
     })
   })
-
-  const bind = (id: string, key: keyof typeof state, as: 'string' | 'check' = 'string') => {
-    const el = document.getElementById(id) as HTMLInputElement | HTMLSelectElement | null
-    if (!el) return
-    const handler = () => {
-      if (as === 'check') (state as any)[key] = (el as HTMLInputElement).checked
-      else (state as any)[key] = el.value
-      renderList()
-    }
-    el.addEventListener('input', handler)
-    el.addEventListener('change', handler)
-  }
-  bind('q', 'q')
-  bind('priceMin', 'priceMin')
-  bind('priceMax', 'priceMax')
-  bind('mileageMax', 'mileageMax')
-  bind('suv', 'suv')
-  bind('sort', 'sort')
-  bind('official', 'official', 'check')
 }
 
-function renderList() {
-  const rows = filtered()
-  const source = currentSource()
-  const grid = document.getElementById('grid')
-  const countEl = document.getElementById('result-count')
-  const s = statsOf(rows)
-  if (countEl) countEl.textContent = `显示 ${rows.length} / ${source.length} 辆`
-  const set = (id: string, text: string) => { const el = document.getElementById(id); if (el) el.textContent = text }
-  set('stat-count', String(s.count))
-  set('stat-avg', s.count ? `${s.avg.toFixed(2)}万` : '—')
-  set('stat-min', s.count ? `${s.min.toFixed(2)}万` : '—')
-  set('stat-max', s.count ? `${s.max.toFixed(2)}万` : '—')
-  if (!grid) return
-  if (!rows.length) {
-    grid.innerHTML = `<div class="empty">${state.tab === 'issues' ? '当前没有符合筛选条件的数据异常车源。' : '没有符合条件的车源，试试放宽筛选。'}</div>`
-    return
+async function pullToday(): Promise<TodayUpdates> {
+  const mode = todayModeFromSearch(location.search)
+  if (mode === 'missing') return missingToday('未加载今日快照。')
+  if (mode === 'blank') return blankToday()
+  const path = mode === 'fixture' ? '/data/today-updates.fixture.json' : '/data/today-updates.json'
+  try {
+    const res = await fetch(path)
+    if (!res.ok) return missingToday(`暂无今日更新数据（HTTP ${res.status}）`)
+    return normalizeToday(await res.json())
+  } catch (err) {
+    return missingToday(`今日更新读取失败：${err instanceof Error ? err.message : String(err)}`)
   }
-  grid.innerHTML = rows.map(cardHtml).join('')
 }
+
+function applyToday(next: TodayUpdates) {
+  todayData = reconcileToday(next, rankedListings, [])
+  highlightSkus = new Set(todayData.highlights.map((item) => item.sku))
+}
+
+async function setTodayMode(mode: TodayMode) {
+  const url = new URL(location.href)
+  if (mode === 'live') url.searchParams.delete('today')
+  else url.searchParams.set('today', mode)
+  history.replaceState(null, '', `${url.pathname}${url.search}${url.hash}`)
+  applyToday(await pullToday())
+  renderApp()
+}
+
+window.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape' && state.drawerMode) {
+    state.drawerMode = null
+    renderApp()
+  }
+})
 
 async function boot() {
   if (isConfigRoute()) {
     await renderConfigPage(app)
     return
   }
-  app.innerHTML = `<div class="loading">正在加载车源数据…</div>`
+  app.innerHTML = `<div class="loading-screen">正在加载 Top 30 严选展厅…</div>`
   try {
-    const requested = new URLSearchParams(location.search).get('tab')
-    if (requested === 'today' || requested === 'issues' || requested === 'ranked') state.tab = requested
+    const tabParam = new URLSearchParams(location.search).get('tab')
+    if (tabParam === 'today') state.drawerMode = 'today'
     const todayPromise = pullToday()
-    const [listRes, issueRes, metaRes] = await Promise.all([
+    const [listRes, metaRes] = await Promise.all([
       fetch('/data/listings-ranked.json'),
-      fetch('/data/data-issues.json'),
       fetch('/data/meta.json'),
     ])
     if (!listRes.ok) throw new Error(`listings-ranked.json HTTP ${listRes.status}`)
-    if (!issueRes.ok) throw new Error(`data-issues.json HTTP ${issueRes.status}`)
     if (!metaRes.ok) throw new Error(`meta.json HTTP ${metaRes.status}`)
-    rankedListings = await listRes.json()
-    issueListings = await issueRes.json()
+    rankedListings = (await listRes.json()).slice(0, 30)
     meta = await metaRes.json()
-    originalIndex = new Map([...rankedListings, ...issueListings].map((x, i) => [x.sku, i]))
     applyToday(await todayPromise)
-    renderShell()
+    renderApp()
   } catch (err) {
     const msg = err instanceof Error ? err.message : String(err)
-    app.innerHTML = `<div class="error">加载失败：${esc(msg)}</div>`
+    app.innerHTML = `<div class="error-screen">数据加载失败：${esc(msg)}</div>`
   }
 }
 

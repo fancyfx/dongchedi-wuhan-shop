@@ -110,8 +110,6 @@ def assess_score_eligibility(item: dict[str, Any]) -> dict[str, Any]:
         issues.append(_issue("age_data_insufficient", "车龄数据不足", "plate_year"))
 
     energy = resolve_ranking_energy(specs)
-    if energy.get("value") is None or float(energy.get("confidence") or 0.0) <= 0:
-        issues.append(_issue("energy_data_insufficient", "能耗数据不足，无法可靠计算使用成本", "ranking_energy"))
 
     deduped: list[dict[str, Any]] = []
     seen: set[str] = set()

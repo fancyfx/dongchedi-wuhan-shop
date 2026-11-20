@@ -203,6 +203,12 @@ def _spec_from_source(src: dict[str, Any]) -> int | None:
 
 def _spec_from_listing(item: dict[str, Any]) -> int | None:
     specs = item.get("specs")
+    if isinstance(specs, dict):
+        lid = specs.get("live_spec_id")
+        if isinstance(lid, int) and not isinstance(lid, bool):
+            return lid
+        if isinstance(lid, str) and lid.isdigit():
+            return int(lid)
     sources = specs.get("verification_sources") if isinstance(specs, dict) else None
     if not isinstance(sources, list):
         return None

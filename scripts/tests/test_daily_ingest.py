@@ -21,6 +21,7 @@ from dcd_fetch import (  # noqa: E402
     fetch_shop_batch,
     normalize_card,
     parse_cash_price,
+    parse_sale_status,
 )
 from display_gate import ranked_threshold  # noqa: E402
 from filters import admission_reason, is_zhiying, keep_listing  # noqa: E402
@@ -137,6 +138,7 @@ def test_added_updated_and_top100_gate():
         ranked,
         incoming,
         rejected_hard=[],
+        admit_below_threshold=False,
         display_limit=2,
         now="2026-11-03T12:00:00+08:00",
     )
@@ -167,6 +169,7 @@ def test_new_car_tie_that_misses_the_board_is_not_stored():
         inventory,
         incoming,
         rejected_hard=[],
+        admit_below_threshold=False,
         display_limit=1,
         now="2026-11-03T12:00:00+08:00",
     )
@@ -364,6 +367,85 @@ def test_pipeline_snapshots_and_dry_run_do_not_touch_catalog():
         assert raw["data"]["event_info"]["search_id"] == "SNAP"
 
 
+def test_parse_sale_status_and_missing_reconcile():
+    sold_payload = {
+        "status": 0,
+        "data": {
+            "product": {
+                "product_status": 0,
+                "sku_list": [{"sku_id": "1", "sku_price": {"price": 4490000, "price_str": "4.49"}}],
+            },
+            "component_list": {"bottom_bar": {"bottom_bar_list": [{"text": "车辆已售出"}]}},
+        },
+    }
+    reserved_payload = {
+        "status": 0,
+        "data": {
+            "product": {
+                "product_status": 5,
+                "business_info": {"latest_reserved_time": "1794985553"},
+                "sku_list": [{"sku_id": "2", "sku_price": {"price": 3990000, "price_str": "3.99"}}],
+            },
+            "component_list": {"bottom_bar": {"bottom_bar_list": [{"text": "收藏"}, {"text": "电话"}]}},
+        },
+    }
+    onsale_payload = {
+        "status": 0,
+        "data": {
+            "product": {
+                "product_status": 1,
+                "sku_list": [{"sku_id": "3", "sku_price": {"price": 4990000, "price_str": "4.99"}}],
+            },
+            "component_list": {"bottom_bar": {"bottom_bar_list": [{"text": "立即订购"}]}},
+        },
+    }
+    assert parse_sale_status(sold_payload)["sale_status"] == "sold"
+    assert parse_sale_status(reserved_payload)["sale_status"] == "reserved"
+    assert parse_sale_status(onsale_payload)["sale_status"] == "on_sale"
+
+    inv = [
+        _scored("sold_sku", 90, price=4.5),
+        _scored("res_sku", 85, price=4.0),
+        _scored("err_sku", 80, price=4.2),
+    ]
+    res1 = apply_catalog_update(
+        inv,
+        inv,
+        incoming=[],
+        rejected_hard=[],
+        reconciled_missing={
+            "sold_sku": {"status": "sold", "product_status": 0, "reason": "product_status_0_sold"},
+            "res_sku": {"status": "reserved", "product_status": 5, "reason": "product_status_5_reserved"},
+            "err_sku": {"status": "detail_failed", "reason": "timeout"},
+        },
+        display_limit=30,
+        now="2026-11-21T00:00:00+08:00",
+    )
+    inv_skus = {x["sku"] for x in res1["inventory"]}
+    ranked_skus = {x["sku"] for x in res1["ranked"]}
+    assert "sold_sku" not in inv_skus
+    assert "res_sku" in inv_skus and "res_sku" not in ranked_skus
+    assert "err_sku" in inv_skus and "err_sku" in ranked_skus
+    res_row = next(x for x in res1["inventory"] if x["sku"] == "res_sku")
+    assert res_row["sale_status"] == "reserved"
+    kinds = {(r["sku"], r["change_type"]) for r in res1["changelog"]}
+    assert ("sold_sku", "removed_sold") in kinds
+    assert ("res_sku", "reserved_hidden") in kinds
+    assert ("err_sku", "detail_failed") in kinds
+
+    # Reserved car returning to list restores on_sale and re-enters ranked
+    res2 = apply_catalog_update(
+        res1["inventory"],
+        res1["ranked"],
+        incoming=[_scored("res_sku", 85, price=4.0, sale_status="on_sale")],
+        rejected_hard=[],
+        display_limit=30,
+        now="2026-11-21T01:00:00+08:00",
+    )
+    assert "res_sku" in {x["sku"] for x in res2["ranked"]}
+    assert ("res_sku", "restored_on_sale") in {(r["sku"], r["change_type"]) for r in res2["changelog"]}
+
+
 def main() -> None:
     tests = [
         test_zhiying_maps_self_trade_and_rejects_marketing_copy,
@@ -375,6 +457,7 @@ def main() -> None:
         test_removed_when_existing_car_fails_hard_filter,
         test_search_id_paging_shop_filter_and_cash_price,
         test_pipeline_snapshots_and_dry_run_do_not_touch_catalog,
+        test_parse_sale_status_and_missing_reconcile,
     ]
     failed = 0
     for fn in tests:

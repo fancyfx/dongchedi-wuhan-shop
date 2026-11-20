@@ -125,6 +125,41 @@ def parse_cash_price(detail: dict[str, Any]) -> dict[str, Any]:
     }
 
 
+def parse_sale_status(detail: dict[str, Any]) -> dict[str, Any]:
+    """Extract on_sale / reserved / sold status from detail payload."""
+    data = detail.get("data") or {}
+    product = data.get("product") or {}
+    product_status = product.get("product_status")
+    binfo = product.get("business_info") or {}
+    bottom_bar = ((data.get("component_list") or {}).get("bottom_bar") or {}).get("bottom_bar_list") or []
+    bottom_bar_texts = [str(btn.get("text") or "").strip() for btn in bottom_bar if isinstance(btn, dict)]
+    status_modify_time = str(binfo.get("trade_car_status_modify_time") or "").strip() or None
+    latest_reserved_time = str(binfo.get("latest_reserved_time") or "").strip() or None
+    sign_order_id = str(binfo.get("finish_sale_cont_sign_order_id") or "").strip()
+
+    sold_text = any("已售" in t or "售出" in t for t in bottom_bar_texts)
+    has_buy_btn = any("立即订购" in t for t in bottom_bar_texts)
+    if product_status == 0 or sold_text or bool(sign_order_id):
+        sale_status = "sold"
+    elif product_status == 5 or (
+        product_status not in (0, 1, None) and not has_buy_btn and latest_reserved_time is not None
+    ):
+        sale_status = "reserved"
+    elif product_status == 1:
+        sale_status = "on_sale"
+    else:
+        cash = parse_cash_price(detail)
+        sale_status = "on_sale" if cash.get("cash_price_wan") is not None else "unknown"
+
+    return {
+        "sale_status": sale_status,
+        "product_status": product_status,
+        "bottom_bar_texts": bottom_bar_texts,
+        "status_modify_time": status_modify_time,
+        "latest_reserved_time": latest_reserved_time,
+    }
+
+
 def normalize_card(card: dict[str, Any], detail: dict[str, Any] | None = None) -> dict[str, Any]:
     product = card.get("product") or {}
     event = product.get("event_info") or {}
@@ -200,6 +235,12 @@ def normalize_card(card: dict[str, Any], detail: dict[str, Any] | None = None) -
         if cash.get("shop_id"):
             item["shop_id"] = str(cash["shop_id"])
             item["detail_shop_id"] = str(cash["shop_id"])
+        sale = parse_sale_status(detail)
+        item["sale_status"] = sale["sale_status"]
+        if sale["product_status"] is not None:
+            item["product_status"] = sale["product_status"]
+        if sale["status_modify_time"]:
+            item["status_modify_time"] = sale["status_modify_time"]
     return item
 
 

@@ -1,17 +1,21 @@
-"""Top-100 display gate shared by daily ingest and rerank_v2.
+"""Top-30 display gate shared by daily ingest and rerank_v2.
 
 The score cutoff is the current library's Nth total_score. It is never a
-hard-coded constant. N defaults to 100.
+hard-coded constant. N defaults to 30.
 """
 from __future__ import annotations
 
 from typing import Any
 
-DISPLAY_LIMIT = 100
+DISPLAY_LIMIT = 30
 
 
 def numeric_score(item: dict[str, Any] | None) -> float | None:
     if not item:
+        return None
+    if item.get("sale_status") in {"sold", "reserved"}:
+        return None
+    if item.get("recommendation_gate") == "VETO":
         return None
     if item.get("score_eligible") is False:
         return None
@@ -28,9 +32,9 @@ def numeric_score(item: dict[str, Any] | None) -> float | None:
 def display_sort_key(item: dict[str, Any]) -> tuple:
     """Best-first key. Matches rerank_v2, with sku as a stable tie-break."""
     return (
-        0 if item.get("condition_gate") != "REJECT" else 1,
+        0 if item.get("condition_gate") != "REJECT" and item.get("recommendation_gate") != "VETO" else 1,
         -(numeric_score(item) if numeric_score(item) is not None else float(item.get("total_score") or 0)),
-        -float((item.get("sort_scores") or {}).get("price_score") or 0),
+        -float((item.get("sort_scores") or {}).get("powertrain_score") or (item.get("sort_scores") or {}).get("price_score") or 0),
         float(item.get("effective_price_wan") or item.get("price") or 99),
         float(item.get("mileage_wan") or 99),
         str(item.get("sku") or ""),

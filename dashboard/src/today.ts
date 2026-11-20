@@ -29,6 +29,9 @@ export type TodayCounts = {
   rejected_hard_filter: number
   rejected_below_top100: number
   removed_hard_filter: number
+  removed_sold: number
+  reserved_hidden: number
+  restored_on_sale: number
   detail_failed: number
   not_admitted: number
   other: number
@@ -70,8 +73,11 @@ const CHANGE_LABEL: Record<string, string> = {
   updated_price: '价格更新',
   display_dropped: '跌出展示',
   rejected_hard_filter: '硬筛未过',
-  rejected_below_top100: '未进前100',
+  rejected_below_top100: '未进展示榜',
   removed_hard_filter: '移出库存',
+  removed_sold: '已售清理',
+  reserved_hidden: '锁单隐藏',
+  restored_on_sale: '退订恢复',
   detail_failed: '详情失败',
 }
 
@@ -80,6 +86,9 @@ const REASON_LABEL: Record<string, string> = {
   no_score: '算不出分数，未入库',
   score_below_threshold: '低于展示门槛，未入库',
   not_in_display_top100: '同分未进展示名额，未入库',
+  product_status_0_sold: '懂车帝接口确认已售出，已从库存清理',
+  product_status_5_reserved: '车辆已被预订锁单，留库但移出展示榜',
+  returned_to_on_sale: '锁单释放恢复在售',
   fixture_price_change: '演示用的价格变动',
   fixture_info_change: '演示用的信息变动',
 }
@@ -105,6 +114,9 @@ export function emptyCounts(): TodayCounts {
     rejected_hard_filter: 0,
     rejected_below_top100: 0,
     removed_hard_filter: 0,
+    removed_sold: 0,
+    reserved_hidden: 0,
+    restored_on_sale: 0,
     detail_failed: 0,
     not_admitted: 0,
     other: 0,
@@ -129,6 +141,10 @@ export function countItems(items: TodayItem[]): TodayCounts {
         counts.updated_price += 1
         counts.info_updated += 1
         break
+      case 'restored_on_sale':
+        counts.restored_on_sale += 1
+        counts.info_updated += 1
+        break
       case 'display_dropped':
         counts.display_dropped += 1
         break
@@ -141,6 +157,12 @@ export function countItems(items: TodayItem[]): TodayCounts {
       case 'removed_hard_filter':
         counts.removed_hard_filter += 1
         break
+      case 'removed_sold':
+        counts.removed_sold += 1
+        break
+      case 'reserved_hidden':
+        counts.reserved_hidden += 1
+        break
       case 'detail_failed':
         counts.detail_failed += 1
         break
@@ -149,7 +171,11 @@ export function countItems(items: TodayItem[]): TodayCounts {
     }
   }
   counts.not_admitted =
-    counts.rejected_hard_filter + counts.rejected_below_top100 + counts.removed_hard_filter + counts.detail_failed
+    counts.rejected_hard_filter +
+    counts.rejected_below_top100 +
+    counts.removed_hard_filter +
+    counts.removed_sold +
+    counts.detail_failed
   return counts
 }
 
@@ -387,8 +413,15 @@ function listEmptyMessage(data: TodayUpdates, filter: TodayFilter): string {
 function matchesFilter(item: TodayItem, filter: TodayFilter): boolean {
   if (filter === 'all') return true
   if (filter === 'added') return item.change_type === 'added'
-  if (filter === 'info') return item.change_type === 'updated' || item.change_type === 'updated_price'
-  return item.change_type !== 'added' && item.change_type !== 'updated' && item.change_type !== 'updated_price'
+  if (filter === 'info') {
+    return item.change_type === 'updated' || item.change_type === 'updated_price' || item.change_type === 'restored_on_sale'
+  }
+  return (
+    item.change_type !== 'added' &&
+    item.change_type !== 'updated' &&
+    item.change_type !== 'updated_price' &&
+    item.change_type !== 'restored_on_sale'
+  )
 }
 
 export function fallbackHighlightHtml(item: TodayItem): string {

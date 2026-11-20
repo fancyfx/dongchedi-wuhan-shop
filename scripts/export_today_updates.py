@@ -171,6 +171,9 @@ def count_items(items: list[dict[str, Any]]) -> dict[str, int]:
         "rejected_hard_filter": 0,
         "rejected_below_top100": 0,
         "removed_hard_filter": 0,
+        "removed_sold": 0,
+        "reserved_hidden": 0,
+        "restored_on_sale": 0,
         "detail_failed": 0,
         "not_admitted": 0,
         "other": 0,
@@ -184,6 +187,9 @@ def count_items(items: list[dict[str, Any]]) -> dict[str, int]:
         "rejected_hard_filter",
         "rejected_below_top100",
         "removed_hard_filter",
+        "removed_sold",
+        "reserved_hidden",
+        "restored_on_sale",
         "detail_failed",
     }
     for item in items:
@@ -194,11 +200,12 @@ def count_items(items: list[dict[str, Any]]) -> dict[str, int]:
             counts[kind] += 1
         elif kind not in known:
             counts["other"] += 1
-    counts["info_updated"] = counts["updated"] + counts["updated_price"]
+    counts["info_updated"] = counts["updated"] + counts["updated_price"] + counts["restored_on_sale"]
     counts["not_admitted"] = (
         counts["rejected_hard_filter"]
         + counts["rejected_below_top100"]
         + counts["removed_hard_filter"]
+        + counts["removed_sold"]
         + counts["detail_failed"]
     )
     return counts

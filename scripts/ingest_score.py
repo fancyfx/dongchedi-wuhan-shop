@@ -36,6 +36,7 @@ def prepare_and_score(item: dict[str, Any], verified_by_sku: dict[str, dict[str,
     from ranking_v2.apply_verified import (
         apply_verified_record,
         effective_price_fields,
+        enrich_specs_with_live_tree,
         sanitize_unverified_listing,
     )
     from rerank_v2 import score_one
@@ -44,7 +45,12 @@ def prepare_and_score(item: dict[str, Any], verified_by_sku: dict[str, dict[str,
     if sku in verified_by_sku:
         item = apply_verified_record(item, verified_by_sku[sku])
     elif not _is_exact(item.get("specs")):
-        item = sanitize_unverified_listing(item)
+        if item.get("title"):
+            item = enrich_specs_with_live_tree(item, allow_title_match=True)
+        if not _is_exact(item.get("specs")):
+            item = sanitize_unverified_listing(item)
+    else:
+        item = enrich_specs_with_live_tree(item, allow_title_match=False)
     cash = item.get("cash_price_wan")
     priced = effective_price_fields(
         float(item.get("price") or 0),

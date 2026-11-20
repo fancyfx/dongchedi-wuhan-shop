@@ -218,6 +218,7 @@ def _verified_specs_from_trim(trim: dict[str, Any]) -> dict[str, Any]:
 
     specs.update(
         {
+            "msrp_wan": trim.get("msrp_wan"),
             "match_level": "exact_trim",
             "trim_id": trim.get("trim_id"),
             "canonical_title": trim.get("canonical_title"),
@@ -235,12 +236,80 @@ def _verified_specs_from_trim(trim: dict[str, Any]) -> dict[str, Any]:
     return specs
 
 
+def enrich_specs_with_live_tree(item: dict[str, Any], *, allow_title_match: bool = True) -> dict[str, Any]:
+    """Attach live-config mechanical metadata, or recover exact specs for unindexed trims."""
+    from .live_specs import build_specs_from_live_profile, extract_live_profile, resolve_spec_id
+
+    specs = dict(item.get("specs") or {})
+    exact = (
+        specs.get("match_level") == "exact_trim"
+        and specs.get("verified") is True
+        and specs.get("specs_found") is True
+        and specs.get("configuration_source") == "exact_trim_v3"
+    )
+    for src in specs.get("verification_sources") or []:
+        if isinstance(src, dict) and src.get("spec_id"):
+            break
+    spec_id = resolve_spec_id(item, allow_title_match=allow_title_match and not exact)
+    profile = extract_live_profile(str(spec_id)) if spec_id else None
+    if not profile:
+        return item
+
+    item = copy.deepcopy(item)
+    if not exact:
+        built = build_specs_from_live_profile(profile)
+        item["specs"] = built
+        item["detailed_config"] = built
+        specs = built
+    else:
+        if specs.get("msrp_wan") is None and profile.get("msrp_wan") is not None:
+            specs["msrp_wan"] = profile["msrp_wan"]
+        if str(specs.get("engine") or "").strip() in ("", "●") and profile.get("engine_text"):
+            specs["engine"] = profile["engine_text"]
+        if not specs.get("body_type") and profile.get("body_type"):
+            specs["body_type"] = profile["body_type"]
+        if specs.get("wheelbase_mm") is None and profile.get("wheelbase_mm") is not None:
+            specs["wheelbase_mm"] = profile["wheelbase_mm"]
+        if specs.get("length_mm") is None and profile.get("length_mm") is not None:
+            specs["length_mm"] = profile["length_mm"]
+        if specs.get("width_mm") is None and profile.get("width_mm") is not None:
+            specs["width_mm"] = profile["width_mm"]
+        if specs.get("height_mm") is None and profile.get("height_mm") is not None:
+            specs["height_mm"] = profile["height_mm"]
+        if specs.get("seats") is None and profile.get("seats") is not None:
+            specs["seats"] = profile["seats"]
+
+    for k in (
+        "engine_model",
+        "cylinders",
+        "intake",
+        "fuel_injection",
+        "horsepower_ps",
+        "torque_nm",
+        "transmission_type",
+        "transmission_short",
+        "rear_suspension",
+        "drive_type",
+        "energy_type",
+        "knee_airbag",
+        "has_reverse_camera",
+        "has_fixed_cruise",
+    ):
+        val = profile.get(k)
+        if val not in (None, ""):
+            specs[k] = val
+    specs["live_spec_id"] = profile["spec_id"]
+    item["specs"] = specs
+    item["detailed_config"] = specs
+    return item
+
+
 def apply_verified_record(item: dict[str, Any], verified: dict[str, Any]) -> dict[str, Any]:
     item = copy.deepcopy(item)
     trim = verified.get("trim") or verified
     item["specs"] = _verified_specs_from_trim(trim)
     item["detailed_config"] = item["specs"]
-    return item
+    return enrich_specs_with_live_tree(item, allow_title_match=False)
 
 
 def sanitize_unverified_listing(item: dict[str, Any]) -> dict[str, Any]:
@@ -311,7 +380,13 @@ def apply_verified_to_listings(
         if sku in verified_by_sku:
             item = apply_verified_record(item, verified_by_sku[sku])
         else:
-            item = sanitize_unverified_listing(item)
+            if item.get("title"):
+                item = enrich_specs_with_live_tree(item, allow_title_match=True)
+            if not (
+                (item.get("specs") or {}).get("match_level") == "exact_trim"
+                and (item.get("specs") or {}).get("verified") is True
+            ):
+                item = sanitize_unverified_listing(item)
 
         ep = effective_price_fields(
             float(item.get("price") or 0),
