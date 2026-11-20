@@ -8,7 +8,7 @@
 - 今日更新：入库后 `python3 scripts/export_today_updates.py` 生成 `dashboard/public/data/today-updates.json`（重点推荐 = 新入库且全场排名 ≤ 10）。说明见 `docs/local-data-refresh.md`
 - 说明：H5 须微信 UA；页面「共 N 辆」可能含外店，入库以本店 sku 为准
 
-公开仓，供比价与晨检监控；看板 https://dongchedi-wuhan-dashboard.vercel.app 。
+公开仓，供比价与晨检监控；看板 https://dongchedi-wuhan-top30.vercel.app 。
 
 ## 评分（2026-11-02）
 

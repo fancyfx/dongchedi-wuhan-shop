@@ -16,9 +16,9 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 15
     env:
-      VERCEL_ORG_ID: team_rxJFSxoFrSYXv0tDEnhDshzj
-      VERCEL_PROJECT_ID: prj_a8UysKfmYIDkBhmUH5oBmRSCC7qB
-      PRODUCTION_URL: https://dongchedi-wuhan-dashboard.vercel.app
+      VERCEL_ORG_ID: team_KxBtuvR8YD9P74kXXzSbp40T
+      VERCEL_PROJECT_ID: prj_2z69IrHj0QW2QPZ0Erfu1aEPLtMl
+      PRODUCTION_URL: https://dongchedi-wuhan-top30.vercel.app
 
     steps:
       - name: Checkout latest main
