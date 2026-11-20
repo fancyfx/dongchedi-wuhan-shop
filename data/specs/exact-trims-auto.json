@@ -22961,6 +22961,139 @@
         }
       ],
       "trim_id": "trim_ah_d53146e1d30f"
+    },
+    "trim_ah_a1a2715f7197": {
+      "canonical_title": "长安CS85 COUPE 2019款 1.5T 动版 国VI",
+      "msrp_wan": 12.99,
+      "core_specs": {
+        "powertrain": "ice",
+        "body_type": "中型SUV",
+        "seats": null,
+        "engine": "●",
+        "transmission": "湿式双离合变速箱(DCT)",
+        "length_mm": 4720,
+        "width_mm": 1845,
+        "height_mm": 1665,
+        "wheelbase_mm": 2705,
+        "fuel_grade": "92",
+        "official_fuel_l_100km": 6.8,
+        "official_standard": "NEDC",
+        "low_soc_fuel_l_100km": null,
+        "real_world_fuel_l_100km": null,
+        "real_world_sample_n": null,
+        "ev_range_km": null,
+        "ev_range_standard": null,
+        "electric_kwh_100km": null,
+        "ranking_energy": {
+          "type": "official_nedc_with_uncertainty",
+          "value": 6.8,
+          "unit": "L/100km",
+          "fallback_multiplier_recommended": 1.2
+        }
+      },
+      "features": {
+        "passive_safety": {
+          "front_airbags": true,
+          "front_side_airbags": true,
+          "curtain_airbags": false,
+          "tpms_display": true
+        },
+        "active_safety": {
+          "esp": true,
+          "aeb": false,
+          "fcw": null,
+          "ldw": false,
+          "lka": false,
+          "lane_centering": null,
+          "bsd": false,
+          "dow": null,
+          "rear_collision_warning": null,
+          "traffic_sign_recognition": false,
+          "fatigue_warning": false
+        },
+        "parking_adas": {
+          "front_parking_radar": false,
+          "rear_parking_radar": true,
+          "reverse_camera": true,
+          "surround_360": false,
+          "transparent_chassis_540": null,
+          "cruise": "fixed",
+          "adas_level": null,
+          "auto_park": false,
+          "remote_park": null
+        },
+        "comfort": {
+          "sunroof": "single_openable",
+          "power_tailgate": false,
+          "hands_free_tailgate": false,
+          "keyless_entry": true,
+          "keyless_start": true,
+          "remote_start": false,
+          "hud": false,
+          "wireless_phone_charging": false,
+          "driver_power_seat": true,
+          "passenger_power_seat": true,
+          "front_seat_heating": false,
+          "front_seat_ventilation": false,
+          "rear_air_vents": true,
+          "climate_control": "automatic_dual_zone",
+          "leather_seats": false
+        },
+        "infotainment": {
+          "center_screen_inches": 12.3,
+          "instrument_screen_inches": 7.0,
+          "carplay": null,
+          "carlife": null,
+          "connected_car": true,
+          "ota": true,
+          "speaker_count": 8,
+          "branded_audio": "-",
+          "voice_control": true,
+          "full_lcd_cluster": false,
+          "chip_8155": null,
+          "phone_link": false
+        },
+        "lighting": {
+          "headlights": "LED",
+          "auto_headlights": true,
+          "adaptive_high_beam": false
+        },
+        "wheels": {
+          "front_tire": "-",
+          "rear_tire": "-"
+        },
+        "optional_or_uncertain_features": []
+      },
+      "data_quality": {
+        "core_confidence": 0.963,
+        "feature_confidence": "high",
+        "verified_non_null_feature_leaf_count": 42,
+        "scoring_rule": "Only exact-trim standard features may score. null/optional features score 0.",
+        "known_issues": [],
+        "identity_source": "autohome_exact_trim",
+        "series_match": 1.0,
+        "trim_match": 0.94,
+        "source_snapshot": "live"
+      },
+      "sources": [
+        {
+          "url": "https://car.autohome.com.cn/config/spec/39461.html",
+          "source_type": "autohome_live_config",
+          "authority_tier": 1,
+          "series_id": 4885,
+          "spec_id": 39461,
+          "parameter_source": "live_page"
+        },
+        {
+          "url": "https://github.com/swoiow/autohome",
+          "source_type": "autohome_parameter_dataset",
+          "authority_tier": 3,
+          "snapshot": "identity_match_only",
+          "source_path": "live:config/spec/39461.html",
+          "note": "vault/main used for exact-trim identity; parameters from live page"
+        }
+      ],
+      "trim_id": "trim_ah_a1a2715f7197"
     }
   },
   "configuration_policy": "new-full-config-only; AutoHome exact-trim parameters only; legacy shards/approximate config forbidden"
