@@ -2,6 +2,9 @@ name: Deploy dashboard to Vercel
 
 on:
   workflow_dispatch:
+  push:
+    tags:
+      - "*"
 
 permissions:
   contents: read
@@ -21,10 +24,9 @@ jobs:
       PRODUCTION_URL: https://dongchedi-wuhan-top30.vercel.app
 
     steps:
-      - name: Checkout latest main
+      - name: Checkout target ref
         uses: actions/checkout@v4
         with:
-          ref: main
           fetch-depth: 1
 
       - name: Set up Node
@@ -49,7 +51,7 @@ jobs:
         shell: bash
         run: |
           echo "DEPLOY_SHA=$(git rev-parse HEAD)" >> "$GITHUB_ENV"
-          echo "Deploying commit: $(git rev-parse HEAD)"
+          echo "Deploying ref: ${{ github.ref_name }} (${{ github.event_name }}) @ $(git rev-parse HEAD)"
 
       - name: Pull Vercel production settings
         env:
@@ -72,6 +74,7 @@ jobs:
           {
             echo "### Vercel production deployment"
             echo ""
+            echo "- Ref: \`${{ github.ref_name }}\` (${{ github.event_name }})"
             echo "- Commit: \`$DEPLOY_SHA\`"
             echo "- Deployment: $DEPLOY_URL"
             echo "- Production alias: $PRODUCTION_URL"
