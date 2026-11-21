@@ -3,7 +3,7 @@
   "spec_id": 30531,
   "title": "逍客 2017款 2.0L CVT智享版 国V",
   "url": "https://car.autohome.com.cn/config/spec/30531.html",
-  "fetched_at": "2026-11-04T03:53:09.503Z",
+  "fetched_at": "2026-11-21T21:20:21+08:00",
   "legend": {
     "standard": "●",
     "optional": "○",
@@ -21,6 +21,10 @@
         {
           "name": "厂商指导价(元)",
           "value": "15.78万"
+        },
+        {
+          "name": "经销商报价",
+          "value": "暂无报价"
         },
         {
           "name": "厂商",
@@ -92,7 +96,14 @@
         },
         {
           "name": "整车质保",
-          "value": "● 三年或10万公里"
+          "value": "● 三年或10万公里",
+          "lines": [
+            {
+              "name": "三年或10万公里",
+              "value": "●",
+              "mark": "standard"
+            }
+          ]
         },
         {
           "name": "整备质量(kg)",
@@ -142,11 +153,25 @@
         },
         {
           "name": "车门数(个)",
-          "value": "● 5"
+          "value": "● 5",
+          "lines": [
+            {
+              "name": "5",
+              "value": "●",
+              "mark": "standard"
+            }
+          ]
         },
         {
           "name": "座位数(个)",
-          "value": "● 5"
+          "value": "● 5",
+          "lines": [
+            {
+              "name": "5",
+              "value": "●",
+              "mark": "standard"
+            }
+          ]
         },
         {
           "name": "油箱容积(L)",
@@ -276,19 +301,47 @@
       "items": [
         {
           "name": "驱动方式",
-          "value": "● 前置前驱"
+          "value": "● 前置前驱",
+          "lines": [
+            {
+              "name": "前置前驱",
+              "value": "●",
+              "mark": "standard"
+            }
+          ]
         },
         {
           "name": "前悬架类型",
-          "value": "● 麦弗逊式独立悬架"
+          "value": "● 麦弗逊式独立悬架",
+          "lines": [
+            {
+              "name": "麦弗逊式独立悬架",
+              "value": "●",
+              "mark": "standard"
+            }
+          ]
         },
         {
           "name": "后悬架类型",
-          "value": "● 多连杆式独立悬架"
+          "value": "● 多连杆式独立悬架",
+          "lines": [
+            {
+              "name": "多连杆式独立悬架",
+              "value": "●",
+              "mark": "standard"
+            }
+          ]
         },
         {
           "name": "助力类型",
-          "value": "● 电动助力"
+          "value": "● 电动助力",
+          "lines": [
+            {
+              "name": "电动助力",
+              "value": "●",
+              "mark": "standard"
+            }
+          ]
         },
         {
           "name": "车体结构",
@@ -302,27 +355,69 @@
       "items": [
         {
           "name": "前制动器类型",
-          "value": "● 通风盘式"
+          "value": "● 通风盘式",
+          "lines": [
+            {
+              "name": "通风盘式",
+              "value": "●",
+              "mark": "standard"
+            }
+          ]
         },
         {
           "name": "后制动器类型",
-          "value": "● 盘式"
+          "value": "● 盘式",
+          "lines": [
+            {
+              "name": "盘式",
+              "value": "●",
+              "mark": "standard"
+            }
+          ]
         },
         {
           "name": "驻车制动类型",
-          "value": "● 手刹"
+          "value": "● 手刹",
+          "lines": [
+            {
+              "name": "手刹",
+              "value": "●",
+              "mark": "standard"
+            }
+          ]
         },
         {
           "name": "前轮胎规格",
-          "value": "● 215/55 R18"
+          "value": "● 215/55 R18",
+          "lines": [
+            {
+              "name": "215/55 R18",
+              "value": "●",
+              "mark": "standard"
+            }
+          ]
         },
         {
           "name": "后轮胎规格",
-          "value": "● 215/55 R18"
+          "value": "● 215/55 R18",
+          "lines": [
+            {
+              "name": "215/55 R18",
+              "value": "●",
+              "mark": "standard"
+            }
+          ]
         },
         {
           "name": "备胎规格",
-          "value": "● 非全尺寸"
+          "value": "● 非全尺寸",
+          "lines": [
+            {
+              "name": "非全尺寸",
+              "value": "●",
+              "mark": "standard"
+            }
+          ]
         }
       ]
     },
@@ -332,15 +427,15 @@
       "items": [
         {
           "name": "主/副驾驶座安全气囊",
-          "value": "主● / 副●"
+          "value": "主● /副●"
         },
         {
           "name": "前/后排侧气囊",
-          "value": "前● / 后-"
+          "value": "前● /后-"
         },
         {
           "name": "前/后排头部气囊(气帘)",
-          "value": "前● / 后●"
+          "value": "前● /后●"
         }
       ]
     },
@@ -606,7 +701,7 @@
         },
         {
           "name": "前/后电动车窗",
-          "value": "前● / 后●"
+          "value": "前● /后●"
         },
         {
           "name": "车窗一键升降功能",
@@ -953,7 +1048,7 @@
         },
         {
           "name": "前/后中央扶手",
-          "value": "前● / 后●"
+          "value": "前● /后●"
         },
         {
           "name": "后排杯架",
@@ -1019,6 +1114,20 @@
         },
         {
           "name": "车内PM2.5过滤装置",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "name": "颜色",
+      "group": "config",
+      "items": [
+        {
+          "name": "外观颜色",
+          "value": "-"
+        },
+        {
+          "name": "内饰颜色",
           "value": "-"
         }
       ]

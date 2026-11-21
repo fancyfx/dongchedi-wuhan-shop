@@ -1,17 +1,25 @@
 #!/usr/bin/env python3
-"""Hard filters for Wuhan shop listings (shop_id=118608).
+"""Hard filters for Plan A direct-operated Dongchedi shop listings.
 
-叠加规则：本店、现金价≤6万、里程≤10万公里、车龄≤10年（上牌年≥当年-10）、
-直营或自营信号，以及排除短续航纯电。晨检/入库脚本应调用 keep_listing。
+叠加规则：7城直营白名单、到汉可比总价≤6万（现金价+物流费+异地上牌差）、
+里程≤10万公里、车龄≤10年（上牌年≥当年-10）、直营或自营信号，以及排除短续航纯电。
 """
 from __future__ import annotations
 
 import re
 from datetime import date, datetime, timedelta, timezone
-from typing import Any
+from typing import Any, Iterable
+
+from shops import (
+    ALLOWED_SHOP_IDS,
+    BUYER_CITY,
+    PLAN_A_SHOP_IDS,
+    WUHAN_SHOP_ID,
+    compute_landed_costs,
+    compute_landed_price_wan,
+)
 
 MAX_BEV_RANGE_KM = 300
-WUHAN_SHOP_ID = "118608"
 MAX_PRICE_WAN = 6.0
 MAX_MILEAGE_WAN = 10.0
 MAX_AGE_YEARS = 10
@@ -260,21 +268,49 @@ def plate_year_of(item: dict[str, Any], today: date | None = None) -> int | None
     return None
 
 
-def shop_reason(item: dict[str, Any]) -> str | None:
+def landed_extra_yuan_of(item: dict[str, Any]) -> int:
+    raw = item.get("landed_extra_yuan")
+    if raw not in (None, "") and not isinstance(raw, bool):
+        try:
+            return max(0, int(round(float(raw))))
+        except (TypeError, ValueError):
+            pass
+    costs = compute_landed_costs(
+        str(item.get("shop_id") or "").strip(),
+        city=item.get("city"),
+        api_logistics_yuan=item.get("logistics_fee_yuan"),
+        api_plate_fee_yuan=item.get("plate_service_fee_yuan"),
+    )
+    return int(costs["landed_extra_yuan"])
+
+
+def landed_price_wan_of(item: dict[str, Any]) -> float | None:
+    """硬筛/可比预算价：裸车现金价 + 物流费 + 异地上牌差额。"""
+    base = listing_price_wan(item)
+    if base is None or base <= 0:
+        return None
+    return compute_landed_price_wan(base, landed_extra_yuan_of(item))
+
+
+def shop_reason(item: dict[str, Any], allowed_shop_ids: Iterable[str] | None = None) -> str | None:
     shop = str(item.get("shop_id") or "").strip()
     if not shop:
         return "missing_shop_id"
-    if shop != WUHAN_SHOP_ID:
-        return f"shop_id_{shop}_not_{WUHAN_SHOP_ID}"
+    allowed = frozenset(str(s).strip() for s in allowed_shop_ids) if allowed_shop_ids else ALLOWED_SHOP_IDS
+    if shop not in allowed:
+        return f"shop_id_{shop}_not_allowed"
     return None
 
 
 def price_reason(item: dict[str, Any]) -> str | None:
-    price = listing_price_wan(item)
-    if price is None or price <= 0:
+    base = listing_price_wan(item)
+    if base is None or base <= 0:
         return "missing_cash_or_price"
-    if price > MAX_PRICE_WAN + 1e-9:
-        return f"price_{price:g}_gt_{MAX_PRICE_WAN:g}"
+    landed = landed_price_wan_of(item)
+    if landed is None or landed <= 0:
+        return "missing_cash_or_price"
+    if landed > MAX_PRICE_WAN + 1e-9:
+        return f"price_{landed:g}_gt_{MAX_PRICE_WAN:g}"
     return None
 
 
@@ -345,13 +381,17 @@ def filter_listings(
 
 FILTER_META = {
     "shop_id": WUHAN_SHOP_ID,
+    "shop_ids": list(PLAN_A_SHOP_IDS),
+    "shop_scope": "plan_a_7_direct_shops",
+    "buyer_city": BUYER_CITY,
     "price_max_wan": MAX_PRICE_WAN,
+    "budget_basis": "到汉可比总价（全款现金价 + 到汉官方物流费 + 异地上牌服务费差额）≤ 6.0 万",
     "mileage_max_wan": MAX_MILEAGE_WAN,
     "age_max_years": MAX_AGE_YEARS,
     "require_zhiying": True,
     "require_zhiying_desc": (
-        "直营角标，或列表 is_self_trade_car / source_type_name 以「自营」开头；"
-        "非自营且非直营不入库。标题里的「直营」营销字样不算。"
+        "直营白名单门店 + 直营角标/is_self_trade_car/source_type_name 自营信号；"
+        "排除一切加盟专营店与第三方车源。"
     ),
     "exclude_short_range_bev": True,
     "max_bev_range_km": MAX_BEV_RANGE_KM,

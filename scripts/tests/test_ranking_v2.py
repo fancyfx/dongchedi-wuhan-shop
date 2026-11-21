@@ -246,6 +246,69 @@ def test_v3_veto_and_at_preference():
     assert rd["recommendation_gate"] == "VETO"
 
 
+def test_landed_cost_added_to_effective_price_and_profile():
+    verified = {"a": {"trim": _fixture_trim()}, "b": {"trim": _fixture_trim()}}
+    base = {"price": 4.89, "cash_price_wan": 4.89, "price_type": "现金价", "mileage_wan": 3.0, "plate_year": 2021, "specs": {}}
+    local = {**base, "sku": "a", "shop_id": "118608", "city": "武汉"}
+    remote = {
+        **base,
+        "sku": "b",
+        "shop_id": "64909",
+        "city": "合肥",
+        "logistics_fee_yuan": 840,
+        "plate_service_fee_yuan": 1000,
+    }
+    l_item, r_item = apply_verified_to_listings([local, remote], verified)
+    assert l_item["effective_price_wan"] == 4.89
+    assert r_item["landed_extra_yuan"] == 1340
+    assert r_item["effective_price_wan"] == 5.02
+    res_l = score_listing(l_item)
+    res_r = score_listing(r_item)
+    assert res_l["total_score"] > res_r["total_score"]
+    assert any("异地直营调拨" in x for x in res_r["v3_profile"]["inspection_checklist"])
+
+
+def test_autohome_param_api_tree_compatibility():
+    import autohome_param_sync as ps
+    from ranking_v2.live_specs import _build_tree_features
+
+    payload = {
+        "result": {
+            "titlelist": [
+                {"itemtype": "基本参数", "groupname": "参数信息", "items": [{"titleid": 1, "itemname": "车型名称"}, {"titleid": 3, "itemname": "厂商指导价(元)"}]},
+                {"itemtype": "被动安全", "groupname": "安全配置", "items": [{"titleid": 73, "itemname": "主/副驾驶座安全气囊"}]},
+                {"itemtype": "互联/智能化", "groupname": "内部配置", "items": [{"titleid": 135, "itemname": "手机互联/映射"}]},
+                {"itemtype": "座椅配置", "groupname": "内部配置", "items": [{"titleid": 165, "itemname": "前排座椅功能"}, {"titleid": 166, "itemname": "主/副驾驶座电动调节"}]},
+            ] + [{"itemtype": "车身", "groupname": "参数信息", "items": [{"titleid": 1000 + i, "itemname": f"占位{i}"} for i in range(30)]}],
+            "datalist": [{
+                "specid": 54910,
+                "specname": "2021款 552T 精英型",
+                "year": 2021,
+                "paramconflist": [
+                    {"titleid": 1, "itemname": "君威 2021款 552T 精英型", "sublist": []},
+                    {"titleid": 3, "itemname": "18.88万", "sublist": []},
+                    {"titleid": 73, "itemname": "主●/副●", "sublist": []},
+                    {"titleid": 135, "itemname": "", "sublist": [{"name": "支持CarPlay", "value": "●", "priceinfo": ""}]},
+                    {"titleid": 165, "itemname": "", "sublist": [{"name": "加热", "value": "●", "priceinfo": ""}]},
+                    {"titleid": 166, "itemname": "主●/副●", "sublist": []},
+                ] + [{"titleid": 1000 + i, "itemname": "1", "sublist": []} for i in range(30)],
+            }],
+        }
+    }
+    specs = ps.extract_specs_from_param_payload(payload, 164, "君威")
+    assert len(specs) == 1
+    tree = ps.param_spec_to_live_tree(specs[0])
+    rows = {}
+    for sec in tree["sections"]:
+        for it in sec["items"]:
+            rows[f"{sec['name']}::{it['name']}"] = it["value"]
+            rows.setdefault(it["name"], it["value"])
+    feats = _build_tree_features(rows)
+    assert feats["carplay"] is True
+    assert feats["seat_heating"] is True
+    assert feats["power_driver_seat"] is True and feats["power_passenger_seat"] is True
+
+
 def main():
     tests = [
         test_new_configuration_store_has_no_legacy_shards,
@@ -256,6 +319,8 @@ def main():
         test_95_costs_more_than_92,
         test_finance_reserve,
         test_v3_veto_and_at_preference,
+        test_landed_cost_added_to_effective_price_and_profile,
+        test_autohome_param_api_tree_compatibility,
     ]
     failed = 0
     for fn in tests:

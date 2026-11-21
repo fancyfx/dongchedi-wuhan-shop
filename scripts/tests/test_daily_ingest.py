@@ -18,13 +18,16 @@ from dcd_fetch import (  # noqa: E402
     build_detail_url,
     build_list_url,
     card_sku,
+    fetch_multi_shop_batch,
     fetch_shop_batch,
     normalize_card,
     parse_cash_price,
+    parse_fulfillment_fees,
     parse_sale_status,
 )
 from display_gate import ranked_threshold  # noqa: E402
 from filters import admission_reason, is_zhiying, keep_listing  # noqa: E402
+from shops import compute_landed_costs  # noqa: E402
 
 TODAY = date(2026, 11, 3)
 
@@ -83,6 +86,16 @@ def test_hard_filters_cash_mileage_age_shop_and_bev():
     assert keep_listing(_base(plate_year=2016), today=TODAY)
     assert "older_than" in admission_reason(_base(plate_year=2015, model_year=2015), today=TODAY)
     assert "shop_id_" in admission_reason(_base(shop_id="227854"), today=TODAY)
+    # 7-shop Plan A whitelist allows direct shops and rejects franchise lookalikes (129202/184568)
+    assert "shop_id_" in admission_reason(_base(shop_id="129202"), today=TODAY)
+    assert "shop_id_" in admission_reason(_base(shop_id="184568"), today=TODAY)
+    # Hefei direct shop: bare 5.80w + 840 logi + 500 plate diff = 5.93w <= 6.0w (kept)
+    assert keep_listing(_base(shop_id="64909", city="合肥", cash_price_wan=5.80, price=5.80), today=TODAY)
+    # Hefei direct shop: bare 5.90w + 840 logi + 500 plate diff = 6.03w > 6.0w (rejected)
+    assert admission_reason(
+        _base(shop_id="64909", city="合肥", cash_price_wan=5.90, price=5.90),
+        today=TODAY,
+    ).startswith("price_")
     assert admission_reason(
         _base(title="星愿 2026款 200km 梦想版", fuel_form="4", plate_year=2024),
         today=TODAY,
@@ -446,6 +459,71 @@ def test_parse_sale_status_and_missing_reconcile():
     assert ("res_sku", "restored_on_sale") in {(r["sku"], r["change_type"]) for r in res2["changelog"]}
 
 
+def test_plan_a_logistics_fees_and_fallback_chain():
+    # 1. Wuhan detail url asks for Wuhan buyer city and parses 0 logistics + 500 plate
+    url = build_detail_url("999")
+    assert "city_name=%E6%AD%A6%E6%B1%89" in url
+    assert "sh_city_name=%E6%AD%A6%E6%B1%89" in url
+
+    remote_det = {
+        "status": 0,
+        "data": {
+            "product": {
+                "product_shop": {"shop_id": "64909"},
+                "sku_list": [{"sku_id": "10", "sku_price": {"price": 4890000, "price_str": "4.89"}}],
+                "product_status": 1,
+            },
+            "component_list": {
+                "fulfillment": {
+                    "delivery": {"delivery_location": {"city": {"code": 420100, "name": "武汉"}}, "move_in_location": {"city": {"code": 340100, "name": "合肥"}}},
+                    "logistics": {"logistics_amount": {"price": 840}, "process_list": [{"sub_title": "2-4日送达"}]},
+                },
+                "purchase_plan": {
+                    "paytype_detail_list": [
+                        {"price_item_list": [{"price_type": 17, "sub_price_items": [{"price_type": 103, "price_str": "1,000"}]}]}
+                    ]
+                },
+            },
+        },
+    }
+    ful = parse_fulfillment_fees(remote_det)
+    assert ful["api_logistics_yuan"] == 840
+    assert ful["api_plate_fee_yuan"] == 1000
+    assert ful["delivery_eta"] == "2-4日送达"
+
+    card = {
+        "product": {
+            "event_info": {
+                "sku_id": "10",
+                "shop_id": "64909",
+                "shop_city_name": "合肥",
+                "mileage": "3.0",
+                "year": "2021",
+                "is_self_trade_car": "true",
+                "source_type_name": "自营-个人",
+            },
+            "product_desc": {"title": "君威 2021款 552T 精英型"},
+            "product_price": {"text": "4.89"},
+        }
+    }
+    normed = normalize_card(card, remote_det)
+    assert normed["is_local_wuhan"] is False
+    assert normed["shop_short_name"] == "合肥店"
+    assert normed["logistics_fee_yuan"] == 840
+    assert normed["logistics_fee_source"] == "api"
+    assert normed["plate_fee_diff_yuan"] == 500
+    assert normed["landed_extra_yuan"] == 1340
+    assert normed["landed_price_wan"] == 5.02
+
+    # 2. Fallback chain: city_cache for known city when API missing, then default_1000 for unknown remote city
+    c_hefei = compute_landed_costs("64909", city="合肥", api_logistics_yuan=None)
+    assert c_hefei["logistics_fee_yuan"] == 840 and c_hefei["logistics_fee_source"] == "city_cache"
+    c_unknown = compute_landed_costs("999999", city="外地", api_logistics_yuan=None)
+    assert c_unknown["logistics_fee_yuan"] == 1000 and c_unknown["logistics_fee_source"] == "default_1000"
+    c_wuhan = compute_landed_costs("118608", city="武汉", api_logistics_yuan=1950, api_plate_fee_yuan=500)
+    assert c_wuhan["is_local_wuhan"] is True and c_wuhan["landed_extra_yuan"] == 0
+
+
 def main() -> None:
     tests = [
         test_zhiying_maps_self_trade_and_rejects_marketing_copy,
@@ -458,6 +536,7 @@ def main() -> None:
         test_search_id_paging_shop_filter_and_cash_price,
         test_pipeline_snapshots_and_dry_run_do_not_touch_catalog,
         test_parse_sale_status_and_missing_reconcile,
+        test_plan_a_logistics_fees_and_fallback_chain,
     ]
     failed = 0
     for fn in tests:

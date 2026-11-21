@@ -13,6 +13,42 @@ import copy
 from typing import Any
 
 from .config import FINANCE
+from shops import compute_landed_costs, compute_landed_price_wan
+
+
+def ensure_landed_cost_fields(item: dict[str, Any]) -> dict[str, Any]:
+    """Ensure direct-shop landed cost fields exist without overwriting verified API fees."""
+    shop_id = str(item.get("shop_id") or "").strip()
+    costs = compute_landed_costs(
+        shop_id,
+        city=item.get("city"),
+        api_logistics_yuan=item.get("logistics_fee_yuan"),
+        api_plate_fee_yuan=item.get("plate_service_fee_yuan"),
+    )
+    if item.get("is_local_wuhan") is None:
+        item["is_local_wuhan"] = costs["is_local_wuhan"]
+    if not item.get("shop_short_name"):
+        item["shop_short_name"] = costs["shop_short_name"]
+    if not item.get("city"):
+        item["city"] = costs["shop_city"]
+    if item.get("logistics_fee_yuan") is None or (not costs["is_local_wuhan"] and int(item.get("logistics_fee_yuan") or 0) <= 0):
+        item["logistics_fee_yuan"] = costs["logistics_fee_yuan"]
+        item["logistics_fee_source"] = costs["logistics_fee_source"]
+    elif not item.get("logistics_fee_source"):
+        item["logistics_fee_source"] = costs["logistics_fee_source"]
+    if item.get("plate_service_fee_yuan") is None:
+        item["plate_service_fee_yuan"] = costs["plate_service_fee_yuan"]
+    if item.get("plate_fee_diff_yuan") is None:
+        item["plate_fee_diff_yuan"] = costs["plate_fee_diff_yuan"]
+    if item.get("landed_extra_yuan") is None or (not costs["is_local_wuhan"] and int(item.get("landed_extra_yuan") or 0) <= 0):
+        item["landed_extra_yuan"] = costs["landed_extra_yuan"]
+        item["landed_extra_wan"] = costs["landed_extra_wan"]
+    elif item.get("landed_extra_wan") is None:
+        item["landed_extra_wan"] = round(float(item["landed_extra_yuan"]) / 10000.0, 4)
+    base_wan = item.get("cash_price_wan") if item.get("cash_price_wan") not in (None, "") else item.get("price")
+    if base_wan not in (None, ""):
+        item["landed_price_wan"] = compute_landed_price_wan(float(base_wan), item["landed_extra_yuan"])
+    return item
 
 
 def effective_price_fields(
@@ -21,41 +57,56 @@ def effective_price_fields(
     cash_price: float | None = None,
     finance_all_in: float | None = None,
     reserve: float | None = None,
+    landed_extra_yuan: int | float = 0,
 ) -> dict[str, Any]:
     reserve = FINANCE["unknown_all_in_reserve_wan"] if reserve is None else reserve
+    extra_yuan = max(0, int(round(float(landed_extra_yuan or 0))))
     pt = (price_type or "标价").strip()
     if cash_price is not None:
+        eff = compute_landed_price_wan(float(cash_price), extra_yuan)
         return {
             "display_price_wan": display_price,
-            "effective_price_wan": float(cash_price),
+            "cash_price_wan": float(cash_price),
+            "landed_extra_yuan": extra_yuan,
+            "landed_price_wan": eff,
+            "effective_price_wan": eff,
             "price_confidence": 0.95,
             "needs_cash_quote": False,
-            "price_basis": "cash",
+            "price_basis": "cash_plus_landed" if extra_yuan > 0 else "cash",
         }
     if finance_all_in is not None:
+        eff = compute_landed_price_wan(float(finance_all_in), extra_yuan)
         return {
             "display_price_wan": display_price,
-            "effective_price_wan": float(finance_all_in),
+            "landed_extra_yuan": extra_yuan,
+            "landed_price_wan": eff,
+            "effective_price_wan": eff,
             "price_confidence": 0.85,
             "needs_cash_quote": False,
             "price_basis": "finance_all_in",
         }
     if pt == "分期":
+        eff = compute_landed_price_wan(float(display_price) + reserve, extra_yuan)
         return {
             "display_price_wan": display_price,
-            "effective_price_wan": round(float(display_price) + reserve, 2),
+            "landed_extra_yuan": extra_yuan,
+            "landed_price_wan": eff,
+            "effective_price_wan": eff,
             "price_confidence": 0.5,
             "needs_cash_quote": True,
             "price_basis": "finance_display_plus_reserve",
             "finance_reserve_wan": reserve,
         }
     conf = 0.85 if pt == "券后" else 0.9
+    eff = compute_landed_price_wan(float(display_price), extra_yuan)
     return {
         "display_price_wan": display_price,
-        "effective_price_wan": float(display_price),
+        "landed_extra_yuan": extra_yuan,
+        "landed_price_wan": eff,
+        "effective_price_wan": eff,
         "price_confidence": conf,
         "needs_cash_quote": False,
-        "price_basis": "display",
+        "price_basis": "display_plus_landed" if extra_yuan > 0 else "display",
     }
 
 
@@ -388,11 +439,13 @@ def apply_verified_to_listings(
             ):
                 item = sanitize_unverified_listing(item)
 
+        item = ensure_landed_cost_fields(item)
         ep = effective_price_fields(
             float(item.get("price") or 0),
             item.get("price_type"),
             cash_price=item.get("cash_price_wan"),
             finance_all_in=item.get("finance_all_in_price_wan"),
+            landed_extra_yuan=item.get("landed_extra_yuan") or 0,
         )
         item.update(ep)
         out.append(item)

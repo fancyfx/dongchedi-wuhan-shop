@@ -17,6 +17,7 @@ from ranking_v2.config import ENERGY, FINANCE, SCORE_VERSION, WEIGHTS  # noqa: E
 from ranking_v2.data_quality import assess_score_eligibility  # noqa: E402
 from ranking_v2.score import score_listing  # noqa: E402
 from rerank_composite import map_manufacturer, series_key  # noqa: E402
+from shops import BUYER_CITY, DIRECT_SHOPS, PLAN_A_SHOP_IDS  # noqa: E402
 
 
 def dump_json(path: Path, obj) -> None:
@@ -290,15 +291,47 @@ def main() -> None:
         "unscored_message": "详细配置数据不足",
         "issues_file": "data/data-issues.json",
     }
+
+    top_counts: dict[str, int] = {}
+    for x in display:
+        sid = str(x.get("shop_id") or "")
+        top_counts[sid] = top_counts.get(sid, 0) + 1
+    inv_counts: dict[str, int] = {}
+    fee_samples: dict[str, int] = {}
+    for x in listings:
+        sid = str(x.get("shop_id") or "")
+        inv_counts[sid] = inv_counts.get(sid, 0) + 1
+        if sid not in fee_samples and x.get("logistics_fee_yuan") is not None:
+            fee_samples[sid] = int(x["logistics_fee_yuan"])
+    shops_summary = []
+    for sid in PLAN_A_SHOP_IDS:
+        reg = DIRECT_SHOPS.get(sid) or {}
+        shops_summary.append({
+            "shop_id": sid,
+            "name": reg.get("name") or sid,
+            "short_name": reg.get("short_name") or sid,
+            "city": reg.get("city") or "",
+            "kind": reg.get("kind") or "直营",
+            "is_local": bool(reg.get("is_local")),
+            "logistics_fee_yuan": fee_samples.get(sid, reg.get("fallback_logistics_yuan", 1000)),
+            "inventory_count": inv_counts.get(sid, 0),
+            "top_count": top_counts.get(sid, 0),
+        })
+    meta["buyer_city"] = BUYER_CITY
+    meta["shop_scope"] = "plan_a_7_direct_shops"
+    meta["shops"] = shops_summary
+    meta["pricing_policy"] = (
+        "到汉可比价 = 全款现金价 + 到汉官方物流费（card/detail实时获取，兜底+1000元）+ 异地上牌服务费差额（500元）"
+    )
     meta["notes"] = (
-        f"算法版本 {SCORE_VERSION}（节假日低频用车专业严选）。"
-        f"全店在库 {len(listings)} 台（在售 {on_sale_count} / 锁单隐藏 {reserved_count}），"
+        f"算法版本 {SCORE_VERSION}（华中7城直营 · 节假日低频用车买手严选）。"
+        f"7城直营在库 {len(listings)} 台（在售 {on_sale_count} / 锁单隐藏 {reserved_count}），"
         f"四大铁律否决 {vetoed_count} 台（新能源{veto_bd['ev_phev']}/三缸{veto_bd['three_cyl']}/干式双离合{veto_bd['dry_dct']}），"
         f"合格参评 {len(eligible_active)} 台，严选展示 Top {len(display)} 台。"
     )
     meta["filter_pipeline"] = (
-        f"shop_id=118608 → 实时售出清理 & 锁单隐藏({reserved_count}) → 四大铁律否决({vetoed_count}) → "
-        f"V3综合评分({len(eligible_active)}) → 严选 Top {len(display)}；"
+        f"华中7城官方直营 → 到汉可比总价≤6.0万 → 实时售出清理 & 锁单隐藏({reserved_count}) → "
+        f"四大铁律否决({vetoed_count}) → V3综合评分({len(eligible_active)}) → 严选 Top {len(display)}；"
         f"source={n_before} filtered={len(listings)} data_issues={len(data_issues)}"
     )
 
@@ -343,10 +376,11 @@ def main() -> None:
     print("TOP15")
     for x in display[:15]:
         prof = x.get("v3_profile") or {}
+        shop_lbl = x.get("shop_short_name") or x.get("city") or "武汉"
         print(
-            f"{x['rank']:2} | {x['total_score']:5.1f} | {x.get('effective_price_wan')}w "
+            f"{x['rank']:2} | {x['total_score']:5.1f} | {shop_lbl:<5} | 到汉{x.get('effective_price_wan')}w(裸{x.get('price')}w) "
             f"({prof.get('discount_fold') or '-'}折) | km={x.get('mileage_wan')} | "
-            f"{prof.get('gearbox_label') or ''} | {x['title'][:34]} | sku={x['sku']}"
+            f"{prof.get('gearbox_label') or ''} | {x['title'][:30]} | sku={x['sku']}"
         )
     if data_issues:
         print("DATA_ISSUES_SAMPLE")

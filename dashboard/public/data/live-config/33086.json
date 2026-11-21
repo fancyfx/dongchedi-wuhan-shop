@@ -3,7 +3,7 @@
   "spec_id": 33086,
   "title": "唐新能源 2018款 DM 2.0T 全时四驱智联创领型 7座 国V",
   "url": "https://car.autohome.com.cn/config/spec/33086.html",
-  "fetched_at": "2026-11-17T02:02:04.992Z",
+  "fetched_at": "2026-11-21T21:20:21+08:00",
   "legend": {
     "standard": "●",
     "optional": "○",
@@ -23,12 +23,16 @@
           "value": "27.99万"
         },
         {
+          "name": "经销商报价",
+          "value": "暂无报价"
+        },
+        {
           "name": "厂商",
           "value": "比亚迪"
         },
         {
           "name": "级别",
-          "value": "中型SUV"
+          "value": "中大型SUV"
         },
         {
           "name": "能源类型",
@@ -40,7 +44,7 @@
         },
         {
           "name": "上市时间",
-          "value": "2018.06"
+          "value": "2018-06-26"
         },
         {
           "name": "NEDC纯电续航里程(km)",
@@ -104,7 +108,14 @@
         },
         {
           "name": "整车质保",
-          "value": "● 六年或15万公里"
+          "value": "● 六年或15万公里",
+          "lines": [
+            {
+              "name": "六年或15万公里",
+              "value": "●",
+              "mark": "standard"
+            }
+          ]
         },
         {
           "name": "整备质量(kg)",
@@ -154,11 +165,25 @@
         },
         {
           "name": "车门数(个)",
-          "value": "● 5"
+          "value": "● 5",
+          "lines": [
+            {
+              "name": "5",
+              "value": "●",
+              "mark": "standard"
+            }
+          ]
         },
         {
           "name": "座位数(个)",
-          "value": "● 7"
+          "value": "● 7",
+          "lines": [
+            {
+              "name": "7",
+              "value": "●",
+              "mark": "standard"
+            }
+          ]
         },
         {
           "name": "油箱容积(L)",
@@ -310,7 +335,14 @@
         },
         {
           "name": "三电系统质保",
-          "value": "● 八年或15万公里"
+          "value": "● 八年或15万公里",
+          "lines": [
+            {
+              "name": "八年或15万公里",
+              "value": "●",
+              "mark": "standard"
+            }
+          ]
         }
       ]
     },
@@ -320,7 +352,14 @@
       "items": [
         {
           "name": "电池类型",
-          "value": "● 三元锂电池"
+          "value": "● 三元锂电池",
+          "lines": [
+            {
+              "name": "三元锂电池",
+              "value": "●",
+              "mark": "standard"
+            }
+          ]
         },
         {
           "name": "NEDC纯电续航里程(km)",
@@ -360,23 +399,58 @@
       "items": [
         {
           "name": "驱动方式",
-          "value": "● 前置四驱"
+          "value": "● 前置四驱",
+          "lines": [
+            {
+              "name": "前置四驱",
+              "value": "●",
+              "mark": "standard"
+            }
+          ]
         },
         {
           "name": "四驱形式",
-          "value": "● 电动四驱"
+          "value": "● 电动四驱",
+          "lines": [
+            {
+              "name": "电动四驱",
+              "value": "●",
+              "mark": "standard"
+            }
+          ]
         },
         {
           "name": "前悬架类型",
-          "value": "● 麦弗逊式独立悬架"
+          "value": "● 麦弗逊式独立悬架",
+          "lines": [
+            {
+              "name": "麦弗逊式独立悬架",
+              "value": "●",
+              "mark": "standard"
+            }
+          ]
         },
         {
           "name": "后悬架类型",
-          "value": "● 多连杆式独立悬架"
+          "value": "● 多连杆式独立悬架",
+          "lines": [
+            {
+              "name": "多连杆式独立悬架",
+              "value": "●",
+              "mark": "standard"
+            }
+          ]
         },
         {
           "name": "助力类型",
-          "value": "● 电动助力"
+          "value": "● 电动助力",
+          "lines": [
+            {
+              "name": "电动助力",
+              "value": "●",
+              "mark": "standard"
+            }
+          ]
         },
         {
           "name": "车体结构",
@@ -390,27 +464,69 @@
       "items": [
         {
           "name": "前制动器类型",
-          "value": "● 通风盘式"
+          "value": "● 通风盘式",
+          "lines": [
+            {
+              "name": "通风盘式",
+              "value": "●",
+              "mark": "standard"
+            }
+          ]
         },
         {
           "name": "后制动器类型",
-          "value": "● 通风盘式"
+          "value": "● 通风盘式",
+          "lines": [
+            {
+              "name": "通风盘式",
+              "value": "●",
+              "mark": "standard"
+            }
+          ]
         },
         {
           "name": "驻车制动类型",
-          "value": "● 电子驻车"
+          "value": "● 电子驻车",
+          "lines": [
+            {
+              "name": "电子驻车",
+              "value": "●",
+              "mark": "standard"
+            }
+          ]
         },
         {
           "name": "前轮胎规格",
-          "value": "● 255/50 R20"
+          "value": "● 255/50 R20",
+          "lines": [
+            {
+              "name": "255/50 R20",
+              "value": "●",
+              "mark": "standard"
+            }
+          ]
         },
         {
           "name": "后轮胎规格",
-          "value": "● 255/50 R20"
+          "value": "● 255/50 R20",
+          "lines": [
+            {
+              "name": "255/50 R20",
+              "value": "●",
+              "mark": "standard"
+            }
+          ]
         },
         {
           "name": "备胎规格",
-          "value": "● 无"
+          "value": "● 无",
+          "lines": [
+            {
+              "name": "无",
+              "value": "●",
+              "mark": "standard"
+            }
+          ]
         }
       ]
     },
@@ -420,15 +536,15 @@
       "items": [
         {
           "name": "主/副驾驶座安全气囊",
-          "value": "主● / 副●"
+          "value": "主● /副●"
         },
         {
           "name": "前/后排侧气囊",
-          "value": "前● / 后-"
+          "value": "前● /后-"
         },
         {
           "name": "前/后排头部气囊(气帘)",
-          "value": "前● / 后●"
+          "value": "前● /后●"
         }
       ]
     },
@@ -571,7 +687,7 @@
       "items": [
         {
           "name": "前/后驻车雷达",
-          "value": "前● / 后●"
+          "value": "前● /后●"
         },
         {
           "name": "驾驶辅助影像",
@@ -798,7 +914,7 @@
         },
         {
           "name": "前/后电动车窗",
-          "value": "前● / 后●"
+          "value": "前● /后●"
         },
         {
           "name": "车窗一键升降功能",
@@ -1180,7 +1296,7 @@
         },
         {
           "name": "主/副驾驶座电动调节",
-          "value": "主● / 副●"
+          "value": "主● /副●"
         },
         {
           "name": "前排座椅功能",
@@ -1253,7 +1369,7 @@
         },
         {
           "name": "前/后中央扶手",
-          "value": "前● / 后●"
+          "value": "前● /后●"
         },
         {
           "name": "后排杯架",
@@ -1331,20 +1447,52 @@
       ]
     },
     {
+      "name": "特色配置",
+      "group": "config",
+      "items": [
+        {
+          "name": "Brembo赛车级刹车系统",
+          "value": "○"
+        }
+      ]
+    },
+    {
+      "name": "颜色",
+      "group": "config",
+      "items": [
+        {
+          "name": "外观颜色",
+          "value": "-"
+        },
+        {
+          "name": "内饰颜色",
+          "value": "-"
+        }
+      ]
+    },
+    {
       "name": "选装包",
-      "group": "bag",
+      "group": "config",
       "items": [
         {
           "name": "比亚迪黑科技包1",
-          "value": "包含:比亚迪遥控驾驶、VTOL移动电站"
+          "value": "○ (免费)"
         },
         {
           "name": "22英寸高性能马牌轮胎",
-          "value": "包含：22英寸电光凌动轮毂、22英寸高性能马牌&#174;轮胎 (¥5000)"
+          "value": "○ (5000元)"
         },
         {
           "name": "赛车级高性能装备",
-          "value": "包含：Brembo&#174;赛车级六活塞刹车系统(打孔通风刹车盘) (¥15000)"
+          "value": "○ (15000元)"
+        },
+        {
+          "name": "赛车级高性能装备",
+          "value": "-"
+        },
+        {
+          "name": "22英寸高性能马牌轮胎",
+          "value": "-"
         }
       ]
     }

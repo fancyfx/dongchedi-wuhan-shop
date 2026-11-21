@@ -3,7 +3,7 @@
   "spec_id": 55597,
   "title": "五菱NanoEV 2021款 玩乐款-高功率版",
   "url": "https://car.autohome.com.cn/config/spec/55597.html",
-  "fetched_at": "2026-11-14T01:58:39.601Z",
+  "fetched_at": "2026-11-21T21:18:12+08:00",
   "legend": {
     "standard": "●",
     "optional": "○",
@@ -23,6 +23,10 @@
           "value": "5.88万"
         },
         {
+          "name": "经销商报价",
+          "value": "暂无报价"
+        },
+        {
           "name": "厂商",
           "value": "上汽通用五菱"
         },
@@ -36,7 +40,7 @@
         },
         {
           "name": "上市时间",
-          "value": "2021.11"
+          "value": "2021-11-17"
         },
         {
           "name": "NEDC纯电续航里程(km)",
@@ -88,7 +92,14 @@
         },
         {
           "name": "整车质保",
-          "value": "● 三年或10万公里"
+          "value": "● 三年或10万公里",
+          "lines": [
+            {
+              "name": "三年或10万公里",
+              "value": "●",
+              "mark": "standard"
+            }
+          ]
         },
         {
           "name": "整备质量(kg)",
@@ -154,11 +165,25 @@
         },
         {
           "name": "车门数(个)",
-          "value": "● 3"
+          "value": "● 3",
+          "lines": [
+            {
+              "name": "3",
+              "value": "●",
+              "mark": "standard"
+            }
+          ]
         },
         {
           "name": "座位数(个)",
-          "value": "● 2"
+          "value": "● 2",
+          "lines": [
+            {
+              "name": "2",
+              "value": "●",
+              "mark": "standard"
+            }
+          ]
         },
         {
           "name": "后备厢容积(L)",
@@ -216,7 +241,14 @@
         },
         {
           "name": "三电系统质保",
-          "value": "● 八年或12万公里"
+          "value": "● 八年或12万公里",
+          "lines": [
+            {
+              "name": "八年或12万公里",
+              "value": "●",
+              "mark": "standard"
+            }
+          ]
         }
       ]
     },
@@ -226,11 +258,25 @@
       "items": [
         {
           "name": "电池类型",
-          "value": "● 磷酸铁锂电池"
+          "value": "● 磷酸铁锂电池",
+          "lines": [
+            {
+              "name": "磷酸铁锂电池",
+              "value": "●",
+              "mark": "standard"
+            }
+          ]
         },
         {
           "name": "电芯品牌",
-          "value": "● 苏州科易"
+          "value": "● 苏州科易",
+          "lines": [
+            {
+              "name": "苏州科易",
+              "value": "●",
+              "mark": "standard"
+            }
+          ]
         },
         {
           "name": "换电",
@@ -294,19 +340,47 @@
       "items": [
         {
           "name": "驱动方式",
-          "value": "● 前置前驱"
+          "value": "● 前置前驱",
+          "lines": [
+            {
+              "name": "前置前驱",
+              "value": "●",
+              "mark": "standard"
+            }
+          ]
         },
         {
           "name": "前悬架类型",
-          "value": "● 麦弗逊式独立悬架"
+          "value": "● 麦弗逊式独立悬架",
+          "lines": [
+            {
+              "name": "麦弗逊式独立悬架",
+              "value": "●",
+              "mark": "standard"
+            }
+          ]
         },
         {
           "name": "后悬架类型",
-          "value": "● 单纵臂式独立悬架"
+          "value": "● 单纵臂式独立悬架",
+          "lines": [
+            {
+              "name": "单纵臂式独立悬架",
+              "value": "●",
+              "mark": "standard"
+            }
+          ]
         },
         {
           "name": "助力类型",
-          "value": "● 电动助力"
+          "value": "● 电动助力",
+          "lines": [
+            {
+              "name": "电动助力",
+              "value": "●",
+              "mark": "standard"
+            }
+          ]
         },
         {
           "name": "车体结构",
@@ -320,27 +394,69 @@
       "items": [
         {
           "name": "前制动器类型",
-          "value": "● 盘式"
+          "value": "● 盘式",
+          "lines": [
+            {
+              "name": "盘式",
+              "value": "●",
+              "mark": "standard"
+            }
+          ]
         },
         {
           "name": "后制动器类型",
-          "value": "● 盘式"
+          "value": "● 盘式",
+          "lines": [
+            {
+              "name": "盘式",
+              "value": "●",
+              "mark": "standard"
+            }
+          ]
         },
         {
           "name": "驻车制动类型",
-          "value": "● 脚刹"
+          "value": "● 脚刹",
+          "lines": [
+            {
+              "name": "脚刹",
+              "value": "●",
+              "mark": "standard"
+            }
+          ]
         },
         {
           "name": "前轮胎规格",
-          "value": "● 145/70 R12"
+          "value": "● 145/70 R12",
+          "lines": [
+            {
+              "name": "145/70 R12",
+              "value": "●",
+              "mark": "standard"
+            }
+          ]
         },
         {
           "name": "后轮胎规格",
-          "value": "● 145/70 R12"
+          "value": "● 145/70 R12",
+          "lines": [
+            {
+              "name": "145/70 R12",
+              "value": "●",
+              "mark": "standard"
+            }
+          ]
         },
         {
           "name": "备胎规格",
-          "value": "● 无"
+          "value": "● 无",
+          "lines": [
+            {
+              "name": "无",
+              "value": "●",
+              "mark": "standard"
+            }
+          ]
         }
       ]
     },
@@ -350,7 +466,7 @@
       "items": [
         {
           "name": "主/副驾驶座安全气囊",
-          "value": "主● / 副-"
+          "value": "主● /副-"
         },
         {
           "name": "前/后排侧气囊",
@@ -475,7 +591,7 @@
       "items": [
         {
           "name": "前/后驻车雷达",
-          "value": "前- / 后●"
+          "value": "前-/后●"
         },
         {
           "name": "驾驶辅助影像",
@@ -634,7 +750,7 @@
         },
         {
           "name": "前/后电动车窗",
-          "value": "前● / 后-"
+          "value": "前● /后-"
         },
         {
           "name": "车窗一键升降功能",
@@ -992,6 +1108,20 @@
         },
         {
           "name": "车内PM2.5过滤装置",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "name": "颜色",
+      "group": "config",
+      "items": [
+        {
+          "name": "外观颜色",
+          "value": "-"
+        },
+        {
+          "name": "内饰颜色",
           "value": "-"
         }
       ]

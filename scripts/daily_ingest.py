@@ -1,29 +1,20 @@
 #!/usr/bin/env python3
-"""Daily Wuhan-shop ingest.
+"""Daily multi-shop direct-operated ingest (Plan A: 7 Central China shops).
 
-Fetch the shop list (search_id paging), read detail cash prices, apply hard
-filters, diff the catalog, score with the existing V2 engine, and keep the
-board to the top 100. Dry-run writes snapshots and a changelog without
-replacing listing files.
-
-Examples:
-
-  python3 scripts/daily_ingest.py --help
-  python3 scripts/daily_ingest.py --fixtures .tmp/ingest-probe --limit 3 --dry-run --skip-live-fetch
-  python3 scripts/daily_ingest.py
-
-看板「今日更新」读 dashboard/public/data/today-updates.json。快照写进
-data/snapshots/YYYYMMDD/ 时会自动导出；其它目录需要再跑：
-
-  python3 scripts/export_today_updates.py
+Fetch shop lists (search_id paging), read detail cash prices & Wuhan logistics/plate
+fees, apply landed-budget hard filters (<=6.0w landed in Wuhan), diff the catalog,
+sync missing AutoHome specs via param API, score with V3 engine, download covers,
+and keep the display board to the top 30.
 """
 from __future__ import annotations
 
 import argparse
+import concurrent.futures
 import gzip
 import json
 import sys
 import time
+import urllib.request
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from typing import Any
@@ -35,10 +26,12 @@ from dcd_fetch import (  # noqa: E402
     FetchError,
     FixtureClient,
     HttpClient,
+    fetch_multi_shop_batch,
     fetch_shop_batch,
     load_fixture_dir,
     normalize_card,
     parse_cash_price,
+    parse_fulfillment_fees,
     parse_sale_status,
 )
 from display_gate import (  # noqa: E402
@@ -49,6 +42,14 @@ from display_gate import (  # noqa: E402
     ranked_threshold,
 )
 from filters import admission_reason  # noqa: E402
+from shops import (  # noqa: E402
+    BUYER_CITY,
+    DIRECT_SHOPS,
+    PLAN_A_SHOP_IDS,
+    compute_landed_costs,
+    compute_landed_price_wan,
+    parse_shop_list_arg,
+)
 
 SHANGHAI = timezone(timedelta(hours=8))
 MARKET_KEYS = (
@@ -74,6 +75,16 @@ MARKET_KEYS = (
     "detail_url",
     "shop_id",
     "shop_name",
+    "shop_short_name",
+    "is_local_wuhan",
+    "logistics_fee_yuan",
+    "logistics_fee_source",
+    "plate_service_fee_yuan",
+    "plate_fee_diff_yuan",
+    "landed_extra_yuan",
+    "landed_extra_wan",
+    "landed_price_wan",
+    "delivery_eta",
     "series",
     "brand",
     "first_registration_time",
@@ -161,13 +172,21 @@ def classify_change(old: dict[str, Any] | None, new: dict[str, Any]) -> str:
     changes = []
     if price_of(old) != price_of(new):
         changes.append("price")
+    old_extra = old.get("landed_extra_yuan")
+    new_extra = new.get("landed_extra_yuan")
+    if old_extra is not None and new_extra is not None and int(old_extra) != int(new_extra):
+        changes.append("landed_cost")
+    elif old_extra is None and new_extra is not None and int(new_extra) > 0:
+        changes.append("landed_cost")
+    if old.get("shop_id") and new.get("shop_id") and str(old.get("shop_id")) != str(new.get("shop_id")):
+        changes.append("landed_cost")
     if mile_of(old) != mile_of(new):
         changes.append("mileage")
     if str(old.get("title") or "") != str(new.get("title") or ""):
         changes.append("title")
     if not changes:
         return "unchanged"
-    if "price" in changes:
+    if "price" in changes or "landed_cost" in changes:
         return "updated_price"
     return "updated"
 
@@ -452,7 +471,14 @@ def write_payload(directory: Path, stem: str, payload: Any) -> str:
     return name
 
 
-def write_catalog(catalog: Path, result: dict[str, Any], *, now: str, threshold: float | None) -> None:
+def write_catalog(
+    catalog: Path,
+    result: dict[str, Any],
+    *,
+    now: str,
+    threshold: float | None,
+    shop_ids: list[str] | None = None,
+) -> None:
     dump_json(catalog / "listings-filtered.json", result["inventory"])
     dump_json(catalog / "listings-ranked.json", result["ranked"])
     dump_json(catalog / "listings-below-display.json", result["below"])
@@ -470,12 +496,47 @@ def write_catalog(catalog: Path, result: dict[str, Any], *, now: str, threshold:
     dump_json(catalog / "shortlist-cheapest.json", cheapest)
     meta_path = catalog / "meta.json"
     meta = load_json(meta_path, {})
+    inv = result["inventory"]
+    top_counts: dict[str, int] = {}
+    for row in display:
+        sid = str(row.get("shop_id") or "")
+        top_counts[sid] = top_counts.get(sid, 0) + 1
+    inv_counts: dict[str, int] = {}
+    shop_fee_samples: dict[str, int] = {}
+    for row in inv:
+        sid = str(row.get("shop_id") or "")
+        inv_counts[sid] = inv_counts.get(sid, 0) + 1
+        if sid not in shop_fee_samples and row.get("logistics_fee_yuan") is not None:
+            shop_fee_samples[sid] = int(row["logistics_fee_yuan"])
+
+    scope_ids = list(shop_ids or PLAN_A_SHOP_IDS)
+    shops_summary = []
+    for sid in scope_ids:
+        reg = DIRECT_SHOPS.get(sid) or {}
+        shops_summary.append({
+            "shop_id": sid,
+            "name": reg.get("name") or sid,
+            "short_name": reg.get("short_name") or sid,
+            "city": reg.get("city") or "",
+            "kind": reg.get("kind") or "直营",
+            "is_local": bool(reg.get("is_local")),
+            "logistics_fee_yuan": shop_fee_samples.get(sid, reg.get("fallback_logistics_yuan", 1000)),
+            "inventory_count": inv_counts.get(sid, 0),
+            "top_count": top_counts.get(sid, 0),
+        })
+
+    meta["buyer_city"] = BUYER_CITY
+    meta["shop_scope"] = "plan_a_7_direct_shops"
+    meta["shops"] = shops_summary
+    meta["on_sale_count"] = sum(1 for x in inv if x.get("sale_status") != "reserved")
+    meta["reserved_count"] = sum(1 for x in inv if x.get("sale_status") == "reserved")
+    meta["vetoed_count"] = sum(1 for x in inv if x.get("recommendation_gate") == "VETO")
     meta["ranked_at"] = now
     meta["ranked_count"] = len(display)
     meta["library_scored_count"] = len(display) + len(result["below"])
     meta["below_display_count"] = len(result["below"])
     meta["data_issue_count"] = len(result["issues"])
-    meta["filtered_count"] = len(result["inventory"])
+    meta["filtered_count"] = len(inv)
     meta["display_limit"] = DISPLAY_LIMIT
     meta["display_score_floor"] = display[-1].get("total_score") if display else None
     meta["ingest_score_threshold"] = threshold
@@ -544,7 +605,7 @@ def _score_incoming(
     if unknown and not skip_live_fetch:
         notes["live_match_attempted"] = len(unknown)
         try:
-            matched = match_with_autohome(unknown, live=True, persist=False)
+            matched = match_with_autohome(unknown, live=True, persist=False, write_trees=not dry_run)
             verified.update(matched)
             notes["pending_verified"] = matched
             notes["live_matched"] = len(matched)
@@ -568,12 +629,59 @@ def _score_incoming(
     return merged_incoming, notes
 
 
+def sync_missing_covers(items: list[dict[str, Any]], *, max_workers: int = 6) -> int:
+    """Download missing SKU cover JPEGs into images/ and dashboard/public/images/."""
+    img_dir = ROOT / "images"
+    dash_img_dir = ROOT / "dashboard" / "public" / "images"
+    img_dir.mkdir(parents=True, exist_ok=True)
+    dash_img_dir.mkdir(parents=True, exist_ok=True)
+    jobs: list[tuple[str, str]] = []
+    seen: set[str] = set()
+    for item in items:
+        sku = str(item.get("sku") or "").strip()
+        url = str(item.get("cover") or "").strip()
+        if not sku or not url or sku in seen:
+            continue
+        seen.add(sku)
+        p1 = img_dir / f"{sku}.jpg"
+        p2 = dash_img_dir / f"{sku}.jpg"
+        if p1.exists() and p1.stat().st_size > 1000:
+            if not p2.exists() or p2.stat().st_size != p1.stat().st_size:
+                p2.write_bytes(p1.read_bytes())
+            continue
+        jobs.append((sku, url))
+    if not jobs:
+        return 0
+
+    def _download(job: tuple[str, str]) -> bool:
+        sku, url = job
+        try:
+            req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
+            with urllib.request.urlopen(req, timeout=20) as resp:
+                data = resp.read()
+            if len(data) < 1000:
+                return False
+            (img_dir / f"{sku}.jpg").write_bytes(data)
+            (dash_img_dir / f"{sku}.jpg").write_bytes(data)
+            return True
+        except Exception:
+            return False
+
+    downloaded = 0
+    with concurrent.futures.ThreadPoolExecutor(max_workers=max_workers) as ex:
+        for ok in ex.map(_download, jobs):
+            if ok:
+                downloaded += 1
+    return downloaded
+
+
 def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(
-        description="懂车帝武汉店每日入库（列表、现金价、硬筛、打分、Top100）",
+        description="懂车帝直营多店每日入库（华中7城列表、现金价+到汉物流费、硬筛、V3打分、Top30）",
         epilog="快照落在 data/snapshots/YYYYMMDD/ 时会导出看板 today-updates.json；否则再跑 python3 scripts/export_today_updates.py",
     )
-    parser.add_argument("--limit", type=int, default=0, help="最多处理 N 条本店车辆，0 表示不限制")
+    parser.add_argument("--shops", default="plan_a", help="门店范围：plan_a（默认7城直营）或逗号分隔 shop_id")
+    parser.add_argument("--limit", type=int, default=0, help="最多处理 N 条直营车辆，0 表示不限制")
     parser.add_argument("--dry-run", action="store_true", help="不改 listings 与 specs 索引；仍写快照和 changelog")
     parser.add_argument(
         "--skip-live-fetch",
@@ -581,14 +689,16 @@ def build_parser() -> argparse.ArgumentParser:
         help="不跑汽车之家 live 参配，只用已有 specs 缓存打分",
     )
     parser.add_argument("--fixtures", type=Path, default=None, help="从目录读取 list-pageN.json 与 detail-<sku>.json")
-    parser.add_argument("--page-size", type=int, default=20)
+    parser.add_argument("--page-size", type=int, default=50)
+    parser.add_argument("--workers", type=int, default=8, help="详情并发请求线程数，默认 8")
     parser.add_argument("--snapshot-dir", type=Path, default=None)
     parser.add_argument("--catalog-dir", type=Path, default=None, help="默认 data/。测试可指向临时目录")
     parser.add_argument("--date", default=None, help="快照目录名 YYYYMMDD，默认上海时区今天")
     parser.add_argument("--display-limit", type=int, default=DISPLAY_LIMIT, help="看板展示条数，默认 30")
-    parser.add_argument("--delay", type=float, default=None, help="详情请求间隔秒数。HTTP 默认 0.15，fixtures 默认 0")
+    parser.add_argument("--delay", type=float, default=None, help="详情请求间隔秒数。HTTP 默认 0.05，fixtures 默认 0")
     parser.add_argument("--no-snapshots", action="store_true")
     parser.add_argument("--no-reconcile", action="store_true", help="跳过对不在列表中的旧库车源做详情对账")
+    parser.add_argument("--no-covers", action="store_true", help="跳过自动补齐封面图")
     return parser
 
 
@@ -598,13 +708,16 @@ def _reconcile_missing_inventory(
     seen_skus: set[str],
     batch: Any,
     *,
+    fetched_shop_ids: set[str],
     skip_live_fetch: bool,
     dry_run: bool,
 ) -> dict[str, dict[str, Any]]:
-    """Fetch detail for known inventory SKUs absent from today's list to prune sold & hide reserved."""
+    """Fetch detail for known inventory SKUs from fetched shops absent from today's list."""
     missing_rows = [
         row for row in inventory
-        if str(row.get("sku") or "") and str(row.get("sku") or "") not in seen_skus
+        if str(row.get("sku") or "")
+        and str(row.get("sku") or "") not in seen_skus
+        and (not fetched_shop_ids or str(row.get("shop_id") or "") in fetched_shop_ids)
     ]
     out: dict[str, dict[str, Any]] = {}
     if not missing_rows:
@@ -614,21 +727,25 @@ def _reconcile_missing_inventory(
     verified = load_verified(ROOT)
     for row in missing_rows:
         sku = str(row["sku"])
-        try:
-            _st, detail = client.fetch_detail(sku)
-            batch.details[sku] = detail
-        except Exception as exc:
-            status_code = getattr(exc, "status", None)
-            if isinstance(exc, FetchError) and status_code in (404, 410):
-                out[sku] = {"status": "sold", "reason": f"http_{status_code}_gone"}
-            else:
-                batch.detail_errors[sku] = {
-                    "sku": sku,
-                    "error": f"{type(exc).__name__}: {exc}",
-                    "status": status_code,
-                }
-                out[sku] = {"status": "detail_failed", "reason": f"reconcile_detail_error:{type(exc).__name__}"}
-            continue
+        cached_detail = batch.details.get(sku)
+        if cached_detail is not None:
+            detail = cached_detail
+        else:
+            try:
+                _st, detail = client.fetch_detail(sku)
+                batch.details[sku] = detail
+            except Exception as exc:
+                status_code = getattr(exc, "status", None)
+                if isinstance(exc, FetchError) and status_code in (404, 410):
+                    out[sku] = {"status": "sold", "reason": f"http_{status_code}_gone"}
+                else:
+                    batch.detail_errors[sku] = {
+                        "sku": sku,
+                        "error": f"{type(exc).__name__}: {exc}",
+                        "status": status_code,
+                    }
+                    out[sku] = {"status": "detail_failed", "reason": f"reconcile_detail_error:{type(exc).__name__}"}
+                continue
 
         sale = parse_sale_status(detail)
         cash = parse_cash_price(detail)
@@ -657,6 +774,28 @@ def _reconcile_missing_inventory(
         if cash.get("shop_id"):
             candidate["shop_id"] = str(cash["shop_id"])
             candidate["detail_shop_id"] = str(cash["shop_id"])
+        ful = parse_fulfillment_fees(detail, expected_city=BUYER_CITY)
+        costs = compute_landed_costs(
+            candidate.get("shop_id"),
+            city=candidate.get("city"),
+            api_logistics_yuan=ful["api_logistics_yuan"],
+            api_plate_fee_yuan=ful["api_plate_fee_yuan"],
+        )
+        candidate["is_local_wuhan"] = costs["is_local_wuhan"]
+        candidate["shop_short_name"] = costs["shop_short_name"]
+        candidate["city"] = costs["shop_city"]
+        candidate["logistics_fee_yuan"] = costs["logistics_fee_yuan"]
+        candidate["logistics_fee_source"] = costs["logistics_fee_source"]
+        candidate["plate_service_fee_yuan"] = costs["plate_service_fee_yuan"]
+        candidate["plate_fee_diff_yuan"] = costs["plate_fee_diff_yuan"]
+        candidate["landed_extra_yuan"] = costs["landed_extra_yuan"]
+        candidate["landed_extra_wan"] = costs["landed_extra_wan"]
+        if ful["delivery_eta"]:
+            candidate["delivery_eta"] = ful["delivery_eta"]
+        base_wan = candidate.get("cash_price_wan") or candidate.get("price")
+        if base_wan not in (None, ""):
+            candidate["landed_price_wan"] = compute_landed_price_wan(float(base_wan), costs["landed_extra_yuan"])
+
         candidate["sale_status"] = "on_sale"
         candidate["product_status"] = sale["product_status"]
         if sale["status_modify_time"]:
@@ -668,7 +807,11 @@ def _reconcile_missing_inventory(
             out[sku] = {"status": "hard_rejected", "item": candidate, "reason": hard_reason}
             continue
 
-        if price_of(row) != price_of(candidate) or row.get("sale_status") == "reserved":
+        if (
+            price_of(row) != price_of(candidate)
+            or row.get("landed_extra_yuan") != candidate.get("landed_extra_yuan")
+            or row.get("sale_status") == "reserved"
+        ):
             candidate = prepare_and_score(candidate, verified)
         out[sku] = {
             "status": "on_sale",
@@ -684,23 +827,26 @@ def run(argv: list[str] | None = None) -> dict[str, Any]:
     catalog = (args.catalog_dir or (ROOT / "data")).resolve()
     snapshot_dir = (args.snapshot_dir or (catalog / "snapshots" / stamp)).resolve()
     started = now_iso()
+    shop_ids = parse_shop_list_arg(args.shops)
     if args.fixtures:
         client: Any = load_fixture_dir(args.fixtures)
         delay = 0.0 if args.delay is None else args.delay
+        page_size = 20 if "--page-size" not in (argv or []) else args.page_size
+        batch = fetch_shop_batch(client, page_size=page_size, limit=max(0, args.limit))
+        fetched_shop_ids = {"118608"}
     else:
         client = HttpClient()
-        delay = 0.15 if args.delay is None else args.delay
-    if delay:
-        original_detail = client.fetch_detail
+        delay = 0.05 if args.delay is None else args.delay
+        batch = fetch_multi_shop_batch(
+            client,
+            shop_ids,
+            page_size=args.page_size,
+            limit=max(0, args.limit),
+            detail_workers=max(1, args.workers),
+            detail_delay=delay,
+        )
+        fetched_shop_ids = set(shop_ids)
 
-        def fetch_detail(sku: str):
-            payload = original_detail(sku)
-            time.sleep(delay)
-            return payload
-
-        client.fetch_detail = fetch_detail  # type: ignore[method-assign]
-
-    batch = fetch_shop_batch(client, page_size=args.page_size, limit=max(0, args.limit))
     inventory, previous_ranked = load_state(catalog)
     known = {str(item.get("sku")) for item in inventory}
     seen_list_skus: set[str] = set()
@@ -718,7 +864,6 @@ def run(argv: list[str] | None = None) -> dict[str, Any]:
             if sku in batch.detail_errors:
                 reason = "missing_cash_price:" + str(batch.detail_errors[sku].get("error") or "")
             item["_reject_reason"] = reason
-            # A failed detail read must not delete a car already in the library.
             if sku in known:
                 detail_failed.append(item)
             else:
@@ -737,6 +882,7 @@ def run(argv: list[str] | None = None) -> dict[str, Any]:
             inventory,
             seen_list_skus,
             batch,
+            fetched_shop_ids=fetched_shop_ids,
             skip_live_fetch=args.skip_live_fetch,
             dry_run=args.dry_run,
         )
@@ -779,13 +925,23 @@ def run(argv: list[str] | None = None) -> dict[str, Any]:
 
         committed_specs = commit_verified({sku: pending[sku] for sku in admitted if sku in pending})
 
+    covers_downloaded = 0
     if not args.dry_run:
-        write_catalog(catalog, result, now=started, threshold=result["threshold"])
+        write_catalog(catalog, result, now=started, threshold=result["threshold"], shop_ids=list(fetched_shop_ids) if args.fixtures else shop_ids)
+        if not args.fixtures and not args.no_covers and catalog.resolve() == (ROOT / "data").resolve():
+            cover_targets = list(result["ranked"]) + [
+                x for x in result["inventory"] if x.get("recommendation_gate") != "VETO"
+            ]
+            covers_downloaded = sync_missing_covers(cover_targets)
 
     snapshot_files: list[str] = []
     if not args.no_snapshots:
-        for index, page in enumerate(batch.pages):
-            snapshot_files.append(write_payload(snapshot_dir, f"list-page-{index:02d}", page))
+        if args.fixtures:
+            for index, page in enumerate(batch.pages):
+                snapshot_files.append(write_payload(snapshot_dir, f"list-page-{index:02d}", page))
+        else:
+            for sid, pidx, page in batch.shop_pages:
+                snapshot_files.append(write_payload(snapshot_dir, f"list-{sid}-page-{pidx:02d}", page))
         for sku, detail in batch.details.items():
             snapshot_files.append(write_payload(snapshot_dir, f"detail-{sku}", detail))
         for sku, error in batch.detail_errors.items():
@@ -801,6 +957,8 @@ def run(argv: list[str] | None = None) -> dict[str, Any]:
         "dry_run": bool(args.dry_run),
         "skip_live_fetch": bool(args.skip_live_fetch),
         "fixtures": str(args.fixtures) if args.fixtures else None,
+        "shops": shop_ids if not args.fixtures else ["118608"],
+        "shop_stats": batch.shop_stats,
         "limit": args.limit,
         "display_limit": args.display_limit,
         "catalog_dir": str(catalog),
@@ -817,6 +975,7 @@ def run(argv: list[str] | None = None) -> dict[str, Any]:
         "below_display_count": len(result["below"]),
         "issue_count": len(result["issues"]),
         "inventory_count": len(result["inventory"]),
+        "covers_downloaded": covers_downloaded,
         "catalog_written": not args.dry_run,
         "specs_committed": committed_specs,
         "score": {key: value for key, value in score_notes.items() if key != "dry_run"},

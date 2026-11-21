@@ -110,6 +110,17 @@ export type Listing = {
   cover?: string
   detail_url: string
   shop_id?: string
+  shop_name?: string
+  shop_short_name?: string
+  is_local_wuhan?: boolean
+  logistics_fee_yuan?: number
+  logistics_fee_source?: string
+  plate_service_fee_yuan?: number
+  plate_fee_diff_yuan?: number
+  landed_extra_yuan?: number
+  landed_extra_wan?: number
+  landed_price_wan?: number
+  delivery_eta?: string
   series?: string
   brand?: string
   manufacturer?: string
@@ -123,6 +134,7 @@ export type Listing = {
   detailed_config?: Specs
   v3_profile?: V3Profile | null
   score_version?: string
+  cash_price_wan?: number
   effective_price_wan?: number
   needs_cash_quote?: boolean
   condition_gate?: string
@@ -133,9 +145,25 @@ export type Listing = {
   config_coverage?: number
 }
 
+export type ShopSummary = {
+  shop_id: string
+  name: string
+  short_name: string
+  city: string
+  kind?: string
+  is_local?: boolean
+  logistics_fee_yuan?: number
+  inventory_count?: number
+  top_count?: number
+}
+
 export type Meta = {
   shop_name?: string
   shop_id?: string
+  buyer_city?: string
+  shop_scope?: string
+  shops?: ShopSummary[]
+  pricing_policy?: string
   captured_at?: string
   ranked_at?: string
   ranked_count?: number
@@ -159,5 +187,6 @@ export type Meta = {
   filter_pipeline?: string
 }
 
-export type PresetKey = 'all' | 'at' | 'under5' | 'lowmile' | 'suv' | 'sedan_b' | 'l2'
+export type ShopScopeKey = 'all' | 'wuhan' | 'low_freight'
+export type PresetKey = 'all' | 'wuhan' | 'at' | 'under5' | 'lowmile' | 'suv' | 'sedan_b' | 'l2'
 export type SortKey = 'recommend' | 'price' | 'discount' | 'mileage' | 'config' | 'powertrain'

@@ -217,7 +217,21 @@ def score_listing(item: dict[str, Any], today=None) -> dict[str, Any]:
         reasons.extend(veto["reasons"])
         warnings.extend(veto["reasons"])
     else:
-        if v3_profile.get("discount_fold") is not None:
+        extra_yuan = int(item.get("landed_extra_yuan") or 0)
+        cash_wan = float(item.get("cash_price_wan") or item.get("price") or eff)
+        logi_yuan = int(item.get("logistics_fee_yuan") or 0)
+        pdiff_yuan = int(item.get("plate_fee_diff_yuan") or 0)
+        if extra_yuan > 0:
+            fee_desc = f"裸车 {cash_wan:.2f} 万 + 物流{logi_yuan}元"
+            if pdiff_yuan > 0:
+                fee_desc += f"/上牌差{pdiff_yuan}元"
+            if v3_profile.get("discount_fold") is not None:
+                reasons.append(
+                    f"到汉可比价 {eff:.2f} 万（{fee_desc}，指导价 {msrp_wan:.2f} 万，{v3_profile['discount_fold']} 折）"
+                )
+            else:
+                reasons.append(f"到汉可比价 {eff:.2f} 万（{fee_desc}）")
+        elif v3_profile.get("discount_fold") is not None:
             reasons.append(
                 f"现金价 {eff:.2f} 万（指导价 {msrp_wan:.2f} 万，{v3_profile['discount_fold']} 折）"
             )

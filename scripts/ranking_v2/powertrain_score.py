@@ -255,6 +255,14 @@ def build_v3_profile(
 
     # Tailored inspection checklist
     checklist: list[str] = []
+    if item.get("is_local_wuhan") is False or int(item.get("landed_extra_yuan") or 0) > 0:
+        shop_lbl = str(item.get("shop_short_name") or item.get("city") or "外地直营店")
+        logi_yuan = int(item.get("logistics_fee_yuan") or 0)
+        plate_yuan = int(item.get("plate_service_fee_yuan") or 1000)
+        checklist.append(
+            f"异地直营调拨（{shop_lbl}→武汉）：到汉物流 {logi_yuan} 元 + 上牌服务费 {plate_yuan} 元，"
+            "锁单前核对官方漆面/底盘检测视频与托运保险条款"
+        )
     if any(k in title for k in ("迈锐宝", "君威")):
         checklist.extend([
             "冷车测试一枪着火（排查高压油泵延迟）",

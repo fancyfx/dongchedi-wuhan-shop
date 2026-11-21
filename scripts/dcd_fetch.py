@@ -1,24 +1,33 @@
 #!/usr/bin/env python3
-"""Headless Dongchedi Wuhan-shop list + cash-price client.
+"""Headless Dongchedi multi-shop list + cash-price + logistics fee client.
 
 List pagination must carry the previous page's data.event_info.search_id.
-Changing only offset repeats page 1. Cards whose shop_id is not 118608 are
-padding and are dropped. Cash price is data.product.sku_list[0].sku_price
-(fen / price_str). The sku_id+shop_id detail URL returns 502 and is not used.
+Changing only offset repeats page 1. Cards whose shop_id does not match the
+queried shop_id are padding and are dropped. Cash price is
+data.product.sku_list[0].sku_price (fen / price_str). Detail URL carries
+city_name=武汉&sh_city_name=武汉 so logistics fee to Wuhan is returned inline.
 """
 from __future__ import annotations
 
+import concurrent.futures
 import json
 import re
+import time
 import urllib.error
 import urllib.parse
 import urllib.request
 from dataclasses import dataclass, field
 from datetime import datetime, timezone, timedelta
 from pathlib import Path
-from typing import Any, Callable
+from typing import Any, Callable, Sequence
 
-from filters import WUHAN_SHOP_ID
+from shops import (
+    BUYER_CITY,
+    WUHAN_SHOP_ID,
+    compute_landed_costs,
+    compute_landed_price_wan,
+    shop_meta,
+)
 
 LIST_URL = "https://m.dcdapp.com/motor/ecom/sophon/guide/card/query/"
 DETAIL_URL = "https://m.dcdapp.com/motor/ecom/sophon/guide/card/detail"
@@ -32,12 +41,17 @@ UA = (
 )
 SHANGHAI = timezone(timedelta(hours=8))
 
-LIST_FILTERS = [
-    {"key": "shop_id", "val": [SHOP_ID]},
-    {"key": "price", "val": ["0,6"]},
-    {"key": "car_mileage", "val": ["0,10"]},
-    {"key": "car_age", "val": ["0,10"]},
-]
+
+def build_list_filters(shop_id: str = SHOP_ID) -> list[dict[str, Any]]:
+    return [
+        {"key": "shop_id", "val": [str(shop_id)]},
+        {"key": "price", "val": ["0,6"]},
+        {"key": "car_mileage", "val": ["0,10"]},
+        {"key": "car_age", "val": ["0,10"]},
+    ]
+
+
+LIST_FILTERS = build_list_filters(SHOP_ID)
 
 
 class FetchError(RuntimeError):
@@ -48,26 +62,36 @@ class FetchError(RuntimeError):
         self.body = body
 
 
-def build_list_url(offset: int, count: int, search_id: str) -> str:
+def build_list_url(
+    offset: int,
+    count: int,
+    search_id: str,
+    *,
+    shop_id: str = SHOP_ID,
+    buyer_city: str = BUYER_CITY,
+) -> str:
+    filters = build_list_filters(str(shop_id))
     params = {
         "mid": MID_LIST,
         "count": str(count),
         "offset": str(offset),
-        "city_name": "武汉",
-        "sh_city_name": "武汉",
-        "filter_list_json": json.dumps(LIST_FILTERS, ensure_ascii=False, separators=(",", ":")),
+        "city_name": buyer_city,
+        "sh_city_name": buyer_city,
+        "filter_list_json": json.dumps(filters, ensure_ascii=False, separators=(",", ":")),
         "sort_list_json": '[{"key":"sort=0"}]',
         "search_params_json": json.dumps({"search_id": search_id}, ensure_ascii=False),
     }
     return LIST_URL + "?" + urllib.parse.urlencode(params)
 
 
-def build_detail_url(sku: str) -> str:
+def build_detail_url(sku: str, *, buyer_city: str = BUYER_CITY) -> str:
     params = {
         "product_id": str(sku),
         "biz_type": "2",
         "card_type_source": "1",
         "mid": MID_DETAIL,
+        "city_name": buyer_city,
+        "sh_city_name": buyer_city,
     }
     return DETAIL_URL + "?" + urllib.parse.urlencode(params)
 
@@ -160,6 +184,77 @@ def parse_sale_status(detail: dict[str, Any]) -> dict[str, Any]:
     }
 
 
+def _parse_int_str(raw: Any) -> int | None:
+    if raw is None or isinstance(raw, bool):
+        return None
+    if isinstance(raw, (int, float)):
+        return int(round(raw))
+    digits = re.sub(r"[^0-9.]", "", str(raw).replace(",", ""))
+    if not digits:
+        return None
+    try:
+        return int(round(float(digits)))
+    except ValueError:
+        return None
+
+
+def parse_fulfillment_fees(detail: dict[str, Any], *, expected_city: str = BUYER_CITY) -> dict[str, Any]:
+    """Extract official logistics fee and plate service fee to buyer city from detail payload."""
+    comp = (detail.get("data") or {}).get("component_list") or {}
+    ful = comp.get("fulfillment") or {}
+    deliv = ful.get("delivery") or {}
+    deliv_city = str(((deliv.get("delivery_location") or {}).get("city") or {}).get("name") or "").strip()
+    move_in_city = str(((deliv.get("move_in_location") or {}).get("city") or {}).get("name") or "").strip()
+
+    logi = ful.get("logistics") or {}
+    raw_amt = (logi.get("logistics_amount") or {}).get("price")
+    api_logi = _parse_int_str(raw_amt)
+
+    eta = ""
+    for proc in logi.get("process_list") or []:
+        if not isinstance(proc, dict):
+            continue
+        for k in ("sub_title", "title", "desc"):
+            txt = str(proc.get(k) or "").strip()
+            if txt and ("达" in txt or "天" in txt or "日" in txt):
+                eta = txt
+                break
+        if eta:
+            break
+
+    api_plate: int | None = None
+    pp_list = (comp.get("purchase_plan") or {}).get("paytype_detail_list") or []
+    pp0 = pp_list[0] if pp_list and isinstance(pp_list[0], dict) else {}
+    for pi in pp0.get("price_item_list") or []:
+        if not isinstance(pi, dict) or pi.get("price_type") != 17:
+            continue
+        for sub in pi.get("sub_price_items") or []:
+            if not isinstance(sub, dict):
+                continue
+            ptype = sub.get("price_type")
+            if ptype == 103 and api_plate is None:
+                api_plate = _parse_int_str(sub.get("price") if sub.get("price") not in (None, "") else sub.get("price_str"))
+            elif ptype == 8 and api_logi is None:
+                api_logi = _parse_int_str(sub.get("price") if sub.get("price") not in (None, "") else sub.get("price_str"))
+
+    # Guard against stale/default Beijing payload when caller asked for Wuhan.
+    if deliv_city and expected_city and deliv_city != expected_city:
+        api_logi = None
+    elif move_in_city == expected_city and api_logi == 0:
+        api_logi = 0
+    elif api_logi is not None and api_logi <= 0:
+        # Non-local zero/negative means omitted or unavailable, force fallback chain.
+        api_logi = None
+
+    return {
+        "delivery_city": deliv_city or None,
+        "move_in_city": move_in_city or None,
+        "api_logistics_yuan": api_logi,
+        "api_plate_fee_yuan": api_plate,
+        "delivery_eta": eta or None,
+    }
+
+
 def normalize_card(card: dict[str, Any], detail: dict[str, Any] | None = None) -> dict[str, Any]:
     product = card.get("product") or {}
     event = product.get("event_info") or {}
@@ -173,6 +268,7 @@ def normalize_card(card: dict[str, Any], detail: dict[str, Any] | None = None) -
             tags.append(text)
     sku = str(event.get("sku_id") or "")
     shop_id = str(event.get("shop_id") or "")
+    reg_shop = shop_meta(shop_id)
     self_trade = _truthy(event.get("is_self_trade_car"))
     source_name = str(event.get("source_type_name") or "")
     badges: list[str] = []
@@ -197,18 +293,28 @@ def normalize_card(card: dict[str, Any], detail: dict[str, Any] | None = None) -
         list_wan = float(list_price.get("text"))
     except (TypeError, ValueError):
         list_wan = None
+
+    raw_city = str(
+        (reg_shop or {}).get("city")
+        or event.get("shop_city_name")
+        or event.get("car_source_city_name")
+        or BUYER_CITY
+    ).strip()
+    shop_name = str(event.get("shop_name") or (reg_shop or {}).get("name") or "").strip()
+
     item: dict[str, Any] = {
         "sku": sku,
         "title": desc.get("title") or event.get("full_name") or "",
         "shop_id": shop_id,
-        "shop_name": event.get("shop_name") or "",
+        "shop_name": shop_name,
+        "shop_short_name": str((reg_shop or {}).get("short_name") or (f"{raw_city}直营" if raw_city else "")),
         "series": event.get("series_name") or event.get("car_series_name") or "",
         "brand": event.get("brand_name") or "",
         "mileage_wan": mileage,
         "model_year": model_year,
         "plate_year": plate_year,
         "year": desc.get("sub_title") or "",
-        "city": event.get("shop_city_name") or event.get("car_source_city_name") or "武汉",
+        "city": raw_city,
         "tags": tags,
         "badges": badges,
         "is_self_trade_car": self_trade,
@@ -225,6 +331,9 @@ def normalize_card(card: dict[str, Any], detail: dict[str, Any] | None = None) -
         "price_type": "现金价",
         "prefix": "现金价",
     }
+    api_logi: int | None = None
+    api_plate: int | None = None
+    delivery_eta: str | None = None
     if detail:
         cash = parse_cash_price(detail)
         item["cash_price_fen"] = cash["cash_price_fen"]
@@ -235,12 +344,43 @@ def normalize_card(card: dict[str, Any], detail: dict[str, Any] | None = None) -
         if cash.get("shop_id"):
             item["shop_id"] = str(cash["shop_id"])
             item["detail_shop_id"] = str(cash["shop_id"])
+            updated_reg = shop_meta(item["shop_id"])
+            if updated_reg:
+                item["city"] = str(updated_reg["city"])
+                item["shop_short_name"] = str(updated_reg["short_name"])
+                if not item.get("shop_name"):
+                    item["shop_name"] = str(updated_reg["name"])
         sale = parse_sale_status(detail)
         item["sale_status"] = sale["sale_status"]
         if sale["product_status"] is not None:
             item["product_status"] = sale["product_status"]
         if sale["status_modify_time"]:
             item["status_modify_time"] = sale["status_modify_time"]
+        ful = parse_fulfillment_fees(detail, expected_city=BUYER_CITY)
+        api_logi = ful["api_logistics_yuan"]
+        api_plate = ful["api_plate_fee_yuan"]
+        delivery_eta = ful["delivery_eta"]
+
+    costs = compute_landed_costs(
+        item.get("shop_id"),
+        city=item.get("city"),
+        api_logistics_yuan=api_logi,
+        api_plate_fee_yuan=api_plate,
+    )
+    item["is_local_wuhan"] = costs["is_local_wuhan"]
+    item["shop_short_name"] = costs["shop_short_name"]
+    item["city"] = costs["shop_city"]
+    item["logistics_fee_yuan"] = costs["logistics_fee_yuan"]
+    item["logistics_fee_source"] = costs["logistics_fee_source"]
+    item["plate_service_fee_yuan"] = costs["plate_service_fee_yuan"]
+    item["plate_fee_diff_yuan"] = costs["plate_fee_diff_yuan"]
+    item["landed_extra_yuan"] = costs["landed_extra_yuan"]
+    item["landed_extra_wan"] = costs["landed_extra_wan"]
+    if delivery_eta:
+        item["delivery_eta"] = delivery_eta
+    base_wan = item.get("cash_price_wan") if item.get("cash_price_wan") not in (None, "") else item.get("price")
+    if base_wan not in (None, ""):
+        item["landed_price_wan"] = compute_landed_price_wan(float(base_wan), costs["landed_extra_yuan"])
     return item
 
 
@@ -248,15 +388,17 @@ def normalize_card(card: dict[str, Any], detail: dict[str, Any] | None = None) -
 class FetchBatch:
     cards: list[dict[str, Any]] = field(default_factory=list)
     pages: list[dict[str, Any]] = field(default_factory=list)
+    shop_pages: list[tuple[str, int, dict[str, Any]]] = field(default_factory=list)
+    shop_stats: dict[str, dict[str, int]] = field(default_factory=dict)
     details: dict[str, dict[str, Any]] = field(default_factory=dict)
     detail_errors: dict[str, dict[str, Any]] = field(default_factory=dict)
 
 
 class HttpClient:
-    def __init__(self, timeout: float = 30.0):
+    def __init__(self, timeout: float = 12.0):
         self.timeout = timeout
 
-    def get_json(self, url: str) -> tuple[int, dict[str, Any]]:
+    def get_json(self, url: str, *, shop_id: str = SHOP_ID) -> tuple[int, dict[str, Any]]:
         req = urllib.request.Request(
             url,
             headers={
@@ -265,7 +407,7 @@ class HttpClient:
                 "Accept-Language": "zh-CN,zh;q=0.9",
                 "Referer": (
                     "https://m.dcdapp.com/motor/feoffline/usedcar_shop_page/home.html"
-                    f"?shop_id={SHOP_ID}"
+                    f"?shop_id={shop_id}"
                 ),
             },
         )
@@ -284,8 +426,10 @@ class HttpClient:
             raise FetchError(url, status, body) from exc
         return status, payload
 
-    def fetch_list(self, offset: int, count: int, search_id: str) -> tuple[int, dict[str, Any]]:
-        return self.get_json(build_list_url(offset, count, search_id))
+    def fetch_list(
+        self, offset: int, count: int, search_id: str, *, shop_id: str = SHOP_ID
+    ) -> tuple[int, dict[str, Any]]:
+        return self.get_json(build_list_url(offset, count, search_id, shop_id=shop_id), shop_id=shop_id)
 
     def fetch_detail(self, sku: str) -> tuple[int, dict[str, Any]]:
         return self.get_json(build_detail_url(sku))
@@ -299,7 +443,9 @@ class FixtureClient:
         self.details = details
         self.list_calls: list[tuple[int, int, str]] = []
 
-    def fetch_list(self, offset: int, count: int, search_id: str) -> tuple[int, dict[str, Any]]:
+    def fetch_list(
+        self, offset: int, count: int, search_id: str, *, shop_id: str = SHOP_ID
+    ) -> tuple[int, dict[str, Any]]:
         self.list_calls.append((offset, count, search_id))
         index = len(self.list_calls) - 1
         if index >= len(self.pages):
@@ -334,22 +480,25 @@ def load_fixture_dir(directory: Path) -> FixtureClient:
     return FixtureClient(pages, details)
 
 
-def fetch_shop_batch(
+def _walk_shop_list(
     client: Any,
     *,
-    page_size: int = 20,
-    limit: int = 0,
-    max_pages: int = 40,
-    on_detail_error: Callable[[str, Exception], None] | None = None,
-) -> FetchBatch:
-    """Walk search_id pages and attach a detail payload for each kept card."""
-    batch = FetchBatch()
+    shop_id: str,
+    page_size: int,
+    limit: int,
+    max_pages: int,
+    seen: set[str],
+) -> tuple[list[dict[str, Any]], list[dict[str, Any]]]:
+    kept_cards: list[dict[str, Any]] = []
+    pages: list[dict[str, Any]] = []
     search_id = ""
     offset = 0
-    seen: set[str] = set()
     for _ in range(max_pages):
-        _status, page = client.fetch_list(offset, page_size, search_id)
-        batch.pages.append(page)
+        try:
+            _status, page = client.fetch_list(offset, page_size, search_id, shop_id=shop_id)
+        except TypeError:
+            _status, page = client.fetch_list(offset, page_size, search_id)
+        pages.append(page)
         search_id = _search_id(page) or search_id
         cards = _cards(page)
         if not cards:
@@ -357,7 +506,7 @@ def fetch_shop_batch(
         fresh: list[dict[str, Any]] = []
         in_shop = 0
         for card in cards:
-            if card_shop_id(card) != SHOP_ID:
+            if card_shop_id(card) != str(shop_id):
                 continue
             in_shop += 1
             sku = card_sku(card)
@@ -369,8 +518,28 @@ def fetch_shop_batch(
             # Other-shop padding, or a repeated page because search_id was dropped.
             break
         for card in fresh:
-            batch.cards.append(card)
-            sku = card_sku(card)
+            kept_cards.append(card)
+            if limit and len(kept_cards) >= limit:
+                return kept_cards, pages
+        page_info = (page.get("data") or {}).get("page") or {}
+        if not page_info.get("has_more") or not search_id:
+            break
+        offset = int(page_info.get("offset") or (offset + len(cards)))
+    return kept_cards, pages
+
+
+def _fetch_details_for_cards(
+    client: Any,
+    cards: list[dict[str, Any]],
+    batch: FetchBatch,
+    *,
+    workers: int = 1,
+    delay: float = 0.0,
+    on_detail_error: Callable[[str, Exception], None] | None = None,
+) -> None:
+    skus = [card_sku(c) for c in cards if card_sku(c)]
+    if isinstance(client, FixtureClient) or workers <= 1:
+        for sku in skus:
             try:
                 _detail_status, detail = client.fetch_detail(sku)
                 batch.details[sku] = detail
@@ -382,12 +551,108 @@ def fetch_shop_batch(
                 }
                 if on_detail_error:
                     on_detail_error(sku, exc)
-            if limit and len(batch.cards) >= limit:
-                return batch
-        page_info = (page.get("data") or {}).get("page") or {}
-        if not page_info.get("has_more"):
+        return
+
+    print(f"Fetching {len(skus)} detail payloads across {workers} workers...", flush=True)
+    completed = 0
+
+    def task(sku: str) -> tuple[str, dict[str, Any] | None, Exception | None]:
+        if delay > 0:
+            time.sleep(delay)
+        try:
+            _st, det = client.fetch_detail(sku)
+            return sku, det, None
+        except Exception as exc:
+            return sku, None, exc
+
+    with concurrent.futures.ThreadPoolExecutor(max_workers=workers) as ex:
+        for sku, det, exc in ex.map(task, skus):
+            completed += 1
+            if completed % 100 == 0 or completed == len(skus):
+                print(f"  detail progress: {completed}/{len(skus)} (err={len(batch.detail_errors)})", flush=True)
+            if exc is not None:
+                batch.detail_errors[sku] = {
+                    "sku": sku,
+                    "error": f"{type(exc).__name__}: {exc}",
+                    "status": getattr(exc, "status", None),
+                }
+                if on_detail_error:
+                    on_detail_error(sku, exc)
+            elif det is not None:
+                batch.details[sku] = det
+
+
+def fetch_shop_batch(
+    client: Any,
+    *,
+    shop_id: str = SHOP_ID,
+    page_size: int = 20,
+    limit: int = 0,
+    max_pages: int = 40,
+    on_detail_error: Callable[[str, Exception], None] | None = None,
+) -> FetchBatch:
+    """Walk search_id pages for one shop and attach detail payloads."""
+    batch = FetchBatch()
+    seen: set[str] = set()
+    kept, pages = _walk_shop_list(
+        client,
+        shop_id=str(shop_id),
+        page_size=page_size,
+        limit=limit,
+        max_pages=max_pages,
+        seen=seen,
+    )
+    batch.cards.extend(kept)
+    batch.pages.extend(pages)
+    for idx, page in enumerate(pages):
+        batch.shop_pages.append((str(shop_id), idx, page))
+    batch.shop_stats[str(shop_id)] = {"pages": len(pages), "cards": len(kept)}
+    _fetch_details_for_cards(client, kept, batch, workers=1, on_detail_error=on_detail_error)
+    return batch
+
+
+def fetch_multi_shop_batch(
+    client: Any,
+    shop_ids: Sequence[str],
+    *,
+    page_size: int = 50,
+    limit: int = 0,
+    max_pages: int = 40,
+    on_detail_error: Callable[[str, Exception], None] | None = None,
+    detail_workers: int = 8,
+    detail_delay: float = 0.03,
+) -> FetchBatch:
+    """Walk pages across multiple official direct shops and concurrently fetch details."""
+    batch = FetchBatch()
+    seen: set[str] = set()
+    for raw_sid in shop_ids:
+        sid = str(raw_sid).strip()
+        if not sid:
+            continue
+        remaining = max(0, limit - len(batch.cards)) if limit > 0 else 0
+        kept, pages = _walk_shop_list(
+            client,
+            shop_id=sid,
+            page_size=page_size,
+            limit=remaining,
+            max_pages=max_pages,
+            seen=seen,
+        )
+        batch.cards.extend(kept)
+        batch.pages.extend(pages)
+        for idx, page in enumerate(pages):
+            batch.shop_pages.append((sid, idx, page))
+        batch.shop_stats[sid] = {"pages": len(pages), "cards": len(kept)}
+        print(f"List shop={sid}: pages={len(pages)} cards={len(kept)}", flush=True)
+        if limit > 0 and len(batch.cards) >= limit:
             break
-        if not search_id:
-            break
-        offset = int(page_info.get("offset") or (offset + page_size))
+
+    _fetch_details_for_cards(
+        client,
+        batch.cards,
+        batch,
+        workers=detail_workers,
+        delay=detail_delay,
+        on_detail_error=on_detail_error,
+    )
     return batch

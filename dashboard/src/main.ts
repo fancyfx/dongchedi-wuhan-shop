@@ -23,7 +23,7 @@ import {
   type TodayMode,
   type TodayUpdates,
 } from './today'
-import type { Listing, Meta, PresetKey, SortKey } from './types'
+import type { Listing, Meta, PresetKey, ShopScopeKey, SortKey } from './types'
 
 const app = document.querySelector<HTMLDivElement>('#app')!
 
@@ -34,6 +34,8 @@ let highlightSkus = new Set<string>()
 
 const state = {
   preset: 'all' as PresetKey,
+  shopScope: 'all' as ShopScopeKey,
+  city: '',
   sort: 'recommend' as SortKey,
   q: '',
   priceMax: '',
@@ -41,6 +43,25 @@ const state = {
   drawerMode: null as null | 'detail' | 'today' | 'compare' | 'methodology' | 'filter',
   todayFilter: 'all' as TodayFilter,
   compareSkus: [] as string[],
+}
+
+function landedPrice(item: Listing): number {
+  return Number(item.effective_price_wan ?? item.landed_price_wan ?? item.price)
+}
+
+function cashPrice(item: Listing): number {
+  return Number(item.cash_price_wan ?? item.price)
+}
+
+function isLocalWuhan(item: Listing): boolean {
+  if (typeof item.is_local_wuhan === 'boolean') return item.is_local_wuhan
+  return item.shop_id === '118608' || item.city === '武汉'
+}
+
+function originShortLabel(item: Listing): string {
+  if (item.shop_short_name) return item.shop_short_name
+  if (item.city) return `${item.city}店`
+  return isLocalWuhan(item) ? '武汉店' : '直营店'
 }
 
 function fmtTime(iso?: string): string {
@@ -75,10 +96,12 @@ function matchesPreset(item: Listing, preset: PresetKey): boolean {
   const p = item.v3_profile
   const bt = String(item.specs?.body_type || '')
   switch (preset) {
+    case 'wuhan':
+      return isLocalWuhan(item)
     case 'at':
       return p?.gearbox_tier === 'AT'
     case 'under5':
-      return Number(item.price) <= 5.0
+      return landedPrice(item) <= 5.0
     case 'lowmile':
       return (item.mileage_wan ?? 99) <= 4.0
     case 'suv':
@@ -92,16 +115,29 @@ function matchesPreset(item: Listing, preset: PresetKey): boolean {
   }
 }
 
+function matchesShopScope(item: Listing): boolean {
+  if (state.shopScope === 'wuhan') return isLocalWuhan(item)
+  if (state.shopScope === 'low_freight') {
+    return isLocalWuhan(item) || (item.logistics_fee_yuan ?? 9999) <= 1000
+  }
+  return true
+}
+
 function filteredListings(): Listing[] {
   const q = state.q.trim().toLowerCase()
   const pMax = state.priceMax === '' ? null : Number(state.priceMax)
   let rows = rankedListings.filter((item) => {
+    if (!matchesShopScope(item)) return false
+    if (state.city && (item.city || '') !== state.city) return false
     if (!matchesPreset(item, state.preset)) return false
-    if (pMax != null && !Number.isNaN(pMax) && Number(item.price) > pMax) return false
+    if (pMax != null && !Number.isNaN(pMax) && landedPrice(item) > pMax) return false
     if (q) {
       const hay = [
         item.sku,
         item.title,
+        item.city || '',
+        item.shop_short_name || '',
+        item.shop_name || '',
         item.brand || '',
         item.manufacturer || '',
         item.v3_profile?.gearbox_label || '',
@@ -117,7 +153,7 @@ function filteredListings(): Listing[] {
   rows = [...rows]
   switch (state.sort) {
     case 'price':
-      rows.sort((a, b) => a.price - b.price || (a.rank ?? 99) - (b.rank ?? 99))
+      rows.sort((a, b) => landedPrice(a) - landedPrice(b) || (a.rank ?? 99) - (b.rank ?? 99))
       break
     case 'discount':
       rows.sort(
@@ -151,12 +187,20 @@ function filteredListings(): Listing[] {
 }
 
 function isDefaultView(): boolean {
-  return state.preset === 'all' && state.sort === 'recommend' && !state.q.trim() && !state.priceMax
+  return (
+    state.preset === 'all' &&
+    state.shopScope === 'all' &&
+    !state.city &&
+    state.sort === 'recommend' &&
+    !state.q.trim() &&
+    !state.priceMax
+  )
 }
 
 function presetCounts(): Record<PresetKey, number> {
   return {
     all: rankedListings.length,
+    wuhan: rankedListings.filter((x) => matchesPreset(x, 'wuhan')).length,
     at: rankedListings.filter((x) => matchesPreset(x, 'at')).length,
     under5: rankedListings.filter((x) => matchesPreset(x, 'under5')).length,
     lowmile: rankedListings.filter((x) => matchesPreset(x, 'lowmile')).length,
@@ -173,6 +217,12 @@ function cardInnerHtml(item: Listing, hero = false): string {
   const compared = state.compareSkus.includes(item.sku)
   const isNewTop = highlightSkus.has(item.sku)
   const topClass = item.rank && item.rank <= 3 ? `top-card-${item.rank}` : ''
+  const local = isLocalWuhan(item)
+  const effWan = landedPrice(item)
+  const bareWan = cashPrice(item)
+  const logiYuan = Math.max(0, Math.round(item.logistics_fee_yuan ?? 0))
+  const pdiffYuan = Math.max(0, Math.round(item.plate_fee_diff_yuan ?? 0))
+  const originLbl = originShortLabel(item)
   const yearMile = [
     item.plate_year ? `${item.plate_year}年` : '',
     item.mileage_wan != null ? `${item.mileage_wan.toFixed(2)}万km` : '',
@@ -184,6 +234,12 @@ function cardInnerHtml(item: Listing, hero = false): string {
     .filter(Boolean)
     .join(' · ')
   const feats = (p?.feature_highlights || []).slice(0, hero ? 7 : 6)
+
+  const breakdownHtml = local
+    ? `<div class="cost-breakdown local">武汉店本地提车 · 免物流费（本地上牌费 500 元）</div>`
+    : `<div class="cost-breakdown remote">裸车 ${bareWan.toFixed(2)}万 + 官方物流 ${logiYuan}元${pdiffYuan > 0 ? ` + 异地上牌差 ${pdiffYuan}元` : ''}</div>`
+
+  const originBadgeText = local ? '武汉本地' : `${originLbl}${logiYuan > 0 ? ` · ${logiYuan}物流` : ''}`
 
   return `
     <article class="car-card ${hero ? 'hero-card' : ''} ${topClass} ${compared ? 'is-compared' : ''}" data-sku="${esc(item.sku)}">
@@ -204,15 +260,20 @@ function cardInnerHtml(item: Listing, hero = false): string {
       </div>
       <div class="card-body">
         <div class="card-head-meta">
-          <span class="card-sub">${esc(yearMile)}</span>
+          <div class="head-meta-left">
+            <span class="origin-badge ${local ? 'local' : 'remote'}">${esc(originBadgeText)}</span>
+            <span class="card-sub">${esc(yearMile)}</span>
+          </div>
           <span class="head-score-desktop">严选分 <strong>${total != null ? total.toFixed(1) : '—'}</strong></span>
         </div>
         <h3 class="card-title" data-open-detail="${esc(item.sku)}" title="${esc(item.title)}">${esc(item.title)}</h3>
 
         <div class="price-block">
-          <span class="cash-price">${Number(item.price).toFixed(2)}<small>万</small></span>
+          <span class="cash-price">${effWan.toFixed(2)}<small>万</small></span>
+          <span class="price-tag-mini">${local ? '现金价' : '到汉价'}</span>
           ${p?.msrp_wan ? `<span class="msrp-info"><del>${p.msrp_wan.toFixed(2)}万</del>${p.saved_wan ? `<b class="saved-badge">省${p.saved_wan.toFixed(1)}万</b>` : ''}</span>` : ''}
         </div>
+        ${breakdownHtml}
 
         <div class="mech-bar">
           <span class="gb-badge ${gearboxClass(p?.gearbox_tier)}">${esc(p?.gearbox_label || '自动')}</span>
@@ -240,6 +301,8 @@ function mastheadHtml(): string {
   const vetoed = meta?.vetoed_count ?? '—'
   const reserved = meta?.reserved_count ?? 0
   const rankedCnt = rankedListings.length
+  const localCnt = rankedListings.filter(isLocalWuhan).length
+  const remoteCnt = Math.max(0, rankedCnt - localCnt)
   const todayBadge = todayData.has_snapshot
     ? todayData.counts.added + todayData.counts.updated_price + todayData.counts.removed_sold
     : 0
@@ -248,9 +311,9 @@ function mastheadHtml(): string {
     <header class="masthead">
       <div class="masthead-top">
         <div class="brand-lockup">
-          <div class="eyebrow">DONGCHEDI WUHAN · TOP 30</div>
-          <h1>武汉严选 · Top 30</h1>
-          <p class="lead">节假日低频用车买手严选：剔除纯电插混、三缸与干式双离合，实时清理已售并隐藏锁单。</p>
+          <div class="eyebrow">DONGCHEDI CENTRAL · 7 DIRECT SHOPS → WUHAN</div>
+          <h1>到汉严选 · 7城直营 Top 30</h1>
+          <p class="lead">覆盖武汉、长沙、合肥、南京、郑州、重庆、成都官方直营店仓，已自动计入官方到汉物流费与异地上牌差额，统一以到汉总价≤6万进入 V3 严选比价。</p>
         </div>
         <div class="masthead-actions">
           <button type="button" class="action-pill" id="btn-open-methodology">选车铁律</button>
@@ -261,12 +324,12 @@ function mastheadHtml(): string {
       </div>
 
       <div class="funnel-strip" aria-label="数据清洗漏斗">
-        <span class="funnel-chip">在售 <b>${onSale}</b></span>
+        <span class="funnel-chip">7城在售 <b>${onSale}</b></span>
         <span class="funnel-sep">→</span>
         <span class="funnel-chip veto">铁律否决 <b>-${vetoed}</b></span>
         ${reserved > 0 ? `<span class="funnel-sep">→</span><span class="funnel-chip muted">锁单藏 <b>${reserved}</b></span>` : ''}
         <span class="funnel-sep">→</span>
-        <span class="funnel-chip final">严选 <b>Top ${rankedCnt}</b></span>
+        <span class="funnel-chip final">严选 <b>Top ${rankedCnt}</b>${rankedCnt ? `（汉${localCnt}/外${remoteCnt}）` : ''}</span>
         <span class="funnel-time">更新 ${esc(fmtTime(meta?.ranked_at))}</span>
       </div>
     </header>`
@@ -276,6 +339,7 @@ function stickyBarHtml(shown: Listing[]): string {
   const counts = presetCounts()
   const presets: [PresetKey, string][] = [
     ['all', `全部 ${counts.all}`],
+    ['wuhan', `武汉本地 ${counts.wuhan}`],
     ['at', `成熟AT ${counts.at}`],
     ['under5', `5万内 ${counts.under5}`],
     ['lowmile', `4万km内 ${counts.lowmile}`],
@@ -283,8 +347,19 @@ function stickyBarHtml(shown: Listing[]): string {
     ['sedan_b', `B级轿 ${counts.sedan_b}`],
     ['l2', `L2智驾 ${counts.l2}`],
   ]
-  const avgPrice = shown.length ? (shown.reduce((a, b) => a + b.price, 0) / shown.length).toFixed(2) : '—'
-  const activeFilterCount = (state.q.trim() ? 1 : 0) + (state.priceMax ? 1 : 0)
+  const avgPrice = shown.length ? (shown.reduce((a, b) => a + landedPrice(b), 0) / shown.length).toFixed(2) : '—'
+  const activeFilterCount =
+    (state.q.trim() ? 1 : 0) +
+    (state.priceMax ? 1 : 0) +
+    (state.shopScope !== 'all' ? 1 : 0) +
+    (state.city ? 1 : 0)
+
+  const scopeChip =
+    state.shopScope === 'wuhan'
+      ? `<button type="button" class="active-chip" id="btn-clear-scope">仅武汉 ×</button>`
+      : state.shopScope === 'low_freight'
+        ? `<button type="button" class="active-chip" id="btn-clear-scope">运费≤1k ×</button>`
+        : ''
 
   return `
     <section class="sticky-bar" aria-label="筛选与排序">
@@ -299,14 +374,16 @@ function stickyBarHtml(shown: Listing[]): string {
       <div class="bar-ctrl-row">
         <div class="bar-stats">
           <strong>${shown.length}</strong><span class="bar-total">/${rankedListings.length}台</span>
-          <span class="bar-avg">均价 <b>${avgPrice}万</b></span>
+          <span class="bar-avg">到汉均 <b>${avgPrice}万</b></span>
+          ${scopeChip}
+          ${state.city ? `<button type="button" class="active-chip" id="btn-clear-city">${esc(state.city)} ×</button>` : ''}
           ${state.q.trim() ? `<button type="button" class="active-chip" id="btn-clear-q">${esc(state.q.trim())} ×</button>` : ''}
           ${state.priceMax ? `<button type="button" class="active-chip" id="btn-clear-pmax">≤${esc(state.priceMax)}万 ×</button>` : ''}
         </div>
 
         <div class="desktop-only-inputs">
-          <input id="ctrl-q" type="search" placeholder="搜车型 / 品牌 / SKU" value="${esc(state.q)}" />
-          <input id="ctrl-pmax" type="number" min="0" max="6" step="0.1" placeholder="最高价(万)" value="${esc(state.priceMax)}" />
+          <input id="ctrl-q" type="search" placeholder="搜车型 / 城市 / 品牌" value="${esc(state.q)}" />
+          <input id="ctrl-pmax" type="number" min="0" max="6" step="0.1" placeholder="到汉上限" value="${esc(state.priceMax)}" />
         </div>
 
         <div class="bar-actions">
@@ -315,7 +392,7 @@ function stickyBarHtml(shown: Listing[]): string {
             <option value="powertrain" ${state.sort === 'powertrain' ? 'selected' : ''}>三大件稳</option>
             <option value="config" ${state.sort === 'config' ? 'selected' : ''}>高配优先</option>
             <option value="discount" ${state.sort === 'discount' ? 'selected' : ''}>折数最低</option>
-            <option value="price" ${state.sort === 'price' ? 'selected' : ''}>价格最低</option>
+            <option value="price" ${state.sort === 'price' ? 'selected' : ''}>到汉总价</option>
             <option value="mileage" ${state.sort === 'mileage' ? 'selected' : ''}>里程最低</option>
           </select>
           <button type="button" class="filter-sheet-btn ${activeFilterCount > 0 ? 'has-active' : ''}" id="btn-open-filter">
@@ -367,11 +444,20 @@ function drawerHostHtml(shownCount: number): string {
     body = renderCompareDrawerBody(selected)
     extraCls = 'extra-wide'
   } else if (state.drawerMode === 'filter') {
-    title = '搜索、预算与排序'
+    const cityMap = new Map<string, number>()
+    for (const item of rankedListings) {
+      const c = item.city || (isLocalWuhan(item) ? '武汉' : '')
+      if (c) cityMap.set(c, (cityMap.get(c) || 0) + 1)
+    }
+    const cityCounts = [...cityMap.entries()].sort((a, b) => b[1] - a[1])
+    title = '门店范围、预算与排序'
     body = renderFilterSheetBody({
       q: state.q,
       priceMax: state.priceMax,
       sort: state.sort,
+      shopScope: state.shopScope,
+      city: state.city,
+      cityCounts,
       shownCount,
       totalCount: rankedListings.length,
     })
@@ -454,7 +540,7 @@ function renderApp() {
       ${stickyBarHtml(shown)}
       <main id="catalog-main">${renderCatalogSection(shown)}</main>
       <footer class="site-footer">
-        <span>懂车帝汽车商城·武汉店（shop_id=118608）实时现金价 + 汽车之家实测参配 + 车质网口碑</span>
+        <span>懂车帝华中7城官方直营（汉/长/合/宁/郑/渝/蓉）实时现金价 + 到汉官方物流费 + 汽车之家实测参配</span>
         <span class="footer-links">
           <a href="/data/listings-ranked.json" target="_blank" rel="noopener noreferrer">Top 30 JSON</a>
           <a href="/data/meta.json" target="_blank" rel="noopener noreferrer">Meta</a>
@@ -521,8 +607,18 @@ function bindEvents() {
     state.priceMax = ''
     renderApp()
   })
+  document.getElementById('btn-clear-scope')?.addEventListener('click', () => {
+    state.shopScope = 'all'
+    renderApp()
+  })
+  document.getElementById('btn-clear-city')?.addEventListener('click', () => {
+    state.city = ''
+    renderApp()
+  })
   document.getElementById('btn-empty-reset')?.addEventListener('click', () => {
     state.preset = 'all'
+    state.shopScope = 'all'
+    state.city = ''
     state.q = ''
     state.priceMax = ''
     state.sort = 'recommend'
@@ -564,6 +660,19 @@ function bindEvents() {
       renderApp()
     })
   })
+  document.querySelectorAll<HTMLButtonElement>('[data-sheet-scope]').forEach((btn) => {
+    btn.addEventListener('click', () => {
+      state.shopScope = (btn.dataset.sheetScope as ShopScopeKey) || 'all'
+      renderApp()
+    })
+  })
+  document.querySelectorAll<HTMLButtonElement>('[data-sheet-city]').forEach((btn) => {
+    btn.addEventListener('click', () => {
+      const c = btn.dataset.sheetCity ?? ''
+      state.city = state.city === c ? '' : c
+      renderApp()
+    })
+  })
   document.querySelectorAll<HTMLButtonElement>('[data-sheet-sort]').forEach((btn) => {
     btn.addEventListener('click', () => {
       state.sort = (btn.dataset.sheetSort as SortKey) || 'recommend'
@@ -572,6 +681,8 @@ function bindEvents() {
   })
   document.getElementById('btn-sheet-reset')?.addEventListener('click', () => {
     state.preset = 'all'
+    state.shopScope = 'all'
+    state.city = ''
     state.q = ''
     state.priceMax = ''
     state.sort = 'recommend'

@@ -1,4 +1,25 @@
-import type { Listing, SortKey } from './types'
+import type { Listing, ShopScopeKey, SortKey } from './types'
+
+function landedPrice(item: Listing): number {
+  return Number(item.effective_price_wan ?? item.landed_price_wan ?? item.price)
+}
+
+function cashPrice(item: Listing): number {
+  return Number(item.cash_price_wan ?? item.price)
+}
+
+function isLocalWuhan(item: Listing): boolean {
+  if (typeof item.is_local_wuhan === 'boolean') return item.is_local_wuhan
+  return item.shop_id === '118608' || item.city === '武汉'
+}
+
+function logisticsSourceLabel(src?: string): string {
+  if (src === 'local_wuhan') return '本地直提免运费'
+  if (src === 'api') return '懂车帝官方实时运费'
+  if (src === 'city_cache') return '同城物流标准运费'
+  if (src === 'default_1000') return '基准估价(+1000元)'
+  return '官方/基准物流费'
+}
 
 export function esc(s: unknown): string {
   return String(s ?? '')
@@ -87,10 +108,18 @@ export function renderFilterSheetBody(opts: {
   q: string
   priceMax: string
   sort: SortKey
+  shopScope: ShopScopeKey
+  city: string
+  cityCounts: [string, number][]
   shownCount: number
   totalCount: number
 }): string {
-  const hotKeywords = ['领克03', '探界者', '君威', '迈锐宝XL', '奕泽', '伊兰特', '传祺GS4', '锐程CC']
+  const hotKeywords = ['领克03', '探界者', '君威', '迈锐宝XL', '奕泽', '伊兰特', '传祺GS4', '宝马']
+  const scopeOptions: [ShopScopeKey, string][] = [
+    ['all', '全部7城直营'],
+    ['wuhan', '仅看武汉本地'],
+    ['low_freight', '低运费≤1000元(汉·长·合)'],
+  ]
   const budgetOptions: [string, string][] = [
     ['', '不限预算'],
     ['4', '≤ 4万'],
@@ -103,15 +132,40 @@ export function renderFilterSheetBody(opts: {
     ['powertrain', '三大件最稳'],
     ['config', '配置最丰富'],
     ['discount', '折旧最狠(折数)'],
-    ['price', '最低现金价'],
+    ['price', '到汉总价最低'],
     ['mileage', '最低表显里程'],
   ]
 
   return `
     <div class="filter-sheet-body">
       <div class="fs-group">
-        <label class="fs-label" for="sheet-q">搜索车型 / 品牌 / SKU</label>
-        <input id="sheet-q" class="fs-input" type="search" placeholder="输入关键词，如 君威、爱信、探界者…" value="${esc(opts.q)}" />
+        <div class="fs-label">直营门店范围（含到汉运费口径）</div>
+        <div class="fs-scope-row">
+          ${scopeOptions
+            .map(
+              ([val, lbl]) =>
+                `<button type="button" class="fs-sort-btn ${opts.shopScope === val ? 'active' : ''}" data-sheet-scope="${val}">${esc(lbl)}</button>`,
+            )
+            .join('')}
+        </div>
+        ${
+          opts.cityCounts.length > 1
+            ? `<div class="fs-chips">
+          <button type="button" class="fs-chip ${opts.city === '' ? 'active' : ''}" data-sheet-city="">全部城市</button>
+          ${opts.cityCounts
+            .map(
+              ([c, cnt]) =>
+                `<button type="button" class="fs-chip ${opts.city === c ? 'active' : ''}" data-sheet-city="${esc(c)}">${esc(c)} (${cnt})</button>`,
+            )
+            .join('')}
+        </div>`
+            : ''
+        }
+      </div>
+
+      <div class="fs-group">
+        <label class="fs-label" for="sheet-q">搜索车型 / 城市 / 品牌 / SKU</label>
+        <input id="sheet-q" class="fs-input" type="search" placeholder="输入关键词，如 君威、合肥、探界者…" value="${esc(opts.q)}" />
         <div class="fs-chips">
           ${hotKeywords
             .map(
@@ -123,7 +177,7 @@ export function renderFilterSheetBody(opts: {
       </div>
 
       <div class="fs-group">
-        <label class="fs-label" for="sheet-pmax">全款现金价上限（万）</label>
+        <label class="fs-label" for="sheet-pmax">到汉可比总价上限（含物流+上牌差，万）</label>
         <div class="fs-chips">
           ${budgetOptions
             .map(
@@ -192,6 +246,13 @@ export function renderDetailDrawerBody(item: Listing): string {
 
   const yearStr = item.plate_year ? `${item.plate_year}年上牌` : item.year || ''
   const mileStr = item.mileage_wan != null ? `${item.mileage_wan.toFixed(2)}万公里` : ''
+  const local = isLocalWuhan(item)
+  const effWan = landedPrice(item)
+  const bareWan = cashPrice(item)
+  const logiYuan = Math.max(0, Math.round(item.logistics_fee_yuan ?? 0))
+  const plateYuan = Math.round(item.plate_service_fee_yuan ?? (local ? 500 : 1000))
+  const pdiffYuan = Math.max(0, Math.round(item.plate_fee_diff_yuan ?? 0))
+  const shopDisplay = item.shop_name || item.shop_short_name || (local ? '懂车帝汽车商城•武汉店' : `${item.city || ''}直营店`)
 
   return `
     <div class="drawer-hero">
@@ -199,6 +260,7 @@ export function renderDetailDrawerBody(item: Listing): string {
       <div class="drawer-head-info">
         <div class="drawer-badges">
           <span class="rank-pill">严选 #${String(item.rank ?? '—').padStart(2, '0')}</span>
+          <span class="origin-badge ${local ? 'local' : 'remote'}">${esc(item.shop_short_name || item.city || '武汉店')}</span>
           ${p?.archetype_badge ? `<span class="arch-pill">${esc(p.archetype_badge)}</span>` : ''}
           ${p?.gearbox_label ? `<span class="gb-pill ${gearboxClass(p.gearbox_tier)}">${esc(p.gearbox_label)}</span>` : ''}
         </div>
@@ -206,8 +268,8 @@ export function renderDetailDrawerBody(item: Listing): string {
         <div class="drawer-sub">${esc([item.manufacturer, yearStr, mileStr, item.city || '武汉'].filter(Boolean).join(' · '))} · SKU ${esc(item.sku)}</div>
         <div class="drawer-price-strip">
           <div class="dp-main">
-            <span class="dp-label">全款现金价</span>
-            <span class="dp-num">${Number(item.price).toFixed(2)}<small>万</small></span>
+            <span class="dp-label">${local ? '全款现金价（本地直提）' : '到汉可比总价（含物流+上牌差）'}</span>
+            <span class="dp-num">${effWan.toFixed(2)}<small>万</small></span>
           </div>
           ${p?.msrp_wan ? `
             <div class="dp-meta">
@@ -220,6 +282,13 @@ export function renderDetailDrawerBody(item: Listing): string {
           </div>
         </div>
       </div>
+    </div>
+
+    <div class="landed-cost-box">
+      <div class="lc-item"><span>车源门店</span><strong>${esc(shopDisplay)}</strong></div>
+      <div class="lc-item"><span>裸车全款价</span><strong>${bareWan.toFixed(2)} 万</strong></div>
+      <div class="lc-item"><span>到汉物流费</span><strong>${local ? '0 元（免物流）' : `${logiYuan} 元`}${item.delivery_eta ? ` · ${esc(item.delivery_eta)}` : ''}</strong><small>${esc(logisticsSourceLabel(item.logistics_fee_source))}</small></div>
+      <div class="lc-item"><span>上牌服务费</span><strong>${plateYuan} 元${pdiffYuan > 0 ? `（含异地差+${pdiffYuan}）` : '（本地标准）'}</strong></div>
     </div>
 
     ${p?.recommend_reason ? `<div class="drawer-callout"><strong>买手推荐理由：</strong>${esc(p.recommend_reason)}</div>` : ''}
@@ -280,9 +349,26 @@ export function renderCompareDrawerBody(items: Listing[]): string {
       render: (x) => `<b>#${x.rank ?? '—'}</b> · ${esc(x.v3_profile?.archetype_badge || '严选')}`,
     },
     {
-      label: '全款现金价',
+      label: '来源门店',
+      render: (x) => {
+        const local = isLocalWuhan(x)
+        return `<span class="origin-badge ${local ? 'local' : 'remote'}">${esc(x.shop_short_name || x.city || '武汉店')}</span>`
+      },
+    },
+    {
+      label: '到汉可比价',
       render: (x) =>
-        `<strong class="cmp-price">${Number(x.price).toFixed(2)}万</strong>${x.v3_profile?.discount_fold ? ` <small>(${x.v3_profile.discount_fold}折 / 原${x.v3_profile.msrp_wan}万)</small>` : ''}`,
+        `<strong class="cmp-price">${landedPrice(x).toFixed(2)}万</strong>${x.v3_profile?.discount_fold ? ` <small>(${x.v3_profile.discount_fold}折 / 原${x.v3_profile.msrp_wan}万)</small>` : ''}`,
+    },
+    {
+      label: '裸车+物流/上牌差',
+      render: (x) => {
+        const local = isLocalWuhan(x)
+        if (local) return `${cashPrice(x).toFixed(2)}万（本地免物流）`
+        const logi = Math.max(0, Math.round(x.logistics_fee_yuan ?? 0))
+        const pdiff = Math.max(0, Math.round(x.plate_fee_diff_yuan ?? 0))
+        return `裸车 ${cashPrice(x).toFixed(2)}万 + 物流${logi}元${pdiff > 0 ? ` + 上牌差${pdiff}元` : ''}`
+      },
     },
     {
       label: '上牌 / 里程',
@@ -388,11 +474,11 @@ export function renderMethodologyModalBody(): string {
         </div>
       </div>
       <div class="method-tips">
-        <h4>三、低频用车·到店提车必做三步</h4>
+        <h4>三、华中 7 城直营到汉比价口径 &amp; 提车必做</h4>
         <ol>
+          <li><strong>统一到汉可比价</strong>：拉取武汉、长沙、合肥、南京、郑州、重庆、成都 7 家懂车帝官方直营店/仓（已排除加盟店）。异地车辆自动调用官方接口获取运至武汉物流费（750–1,300 元，兜底 1,000 元）并计入异地上牌服务费差额（500 元），严格卡死<strong>到汉总价 ≤ 6.0 万</strong>。</li>
           <li><strong>现场测 12V 电瓶 SOH</strong>：要求门店实测蓄电池寿命，低于 60% 直接谈免费换新电瓶。</li>
-          <li><strong>排查外接常电设备</strong>：拆掉前车主私接的 24 小时停车监控记录仪（改接 ACC 熄火断电），随车备一个百元级锂电搭电宝。</li>
-          <li><strong>保养与胎压策略</strong>：冷胎气压打到 2.5–2.6 bar 防久停平点；用全合成机油按 1 年或 1 万公里一保即可。</li>
+          <li><strong>排查常电与胎压</strong>：拆掉前车主私接 24 小时常电记录仪，随车备应急搭电宝；冷胎气压打至 2.5–2.6 bar，全合成机油按 1 年或 1 万公里一保。</li>
         </ol>
       </div>
     </div>

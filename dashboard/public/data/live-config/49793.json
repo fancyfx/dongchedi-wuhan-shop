@@ -3,7 +3,7 @@
   "spec_id": 49793,
   "title": "零跑T03 2021款 400轻享版 磷酸铁锂",
   "url": "https://car.autohome.com.cn/config/spec/49793.html",
-  "fetched_at": "2026-11-16T01:59:57.955Z",
+  "fetched_at": "2026-11-21T21:20:21+08:00",
   "legend": {
     "standard": "●",
     "optional": "○",
@@ -23,6 +23,10 @@
           "value": "5.98万"
         },
         {
+          "name": "经销商报价",
+          "value": "暂无报价"
+        },
+        {
           "name": "厂商",
           "value": "零跑汽车"
         },
@@ -36,7 +40,7 @@
         },
         {
           "name": "上市时间",
-          "value": "2021.02"
+          "value": "2021-02-05"
         },
         {
           "name": "NEDC纯电续航里程(km)",
@@ -88,7 +92,14 @@
         },
         {
           "name": "整车质保",
-          "value": "● 三年或12万公里"
+          "value": "● 三年或12万公里",
+          "lines": [
+            {
+              "name": "三年或12万公里",
+              "value": "●",
+              "mark": "standard"
+            }
+          ]
         },
         {
           "name": "整备质量(kg)",
@@ -150,11 +161,25 @@
         },
         {
           "name": "车门数(个)",
-          "value": "● 5"
+          "value": "● 5",
+          "lines": [
+            {
+              "name": "5",
+              "value": "●",
+              "mark": "standard"
+            }
+          ]
         },
         {
           "name": "座位数(个)",
-          "value": "● 4"
+          "value": "● 4",
+          "lines": [
+            {
+              "name": "4",
+              "value": "●",
+              "mark": "standard"
+            }
+          ]
         },
         {
           "name": "后备厢容积(L)",
@@ -204,7 +229,14 @@
         },
         {
           "name": "三电系统质保",
-          "value": "● 八年或15万公里"
+          "value": "● 八年或15万公里",
+          "lines": [
+            {
+              "name": "八年或15万公里",
+              "value": "●",
+              "mark": "standard"
+            }
+          ]
         }
       ]
     },
@@ -214,7 +246,14 @@
       "items": [
         {
           "name": "电池类型",
-          "value": "● 磷酸铁锂电池"
+          "value": "● 磷酸铁锂电池",
+          "lines": [
+            {
+              "name": "磷酸铁锂电池",
+              "value": "●",
+              "mark": "standard"
+            }
+          ]
         },
         {
           "name": "电芯品牌",
@@ -286,19 +325,47 @@
       "items": [
         {
           "name": "驱动方式",
-          "value": "● 前置前驱"
+          "value": "● 前置前驱",
+          "lines": [
+            {
+              "name": "前置前驱",
+              "value": "●",
+              "mark": "standard"
+            }
+          ]
         },
         {
           "name": "前悬架类型",
-          "value": "● 麦弗逊式独立悬架"
+          "value": "● 麦弗逊式独立悬架",
+          "lines": [
+            {
+              "name": "麦弗逊式独立悬架",
+              "value": "●",
+              "mark": "standard"
+            }
+          ]
         },
         {
           "name": "后悬架类型",
-          "value": "● 扭力梁式非独立悬架"
+          "value": "● 扭力梁式非独立悬架",
+          "lines": [
+            {
+              "name": "扭力梁式非独立悬架",
+              "value": "●",
+              "mark": "standard"
+            }
+          ]
         },
         {
           "name": "助力类型",
-          "value": "● 电动助力"
+          "value": "● 电动助力",
+          "lines": [
+            {
+              "name": "电动助力",
+              "value": "●",
+              "mark": "standard"
+            }
+          ]
         },
         {
           "name": "车体结构",
@@ -312,27 +379,69 @@
       "items": [
         {
           "name": "前制动器类型",
-          "value": "● 通风盘式"
+          "value": "● 通风盘式",
+          "lines": [
+            {
+              "name": "通风盘式",
+              "value": "●",
+              "mark": "standard"
+            }
+          ]
         },
         {
           "name": "后制动器类型",
-          "value": "● 鼓式"
+          "value": "● 鼓式",
+          "lines": [
+            {
+              "name": "鼓式",
+              "value": "●",
+              "mark": "standard"
+            }
+          ]
         },
         {
           "name": "驻车制动类型",
-          "value": "● 手刹"
+          "value": "● 手刹",
+          "lines": [
+            {
+              "name": "手刹",
+              "value": "●",
+              "mark": "standard"
+            }
+          ]
         },
         {
           "name": "前轮胎规格",
-          "value": "● 165/65 R14"
+          "value": "● 165/65 R14",
+          "lines": [
+            {
+              "name": "165/65 R14",
+              "value": "●",
+              "mark": "standard"
+            }
+          ]
         },
         {
           "name": "后轮胎规格",
-          "value": "● 165/65 R14"
+          "value": "● 165/65 R14",
+          "lines": [
+            {
+              "name": "165/65 R14",
+              "value": "●",
+              "mark": "standard"
+            }
+          ]
         },
         {
           "name": "备胎规格",
-          "value": "● 无"
+          "value": "● 无",
+          "lines": [
+            {
+              "name": "无",
+              "value": "●",
+              "mark": "standard"
+            }
+          ]
         }
       ]
     },
@@ -342,7 +451,7 @@
       "items": [
         {
           "name": "主/副驾驶座安全气囊",
-          "value": "主● / 副●"
+          "value": "主● /副●"
         },
         {
           "name": "前/后排侧气囊",
@@ -463,7 +572,7 @@
       "items": [
         {
           "name": "前/后驻车雷达",
-          "value": "前- / 后●"
+          "value": "前-/后●"
         },
         {
           "name": "驾驶辅助影像",
@@ -545,7 +654,7 @@
       "items": [
         {
           "name": "轮圈材质",
-          "value": "● 钢 / ○ 铝合金 (¥1000)",
+          "value": "● 钢 / ○ 铝合金 (1000元)",
           "lines": [
             {
               "name": "钢",
@@ -554,7 +663,7 @@
             },
             {
               "name": "铝合金",
-              "value": "○ (¥1000)",
+              "value": "○ (1000元)",
               "mark": "optional"
             }
           ]
@@ -654,7 +763,7 @@
         },
         {
           "name": "前/后电动车窗",
-          "value": "前● / 后●"
+          "value": "前● /后●"
         },
         {
           "name": "车窗一键升降功能",
@@ -1015,6 +1124,20 @@
         },
         {
           "name": "车内PM2.5过滤装置",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "name": "颜色",
+      "group": "config",
+      "items": [
+        {
+          "name": "外观颜色",
+          "value": "-"
+        },
+        {
+          "name": "内饰颜色",
           "value": "-"
         }
       ]

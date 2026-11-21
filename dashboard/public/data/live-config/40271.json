@@ -3,7 +3,7 @@
   "spec_id": 40271,
   "title": "探界者 2019款 535T 自动驭界版 国VI",
   "url": "https://car.autohome.com.cn/config/spec/40271.html",
-  "fetched_at": "2026-11-19T02:34:30.974Z",
+  "fetched_at": "2026-11-21T21:18:12+08:00",
   "legend": {
     "standard": "●",
     "optional": "○",
@@ -23,6 +23,10 @@
           "value": "19.99万"
         },
         {
+          "name": "经销商报价",
+          "value": "暂无报价"
+        },
+        {
           "name": "厂商",
           "value": "上汽通用雪佛兰"
         },
@@ -40,7 +44,7 @@
         },
         {
           "name": "上市时间",
-          "value": "2019.07"
+          "value": "2019-07-01"
         },
         {
           "name": "最大功率(kW)",
@@ -80,7 +84,14 @@
         },
         {
           "name": "整车质保",
-          "value": "● 三年或10万公里"
+          "value": "● 三年或10万公里",
+          "lines": [
+            {
+              "name": "三年或10万公里",
+              "value": "●",
+              "mark": "standard"
+            }
+          ]
         },
         {
           "name": "整备质量(kg)",
@@ -130,11 +141,25 @@
         },
         {
           "name": "车门数(个)",
-          "value": "● 5"
+          "value": "● 5",
+          "lines": [
+            {
+              "name": "5",
+              "value": "●",
+              "mark": "standard"
+            }
+          ]
         },
         {
           "name": "座位数(个)",
-          "value": "● 5"
+          "value": "● 5",
+          "lines": [
+            {
+              "name": "5",
+              "value": "●",
+              "mark": "standard"
+            }
+          ]
         },
         {
           "name": "油箱容积(L)",
@@ -264,7 +289,14 @@
       "items": [
         {
           "name": "驱动方式",
-          "value": "● 前置前驱"
+          "value": "● 前置前驱",
+          "lines": [
+            {
+              "name": "前置前驱",
+              "value": "●",
+              "mark": "standard"
+            }
+          ]
         },
         {
           "name": "四驱形式",
@@ -276,15 +308,36 @@
         },
         {
           "name": "前悬架类型",
-          "value": "● 麦弗逊式独立悬架"
+          "value": "● 麦弗逊式独立悬架",
+          "lines": [
+            {
+              "name": "麦弗逊式独立悬架",
+              "value": "●",
+              "mark": "standard"
+            }
+          ]
         },
         {
           "name": "后悬架类型",
-          "value": "● 多连杆式独立悬架"
+          "value": "● 多连杆式独立悬架",
+          "lines": [
+            {
+              "name": "多连杆式独立悬架",
+              "value": "●",
+              "mark": "standard"
+            }
+          ]
         },
         {
           "name": "助力类型",
-          "value": "● 电动助力"
+          "value": "● 电动助力",
+          "lines": [
+            {
+              "name": "电动助力",
+              "value": "●",
+              "mark": "standard"
+            }
+          ]
         },
         {
           "name": "车体结构",
@@ -298,27 +351,69 @@
       "items": [
         {
           "name": "前制动器类型",
-          "value": "● 通风盘式"
+          "value": "● 通风盘式",
+          "lines": [
+            {
+              "name": "通风盘式",
+              "value": "●",
+              "mark": "standard"
+            }
+          ]
         },
         {
           "name": "后制动器类型",
-          "value": "● 盘式"
+          "value": "● 盘式",
+          "lines": [
+            {
+              "name": "盘式",
+              "value": "●",
+              "mark": "standard"
+            }
+          ]
         },
         {
           "name": "驻车制动类型",
-          "value": "● 电子驻车"
+          "value": "● 电子驻车",
+          "lines": [
+            {
+              "name": "电子驻车",
+              "value": "●",
+              "mark": "standard"
+            }
+          ]
         },
         {
           "name": "前轮胎规格",
-          "value": "● 225/65 R17"
+          "value": "● 225/65 R17",
+          "lines": [
+            {
+              "name": "225/65 R17",
+              "value": "●",
+              "mark": "standard"
+            }
+          ]
         },
         {
           "name": "后轮胎规格",
-          "value": "● 225/65 R17"
+          "value": "● 225/65 R17",
+          "lines": [
+            {
+              "name": "225/65 R17",
+              "value": "●",
+              "mark": "standard"
+            }
+          ]
         },
         {
           "name": "备胎规格",
-          "value": "● 非全尺寸"
+          "value": "● 非全尺寸",
+          "lines": [
+            {
+              "name": "非全尺寸",
+              "value": "●",
+              "mark": "standard"
+            }
+          ]
         }
       ]
     },
@@ -328,15 +423,15 @@
       "items": [
         {
           "name": "主/副驾驶座安全气囊",
-          "value": "主● / 副●"
+          "value": "主● /副●"
         },
         {
           "name": "前/后排侧气囊",
-          "value": "前● / 后-"
+          "value": "前● /后-"
         },
         {
           "name": "前/后排头部气囊(气帘)",
-          "value": "前● / 后●"
+          "value": "前● /后●"
         }
       ]
     },
@@ -444,7 +539,7 @@
       "items": [
         {
           "name": "前/后驻车雷达",
-          "value": "前- / 后●"
+          "value": "前-/后●"
         },
         {
           "name": "驾驶辅助影像",
@@ -661,7 +756,7 @@
         },
         {
           "name": "前/后电动车窗",
-          "value": "前● / 后●"
+          "value": "前● /后●"
         },
         {
           "name": "车窗一键升降功能",
@@ -988,7 +1083,7 @@
         },
         {
           "name": "主/副驾驶座电动调节",
-          "value": "主● / 副-"
+          "value": "主● /副-"
         },
         {
           "name": "前排座椅功能",
@@ -1033,7 +1128,7 @@
         },
         {
           "name": "前/后中央扶手",
-          "value": "前● / 后●"
+          "value": "前● /后●"
         },
         {
           "name": "后排杯架",
@@ -1100,6 +1195,20 @@
         {
           "name": "车内PM2.5过滤装置",
           "value": "●"
+        }
+      ]
+    },
+    {
+      "name": "颜色",
+      "group": "config",
+      "items": [
+        {
+          "name": "外观颜色",
+          "value": "-"
+        },
+        {
+          "name": "内饰颜色",
+          "value": "-"
         }
       ]
     }
