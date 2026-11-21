@@ -2,6 +2,7 @@ name: Deploy dashboard to Vercel
 
 on:
   workflow_dispatch:
+  workflow_call:
   push:
     tags:
       - "*"
@@ -9,15 +10,14 @@ on:
 permissions:
   contents: read
 
-concurrency:
-  group: vercel-production-dashboard
-  cancel-in-progress: true
-
 jobs:
   deploy:
     name: Deploy production dashboard
     runs-on: ubuntu-latest
     timeout-minutes: 15
+    concurrency:
+      group: vercel-production-dashboard
+      cancel-in-progress: true
     env:
       VERCEL_ORG_ID: team_KxBtuvR8YD9P74kXXzSbp40T
       VERCEL_PROJECT_ID: prj_2z69IrHj0QW2QPZ0Erfu1aEPLtMl

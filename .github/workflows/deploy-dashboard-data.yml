@@ -1,0 +1,17 @@
+name: Auto-deploy dashboard on data update
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "dashboard/public/data/**"
+      - "dashboard/public/images/**"
+
+permissions:
+  contents: read
+
+jobs:
+  deploy:
+    uses: ./.github/workflows/deploy-dashboard.yml
+    secrets: inherit
