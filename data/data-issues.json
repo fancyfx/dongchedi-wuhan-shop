@@ -100,7 +100,7 @@
     ],
     "config_coverage": 0.0,
     "energy_confidence": 0.0,
-    "score_version": "v3.0.0",
+    "score_version": "v3.2.0",
     "score_v1": null,
     "total_score": null,
     "rank": null,
@@ -115,7 +115,7 @@
       "空间数据不足：缺少 length_mm"
     ],
     "sort_scores": {
-      "score_version": "v3.0.0",
+      "score_version": "v3.2.0",
       "total_score": null,
       "config_score": null,
       "config_norm": null,
@@ -230,7 +230,7 @@
     ],
     "config_coverage": 0.0,
     "energy_confidence": 0.0,
-    "score_version": "v3.0.0",
+    "score_version": "v3.2.0",
     "score_v1": null,
     "total_score": null,
     "rank": null,
@@ -245,7 +245,7 @@
       "空间数据不足：缺少 length_mm"
     ],
     "sort_scores": {
-      "score_version": "v3.0.0",
+      "score_version": "v3.2.0",
       "total_score": null,
       "config_score": null,
       "config_norm": null,
@@ -361,7 +361,7 @@
     ],
     "config_coverage": 0.0,
     "energy_confidence": 0.0,
-    "score_version": "v3.0.0",
+    "score_version": "v3.2.0",
     "score_v1": null,
     "total_score": null,
     "rank": null,
@@ -376,7 +376,7 @@
       "空间数据不足：缺少 length_mm"
     ],
     "sort_scores": {
-      "score_version": "v3.0.0",
+      "score_version": "v3.2.0",
       "total_score": null,
       "config_score": null,
       "config_norm": null,
@@ -491,7 +491,7 @@
     ],
     "config_coverage": 0.0,
     "energy_confidence": 0.0,
-    "score_version": "v3.0.0",
+    "score_version": "v3.2.0",
     "score_v1": null,
     "total_score": null,
     "rank": null,
@@ -506,7 +506,7 @@
       "空间数据不足：缺少 length_mm"
     ],
     "sort_scores": {
-      "score_version": "v3.0.0",
+      "score_version": "v3.2.0",
       "total_score": null,
       "config_score": null,
       "config_norm": null,
@@ -621,7 +621,7 @@
     ],
     "config_coverage": 0.0,
     "energy_confidence": 0.0,
-    "score_version": "v3.0.0",
+    "score_version": "v3.2.0",
     "score_v1": null,
     "total_score": null,
     "rank": null,
@@ -636,7 +636,7 @@
       "空间数据不足：缺少 length_mm"
     ],
     "sort_scores": {
-      "score_version": "v3.0.0",
+      "score_version": "v3.2.0",
       "total_score": null,
       "config_score": null,
       "config_norm": null,
@@ -752,7 +752,7 @@
     ],
     "config_coverage": 0.0,
     "energy_confidence": 0.0,
-    "score_version": "v3.0.0",
+    "score_version": "v3.2.0",
     "score_v1": null,
     "total_score": null,
     "rank": null,
@@ -767,7 +767,7 @@
       "空间数据不足：缺少 length_mm"
     ],
     "sort_scores": {
-      "score_version": "v3.0.0",
+      "score_version": "v3.2.0",
       "total_score": null,
       "config_score": null,
       "config_norm": null,
@@ -908,7 +908,7 @@
     ],
     "config_coverage": 0.0,
     "energy_confidence": 0.0,
-    "score_version": "v3.0.0",
+    "score_version": "v3.2.0",
     "score_v1": null,
     "total_score": null,
     "rank": null,
@@ -923,7 +923,7 @@
       "空间数据不足：缺少 length_mm"
     ],
     "sort_scores": {
-      "score_version": "v3.0.0",
+      "score_version": "v3.2.0",
       "total_score": null,
       "config_score": null,
       "config_norm": null,
@@ -1038,7 +1038,7 @@
     ],
     "config_coverage": 0.0,
     "energy_confidence": 0.0,
-    "score_version": "v3.0.0",
+    "score_version": "v3.2.0",
     "score_v1": null,
     "total_score": null,
     "rank": null,
@@ -1053,7 +1053,7 @@
       "空间数据不足：缺少 length_mm"
     ],
     "sort_scores": {
-      "score_version": "v3.0.0",
+      "score_version": "v3.2.0",
       "total_score": null,
       "config_score": null,
       "config_norm": null,
@@ -1196,7 +1196,7 @@
     ],
     "config_coverage": 0.0,
     "energy_confidence": 0.0,
-    "score_version": "v3.0.0",
+    "score_version": "v3.2.0",
     "score_v1": null,
     "total_score": null,
     "rank": null,
@@ -1211,7 +1211,7 @@
       "空间数据不足：缺少 length_mm"
     ],
     "sort_scores": {
-      "score_version": "v3.0.0",
+      "score_version": "v3.2.0",
       "total_score": null,
       "config_score": null,
       "config_norm": null,
@@ -1352,7 +1352,7 @@
     ],
     "config_coverage": 0.0,
     "energy_confidence": 0.0,
-    "score_version": "v3.0.0",
+    "score_version": "v3.2.0",
     "score_v1": null,
     "total_score": null,
     "rank": null,
@@ -1367,7 +1367,7 @@
       "空间数据不足：缺少 length_mm"
     ],
     "sort_scores": {
-      "score_version": "v3.0.0",
+      "score_version": "v3.2.0",
       "total_score": null,
       "config_score": null,
       "config_norm": null,
@@ -1482,7 +1482,7 @@
     ],
     "config_coverage": 0.0,
     "energy_confidence": 0.0,
-    "score_version": "v3.0.0",
+    "score_version": "v3.2.0",
     "score_v1": null,
     "total_score": null,
     "rank": null,
@@ -1497,7 +1497,7 @@
       "空间数据不足：缺少 length_mm"
     ],
     "sort_scores": {
-      "score_version": "v3.0.0",
+      "score_version": "v3.2.0",
       "total_score": null,
       "config_score": null,
       "config_norm": null,
@@ -1612,7 +1612,7 @@
     ],
     "config_coverage": 0.0,
     "energy_confidence": 0.0,
-    "score_version": "v3.0.0",
+    "score_version": "v3.2.0",
     "score_v1": null,
     "total_score": null,
     "rank": null,
@@ -1627,7 +1627,7 @@
       "空间数据不足：缺少 length_mm"
     ],
     "sort_scores": {
-      "score_version": "v3.0.0",
+      "score_version": "v3.2.0",
       "total_score": null,
       "config_score": null,
       "config_norm": null,
@@ -1769,7 +1769,7 @@
     ],
     "config_coverage": 0.0,
     "energy_confidence": 0.0,
-    "score_version": "v3.0.0",
+    "score_version": "v3.2.0",
     "score_v1": null,
     "total_score": null,
     "rank": null,
@@ -1784,7 +1784,7 @@
       "空间数据不足：缺少 length_mm"
     ],
     "sort_scores": {
-      "score_version": "v3.0.0",
+      "score_version": "v3.2.0",
       "total_score": null,
       "config_score": null,
       "config_norm": null,
@@ -1899,7 +1899,7 @@
     ],
     "config_coverage": 0.0,
     "energy_confidence": 0.0,
-    "score_version": "v3.0.0",
+    "score_version": "v3.2.0",
     "score_v1": null,
     "total_score": null,
     "rank": null,
@@ -1914,7 +1914,7 @@
       "空间数据不足：缺少 length_mm"
     ],
     "sort_scores": {
-      "score_version": "v3.0.0",
+      "score_version": "v3.2.0",
       "total_score": null,
       "config_score": null,
       "config_norm": null,
@@ -2214,7 +2214,7 @@
     ],
     "config_coverage": 0.375,
     "energy_confidence": 0.55,
-    "score_version": "v3.0.0",
+    "score_version": "v3.2.0",
     "score_v1": null,
     "total_score": null,
     "rank": null,
@@ -2228,7 +2228,7 @@
       "详细配置数据不足（核验覆盖率 38%，要求至少 60%）"
     ],
     "sort_scores": {
-      "score_version": "v3.0.0",
+      "score_version": "v3.2.0",
       "total_score": null,
       "config_score": null,
       "config_norm": null,
@@ -2344,7 +2344,7 @@
     ],
     "config_coverage": 0.0,
     "energy_confidence": 0.0,
-    "score_version": "v3.0.0",
+    "score_version": "v3.2.0",
     "score_v1": null,
     "total_score": null,
     "rank": null,
@@ -2359,7 +2359,7 @@
       "空间数据不足：缺少 length_mm"
     ],
     "sort_scores": {
-      "score_version": "v3.0.0",
+      "score_version": "v3.2.0",
       "total_score": null,
       "config_score": null,
       "config_norm": null,
@@ -2475,7 +2475,7 @@
     ],
     "config_coverage": 0.0,
     "energy_confidence": 0.0,
-    "score_version": "v3.0.0",
+    "score_version": "v3.2.0",
     "score_v1": null,
     "total_score": null,
     "rank": null,
@@ -2490,7 +2490,7 @@
       "空间数据不足：缺少 length_mm"
     ],
     "sort_scores": {
-      "score_version": "v3.0.0",
+      "score_version": "v3.2.0",
       "total_score": null,
       "config_score": null,
       "config_norm": null,
@@ -2605,7 +2605,7 @@
     ],
     "config_coverage": 0.0,
     "energy_confidence": 0.0,
-    "score_version": "v3.0.0",
+    "score_version": "v3.2.0",
     "score_v1": null,
     "total_score": null,
     "rank": null,
@@ -2620,7 +2620,7 @@
       "空间数据不足：缺少 length_mm"
     ],
     "sort_scores": {
-      "score_version": "v3.0.0",
+      "score_version": "v3.2.0",
       "total_score": null,
       "config_score": null,
       "config_norm": null,
@@ -2735,7 +2735,7 @@
     ],
     "config_coverage": 0.0,
     "energy_confidence": 0.0,
-    "score_version": "v3.0.0",
+    "score_version": "v3.2.0",
     "score_v1": null,
     "total_score": null,
     "rank": null,
@@ -2750,7 +2750,7 @@
       "空间数据不足：缺少 length_mm"
     ],
     "sort_scores": {
-      "score_version": "v3.0.0",
+      "score_version": "v3.2.0",
       "total_score": null,
       "config_score": null,
       "config_norm": null,
@@ -2891,7 +2891,7 @@
     ],
     "config_coverage": 0.0,
     "energy_confidence": 0.0,
-    "score_version": "v3.0.0",
+    "score_version": "v3.2.0",
     "score_v1": null,
     "total_score": null,
     "rank": null,
@@ -2906,7 +2906,7 @@
       "空间数据不足：缺少 length_mm"
     ],
     "sort_scores": {
-      "score_version": "v3.0.0",
+      "score_version": "v3.2.0",
       "total_score": null,
       "config_score": null,
       "config_norm": null,
@@ -3021,7 +3021,7 @@
     ],
     "config_coverage": 0.0,
     "energy_confidence": 0.0,
-    "score_version": "v3.0.0",
+    "score_version": "v3.2.0",
     "score_v1": null,
     "total_score": null,
     "rank": null,
@@ -3036,7 +3036,7 @@
       "空间数据不足：缺少 length_mm"
     ],
     "sort_scores": {
-      "score_version": "v3.0.0",
+      "score_version": "v3.2.0",
       "total_score": null,
       "config_score": null,
       "config_norm": null,
@@ -3151,7 +3151,7 @@
     ],
     "config_coverage": 0.0,
     "energy_confidence": 0.0,
-    "score_version": "v3.0.0",
+    "score_version": "v3.2.0",
     "score_v1": null,
     "total_score": null,
     "rank": null,
@@ -3166,7 +3166,7 @@
       "空间数据不足：缺少 length_mm"
     ],
     "sort_scores": {
-      "score_version": "v3.0.0",
+      "score_version": "v3.2.0",
       "total_score": null,
       "config_score": null,
       "config_norm": null,
@@ -3282,7 +3282,7 @@
     ],
     "config_coverage": 0.0,
     "energy_confidence": 0.0,
-    "score_version": "v3.0.0",
+    "score_version": "v3.2.0",
     "score_v1": null,
     "total_score": null,
     "rank": null,
@@ -3297,7 +3297,7 @@
       "空间数据不足：缺少 length_mm"
     ],
     "sort_scores": {
-      "score_version": "v3.0.0",
+      "score_version": "v3.2.0",
       "total_score": null,
       "config_score": null,
       "config_norm": null,
@@ -3412,7 +3412,7 @@
     ],
     "config_coverage": 0.0,
     "energy_confidence": 0.0,
-    "score_version": "v3.0.0",
+    "score_version": "v3.2.0",
     "score_v1": null,
     "total_score": null,
     "rank": null,
@@ -3427,7 +3427,7 @@
       "空间数据不足：缺少 length_mm"
     ],
     "sort_scores": {
-      "score_version": "v3.0.0",
+      "score_version": "v3.2.0",
       "total_score": null,
       "config_score": null,
       "config_norm": null,
@@ -3542,7 +3542,7 @@
     ],
     "config_coverage": 0.0,
     "energy_confidence": 0.0,
-    "score_version": "v3.0.0",
+    "score_version": "v3.2.0",
     "score_v1": null,
     "total_score": null,
     "rank": null,
@@ -3557,7 +3557,7 @@
       "空间数据不足：缺少 length_mm"
     ],
     "sort_scores": {
-      "score_version": "v3.0.0",
+      "score_version": "v3.2.0",
       "total_score": null,
       "config_score": null,
       "config_norm": null,
@@ -3673,7 +3673,7 @@
     ],
     "config_coverage": 0.0,
     "energy_confidence": 0.0,
-    "score_version": "v3.0.0",
+    "score_version": "v3.2.0",
     "score_v1": null,
     "total_score": null,
     "rank": null,
@@ -3688,7 +3688,7 @@
       "空间数据不足：缺少 length_mm"
     ],
     "sort_scores": {
-      "score_version": "v3.0.0",
+      "score_version": "v3.2.0",
       "total_score": null,
       "config_score": null,
       "config_norm": null,
@@ -3803,7 +3803,7 @@
     ],
     "config_coverage": 0.0,
     "energy_confidence": 0.0,
-    "score_version": "v3.0.0",
+    "score_version": "v3.2.0",
     "score_v1": null,
     "total_score": null,
     "rank": null,
@@ -3818,7 +3818,7 @@
       "空间数据不足：缺少 length_mm"
     ],
     "sort_scores": {
-      "score_version": "v3.0.0",
+      "score_version": "v3.2.0",
       "total_score": null,
       "config_score": null,
       "config_norm": null,
@@ -4113,7 +4113,7 @@
     ],
     "config_coverage": 0.5385,
     "energy_confidence": 0.55,
-    "score_version": "v3.0.0",
+    "score_version": "v3.2.0",
     "score_v1": null,
     "total_score": null,
     "rank": null,
@@ -4127,7 +4127,7 @@
       "详细配置数据不足（核验覆盖率 54%，要求至少 60%）"
     ],
     "sort_scores": {
-      "score_version": "v3.0.0",
+      "score_version": "v3.2.0",
       "total_score": null,
       "config_score": null,
       "config_norm": null,
@@ -4242,7 +4242,7 @@
     ],
     "config_coverage": 0.0,
     "energy_confidence": 0.0,
-    "score_version": "v3.0.0",
+    "score_version": "v3.2.0",
     "score_v1": null,
     "total_score": null,
     "rank": null,
@@ -4257,7 +4257,7 @@
       "空间数据不足：缺少 length_mm"
     ],
     "sort_scores": {
-      "score_version": "v3.0.0",
+      "score_version": "v3.2.0",
       "total_score": null,
       "config_score": null,
       "config_norm": null,
@@ -4372,7 +4372,7 @@
     ],
     "config_coverage": 0.0,
     "energy_confidence": 0.0,
-    "score_version": "v3.0.0",
+    "score_version": "v3.2.0",
     "score_v1": null,
     "total_score": null,
     "rank": null,
@@ -4387,7 +4387,7 @@
       "空间数据不足：缺少 length_mm"
     ],
     "sort_scores": {
-      "score_version": "v3.0.0",
+      "score_version": "v3.2.0",
       "total_score": null,
       "config_score": null,
       "config_norm": null,
@@ -4533,7 +4533,7 @@
     ],
     "config_coverage": 0.0,
     "energy_confidence": 0.0,
-    "score_version": "v3.0.0",
+    "score_version": "v3.2.0",
     "score_v1": null,
     "total_score": null,
     "rank": null,
@@ -4548,7 +4548,7 @@
       "空间数据不足：缺少 length_mm"
     ],
     "sort_scores": {
-      "score_version": "v3.0.0",
+      "score_version": "v3.2.0",
       "total_score": null,
       "config_score": null,
       "config_norm": null,
@@ -4694,7 +4694,7 @@
     ],
     "config_coverage": 0.0,
     "energy_confidence": 0.0,
-    "score_version": "v3.0.0",
+    "score_version": "v3.2.0",
     "score_v1": null,
     "total_score": null,
     "rank": null,
@@ -4709,7 +4709,7 @@
       "空间数据不足：缺少 length_mm"
     ],
     "sort_scores": {
-      "score_version": "v3.0.0",
+      "score_version": "v3.2.0",
       "total_score": null,
       "config_score": null,
       "config_norm": null,
@@ -4840,7 +4840,7 @@
     ],
     "config_coverage": 0.0,
     "energy_confidence": 0.0,
-    "score_version": "v3.0.0",
+    "score_version": "v3.2.0",
     "score_v1": null,
     "total_score": null,
     "rank": null,
@@ -4855,7 +4855,7 @@
       "空间数据不足：缺少 length_mm"
     ],
     "sort_scores": {
-      "score_version": "v3.0.0",
+      "score_version": "v3.2.0",
       "total_score": null,
       "config_score": null,
       "config_norm": null,
@@ -5010,7 +5010,7 @@
     ],
     "config_coverage": 0.0,
     "energy_confidence": 0.0,
-    "score_version": "v3.0.0",
+    "score_version": "v3.2.0",
     "score_v1": null,
     "total_score": null,
     "rank": null,
@@ -5025,7 +5025,7 @@
       "空间数据不足：缺少 length_mm"
     ],
     "sort_scores": {
-      "score_version": "v3.0.0",
+      "score_version": "v3.2.0",
       "total_score": null,
       "config_score": null,
       "config_norm": null,
@@ -5140,7 +5140,7 @@
     ],
     "config_coverage": 0.0,
     "energy_confidence": 0.0,
-    "score_version": "v3.0.0",
+    "score_version": "v3.2.0",
     "score_v1": null,
     "total_score": null,
     "rank": null,
@@ -5155,7 +5155,7 @@
       "空间数据不足：缺少 length_mm"
     ],
     "sort_scores": {
-      "score_version": "v3.0.0",
+      "score_version": "v3.2.0",
       "total_score": null,
       "config_score": null,
       "config_norm": null,
@@ -5270,7 +5270,7 @@
     ],
     "config_coverage": 0.0,
     "energy_confidence": 0.0,
-    "score_version": "v3.0.0",
+    "score_version": "v3.2.0",
     "score_v1": null,
     "total_score": null,
     "rank": null,
@@ -5285,7 +5285,7 @@
       "空间数据不足：缺少 length_mm"
     ],
     "sort_scores": {
-      "score_version": "v3.0.0",
+      "score_version": "v3.2.0",
       "total_score": null,
       "config_score": null,
       "config_norm": null,
@@ -5431,7 +5431,7 @@
     ],
     "config_coverage": 0.0,
     "energy_confidence": 0.0,
-    "score_version": "v3.0.0",
+    "score_version": "v3.2.0",
     "score_v1": null,
     "total_score": null,
     "rank": null,
@@ -5446,7 +5446,7 @@
       "空间数据不足：缺少 length_mm"
     ],
     "sort_scores": {
-      "score_version": "v3.0.0",
+      "score_version": "v3.2.0",
       "total_score": null,
       "config_score": null,
       "config_norm": null,
@@ -5561,7 +5561,7 @@
     ],
     "config_coverage": 0.0,
     "energy_confidence": 0.0,
-    "score_version": "v3.0.0",
+    "score_version": "v3.2.0",
     "score_v1": null,
     "total_score": null,
     "rank": null,
@@ -5576,7 +5576,7 @@
       "空间数据不足：缺少 length_mm"
     ],
     "sort_scores": {
-      "score_version": "v3.0.0",
+      "score_version": "v3.2.0",
       "total_score": null,
       "config_score": null,
       "config_norm": null,
@@ -5691,7 +5691,7 @@
     ],
     "config_coverage": 0.0,
     "energy_confidence": 0.0,
-    "score_version": "v3.0.0",
+    "score_version": "v3.2.0",
     "score_v1": null,
     "total_score": null,
     "rank": null,
@@ -5706,7 +5706,7 @@
       "空间数据不足：缺少 length_mm"
     ],
     "sort_scores": {
-      "score_version": "v3.0.0",
+      "score_version": "v3.2.0",
       "total_score": null,
       "config_score": null,
       "config_norm": null,
@@ -5821,7 +5821,7 @@
     ],
     "config_coverage": 0.0,
     "energy_confidence": 0.0,
-    "score_version": "v3.0.0",
+    "score_version": "v3.2.0",
     "score_v1": null,
     "total_score": null,
     "rank": null,
@@ -5836,7 +5836,7 @@
       "空间数据不足：缺少 length_mm"
     ],
     "sort_scores": {
-      "score_version": "v3.0.0",
+      "score_version": "v3.2.0",
       "total_score": null,
       "config_score": null,
       "config_norm": null,
@@ -5951,7 +5951,7 @@
     ],
     "config_coverage": 0.0,
     "energy_confidence": 0.0,
-    "score_version": "v3.0.0",
+    "score_version": "v3.2.0",
     "score_v1": null,
     "total_score": null,
     "rank": null,
@@ -5966,7 +5966,7 @@
       "空间数据不足：缺少 length_mm"
     ],
     "sort_scores": {
-      "score_version": "v3.0.0",
+      "score_version": "v3.2.0",
       "total_score": null,
       "config_score": null,
       "config_norm": null,
@@ -6113,7 +6113,7 @@
     ],
     "config_coverage": 0.0,
     "energy_confidence": 0.0,
-    "score_version": "v3.0.0",
+    "score_version": "v3.2.0",
     "score_v1": null,
     "total_score": null,
     "rank": null,
@@ -6128,7 +6128,7 @@
       "空间数据不足：缺少 length_mm"
     ],
     "sort_scores": {
-      "score_version": "v3.0.0",
+      "score_version": "v3.2.0",
       "total_score": null,
       "config_score": null,
       "config_norm": null,
@@ -6171,7 +6171,7 @@
     "image_file": "/workspace/dongchedi-wuhan-shop/images/357296089.jpg",
     "banner": "",
     "sort_scores": {
-      "score_version": "v3.0.0",
+      "score_version": "v3.2.0",
       "total_score": null,
       "config_score": null,
       "config_norm": null,
@@ -6438,7 +6438,7 @@
     "needs_cash_quote": false,
     "price_basis": "display",
     "_age_years": 7.333333333333333,
-    "score_version": "v3.0.0",
+    "score_version": "v3.2.0",
     "score_v1": null,
     "condition_gate": "DATA_ISSUE",
     "score_reasons": [],
@@ -6599,7 +6599,7 @@
     ],
     "config_coverage": 0.0,
     "energy_confidence": 0.0,
-    "score_version": "v3.0.0",
+    "score_version": "v3.2.0",
     "score_v1": null,
     "total_score": null,
     "rank": null,
@@ -6614,7 +6614,7 @@
       "空间数据不足：缺少 length_mm"
     ],
     "sort_scores": {
-      "score_version": "v3.0.0",
+      "score_version": "v3.2.0",
       "total_score": null,
       "config_score": null,
       "config_norm": null,
@@ -6760,7 +6760,7 @@
     ],
     "config_coverage": 0.0,
     "energy_confidence": 0.0,
-    "score_version": "v3.0.0",
+    "score_version": "v3.2.0",
     "score_v1": null,
     "total_score": null,
     "rank": null,
@@ -6775,7 +6775,7 @@
       "空间数据不足：缺少 length_mm"
     ],
     "sort_scores": {
-      "score_version": "v3.0.0",
+      "score_version": "v3.2.0",
       "total_score": null,
       "config_score": null,
       "config_norm": null,
@@ -6890,7 +6890,7 @@
     ],
     "config_coverage": 0.0,
     "energy_confidence": 0.0,
-    "score_version": "v3.0.0",
+    "score_version": "v3.2.0",
     "score_v1": null,
     "total_score": null,
     "rank": null,
@@ -6905,7 +6905,7 @@
       "空间数据不足：缺少 length_mm"
     ],
     "sort_scores": {
-      "score_version": "v3.0.0",
+      "score_version": "v3.2.0",
       "total_score": null,
       "config_score": null,
       "config_norm": null,
@@ -7051,7 +7051,7 @@
     ],
     "config_coverage": 0.0,
     "energy_confidence": 0.0,
-    "score_version": "v3.0.0",
+    "score_version": "v3.2.0",
     "score_v1": null,
     "total_score": null,
     "rank": null,
@@ -7066,7 +7066,7 @@
       "空间数据不足：缺少 length_mm"
     ],
     "sort_scores": {
-      "score_version": "v3.0.0",
+      "score_version": "v3.2.0",
       "total_score": null,
       "config_score": null,
       "config_norm": null,
@@ -7181,7 +7181,7 @@
     ],
     "config_coverage": 0.0,
     "energy_confidence": 0.0,
-    "score_version": "v3.0.0",
+    "score_version": "v3.2.0",
     "score_v1": null,
     "total_score": null,
     "rank": null,
@@ -7196,7 +7196,7 @@
       "空间数据不足：缺少 length_mm"
     ],
     "sort_scores": {
-      "score_version": "v3.0.0",
+      "score_version": "v3.2.0",
       "total_score": null,
       "config_score": null,
       "config_norm": null,
@@ -7338,7 +7338,7 @@
     ],
     "config_coverage": 0.0,
     "energy_confidence": 0.0,
-    "score_version": "v3.0.0",
+    "score_version": "v3.2.0",
     "score_v1": null,
     "total_score": null,
     "rank": null,
@@ -7353,7 +7353,7 @@
       "空间数据不足：缺少 length_mm"
     ],
     "sort_scores": {
-      "score_version": "v3.0.0",
+      "score_version": "v3.2.0",
       "total_score": null,
       "config_score": null,
       "config_norm": null,
@@ -7468,7 +7468,7 @@
     ],
     "config_coverage": 0.0,
     "energy_confidence": 0.0,
-    "score_version": "v3.0.0",
+    "score_version": "v3.2.0",
     "score_v1": null,
     "total_score": null,
     "rank": null,
@@ -7483,7 +7483,7 @@
       "空间数据不足：缺少 length_mm"
     ],
     "sort_scores": {
-      "score_version": "v3.0.0",
+      "score_version": "v3.2.0",
       "total_score": null,
       "config_score": null,
       "config_norm": null,
@@ -7598,7 +7598,7 @@
     ],
     "config_coverage": 0.0,
     "energy_confidence": 0.0,
-    "score_version": "v3.0.0",
+    "score_version": "v3.2.0",
     "score_v1": null,
     "total_score": null,
     "rank": null,
@@ -7613,7 +7613,7 @@
       "空间数据不足：缺少 length_mm"
     ],
     "sort_scores": {
-      "score_version": "v3.0.0",
+      "score_version": "v3.2.0",
       "total_score": null,
       "config_score": null,
       "config_norm": null,
@@ -7728,7 +7728,7 @@
     ],
     "config_coverage": 0.0,
     "energy_confidence": 0.0,
-    "score_version": "v3.0.0",
+    "score_version": "v3.2.0",
     "score_v1": null,
     "total_score": null,
     "rank": null,
@@ -7743,7 +7743,7 @@
       "空间数据不足：缺少 length_mm"
     ],
     "sort_scores": {
-      "score_version": "v3.0.0",
+      "score_version": "v3.2.0",
       "total_score": null,
       "config_score": null,
       "config_norm": null,
@@ -7884,7 +7884,7 @@
     ],
     "config_coverage": 0.0,
     "energy_confidence": 0.0,
-    "score_version": "v3.0.0",
+    "score_version": "v3.2.0",
     "score_v1": null,
     "total_score": null,
     "rank": null,
@@ -7899,7 +7899,7 @@
       "空间数据不足：缺少 length_mm"
     ],
     "sort_scores": {
-      "score_version": "v3.0.0",
+      "score_version": "v3.2.0",
       "total_score": null,
       "config_score": null,
       "config_norm": null,
@@ -7907,136 +7907,6 @@
       "is_suv": false,
       "price": 5.69,
       "effective_price_wan": 5.86,
-      "condition_gate": "DATA_ISSUE",
-      "note": "数据不足，不参与评分"
-    },
-    "ingest_status": "added",
-    "display": false
-  },
-  {
-    "sku": "357577930",
-    "title": "海豹05DM 2025款 智驾版 DM-i 55KM豪华型",
-    "shop_id": "225430",
-    "shop_name": "懂车帝汽车商城•重庆旗舰店",
-    "shop_short_name": "重庆旗舰店",
-    "series": "海豹05DM",
-    "brand": "海豹",
-    "mileage_wan": 0.89,
-    "model_year": 2025,
-    "plate_year": 2025,
-    "year": "2025年/0.89万公里",
-    "city": "重庆",
-    "tags": [
-      "0.6万首付"
-    ],
-    "badges": [
-      "直营"
-    ],
-    "is_self_trade_car": true,
-    "source_type": "2",
-    "source_type_name": "自营-个人",
-    "fuel_form": "6",
-    "cover": "https://p3-dcd-sign.byteimg.com/tos-cn-i-f042mdwyw7/e85846c063d841d5b802b8b5acf7235f~tplv-f042mdwyw7-auto-webp:480:0.jpg?rk3s=4892dee6&x-expires=1796476230&x-signature=Vhu0J2zxWZcESdVtMMjUKbOQmKE%3D&psm=motor.sh.pack",
-    "detail_url": "https://m.dcdapp.com/motor/feoffline/usedcar_detail/detail.html?sku_id=357577930&shop_id=225430",
-    "list_price_wan": 5.78,
-    "first_registration_time": "1755360000",
-    "price_type": "现金价",
-    "prefix": "现金价",
-    "cash_price_fen": 5780000,
-    "cash_price_str": "5.78",
-    "cash_price_wan": 5.78,
-    "price": 5.78,
-    "detail_shop_id": "225430",
-    "sale_status": "on_sale",
-    "product_status": 1,
-    "status_modify_time": "1795001477",
-    "is_local_wuhan": false,
-    "logistics_fee_yuan": 1300,
-    "logistics_fee_source": "api",
-    "plate_service_fee_yuan": 1000,
-    "plate_fee_diff_yuan": 500,
-    "landed_extra_yuan": 1800,
-    "landed_extra_wan": 0.18,
-    "delivery_eta": "3-5日送达",
-    "landed_price_wan": 5.96,
-    "specs": {
-      "features": {},
-      "specs_found": false,
-      "specs_approx": false,
-      "verified": false,
-      "configuration_source": "unverified_v3",
-      "configuration_unverified": true,
-      "feature_confidence": 0.0,
-      "match_level": "unverified_config",
-      "verification_issues": [
-        "详细配置数据不足"
-      ]
-    },
-    "detailed_config": {
-      "features": {},
-      "specs_found": false,
-      "specs_approx": false,
-      "verified": false,
-      "configuration_source": "unverified_v3",
-      "configuration_unverified": true,
-      "feature_confidence": 0.0,
-      "match_level": "unverified_config",
-      "verification_issues": [
-        "详细配置数据不足"
-      ]
-    },
-    "display_price_wan": 5.78,
-    "effective_price_wan": 5.96,
-    "price_confidence": 0.95,
-    "needs_cash_quote": false,
-    "price_basis": "cash_plus_landed",
-    "manufacturer": "比亚迪",
-    "manufacturer_inferred": false,
-    "owner_reviews": {
-      "summary": "",
-      "sources": [],
-      "found": false
-    },
-    "score_eligible": false,
-    "data_issues": [
-      {
-        "code": "detailed_config_insufficient",
-        "message": "详细配置数据不足",
-        "severity": "blocking",
-        "field": "specs"
-      },
-      {
-        "code": "space_data_insufficient",
-        "message": "空间数据不足：缺少 length_mm",
-        "severity": "blocking",
-        "field": "length_mm"
-      }
-    ],
-    "config_coverage": 0.0,
-    "energy_confidence": 0.0,
-    "score_version": "v3.0.0",
-    "score_v1": null,
-    "total_score": null,
-    "rank": null,
-    "condition_gate": "DATA_ISSUE",
-    "recommendation_gate": "DATA_ISSUE",
-    "veto_reasons": [],
-    "v3_profile": null,
-    "evaluation": "详细配置数据不足；空间数据不足：缺少 length_mm，不参与评分。",
-    "score_reasons": [],
-    "score_warnings": [
-      "详细配置数据不足",
-      "空间数据不足：缺少 length_mm"
-    ],
-    "sort_scores": {
-      "score_version": "v3.0.0",
-      "total_score": null,
-      "config_score": null,
-      "config_norm": null,
-      "config_proxy": null,
-      "is_suv": false,
-      "price": 5.78,
-      "effective_price_wan": 5.96,
       "condition_gate": "DATA_ISSUE",
       "note": "数据不足，不参与评分"
     },
@@ -8144,7 +8014,7 @@
     ],
     "config_coverage": 0.0,
     "energy_confidence": 0.0,
-    "score_version": "v3.0.0",
+    "score_version": "v3.2.0",
     "score_v1": null,
     "total_score": null,
     "rank": null,
@@ -8159,7 +8029,7 @@
       "空间数据不足：缺少 length_mm"
     ],
     "sort_scores": {
-      "score_version": "v3.0.0",
+      "score_version": "v3.2.0",
       "total_score": null,
       "config_score": null,
       "config_norm": null,
@@ -8305,7 +8175,7 @@
     ],
     "config_coverage": 0.0,
     "energy_confidence": 0.0,
-    "score_version": "v3.0.0",
+    "score_version": "v3.2.0",
     "score_v1": null,
     "total_score": null,
     "rank": null,
@@ -8320,7 +8190,7 @@
       "空间数据不足：缺少 length_mm"
     ],
     "sort_scores": {
-      "score_version": "v3.0.0",
+      "score_version": "v3.2.0",
       "total_score": null,
       "config_score": null,
       "config_norm": null,
@@ -8333,167 +8203,6 @@
     },
     "ingest_status": "added",
     "display": false
-  },
-  {
-    "sku": "357052729",
-    "title": "宋Pro DM 2024款 DM-i 荣耀版 71km 领航型",
-    "shop_id": "118608",
-    "shop_name": "懂车帝汽车商城•武汉店",
-    "series": "宋Pro DM",
-    "brand": "宋",
-    "mileage_wan": 6.05,
-    "model_year": 2024,
-    "plate_year": 2024,
-    "year": "2024年/6.05万公里",
-    "city": "武汉",
-    "tags": [
-      "0.6万首付",
-      "直降4000元"
-    ],
-    "badges": [
-      "直营"
-    ],
-    "is_self_trade_car": true,
-    "source_type": "2",
-    "source_type_name": "自营-个人",
-    "fuel_form": "6",
-    "cover": "https://p3-dcd-sign.byteimg.com/tos-cn-i-f042mdwyw7/ba128ed249dc410ab3a0baccd2feccdf~tplv-f042mdwyw7-auto-webp:480:0.jpg?rk3s=4892dee6&x-expires=1796402100&x-signature=fibbiNq1Ct1meIskvuKMNG7jWXI%3D&psm=motor.sh.pack",
-    "detail_url": "https://m.dcdapp.com/motor/feoffline/usedcar_detail/detail.html?sku_id=357052729&shop_id=118608",
-    "list_price_wan": 5.79,
-    "first_registration_time": "1713888000",
-    "price_type": "现金价",
-    "prefix": "现金价",
-    "cash_price_fen": 5990000,
-    "cash_price_str": "5.99",
-    "cash_price_wan": 5.99,
-    "price": 5.99,
-    "detail_shop_id": "118608",
-    "sale_status": "on_sale",
-    "product_status": 1,
-    "status_modify_time": "1791629731",
-    "specs": {
-      "features": {},
-      "specs_found": false,
-      "specs_approx": false,
-      "verified": false,
-      "configuration_source": "unverified_v3",
-      "configuration_unverified": true,
-      "feature_confidence": 0.0,
-      "match_level": "unverified_config",
-      "verification_issues": [
-        "详细配置数据不足"
-      ]
-    },
-    "detailed_config": {
-      "features": {},
-      "specs_found": false,
-      "specs_approx": false,
-      "verified": false,
-      "configuration_source": "unverified_v3",
-      "configuration_unverified": true,
-      "feature_confidence": 0.0,
-      "match_level": "unverified_config",
-      "verification_issues": [
-        "详细配置数据不足"
-      ]
-    },
-    "display_price_wan": 5.99,
-    "effective_price_wan": 5.99,
-    "price_confidence": 0.95,
-    "needs_cash_quote": false,
-    "price_basis": "cash",
-    "manufacturer": "比亚迪",
-    "manufacturer_inferred": false,
-    "owner_reviews": {
-      "summary": "家用向插混SUV：空间配置够用、市区电驱省油省心；有家充时成本优势明显。槽点集中在高速风噪胎噪、内饰/底盘异响和车机偶发卡顿；亏电高速油耗约5–7L，冬季更高。",
-      "pros": [
-        "家用插混SUV空间够用",
-        "市区电驱省油",
-        "有家充成本优势"
-      ],
-      "cons": [
-        "高速风噪胎噪",
-        "内饰/底盘异响",
-        "车机偶发卡顿",
-        "亏电高速油耗约5–7L、冬季更高"
-      ],
-      "drawbacks": [
-        "高速风噪胎噪",
-        "内饰/底盘异响",
-        "车机偶发卡顿",
-        "亏电高速油耗约5–7L、冬季更高"
-      ],
-      "sources": [
-        {
-          "title": "宋Pro DM懂车帝能耗分享",
-          "url": "https://www.dongchedi.com/community/3504/energy"
-        },
-        {
-          "title": "宋Pro DM-i用车分享（有驾）",
-          "url": "https://www.yoojia.com/article/9145557309582282834.html"
-        },
-        {
-          "title": "宋Pro DMI高速油耗实测（汽车之家论坛）",
-          "url": "https://club.m.autohome.com.cn/bbs/thread/8067cb732e5bcdce/101901028-1.html"
-        }
-      ],
-      "found": true,
-      "cons_note": null
-    },
-    "score_eligible": false,
-    "data_issues": [
-      {
-        "code": "detailed_config_insufficient",
-        "message": "详细配置数据不足",
-        "severity": "blocking",
-        "field": "specs"
-      },
-      {
-        "code": "space_data_insufficient",
-        "message": "空间数据不足：缺少 length_mm",
-        "severity": "blocking",
-        "field": "length_mm"
-      }
-    ],
-    "config_coverage": 0.0,
-    "energy_confidence": 0.0,
-    "score_version": "v3.0.0",
-    "score_v1": null,
-    "total_score": null,
-    "rank": null,
-    "condition_gate": "DATA_ISSUE",
-    "recommendation_gate": "DATA_ISSUE",
-    "veto_reasons": [],
-    "v3_profile": null,
-    "evaluation": "详细配置数据不足；空间数据不足：缺少 length_mm，不参与评分。",
-    "score_reasons": [],
-    "score_warnings": [
-      "详细配置数据不足",
-      "空间数据不足：缺少 length_mm"
-    ],
-    "sort_scores": {
-      "score_version": "v3.0.0",
-      "total_score": null,
-      "config_score": null,
-      "config_norm": null,
-      "config_proxy": null,
-      "is_suv": false,
-      "price": 5.99,
-      "effective_price_wan": 5.99,
-      "condition_gate": "DATA_ISSUE",
-      "note": "数据不足，不参与评分"
-    },
-    "ingest_status": "added",
-    "display": false,
-    "is_local_wuhan": true,
-    "shop_short_name": "武汉店",
-    "logistics_fee_yuan": 0,
-    "logistics_fee_source": "local_wuhan",
-    "plate_service_fee_yuan": 500,
-    "plate_fee_diff_yuan": 0,
-    "landed_extra_yuan": 0,
-    "landed_extra_wan": 0.0,
-    "landed_price_wan": 5.99
   },
   {
     "sku": "357230340",
@@ -8587,7 +8296,7 @@
     ],
     "config_coverage": 0.0,
     "energy_confidence": 0.0,
-    "score_version": "v3.0.0",
+    "score_version": "v3.2.0",
     "score_v1": null,
     "total_score": null,
     "rank": null,
@@ -8602,7 +8311,7 @@
       "空间数据不足：缺少 length_mm"
     ],
     "sort_scores": {
-      "score_version": "v3.0.0",
+      "score_version": "v3.2.0",
       "total_score": null,
       "config_score": null,
       "config_norm": null,

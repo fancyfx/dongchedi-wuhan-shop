@@ -57181,6 +57181,254 @@
         }
       ],
       "trim_id": "trim_ah_e2b415de2da9"
+    },
+    "trim_ah_3547059c4271": {
+      "canonical_title": "海豹05 DM-i 2025款 DM-i 智驾版 55KM豪华型",
+      "msrp_wan": 7.98,
+      "core_specs": {
+        "powertrain": "phev",
+        "body_type": "紧凑型车",
+        "seats": 5,
+        "engine": "1.5L 101马力 L4",
+        "transmission": "E-CVT无级变速",
+        "length_mm": 4780,
+        "width_mm": 1837,
+        "height_mm": 1515,
+        "wheelbase_mm": 2718,
+        "fuel_grade": "92",
+        "official_fuel_l_100km": 1.74,
+        "official_standard": "WLTC",
+        "low_soc_fuel_l_100km": 3.9,
+        "real_world_fuel_l_100km": null,
+        "real_world_sample_n": null,
+        "ev_range_km": 55.0,
+        "ev_range_standard": "CLTC",
+        "electric_kwh_100km": 11.1,
+        "ranking_energy": {
+          "type": "low_soc_fuel",
+          "value": 3.9,
+          "unit": "L/100km"
+        }
+      },
+      "features": {
+        "passive_safety": {
+          "front_airbags": true,
+          "front_side_airbags": true,
+          "curtain_airbags": true,
+          "tpms_display": true
+        },
+        "active_safety": {
+          "esp": true,
+          "aeb": false,
+          "fcw": false,
+          "ldw": false,
+          "lka": false,
+          "lane_centering": false,
+          "bsd": false,
+          "dow": false,
+          "rear_collision_warning": false,
+          "traffic_sign_recognition": false,
+          "fatigue_warning": false
+        },
+        "parking_adas": {
+          "front_parking_radar": false,
+          "rear_parking_radar": true,
+          "reverse_camera": true,
+          "surround_360": false,
+          "transparent_chassis_540": false,
+          "cruise": "fixed",
+          "adas_level": "-",
+          "auto_park": false,
+          "remote_park": false
+        },
+        "comfort": {
+          "sunroof": "none",
+          "power_tailgate": null,
+          "hands_free_tailgate": null,
+          "keyless_entry": true,
+          "keyless_start": true,
+          "remote_start": true,
+          "hud": null,
+          "wireless_phone_charging": false,
+          "driver_power_seat": false,
+          "passenger_power_seat": false,
+          "front_seat_heating": false,
+          "front_seat_ventilation": false,
+          "rear_air_vents": true,
+          "climate_control": "automatic",
+          "leather_seats": false
+        },
+        "infotainment": {
+          "center_screen_inches": 10.1,
+          "instrument_screen_inches": 8.8,
+          "carplay": false,
+          "carlife": false,
+          "connected_car": true,
+          "ota": true,
+          "speaker_count": 6,
+          "branded_audio": "-",
+          "voice_control": true,
+          "full_lcd_cluster": false,
+          "chip_8155": null,
+          "phone_link": false
+        },
+        "lighting": {
+          "headlights": "● LED",
+          "auto_headlights": true,
+          "adaptive_high_beam": false
+        },
+        "wheels": {
+          "front_tire": "● 225/60 R16",
+          "rear_tire": "● 225/60 R16"
+        },
+        "optional_or_uncertain_features": []
+      },
+      "data_quality": {
+        "core_confidence": 0.981,
+        "feature_confidence": "high",
+        "verified_non_null_feature_leaf_count": 48,
+        "scoring_rule": "Only exact-trim standard features may score. null/optional features score 0.",
+        "known_issues": [],
+        "identity_source": "autohome_exact_trim",
+        "series_match": 1.0,
+        "trim_match": 0.98,
+        "source_snapshot": "live_param:7981:2025"
+      },
+      "sources": [
+        {
+          "url": "https://car.autohome.com.cn/config/spec/71313.html",
+          "source_type": "autohome_live_config",
+          "authority_tier": 1,
+          "series_id": 7981,
+          "spec_id": 71313,
+          "parameter_source": "getParamConf"
+        }
+      ],
+      "trim_id": "trim_ah_3547059c4271"
+    },
+    "trim_ah_f3fe643a68a0": {
+      "canonical_title": "宋Pro新能源 2024款 荣耀版 DM-i 71KM领航型",
+      "msrp_wan": 10.98,
+      "core_specs": {
+        "powertrain": "phev",
+        "body_type": "紧凑型SUV",
+        "seats": 5,
+        "engine": "1.5L 110马力 L4",
+        "transmission": "E-CVT无级变速",
+        "length_mm": 4738,
+        "width_mm": 1860,
+        "height_mm": 1710,
+        "wheelbase_mm": 2712,
+        "fuel_grade": "92",
+        "official_fuel_l_100km": 2.87,
+        "official_standard": "WLTC",
+        "low_soc_fuel_l_100km": 5.3,
+        "real_world_fuel_l_100km": null,
+        "real_world_sample_n": null,
+        "ev_range_km": 59.0,
+        "ev_range_standard": "WLTC",
+        "electric_kwh_100km": null,
+        "ranking_energy": {
+          "type": "low_soc_fuel",
+          "value": 5.3,
+          "unit": "L/100km"
+        }
+      },
+      "features": {
+        "passive_safety": {
+          "front_airbags": true,
+          "front_side_airbags": true,
+          "curtain_airbags": false,
+          "tpms_display": true
+        },
+        "active_safety": {
+          "esp": true,
+          "aeb": false,
+          "fcw": false,
+          "ldw": false,
+          "lka": false,
+          "lane_centering": false,
+          "bsd": false,
+          "dow": false,
+          "rear_collision_warning": false,
+          "traffic_sign_recognition": false,
+          "fatigue_warning": false
+        },
+        "parking_adas": {
+          "front_parking_radar": true,
+          "rear_parking_radar": true,
+          "reverse_camera": false,
+          "surround_360": true,
+          "transparent_chassis_540": true,
+          "cruise": "fixed",
+          "adas_level": "-",
+          "auto_park": false,
+          "remote_park": true
+        },
+        "comfort": {
+          "sunroof": "none",
+          "power_tailgate": false,
+          "hands_free_tailgate": null,
+          "keyless_entry": true,
+          "keyless_start": true,
+          "remote_start": true,
+          "hud": null,
+          "wireless_phone_charging": false,
+          "driver_power_seat": true,
+          "passenger_power_seat": true,
+          "front_seat_heating": false,
+          "front_seat_ventilation": false,
+          "rear_air_vents": true,
+          "climate_control": "automatic_dual_zone",
+          "leather_seats": false
+        },
+        "infotainment": {
+          "center_screen_inches": 10.1,
+          "instrument_screen_inches": 8.8,
+          "carplay": false,
+          "carlife": false,
+          "connected_car": true,
+          "ota": true,
+          "speaker_count": 6,
+          "branded_audio": "-",
+          "voice_control": true,
+          "full_lcd_cluster": false,
+          "chip_8155": null,
+          "phone_link": false
+        },
+        "lighting": {
+          "headlights": "● LED",
+          "auto_headlights": true,
+          "adaptive_high_beam": false
+        },
+        "wheels": {
+          "front_tire": "● 225/60 R18",
+          "rear_tire": "● 225/60 R18"
+        },
+        "optional_or_uncertain_features": []
+      },
+      "data_quality": {
+        "core_confidence": 0.963,
+        "feature_confidence": "high",
+        "verified_non_null_feature_leaf_count": 49,
+        "scoring_rule": "Only exact-trim standard features may score. null/optional features score 0.",
+        "known_issues": [],
+        "identity_source": "autohome_exact_trim",
+        "series_match": 1.0,
+        "trim_match": 0.94,
+        "source_snapshot": "live_param:5279:2024"
+      },
+      "sources": [
+        {
+          "url": "https://car.autohome.com.cn/config/spec/66963.html",
+          "source_type": "autohome_live_config",
+          "authority_tier": 1,
+          "series_id": 5279,
+          "spec_id": 66963,
+          "parameter_source": "getParamConf"
+        }
+      ],
+      "trim_id": "trim_ah_f3fe643a68a0"
     }
   },
   "configuration_policy": "new-full-config-only; AutoHome exact-trim parameters only; legacy shards/approximate config forbidden"

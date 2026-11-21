@@ -329,6 +329,14 @@ def enrich_specs_with_live_tree(item: dict[str, Any], *, allow_title_match: bool
             specs["height_mm"] = profile["height_mm"]
         if specs.get("seats") is None and profile.get("seats") is not None:
             specs["seats"] = profile["seats"]
+        if specs.get("low_soc_fuel_l_100km") is None and profile.get("low_soc_fuel_l_100km") is not None:
+            specs["low_soc_fuel_l_100km"] = profile["low_soc_fuel_l_100km"]
+            if specs.get("powertrain") == "phev" and not specs.get("ranking_energy"):
+                specs["ranking_energy"] = {
+                    "type": "low_soc_fuel",
+                    "value": profile["low_soc_fuel_l_100km"],
+                    "unit": "L/100km",
+                }
 
     for k in (
         "engine_model",
@@ -342,6 +350,7 @@ def enrich_specs_with_live_tree(item: dict[str, Any], *, allow_title_match: bool
         "rear_suspension",
         "drive_type",
         "energy_type",
+        "battery_type",
         "knee_airbag",
         "has_reverse_camera",
         "has_fixed_cruise",

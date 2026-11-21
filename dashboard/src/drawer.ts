@@ -48,6 +48,7 @@ export function coverImgHtml(item: Listing, cls = ''): string {
 }
 
 export function gearboxClass(tier?: string): string {
+  if (tier === 'E_CVT') return 'gb-ecvt'
   if (tier === 'AT') return 'gb-at'
   if (tier === 'CVT') return 'gb-cvt'
   if (tier === 'WET_DCT') return 'gb-dct'
@@ -57,11 +58,11 @@ export function gearboxClass(tier?: string): string {
 export function miniMetersHtml(item: Listing): string {
   const ss = item.sort_scores
   const dims: { label: string; val: number | null | undefined; cls: string }[] = [
-    { label: '三大件', val: ss?.powertrain_score, cls: 'dim-pt' },
     { label: '配置', val: ss?.config_score, cls: 'dim-cfg' },
-    { label: '性价比', val: ss?.value_price_score ?? ss?.price_score, cls: 'dim-val' },
-    { label: '车况', val: ss?.condition_score, cls: 'dim-cond' },
     { label: '空间', val: ss?.space_score, cls: 'dim-sp' },
+    { label: '三大件', val: ss?.powertrain_score, cls: 'dim-pt' },
+    { label: '车况', val: ss?.condition_score, cls: 'dim-cond' },
+    { label: '价格值', val: ss?.value_price_score ?? ss?.price_score, cls: 'dim-val' },
   ]
   return `
     <div class="mini-meters">
@@ -82,11 +83,11 @@ export function miniMetersHtml(item: Listing): string {
 export function scoreBarsHtml(item: Listing, compact = false): string {
   const ss = item.sort_scores
   const dims: { label: string; val: number | null | undefined; cls: string }[] = [
+    { label: '现代配置', val: ss?.config_score, cls: 'dim-cfg' },
+    { label: 'SUV空间', val: ss?.space_score, cls: 'dim-sp' },
     { label: '三大件', val: ss?.powertrain_score, cls: 'dim-pt' },
-    { label: '配置', val: ss?.config_score, cls: 'dim-cfg' },
-    { label: '性价比', val: ss?.value_price_score ?? ss?.price_score, cls: 'dim-val' },
-    { label: '车况', val: ss?.condition_score, cls: 'dim-cond' },
-    { label: '空间', val: ss?.space_score, cls: 'dim-sp' },
+    { label: '里程车况', val: ss?.condition_score, cls: 'dim-cond' },
+    { label: '到汉价格', val: ss?.value_price_score ?? ss?.price_score, cls: 'dim-val' },
   ]
   return `
     <div class="dim-bars ${compact ? 'compact' : ''}">
@@ -450,35 +451,35 @@ export function renderMethodologyModalBody(): string {
   return `
     <div class="method-body">
       <div class="method-lead">
-        专为<strong>“平时不开、仅节假日偶尔开、高配低价且好维护”</strong>的买手需求重写。彻底剔除旧版 15% 油耗权重与 5% SUV 偏见，确保每台入选车都经得起久停和长途考验。
+        V3.2 针对<strong>“新世代高配大空间 SUV 主导 + 节假日低频省心开 + 轿车仅留极品备选”</strong>深度校准：重仓现代座舱与 360 视野，终结老合资靠虚高指导价折数刷榜，并对准新比亚迪 DM-i 等串并联电混开放有条件准入。
       </div>
       <div class="method-grid">
         <div class="method-card veto">
-          <h4>一、四大铁律一票否决</h4>
+          <h4>一、风控铁律 &amp; 电混分层准入</h4>
           <ul>
-            <li><strong>否决纯电/插混（BEV/PHEV）</strong>：长停易小电瓶馈电，过户无三电质保，商险更贵，低频开省不下油钱。</li>
-            <li><strong>否决三缸发动机</strong>：剔除 1.0T/1.2T/1.5T 三缸机型及湿式正时皮带通病车，锁死四缸机。</li>
-            <li><strong>否决干式双离合</strong>：剔除 DQ200 等干式双离合，防久停粘连生锈及高速堵车过热顿挫。</li>
+            <li><strong>否决纯电（BEV）与老旧/准营运插混</strong>：无家充久停否决纯电及 2020 前双离合老插混；<strong>放行 2021+ 准新 E-CVT 串并联电混（如 DM-i）</strong>，但严卡车龄≤5.5年、里程≤7.5万km、年均≤3.2万km 防脱保与网约退役车。</li>
+            <li><strong>否决三缸发动机</strong>：剔除 1.0T/1.2T/1.3T/1.5T 三缸机型，锁死四缸机。</li>
+            <li><strong>否决干式双离合</strong>：剔除 DQ200 等干式双离合，防久停粘连与拥堵过热顿挫。</li>
             <li><strong>实时清理已售与隐藏锁单</strong>：每日对账接口 <code>product_status</code>，已售清出、锁单隐藏不出榜。</li>
           </ul>
         </div>
         <div class="method-card weights">
-          <h4>二、V3 五维评分权重（满分 100）</h4>
+          <h4>二、V3.2 五维评分权重（满分 100）</h4>
           <ul>
-            <li><strong>三大件与维保友好度（30%）</strong>：爱信/通用 AT & 丰田带起步齿轮 CVT 优先；自吸多点电喷耐静置加分；豪华高零整比与退市品牌降权。</li>
-            <li><strong>节假日刚需配置（24%）</strong>：重点权重给 6 气囊、AEB、全速 ACC、车道保持、360 全景、座椅加热、电动座椅、CarPlay。</li>
-            <li><strong>高折旧性价比（22%）</strong>：55% 看残值折扣率（现价÷指导价），45% 看绝对全款现金价。</li>
-            <li><strong>车况与里程车龄（18%）</strong>：实表里程权重高于上牌年，优先准新低里程车源。</li>
-            <li><strong>空间实用性（6%）</strong>：按轴距稳健计分，保留紧凑高配与两厢精品车的竞争力。</li>
+            <li><strong>现代座舱与智驾配置（28%）</strong>：重仓 ≥12寸大屏+CarPlay、全液晶仪表、360全景、座椅加热/通风、双电调、L2 与 HUD，淘汰 8 寸小屏毛坯老车。</li>
+            <li><strong>SUV 形态与立体空间（20%）</strong>：55% 看车身形态（紧凑/中型 SUV 满分，轿车降权作备选）+ 45% 看轴距/车宽/车高三维空间。</li>
+            <li><strong>三大件可靠性（20%）</strong>：AT、丰田 CVT 与准新 E-CVT 电混第一梯队，一线成熟湿式双离合（长城/吉利/长安）客观缩小分差，冷门/老豪华重罚。</li>
+            <li><strong>实表里程与代际车龄（18%）</strong>：严守 5–6 万km 大保养分水岭，陡峭化 6 年以上老车衰减，并对年均 >2.2万km 高频车扣分预警。</li>
+            <li><strong>真实到汉价格值（14%）</strong>：80% 看全包到汉落地实价，封顶 3.2 折虚高指导价折扣加成。</li>
           </ul>
         </div>
       </div>
       <div class="method-tips">
         <h4>三、华中 7 城直营到汉比价口径 &amp; 提车必做</h4>
         <ol>
-          <li><strong>统一到汉可比价</strong>：拉取武汉、长沙、合肥、南京、郑州、重庆、成都 7 家懂车帝官方直营店/仓（已排除加盟店）。异地车辆自动调用官方接口获取运至武汉物流费（750–1,300 元，兜底 1,000 元）并计入异地上牌服务费差额（500 元），严格卡死<strong>到汉总价 ≤ 6.0 万</strong>。</li>
-          <li><strong>现场测 12V 电瓶 SOH</strong>：要求门店实测蓄电池寿命，低于 60% 直接谈免费换新电瓶。</li>
-          <li><strong>排查常电与胎压</strong>：拆掉前车主私接 24 小时常电记录仪，随车备应急搭电宝；冷胎气压打至 2.5–2.6 bar，全合成机油按 1 年或 1 万公里一保。</li>
+          <li><strong>统一到汉可比价</strong>：拉取武汉、长沙、合肥、南京、郑州、重庆、成都 7 家懂车帝官方直营店/仓，自动计入到汉物流费与异地上牌差额（500 元），严格卡死<strong>到汉总价 ≤ 6.0 万</strong>。</li>
+          <li><strong>燃油车测 12V 电瓶 / 插混查三电与强制保电</strong>：油车现场测蓄电池 SOH（&lt;60% 要求换新）；DM-i 核查非营运与 8年/15万km 法定三电质保，久停前强制保电至 50%–60% SOC。</li>
+          <li><strong>排查常电与大保养节点</strong>：拆掉私接 24 小时常电记录仪；接近 6 万公里车源重点检查变速箱油与四驱分动箱油状态。</li>
         </ol>
       </div>
     </div>

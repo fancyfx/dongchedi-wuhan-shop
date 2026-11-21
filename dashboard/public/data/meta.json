@@ -49,19 +49,19 @@
   "captured_at": "2026-11-02T16:39:04.628239+08:00",
   "viewport": "390x844",
   "user_agent": "WeChat MicroMessenger iPhone (API + attempted page emulation; CDP UA override blocked)",
-  "sort_preference": "v3_holiday_low_freq_buyer_top30",
-  "notes": "算法版本 v3.0.0（华中7城直营 · 节假日低频用车买手严选）。7城直营在库 513 台（在售 508 / 锁单隐藏 5），四大铁律否决 117 台（新能源35/三缸49/干式双离合35），合格参评 336 台，严选展示 Top 30 台。",
-  "sort_method": "ranking_v3_powertrain_veto_and_reliability",
-  "ranked_at": "2026-11-21T21:23:07+08:00",
+  "sort_preference": "v3_2_suv_first_modern_cabin_with_dmi_top30",
+  "notes": "算法版本 v3.2.0（华中7城直营 · 节假日低频用车买手严选）。7城直营在库 513 台（在售 508 / 锁单隐藏 5），四大铁律否决 110 台（新能源28/三缸49/干式双离合35），合格参评 344 台，严选展示 Top 30 台。",
+  "sort_method": "ranking_v3_2_suv_cabin_and_tiered_hybrid",
+  "ranked_at": "2026-11-21T23:51:28+08:00",
   "ranked_count": 30,
   "sort_weights": {
-    "powertrain": 0.3,
-    "config": 0.24,
-    "value_price": 0.22,
+    "config": 0.28,
+    "space": 0.2,
+    "powertrain": 0.2,
     "condition": 0.18,
-    "space": 0.06
+    "value_price": 0.14
   },
-  "sort_formula": "四大铁律一票否决（纯电/插混、三缸机、干式双离合）+ 锁单隐藏；total = 0.30*三大件可靠性 + 0.24*节假日配置 + 0.22*折旧性价比 + 0.18*里程车龄 + 0.06*空间",
+  "sort_formula": "铁律否决（纯电BEV、老架构/高龄高里程/疑似营运插混、三缸机、干式双离合）+ 准新E-CVT电混放行 + 锁单隐藏；total = 0.28*现代座舱配置 + 0.20*SUV立体空间(轿车降权备选) + 0.20*三大件可靠性 + 0.18*里程车龄 + 0.14*到汉价格值",
   "manufacturer_coverage": {
     "total": 146,
     "inferred_count": 3,
@@ -170,7 +170,7 @@
   "filtered_count": 513,
   "excluded_short_range_bev_count": 0,
   "excluded_short_range_bev": [],
-  "filter_pipeline": "华中7城官方直营 → 到汉可比总价≤6.0万 → 实时售出清理 & 锁单隐藏(5) → 四大铁律否决(117) → V3综合评分(336) → 严选 Top 30；source=513 filtered=513 data_issues=58",
+  "filter_pipeline": "华中7城官方直营 → 到汉可比总价≤6.0万 → 实时售出清理 & 锁单隐藏(5) → 四大铁律否决(110) → V3综合评分(344) → 严选 Top 30；source=513 filtered=513 data_issues=56",
   "config_scoring": {
     "method": "exact_trim_full_parameters",
     "approximate_fallback": false,
@@ -182,7 +182,7 @@
   "owner_reviews_found_cars": 146,
   "owner_reviews_placeholder_cars": 0,
   "owner_reviews_updated": "2026-11-02",
-  "score_version": "v3.0.0",
+  "score_version": "v3.2.0",
   "energy_prices": {
     "gas_92_yuan_l": 8.0,
     "gas_95_yuan_l": 8.5,
@@ -194,13 +194,13 @@
   "energy_scenario": "no_home_charging",
   "finance_reserve_wan": 0.5,
   "verified_specs_file": "data/vehicle-specs-verified.json",
-  "verified_sku_count": 516,
+  "verified_sku_count": 518,
   "cash_price_source": "m.dcdapp.com/motor/ecom/sophon/guide/card/detail → sku_price.price (全款展示价)",
   "cash_price_note": "列表 product_price 常为分期券后价；看板与排序一律用详情 sku_price 现金价。原65辆分期+3辆券后已回写；现金价>6万的6辆已排除。",
   "excluded_over_budget_cash_count": 6,
   "excluded_over_budget_cash_file": "data/excluded-over-budget-cash.json",
   "price_refresh_file": "data/price-refresh-detail.json",
-  "data_issue_count": 58,
+  "data_issue_count": 56,
   "data_quality_policy": {
     "exact_trim_only": true,
     "min_config_coverage": 0.6,
@@ -212,17 +212,19 @@
   "configuration_refresh_mode": "local_only",
   "configuration_refresh_command": "python3 scripts/local_refresh.py",
   "legacy_configuration_compatible": false,
-  "library_scored_count": 336,
-  "below_display_count": 425,
+  "library_scored_count": 344,
+  "below_display_count": 427,
   "display_limit": 30,
-  "display_score_floor": 80.8,
+  "display_score_floor": 78.4,
   "ingest_score_threshold": 76.4,
   "ingest_at": "2026-11-21T21:09:26+08:00",
   "on_sale_count": 508,
   "reserved_count": 5,
-  "vetoed_count": 117,
+  "vetoed_count": 110,
   "veto_breakdown": {
-    "ev_phev": 35,
+    "ev_phev": 28,
+    "bev": 26,
+    "risky_phev": 2,
     "three_cyl": 49,
     "dry_dct": 35
   },
@@ -238,7 +240,7 @@
       "is_local": true,
       "logistics_fee_yuan": 0,
       "inventory_count": 172,
-      "top_count": 14
+      "top_count": 10
     },
     {
       "shop_id": "196923",
@@ -271,7 +273,7 @@
       "is_local": false,
       "logistics_fee_yuan": 1180,
       "inventory_count": 28,
-      "top_count": 0
+      "top_count": 1
     },
     {
       "shop_id": "175870",
@@ -282,7 +284,7 @@
       "is_local": false,
       "logistics_fee_yuan": 1200,
       "inventory_count": 57,
-      "top_count": 1
+      "top_count": 2
     },
     {
       "shop_id": "225430",
@@ -293,7 +295,7 @@
       "is_local": false,
       "logistics_fee_yuan": 1300,
       "inventory_count": 155,
-      "top_count": 11
+      "top_count": 13
     },
     {
       "shop_id": "183004",

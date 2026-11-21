@@ -1,72 +1,92 @@
 """V3 score weights, anchors, energy prices, finance reserve."""
 from __future__ import annotations
 
-SCORE_VERSION = "v3.0.0"
+SCORE_VERSION = "v3.2.0"
 
 WEIGHTS = {
-    "powertrain": 0.30,
-    "config": 0.24,
-    "value_price": 0.22,
+    "config": 0.28,
+    "space": 0.20,
+    "powertrain": 0.20,
     "condition": 0.18,
-    "space": 0.06,
+    "value_price": 0.14,
 }
 
-# Holiday low-frequency driver V3 calibration anchors
+# V3.2 SUV-first modern cabin + realistic depreciation anchors
+# Cap discount bonus around ~3.2 fold so inflated-MSRP old models cannot game rankings.
 VALUE_DISCOUNT_POINTS = [
-    (0.20, 98),
-    (0.25, 93),
-    (0.30, 87),
-    (0.35, 80),
-    (0.40, 70),
-    (0.45, 58),
-    (0.52, 42),
-    (0.62, 25),
+    (0.32, 90),
+    (0.38, 82),
+    (0.45, 70),
+    (0.55, 55),
+    (0.68, 38),
 ]
 
 VALUE_PRICE_POINTS = [
     (2.5, 100),
     (3.5, 92),
     (4.2, 84),
-    (4.8, 75),
-    (5.4, 65),
-    (6.0, 54),
+    (4.8, 74),
+    (5.3, 62),
+    (5.7, 50),
+    (6.0, 38),
 ]
 
 V3_MILEAGE_POINTS = [
     (0, 100),
-    (2.0, 98),
+    (1.5, 99),
     (3.0, 92),
-    (4.0, 85),
-    (5.0, 74),
-    (6.5, 56),
-    (8.0, 36),
-    (10.0, 15),
+    (4.5, 82),
+    (5.5, 70),
+    (6.5, 55),
+    (8.0, 34),
+    (10.0, 12),
 ]
 
 V3_AGE_POINTS_YEARS = [
-    (1, 100),
-    (3, 93),
-    (5, 80),
-    (7, 64),
-    (9, 48),
-    (10, 38),
+    (0, 100),
+    (2, 97),
+    (4, 88),
+    (5, 79),
+    (6, 66),
+    (7, 50),
+    (8, 34),
+    (9, 20),
+    (10, 10),
 ]
 
 V3_WHEELBASE_POINTS = [
-    (2500, 50),
-    (2600, 66),
-    (2700, 82),
-    (2800, 94),
+    (2500, 35),
+    (2600, 55),
+    (2680, 75),
+    (2730, 86),
+    (2800, 95),
     (2900, 100),
 ]
 
+V3_WIDTH_POINTS = [
+    (1720, 25),
+    (1800, 58),
+    (1840, 74),
+    (1880, 90),
+    (1920, 100),
+]
+
+V3_HEIGHT_POINTS = [
+    (1430, 35),
+    (1480, 48),
+    (1560, 68),
+    (1650, 86),
+    (1720, 96),
+    (1800, 100),
+]
+
 V3_CONFIG_CURVE_POINTS = [
-    (0, 15),
-    (25, 42),
-    (45, 64),
-    (60, 78),
-    (75, 89),
-    (90, 96),
+    (0, 10),
+    (20, 30),
+    (40, 52),
+    (55, 68),
+    (70, 82),
+    (85, 94),
     (100, 100),
 ]
 

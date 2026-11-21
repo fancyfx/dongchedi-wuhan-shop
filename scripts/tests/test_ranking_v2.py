@@ -309,6 +309,50 @@ def test_autohome_param_api_tree_compatibility():
     assert feats["power_driver_seat"] is True and feats["power_passenger_seat"] is True
 
 
+def test_v32_suv_preferred_and_tiered_dmi_admission():
+    suv_trim = _fixture_trim()
+    sedan_trim = _fixture_trim()
+    sedan_trim["core_specs"]["body_type"] = "紧凑型车"
+    sedan_trim["core_specs"]["height_mm"] = 1460
+
+    dmi_trim = _fixture_trim()
+    dmi_trim["core_specs"]["powertrain"] = "phev"
+    dmi_trim["core_specs"]["engine"] = "1.5L 110马力 L4"
+    dmi_trim["core_specs"]["transmission"] = "电子无级变速箱(E-CVT)"
+    dmi_trim["core_specs"]["low_soc_fuel_l_100km"] = 5.3
+
+    old_phev_trim = _fixture_trim()
+    old_phev_trim["core_specs"]["powertrain"] = "phev"
+    old_phev_trim["core_specs"]["transmission"] = "6挡湿式双离合变速箱(DCT)"
+
+    verified = {
+        "suv": {"trim": suv_trim},
+        "sedan": {"trim": sedan_trim},
+        "dmi_ok": {"trim": dmi_trim},
+        "dmi_ridehail": {"trim": dmi_trim},
+        "old_phev": {"trim": old_phev_trim},
+    }
+    rows = apply_verified_to_listings(
+        [
+            {"sku": "suv", "title": "测试SUV 2022款", "price": 5.0, "price_type": "标价", "mileage_wan": 3.5, "plate_year": 2022, "model_year": 2022},
+            {"sku": "sedan", "title": "测试轿车 2022款", "price": 5.0, "price_type": "标价", "mileage_wan": 3.5, "plate_year": 2022, "model_year": 2022},
+            {"sku": "dmi_ok", "title": "宋Pro DM 2024款 DM-i 71km", "price": 5.6, "price_type": "标价", "mileage_wan": 3.0, "plate_year": 2024, "model_year": 2024},
+            {"sku": "dmi_ridehail", "title": "宋Pro DM 2025款 DM-i 71km", "price": 5.2, "price_type": "标价", "mileage_wan": 6.8, "plate_year": 2025, "model_year": 2025},
+            {"sku": "old_phev", "title": "唐DM 2018款 2.0T", "price": 4.9, "price_type": "标价", "mileage_wan": 5.5, "plate_year": 2019, "model_year": 2018},
+        ],
+        verified,
+    )
+    by_sku = {r["sku"]: score_listing(r) for r in rows}
+    # SUV leads equivalent sedan by a clear margin so only exceptional sedans enter top 20
+    assert by_sku["suv"]["total_score"] - by_sku["sedan"]["total_score"] >= 7.0
+    # Modern low/moderate-mileage E-CVT DM-i is admitted
+    assert by_sku["dmi_ok"]["recommendation_gate"] == "PASS"
+    assert by_sku["dmi_ok"]["v3_profile"]["gearbox_tier"] == "E_CVT"
+    # High-intensity suspected ride-hailing PHEV and pre-2021 DCT PHEV are vetoed
+    assert by_sku["dmi_ridehail"]["recommendation_gate"] == "VETO"
+    assert by_sku["old_phev"]["recommendation_gate"] == "VETO"
+
+
 def main():
     tests = [
         test_new_configuration_store_has_no_legacy_shards,
@@ -321,6 +365,7 @@ def main():
         test_v3_veto_and_at_preference,
         test_landed_cost_added_to_effective_price_and_profile,
         test_autohome_param_api_tree_compatibility,
+        test_v32_suv_preferred_and_tiered_dmi_admission,
     ]
     failed = 0
     for fn in tests:

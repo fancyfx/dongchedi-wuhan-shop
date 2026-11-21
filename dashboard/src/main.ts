@@ -99,7 +99,7 @@ function matchesPreset(item: Listing, preset: PresetKey): boolean {
     case 'wuhan':
       return isLocalWuhan(item)
     case 'at':
-      return p?.gearbox_tier === 'AT'
+      return p?.gearbox_tier === 'AT' || p?.gearbox_tier === 'E_CVT'
     case 'under5':
       return landedPrice(item) <= 5.0
     case 'lowmile':
@@ -340,12 +340,12 @@ function stickyBarHtml(shown: Listing[]): string {
   const presets: [PresetKey, string][] = [
     ['all', `全部 ${counts.all}`],
     ['wuhan', `武汉本地 ${counts.wuhan}`],
-    ['at', `成熟AT ${counts.at}`],
-    ['under5', `5万内 ${counts.under5}`],
-    ['lowmile', `4万km内 ${counts.lowmile}`],
     ['suv', `SUV/四驱 ${counts.suv}`],
-    ['sedan_b', `B级轿 ${counts.sedan_b}`],
     ['l2', `L2智驾 ${counts.l2}`],
+    ['lowmile', `4万km内 ${counts.lowmile}`],
+    ['under5', `5万内 ${counts.under5}`],
+    ['at', `AT/电混 ${counts.at}`],
+    ['sedan_b', `B级轿 ${counts.sedan_b}`],
   ]
   const avgPrice = shown.length ? (shown.reduce((a, b) => a + landedPrice(b), 0) / shown.length).toFixed(2) : '—'
   const activeFilterCount =
@@ -511,7 +511,7 @@ function renderCatalogSection(shown: Listing[]): string {
     <section class="podium-section">
       <div class="sec-head">
         <h2>买手头号三甲 · Top 3</h2>
-        <span>机械可靠性 × 节假日高配 × 高折旧性价比</span>
+        <span>新世代高配 SUV 主导 × 三大件可靠 × 准新电混准入</span>
       </div>
       <div class="podium-lead">${cardInnerHtml(top1, true)}</div>
       <div class="podium-runners">${top23.map((x) => cardInnerHtml(x, false)).join('')}</div>

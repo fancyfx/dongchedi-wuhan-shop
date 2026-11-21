@@ -564,6 +564,7 @@ button, input, select { font-family: inherit; }
   border-radius: 5px;
   color: #FFF;
 }
+.gb-ecvt { background: #0F766E; }
 .gb-at { background: var(--racing); }
 .gb-cvt { background: #1A5A73; }
 .gb-dct { background: #8C5312; }

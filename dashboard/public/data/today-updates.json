@@ -1,7 +1,7 @@
 {
   "schema": "today-updates/v1",
   "date": "20261121",
-  "generated_at": "2026-11-21T21:23:07+08:00",
+  "generated_at": "2026-11-21T23:51:29+08:00",
   "source": "snapshot",
   "has_snapshot": true,
   "changelog_empty": false,
@@ -58,6 +58,19 @@
   },
   "highlights": [
     {
+      "sku": "357513917",
+      "title": "哈弗H6 2021款 第三代 2.0T 自动四驱Max版",
+      "change_type": "added",
+      "old_price": null,
+      "new_price": 4.88,
+      "old_score": null,
+      "new_score": 81.0,
+      "rank": 2,
+      "reason": null,
+      "at": "2026-11-21T21:09:26+08:00",
+      "highlight": true
+    },
+    {
       "sku": "300026721",
       "title": "领克01 2019款 2.0T 两驱耀Pro版 国VI",
       "change_type": "added",
@@ -65,20 +78,20 @@
       "new_price": 5.29,
       "old_score": null,
       "new_score": 85.4,
-      "rank": 2,
+      "rank": 3,
       "reason": null,
       "at": "2026-11-21T21:09:26+08:00",
       "highlight": true
     },
     {
-      "sku": "357431134",
-      "title": "长安CS75 2018款 280T 自动雅智型",
+      "sku": "357523332",
+      "title": "哈弗H6 2021款 第三代 1.5GDIT 自动Max版",
       "change_type": "added",
       "old_price": null,
-      "new_price": 3.6,
+      "new_price": 4.89,
       "old_score": null,
-      "new_score": 85.1,
-      "rank": 3,
+      "new_score": 77.7,
+      "rank": 4,
       "reason": null,
       "at": "2026-11-21T21:09:26+08:00",
       "highlight": true
@@ -91,20 +104,33 @@
       "new_price": 4.98,
       "old_score": null,
       "new_score": 84.9,
-      "rank": 4,
+      "rank": 5,
       "reason": null,
       "at": "2026-11-21T21:09:26+08:00",
       "highlight": true
     },
     {
-      "sku": "357015083",
-      "title": "探界者 2021款 550T RS 智能拓界版",
+      "sku": "357573760",
+      "title": "哈弗初恋 2021款 1.5T 自动大四版",
       "change_type": "added",
       "old_price": null,
-      "new_price": 5.69,
+      "new_price": 3.69,
       "old_score": null,
-      "new_score": 84.0,
+      "new_score": 77.9,
       "rank": 6,
+      "reason": null,
+      "at": "2026-11-21T21:09:26+08:00",
+      "highlight": true
+    },
+    {
+      "sku": "300026529",
+      "title": "长安UNI-T 2020款 1.5T 旗舰型",
+      "change_type": "added",
+      "old_price": null,
+      "new_price": 4.99,
+      "old_score": null,
+      "new_score": 80.8,
+      "rank": 8,
       "reason": null,
       "at": "2026-11-21T21:09:26+08:00",
       "highlight": true
@@ -117,33 +143,7 @@
       "new_price": 5.38,
       "old_score": null,
       "new_score": 83.6,
-      "rank": 8,
-      "reason": null,
-      "at": "2026-11-21T21:09:26+08:00",
-      "highlight": true
-    },
-    {
-      "sku": "357000726",
-      "title": "哈弗H8 2017款 2.0T 汽油四驱智享型",
-      "change_type": "added",
-      "old_price": null,
-      "new_price": 3.16,
-      "old_score": null,
-      "new_score": 83.0,
       "rank": 9,
-      "reason": null,
-      "at": "2026-11-21T21:09:26+08:00",
-      "highlight": true
-    },
-    {
-      "sku": "300030103",
-      "title": "领克01 2019款 2.0T 两驱型Pro版 国VI",
-      "change_type": "added",
-      "old_price": null,
-      "new_price": 5.69,
-      "old_score": null,
-      "new_score": 82.6,
-      "rank": 10,
       "reason": null,
       "at": "2026-11-21T21:09:26+08:00",
       "highlight": true
@@ -1133,7 +1133,7 @@
       "new_price": 5.21,
       "old_score": null,
       "new_score": 79.1,
-      "rank": null,
+      "rank": 24,
       "reason": null,
       "at": "2026-11-21T21:09:26+08:00",
       "highlight": false
@@ -1523,10 +1523,10 @@
       "new_price": 4.99,
       "old_score": null,
       "new_score": 80.8,
-      "rank": null,
+      "rank": 8,
       "reason": null,
       "at": "2026-11-21T21:09:26+08:00",
-      "highlight": false
+      "highlight": true
     },
     {
       "sku": "300022466",
@@ -1562,7 +1562,7 @@
       "new_price": 1.78,
       "old_score": null,
       "new_score": 81.6,
-      "rank": 18,
+      "rank": null,
       "reason": null,
       "at": "2026-11-21T21:09:26+08:00",
       "highlight": false
@@ -1731,7 +1731,7 @@
       "new_price": 4.59,
       "old_score": null,
       "new_score": 79.5,
-      "rank": null,
+      "rank": 28,
       "reason": null,
       "at": "2026-11-21T21:09:26+08:00",
       "highlight": false
@@ -1809,7 +1809,7 @@
       "new_price": 3.99,
       "old_score": null,
       "new_score": 82.0,
-      "rank": 14,
+      "rank": null,
       "reason": null,
       "at": "2026-11-21T21:09:26+08:00",
       "highlight": false
@@ -2056,10 +2056,10 @@
       "new_price": 5.69,
       "old_score": null,
       "new_score": 82.6,
-      "rank": 10,
+      "rank": 11,
       "reason": null,
       "at": "2026-11-21T21:09:26+08:00",
-      "highlight": true
+      "highlight": false
     },
     {
       "sku": "300030707",
@@ -2316,7 +2316,7 @@
       "new_price": 3.99,
       "old_score": null,
       "new_score": 80.5,
-      "rank": null,
+      "rank": 15,
       "reason": null,
       "at": "2026-11-21T21:09:26+08:00",
       "highlight": false
@@ -2381,7 +2381,7 @@
       "new_price": 2.99,
       "old_score": null,
       "new_score": 82.0,
-      "rank": 15,
+      "rank": null,
       "reason": null,
       "at": "2026-11-21T21:09:26+08:00",
       "highlight": false
@@ -2771,10 +2771,10 @@
       "new_price": 4.89,
       "old_score": null,
       "new_score": 77.7,
-      "rank": null,
+      "rank": 4,
       "reason": null,
       "at": "2026-11-21T21:09:26+08:00",
-      "highlight": false
+      "highlight": true
     },
     {
       "sku": "357158800",
@@ -3109,7 +3109,7 @@
       "new_price": 5.29,
       "old_score": null,
       "new_score": 85.4,
-      "rank": 2,
+      "rank": 3,
       "reason": null,
       "at": "2026-11-21T21:09:26+08:00",
       "highlight": true
@@ -3499,7 +3499,7 @@
       "new_price": 4.19,
       "old_score": null,
       "new_score": 78.3,
-      "rank": null,
+      "rank": 21,
       "reason": null,
       "at": "2026-11-21T21:09:26+08:00",
       "highlight": false
@@ -3694,10 +3694,10 @@
       "new_price": 5.69,
       "old_score": null,
       "new_score": 84.0,
-      "rank": 6,
+      "rank": 16,
       "reason": null,
       "at": "2026-11-21T21:09:26+08:00",
-      "highlight": true
+      "highlight": false
     },
     {
       "sku": "357298018",
@@ -3824,7 +3824,7 @@
       "new_price": 5.49,
       "old_score": null,
       "new_score": 81.3,
-      "rank": 20,
+      "rank": 26,
       "reason": null,
       "at": "2026-11-21T21:09:26+08:00",
       "highlight": false
@@ -3876,7 +3876,7 @@
       "new_price": 4.49,
       "old_score": null,
       "new_score": 82.6,
-      "rank": 11,
+      "rank": 25,
       "reason": null,
       "at": "2026-11-21T21:09:26+08:00",
       "highlight": false
@@ -3954,7 +3954,7 @@
       "new_price": 4.18,
       "old_score": null,
       "new_score": 80.9,
-      "rank": 27,
+      "rank": null,
       "reason": null,
       "at": "2026-11-21T21:09:26+08:00",
       "highlight": false
@@ -4058,7 +4058,7 @@
       "new_price": 4.98,
       "old_score": null,
       "new_score": 84.9,
-      "rank": 4,
+      "rank": 5,
       "reason": null,
       "at": "2026-11-21T21:09:26+08:00",
       "highlight": true
@@ -4123,7 +4123,7 @@
       "new_price": 5.49,
       "old_score": null,
       "new_score": 80.9,
-      "rank": 28,
+      "rank": 23,
       "reason": null,
       "at": "2026-11-21T21:09:26+08:00",
       "highlight": false
@@ -4279,7 +4279,7 @@
       "new_price": 4.98,
       "old_score": null,
       "new_score": 77.7,
-      "rank": null,
+      "rank": 14,
       "reason": null,
       "at": "2026-11-21T21:09:26+08:00",
       "highlight": false
@@ -4292,7 +4292,7 @@
       "new_price": 5.49,
       "old_score": null,
       "new_score": 74.9,
-      "rank": null,
+      "rank": 20,
       "reason": null,
       "at": "2026-11-21T21:09:26+08:00",
       "highlight": false
@@ -4318,10 +4318,10 @@
       "new_price": 3.16,
       "old_score": null,
       "new_score": 83.0,
-      "rank": 9,
+      "rank": null,
       "reason": null,
       "at": "2026-11-21T21:09:26+08:00",
-      "highlight": true
+      "highlight": false
     },
     {
       "sku": "357513919",
@@ -4331,7 +4331,7 @@
       "new_price": 4.55,
       "old_score": null,
       "new_score": 78.2,
-      "rank": null,
+      "rank": 17,
       "reason": null,
       "at": "2026-11-21T21:09:26+08:00",
       "highlight": false
@@ -4409,10 +4409,10 @@
       "new_price": 4.88,
       "old_score": null,
       "new_score": 81.0,
-      "rank": 25,
+      "rank": 2,
       "reason": null,
       "at": "2026-11-21T21:09:26+08:00",
-      "highlight": false
+      "highlight": true
     },
     {
       "sku": "357354553",
@@ -4552,10 +4552,10 @@
       "new_price": 3.6,
       "old_score": null,
       "new_score": 85.1,
-      "rank": 3,
+      "rank": 13,
       "reason": null,
       "at": "2026-11-21T21:09:26+08:00",
-      "highlight": true
+      "highlight": false
     },
     {
       "sku": "357023406",
@@ -4656,7 +4656,7 @@
       "new_price": 5.38,
       "old_score": null,
       "new_score": 83.6,
-      "rank": 8,
+      "rank": 9,
       "reason": null,
       "at": "2026-11-21T21:09:26+08:00",
       "highlight": true
@@ -4747,10 +4747,10 @@
       "new_price": 3.69,
       "old_score": null,
       "new_score": 77.9,
-      "rank": null,
+      "rank": 6,
       "reason": null,
       "at": "2026-11-21T21:09:26+08:00",
-      "highlight": false
+      "highlight": true
     },
     {
       "sku": "357426661",
@@ -5046,7 +5046,7 @@
       "new_price": 5.39,
       "old_score": null,
       "new_score": 72.2,
-      "rank": null,
+      "rank": 19,
       "reason": null,
       "at": "2026-11-21T21:09:26+08:00",
       "highlight": false
@@ -5280,7 +5280,7 @@
       "new_price": 2.79,
       "old_score": null,
       "new_score": 82.3,
-      "rank": 12,
+      "rank": null,
       "reason": null,
       "at": "2026-11-21T21:09:26+08:00",
       "highlight": false
@@ -5735,7 +5735,7 @@
       "new_price": 4.68,
       "old_score": 79.0,
       "new_score": 79.0,
-      "rank": null,
+      "rank": 18,
       "reason": "outside_top100_display",
       "at": "2026-11-21T21:09:26+08:00",
       "highlight": false
@@ -5839,7 +5839,7 @@
       "new_price": 4.19,
       "old_score": 76.4,
       "new_score": 76.4,
-      "rank": null,
+      "rank": 22,
       "reason": "outside_top100_display",
       "at": "2026-11-21T21:09:26+08:00",
       "highlight": false

@@ -303,9 +303,23 @@ def extract_live_profile(spec_id: str | None) -> dict[str, Any] | None:
     nedc = _parse_float(_row(rows, "基本参数::NEDC综合油耗(L/100km)", "NEDC综合油耗(L/100km)"))
     official_fuel = wltc if wltc is not None else nedc
     official_std = "WLTC" if wltc is not None else ("NEDC" if nedc is not None else None)
+    low_soc_wltc = _parse_float(
+        _row(rows, "基本参数::最低荷电状态油耗(L/100km)WLTC", "最低荷电状态油耗(L/100km)WLTC")
+    )
+    low_soc_nedc = _parse_float(
+        _row(
+            rows,
+            "基本参数::最低荷电状态油耗(L/100km)",
+            "最低荷电状态油耗(L/100km)",
+            "基本参数::最低荷电状态油耗(L/100km)NEDC",
+            "最低荷电状态油耗(L/100km)NEDC",
+        )
+    )
+    low_soc_fuel = low_soc_wltc if low_soc_wltc is not None else low_soc_nedc
+    battery_type = _clean_mark(_row(rows, "电池/补能::电池类型", "电池/充电::电池类型", "电池类型"))
     ev_range = _parse_float(_row(rows, "基本参数::CLTC纯电续航里程(km)", "CLTC纯电续航里程(km)")) or _parse_float(
         _row(rows, "基本参数::NEDC纯电续航里程(km)", "NEDC纯电续航里程(km)")
-    )
+    ) or _parse_float(_row(rows, "基本参数::WLTC纯电续航里程(km)", "WLTC纯电续航里程(km)"))
 
     assist_img = _row(rows, "驾驶硬件::驾驶辅助影像", "驾驶辅助影像")
     cruise_raw = _row(rows, "驾驶功能::巡航系统", "巡航系统")
@@ -336,6 +350,8 @@ def extract_live_profile(spec_id: str | None) -> dict[str, Any] | None:
         "wheelbase_mm": wheelbase_mm,
         "official_fuel_l_100km": official_fuel,
         "official_standard": official_std,
+        "low_soc_fuel_l_100km": low_soc_fuel,
+        "battery_type": battery_type,
         "ev_range_km": ev_range,
         "knee_airbag": _has_mark(rows.get("被动安全::膝部气囊")),
         "has_reverse_camera": ("倒车影像" in assist_img and _has_mark(assist_img)),
@@ -350,17 +366,26 @@ def build_specs_from_live_profile(profile: dict[str, Any]) -> dict[str, Any]:
         powertrain = "bev"
     elif "插电" in en or "增程" in en:
         powertrain = "phev"
+    elif "油电混合" in en:
+        powertrain = "hev"
     else:
         powertrain = "ice"
     official_fuel = profile.get("official_fuel_l_100km")
     official_std = profile.get("official_standard")
+    low_soc_fuel = profile.get("low_soc_fuel_l_100km")
     ranking_energy: dict[str, Any] | None = None
-    if powertrain == "ice" and official_fuel is not None:
+    if powertrain in ("ice", "hev") and official_fuel is not None:
         ranking_energy = {
             "type": f"official_{(official_std or 'wltc').lower()}_with_uncertainty",
             "value": official_fuel,
             "unit": "L/100km",
             "fallback_multiplier_recommended": 1.15 if official_std == "WLTC" else 1.2,
+        }
+    elif powertrain == "phev" and low_soc_fuel is not None:
+        ranking_energy = {
+            "type": "low_soc_fuel",
+            "value": low_soc_fuel,
+            "unit": "L/100km",
         }
 
     spec_id = profile["spec_id"]
@@ -377,7 +402,8 @@ def build_specs_from_live_profile(profile: dict[str, Any]) -> dict[str, Any]:
         "fuel_grade": profile.get("fuel_grade") or "92",
         "official_fuel_l_100km": official_fuel,
         "official_standard": official_std,
-        "low_soc_fuel_l_100km": None,
+        "low_soc_fuel_l_100km": low_soc_fuel,
+        "battery_type": profile.get("battery_type"),
         "real_world_fuel_l_100km": None,
         "real_world_sample_n": None,
         "electric_kwh_100km": None,

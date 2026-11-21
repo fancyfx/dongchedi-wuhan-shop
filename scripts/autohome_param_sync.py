@@ -38,6 +38,12 @@ MIN_FEATURES = 18
 SERIES_ALIASES: dict[str, int] = {
     "秦plusdm": 5964,
     "秦plus": 5964,
+    "宋prodm": 5279,
+    "宋prodmi": 5279,
+    "宋pro新能源": 5279,
+    "海豹05dm": 7981,
+    "海豹05dmi": 7981,
+    "驱逐舰05": 6337,
     "唐dm": 3430,
     "唐": 3430,
     "领克03": 4916,
@@ -111,9 +117,16 @@ def norm_key(text: Any) -> str:
         ("尊贵型", "尊贵版"),
         ("豪华型", "豪华版"),
         ("精英型", "精英版"),
+        ("领先型", "领先版"),
+        ("领航型", "领航版"),
+        ("超越型", "超越版"),
+        ("卓越型", "卓越版"),
     ):
         s = s.replace(a, b)
-    return re.sub(r"[^0-9a-z\u4e00-\u9fff]+", "", s)
+    s = re.sub(r"[^0-9a-z\u4e00-\u9fff]+", "", s)
+    for edition in ("荣耀版", "智驾版", "冠军版"):
+        s = s.replace(f"{edition}dmi", f"dmi{edition}")
+    return s
 
 
 def year_of(text: Any) -> int | None:

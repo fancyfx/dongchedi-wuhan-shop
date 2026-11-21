@@ -154,20 +154,24 @@ def score_one(item: dict, reviews_by_series: dict | None = None) -> dict:
         "condition_gate": result["condition_gate"],
         "recommendation_gate": result["recommendation_gate"],
         "note": (
-            f"V3 holiday buyer score_version={SCORE_VERSION}; "
-            f"weights={WEIGHTS}; veto_4_iron_laws"
+            f"V3.2 SUV-first modern cabin buyer score_version={SCORE_VERSION}; "
+            f"weights={WEIGHTS}; tiered_dmi_admission"
         ),
     }
     return item
 
 
 def _veto_breakdown(items: list[dict]) -> dict[str, int]:
-    counts = {"ev_phev": 0, "three_cyl": 0, "dry_dct": 0}
+    counts = {"ev_phev": 0, "bev": 0, "risky_phev": 0, "three_cyl": 0, "dry_dct": 0}
     for x in items:
         if x.get("recommendation_gate") != "VETO":
             continue
         blob = " ".join(x.get("veto_reasons") or [])
-        if "纯电/插混" in blob:
+        if "纯电" in blob:
+            counts["bev"] += 1
+            counts["ev_phev"] += 1
+        elif "插混" in blob:
+            counts["risky_phev"] += 1
             counts["ev_phev"] += 1
         if "三缸" in blob:
             counts["three_cyl"] += 1
@@ -251,12 +255,12 @@ def main() -> None:
     filters.update({"price": "<=6万", "mileage": "<=10万公里", "vehicle_age": "<=10年", **FILTER_META})
     meta["filters"] = filters
     meta["score_version"] = SCORE_VERSION
-    meta["sort_preference"] = "v3_holiday_low_freq_buyer_top30"
-    meta["sort_method"] = "ranking_v3_powertrain_veto_and_reliability"
+    meta["sort_preference"] = "v3_2_suv_first_modern_cabin_with_dmi_top30"
+    meta["sort_method"] = "ranking_v3_2_suv_cabin_and_tiered_hybrid"
     meta["sort_weights"] = WEIGHTS
     meta["sort_formula"] = (
-        "四大铁律一票否决（纯电/插混、三缸机、干式双离合）+ 锁单隐藏；"
-        "total = 0.30*三大件可靠性 + 0.24*节假日配置 + 0.22*折旧性价比 + 0.18*里程车龄 + 0.06*空间"
+        "铁律否决（纯电BEV、老架构/高龄高里程/疑似营运插混、三缸机、干式双离合）+ 准新E-CVT电混放行 + 锁单隐藏；"
+        "total = 0.28*现代座舱配置 + 0.20*SUV立体空间(轿车降权备选) + 0.20*三大件可靠性 + 0.18*里程车龄 + 0.14*到汉价格值"
     )
     meta["energy_prices"] = {
         "gas_92_yuan_l": ENERGY["gas_92_yuan_l"],
