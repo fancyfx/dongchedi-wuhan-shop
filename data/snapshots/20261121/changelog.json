@@ -1,5 +1,17 @@
 [
   {
+    "sku": "357250766",
+    "title": "影豹 2023款 270T DCT J15版",
+    "change_type": "reserved_hidden",
+    "old_price": 4.99,
+    "new_price": 4.99,
+    "old_score": null,
+    "new_score": null,
+    "reason": "product_status_5_reserved",
+    "threshold": 76.4,
+    "at": "2026-11-21T09:43:30+08:00"
+  },
+  {
     "sku": "357261851",
     "title": "星愿 2026款 310km 梦想版",
     "change_type": "rejected_hard_filter",
@@ -9,7 +21,7 @@
     "new_score": null,
     "reason": "price_6.09_gt_6",
     "threshold": 76.4,
-    "at": "2026-11-21T00:54:44+08:00"
+    "at": "2026-11-21T09:43:30+08:00"
   },
   {
     "sku": "356834847",
@@ -21,7 +33,7 @@
     "new_score": null,
     "reason": "price_6.49_gt_6",
     "threshold": 76.4,
-    "at": "2026-11-21T00:54:44+08:00"
+    "at": "2026-11-21T09:43:30+08:00"
   },
   {
     "sku": "357467780",
@@ -33,31 +45,7 @@
     "new_score": null,
     "reason": "price_6.29_gt_6",
     "threshold": 76.4,
-    "at": "2026-11-21T00:54:44+08:00"
-  },
-  {
-    "sku": "357241529",
-    "title": "马自达3 昂克赛拉 2021款 2.0L 自动质雅版",
-    "change_type": "rejected_hard_filter",
-    "old_price": null,
-    "new_price": 6.29,
-    "old_score": null,
-    "new_score": null,
-    "reason": "price_6.29_gt_6",
-    "threshold": 76.4,
-    "at": "2026-11-21T00:54:44+08:00"
-  },
-  {
-    "sku": "357434754",
-    "title": "长安UNI-V 2022款 1.5T 尊贵型",
-    "change_type": "rejected_hard_filter",
-    "old_price": null,
-    "new_price": 6.18,
-    "old_score": null,
-    "new_score": null,
-    "reason": "price_6.18_gt_6",
-    "threshold": 76.4,
-    "at": "2026-11-21T00:54:44+08:00"
+    "at": "2026-11-21T09:43:30+08:00"
   },
   {
     "sku": "357402984",
@@ -69,7 +57,31 @@
     "new_score": null,
     "reason": "micro_city_bev_series_no_parsed_range",
     "threshold": 76.4,
-    "at": "2026-11-21T00:54:44+08:00"
+    "at": "2026-11-21T09:43:30+08:00"
+  },
+  {
+    "sku": "357241529",
+    "title": "马自达3 昂克赛拉 2021款 2.0L 自动质雅版",
+    "change_type": "rejected_hard_filter",
+    "old_price": null,
+    "new_price": 6.29,
+    "old_score": null,
+    "new_score": null,
+    "reason": "price_6.29_gt_6",
+    "threshold": 76.4,
+    "at": "2026-11-21T09:43:30+08:00"
+  },
+  {
+    "sku": "357434754",
+    "title": "长安UNI-V 2022款 1.5T 尊贵型",
+    "change_type": "rejected_hard_filter",
+    "old_price": null,
+    "new_price": 6.18,
+    "old_score": null,
+    "new_score": null,
+    "reason": "price_6.18_gt_6",
+    "threshold": 76.4,
+    "at": "2026-11-21T09:43:30+08:00"
   },
   {
     "sku": "357152462",
@@ -81,19 +93,7 @@
     "new_score": null,
     "reason": "pure_bev_range_210km_le_300",
     "threshold": 76.4,
-    "at": "2026-11-21T00:54:44+08:00"
-  },
-  {
-    "sku": "357601285",
-    "title": "长安Lumin 2025款 205km 香沁款",
-    "change_type": "rejected_hard_filter",
-    "old_price": null,
-    "new_price": 3.49,
-    "old_score": null,
-    "new_score": null,
-    "reason": "pure_bev_range_205km_le_300",
-    "threshold": 76.4,
-    "at": "2026-11-21T00:54:44+08:00"
+    "at": "2026-11-21T09:43:30+08:00"
   },
   {
     "sku": "357598537",
@@ -105,7 +105,19 @@
     "new_score": null,
     "reason": "pure_bev_range_201km_le_300",
     "threshold": 76.4,
-    "at": "2026-11-21T00:54:44+08:00"
+    "at": "2026-11-21T09:43:30+08:00"
+  },
+  {
+    "sku": "357601285",
+    "title": "长安Lumin 2025款 205km 香沁款",
+    "change_type": "rejected_hard_filter",
+    "old_price": null,
+    "new_price": 3.49,
+    "old_score": null,
+    "new_score": null,
+    "reason": "pure_bev_range_205km_le_300",
+    "threshold": 76.4,
+    "at": "2026-11-21T09:43:30+08:00"
   },
   {
     "sku": "357219214",
@@ -117,7 +129,7 @@
     "new_score": null,
     "reason": "micro_city_bev_series_no_parsed_range",
     "threshold": 76.4,
-    "at": "2026-11-21T00:54:44+08:00"
+    "at": "2026-11-21T09:43:30+08:00"
   },
   {
     "sku": "357527876",
@@ -129,6 +141,18 @@
     "new_score": null,
     "reason": "micro_city_bev_series_no_parsed_range",
     "threshold": 76.4,
-    "at": "2026-11-21T00:54:44+08:00"
+    "at": "2026-11-21T09:43:30+08:00"
+  },
+  {
+    "sku": "357597644",
+    "title": "五菱宏光MINIEV 2024款 215km青春版 磷酸铁锂",
+    "change_type": "rejected_hard_filter",
+    "old_price": null,
+    "new_price": 2.89,
+    "old_score": null,
+    "new_score": null,
+    "reason": "pure_bev_range_215km_le_300",
+    "threshold": 76.4,
+    "at": "2026-11-21T09:43:30+08:00"
   }
 ]

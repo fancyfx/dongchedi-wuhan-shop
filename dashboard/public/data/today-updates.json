@@ -1,7 +1,7 @@
 {
   "schema": "today-updates/v1",
   "date": "20261121",
-  "generated_at": "2026-11-21T00:57:50+08:00",
+  "generated_at": "2026-11-21T09:53:59+08:00",
   "source": "snapshot",
   "has_snapshot": true,
   "changelog_empty": false,
@@ -16,7 +16,7 @@
     ]
   },
   "summary": {
-    "started_at": "2026-11-21T00:54:44+08:00",
+    "started_at": "2026-11-21T09:43:30+08:00",
     "dry_run": false,
     "threshold": 76.4,
     "display_count": 30,
@@ -25,7 +25,8 @@
     "inventory_count": 173,
     "catalog_written": true,
     "changelog_counts": {
-      "rejected_hard_filter": 11
+      "reserved_hidden": 1,
+      "rejected_hard_filter": 12
     }
   },
   "counts": {
@@ -35,16 +36,16 @@
     "info_updated": 0,
     "highlights": 0,
     "display_dropped": 0,
-    "rejected_hard_filter": 11,
+    "rejected_hard_filter": 12,
     "rejected_below_top100": 0,
     "removed_hard_filter": 0,
     "removed_sold": 0,
-    "reserved_hidden": 0,
+    "reserved_hidden": 1,
     "restored_on_sale": 0,
     "detail_failed": 0,
-    "not_admitted": 11,
+    "not_admitted": 12,
     "other": 0,
-    "total": 11
+    "total": 13
   },
   "source_files": {
     "changelog": "data/snapshots/20261121/changelog.json",
@@ -53,6 +54,19 @@
   },
   "highlights": [],
   "items": [
+    {
+      "sku": "357250766",
+      "title": "影豹 2023款 270T DCT J15版",
+      "change_type": "reserved_hidden",
+      "old_price": 4.99,
+      "new_price": 4.99,
+      "old_score": null,
+      "new_score": null,
+      "rank": null,
+      "reason": "product_status_5_reserved",
+      "at": "2026-11-21T09:43:30+08:00",
+      "highlight": false
+    },
     {
       "sku": "357261851",
       "title": "星愿 2026款 310km 梦想版",
@@ -63,7 +77,7 @@
       "new_score": null,
       "rank": null,
       "reason": "price_6.09_gt_6",
-      "at": "2026-11-21T00:54:44+08:00",
+      "at": "2026-11-21T09:43:30+08:00",
       "highlight": false
     },
     {
@@ -76,7 +90,7 @@
       "new_score": null,
       "rank": null,
       "reason": "price_6.49_gt_6",
-      "at": "2026-11-21T00:54:44+08:00",
+      "at": "2026-11-21T09:43:30+08:00",
       "highlight": false
     },
     {
@@ -89,33 +103,7 @@
       "new_score": null,
       "rank": null,
       "reason": "price_6.29_gt_6",
-      "at": "2026-11-21T00:54:44+08:00",
-      "highlight": false
-    },
-    {
-      "sku": "357241529",
-      "title": "马自达3 昂克赛拉 2021款 2.0L 自动质雅版",
-      "change_type": "rejected_hard_filter",
-      "old_price": null,
-      "new_price": 6.29,
-      "old_score": null,
-      "new_score": null,
-      "rank": null,
-      "reason": "price_6.29_gt_6",
-      "at": "2026-11-21T00:54:44+08:00",
-      "highlight": false
-    },
-    {
-      "sku": "357434754",
-      "title": "长安UNI-V 2022款 1.5T 尊贵型",
-      "change_type": "rejected_hard_filter",
-      "old_price": null,
-      "new_price": 6.18,
-      "old_score": null,
-      "new_score": null,
-      "rank": null,
-      "reason": "price_6.18_gt_6",
-      "at": "2026-11-21T00:54:44+08:00",
+      "at": "2026-11-21T09:43:30+08:00",
       "highlight": false
     },
     {
@@ -128,7 +116,33 @@
       "new_score": null,
       "rank": null,
       "reason": "micro_city_bev_series_no_parsed_range",
-      "at": "2026-11-21T00:54:44+08:00",
+      "at": "2026-11-21T09:43:30+08:00",
+      "highlight": false
+    },
+    {
+      "sku": "357241529",
+      "title": "马自达3 昂克赛拉 2021款 2.0L 自动质雅版",
+      "change_type": "rejected_hard_filter",
+      "old_price": null,
+      "new_price": 6.29,
+      "old_score": null,
+      "new_score": null,
+      "rank": null,
+      "reason": "price_6.29_gt_6",
+      "at": "2026-11-21T09:43:30+08:00",
+      "highlight": false
+    },
+    {
+      "sku": "357434754",
+      "title": "长安UNI-V 2022款 1.5T 尊贵型",
+      "change_type": "rejected_hard_filter",
+      "old_price": null,
+      "new_price": 6.18,
+      "old_score": null,
+      "new_score": null,
+      "rank": null,
+      "reason": "price_6.18_gt_6",
+      "at": "2026-11-21T09:43:30+08:00",
       "highlight": false
     },
     {
@@ -141,20 +155,7 @@
       "new_score": null,
       "rank": null,
       "reason": "pure_bev_range_210km_le_300",
-      "at": "2026-11-21T00:54:44+08:00",
-      "highlight": false
-    },
-    {
-      "sku": "357601285",
-      "title": "长安Lumin 2025款 205km 香沁款",
-      "change_type": "rejected_hard_filter",
-      "old_price": null,
-      "new_price": 3.49,
-      "old_score": null,
-      "new_score": null,
-      "rank": null,
-      "reason": "pure_bev_range_205km_le_300",
-      "at": "2026-11-21T00:54:44+08:00",
+      "at": "2026-11-21T09:43:30+08:00",
       "highlight": false
     },
     {
@@ -167,7 +168,20 @@
       "new_score": null,
       "rank": null,
       "reason": "pure_bev_range_201km_le_300",
-      "at": "2026-11-21T00:54:44+08:00",
+      "at": "2026-11-21T09:43:30+08:00",
+      "highlight": false
+    },
+    {
+      "sku": "357601285",
+      "title": "长安Lumin 2025款 205km 香沁款",
+      "change_type": "rejected_hard_filter",
+      "old_price": null,
+      "new_price": 3.49,
+      "old_score": null,
+      "new_score": null,
+      "rank": null,
+      "reason": "pure_bev_range_205km_le_300",
+      "at": "2026-11-21T09:43:30+08:00",
       "highlight": false
     },
     {
@@ -180,7 +194,7 @@
       "new_score": null,
       "rank": null,
       "reason": "micro_city_bev_series_no_parsed_range",
-      "at": "2026-11-21T00:54:44+08:00",
+      "at": "2026-11-21T09:43:30+08:00",
       "highlight": false
     },
     {
@@ -193,7 +207,20 @@
       "new_score": null,
       "rank": null,
       "reason": "micro_city_bev_series_no_parsed_range",
-      "at": "2026-11-21T00:54:44+08:00",
+      "at": "2026-11-21T09:43:30+08:00",
+      "highlight": false
+    },
+    {
+      "sku": "357597644",
+      "title": "五菱宏光MINIEV 2024款 215km青春版 磷酸铁锂",
+      "change_type": "rejected_hard_filter",
+      "old_price": null,
+      "new_price": 2.89,
+      "old_score": null,
+      "new_score": null,
+      "rank": null,
+      "reason": "pure_bev_range_215km_le_300",
+      "at": "2026-11-21T09:43:30+08:00",
       "highlight": false
     }
   ]

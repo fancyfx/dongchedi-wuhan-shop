@@ -19390,449 +19390,6 @@
     }
   },
   {
-    "sku": "357250766",
-    "title": "影豹 2023款 270T DCT J15版",
-    "price": 4.99,
-    "price_type": "标价",
-    "prefix": "分期价",
-    "extra": "领券优惠价",
-    "extras": [
-      "领券优惠价",
-      "分期直减2000元"
-    ],
-    "year": "2023年 / 7.50万公里 / 武汉",
-    "plate_year": 2023,
-    "model_year": 2023,
-    "mileage_wan": 7.5,
-    "city": "武汉",
-    "tags": [
-      "性价比极佳",
-      "放心检7.4分",
-      "咨询飙升"
-    ],
-    "badges": [
-      "官方保",
-      "直营"
-    ],
-    "cover": "https://p9-dcd-sign.byteimg.com/tos-cn-i-f042mdwyw7/9aa6ba4bb9d14b3e9262c10928058e6e~tplv-resize:800:0.image?lk3s=416a877a&x-expires=1796200574&x-signature=PAGKgf%2F3bgxbeXkk9x40HJRPNR0%3D&psm=motor.sophon.product",
-    "detail_url": "https://m.dcdapp.com/motor/feoffline/usedcar_detail/detail.html?sku_id=357250766&shop_id=118608",
-    "shop_id": "118608",
-    "image_file": "/workspace/dongchedi-wuhan-shop/images/357250766.jpg",
-    "banner": "分期直减2000元",
-    "sort_scores": {
-      "score_version": "v3.0.0",
-      "total_score": 73.6,
-      "config_score": 89.47,
-      "config_norm": 89.47,
-      "config_proxy": 89.47,
-      "is_suv": false,
-      "price": 4.99,
-      "effective_price_wan": 4.99,
-      "condition_gate": "PASS",
-      "note": "V3 holiday buyer score_version=v3.0.0; weights={'powertrain': 0.3, 'config': 0.24, 'value_price': 0.22, 'condition': 0.18, 'space': 0.06}; veto_4_iron_laws",
-      "price_score": 67.8,
-      "operating_cost_score": 48.54,
-      "space_score": 86.32,
-      "age_score": 90.83,
-      "mileage_score": 42.67,
-      "body_preference_score": 50.0,
-      "data_quality_score": 95.0,
-      "space_norm": 86.32,
-      "fuel_norm": 48.54,
-      "suv_score": 50.0,
-      "space_proxy": 86.32,
-      "fuel_proxy": 48.54,
-      "weights": {
-        "powertrain": 0.3,
-        "config": 0.24,
-        "value_price": 0.22,
-        "condition": 0.18,
-        "space": 0.06
-      },
-      "energy": {
-        "cost_yuan_100km": 54.83,
-        "type": "official_wltc_with_uncertainty",
-        "value": 6.853999999999999,
-        "unit": "L/100km",
-        "fuel_grade": "92",
-        "scenario": "no_home_charging"
-      },
-      "confidence": {
-        "price": 0.9,
-        "config": 0.837,
-        "energy": 0.65,
-        "core_specs": 0.99,
-        "age": 0.7,
-        "space": 0.825
-      },
-      "reasons": [
-        "现金价 4.99 万（指导价 11.80 万，4.2 折）",
-        "三大件：1.5T 177马力 L4 · 7挡湿式双离合 · 独立后悬 · 两驱 · 92#",
-        "核心配置：6气囊 / L2辅助驾驶 / 倒车影像 / 座椅加热 / CarPlay"
-      ],
-      "warnings": [],
-      "powertrain_score": 73.0,
-      "value_price_score": 67.8,
-      "condition_score": 56.05,
-      "msrp_wan": 11.8,
-      "discount_fold": 4.2,
-      "recommendation_gate": "PASS"
-    },
-    "brand": "传祺",
-    "manufacturer": "广汽传祺",
-    "manufacturer_inferred": false,
-    "total_score": 73.6,
-    "evaluation": "4.2折捡漏（原指导价11.80万），7挡湿式双离合+涡轮增压，独立后悬，配齐L2辅助驾驶。",
-    "series": "影豹",
-    "owner_reviews": {
-      "summary": "运动造型与动力是吸睛点，年轻向口碑不错。槽点：后排一般、双离合顿挫、胎噪；新车系长期可靠性口碑仍在积累。",
-      "pros": [
-        "外观运动",
-        "动力有趣",
-        "年轻向配置"
-      ],
-      "cons": [
-        "后排一般",
-        "双离合顿挫",
-        "胎噪",
-        "长期口碑仍在积累"
-      ],
-      "drawbacks": [
-        "后排一般",
-        "双离合顿挫",
-        "胎噪",
-        "长期口碑仍在积累"
-      ],
-      "sources": [
-        {
-          "title": "影豹汽车之家口碑检索",
-          "url": "https://sou.autohome.com.cn/zonghe?q=%E5%BD%B1%E8%B1%B9+%E5%8F%A3%E7%A2%91"
-        },
-        {
-          "title": "影豹紧凑型车口碑榜（汽车之家）",
-          "url": "https://k.autohome.com.cn/a1/"
-        }
-      ],
-      "found": true,
-      "cons_note": null
-    },
-    "rank": null,
-    "specs": {
-      "length_mm": 4700,
-      "width_mm": 1850,
-      "height_mm": 1432,
-      "wheelbase_mm": 2736,
-      "seats": 5,
-      "body_type": "紧凑型车",
-      "engine": "1.5T 177马力 L4",
-      "transmission": "湿式双离合变速箱(DCT)",
-      "fuel_grade": "92",
-      "official_fuel_l_100km": 5.96,
-      "official_standard": "WLTC",
-      "low_soc_fuel_l_100km": null,
-      "real_world_fuel_l_100km": null,
-      "real_world_sample_n": null,
-      "electric_kwh_100km": null,
-      "ev_range_km": null,
-      "ev_range_standard": null,
-      "ranking_energy": {
-        "type": "official_wltc_with_uncertainty",
-        "value": 5.96,
-        "unit": "L/100km",
-        "fallback_multiplier_recommended": 1.15
-      },
-      "powertrain": "ice",
-      "powertrain_type": "ice",
-      "features": {
-        "airbags": 6,
-        "esp": true,
-        "aeb": true,
-        "fcw": true,
-        "ldw": true,
-        "lka": true,
-        "lane_centering": true,
-        "bsd": false,
-        "dow": false,
-        "acc": true,
-        "cruise": "全速自适应巡航",
-        "camera_360": null,
-        "transparent_chassis": null,
-        "front_radar": true,
-        "rear_radar": true,
-        "auto_park": false,
-        "remote_park": null,
-        "power_driver_seat": true,
-        "power_passenger_seat": true,
-        "seat_heating": true,
-        "seat_ventilation": null,
-        "panoramic_sunroof": true,
-        "power_tailgate": false,
-        "keyless_entry": false,
-        "remote_start": false,
-        "rear_ac_vents": true,
-        "dual_zone_climate": true,
-        "leather_seats": false,
-        "full_lcd_cluster": false,
-        "screen_inch": 10.25,
-        "carplay": true,
-        "carlife": true,
-        "phone_link": true,
-        "wireless_charge": false,
-        "voice_control": false,
-        "ota": false,
-        "hud": null,
-        "chip_8155": null
-      },
-      "airbags": 6,
-      "screen_inch": 10.25,
-      "msrp_wan": 11.8,
-      "match_level": "exact_trim",
-      "trim_id": "trim_ah_e248f9088ada",
-      "canonical_title": "影豹 2023款 270T DCT J15版",
-      "specs_found": true,
-      "specs_approx": false,
-      "verified": true,
-      "verification_schema": "3.0-exact-trim-detailed",
-      "configuration_source": "exact_trim_v3",
-      "core_confidence": 0.99,
-      "feature_confidence": 0.95,
-      "verification_issues": [],
-      "verification_sources": [
-        {
-          "url": "https://car.autohome.com.cn/config/spec/62090.html",
-          "source_type": "autohome_live_config",
-          "authority_tier": 1,
-          "series_id": 5944,
-          "spec_id": 62090,
-          "parameter_source": "live_page"
-        },
-        {
-          "url": "https://github.com/swoiow/autohome",
-          "source_type": "autohome_parameter_dataset",
-          "authority_tier": 3,
-          "snapshot": "identity_match_only",
-          "source_path": "live:config/spec/62090.html",
-          "note": "vault/main used for exact-trim identity; parameters from live page"
-        }
-      ],
-      "engine_model": "4A15J2",
-      "cylinders": 4,
-      "intake": "涡轮增压",
-      "fuel_injection": "直喷",
-      "horsepower_ps": 177,
-      "torque_nm": 270,
-      "transmission_type": "湿式双离合变速箱(DCT)",
-      "transmission_short": "7挡湿式双离合",
-      "rear_suspension": "多连杆式独立悬架",
-      "drive_type": "前置前驱",
-      "energy_type": "汽油",
-      "knee_airbag": false,
-      "has_reverse_camera": true,
-      "has_fixed_cruise": false,
-      "live_spec_id": 62090
-    },
-    "detailed_config": {
-      "length_mm": 4700,
-      "width_mm": 1850,
-      "height_mm": 1432,
-      "wheelbase_mm": 2736,
-      "seats": 5,
-      "body_type": "紧凑型车",
-      "engine": "1.5T 177马力 L4",
-      "transmission": "湿式双离合变速箱(DCT)",
-      "fuel_grade": "92",
-      "official_fuel_l_100km": 5.96,
-      "official_standard": "WLTC",
-      "low_soc_fuel_l_100km": null,
-      "real_world_fuel_l_100km": null,
-      "real_world_sample_n": null,
-      "electric_kwh_100km": null,
-      "ev_range_km": null,
-      "ev_range_standard": null,
-      "ranking_energy": {
-        "type": "official_wltc_with_uncertainty",
-        "value": 5.96,
-        "unit": "L/100km",
-        "fallback_multiplier_recommended": 1.15
-      },
-      "powertrain": "ice",
-      "powertrain_type": "ice",
-      "features": {
-        "airbags": 6,
-        "esp": true,
-        "aeb": true,
-        "fcw": true,
-        "ldw": true,
-        "lka": true,
-        "lane_centering": true,
-        "bsd": false,
-        "dow": false,
-        "acc": true,
-        "cruise": "全速自适应巡航",
-        "camera_360": null,
-        "transparent_chassis": null,
-        "front_radar": true,
-        "rear_radar": true,
-        "auto_park": false,
-        "remote_park": null,
-        "power_driver_seat": true,
-        "power_passenger_seat": true,
-        "seat_heating": true,
-        "seat_ventilation": null,
-        "panoramic_sunroof": true,
-        "power_tailgate": false,
-        "keyless_entry": false,
-        "remote_start": false,
-        "rear_ac_vents": true,
-        "dual_zone_climate": true,
-        "leather_seats": false,
-        "full_lcd_cluster": false,
-        "screen_inch": 10.25,
-        "carplay": true,
-        "carlife": true,
-        "phone_link": true,
-        "wireless_charge": false,
-        "voice_control": false,
-        "ota": false,
-        "hud": null,
-        "chip_8155": null
-      },
-      "airbags": 6,
-      "screen_inch": 10.25,
-      "msrp_wan": 11.8,
-      "match_level": "exact_trim",
-      "trim_id": "trim_ah_e248f9088ada",
-      "canonical_title": "影豹 2023款 270T DCT J15版",
-      "specs_found": true,
-      "specs_approx": false,
-      "verified": true,
-      "verification_schema": "3.0-exact-trim-detailed",
-      "configuration_source": "exact_trim_v3",
-      "core_confidence": 0.99,
-      "feature_confidence": 0.95,
-      "verification_issues": [],
-      "verification_sources": [
-        {
-          "url": "https://car.autohome.com.cn/config/spec/62090.html",
-          "source_type": "autohome_live_config",
-          "authority_tier": 1,
-          "series_id": 5944,
-          "spec_id": 62090,
-          "parameter_source": "live_page"
-        },
-        {
-          "url": "https://github.com/swoiow/autohome",
-          "source_type": "autohome_parameter_dataset",
-          "authority_tier": 3,
-          "snapshot": "identity_match_only",
-          "source_path": "live:config/spec/62090.html",
-          "note": "vault/main used for exact-trim identity; parameters from live page"
-        }
-      ],
-      "engine_model": "4A15J2",
-      "cylinders": 4,
-      "intake": "涡轮增压",
-      "fuel_injection": "直喷",
-      "horsepower_ps": 177,
-      "torque_nm": 270,
-      "transmission_type": "湿式双离合变速箱(DCT)",
-      "transmission_short": "7挡湿式双离合",
-      "rear_suspension": "多连杆式独立悬架",
-      "drive_type": "前置前驱",
-      "energy_type": "汽油",
-      "knee_airbag": false,
-      "has_reverse_camera": true,
-      "has_fixed_cruise": false,
-      "live_spec_id": 62090
-    },
-    "display_price_wan": 4.99,
-    "effective_price_wan": 4.99,
-    "price_confidence": 0.9,
-    "needs_cash_quote": false,
-    "price_basis": "display",
-    "finance_reserve_wan": 0.5,
-    "_age_years": 3.3333333333333335,
-    "score_version": "v3.0.0",
-    "score_v1": 73.6,
-    "condition_gate": "PASS",
-    "score_reasons": [
-      "现金价 4.99 万（指导价 11.80 万，4.2 折）",
-      "三大件：1.5T 177马力 L4 · 7挡湿式双离合 · 独立后悬 · 两驱 · 92#",
-      "核心配置：6气囊 / L2辅助驾驶 / 倒车影像 / 座椅加热 / CarPlay"
-    ],
-    "score_warnings": [],
-    "confidence": {
-      "price": 0.9,
-      "config": 0.837,
-      "energy": 0.65,
-      "core_specs": 0.99,
-      "age": 0.7,
-      "space": 0.825
-    },
-    "price_refresh": {
-      "fetched_at": "2026-11-02T20:20+08:00",
-      "source": "card/detail.sku_price",
-      "cash_price_wan": 4.99,
-      "finance_discount_price_wan": 4.69,
-      "previous_price_wan": 4.79,
-      "previous_price_type": "分期",
-      "tags": [
-        "问题车终身回购",
-        "7天无忧购",
-        "60天整车质保",
-        "1年/3万公里延保",
-        "分期券后价",
-        "领券优惠价",
-        "分期直减券3000元",
-        "送1940元深度整备保养",
-        "送359元全车深度质检",
-        "送1年3万公里核心零部件延保"
-      ]
-    },
-    "score_eligible": true,
-    "data_issues": [],
-    "config_coverage": 0.8365,
-    "energy_confidence": 0.65,
-    "library_rank": 46,
-    "display": false,
-    "sale_status": "on_sale",
-    "recommendation_gate": "PASS",
-    "veto_reasons": [],
-    "v3_profile": {
-      "archetype_badge": "满配性价比",
-      "msrp_wan": 11.8,
-      "discount_fold": 4.2,
-      "saved_wan": 6.81,
-      "powertrain_summary": "1.5T 177马力 L4 · 7挡湿式双离合 · 独立后悬 · 两驱 · 92#",
-      "gearbox_tier": "WET_DCT",
-      "gearbox_label": "7挡湿式双离合",
-      "engine_summary": "1.5T 177马力 L4",
-      "intake": "涡轮增压",
-      "fuel_injection": "直喷",
-      "rear_suspension": "多连杆式独立悬架",
-      "rear_suspension_short": "独立后悬",
-      "drive_type": "前置前驱",
-      "drive_short": "两驱",
-      "fuel_grade": "92#",
-      "feature_highlights": [
-        "6气囊",
-        "L2辅助驾驶",
-        "倒车影像",
-        "座椅加热",
-        "CarPlay",
-        "双电动座椅"
-      ],
-      "recommend_reason": "4.2折捡漏（原指导价11.80万），7挡湿式双离合+涡轮增压，独立后悬，配齐L2辅助驾驶。",
-      "inspection_checklist": [
-        "低速1-2挡跟车测试换挡平顺度，举升看变速箱油底壳及阀体插头有无油迹",
-        "泼水测试全景天窗排水孔，确认遮阳帘开合无异响",
-        "节假日低频停放必查：现场测12V电瓶健康度SOH（低于60%要求更换），排查有无私接常电记录仪"
-      ],
-      "maintenance_estimate": "约 400-550 元/年",
-      "reliability_notes": []
-    }
-  },
-  {
     "sku": "357564637",
     "title": "蒙迪欧 2017款 EcoBoost 180 时尚型",
     "shop_id": "118608",
@@ -20187,7 +19744,7 @@
       "recommendation_gate": "PASS"
     },
     "ingest_status": "added",
-    "library_rank": 47,
+    "library_rank": 46,
     "display": false,
     "rank": null,
     "sale_status": "on_sale",
@@ -20609,7 +20166,7 @@
       "recommendation_gate": "PASS"
     },
     "ingest_status": "added",
-    "library_rank": 48,
+    "library_rank": 47,
     "display": false,
     "rank": null,
     "sale_status": "on_sale",
@@ -21054,7 +20611,7 @@
       "age": 0.7,
       "space": 0.825
     },
-    "library_rank": 49
+    "library_rank": 48
   },
   {
     "sku": "357149717",
@@ -21457,7 +21014,7 @@
     "data_issues": [],
     "config_coverage": 0.8173,
     "energy_confidence": 0.55,
-    "library_rank": 50,
+    "library_rank": 49,
     "display": false,
     "cash_price_wan": 2.99,
     "cash_price_fen": 2990000,
@@ -21914,7 +21471,7 @@
       "age": 0.7,
       "space": 0.825
     },
-    "library_rank": 51
+    "library_rank": 50
   },
   {
     "sku": "357420143",
@@ -22300,7 +21857,7 @@
       "recommendation_gate": "PASS"
     },
     "ingest_status": "added",
-    "library_rank": 52,
+    "library_rank": 51,
     "display": false,
     "rank": null,
     "sale_status": "on_sale",
@@ -22750,7 +22307,7 @@
     "data_issues": [],
     "config_coverage": 0.9038,
     "energy_confidence": 0.55,
-    "library_rank": 53,
+    "library_rank": 52,
     "display": false,
     "sale_status": "on_sale",
     "recommendation_gate": "PASS",
@@ -23193,7 +22750,7 @@
       "age": 0.7,
       "space": 0.825
     },
-    "library_rank": 54
+    "library_rank": 53
   },
   {
     "sku": "357204629",
@@ -23605,7 +23162,7 @@
     "data_issues": [],
     "config_coverage": 0.875,
     "energy_confidence": 0.65,
-    "library_rank": 55,
+    "library_rank": 54,
     "display": false,
     "sale_status": "on_sale",
     "cash_price_wan": 4.23,
@@ -24035,7 +23592,7 @@
       "age": 0.7,
       "space": 0.825
     },
-    "library_rank": 56
+    "library_rank": 55
   },
   {
     "sku": "357410302",
@@ -24392,7 +23949,7 @@
       "recommendation_gate": "PASS"
     },
     "ingest_status": "added",
-    "library_rank": 57,
+    "library_rank": 56,
     "display": false,
     "rank": null,
     "sale_status": "on_sale",
@@ -24827,7 +24384,7 @@
     "data_issues": [],
     "config_coverage": 0.8173,
     "energy_confidence": 0.55,
-    "library_rank": 58,
+    "library_rank": 57,
     "display": false,
     "cash_price_wan": 4.21,
     "cash_price_fen": 4210000,
@@ -25280,7 +24837,7 @@
     "data_issues": [],
     "config_coverage": 0.8654,
     "energy_confidence": 0.55,
-    "library_rank": 59,
+    "library_rank": 58,
     "display": false,
     "sale_status": "on_sale",
     "recommendation_gate": "PASS",
@@ -25716,7 +25273,7 @@
       "age": 0.7,
       "space": 0.825
     },
-    "library_rank": 60
+    "library_rank": 59
   },
   {
     "sku": "357018303",
@@ -26118,7 +25675,7 @@
     "data_issues": [],
     "config_coverage": 0.7885,
     "energy_confidence": 0.55,
-    "library_rank": 61,
+    "library_rank": 60,
     "display": false,
     "cash_price_wan": 3.19,
     "cash_price_fen": 3190000,
@@ -26561,7 +26118,7 @@
     "data_issues": [],
     "config_coverage": 0.7212,
     "energy_confidence": 0.55,
-    "library_rank": 62,
+    "library_rank": 61,
     "display": false,
     "cash_price_wan": 4.19,
     "cash_price_fen": 4190000,
@@ -27011,7 +26568,7 @@
     "data_issues": [],
     "config_coverage": 0.8173,
     "energy_confidence": 0.55,
-    "library_rank": 63,
+    "library_rank": 62,
     "display": false,
     "sale_status": "on_sale",
     "recommendation_gate": "PASS",
@@ -27410,7 +26967,7 @@
       "recommendation_gate": "PASS"
     },
     "ingest_status": "updated_price",
-    "library_rank": 64,
+    "library_rank": 63,
     "display": false,
     "rank": null,
     "sale_status": "on_sale",
@@ -27844,7 +27401,7 @@
       "age": 0.7,
       "space": 0.825
     },
-    "library_rank": 65
+    "library_rank": 64
   },
   {
     "sku": "357334203",
@@ -28250,7 +27807,7 @@
     "data_issues": [],
     "config_coverage": 0.6731,
     "energy_confidence": 0.55,
-    "library_rank": 66,
+    "library_rank": 65,
     "display": false,
     "sale_status": "on_sale",
     "recommendation_gate": "PASS",
@@ -28698,7 +28255,7 @@
     "data_issues": [],
     "config_coverage": 0.7404,
     "energy_confidence": 0.65,
-    "library_rank": 67,
+    "library_rank": 66,
     "display": false,
     "sale_status": "on_sale",
     "recommendation_gate": "PASS",
@@ -29090,7 +28647,7 @@
       "recommendation_gate": "PASS"
     },
     "ingest_status": "added",
-    "library_rank": 68,
+    "library_rank": 67,
     "display": false,
     "rank": null,
     "sale_status": "on_sale",
@@ -29527,7 +29084,7 @@
       "age": 0.7,
       "space": 0.825
     },
-    "library_rank": 69
+    "library_rank": 68
   },
   {
     "sku": "356939164",
@@ -29931,7 +29488,7 @@
     "data_issues": [],
     "config_coverage": 0.7019,
     "energy_confidence": 0.55,
-    "library_rank": 70,
+    "library_rank": 69,
     "display": false,
     "cash_price_wan": 4.39,
     "cash_price_fen": 4390000,
@@ -30385,7 +29942,7 @@
       "age": 0.7,
       "space": 0.825
     },
-    "library_rank": 71
+    "library_rank": 70
   },
   {
     "sku": "356899762",
@@ -30747,7 +30304,7 @@
       "recommendation_gate": "PASS"
     },
     "ingest_status": "added",
-    "library_rank": 72,
+    "library_rank": 71,
     "display": false,
     "rank": null,
     "sale_status": "on_sale",
@@ -31147,7 +30704,7 @@
       "recommendation_gate": "PASS"
     },
     "ingest_status": "added",
-    "library_rank": 73,
+    "library_rank": 72,
     "display": false,
     "rank": null,
     "sale_status": "on_sale",
@@ -31544,7 +31101,7 @@
       "recommendation_gate": "PASS"
     },
     "ingest_status": "updated_price",
-    "library_rank": 74,
+    "library_rank": 73,
     "display": false,
     "rank": null,
     "sale_status": "on_sale",
@@ -31979,7 +31536,7 @@
     "data_issues": [],
     "config_coverage": 0.7308,
     "energy_confidence": 0.55,
-    "library_rank": 75,
+    "library_rank": 74,
     "display": false,
     "cash_price_wan": 3.53,
     "cash_price_fen": 3530000,
@@ -32413,7 +31970,7 @@
       "recommendation_gate": "PASS"
     },
     "ingest_status": "added",
-    "library_rank": 76,
+    "library_rank": 75,
     "display": false,
     "rank": null,
     "sale_status": "on_sale",
@@ -32856,7 +32413,7 @@
     "data_issues": [],
     "config_coverage": 0.7692,
     "energy_confidence": 0.55,
-    "library_rank": 77,
+    "library_rank": 76,
     "display": false,
     "cash_price_wan": 4.43,
     "cash_price_fen": 4430000,
@@ -33273,7 +32830,7 @@
       "age": 0.7,
       "space": 0.825
     },
-    "library_rank": 78
+    "library_rank": 77
   },
   {
     "sku": "357458430",
@@ -33634,7 +33191,7 @@
       "recommendation_gate": "PASS"
     },
     "ingest_status": "added",
-    "library_rank": 79,
+    "library_rank": 78,
     "display": false,
     "rank": null,
     "sale_status": "on_sale",
@@ -34069,7 +33626,7 @@
     "data_issues": [],
     "config_coverage": 0.7596,
     "energy_confidence": 0.65,
-    "library_rank": 80,
+    "library_rank": 79,
     "display": false,
     "cash_price_wan": 3.99,
     "cash_price_fen": 3990000,
@@ -34521,7 +34078,7 @@
     "data_issues": [],
     "config_coverage": 0.8269,
     "energy_confidence": 0.65,
-    "library_rank": 81,
+    "library_rank": 80,
     "display": false,
     "cash_price_wan": 4.49,
     "cash_price_fen": 4490000,
@@ -34924,7 +34481,7 @@
       "recommendation_gate": "PASS"
     },
     "ingest_status": "added",
-    "library_rank": 82,
+    "library_rank": 81,
     "display": false,
     "rank": null,
     "sale_status": "on_sale",
@@ -35363,7 +34920,7 @@
       "age": 0.7,
       "space": 0.825
     },
-    "library_rank": 83
+    "library_rank": 82
   },
   {
     "sku": "357142040",
@@ -35769,7 +35326,7 @@
     "data_issues": [],
     "config_coverage": 0.7404,
     "energy_confidence": 0.55,
-    "library_rank": 84,
+    "library_rank": 83,
     "display": false,
     "cash_price_wan": 3.89,
     "cash_price_fen": 3890000,
@@ -36174,7 +35731,7 @@
       "recommendation_gate": "PASS"
     },
     "ingest_status": "added",
-    "library_rank": 85,
+    "library_rank": 84,
     "display": false,
     "rank": null,
     "sale_status": "on_sale",
@@ -36607,7 +36164,7 @@
     "data_issues": [],
     "config_coverage": 0.8077,
     "energy_confidence": 0.55,
-    "library_rank": 86,
+    "library_rank": 85,
     "display": false,
     "cash_price_wan": 3.39,
     "cash_price_fen": 3390000,
@@ -37037,7 +36594,7 @@
       "recommendation_gate": "PASS"
     },
     "ingest_status": "added",
-    "library_rank": 87,
+    "library_rank": 86,
     "display": false,
     "rank": null,
     "sale_status": "on_sale",
@@ -37473,7 +37030,7 @@
     "data_issues": [],
     "config_coverage": 0.8654,
     "energy_confidence": 0.55,
-    "library_rank": 88,
+    "library_rank": 87,
     "display": false,
     "cash_price_wan": 4.69,
     "cash_price_fen": 4690000,
@@ -37922,7 +37479,7 @@
     "data_issues": [],
     "config_coverage": 0.7788,
     "energy_confidence": 0.65,
-    "library_rank": 89,
+    "library_rank": 88,
     "display": false,
     "cash_price_wan": 5.12,
     "cash_price_fen": 5120000,
@@ -38351,7 +37908,7 @@
       "age": 0.7,
       "space": 0.825
     },
-    "library_rank": 90
+    "library_rank": 89
   },
   {
     "sku": "357230255",
@@ -38765,7 +38322,7 @@
     "data_issues": [],
     "config_coverage": 0.7885,
     "energy_confidence": 0.55,
-    "library_rank": 91,
+    "library_rank": 90,
     "display": false,
     "sale_status": "on_sale",
     "recommendation_gate": "PASS",
@@ -39204,7 +38761,7 @@
     "data_issues": [],
     "config_coverage": 0.7788,
     "energy_confidence": 0.65,
-    "library_rank": 92,
+    "library_rank": 91,
     "display": false,
     "cash_price_wan": 5.19,
     "cash_price_fen": 5190000,
@@ -39651,7 +39208,7 @@
     "data_issues": [],
     "config_coverage": 0.6827,
     "energy_confidence": 0.55,
-    "library_rank": 93,
+    "library_rank": 92,
     "display": false,
     "cash_price_wan": 1.79,
     "cash_price_fen": 1790000,
@@ -40107,7 +39664,7 @@
     "data_issues": [],
     "config_coverage": 0.8462,
     "energy_confidence": 0.55,
-    "library_rank": 94,
+    "library_rank": 93,
     "display": false,
     "cash_price_wan": 3.69,
     "cash_price_fen": 3690000,
@@ -40553,7 +40110,7 @@
     "data_issues": [],
     "config_coverage": 0.6923,
     "energy_confidence": 0.55,
-    "library_rank": 95,
+    "library_rank": 94,
     "display": false,
     "cash_price_wan": 4.19,
     "cash_price_fen": 4190000,
@@ -40999,7 +40556,7 @@
     "data_issues": [],
     "config_coverage": 0.8462,
     "energy_confidence": 0.55,
-    "library_rank": 96,
+    "library_rank": 95,
     "display": false,
     "sale_status": "on_sale",
     "recommendation_gate": "PASS",
@@ -41445,7 +41002,7 @@
       "age": 0.7,
       "space": 0.825
     },
-    "library_rank": 97
+    "library_rank": 96
   },
   {
     "sku": "357335080",
@@ -41838,7 +41395,7 @@
     "data_issues": [],
     "config_coverage": 0.7212,
     "energy_confidence": 0.55,
-    "library_rank": 98,
+    "library_rank": 97,
     "display": false,
     "cash_price_wan": 3.59,
     "cash_price_fen": 3590000,
@@ -42289,7 +41846,7 @@
       "age": 0.7,
       "space": 0.825
     },
-    "library_rank": 99
+    "library_rank": 98
   },
   {
     "sku": "357534644",
@@ -42663,7 +42220,7 @@
       "age": 0.7,
       "space": 0.825
     },
-    "library_rank": 100
+    "library_rank": 99
   },
   {
     "sku": "357250769",
@@ -43068,7 +42625,7 @@
     "data_issues": [],
     "config_coverage": 0.7596,
     "energy_confidence": 0.55,
-    "library_rank": 101,
+    "library_rank": 100,
     "display": false,
     "sale_status": "on_sale",
     "recommendation_gate": "PASS",
@@ -43508,7 +43065,7 @@
     "data_issues": [],
     "config_coverage": 0.7404,
     "energy_confidence": 0.65,
-    "library_rank": 102,
+    "library_rank": 101,
     "display": false,
     "sale_status": "on_sale",
     "cash_price_wan": 4.29,
@@ -43955,7 +43512,7 @@
     "data_issues": [],
     "config_coverage": 0.8462,
     "energy_confidence": 0.55,
-    "library_rank": 103,
+    "library_rank": 102,
     "display": false,
     "sale_status": "on_sale",
     "recommendation_gate": "PASS",
@@ -44365,7 +43922,7 @@
       "age": 0.7,
       "space": 0.825
     },
-    "library_rank": 104
+    "library_rank": 103
   },
   {
     "sku": "357527640",
@@ -44748,7 +44305,7 @@
       "age": 0.7,
       "space": 0.825
     },
-    "library_rank": 105
+    "library_rank": 104
   },
   {
     "sku": "357211012",
@@ -45161,7 +44718,7 @@
     "data_issues": [],
     "config_coverage": 0.8365,
     "energy_confidence": 0.65,
-    "library_rank": 106,
+    "library_rank": 105,
     "display": false,
     "cash_price_wan": 5.79,
     "cash_price_fen": 5790000,
@@ -45611,7 +45168,7 @@
     "data_issues": [],
     "config_coverage": 0.7596,
     "energy_confidence": 0.65,
-    "library_rank": 107,
+    "library_rank": 106,
     "display": false,
     "cash_price_wan": 4.63,
     "cash_price_fen": 4630000,
@@ -46041,7 +45598,7 @@
       "recommendation_gate": "PASS"
     },
     "ingest_status": "added",
-    "library_rank": 108,
+    "library_rank": 107,
     "display": false,
     "rank": null,
     "sale_status": "on_sale",
@@ -46432,7 +45989,7 @@
       "recommendation_gate": "PASS"
     },
     "ingest_status": "added",
-    "library_rank": 109,
+    "library_rank": 108,
     "display": false,
     "rank": null,
     "sale_status": "on_sale",
@@ -46838,7 +46395,7 @@
       "age": 0.7,
       "space": 0.825
     },
-    "library_rank": 110
+    "library_rank": 109
   },
   {
     "sku": "357567803",
@@ -47252,7 +46809,7 @@
       "age": 0.7,
       "space": 0.825
     },
-    "library_rank": 111
+    "library_rank": 110
   },
   {
     "sku": "357211017",
@@ -47665,7 +47222,7 @@
     "data_issues": [],
     "config_coverage": 0.6923,
     "energy_confidence": 0.65,
-    "library_rank": 112,
+    "library_rank": 111,
     "display": false,
     "cash_price_wan": 5.69,
     "cash_price_fen": 5690000,
@@ -48113,7 +47670,7 @@
     "data_issues": [],
     "config_coverage": 0.7788,
     "energy_confidence": 0.65,
-    "library_rank": 113,
+    "library_rank": 112,
     "display": false,
     "cash_price_wan": 4.69,
     "cash_price_fen": 4690000,
@@ -48530,7 +48087,7 @@
       "age": 0.7,
       "space": 0.825
     },
-    "library_rank": 114
+    "library_rank": 113
   },
   {
     "sku": "356902463",
@@ -48940,7 +48497,7 @@
     "data_issues": [],
     "config_coverage": 0.7885,
     "energy_confidence": 0.55,
-    "library_rank": 115,
+    "library_rank": 114,
     "display": false,
     "cash_price_wan": 5.59,
     "cash_price_fen": 5590000,
@@ -49374,7 +48931,7 @@
       "age": 0.7,
       "space": 0.825
     },
-    "library_rank": 116
+    "library_rank": 115
   },
   {
     "sku": "357263877",
@@ -49775,7 +49332,7 @@
     "data_issues": [],
     "config_coverage": 0.8173,
     "energy_confidence": 0.55,
-    "library_rank": 117,
+    "library_rank": 116,
     "display": false,
     "sale_status": "on_sale",
     "recommendation_gate": "PASS",
@@ -50191,7 +49748,7 @@
       "age": 0.7,
       "space": 0.825
     },
-    "library_rank": 118
+    "library_rank": 117
   },
   {
     "sku": "357001086",
@@ -50589,7 +50146,7 @@
     "data_issues": [],
     "config_coverage": 0.8173,
     "energy_confidence": 0.55,
-    "library_rank": 119,
+    "library_rank": 118,
     "display": false,
     "cash_price_wan": 1.46,
     "cash_price_fen": 1460000,
@@ -50631,6 +50188,452 @@
       "maintenance_estimate": "约 400-550 元/年",
       "reliability_notes": []
     }
+  },
+  {
+    "sku": "357250766",
+    "title": "影豹 2023款 270T DCT J15版",
+    "price": 4.99,
+    "price_type": "标价",
+    "prefix": "分期价",
+    "extra": "领券优惠价",
+    "extras": [
+      "领券优惠价",
+      "分期直减2000元"
+    ],
+    "year": "2023年 / 7.50万公里 / 武汉",
+    "plate_year": 2023,
+    "model_year": 2023,
+    "mileage_wan": 7.5,
+    "city": "武汉",
+    "tags": [
+      "性价比极佳",
+      "放心检7.4分",
+      "咨询飙升"
+    ],
+    "badges": [
+      "官方保",
+      "直营"
+    ],
+    "cover": "https://p9-dcd-sign.byteimg.com/tos-cn-i-f042mdwyw7/9aa6ba4bb9d14b3e9262c10928058e6e~tplv-resize:800:0.image?lk3s=416a877a&x-expires=1796200574&x-signature=PAGKgf%2F3bgxbeXkk9x40HJRPNR0%3D&psm=motor.sophon.product",
+    "detail_url": "https://m.dcdapp.com/motor/feoffline/usedcar_detail/detail.html?sku_id=357250766&shop_id=118608",
+    "shop_id": "118608",
+    "image_file": "/workspace/dongchedi-wuhan-shop/images/357250766.jpg",
+    "banner": "分期直减2000元",
+    "sort_scores": {
+      "score_version": "v3.0.0",
+      "total_score": 73.6,
+      "config_score": 89.47,
+      "config_norm": 89.47,
+      "config_proxy": 89.47,
+      "is_suv": false,
+      "price": 4.99,
+      "effective_price_wan": 4.99,
+      "condition_gate": "PASS",
+      "note": "V3 holiday buyer score_version=v3.0.0; weights={'powertrain': 0.3, 'config': 0.24, 'value_price': 0.22, 'condition': 0.18, 'space': 0.06}; veto_4_iron_laws",
+      "price_score": 67.8,
+      "operating_cost_score": 48.54,
+      "space_score": 86.32,
+      "age_score": 90.83,
+      "mileage_score": 42.67,
+      "body_preference_score": 50.0,
+      "data_quality_score": 95.0,
+      "space_norm": 86.32,
+      "fuel_norm": 48.54,
+      "suv_score": 50.0,
+      "space_proxy": 86.32,
+      "fuel_proxy": 48.54,
+      "weights": {
+        "powertrain": 0.3,
+        "config": 0.24,
+        "value_price": 0.22,
+        "condition": 0.18,
+        "space": 0.06
+      },
+      "energy": {
+        "cost_yuan_100km": 54.83,
+        "type": "official_wltc_with_uncertainty",
+        "value": 6.853999999999999,
+        "unit": "L/100km",
+        "fuel_grade": "92",
+        "scenario": "no_home_charging"
+      },
+      "confidence": {
+        "price": 0.9,
+        "config": 0.837,
+        "energy": 0.65,
+        "core_specs": 0.99,
+        "age": 0.7,
+        "space": 0.825
+      },
+      "reasons": [
+        "现金价 4.99 万（指导价 11.80 万，4.2 折）",
+        "三大件：1.5T 177马力 L4 · 7挡湿式双离合 · 独立后悬 · 两驱 · 92#",
+        "核心配置：6气囊 / L2辅助驾驶 / 倒车影像 / 座椅加热 / CarPlay"
+      ],
+      "warnings": [],
+      "powertrain_score": 73.0,
+      "value_price_score": 67.8,
+      "condition_score": 56.05,
+      "msrp_wan": 11.8,
+      "discount_fold": 4.2,
+      "recommendation_gate": "PASS"
+    },
+    "brand": "传祺",
+    "manufacturer": "广汽传祺",
+    "manufacturer_inferred": false,
+    "total_score": 73.6,
+    "evaluation": "4.2折捡漏（原指导价11.80万），7挡湿式双离合+涡轮增压，独立后悬，配齐L2辅助驾驶。",
+    "series": "影豹",
+    "owner_reviews": {
+      "summary": "运动造型与动力是吸睛点，年轻向口碑不错。槽点：后排一般、双离合顿挫、胎噪；新车系长期可靠性口碑仍在积累。",
+      "pros": [
+        "外观运动",
+        "动力有趣",
+        "年轻向配置"
+      ],
+      "cons": [
+        "后排一般",
+        "双离合顿挫",
+        "胎噪",
+        "长期口碑仍在积累"
+      ],
+      "drawbacks": [
+        "后排一般",
+        "双离合顿挫",
+        "胎噪",
+        "长期口碑仍在积累"
+      ],
+      "sources": [
+        {
+          "title": "影豹汽车之家口碑检索",
+          "url": "https://sou.autohome.com.cn/zonghe?q=%E5%BD%B1%E8%B1%B9+%E5%8F%A3%E7%A2%91"
+        },
+        {
+          "title": "影豹紧凑型车口碑榜（汽车之家）",
+          "url": "https://k.autohome.com.cn/a1/"
+        }
+      ],
+      "found": true,
+      "cons_note": null
+    },
+    "rank": null,
+    "specs": {
+      "length_mm": 4700,
+      "width_mm": 1850,
+      "height_mm": 1432,
+      "wheelbase_mm": 2736,
+      "seats": 5,
+      "body_type": "紧凑型车",
+      "engine": "1.5T 177马力 L4",
+      "transmission": "湿式双离合变速箱(DCT)",
+      "fuel_grade": "92",
+      "official_fuel_l_100km": 5.96,
+      "official_standard": "WLTC",
+      "low_soc_fuel_l_100km": null,
+      "real_world_fuel_l_100km": null,
+      "real_world_sample_n": null,
+      "electric_kwh_100km": null,
+      "ev_range_km": null,
+      "ev_range_standard": null,
+      "ranking_energy": {
+        "type": "official_wltc_with_uncertainty",
+        "value": 5.96,
+        "unit": "L/100km",
+        "fallback_multiplier_recommended": 1.15
+      },
+      "powertrain": "ice",
+      "powertrain_type": "ice",
+      "features": {
+        "airbags": 6,
+        "esp": true,
+        "aeb": true,
+        "fcw": true,
+        "ldw": true,
+        "lka": true,
+        "lane_centering": true,
+        "bsd": false,
+        "dow": false,
+        "acc": true,
+        "cruise": "全速自适应巡航",
+        "camera_360": null,
+        "transparent_chassis": null,
+        "front_radar": true,
+        "rear_radar": true,
+        "auto_park": false,
+        "remote_park": null,
+        "power_driver_seat": true,
+        "power_passenger_seat": true,
+        "seat_heating": true,
+        "seat_ventilation": null,
+        "panoramic_sunroof": true,
+        "power_tailgate": false,
+        "keyless_entry": false,
+        "remote_start": false,
+        "rear_ac_vents": true,
+        "dual_zone_climate": true,
+        "leather_seats": false,
+        "full_lcd_cluster": false,
+        "screen_inch": 10.25,
+        "carplay": true,
+        "carlife": true,
+        "phone_link": true,
+        "wireless_charge": false,
+        "voice_control": false,
+        "ota": false,
+        "hud": null,
+        "chip_8155": null
+      },
+      "airbags": 6,
+      "screen_inch": 10.25,
+      "msrp_wan": 11.8,
+      "match_level": "exact_trim",
+      "trim_id": "trim_ah_e248f9088ada",
+      "canonical_title": "影豹 2023款 270T DCT J15版",
+      "specs_found": true,
+      "specs_approx": false,
+      "verified": true,
+      "verification_schema": "3.0-exact-trim-detailed",
+      "configuration_source": "exact_trim_v3",
+      "core_confidence": 0.99,
+      "feature_confidence": 0.95,
+      "verification_issues": [],
+      "verification_sources": [
+        {
+          "url": "https://car.autohome.com.cn/config/spec/62090.html",
+          "source_type": "autohome_live_config",
+          "authority_tier": 1,
+          "series_id": 5944,
+          "spec_id": 62090,
+          "parameter_source": "live_page"
+        },
+        {
+          "url": "https://github.com/swoiow/autohome",
+          "source_type": "autohome_parameter_dataset",
+          "authority_tier": 3,
+          "snapshot": "identity_match_only",
+          "source_path": "live:config/spec/62090.html",
+          "note": "vault/main used for exact-trim identity; parameters from live page"
+        }
+      ],
+      "engine_model": "4A15J2",
+      "cylinders": 4,
+      "intake": "涡轮增压",
+      "fuel_injection": "直喷",
+      "horsepower_ps": 177,
+      "torque_nm": 270,
+      "transmission_type": "湿式双离合变速箱(DCT)",
+      "transmission_short": "7挡湿式双离合",
+      "rear_suspension": "多连杆式独立悬架",
+      "drive_type": "前置前驱",
+      "energy_type": "汽油",
+      "knee_airbag": false,
+      "has_reverse_camera": true,
+      "has_fixed_cruise": false,
+      "live_spec_id": 62090
+    },
+    "detailed_config": {
+      "length_mm": 4700,
+      "width_mm": 1850,
+      "height_mm": 1432,
+      "wheelbase_mm": 2736,
+      "seats": 5,
+      "body_type": "紧凑型车",
+      "engine": "1.5T 177马力 L4",
+      "transmission": "湿式双离合变速箱(DCT)",
+      "fuel_grade": "92",
+      "official_fuel_l_100km": 5.96,
+      "official_standard": "WLTC",
+      "low_soc_fuel_l_100km": null,
+      "real_world_fuel_l_100km": null,
+      "real_world_sample_n": null,
+      "electric_kwh_100km": null,
+      "ev_range_km": null,
+      "ev_range_standard": null,
+      "ranking_energy": {
+        "type": "official_wltc_with_uncertainty",
+        "value": 5.96,
+        "unit": "L/100km",
+        "fallback_multiplier_recommended": 1.15
+      },
+      "powertrain": "ice",
+      "powertrain_type": "ice",
+      "features": {
+        "airbags": 6,
+        "esp": true,
+        "aeb": true,
+        "fcw": true,
+        "ldw": true,
+        "lka": true,
+        "lane_centering": true,
+        "bsd": false,
+        "dow": false,
+        "acc": true,
+        "cruise": "全速自适应巡航",
+        "camera_360": null,
+        "transparent_chassis": null,
+        "front_radar": true,
+        "rear_radar": true,
+        "auto_park": false,
+        "remote_park": null,
+        "power_driver_seat": true,
+        "power_passenger_seat": true,
+        "seat_heating": true,
+        "seat_ventilation": null,
+        "panoramic_sunroof": true,
+        "power_tailgate": false,
+        "keyless_entry": false,
+        "remote_start": false,
+        "rear_ac_vents": true,
+        "dual_zone_climate": true,
+        "leather_seats": false,
+        "full_lcd_cluster": false,
+        "screen_inch": 10.25,
+        "carplay": true,
+        "carlife": true,
+        "phone_link": true,
+        "wireless_charge": false,
+        "voice_control": false,
+        "ota": false,
+        "hud": null,
+        "chip_8155": null
+      },
+      "airbags": 6,
+      "screen_inch": 10.25,
+      "msrp_wan": 11.8,
+      "match_level": "exact_trim",
+      "trim_id": "trim_ah_e248f9088ada",
+      "canonical_title": "影豹 2023款 270T DCT J15版",
+      "specs_found": true,
+      "specs_approx": false,
+      "verified": true,
+      "verification_schema": "3.0-exact-trim-detailed",
+      "configuration_source": "exact_trim_v3",
+      "core_confidence": 0.99,
+      "feature_confidence": 0.95,
+      "verification_issues": [],
+      "verification_sources": [
+        {
+          "url": "https://car.autohome.com.cn/config/spec/62090.html",
+          "source_type": "autohome_live_config",
+          "authority_tier": 1,
+          "series_id": 5944,
+          "spec_id": 62090,
+          "parameter_source": "live_page"
+        },
+        {
+          "url": "https://github.com/swoiow/autohome",
+          "source_type": "autohome_parameter_dataset",
+          "authority_tier": 3,
+          "snapshot": "identity_match_only",
+          "source_path": "live:config/spec/62090.html",
+          "note": "vault/main used for exact-trim identity; parameters from live page"
+        }
+      ],
+      "engine_model": "4A15J2",
+      "cylinders": 4,
+      "intake": "涡轮增压",
+      "fuel_injection": "直喷",
+      "horsepower_ps": 177,
+      "torque_nm": 270,
+      "transmission_type": "湿式双离合变速箱(DCT)",
+      "transmission_short": "7挡湿式双离合",
+      "rear_suspension": "多连杆式独立悬架",
+      "drive_type": "前置前驱",
+      "energy_type": "汽油",
+      "knee_airbag": false,
+      "has_reverse_camera": true,
+      "has_fixed_cruise": false,
+      "live_spec_id": 62090
+    },
+    "display_price_wan": 4.99,
+    "effective_price_wan": 4.99,
+    "price_confidence": 0.9,
+    "needs_cash_quote": false,
+    "price_basis": "display",
+    "finance_reserve_wan": 0.5,
+    "_age_years": 3.3333333333333335,
+    "score_version": "v3.0.0",
+    "score_v1": 73.6,
+    "condition_gate": "PASS",
+    "score_reasons": [
+      "现金价 4.99 万（指导价 11.80 万，4.2 折）",
+      "三大件：1.5T 177马力 L4 · 7挡湿式双离合 · 独立后悬 · 两驱 · 92#",
+      "核心配置：6气囊 / L2辅助驾驶 / 倒车影像 / 座椅加热 / CarPlay"
+    ],
+    "score_warnings": [],
+    "confidence": {
+      "price": 0.9,
+      "config": 0.837,
+      "energy": 0.65,
+      "core_specs": 0.99,
+      "age": 0.7,
+      "space": 0.825
+    },
+    "price_refresh": {
+      "fetched_at": "2026-11-02T20:20+08:00",
+      "source": "card/detail.sku_price",
+      "cash_price_wan": 4.99,
+      "finance_discount_price_wan": 4.69,
+      "previous_price_wan": 4.79,
+      "previous_price_type": "分期",
+      "tags": [
+        "问题车终身回购",
+        "7天无忧购",
+        "60天整车质保",
+        "1年/3万公里延保",
+        "分期券后价",
+        "领券优惠价",
+        "分期直减券3000元",
+        "送1940元深度整备保养",
+        "送359元全车深度质检",
+        "送1年3万公里核心零部件延保"
+      ]
+    },
+    "score_eligible": true,
+    "data_issues": [],
+    "config_coverage": 0.8365,
+    "energy_confidence": 0.65,
+    "library_rank": 46,
+    "display": false,
+    "sale_status": "reserved",
+    "recommendation_gate": "PASS",
+    "veto_reasons": [],
+    "v3_profile": {
+      "archetype_badge": "满配性价比",
+      "msrp_wan": 11.8,
+      "discount_fold": 4.2,
+      "saved_wan": 6.81,
+      "powertrain_summary": "1.5T 177马力 L4 · 7挡湿式双离合 · 独立后悬 · 两驱 · 92#",
+      "gearbox_tier": "WET_DCT",
+      "gearbox_label": "7挡湿式双离合",
+      "engine_summary": "1.5T 177马力 L4",
+      "intake": "涡轮增压",
+      "fuel_injection": "直喷",
+      "rear_suspension": "多连杆式独立悬架",
+      "rear_suspension_short": "独立后悬",
+      "drive_type": "前置前驱",
+      "drive_short": "两驱",
+      "fuel_grade": "92#",
+      "feature_highlights": [
+        "6气囊",
+        "L2辅助驾驶",
+        "倒车影像",
+        "座椅加热",
+        "CarPlay",
+        "双电动座椅"
+      ],
+      "recommend_reason": "4.2折捡漏（原指导价11.80万），7挡湿式双离合+涡轮增压，独立后悬，配齐L2辅助驾驶。",
+      "inspection_checklist": [
+        "低速1-2挡跟车测试换挡平顺度，举升看变速箱油底壳及阀体插头有无油迹",
+        "泼水测试全景天窗排水孔，确认遮阳帘开合无异响",
+        "节假日低频停放必查：现场测12V电瓶健康度SOH（低于60%要求更换），排查有无私接常电记录仪"
+      ],
+      "maintenance_estimate": "约 400-550 元/年",
+      "reliability_notes": []
+    },
+    "product_status": 5,
+    "status_modify_time": "1795198251",
+    "ingest_status": "reserved"
   },
   {
     "sku": "357232005",
