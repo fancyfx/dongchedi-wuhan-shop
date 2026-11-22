@@ -7229,7 +7229,7 @@
       "found": true,
       "cons_note": null
     },
-    "rank": 18,
+    "rank": null,
     "specs": {
       "length_mm": 4770,
       "width_mm": 1840,
@@ -7508,7 +7508,7 @@
     "config_coverage": 0.8846,
     "energy_confidence": 0.65,
     "library_rank": 18,
-    "display": true,
+    "display": false,
     "cash_price_wan": 4.68,
     "cash_price_fen": 4680000,
     "cash_price_str": "4.68",
@@ -7520,8 +7520,8 @@
     "shop_name": "懂车帝汽车商城•武汉店",
     "first_registration_time": "1686844800",
     "detail_shop_id": "118608",
-    "ingest_status": "updated_price",
-    "sale_status": "on_sale",
+    "ingest_status": "reserved",
+    "sale_status": "reserved",
     "recommendation_gate": "PASS",
     "veto_reasons": [],
     "v3_profile": {
@@ -7566,7 +7566,9 @@
     "plate_fee_diff_yuan": 0,
     "landed_extra_yuan": 0,
     "landed_extra_wan": 0.0,
-    "landed_price_wan": 4.68
+    "landed_price_wan": 4.68,
+    "product_status": 5,
+    "status_modify_time": "1795270683"
   },
   {
     "sku": "357491702",
@@ -7959,9 +7961,9 @@
       "note": "V3.2 SUV-first modern cabin buyer score_version=v3.2.0; weights={'config': 0.28, 'space': 0.2, 'powertrain': 0.2, 'condition': 0.18, 'value_price': 0.14}; tiered_dmi_admission"
     },
     "ingest_status": "added",
-    "library_rank": 19,
+    "library_rank": 18,
     "display": true,
-    "rank": 19
+    "rank": 18
   },
   {
     "sku": "357574214",
@@ -8387,9 +8389,9 @@
       "note": "V3.2 SUV-first modern cabin buyer score_version=v3.2.0; weights={'config': 0.28, 'space': 0.2, 'powertrain': 0.2, 'condition': 0.18, 'value_price': 0.14}; tiered_dmi_admission"
     },
     "ingest_status": "added",
-    "library_rank": 20,
+    "library_rank": 19,
     "display": true,
-    "rank": 20
+    "rank": 19
   },
   {
     "sku": "300024509",
@@ -8781,9 +8783,9 @@
       "note": "V3.2 SUV-first modern cabin buyer score_version=v3.2.0; weights={'config': 0.28, 'space': 0.2, 'powertrain': 0.2, 'condition': 0.18, 'value_price': 0.14}; tiered_dmi_admission"
     },
     "ingest_status": "added",
-    "library_rank": 21,
+    "library_rank": 20,
     "display": true,
-    "rank": 21
+    "rank": 20
   },
   {
     "sku": "357588788",
@@ -9142,9 +9144,9 @@
       "recommendation_gate": "PASS"
     },
     "ingest_status": "added",
-    "library_rank": 22,
+    "library_rank": 21,
     "display": true,
-    "rank": 22,
+    "rank": 21,
     "sale_status": "on_sale",
     "recommendation_gate": "PASS",
     "veto_reasons": [],
@@ -9587,9 +9589,9 @@
       "note": "V3.2 SUV-first modern cabin buyer score_version=v3.2.0; weights={'config': 0.28, 'space': 0.2, 'powertrain': 0.2, 'condition': 0.18, 'value_price': 0.14}; tiered_dmi_admission"
     },
     "ingest_status": "added",
-    "library_rank": 23,
+    "library_rank": 22,
     "display": true,
-    "rank": 23
+    "rank": 22
   },
   {
     "sku": "357247792",
@@ -9721,7 +9723,7 @@
       "found": true,
       "cons_note": null
     },
-    "rank": 24,
+    "rank": 23,
     "specs": {
       "length_mm": 4690,
       "width_mm": 1865,
@@ -9996,7 +9998,7 @@
     "data_issues": [],
     "config_coverage": 0.7981,
     "energy_confidence": 0.55,
-    "library_rank": 24,
+    "library_rank": 23,
     "display": true,
     "cash_price_wan": 5.21,
     "cash_price_fen": 5210000,
@@ -10449,9 +10451,9 @@
       "note": "V3.2 SUV-first modern cabin buyer score_version=v3.2.0; weights={'config': 0.28, 'space': 0.2, 'powertrain': 0.2, 'condition': 0.18, 'value_price': 0.14}; tiered_dmi_admission"
     },
     "ingest_status": "added",
-    "library_rank": 25,
+    "library_rank": 24,
     "display": true,
-    "rank": 25
+    "rank": 24
   },
   {
     "sku": "357307964",
@@ -10876,9 +10878,9 @@
       "note": "V3.2 SUV-first modern cabin buyer score_version=v3.2.0; weights={'config': 0.28, 'space': 0.2, 'powertrain': 0.2, 'condition': 0.18, 'value_price': 0.14}; tiered_dmi_admission"
     },
     "ingest_status": "added",
-    "library_rank": 26,
+    "library_rank": 25,
     "display": true,
-    "rank": 26
+    "rank": 25
   },
   {
     "sku": "357168649",
@@ -11012,7 +11014,7 @@
       "found": true,
       "cons_note": null
     },
-    "rank": 27,
+    "rank": 26,
     "specs": {
       "length_mm": 4515,
       "width_mm": 1870,
@@ -11274,7 +11276,7 @@
     "data_issues": [],
     "config_coverage": 0.75,
     "energy_confidence": 0.55,
-    "library_rank": 27,
+    "library_rank": 26,
     "display": true,
     "sale_status": "on_sale",
     "recommendation_gate": "PASS",
@@ -11711,9 +11713,9 @@
       "note": "V3.2 SUV-first modern cabin buyer score_version=v3.2.0; weights={'config': 0.28, 'space': 0.2, 'powertrain': 0.2, 'condition': 0.18, 'value_price': 0.14}; tiered_dmi_admission"
     },
     "ingest_status": "added",
-    "library_rank": 28,
+    "library_rank": 27,
     "display": true,
-    "rank": 28
+    "rank": 27
   },
   {
     "sku": "357463780",
@@ -12072,9 +12074,9 @@
       "recommendation_gate": "PASS"
     },
     "ingest_status": "added",
-    "library_rank": 29,
+    "library_rank": 28,
     "display": true,
-    "rank": 29,
+    "rank": 28,
     "sale_status": "on_sale",
     "recommendation_gate": "PASS",
     "veto_reasons": [],
@@ -12250,7 +12252,7 @@
       "found": true,
       "cons_note": null
     },
-    "rank": 30,
+    "rank": 29,
     "specs": {
       "length_mm": 4657,
       "width_mm": 1840,
@@ -12531,7 +12533,7 @@
     "data_issues": [],
     "config_coverage": 0.7788,
     "energy_confidence": 0.55,
-    "library_rank": 30,
+    "library_rank": 29,
     "display": true,
     "sale_status": "on_sale",
     "recommendation_gate": "PASS",
@@ -12998,9 +13000,9 @@
       "note": "V3.2 SUV-first modern cabin buyer score_version=v3.2.0; weights={'config': 0.28, 'space': 0.2, 'powertrain': 0.2, 'condition': 0.18, 'value_price': 0.14}; tiered_dmi_admission"
     },
     "ingest_status": "added",
-    "library_rank": 31,
-    "display": false,
-    "rank": null
+    "library_rank": 30,
+    "display": true,
+    "rank": 30
   },
   {
     "sku": "357601281",
@@ -13417,7 +13419,7 @@
       "age": 0.7,
       "space": 0.825
     },
-    "library_rank": 32
+    "library_rank": 31
   },
   {
     "sku": "357606536",
@@ -13834,7 +13836,7 @@
       "note": "V3.2 SUV-first modern cabin buyer score_version=v3.2.0; weights={'config': 0.28, 'space': 0.2, 'powertrain': 0.2, 'condition': 0.18, 'value_price': 0.14}; tiered_dmi_admission"
     },
     "ingest_status": "added",
-    "library_rank": 33,
+    "library_rank": 32,
     "display": false,
     "rank": null
   },
@@ -14226,7 +14228,7 @@
       "note": "V3.2 SUV-first modern cabin buyer score_version=v3.2.0; weights={'config': 0.28, 'space': 0.2, 'powertrain': 0.2, 'condition': 0.18, 'value_price': 0.14}; tiered_dmi_admission"
     },
     "ingest_status": "added",
-    "library_rank": 34,
+    "library_rank": 33,
     "display": false,
     "rank": null
   },
@@ -14647,7 +14649,7 @@
       "note": "V3.2 SUV-first modern cabin buyer score_version=v3.2.0; weights={'config': 0.28, 'space': 0.2, 'powertrain': 0.2, 'condition': 0.18, 'value_price': 0.14}; tiered_dmi_admission"
     },
     "ingest_status": "added",
-    "library_rank": 35,
+    "library_rank": 34,
     "display": false,
     "rank": null
   },
@@ -15067,7 +15069,7 @@
       "note": "V3.2 SUV-first modern cabin buyer score_version=v3.2.0; weights={'config': 0.28, 'space': 0.2, 'powertrain': 0.2, 'condition': 0.18, 'value_price': 0.14}; tiered_dmi_admission"
     },
     "ingest_status": "added",
-    "library_rank": 36,
+    "library_rank": 35,
     "display": false,
     "rank": null
   },
@@ -15489,7 +15491,7 @@
       "note": "V3.2 SUV-first modern cabin buyer score_version=v3.2.0; weights={'config': 0.28, 'space': 0.2, 'powertrain': 0.2, 'condition': 0.18, 'value_price': 0.14}; tiered_dmi_admission"
     },
     "ingest_status": "added",
-    "library_rank": 37,
+    "library_rank": 36,
     "display": false,
     "rank": null
   },
@@ -15910,7 +15912,7 @@
       "note": "V3.2 SUV-first modern cabin buyer score_version=v3.2.0; weights={'config': 0.28, 'space': 0.2, 'powertrain': 0.2, 'condition': 0.18, 'value_price': 0.14}; tiered_dmi_admission"
     },
     "ingest_status": "added",
-    "library_rank": 38,
+    "library_rank": 37,
     "display": false,
     "rank": null
   },
@@ -16312,7 +16314,7 @@
       "note": "V3.2 SUV-first modern cabin buyer score_version=v3.2.0; weights={'config': 0.28, 'space': 0.2, 'powertrain': 0.2, 'condition': 0.18, 'value_price': 0.14}; tiered_dmi_admission"
     },
     "ingest_status": "added",
-    "library_rank": 39,
+    "library_rank": 38,
     "display": false,
     "rank": null
   },
@@ -16739,7 +16741,7 @@
       "note": "V3.2 SUV-first modern cabin buyer score_version=v3.2.0; weights={'config': 0.28, 'space': 0.2, 'powertrain': 0.2, 'condition': 0.18, 'value_price': 0.14}; tiered_dmi_admission"
     },
     "ingest_status": "added",
-    "library_rank": 40,
+    "library_rank": 39,
     "display": false,
     "rank": null
   },
@@ -17148,7 +17150,7 @@
       "age": 0.7,
       "space": 0.825
     },
-    "library_rank": 41,
+    "library_rank": 40,
     "is_local_wuhan": true,
     "shop_short_name": "武汉店",
     "logistics_fee_yuan": 0,
@@ -17560,7 +17562,7 @@
     "data_issues": [],
     "config_coverage": 0.8173,
     "energy_confidence": 0.55,
-    "library_rank": 42,
+    "library_rank": 41,
     "display": false,
     "sale_status": "on_sale",
     "recommendation_gate": "PASS",
@@ -17970,7 +17972,7 @@
       "recommendation_gate": "PASS"
     },
     "ingest_status": "added",
-    "library_rank": 43,
+    "library_rank": 42,
     "display": false,
     "rank": null,
     "sale_status": "on_sale",
@@ -18420,7 +18422,7 @@
     "data_issues": [],
     "config_coverage": 0.8173,
     "energy_confidence": 0.55,
-    "library_rank": 44,
+    "library_rank": 43,
     "display": false,
     "cash_price_wan": 3.43,
     "cash_price_fen": 3430000,
@@ -18883,7 +18885,7 @@
     "data_issues": [],
     "config_coverage": 0.7019,
     "energy_confidence": 0.55,
-    "library_rank": 45,
+    "library_rank": 44,
     "display": false,
     "cash_price_wan": 3.79,
     "cash_price_fen": 3790000,
@@ -19348,7 +19350,7 @@
     "data_issues": [],
     "config_coverage": 0.9327,
     "energy_confidence": 0.65,
-    "library_rank": 46,
+    "library_rank": 45,
     "display": false,
     "cash_price_wan": 5.79,
     "cash_price_fen": 5790000,
@@ -19812,7 +19814,7 @@
     "data_issues": [],
     "config_coverage": 0.7788,
     "energy_confidence": 0.65,
-    "library_rank": 47,
+    "library_rank": 46,
     "display": false,
     "cash_price_wan": 4.19,
     "cash_price_fen": 4190000,
@@ -20279,7 +20281,7 @@
     "data_issues": [],
     "config_coverage": 0.875,
     "energy_confidence": 0.65,
-    "library_rank": 48,
+    "library_rank": 47,
     "display": false,
     "sale_status": "on_sale",
     "cash_price_wan": 4.23,
@@ -20728,7 +20730,7 @@
       "recommendation_gate": "PASS"
     },
     "ingest_status": "added",
-    "library_rank": 49,
+    "library_rank": 48,
     "display": false,
     "rank": null,
     "sale_status": "on_sale",
@@ -21164,7 +21166,7 @@
       "recommendation_gate": "PASS"
     },
     "ingest_status": "added",
-    "library_rank": 50,
+    "library_rank": 49,
     "display": false,
     "rank": null,
     "sale_status": "on_sale",
@@ -21621,7 +21623,7 @@
       "age": 0.7,
       "space": 0.825
     },
-    "library_rank": 51,
+    "library_rank": 50,
     "is_local_wuhan": true,
     "shop_short_name": "武汉店",
     "logistics_fee_yuan": 0,
@@ -22021,7 +22023,7 @@
       "note": "V3.2 SUV-first modern cabin buyer score_version=v3.2.0; weights={'config': 0.28, 'space': 0.2, 'powertrain': 0.2, 'condition': 0.18, 'value_price': 0.14}; tiered_dmi_admission"
     },
     "ingest_status": "added",
-    "library_rank": 52,
+    "library_rank": 51,
     "display": false,
     "rank": null
   },
@@ -22417,7 +22419,7 @@
       "note": "V3.2 SUV-first modern cabin buyer score_version=v3.2.0; weights={'config': 0.28, 'space': 0.2, 'powertrain': 0.2, 'condition': 0.18, 'value_price': 0.14}; tiered_dmi_admission"
     },
     "ingest_status": "added",
-    "library_rank": 53,
+    "library_rank": 52,
     "display": false,
     "rank": null
   },
@@ -22811,7 +22813,7 @@
       "note": "V3.2 SUV-first modern cabin buyer score_version=v3.2.0; weights={'config': 0.28, 'space': 0.2, 'powertrain': 0.2, 'condition': 0.18, 'value_price': 0.14}; tiered_dmi_admission"
     },
     "ingest_status": "added",
-    "library_rank": 54,
+    "library_rank": 53,
     "display": false,
     "rank": null
   },
@@ -23203,7 +23205,7 @@
       "note": "V3.2 SUV-first modern cabin buyer score_version=v3.2.0; weights={'config': 0.28, 'space': 0.2, 'powertrain': 0.2, 'condition': 0.18, 'value_price': 0.14}; tiered_dmi_admission"
     },
     "ingest_status": "added",
-    "library_rank": 55,
+    "library_rank": 54,
     "display": false,
     "rank": null
   },
@@ -23566,7 +23568,7 @@
       "recommendation_gate": "PASS"
     },
     "ingest_status": "added",
-    "library_rank": 56,
+    "library_rank": 55,
     "display": false,
     "rank": null,
     "sale_status": "on_sale",
@@ -24005,7 +24007,7 @@
       "recommendation_gate": "PASS"
     },
     "ingest_status": "added",
-    "library_rank": 57,
+    "library_rank": 56,
     "display": false,
     "rank": null,
     "sale_status": "on_sale",
@@ -24471,7 +24473,7 @@
       "note": "V3.2 SUV-first modern cabin buyer score_version=v3.2.0; weights={'config': 0.28, 'space': 0.2, 'powertrain': 0.2, 'condition': 0.18, 'value_price': 0.14}; tiered_dmi_admission"
     },
     "ingest_status": "added",
-    "library_rank": 58,
+    "library_rank": 57,
     "display": false,
     "rank": null
   },
@@ -24893,7 +24895,7 @@
       "note": "V3.2 SUV-first modern cabin buyer score_version=v3.2.0; weights={'config': 0.28, 'space': 0.2, 'powertrain': 0.2, 'condition': 0.18, 'value_price': 0.14}; tiered_dmi_admission"
     },
     "ingest_status": "added",
-    "library_rank": 59,
+    "library_rank": 58,
     "display": false,
     "rank": null
   },
@@ -25254,7 +25256,7 @@
       "recommendation_gate": "PASS"
     },
     "ingest_status": "added",
-    "library_rank": 60,
+    "library_rank": 59,
     "display": false,
     "rank": null,
     "sale_status": "on_sale",
@@ -25686,7 +25688,7 @@
       "recommendation_gate": "PASS"
     },
     "ingest_status": "added",
-    "library_rank": 61,
+    "library_rank": 60,
     "display": false,
     "rank": null,
     "sale_status": "on_sale",
@@ -26157,7 +26159,7 @@
       "note": "V3.2 SUV-first modern cabin buyer score_version=v3.2.0; weights={'config': 0.28, 'space': 0.2, 'powertrain': 0.2, 'condition': 0.18, 'value_price': 0.14}; tiered_dmi_admission"
     },
     "ingest_status": "added",
-    "library_rank": 62,
+    "library_rank": 61,
     "display": false,
     "rank": null
   },
@@ -26558,7 +26560,7 @@
     "data_issues": [],
     "config_coverage": 0.8654,
     "energy_confidence": 0.55,
-    "library_rank": 63,
+    "library_rank": 62,
     "display": false,
     "sale_status": "on_sale",
     "recommendation_gate": "PASS",
@@ -27005,7 +27007,7 @@
     "data_issues": [],
     "config_coverage": 0.8173,
     "energy_confidence": 0.55,
-    "library_rank": 64,
+    "library_rank": 63,
     "display": false,
     "cash_price_wan": 2.99,
     "cash_price_fen": 2990000,
@@ -27471,7 +27473,7 @@
     "data_issues": [],
     "config_coverage": 0.7404,
     "energy_confidence": 0.55,
-    "library_rank": 65,
+    "library_rank": 64,
     "display": false,
     "cash_price_wan": 5.39,
     "cash_price_fen": 5390000,
@@ -27888,7 +27890,7 @@
       "recommendation_gate": "PASS"
     },
     "ingest_status": "added",
-    "library_rank": 66,
+    "library_rank": 65,
     "display": false,
     "rank": null,
     "sale_status": "on_sale",
@@ -28350,7 +28352,7 @@
       "age": 0.7,
       "space": 0.825
     },
-    "library_rank": 67
+    "library_rank": 66
   },
   {
     "sku": "357334010",
@@ -28742,7 +28744,7 @@
       "note": "V3.2 SUV-first modern cabin buyer score_version=v3.2.0; weights={'config': 0.28, 'space': 0.2, 'powertrain': 0.2, 'condition': 0.18, 'value_price': 0.14}; tiered_dmi_admission"
     },
     "ingest_status": "added",
-    "library_rank": 68,
+    "library_rank": 67,
     "display": false,
     "rank": null
   },
@@ -29168,7 +29170,7 @@
       "note": "V3.2 SUV-first modern cabin buyer score_version=v3.2.0; weights={'config': 0.28, 'space': 0.2, 'powertrain': 0.2, 'condition': 0.18, 'value_price': 0.14}; tiered_dmi_admission"
     },
     "ingest_status": "added",
-    "library_rank": 69,
+    "library_rank": 68,
     "display": false,
     "rank": null
   },
@@ -29569,7 +29571,7 @@
       "note": "V3.2 SUV-first modern cabin buyer score_version=v3.2.0; weights={'config': 0.28, 'space': 0.2, 'powertrain': 0.2, 'condition': 0.18, 'value_price': 0.14}; tiered_dmi_admission"
     },
     "ingest_status": "added",
-    "library_rank": 70,
+    "library_rank": 69,
     "display": false,
     "rank": null
   },
@@ -29965,7 +29967,7 @@
       "recommendation_gate": "PASS"
     },
     "ingest_status": "added",
-    "library_rank": 71,
+    "library_rank": 70,
     "display": false,
     "rank": null,
     "sale_status": "on_sale",
@@ -30396,7 +30398,7 @@
       "recommendation_gate": "PASS"
     },
     "ingest_status": "updated_price",
-    "library_rank": 72,
+    "library_rank": 71,
     "display": false,
     "rank": null,
     "sale_status": "on_sale",
@@ -46989,396 +46991,6 @@
     "rank": null
   },
   {
-    "sku": "357605520",
-    "title": "丰田C-HR 2018款 2.0L 领先天窗版 国VI",
-    "shop_id": "118608",
-    "shop_name": "懂车帝汽车商城•武汉店",
-    "series": "丰田C-HR",
-    "brand": "丰田C-HR",
-    "mileage_wan": 5.41,
-    "model_year": 2018,
-    "plate_year": 2019,
-    "year": "2019年/5.41万公里",
-    "city": "武汉",
-    "tags": [
-      "0.5万首付"
-    ],
-    "badges": [
-      "直营"
-    ],
-    "is_self_trade_car": true,
-    "source_type": "2",
-    "source_type_name": "自营-个人",
-    "fuel_form": "1",
-    "cover": "https://p9-dcd-sign.byteimg.com/tos-cn-i-f042mdwyw7/399979e213ca4fd1b326cb7aa45d9fd1~tplv-f042mdwyw7-auto-webp:480:0.jpg?rk3s=4892dee6&x-expires=1796402137&x-signature=M5%2BkX3qr6w4sdJGog%2Be9k2c6%2Frs%3D&psm=motor.sh.pack",
-    "detail_url": "https://m.dcdapp.com/motor/feoffline/usedcar_detail/detail.html?sku_id=357605520&shop_id=118608",
-    "list_price_wan": 5.19,
-    "first_registration_time": "1569254400",
-    "price_type": "现金价",
-    "prefix": "现金价",
-    "cash_price_fen": 5190000,
-    "cash_price_str": "5.19",
-    "cash_price_wan": 5.19,
-    "price": 5.19,
-    "detail_shop_id": "118608",
-    "sale_status": "on_sale",
-    "product_status": 1,
-    "status_modify_time": "1795175580",
-    "specs": {
-      "length_mm": 4405,
-      "width_mm": 1795,
-      "height_mm": 1565,
-      "wheelbase_mm": 2640,
-      "seats": 5,
-      "body_type": "小型SUV",
-      "engine": "2.0L 171马力 L4",
-      "transmission": "CVT无级变速(模拟10挡)",
-      "fuel_grade": "92",
-      "official_fuel_l_100km": 5.7,
-      "official_standard": "NEDC",
-      "low_soc_fuel_l_100km": null,
-      "real_world_fuel_l_100km": null,
-      "real_world_sample_n": null,
-      "electric_kwh_100km": null,
-      "ev_range_km": null,
-      "ev_range_standard": null,
-      "ranking_energy": {
-        "type": "official_nedc_with_uncertainty",
-        "value": 5.7,
-        "unit": "L/100km",
-        "fallback_multiplier_recommended": 1.2
-      },
-      "powertrain": "ice",
-      "powertrain_type": "ice",
-      "features": {
-        "airbags": 6,
-        "esp": true,
-        "aeb": true,
-        "fcw": null,
-        "ldw": true,
-        "lka": false,
-        "lane_centering": null,
-        "bsd": false,
-        "dow": null,
-        "acc": true,
-        "cruise": "ACC自适应巡航",
-        "camera_360": null,
-        "transparent_chassis": null,
-        "front_radar": false,
-        "rear_radar": false,
-        "auto_park": false,
-        "remote_park": null,
-        "power_driver_seat": false,
-        "power_passenger_seat": false,
-        "seat_heating": false,
-        "seat_ventilation": false,
-        "panoramic_sunroof": false,
-        "power_tailgate": null,
-        "keyless_entry": true,
-        "remote_start": null,
-        "rear_ac_vents": false,
-        "dual_zone_climate": false,
-        "leather_seats": false,
-        "full_lcd_cluster": false,
-        "screen_inch": 9.0,
-        "carplay": null,
-        "carlife": true,
-        "phone_link": true,
-        "wireless_charge": false,
-        "voice_control": true,
-        "ota": false,
-        "hud": null,
-        "chip_8155": null
-      },
-      "airbags": 6,
-      "screen_inch": 9.0,
-      "msrp_wan": 15.58,
-      "match_level": "exact_trim",
-      "trim_id": "trim_ah_45152abc591f",
-      "canonical_title": "丰田C-HR 2018款 2.0L 领先天窗版 国VI",
-      "specs_found": true,
-      "specs_approx": false,
-      "verified": true,
-      "verification_schema": "3.0-exact-trim-detailed",
-      "configuration_source": "exact_trim_v3",
-      "core_confidence": 0.99,
-      "feature_confidence": 0.95,
-      "verification_issues": [],
-      "verification_sources": [
-        {
-          "url": "https://car.autohome.com.cn/config/spec/37572.html",
-          "source_type": "autohome_live_config",
-          "authority_tier": 1,
-          "series_id": 4645,
-          "spec_id": 37572,
-          "parameter_source": "getParamConf"
-        }
-      ],
-      "cylinders": 4,
-      "intake": "自然吸气",
-      "fuel_injection": "混合喷射",
-      "horsepower_ps": 171,
-      "torque_nm": 203,
-      "transmission_type": "无级变速箱(CVT)",
-      "transmission_short": "CVT无级变速(模拟10挡)",
-      "rear_suspension": "E型多连杆式独立悬架",
-      "drive_type": "前置前驱",
-      "energy_type": "汽油",
-      "knee_airbag": true,
-      "has_reverse_camera": true,
-      "has_fixed_cruise": false,
-      "live_spec_id": 37572
-    },
-    "detailed_config": {
-      "length_mm": 4405,
-      "width_mm": 1795,
-      "height_mm": 1565,
-      "wheelbase_mm": 2640,
-      "seats": 5,
-      "body_type": "小型SUV",
-      "engine": "2.0L 171马力 L4",
-      "transmission": "CVT无级变速(模拟10挡)",
-      "fuel_grade": "92",
-      "official_fuel_l_100km": 5.7,
-      "official_standard": "NEDC",
-      "low_soc_fuel_l_100km": null,
-      "real_world_fuel_l_100km": null,
-      "real_world_sample_n": null,
-      "electric_kwh_100km": null,
-      "ev_range_km": null,
-      "ev_range_standard": null,
-      "ranking_energy": {
-        "type": "official_nedc_with_uncertainty",
-        "value": 5.7,
-        "unit": "L/100km",
-        "fallback_multiplier_recommended": 1.2
-      },
-      "powertrain": "ice",
-      "powertrain_type": "ice",
-      "features": {
-        "airbags": 6,
-        "esp": true,
-        "aeb": true,
-        "fcw": null,
-        "ldw": true,
-        "lka": false,
-        "lane_centering": null,
-        "bsd": false,
-        "dow": null,
-        "acc": true,
-        "cruise": "ACC自适应巡航",
-        "camera_360": null,
-        "transparent_chassis": null,
-        "front_radar": false,
-        "rear_radar": false,
-        "auto_park": false,
-        "remote_park": null,
-        "power_driver_seat": false,
-        "power_passenger_seat": false,
-        "seat_heating": false,
-        "seat_ventilation": false,
-        "panoramic_sunroof": false,
-        "power_tailgate": null,
-        "keyless_entry": true,
-        "remote_start": null,
-        "rear_ac_vents": false,
-        "dual_zone_climate": false,
-        "leather_seats": false,
-        "full_lcd_cluster": false,
-        "screen_inch": 9.0,
-        "carplay": null,
-        "carlife": true,
-        "phone_link": true,
-        "wireless_charge": false,
-        "voice_control": true,
-        "ota": false,
-        "hud": null,
-        "chip_8155": null
-      },
-      "airbags": 6,
-      "screen_inch": 9.0,
-      "msrp_wan": 15.58,
-      "match_level": "exact_trim",
-      "trim_id": "trim_ah_45152abc591f",
-      "canonical_title": "丰田C-HR 2018款 2.0L 领先天窗版 国VI",
-      "specs_found": true,
-      "specs_approx": false,
-      "verified": true,
-      "verification_schema": "3.0-exact-trim-detailed",
-      "configuration_source": "exact_trim_v3",
-      "core_confidence": 0.99,
-      "feature_confidence": 0.95,
-      "verification_issues": [],
-      "verification_sources": [
-        {
-          "url": "https://car.autohome.com.cn/config/spec/37572.html",
-          "source_type": "autohome_live_config",
-          "authority_tier": 1,
-          "series_id": 4645,
-          "spec_id": 37572,
-          "parameter_source": "getParamConf"
-        }
-      ],
-      "cylinders": 4,
-      "intake": "自然吸气",
-      "fuel_injection": "混合喷射",
-      "horsepower_ps": 171,
-      "torque_nm": 203,
-      "transmission_type": "无级变速箱(CVT)",
-      "transmission_short": "CVT无级变速(模拟10挡)",
-      "rear_suspension": "E型多连杆式独立悬架",
-      "drive_type": "前置前驱",
-      "energy_type": "汽油",
-      "knee_airbag": true,
-      "has_reverse_camera": true,
-      "has_fixed_cruise": false,
-      "live_spec_id": 37572
-    },
-    "display_price_wan": 5.19,
-    "effective_price_wan": 5.19,
-    "price_confidence": 0.95,
-    "needs_cash_quote": false,
-    "price_basis": "cash",
-    "manufacturer": "丰田C-HR",
-    "manufacturer_inferred": true,
-    "owner_reviews": {
-      "summary": "",
-      "sources": [],
-      "found": false
-    },
-    "score_eligible": true,
-    "data_issues": [],
-    "config_coverage": 0.7212,
-    "energy_confidence": 0.55,
-    "score_version": "v3.2.0",
-    "score_v1": 67.8,
-    "total_score": 67.4,
-    "rank": null,
-    "condition_gate": "PASS",
-    "recommendation_gate": "PASS",
-    "veto_reasons": [],
-    "v3_profile": {
-      "archetype_badge": "自吸CVT省心选",
-      "msrp_wan": 15.58,
-      "discount_fold": 3.3,
-      "saved_wan": 10.39,
-      "powertrain_summary": "2.0L 171马力 L4 · 丰田CVT · 独立后悬 · 两驱 · 92#",
-      "gearbox_tier": "CVT",
-      "gearbox_label": "丰田CVT",
-      "engine_summary": "2.0L 171马力 L4",
-      "intake": "自然吸气",
-      "fuel_injection": "混合喷射",
-      "rear_suspension": "E型多连杆式独立悬架",
-      "rear_suspension_short": "独立后悬",
-      "drive_type": "前置前驱",
-      "drive_short": "两驱",
-      "fuel_grade": "92#",
-      "feature_highlights": [
-        "7气囊",
-        "全速ACC",
-        "AEB主动刹车",
-        "倒车影像",
-        "手机互联"
-      ],
-      "recommend_reason": "小型SUV，丰田CVT+自然吸气，独立后悬，配7气囊/全速ACC/AEB主动刹车。",
-      "inspection_checklist": [
-        "节假日低频停放必查：现场测12V电瓶健康度SOH（低于60%要求更换），排查有无私接常电记录仪"
-      ],
-      "maintenance_estimate": "约 300-450 元/年",
-      "reliability_notes": [
-        "丰田系成熟CVT，带机械起步/高稳定性",
-        "自然吸气+混合喷射，积碳少且耐静置"
-      ]
-    },
-    "evaluation": "小型SUV，丰田CVT+自然吸气，独立后悬，配7气囊/全速ACC/AEB主动刹车。",
-    "score_reasons": [
-      "现金价 5.19 万（原指导价 15.58 万）",
-      "三大件：2.0L 171马力 L4 · 丰田CVT · 独立后悬 · 两驱 · 92#",
-      "核心配置：7气囊 / 全速ACC / AEB主动刹车 / 倒车影像 / 手机互联"
-    ],
-    "score_warnings": [],
-    "sort_scores": {
-      "score_version": "v3.2.0",
-      "total_score": 67.4,
-      "config_score": 50.9,
-      "config_norm": 50.9,
-      "config_proxy": 50.9,
-      "is_suv": true,
-      "price": 5.19,
-      "effective_price_wan": 5.19,
-      "condition_gate": "PASS",
-      "note": "V3.2 SUV-first modern cabin buyer score_version=v3.2.0; weights={'config': 0.28, 'space': 0.2, 'powertrain': 0.2, 'condition': 0.18, 'value_price': 0.14}; tiered_dmi_admission",
-      "powertrain_score": 96.0,
-      "value_price_score": 69.36,
-      "condition_score": 58.76,
-      "space_score": 69.18,
-      "price_score": 69.36,
-      "operating_cost_score": 48.86,
-      "age_score": 38.67,
-      "mileage_score": 71.08,
-      "body_preference_score": 74.0,
-      "data_quality_score": 95.0,
-      "space_norm": 69.18,
-      "fuel_norm": 48.86,
-      "suv_score": 74.0,
-      "space_proxy": 69.18,
-      "fuel_proxy": 48.86,
-      "msrp_wan": 15.58,
-      "discount_fold": 3.3,
-      "weights": {
-        "config": 0.28,
-        "space": 0.2,
-        "powertrain": 0.2,
-        "condition": 0.18,
-        "value_price": 0.14
-      },
-      "energy": {
-        "cost_yuan_100km": 54.72,
-        "type": "official_nedc_with_uncertainty",
-        "value": 6.84,
-        "unit": "L/100km",
-        "fuel_grade": "92",
-        "scenario": "no_home_charging"
-      },
-      "confidence": {
-        "price": 0.95,
-        "config": 0.721,
-        "energy": 0.55,
-        "core_specs": 0.99,
-        "age": 0.7,
-        "space": 0.825
-      },
-      "reasons": [
-        "现金价 5.19 万（原指导价 15.58 万）",
-        "三大件：2.0L 171马力 L4 · 丰田CVT · 独立后悬 · 两驱 · 92#",
-        "核心配置：7气囊 / 全速ACC / AEB主动刹车 / 倒车影像 / 手机互联"
-      ],
-      "warnings": [],
-      "recommendation_gate": "PASS"
-    },
-    "ingest_status": "added",
-    "display": false,
-    "is_local_wuhan": true,
-    "shop_short_name": "武汉店",
-    "logistics_fee_yuan": 0,
-    "logistics_fee_source": "local_wuhan",
-    "plate_service_fee_yuan": 500,
-    "plate_fee_diff_yuan": 0,
-    "landed_extra_yuan": 0,
-    "landed_extra_wan": 0.0,
-    "landed_price_wan": 5.19,
-    "_age_years": 7.333333333333333,
-    "confidence": {
-      "price": 0.95,
-      "config": 0.721,
-      "energy": 0.55,
-      "core_specs": 0.99,
-      "age": 0.7,
-      "space": 0.825
-    },
-    "library_rank": 112
-  },
-  {
     "sku": "300023691",
     "title": "荣威i5 2020款 1.5L 自动4G互联领豪旗舰版",
     "shop_id": "64909",
@@ -47790,7 +47402,7 @@
       "note": "V3.2 SUV-first modern cabin buyer score_version=v3.2.0; weights={'config': 0.28, 'space': 0.2, 'powertrain': 0.2, 'condition': 0.18, 'value_price': 0.14}; tiered_dmi_admission"
     },
     "ingest_status": "added",
-    "library_rank": 113,
+    "library_rank": 112,
     "display": false,
     "rank": null
   },
@@ -48212,7 +47824,7 @@
       "note": "V3.2 SUV-first modern cabin buyer score_version=v3.2.0; weights={'config': 0.28, 'space': 0.2, 'powertrain': 0.2, 'condition': 0.18, 'value_price': 0.14}; tiered_dmi_admission"
     },
     "ingest_status": "added",
-    "library_rank": 114,
+    "library_rank": 113,
     "display": false,
     "rank": null
   },
@@ -48595,7 +48207,7 @@
       "age": 0.7,
       "space": 0.825
     },
-    "library_rank": 115,
+    "library_rank": 114,
     "is_local_wuhan": true,
     "shop_short_name": "武汉店",
     "logistics_fee_yuan": 0,
@@ -48995,7 +48607,7 @@
       "note": "V3.2 SUV-first modern cabin buyer score_version=v3.2.0; weights={'config': 0.28, 'space': 0.2, 'powertrain': 0.2, 'condition': 0.18, 'value_price': 0.14}; tiered_dmi_admission"
     },
     "ingest_status": "added",
-    "library_rank": 116,
+    "library_rank": 115,
     "display": false,
     "rank": null
   },
@@ -49425,7 +49037,7 @@
       "note": "V3.2 SUV-first modern cabin buyer score_version=v3.2.0; weights={'config': 0.28, 'space': 0.2, 'powertrain': 0.2, 'condition': 0.18, 'value_price': 0.14}; tiered_dmi_admission"
     },
     "ingest_status": "added",
-    "library_rank": 117,
+    "library_rank": 116,
     "display": false,
     "rank": null
   },
@@ -49844,7 +49456,7 @@
       "note": "V3.2 SUV-first modern cabin buyer score_version=v3.2.0; weights={'config': 0.28, 'space': 0.2, 'powertrain': 0.2, 'condition': 0.18, 'value_price': 0.14}; tiered_dmi_admission"
     },
     "ingest_status": "added",
-    "library_rank": 118,
+    "library_rank": 117,
     "display": false,
     "rank": null
   },
@@ -50253,7 +49865,7 @@
     "data_issues": [],
     "config_coverage": 0.8654,
     "energy_confidence": 0.55,
-    "library_rank": 119,
+    "library_rank": 118,
     "display": false,
     "sale_status": "on_sale",
     "recommendation_gate": "PASS",
@@ -50715,7 +50327,7 @@
       "note": "V3.2 SUV-first modern cabin buyer score_version=v3.2.0; weights={'config': 0.28, 'space': 0.2, 'powertrain': 0.2, 'condition': 0.18, 'value_price': 0.14}; tiered_dmi_admission"
     },
     "ingest_status": "added",
-    "library_rank": 120,
+    "library_rank": 119,
     "display": false,
     "rank": null
   },
@@ -51133,7 +50745,7 @@
       "note": "V3.2 SUV-first modern cabin buyer score_version=v3.2.0; weights={'config': 0.28, 'space': 0.2, 'powertrain': 0.2, 'condition': 0.18, 'value_price': 0.14}; tiered_dmi_admission"
     },
     "ingest_status": "added",
-    "library_rank": 121,
+    "library_rank": 120,
     "display": false,
     "rank": null
   },
@@ -51534,7 +51146,7 @@
     "data_issues": [],
     "config_coverage": 0.8173,
     "energy_confidence": 0.55,
-    "library_rank": 122,
+    "library_rank": 121,
     "display": false,
     "sale_status": "on_sale",
     "recommendation_gate": "PASS",
@@ -51978,7 +51590,7 @@
     "data_issues": [],
     "config_coverage": 0.7692,
     "energy_confidence": 0.55,
-    "library_rank": 123,
+    "library_rank": 122,
     "display": false,
     "sale_status": "on_sale",
     "recommendation_gate": "PASS",
@@ -52444,7 +52056,7 @@
       "note": "V3.2 SUV-first modern cabin buyer score_version=v3.2.0; weights={'config': 0.28, 'space': 0.2, 'powertrain': 0.2, 'condition': 0.18, 'value_price': 0.14}; tiered_dmi_admission"
     },
     "ingest_status": "added",
-    "library_rank": 124,
+    "library_rank": 123,
     "display": false,
     "rank": null
   },
@@ -52868,7 +52480,7 @@
       "note": "V3.2 SUV-first modern cabin buyer score_version=v3.2.0; weights={'config': 0.28, 'space': 0.2, 'powertrain': 0.2, 'condition': 0.18, 'value_price': 0.14}; tiered_dmi_admission"
     },
     "ingest_status": "added",
-    "library_rank": 125,
+    "library_rank": 124,
     "display": false,
     "rank": null
   },
@@ -53279,7 +52891,7 @@
     "data_issues": [],
     "config_coverage": 0.7404,
     "energy_confidence": 0.65,
-    "library_rank": 126,
+    "library_rank": 125,
     "display": false,
     "sale_status": "on_sale",
     "recommendation_gate": "PASS",
@@ -53717,7 +53329,7 @@
       "note": "V3.2 SUV-first modern cabin buyer score_version=v3.2.0; weights={'config': 0.28, 'space': 0.2, 'powertrain': 0.2, 'condition': 0.18, 'value_price': 0.14}; tiered_dmi_admission"
     },
     "ingest_status": "added",
-    "library_rank": 127,
+    "library_rank": 126,
     "display": false,
     "rank": null
   },
@@ -54107,7 +53719,7 @@
       "note": "V3.2 SUV-first modern cabin buyer score_version=v3.2.0; weights={'config': 0.28, 'space': 0.2, 'powertrain': 0.2, 'condition': 0.18, 'value_price': 0.14}; tiered_dmi_admission"
     },
     "ingest_status": "added",
-    "library_rank": 128,
+    "library_rank": 127,
     "display": false,
     "rank": null
   },
@@ -54499,7 +54111,7 @@
     "data_issues": [],
     "config_coverage": 0.7788,
     "energy_confidence": 0.65,
-    "library_rank": 129,
+    "library_rank": 128,
     "display": false,
     "cash_price_wan": 5.19,
     "cash_price_fen": 5190000,
@@ -54944,7 +54556,7 @@
       "note": "V3.2 SUV-first modern cabin buyer score_version=v3.2.0; weights={'config': 0.28, 'space': 0.2, 'powertrain': 0.2, 'condition': 0.18, 'value_price': 0.14}; tiered_dmi_admission"
     },
     "ingest_status": "added",
-    "library_rank": 130,
+    "library_rank": 129,
     "display": false,
     "rank": null
   },
@@ -55339,7 +54951,7 @@
       "note": "V3.2 SUV-first modern cabin buyer score_version=v3.2.0; weights={'config': 0.28, 'space': 0.2, 'powertrain': 0.2, 'condition': 0.18, 'value_price': 0.14}; tiered_dmi_admission"
     },
     "ingest_status": "added",
-    "library_rank": 131,
+    "library_rank": 130,
     "display": false,
     "rank": null
   },
@@ -55766,7 +55378,7 @@
       "age": 0.7,
       "space": 0.825
     },
-    "library_rank": 132
+    "library_rank": 131
   },
   {
     "sku": "357192193",
@@ -56167,7 +55779,7 @@
     "data_issues": [],
     "config_coverage": 0.8462,
     "energy_confidence": 0.55,
-    "library_rank": 133,
+    "library_rank": 132,
     "display": false,
     "sale_status": "on_sale",
     "recommendation_gate": "PASS",
@@ -56600,7 +56212,7 @@
       "note": "V3.2 SUV-first modern cabin buyer score_version=v3.2.0; weights={'config': 0.28, 'space': 0.2, 'powertrain': 0.2, 'condition': 0.18, 'value_price': 0.14}; tiered_dmi_admission"
     },
     "ingest_status": "added",
-    "library_rank": 134,
+    "library_rank": 133,
     "display": false,
     "rank": null
   },
@@ -57005,7 +56617,7 @@
     "data_issues": [],
     "config_coverage": 0.7981,
     "energy_confidence": 0.55,
-    "library_rank": 135,
+    "library_rank": 134,
     "display": false,
     "cash_price_wan": 5.39,
     "cash_price_fen": 5390000,
@@ -57474,7 +57086,7 @@
       "age": 0.7,
       "space": 0.825
     },
-    "library_rank": 136,
+    "library_rank": 135,
     "is_local_wuhan": true,
     "shop_short_name": "武汉店",
     "logistics_fee_yuan": 0,
@@ -57873,7 +57485,7 @@
       "note": "V3.2 SUV-first modern cabin buyer score_version=v3.2.0; weights={'config': 0.28, 'space': 0.2, 'powertrain': 0.2, 'condition': 0.18, 'value_price': 0.14}; tiered_dmi_admission"
     },
     "ingest_status": "added",
-    "library_rank": 137,
+    "library_rank": 136,
     "display": false,
     "rank": null
   },
@@ -58283,7 +57895,7 @@
       "age": 0.7,
       "space": 0.825
     },
-    "library_rank": 138,
+    "library_rank": 137,
     "is_local_wuhan": true,
     "shop_short_name": "武汉店",
     "logistics_fee_yuan": 0,
@@ -58709,7 +58321,7 @@
       "note": "V3.2 SUV-first modern cabin buyer score_version=v3.2.0; weights={'config': 0.28, 'space': 0.2, 'powertrain': 0.2, 'condition': 0.18, 'value_price': 0.14}; tiered_dmi_admission"
     },
     "ingest_status": "added",
-    "library_rank": 139,
+    "library_rank": 138,
     "display": false,
     "rank": null
   },
@@ -59108,7 +58720,7 @@
       "note": "V3.2 SUV-first modern cabin buyer score_version=v3.2.0; weights={'config': 0.28, 'space': 0.2, 'powertrain': 0.2, 'condition': 0.18, 'value_price': 0.14}; tiered_dmi_admission"
     },
     "ingest_status": "added",
-    "library_rank": 140,
+    "library_rank": 139,
     "display": false,
     "rank": null
   },
@@ -59526,7 +59138,7 @@
       "note": "V3.2 SUV-first modern cabin buyer score_version=v3.2.0; weights={'config': 0.28, 'space': 0.2, 'powertrain': 0.2, 'condition': 0.18, 'value_price': 0.14}; tiered_dmi_admission"
     },
     "ingest_status": "added",
-    "library_rank": 141,
+    "library_rank": 140,
     "display": false,
     "rank": null
   },
@@ -59924,7 +59536,7 @@
       "note": "V3.2 SUV-first modern cabin buyer score_version=v3.2.0; weights={'config': 0.28, 'space': 0.2, 'powertrain': 0.2, 'condition': 0.18, 'value_price': 0.14}; tiered_dmi_admission"
     },
     "ingest_status": "added",
-    "library_rank": 142,
+    "library_rank": 141,
     "display": false,
     "rank": null
   },
@@ -60341,7 +59953,7 @@
     "data_issues": [],
     "config_coverage": 0.8462,
     "energy_confidence": 0.9,
-    "library_rank": 143,
+    "library_rank": 142,
     "display": false,
     "cash_price_wan": 4.92,
     "cash_price_fen": 4920000,
@@ -60784,7 +60396,7 @@
     "data_issues": [],
     "config_coverage": 0.7404,
     "energy_confidence": 0.65,
-    "library_rank": 144,
+    "library_rank": 143,
     "display": false,
     "cash_price_wan": 4.19,
     "cash_price_fen": 4190000,
@@ -61244,7 +60856,7 @@
     "data_issues": [],
     "config_coverage": 0.7788,
     "energy_confidence": 0.65,
-    "library_rank": 145,
+    "library_rank": 144,
     "display": false,
     "cash_price_wan": 5.12,
     "cash_price_fen": 5120000,
@@ -61677,11 +61289,11 @@
       "discount_fold": 6.8,
       "recommendation_gate": "PASS"
     },
-    "ingest_status": "updated",
+    "ingest_status": "reserved",
     "library_rank": 146,
     "display": false,
     "rank": null,
-    "sale_status": "on_sale",
+    "sale_status": "reserved",
     "recommendation_gate": "PASS",
     "veto_reasons": [],
     "v3_profile": {
@@ -61722,7 +61334,9 @@
     "plate_fee_diff_yuan": 0,
     "landed_extra_yuan": 0,
     "landed_extra_wan": 0.0,
-    "landed_price_wan": 5.39
+    "landed_price_wan": 5.39,
+    "product_status": 5,
+    "status_modify_time": "1795274022"
   },
   {
     "sku": "357589106",
@@ -62109,7 +61723,7 @@
       "note": "V3.2 SUV-first modern cabin buyer score_version=v3.2.0; weights={'config': 0.28, 'space': 0.2, 'powertrain': 0.2, 'condition': 0.18, 'value_price': 0.14}; tiered_dmi_admission"
     },
     "ingest_status": "added",
-    "library_rank": 147,
+    "library_rank": 145,
     "display": false,
     "rank": null
   },
@@ -62498,7 +62112,7 @@
       "recommendation_gate": "PASS"
     },
     "ingest_status": "added",
-    "library_rank": 148,
+    "library_rank": 146,
     "display": false,
     "rank": null,
     "sale_status": "on_sale",
@@ -62924,7 +62538,7 @@
       "note": "V3.2 SUV-first modern cabin buyer score_version=v3.2.0; weights={'config': 0.28, 'space': 0.2, 'powertrain': 0.2, 'condition': 0.18, 'value_price': 0.14}; tiered_dmi_admission"
     },
     "ingest_status": "added",
-    "library_rank": 149,
+    "library_rank": 147,
     "display": false,
     "rank": null
   },
@@ -63304,7 +62918,7 @@
       "age": 0.7,
       "space": 0.825
     },
-    "library_rank": 150,
+    "library_rank": 148,
     "is_local_wuhan": true,
     "shop_short_name": "武汉店",
     "logistics_fee_yuan": 0,
@@ -63726,7 +63340,7 @@
       "note": "V3.2 SUV-first modern cabin buyer score_version=v3.2.0; weights={'config': 0.28, 'space': 0.2, 'powertrain': 0.2, 'condition': 0.18, 'value_price': 0.14}; tiered_dmi_admission"
     },
     "ingest_status": "added",
-    "library_rank": 151,
+    "library_rank": 149,
     "display": false,
     "rank": null
   },
@@ -64119,7 +63733,7 @@
       "note": "V3.2 SUV-first modern cabin buyer score_version=v3.2.0; weights={'config': 0.28, 'space': 0.2, 'powertrain': 0.2, 'condition': 0.18, 'value_price': 0.14}; tiered_dmi_admission"
     },
     "ingest_status": "added",
-    "library_rank": 152,
+    "library_rank": 150,
     "display": false,
     "rank": null
   },
@@ -64522,7 +64136,7 @@
     "data_issues": [],
     "config_coverage": 0.7019,
     "energy_confidence": 0.55,
-    "library_rank": 153,
+    "library_rank": 151,
     "display": false,
     "cash_price_wan": 4.83,
     "cash_price_fen": 4830000,
@@ -64971,7 +64585,7 @@
       "note": "V3.2 SUV-first modern cabin buyer score_version=v3.2.0; weights={'config': 0.28, 'space': 0.2, 'powertrain': 0.2, 'condition': 0.18, 'value_price': 0.14}; tiered_dmi_admission"
     },
     "ingest_status": "added",
-    "library_rank": 154,
+    "library_rank": 152,
     "display": false,
     "rank": null
   },
@@ -65359,7 +64973,7 @@
     "data_issues": [],
     "config_coverage": 0.7308,
     "energy_confidence": 0.55,
-    "library_rank": 155,
+    "library_rank": 153,
     "display": false,
     "sale_status": "on_sale",
     "product_status": 1,
@@ -65831,7 +65445,7 @@
       "age": 0.7,
       "space": 0.825
     },
-    "library_rank": 156
+    "library_rank": 154
   },
   {
     "sku": "357505183",
@@ -66208,7 +65822,7 @@
       "age": 0.7,
       "space": 0.825
     },
-    "library_rank": 157
+    "library_rank": 155
   },
   {
     "sku": "357228241",
@@ -66605,7 +66219,7 @@
     "data_issues": [],
     "config_coverage": 0.8173,
     "energy_confidence": 0.9,
-    "library_rank": 158,
+    "library_rank": 156,
     "display": false,
     "cash_price_wan": 5.79,
     "cash_price_fen": 5790000,
@@ -67048,7 +66662,7 @@
       "note": "V3.2 SUV-first modern cabin buyer score_version=v3.2.0; weights={'config': 0.28, 'space': 0.2, 'powertrain': 0.2, 'condition': 0.18, 'value_price': 0.14}; tiered_dmi_admission"
     },
     "ingest_status": "added",
-    "library_rank": 159,
+    "library_rank": 157,
     "display": false,
     "rank": null
   },
@@ -67465,7 +67079,7 @@
       "age": 0.7,
       "space": 0.825
     },
-    "library_rank": 160
+    "library_rank": 158
   },
   {
     "sku": "357246284",
@@ -67849,7 +67463,7 @@
     "data_issues": [],
     "config_coverage": 0.7404,
     "energy_confidence": 0.55,
-    "library_rank": 161,
+    "library_rank": 159,
     "display": false,
     "sale_status": "on_sale",
     "recommendation_gate": "PASS",
@@ -68280,7 +67894,7 @@
       "age": 0.7,
       "space": 0.825
     },
-    "library_rank": 162,
+    "library_rank": 160,
     "is_local_wuhan": true,
     "shop_short_name": "武汉店",
     "logistics_fee_yuan": 0,
@@ -68704,7 +68318,7 @@
       "note": "V3.2 SUV-first modern cabin buyer score_version=v3.2.0; weights={'config': 0.28, 'space': 0.2, 'powertrain': 0.2, 'condition': 0.18, 'value_price': 0.14}; tiered_dmi_admission"
     },
     "ingest_status": "added",
-    "library_rank": 163,
+    "library_rank": 161,
     "display": false,
     "rank": null
   },
@@ -69065,7 +68679,7 @@
       "recommendation_gate": "PASS"
     },
     "ingest_status": "added",
-    "library_rank": 164,
+    "library_rank": 162,
     "display": false,
     "rank": null,
     "sale_status": "on_sale",
@@ -69521,7 +69135,7 @@
     "data_issues": [],
     "config_coverage": 0.7885,
     "energy_confidence": 0.55,
-    "library_rank": 165,
+    "library_rank": 163,
     "display": false,
     "sale_status": "on_sale",
     "recommendation_gate": "PASS",
@@ -69970,7 +69584,7 @@
       "age": 0.7,
       "space": 0.825
     },
-    "library_rank": 166,
+    "library_rank": 164,
     "is_local_wuhan": true,
     "shop_short_name": "武汉店",
     "logistics_fee_yuan": 0,
@@ -70338,7 +69952,7 @@
       "recommendation_gate": "PASS"
     },
     "ingest_status": "added",
-    "library_rank": 167,
+    "library_rank": 165,
     "display": false,
     "rank": null,
     "sale_status": "on_sale",
@@ -70802,7 +70416,7 @@
       "note": "V3.2 SUV-first modern cabin buyer score_version=v3.2.0; weights={'config': 0.28, 'space': 0.2, 'powertrain': 0.2, 'condition': 0.18, 'value_price': 0.14}; tiered_dmi_admission"
     },
     "ingest_status": "added",
-    "library_rank": 168,
+    "library_rank": 166,
     "display": false,
     "rank": null
   },
@@ -71206,7 +70820,7 @@
     "data_issues": [],
     "config_coverage": 0.7885,
     "energy_confidence": 0.55,
-    "library_rank": 169,
+    "library_rank": 167,
     "display": false,
     "cash_price_wan": 3.19,
     "cash_price_fen": 3190000,
@@ -71677,7 +71291,7 @@
       "note": "V3.2 SUV-first modern cabin buyer score_version=v3.2.0; weights={'config': 0.28, 'space': 0.2, 'powertrain': 0.2, 'condition': 0.18, 'value_price': 0.14}; tiered_dmi_admission"
     },
     "ingest_status": "added",
-    "library_rank": 170,
+    "library_rank": 168,
     "display": false,
     "rank": null
   },
@@ -72064,7 +71678,7 @@
       "recommendation_gate": "PASS"
     },
     "ingest_status": "added",
-    "library_rank": 171,
+    "library_rank": 169,
     "display": false,
     "rank": null,
     "sale_status": "on_sale",
@@ -72513,7 +72127,7 @@
     "data_issues": [],
     "config_coverage": 0.6731,
     "energy_confidence": 0.55,
-    "library_rank": 172,
+    "library_rank": 170,
     "display": false,
     "sale_status": "on_sale",
     "recommendation_gate": "PASS",
@@ -72965,7 +72579,7 @@
     "data_issues": [],
     "config_coverage": 0.8077,
     "energy_confidence": 0.65,
-    "library_rank": 173,
+    "library_rank": 171,
     "display": false,
     "cash_price_wan": 3.76,
     "cash_price_fen": 3760000,
@@ -73439,7 +73053,7 @@
       "note": "V3.2 SUV-first modern cabin buyer score_version=v3.2.0; weights={'config': 0.28, 'space': 0.2, 'powertrain': 0.2, 'condition': 0.18, 'value_price': 0.14}; tiered_dmi_admission"
     },
     "ingest_status": "added",
-    "library_rank": 174,
+    "library_rank": 172,
     "display": false,
     "rank": null
   },
@@ -73838,7 +73452,7 @@
       "age": 0.7,
       "space": 0.825
     },
-    "library_rank": 175
+    "library_rank": 173
   },
   {
     "sku": "357275248",
@@ -74235,7 +73849,7 @@
     "data_issues": [],
     "config_coverage": 0.7404,
     "energy_confidence": 0.55,
-    "library_rank": 176,
+    "library_rank": 174,
     "display": false,
     "sale_status": "on_sale",
     "recommendation_gate": "PASS",
@@ -74666,7 +74280,7 @@
       "note": "V3.2 SUV-first modern cabin buyer score_version=v3.2.0; weights={'config': 0.28, 'space': 0.2, 'powertrain': 0.2, 'condition': 0.18, 'value_price': 0.14}; tiered_dmi_admission"
     },
     "ingest_status": "added",
-    "library_rank": 177,
+    "library_rank": 175,
     "display": false,
     "rank": null
   },
@@ -75074,7 +74688,7 @@
     "data_issues": [],
     "config_coverage": 0.7404,
     "energy_confidence": 0.55,
-    "library_rank": 178,
+    "library_rank": 176,
     "display": false,
     "cash_price_wan": 3.89,
     "cash_price_fen": 3890000,
@@ -75548,7 +75162,7 @@
       "note": "V3.2 SUV-first modern cabin buyer score_version=v3.2.0; weights={'config': 0.28, 'space': 0.2, 'powertrain': 0.2, 'condition': 0.18, 'value_price': 0.14}; tiered_dmi_admission"
     },
     "ingest_status": "added",
-    "library_rank": 179,
+    "library_rank": 177,
     "display": false,
     "rank": null
   },
@@ -75969,7 +75583,7 @@
       "note": "V3.2 SUV-first modern cabin buyer score_version=v3.2.0; weights={'config': 0.28, 'space': 0.2, 'powertrain': 0.2, 'condition': 0.18, 'value_price': 0.14}; tiered_dmi_admission"
     },
     "ingest_status": "added",
-    "library_rank": 180,
+    "library_rank": 178,
     "display": false,
     "rank": null
   },
@@ -76391,7 +76005,7 @@
       "note": "V3.2 SUV-first modern cabin buyer score_version=v3.2.0; weights={'config': 0.28, 'space': 0.2, 'powertrain': 0.2, 'condition': 0.18, 'value_price': 0.14}; tiered_dmi_admission"
     },
     "ingest_status": "added",
-    "library_rank": 181,
+    "library_rank": 179,
     "display": false,
     "rank": null
   },
@@ -76805,7 +76419,7 @@
       "age": 0.7,
       "space": 0.825
     },
-    "library_rank": 182,
+    "library_rank": 180,
     "is_local_wuhan": true,
     "shop_short_name": "武汉店",
     "logistics_fee_yuan": 0,
@@ -77220,7 +76834,7 @@
     "data_issues": [],
     "config_coverage": 0.7404,
     "energy_confidence": 0.65,
-    "library_rank": 183,
+    "library_rank": 181,
     "display": false,
     "sale_status": "on_sale",
     "cash_price_wan": 4.29,
@@ -77668,7 +77282,7 @@
       "note": "V3.2 SUV-first modern cabin buyer score_version=v3.2.0; weights={'config': 0.28, 'space': 0.2, 'powertrain': 0.2, 'condition': 0.18, 'value_price': 0.14}; tiered_dmi_admission"
     },
     "ingest_status": "added",
-    "library_rank": 184,
+    "library_rank": 182,
     "display": false,
     "rank": null
   },
@@ -78083,7 +77697,7 @@
       "note": "V3.2 SUV-first modern cabin buyer score_version=v3.2.0; weights={'config': 0.28, 'space': 0.2, 'powertrain': 0.2, 'condition': 0.18, 'value_price': 0.14}; tiered_dmi_admission"
     },
     "ingest_status": "added",
-    "library_rank": 185,
+    "library_rank": 183,
     "display": false,
     "rank": null
   },
@@ -78474,7 +78088,7 @@
       "note": "V3.2 SUV-first modern cabin buyer score_version=v3.2.0; weights={'config': 0.28, 'space': 0.2, 'powertrain': 0.2, 'condition': 0.18, 'value_price': 0.14}; tiered_dmi_admission"
     },
     "ingest_status": "added",
-    "library_rank": 186,
+    "library_rank": 184,
     "display": false,
     "rank": null
   },
@@ -78857,7 +78471,7 @@
     "data_issues": [],
     "config_coverage": 0.6635,
     "energy_confidence": 0.55,
-    "library_rank": 187,
+    "library_rank": 185,
     "display": false,
     "cash_price_wan": 4.19,
     "cash_price_fen": 4190000,
@@ -79304,7 +78918,7 @@
       "note": "V3.2 SUV-first modern cabin buyer score_version=v3.2.0; weights={'config': 0.28, 'space': 0.2, 'powertrain': 0.2, 'condition': 0.18, 'value_price': 0.14}; tiered_dmi_admission"
     },
     "ingest_status": "added",
-    "library_rank": 188,
+    "library_rank": 186,
     "display": false,
     "rank": null
   },
@@ -79734,7 +79348,7 @@
     "ingest_status": "added",
     "display": false,
     "rank": null,
-    "library_rank": 189
+    "library_rank": 187
   },
   {
     "sku": "357602790",
@@ -80126,7 +79740,7 @@
       "note": "V3.2 SUV-first modern cabin buyer score_version=v3.2.0; weights={'config': 0.28, 'space': 0.2, 'powertrain': 0.2, 'condition': 0.18, 'value_price': 0.14}; tiered_dmi_admission"
     },
     "ingest_status": "added",
-    "library_rank": 190,
+    "library_rank": 188,
     "display": false,
     "rank": null
   },
@@ -80530,7 +80144,7 @@
     "data_issues": [],
     "config_coverage": 0.7788,
     "energy_confidence": 0.65,
-    "library_rank": 191,
+    "library_rank": 189,
     "display": false,
     "cash_price_wan": 4.69,
     "cash_price_fen": 4690000,
@@ -80999,7 +80613,7 @@
       "note": "V3.2 SUV-first modern cabin buyer score_version=v3.2.0; weights={'config': 0.28, 'space': 0.2, 'powertrain': 0.2, 'condition': 0.18, 'value_price': 0.14}; tiered_dmi_admission"
     },
     "ingest_status": "added",
-    "library_rank": 192,
+    "library_rank": 190,
     "display": false,
     "rank": null
   },
@@ -81394,7 +81008,7 @@
       "note": "V3.2 SUV-first modern cabin buyer score_version=v3.2.0; weights={'config': 0.28, 'space': 0.2, 'powertrain': 0.2, 'condition': 0.18, 'value_price': 0.14}; tiered_dmi_admission"
     },
     "ingest_status": "added",
-    "library_rank": 193,
+    "library_rank": 191,
     "display": false,
     "rank": null
   },
@@ -81781,7 +81395,7 @@
       "note": "V3.2 SUV-first modern cabin buyer score_version=v3.2.0; weights={'config': 0.28, 'space': 0.2, 'powertrain': 0.2, 'condition': 0.18, 'value_price': 0.14}; tiered_dmi_admission"
     },
     "ingest_status": "added",
-    "library_rank": 194,
+    "library_rank": 192,
     "display": false,
     "rank": null
   },
@@ -82199,7 +81813,7 @@
       "note": "V3.2 SUV-first modern cabin buyer score_version=v3.2.0; weights={'config': 0.28, 'space': 0.2, 'powertrain': 0.2, 'condition': 0.18, 'value_price': 0.14}; tiered_dmi_admission"
     },
     "ingest_status": "added",
-    "library_rank": 195,
+    "library_rank": 193,
     "display": false,
     "rank": null
   },
@@ -82584,7 +82198,7 @@
       "age": 0.7,
       "space": 0.825
     },
-    "library_rank": 196,
+    "library_rank": 194,
     "is_local_wuhan": true,
     "shop_short_name": "武汉店",
     "logistics_fee_yuan": 0,
@@ -83010,7 +82624,7 @@
       "note": "V3.2 SUV-first modern cabin buyer score_version=v3.2.0; weights={'config': 0.28, 'space': 0.2, 'powertrain': 0.2, 'condition': 0.18, 'value_price': 0.14}; tiered_dmi_admission"
     },
     "ingest_status": "added",
-    "library_rank": 197,
+    "library_rank": 195,
     "display": false,
     "rank": null
   },
@@ -83414,7 +83028,7 @@
     "data_issues": [],
     "config_coverage": 0.8173,
     "energy_confidence": 0.55,
-    "library_rank": 198,
+    "library_rank": 196,
     "display": false,
     "cash_price_wan": 3.99,
     "cash_price_fen": 3990000,
@@ -83856,7 +83470,7 @@
       "note": "V3.2 SUV-first modern cabin buyer score_version=v3.2.0; weights={'config': 0.28, 'space': 0.2, 'powertrain': 0.2, 'condition': 0.18, 'value_price': 0.14}; tiered_dmi_admission"
     },
     "ingest_status": "added",
-    "library_rank": 199,
+    "library_rank": 197,
     "display": false,
     "rank": null
   },
@@ -84247,7 +83861,7 @@
       "note": "V3.2 SUV-first modern cabin buyer score_version=v3.2.0; weights={'config': 0.28, 'space': 0.2, 'powertrain': 0.2, 'condition': 0.18, 'value_price': 0.14}; tiered_dmi_admission"
     },
     "ingest_status": "added",
-    "library_rank": 200,
+    "library_rank": 198,
     "display": false,
     "rank": null
   },
@@ -84662,7 +84276,7 @@
       "age": 0.7,
       "space": 0.825
     },
-    "library_rank": 201,
+    "library_rank": 199,
     "is_local_wuhan": true,
     "shop_short_name": "武汉店",
     "logistics_fee_yuan": 0,
@@ -85096,7 +84710,7 @@
       "age": 0.7,
       "space": 0.825
     },
-    "library_rank": 202
+    "library_rank": 200
   },
   {
     "sku": "357507533",
@@ -85484,7 +85098,7 @@
       "age": 0.7,
       "space": 0.825
     },
-    "library_rank": 203
+    "library_rank": 201
   },
   {
     "sku": "356939164",
@@ -85888,7 +85502,7 @@
     "data_issues": [],
     "config_coverage": 0.7019,
     "energy_confidence": 0.55,
-    "library_rank": 204,
+    "library_rank": 202,
     "display": false,
     "cash_price_wan": 4.39,
     "cash_price_fen": 4390000,
@@ -86357,7 +85971,7 @@
       "note": "V3.2 SUV-first modern cabin buyer score_version=v3.2.0; weights={'config': 0.28, 'space': 0.2, 'powertrain': 0.2, 'condition': 0.18, 'value_price': 0.14}; tiered_dmi_admission"
     },
     "ingest_status": "added",
-    "library_rank": 205,
+    "library_rank": 203,
     "display": false,
     "rank": null
   },
@@ -86747,7 +86361,7 @@
       "note": "V3.2 SUV-first modern cabin buyer score_version=v3.2.0; weights={'config': 0.28, 'space': 0.2, 'powertrain': 0.2, 'condition': 0.18, 'value_price': 0.14}; tiered_dmi_admission"
     },
     "ingest_status": "added",
-    "library_rank": 206,
+    "library_rank": 204,
     "display": false,
     "rank": null
   },
@@ -87109,7 +86723,7 @@
       "recommendation_gate": "PASS"
     },
     "ingest_status": "updated_price",
-    "library_rank": 207,
+    "library_rank": 205,
     "display": false,
     "rank": null,
     "sale_status": "on_sale",
@@ -87556,7 +87170,7 @@
       "age": 0.7,
       "space": 0.825
     },
-    "library_rank": 208,
+    "library_rank": 206,
     "is_local_wuhan": true,
     "shop_short_name": "武汉店",
     "logistics_fee_yuan": 0,
@@ -87980,7 +87594,7 @@
       "note": "V3.2 SUV-first modern cabin buyer score_version=v3.2.0; weights={'config': 0.28, 'space': 0.2, 'powertrain': 0.2, 'condition': 0.18, 'value_price': 0.14}; tiered_dmi_admission"
     },
     "ingest_status": "added",
-    "library_rank": 209,
+    "library_rank": 207,
     "display": false,
     "rank": null
   },
@@ -88399,7 +88013,7 @@
       "age": 0.7,
       "space": 0.825
     },
-    "library_rank": 210
+    "library_rank": 208
   },
   {
     "sku": "357097453",
@@ -88786,7 +88400,7 @@
       "note": "V3.2 SUV-first modern cabin buyer score_version=v3.2.0; weights={'config': 0.28, 'space': 0.2, 'powertrain': 0.2, 'condition': 0.18, 'value_price': 0.14}; tiered_dmi_admission"
     },
     "ingest_status": "added",
-    "library_rank": 211,
+    "library_rank": 209,
     "display": false,
     "rank": null
   },
@@ -89177,7 +88791,7 @@
       "note": "V3.2 SUV-first modern cabin buyer score_version=v3.2.0; weights={'config': 0.28, 'space': 0.2, 'powertrain': 0.2, 'condition': 0.18, 'value_price': 0.14}; tiered_dmi_admission"
     },
     "ingest_status": "added",
-    "library_rank": 212,
+    "library_rank": 210,
     "display": false,
     "rank": null
   },
@@ -89594,7 +89208,7 @@
       "note": "V3.2 SUV-first modern cabin buyer score_version=v3.2.0; weights={'config': 0.28, 'space': 0.2, 'powertrain': 0.2, 'condition': 0.18, 'value_price': 0.14}; tiered_dmi_admission"
     },
     "ingest_status": "added",
-    "library_rank": 213,
+    "library_rank": 211,
     "display": false,
     "rank": null
   },
@@ -90010,7 +89624,7 @@
       "note": "V3.2 SUV-first modern cabin buyer score_version=v3.2.0; weights={'config': 0.28, 'space': 0.2, 'powertrain': 0.2, 'condition': 0.18, 'value_price': 0.14}; tiered_dmi_admission"
     },
     "ingest_status": "added",
-    "library_rank": 214,
+    "library_rank": 212,
     "display": false,
     "rank": null
   },
@@ -90398,7 +90012,7 @@
       "note": "V3.2 SUV-first modern cabin buyer score_version=v3.2.0; weights={'config': 0.28, 'space': 0.2, 'powertrain': 0.2, 'condition': 0.18, 'value_price': 0.14}; tiered_dmi_admission"
     },
     "ingest_status": "added",
-    "library_rank": 215,
+    "library_rank": 213,
     "display": false,
     "rank": null
   },
@@ -90796,7 +90410,7 @@
       "note": "V3.2 SUV-first modern cabin buyer score_version=v3.2.0; weights={'config': 0.28, 'space': 0.2, 'powertrain': 0.2, 'condition': 0.18, 'value_price': 0.14}; tiered_dmi_admission"
     },
     "ingest_status": "added",
-    "library_rank": 216,
+    "library_rank": 214,
     "display": false,
     "rank": null
   },
@@ -91219,7 +90833,7 @@
       "note": "V3.2 SUV-first modern cabin buyer score_version=v3.2.0; weights={'config': 0.28, 'space': 0.2, 'powertrain': 0.2, 'condition': 0.18, 'value_price': 0.14}; tiered_dmi_admission"
     },
     "ingest_status": "added",
-    "library_rank": 217,
+    "library_rank": 215,
     "display": false,
     "rank": null
   },
@@ -91642,7 +91256,7 @@
       "note": "V3.2 SUV-first modern cabin buyer score_version=v3.2.0; weights={'config': 0.28, 'space': 0.2, 'powertrain': 0.2, 'condition': 0.18, 'value_price': 0.14}; tiered_dmi_admission"
     },
     "ingest_status": "added",
-    "library_rank": 218,
+    "library_rank": 216,
     "display": false,
     "rank": null
   },
@@ -92045,7 +91659,7 @@
     "data_issues": [],
     "config_coverage": 0.7596,
     "energy_confidence": 0.65,
-    "library_rank": 219,
+    "library_rank": 217,
     "display": false,
     "cash_price_wan": 3.99,
     "cash_price_fen": 3990000,
@@ -92483,7 +92097,7 @@
       "note": "V3.2 SUV-first modern cabin buyer score_version=v3.2.0; weights={'config': 0.28, 'space': 0.2, 'powertrain': 0.2, 'condition': 0.18, 'value_price': 0.14}; tiered_dmi_admission"
     },
     "ingest_status": "added",
-    "library_rank": 220,
+    "library_rank": 218,
     "display": false,
     "rank": null
   },
@@ -92903,7 +92517,7 @@
       "note": "V3.2 SUV-first modern cabin buyer score_version=v3.2.0; weights={'config': 0.28, 'space': 0.2, 'powertrain': 0.2, 'condition': 0.18, 'value_price': 0.14}; tiered_dmi_admission"
     },
     "ingest_status": "added",
-    "library_rank": 221,
+    "library_rank": 219,
     "display": false,
     "rank": null
   },
@@ -93334,7 +92948,7 @@
       "age": 0.7,
       "space": 0.825
     },
-    "library_rank": 222
+    "library_rank": 220
   },
   {
     "sku": "357616503",
@@ -93751,7 +93365,7 @@
       "age": 0.7,
       "space": 0.825
     },
-    "library_rank": 223
+    "library_rank": 221
   },
   {
     "sku": "357491729",
@@ -94131,7 +93745,7 @@
       "note": "V3.2 SUV-first modern cabin buyer score_version=v3.2.0; weights={'config': 0.28, 'space': 0.2, 'powertrain': 0.2, 'condition': 0.18, 'value_price': 0.14}; tiered_dmi_admission"
     },
     "ingest_status": "added",
-    "library_rank": 224,
+    "library_rank": 222,
     "display": false,
     "rank": null
   },
@@ -94520,7 +94134,7 @@
       "note": "V3.2 SUV-first modern cabin buyer score_version=v3.2.0; weights={'config': 0.28, 'space': 0.2, 'powertrain': 0.2, 'condition': 0.18, 'value_price': 0.14}; tiered_dmi_admission"
     },
     "ingest_status": "added",
-    "library_rank": 225,
+    "library_rank": 223,
     "display": false,
     "rank": null
   },
@@ -94949,7 +94563,7 @@
       "note": "V3.2 SUV-first modern cabin buyer score_version=v3.2.0; weights={'config': 0.28, 'space': 0.2, 'powertrain': 0.2, 'condition': 0.18, 'value_price': 0.14}; tiered_dmi_admission"
     },
     "ingest_status": "added",
-    "library_rank": 226,
+    "library_rank": 224,
     "display": false,
     "rank": null
   },
@@ -95356,7 +94970,7 @@
     "data_issues": [],
     "config_coverage": 0.7596,
     "energy_confidence": 0.55,
-    "library_rank": 227,
+    "library_rank": 225,
     "display": false,
     "sale_status": "on_sale",
     "recommendation_gate": "PASS",
@@ -95785,7 +95399,7 @@
       "note": "V3.2 SUV-first modern cabin buyer score_version=v3.2.0; weights={'config': 0.28, 'space': 0.2, 'powertrain': 0.2, 'condition': 0.18, 'value_price': 0.14}; tiered_dmi_admission"
     },
     "ingest_status": "added",
-    "library_rank": 228,
+    "library_rank": 226,
     "display": false,
     "rank": null
   },
@@ -96203,7 +95817,7 @@
       "note": "V3.2 SUV-first modern cabin buyer score_version=v3.2.0; weights={'config': 0.28, 'space': 0.2, 'powertrain': 0.2, 'condition': 0.18, 'value_price': 0.14}; tiered_dmi_admission"
     },
     "ingest_status": "added",
-    "library_rank": 229,
+    "library_rank": 227,
     "display": false,
     "rank": null
   },
@@ -96618,7 +96232,7 @@
       "note": "V3.2 SUV-first modern cabin buyer score_version=v3.2.0; weights={'config': 0.28, 'space': 0.2, 'powertrain': 0.2, 'condition': 0.18, 'value_price': 0.14}; tiered_dmi_admission"
     },
     "ingest_status": "added",
-    "library_rank": 230,
+    "library_rank": 228,
     "display": false,
     "rank": null
   },
@@ -97048,7 +96662,7 @@
       "age": 0.7,
       "space": 0.825
     },
-    "library_rank": 231
+    "library_rank": 229
   },
   {
     "sku": "357572113",
@@ -97436,7 +97050,7 @@
       "note": "V3.2 SUV-first modern cabin buyer score_version=v3.2.0; weights={'config': 0.28, 'space': 0.2, 'powertrain': 0.2, 'condition': 0.18, 'value_price': 0.14}; tiered_dmi_admission"
     },
     "ingest_status": "added",
-    "library_rank": 232,
+    "library_rank": 230,
     "display": false,
     "rank": null
   },
@@ -97824,7 +97438,7 @@
       "note": "V3.2 SUV-first modern cabin buyer score_version=v3.2.0; weights={'config': 0.28, 'space': 0.2, 'powertrain': 0.2, 'condition': 0.18, 'value_price': 0.14}; tiered_dmi_admission"
     },
     "ingest_status": "added",
-    "library_rank": 233,
+    "library_rank": 231,
     "display": false,
     "rank": null
   },
@@ -98213,7 +97827,7 @@
       "note": "V3.2 SUV-first modern cabin buyer score_version=v3.2.0; weights={'config': 0.28, 'space': 0.2, 'powertrain': 0.2, 'condition': 0.18, 'value_price': 0.14}; tiered_dmi_admission"
     },
     "ingest_status": "added",
-    "library_rank": 234,
+    "library_rank": 232,
     "display": false,
     "rank": null
   },
@@ -98602,7 +98216,7 @@
       "note": "V3.2 SUV-first modern cabin buyer score_version=v3.2.0; weights={'config': 0.28, 'space': 0.2, 'powertrain': 0.2, 'condition': 0.18, 'value_price': 0.14}; tiered_dmi_admission"
     },
     "ingest_status": "added",
-    "library_rank": 235,
+    "library_rank": 233,
     "display": false,
     "rank": null
   },
@@ -99005,7 +98619,7 @@
       "age": 0.7,
       "space": 0.825
     },
-    "library_rank": 236,
+    "library_rank": 234,
     "is_local_wuhan": true,
     "shop_short_name": "武汉店",
     "logistics_fee_yuan": 0,
@@ -99411,7 +99025,7 @@
     "data_issues": [],
     "config_coverage": 0.8846,
     "energy_confidence": 0.65,
-    "library_rank": 237,
+    "library_rank": 235,
     "display": false,
     "cash_price_wan": 5.79,
     "cash_price_fen": 5790000,
@@ -99873,7 +99487,7 @@
       "age": 0.7,
       "space": 0.825
     },
-    "library_rank": 238,
+    "library_rank": 236,
     "is_local_wuhan": true,
     "shop_short_name": "武汉店",
     "logistics_fee_yuan": 0,
@@ -100297,7 +99911,7 @@
       "note": "V3.2 SUV-first modern cabin buyer score_version=v3.2.0; weights={'config': 0.28, 'space': 0.2, 'powertrain': 0.2, 'condition': 0.18, 'value_price': 0.14}; tiered_dmi_admission"
     },
     "ingest_status": "added",
-    "library_rank": 239,
+    "library_rank": 237,
     "display": false,
     "rank": null
   },
@@ -100715,7 +100329,7 @@
       "note": "V3.2 SUV-first modern cabin buyer score_version=v3.2.0; weights={'config': 0.28, 'space': 0.2, 'powertrain': 0.2, 'condition': 0.18, 'value_price': 0.14}; tiered_dmi_admission"
     },
     "ingest_status": "added",
-    "library_rank": 240,
+    "library_rank": 238,
     "display": false,
     "rank": null
   },
@@ -101131,7 +100745,7 @@
       "note": "V3.2 SUV-first modern cabin buyer score_version=v3.2.0; weights={'config': 0.28, 'space': 0.2, 'powertrain': 0.2, 'condition': 0.18, 'value_price': 0.14}; tiered_dmi_admission"
     },
     "ingest_status": "added",
-    "library_rank": 241,
+    "library_rank": 239,
     "display": false,
     "rank": null
   },
@@ -101549,7 +101163,7 @@
       "note": "V3.2 SUV-first modern cabin buyer score_version=v3.2.0; weights={'config': 0.28, 'space': 0.2, 'powertrain': 0.2, 'condition': 0.18, 'value_price': 0.14}; tiered_dmi_admission"
     },
     "ingest_status": "added",
-    "library_rank": 242,
+    "library_rank": 240,
     "display": false,
     "rank": null
   },
@@ -101965,7 +101579,7 @@
       "note": "V3.2 SUV-first modern cabin buyer score_version=v3.2.0; weights={'config': 0.28, 'space': 0.2, 'powertrain': 0.2, 'condition': 0.18, 'value_price': 0.14}; tiered_dmi_admission"
     },
     "ingest_status": "added",
-    "library_rank": 243,
+    "library_rank": 241,
     "display": false,
     "rank": null
   },
@@ -102377,7 +101991,7 @@
       "note": "V3.2 SUV-first modern cabin buyer score_version=v3.2.0; weights={'config': 0.28, 'space': 0.2, 'powertrain': 0.2, 'condition': 0.18, 'value_price': 0.14}; tiered_dmi_admission"
     },
     "ingest_status": "added",
-    "library_rank": 244,
+    "library_rank": 242,
     "display": false,
     "rank": null
   },
@@ -102795,7 +102409,7 @@
       "note": "V3.2 SUV-first modern cabin buyer score_version=v3.2.0; weights={'config': 0.28, 'space': 0.2, 'powertrain': 0.2, 'condition': 0.18, 'value_price': 0.14}; tiered_dmi_admission"
     },
     "ingest_status": "added",
-    "library_rank": 245,
+    "library_rank": 243,
     "display": false,
     "rank": null
   },
@@ -103215,7 +102829,7 @@
       "note": "V3.2 SUV-first modern cabin buyer score_version=v3.2.0; weights={'config': 0.28, 'space': 0.2, 'powertrain': 0.2, 'condition': 0.18, 'value_price': 0.14}; tiered_dmi_admission"
     },
     "ingest_status": "added",
-    "library_rank": 246,
+    "library_rank": 244,
     "display": false,
     "rank": null
   },
@@ -103603,7 +103217,7 @@
       "note": "V3.2 SUV-first modern cabin buyer score_version=v3.2.0; weights={'config': 0.28, 'space': 0.2, 'powertrain': 0.2, 'condition': 0.18, 'value_price': 0.14}; tiered_dmi_admission"
     },
     "ingest_status": "added",
-    "library_rank": 247,
+    "library_rank": 245,
     "display": false,
     "rank": null
   },
@@ -104019,7 +103633,7 @@
       "note": "V3.2 SUV-first modern cabin buyer score_version=v3.2.0; weights={'config': 0.28, 'space': 0.2, 'powertrain': 0.2, 'condition': 0.18, 'value_price': 0.14}; tiered_dmi_admission"
     },
     "ingest_status": "added",
-    "library_rank": 248,
+    "library_rank": 246,
     "display": false,
     "rank": null
   },
@@ -104437,7 +104051,7 @@
       "note": "V3.2 SUV-first modern cabin buyer score_version=v3.2.0; weights={'config': 0.28, 'space': 0.2, 'powertrain': 0.2, 'condition': 0.18, 'value_price': 0.14}; tiered_dmi_admission"
     },
     "ingest_status": "added",
-    "library_rank": 249,
+    "library_rank": 247,
     "display": false,
     "rank": null
   },
@@ -104855,7 +104469,7 @@
       "note": "V3.2 SUV-first modern cabin buyer score_version=v3.2.0; weights={'config': 0.28, 'space': 0.2, 'powertrain': 0.2, 'condition': 0.18, 'value_price': 0.14}; tiered_dmi_admission"
     },
     "ingest_status": "added",
-    "library_rank": 250,
+    "library_rank": 248,
     "display": false,
     "rank": null
   },
@@ -105271,7 +104885,7 @@
       "note": "V3.2 SUV-first modern cabin buyer score_version=v3.2.0; weights={'config': 0.28, 'space': 0.2, 'powertrain': 0.2, 'condition': 0.18, 'value_price': 0.14}; tiered_dmi_admission"
     },
     "ingest_status": "added",
-    "library_rank": 251,
+    "library_rank": 249,
     "display": false,
     "rank": null
   },
@@ -105660,7 +105274,7 @@
       "note": "V3.2 SUV-first modern cabin buyer score_version=v3.2.0; weights={'config': 0.28, 'space': 0.2, 'powertrain': 0.2, 'condition': 0.18, 'value_price': 0.14}; tiered_dmi_admission"
     },
     "ingest_status": "added",
-    "library_rank": 252,
+    "library_rank": 250,
     "display": false,
     "rank": null
   },
@@ -106039,7 +105653,7 @@
       "age": 0.7,
       "space": 0.825
     },
-    "library_rank": 253,
+    "library_rank": 251,
     "is_local_wuhan": true,
     "shop_short_name": "武汉店",
     "logistics_fee_yuan": 0,
@@ -106468,7 +106082,7 @@
       "note": "V3.2 SUV-first modern cabin buyer score_version=v3.2.0; weights={'config': 0.28, 'space': 0.2, 'powertrain': 0.2, 'condition': 0.18, 'value_price': 0.14}; tiered_dmi_admission"
     },
     "ingest_status": "added",
-    "library_rank": 254,
+    "library_rank": 252,
     "display": false,
     "rank": null
   },
@@ -106877,7 +106491,7 @@
       "age": 0.7,
       "space": 0.825
     },
-    "library_rank": 255,
+    "library_rank": 253,
     "is_local_wuhan": true,
     "shop_short_name": "武汉店",
     "logistics_fee_yuan": 0,
@@ -107299,7 +106913,7 @@
     "data_issues": [],
     "config_coverage": 0.6923,
     "energy_confidence": 0.65,
-    "library_rank": 256,
+    "library_rank": 254,
     "display": false,
     "cash_price_wan": 5.69,
     "cash_price_fen": 5690000,
@@ -107770,7 +107384,7 @@
       "note": "V3.2 SUV-first modern cabin buyer score_version=v3.2.0; weights={'config': 0.28, 'space': 0.2, 'powertrain': 0.2, 'condition': 0.18, 'value_price': 0.14}; tiered_dmi_admission"
     },
     "ingest_status": "added",
-    "library_rank": 257,
+    "library_rank": 255,
     "display": false,
     "rank": null
   },
@@ -108185,7 +107799,7 @@
       "note": "V3.2 SUV-first modern cabin buyer score_version=v3.2.0; weights={'config': 0.28, 'space': 0.2, 'powertrain': 0.2, 'condition': 0.18, 'value_price': 0.14}; tiered_dmi_admission"
     },
     "ingest_status": "added",
-    "library_rank": 258,
+    "library_rank": 256,
     "display": false,
     "rank": null
   },
@@ -108602,7 +108216,7 @@
       "note": "V3.2 SUV-first modern cabin buyer score_version=v3.2.0; weights={'config': 0.28, 'space': 0.2, 'powertrain': 0.2, 'condition': 0.18, 'value_price': 0.14}; tiered_dmi_admission"
     },
     "ingest_status": "added",
-    "library_rank": 259,
+    "library_rank": 257,
     "display": false,
     "rank": null
   },
@@ -108978,7 +108592,7 @@
       "age": 0.7,
       "space": 0.825
     },
-    "library_rank": 260,
+    "library_rank": 258,
     "is_local_wuhan": true,
     "shop_short_name": "武汉店",
     "logistics_fee_yuan": 0,
@@ -109389,7 +109003,7 @@
       "note": "V3.2 SUV-first modern cabin buyer score_version=v3.2.0; weights={'config': 0.28, 'space': 0.2, 'powertrain': 0.2, 'condition': 0.18, 'value_price': 0.14}; tiered_dmi_admission"
     },
     "ingest_status": "added",
-    "library_rank": 261,
+    "library_rank": 259,
     "display": false,
     "rank": null
   },
@@ -109791,7 +109405,7 @@
       "note": "V3.2 SUV-first modern cabin buyer score_version=v3.2.0; weights={'config': 0.28, 'space': 0.2, 'powertrain': 0.2, 'condition': 0.18, 'value_price': 0.14}; tiered_dmi_admission"
     },
     "ingest_status": "added",
-    "library_rank": 262,
+    "library_rank": 260,
     "display": false,
     "rank": null
   },
@@ -110150,7 +109764,7 @@
       "recommendation_gate": "PASS"
     },
     "ingest_status": "added",
-    "library_rank": 263,
+    "library_rank": 261,
     "display": false,
     "rank": null,
     "sale_status": "on_sale",
@@ -110622,7 +110236,7 @@
       "age": 0.7,
       "space": 0.825
     },
-    "library_rank": 264
+    "library_rank": 262
   },
   {
     "sku": "357567803",
@@ -111038,7 +110652,7 @@
       "age": 0.7,
       "space": 0.825
     },
-    "library_rank": 265,
+    "library_rank": 263,
     "is_local_wuhan": true,
     "shop_short_name": "武汉店",
     "logistics_fee_yuan": 0,
@@ -111457,7 +111071,7 @@
     "data_issues": [],
     "config_coverage": 0.8462,
     "energy_confidence": 0.55,
-    "library_rank": 266,
+    "library_rank": 264,
     "display": false,
     "cash_price_wan": 3.69,
     "cash_price_fen": 3690000,
@@ -111902,7 +111516,7 @@
       "note": "V3.2 SUV-first modern cabin buyer score_version=v3.2.0; weights={'config': 0.28, 'space': 0.2, 'powertrain': 0.2, 'condition': 0.18, 'value_price': 0.14}; tiered_dmi_admission"
     },
     "ingest_status": "added",
-    "library_rank": 267,
+    "library_rank": 265,
     "display": false,
     "rank": null
   },
@@ -112309,7 +111923,7 @@
       "age": 0.7,
       "space": 0.825
     },
-    "library_rank": 268,
+    "library_rank": 266,
     "is_local_wuhan": true,
     "shop_short_name": "武汉店",
     "logistics_fee_yuan": 0,
@@ -112730,7 +112344,7 @@
       "note": "V3.2 SUV-first modern cabin buyer score_version=v3.2.0; weights={'config': 0.28, 'space': 0.2, 'powertrain': 0.2, 'condition': 0.18, 'value_price': 0.14}; tiered_dmi_admission"
     },
     "ingest_status": "added",
-    "library_rank": 269,
+    "library_rank": 267,
     "display": false,
     "rank": null
   },
@@ -112748,7 +112362,8 @@
     "year": "2018年/8.53万公里",
     "city": "郑州",
     "tags": [
-      "0.5万首付"
+      "0.5万首付",
+      "直降1900元"
     ],
     "badges": [
       "直营"
@@ -112757,16 +112372,16 @@
     "source_type": "2",
     "source_type_name": "自营-个人",
     "fuel_form": "1",
-    "cover": "https://p3-dcd-sign.byteimg.com/tos-cn-i-f042mdwyw7/38e8a86d68044c8bb983563bb10281aa~tplv-f042mdwyw7-auto-webp:480:0.jpg?rk3s=4892dee6&x-expires=1796476219&x-signature=JbdaO1NaRHuFqPW2QUCXfIdk7ZQ%3D&psm=motor.sh.pack",
+    "cover": "https://p3-dcd-sign.byteimg.com/tos-cn-i-f042mdwyw7/38e8a86d68044c8bb983563bb10281aa~tplv-f042mdwyw7-auto-webp:480:0.jpg?rk3s=4892dee6&x-expires=1796521894&x-signature=S9YLXkWqzIC02AlgTJMqsRZrBfo%3D&psm=motor.sh.pack",
     "detail_url": "https://m.dcdapp.com/motor/feoffline/usedcar_detail/detail.html?sku_id=300022628&shop_id=175870",
-    "list_price_wan": 2.59,
+    "list_price_wan": 2.7,
     "first_registration_time": "1514995200",
     "price_type": "现金价",
     "prefix": "现金价",
-    "cash_price_fen": 2890000,
-    "cash_price_str": "2.89",
-    "cash_price_wan": 2.89,
-    "price": 2.89,
+    "cash_price_fen": 2700000,
+    "cash_price_str": "2.70",
+    "cash_price_wan": 2.7,
+    "price": 2.7,
     "detail_shop_id": "175870",
     "sale_status": "on_sale",
     "product_status": 1,
@@ -112779,7 +112394,7 @@
     "landed_extra_yuan": 1700,
     "landed_extra_wan": 0.17,
     "delivery_eta": "1-3日送达",
-    "landed_price_wan": 3.06,
+    "landed_price_wan": 2.87,
     "specs": {
       "length_mm": 4625,
       "width_mm": 1790,
@@ -112992,8 +112607,8 @@
       "has_fixed_cruise": true,
       "live_spec_id": 25939
     },
-    "display_price_wan": 2.89,
-    "effective_price_wan": 3.06,
+    "display_price_wan": 2.7,
+    "effective_price_wan": 2.87,
     "price_confidence": 0.95,
     "needs_cash_quote": false,
     "price_basis": "cash_plus_landed",
@@ -113010,16 +112625,16 @@
     "energy_confidence": 0.55,
     "_age_years": 8.333333333333334,
     "score_version": "v3.2.0",
-    "score_v1": 59.9,
-    "total_score": 53.8,
+    "score_v1": null,
+    "total_score": 54.0,
     "condition_gate": "PASS",
     "recommendation_gate": "PASS",
     "veto_reasons": [],
     "v3_profile": {
       "archetype_badge": "四驱长途SUV",
       "msrp_wan": 15.28,
-      "discount_fold": 2.0,
-      "saved_wan": 12.22,
+      "discount_fold": 1.9,
+      "saved_wan": 12.41,
       "powertrain_summary": "2.0L 144马力 L4 · 成熟CVT · 独立后悬 · 四驱 · 92#",
       "gearbox_tier": "CVT",
       "gearbox_label": "成熟CVT",
@@ -113048,7 +112663,7 @@
     },
     "evaluation": "紧凑型SUV，成熟CVT+自然吸气，独立后悬，配倒车影像/手机互联。",
     "score_reasons": [
-      "到汉可比价 3.06 万（裸车 2.89 万 + 物流1200元/上牌差500元，指导价 15.28 万）",
+      "到汉可比价 2.87 万（裸车 2.70 万 + 物流1200元/上牌差500元，指导价 15.28 万）",
       "三大件：2.0L 144马力 L4 · 成熟CVT · 独立后悬 · 四驱 · 92#",
       "核心配置：倒车影像 / 手机互联"
     ],
@@ -113063,13 +112678,13 @@
     },
     "sort_scores": {
       "score_version": "v3.2.0",
-      "total_score": 53.8,
+      "total_score": 54.0,
       "powertrain_score": 91.0,
       "config_score": 23.5,
-      "value_price_score": 94.42,
+      "value_price_score": 95.63,
       "condition_score": 26.33,
       "space_score": 85.81,
-      "price_score": 94.42,
+      "price_score": 95.63,
       "operating_cost_score": 26.59,
       "age_score": 23.33,
       "mileage_score": 28.17,
@@ -113083,10 +112698,10 @@
       "space_proxy": 85.81,
       "fuel_proxy": 26.59,
       "is_suv": true,
-      "price": 2.89,
-      "effective_price_wan": 3.06,
+      "price": 2.7,
+      "effective_price_wan": 2.87,
       "msrp_wan": 15.28,
-      "discount_fold": 2.0,
+      "discount_fold": 1.9,
       "weights": {
         "config": 0.28,
         "space": 0.2,
@@ -113111,7 +112726,7 @@
         "space": 0.825
       },
       "reasons": [
-        "到汉可比价 3.06 万（裸车 2.89 万 + 物流1200元/上牌差500元，指导价 15.28 万）",
+        "到汉可比价 2.87 万（裸车 2.70 万 + 物流1200元/上牌差500元，指导价 15.28 万）",
         "三大件：2.0L 144马力 L4 · 成熟CVT · 独立后悬 · 四驱 · 92#",
         "核心配置：倒车影像 / 手机互联"
       ],
@@ -113120,8 +112735,8 @@
       "recommendation_gate": "PASS",
       "note": "V3.2 SUV-first modern cabin buyer score_version=v3.2.0; weights={'config': 0.28, 'space': 0.2, 'powertrain': 0.2, 'condition': 0.18, 'value_price': 0.14}; tiered_dmi_admission"
     },
-    "ingest_status": "added",
-    "library_rank": 270,
+    "ingest_status": "updated_price",
+    "library_rank": 268,
     "display": false,
     "rank": null
   },
@@ -113537,7 +113152,7 @@
       "note": "V3.2 SUV-first modern cabin buyer score_version=v3.2.0; weights={'config': 0.28, 'space': 0.2, 'powertrain': 0.2, 'condition': 0.18, 'value_price': 0.14}; tiered_dmi_admission"
     },
     "ingest_status": "added",
-    "library_rank": 271,
+    "library_rank": 269,
     "display": false,
     "rank": null
   },
@@ -113958,7 +113573,7 @@
       "note": "V3.2 SUV-first modern cabin buyer score_version=v3.2.0; weights={'config': 0.28, 'space': 0.2, 'powertrain': 0.2, 'condition': 0.18, 'value_price': 0.14}; tiered_dmi_admission"
     },
     "ingest_status": "added",
-    "library_rank": 272,
+    "library_rank": 270,
     "display": false,
     "rank": null
   },
@@ -114345,7 +113960,7 @@
       "note": "V3.2 SUV-first modern cabin buyer score_version=v3.2.0; weights={'config': 0.28, 'space': 0.2, 'powertrain': 0.2, 'condition': 0.18, 'value_price': 0.14}; tiered_dmi_admission"
     },
     "ingest_status": "added",
-    "library_rank": 273,
+    "library_rank": 271,
     "display": false,
     "rank": null
   },
@@ -114769,7 +114384,7 @@
       "note": "V3.2 SUV-first modern cabin buyer score_version=v3.2.0; weights={'config': 0.28, 'space': 0.2, 'powertrain': 0.2, 'condition': 0.18, 'value_price': 0.14}; tiered_dmi_admission"
     },
     "ingest_status": "added",
-    "library_rank": 274,
+    "library_rank": 272,
     "display": false,
     "rank": null
   },
@@ -115195,7 +114810,7 @@
       "note": "V3.2 SUV-first modern cabin buyer score_version=v3.2.0; weights={'config': 0.28, 'space': 0.2, 'powertrain': 0.2, 'condition': 0.18, 'value_price': 0.14}; tiered_dmi_admission"
     },
     "ingest_status": "added",
-    "library_rank": 275,
+    "library_rank": 273,
     "display": false,
     "rank": null
   },
@@ -115596,7 +115211,7 @@
     "data_issues": [],
     "config_coverage": 0.8173,
     "energy_confidence": 0.55,
-    "library_rank": 276,
+    "library_rank": 274,
     "display": false,
     "cash_price_wan": 4.21,
     "cash_price_fen": 4210000,
@@ -116037,7 +115652,7 @@
       "note": "V3.2 SUV-first modern cabin buyer score_version=v3.2.0; weights={'config': 0.28, 'space': 0.2, 'powertrain': 0.2, 'condition': 0.18, 'value_price': 0.14}; tiered_dmi_admission"
     },
     "ingest_status": "added",
-    "library_rank": 277,
+    "library_rank": 275,
     "display": false,
     "rank": null
   },
@@ -116465,7 +116080,7 @@
       "age": 0.7,
       "space": 0.825
     },
-    "library_rank": 278
+    "library_rank": 276
   },
   {
     "sku": "357001085",
@@ -116854,7 +116469,7 @@
       "age": 0.7,
       "space": 0.825
     },
-    "library_rank": 279,
+    "library_rank": 277,
     "is_local_wuhan": true,
     "shop_short_name": "武汉店",
     "logistics_fee_yuan": 0,
@@ -117277,7 +116892,7 @@
       "note": "V3.2 SUV-first modern cabin buyer score_version=v3.2.0; weights={'config': 0.28, 'space': 0.2, 'powertrain': 0.2, 'condition': 0.18, 'value_price': 0.14}; tiered_dmi_admission"
     },
     "ingest_status": "added",
-    "library_rank": 280,
+    "library_rank": 278,
     "display": false,
     "rank": null
   },
@@ -117706,7 +117321,7 @@
       "age": 0.7,
       "space": 0.825
     },
-    "library_rank": 281
+    "library_rank": 279
   },
   {
     "sku": "300009255",
@@ -118103,7 +117718,7 @@
       "note": "V3.2 SUV-first modern cabin buyer score_version=v3.2.0; weights={'config': 0.28, 'space': 0.2, 'powertrain': 0.2, 'condition': 0.18, 'value_price': 0.14}; tiered_dmi_admission"
     },
     "ingest_status": "added",
-    "library_rank": 282,
+    "library_rank": 280,
     "display": false,
     "rank": null
   },
@@ -118529,7 +118144,7 @@
       "age": 0.7,
       "space": 0.825
     },
-    "library_rank": 283
+    "library_rank": 281
   },
   {
     "sku": "357178943",
@@ -118916,7 +118531,7 @@
     "data_issues": [],
     "config_coverage": 0.6923,
     "energy_confidence": 0.65,
-    "library_rank": 284,
+    "library_rank": 282,
     "display": false,
     "cash_price_wan": 4.63,
     "cash_price_fen": 4630000,
@@ -119380,7 +118995,7 @@
       "note": "V3.2 SUV-first modern cabin buyer score_version=v3.2.0; weights={'config': 0.28, 'space': 0.2, 'powertrain': 0.2, 'condition': 0.18, 'value_price': 0.14}; tiered_dmi_admission"
     },
     "ingest_status": "added",
-    "library_rank": 285,
+    "library_rank": 283,
     "display": false,
     "rank": null
   },
@@ -119765,7 +119380,7 @@
     "data_issues": [],
     "config_coverage": 0.6923,
     "energy_confidence": 0.55,
-    "library_rank": 286,
+    "library_rank": 284,
     "display": false,
     "cash_price_wan": 4.19,
     "cash_price_fen": 4190000,
@@ -120205,7 +119820,7 @@
       "note": "V3.2 SUV-first modern cabin buyer score_version=v3.2.0; weights={'config': 0.28, 'space': 0.2, 'powertrain': 0.2, 'condition': 0.18, 'value_price': 0.14}; tiered_dmi_admission"
     },
     "ingest_status": "added",
-    "library_rank": 287,
+    "library_rank": 285,
     "display": false,
     "rank": null
   },
@@ -120635,7 +120250,7 @@
       "note": "V3.2 SUV-first modern cabin buyer score_version=v3.2.0; weights={'config': 0.28, 'space': 0.2, 'powertrain': 0.2, 'condition': 0.18, 'value_price': 0.14}; tiered_dmi_admission"
     },
     "ingest_status": "added",
-    "library_rank": 288,
+    "library_rank": 286,
     "display": false,
     "rank": null
   },
@@ -121021,7 +120636,7 @@
       "age": 0.7,
       "space": 0.825
     },
-    "library_rank": 289
+    "library_rank": 287
   },
   {
     "sku": "300010990",
@@ -121436,7 +121051,7 @@
       "note": "V3.2 SUV-first modern cabin buyer score_version=v3.2.0; weights={'config': 0.28, 'space': 0.2, 'powertrain': 0.2, 'condition': 0.18, 'value_price': 0.14}; tiered_dmi_admission"
     },
     "ingest_status": "added",
-    "library_rank": 290,
+    "library_rank": 288,
     "display": false,
     "rank": null
   },
@@ -121823,7 +121438,7 @@
       "note": "V3.2 SUV-first modern cabin buyer score_version=v3.2.0; weights={'config': 0.28, 'space': 0.2, 'powertrain': 0.2, 'condition': 0.18, 'value_price': 0.14}; tiered_dmi_admission"
     },
     "ingest_status": "added",
-    "library_rank": 291,
+    "library_rank": 289,
     "display": false,
     "rank": null
   },
@@ -122212,7 +121827,7 @@
       "note": "V3.2 SUV-first modern cabin buyer score_version=v3.2.0; weights={'config': 0.28, 'space': 0.2, 'powertrain': 0.2, 'condition': 0.18, 'value_price': 0.14}; tiered_dmi_admission"
     },
     "ingest_status": "added",
-    "library_rank": 292,
+    "library_rank": 290,
     "display": false,
     "rank": null
   },
@@ -122610,7 +122225,7 @@
       "note": "V3.2 SUV-first modern cabin buyer score_version=v3.2.0; weights={'config': 0.28, 'space': 0.2, 'powertrain': 0.2, 'condition': 0.18, 'value_price': 0.14}; tiered_dmi_admission"
     },
     "ingest_status": "added",
-    "library_rank": 293,
+    "library_rank": 291,
     "display": false,
     "rank": null
   },
@@ -123026,7 +122641,7 @@
       "note": "V3.2 SUV-first modern cabin buyer score_version=v3.2.0; weights={'config': 0.28, 'space': 0.2, 'powertrain': 0.2, 'condition': 0.18, 'value_price': 0.14}; tiered_dmi_admission"
     },
     "ingest_status": "added",
-    "library_rank": 294,
+    "library_rank": 292,
     "display": false,
     "rank": null
   },
@@ -123425,7 +123040,7 @@
       "age": 0.7,
       "space": 0.825
     },
-    "library_rank": 295
+    "library_rank": 293
   },
   {
     "sku": "357184176",
@@ -123811,7 +123426,7 @@
     "data_issues": [],
     "config_coverage": 0.75,
     "energy_confidence": 0.55,
-    "library_rank": 296,
+    "library_rank": 294,
     "display": false,
     "cash_price_wan": 4.69,
     "cash_price_fen": 4690000,
@@ -124223,7 +123838,7 @@
       "recommendation_gate": "PASS"
     },
     "ingest_status": "added",
-    "library_rank": 297,
+    "library_rank": 295,
     "display": false,
     "rank": null,
     "sale_status": "on_sale",
@@ -124664,7 +124279,7 @@
     "data_issues": [],
     "config_coverage": 0.6827,
     "energy_confidence": 0.55,
-    "library_rank": 298,
+    "library_rank": 296,
     "display": false,
     "cash_price_wan": 1.79,
     "cash_price_fen": 1790000,
@@ -125140,7 +124755,7 @@
       "note": "V3.2 SUV-first modern cabin buyer score_version=v3.2.0; weights={'config': 0.28, 'space': 0.2, 'powertrain': 0.2, 'condition': 0.18, 'value_price': 0.14}; tiered_dmi_admission"
     },
     "ingest_status": "added",
-    "library_rank": 299,
+    "library_rank": 297,
     "display": false,
     "rank": null
   },
@@ -125499,7 +125114,7 @@
       "recommendation_gate": "PASS"
     },
     "ingest_status": "added",
-    "library_rank": 300,
+    "library_rank": 298,
     "display": false,
     "rank": null,
     "sale_status": "on_sale",
@@ -125931,7 +125546,7 @@
       "note": "V3.2 SUV-first modern cabin buyer score_version=v3.2.0; weights={'config': 0.28, 'space': 0.2, 'powertrain': 0.2, 'condition': 0.18, 'value_price': 0.14}; tiered_dmi_admission"
     },
     "ingest_status": "added",
-    "library_rank": 301,
+    "library_rank": 299,
     "display": false,
     "rank": null
   },
@@ -126320,7 +125935,7 @@
     "data_issues": [],
     "config_coverage": 0.7212,
     "energy_confidence": 0.55,
-    "library_rank": 302,
+    "library_rank": 300,
     "display": false,
     "sale_status": "on_sale",
     "recommendation_gate": "PASS",
@@ -126759,7 +126374,7 @@
       "note": "V3.2 SUV-first modern cabin buyer score_version=v3.2.0; weights={'config': 0.28, 'space': 0.2, 'powertrain': 0.2, 'condition': 0.18, 'value_price': 0.14}; tiered_dmi_admission"
     },
     "ingest_status": "added",
-    "library_rank": 303,
+    "library_rank": 301,
     "display": false,
     "rank": null
   },
@@ -127145,7 +126760,7 @@
       "note": "V3.2 SUV-first modern cabin buyer score_version=v3.2.0; weights={'config': 0.28, 'space': 0.2, 'powertrain': 0.2, 'condition': 0.18, 'value_price': 0.14}; tiered_dmi_admission"
     },
     "ingest_status": "added",
-    "library_rank": 304,
+    "library_rank": 302,
     "display": false,
     "rank": null
   },
@@ -127553,7 +127168,7 @@
       "age": 0.7,
       "space": 0.825
     },
-    "library_rank": 305,
+    "library_rank": 303,
     "is_local_wuhan": true,
     "shop_short_name": "武汉店",
     "logistics_fee_yuan": 0,
@@ -127987,7 +127602,7 @@
       "note": "V3.2 SUV-first modern cabin buyer score_version=v3.2.0; weights={'config': 0.28, 'space': 0.2, 'powertrain': 0.2, 'condition': 0.18, 'value_price': 0.14}; tiered_dmi_admission"
     },
     "ingest_status": "added",
-    "library_rank": 306,
+    "library_rank": 304,
     "display": false,
     "rank": null
   },
@@ -128383,7 +127998,7 @@
       "note": "V3.2 SUV-first modern cabin buyer score_version=v3.2.0; weights={'config': 0.28, 'space': 0.2, 'powertrain': 0.2, 'condition': 0.18, 'value_price': 0.14}; tiered_dmi_admission"
     },
     "ingest_status": "added",
-    "library_rank": 307,
+    "library_rank": 305,
     "display": false,
     "rank": null
   },
@@ -128802,7 +128417,7 @@
       "note": "V3.2 SUV-first modern cabin buyer score_version=v3.2.0; weights={'config': 0.28, 'space': 0.2, 'powertrain': 0.2, 'condition': 0.18, 'value_price': 0.14}; tiered_dmi_admission"
     },
     "ingest_status": "added",
-    "library_rank": 308,
+    "library_rank": 306,
     "display": false,
     "rank": null
   },
@@ -129189,7 +128804,7 @@
       "age": 0.7,
       "space": 0.825
     },
-    "library_rank": 309,
+    "library_rank": 307,
     "is_local_wuhan": true,
     "shop_short_name": "武汉店",
     "logistics_fee_yuan": 0,
@@ -129587,7 +129202,7 @@
       "age": 0.7,
       "space": 0.825
     },
-    "library_rank": 310,
+    "library_rank": 308,
     "is_local_wuhan": true,
     "shop_short_name": "武汉店",
     "logistics_fee_yuan": 0,
@@ -129983,7 +129598,7 @@
       "note": "V3.2 SUV-first modern cabin buyer score_version=v3.2.0; weights={'config': 0.28, 'space': 0.2, 'powertrain': 0.2, 'condition': 0.18, 'value_price': 0.14}; tiered_dmi_admission"
     },
     "ingest_status": "added",
-    "library_rank": 311,
+    "library_rank": 309,
     "display": false,
     "rank": null
   },
@@ -130414,7 +130029,7 @@
       "note": "V3.2 SUV-first modern cabin buyer score_version=v3.2.0; weights={'config': 0.28, 'space': 0.2, 'powertrain': 0.2, 'condition': 0.18, 'value_price': 0.14}; tiered_dmi_admission"
     },
     "ingest_status": "added",
-    "library_rank": 312,
+    "library_rank": 310,
     "display": false,
     "rank": null
   },
@@ -130807,7 +130422,7 @@
       "note": "V3.2 SUV-first modern cabin buyer score_version=v3.2.0; weights={'config': 0.28, 'space': 0.2, 'powertrain': 0.2, 'condition': 0.18, 'value_price': 0.14}; tiered_dmi_admission"
     },
     "ingest_status": "added",
-    "library_rank": 313,
+    "library_rank": 311,
     "display": false,
     "rank": null
   },
@@ -131237,7 +130852,7 @@
       "age": 0.7,
       "space": 0.825
     },
-    "library_rank": 314
+    "library_rank": 312
   },
   {
     "sku": "357449892",
@@ -131667,7 +131282,7 @@
       "note": "V3.2 SUV-first modern cabin buyer score_version=v3.2.0; weights={'config': 0.28, 'space': 0.2, 'powertrain': 0.2, 'condition': 0.18, 'value_price': 0.14}; tiered_dmi_admission"
     },
     "ingest_status": "added",
-    "library_rank": 315,
+    "library_rank": 313,
     "display": false,
     "rank": null
   },
@@ -132083,7 +131698,7 @@
       "note": "V3.2 SUV-first modern cabin buyer score_version=v3.2.0; weights={'config': 0.28, 'space': 0.2, 'powertrain': 0.2, 'condition': 0.18, 'value_price': 0.14}; tiered_dmi_admission"
     },
     "ingest_status": "added",
-    "library_rank": 316,
+    "library_rank": 314,
     "display": false,
     "rank": null
   },
@@ -132496,7 +132111,7 @@
       "note": "V3.2 SUV-first modern cabin buyer score_version=v3.2.0; weights={'config': 0.28, 'space': 0.2, 'powertrain': 0.2, 'condition': 0.18, 'value_price': 0.14}; tiered_dmi_admission"
     },
     "ingest_status": "added",
-    "library_rank": 317,
+    "library_rank": 315,
     "display": false,
     "rank": null
   },
@@ -132913,7 +132528,7 @@
       "note": "V3.2 SUV-first modern cabin buyer score_version=v3.2.0; weights={'config': 0.28, 'space': 0.2, 'powertrain': 0.2, 'condition': 0.18, 'value_price': 0.14}; tiered_dmi_admission"
     },
     "ingest_status": "added",
-    "library_rank": 318,
+    "library_rank": 316,
     "display": false,
     "rank": null
   },
@@ -133339,7 +132954,7 @@
       "note": "V3.2 SUV-first modern cabin buyer score_version=v3.2.0; weights={'config': 0.28, 'space': 0.2, 'powertrain': 0.2, 'condition': 0.18, 'value_price': 0.14}; tiered_dmi_admission"
     },
     "ingest_status": "added",
-    "library_rank": 319,
+    "library_rank": 317,
     "display": false,
     "rank": null
   },
@@ -133756,7 +133371,7 @@
       "note": "V3.2 SUV-first modern cabin buyer score_version=v3.2.0; weights={'config': 0.28, 'space': 0.2, 'powertrain': 0.2, 'condition': 0.18, 'value_price': 0.14}; tiered_dmi_admission"
     },
     "ingest_status": "added",
-    "library_rank": 320,
+    "library_rank": 318,
     "display": false,
     "rank": null
   },
@@ -134135,7 +133750,7 @@
       "age": 0.7,
       "space": 0.825
     },
-    "library_rank": 321,
+    "library_rank": 319,
     "is_local_wuhan": true,
     "shop_short_name": "武汉店",
     "logistics_fee_yuan": 0,
@@ -134532,7 +134147,7 @@
       "note": "V3.2 SUV-first modern cabin buyer score_version=v3.2.0; weights={'config': 0.28, 'space': 0.2, 'powertrain': 0.2, 'condition': 0.18, 'value_price': 0.14}; tiered_dmi_admission"
     },
     "ingest_status": "added",
-    "library_rank": 322,
+    "library_rank": 320,
     "display": false,
     "rank": null
   },
@@ -134924,7 +134539,7 @@
       "note": "V3.2 SUV-first modern cabin buyer score_version=v3.2.0; weights={'config': 0.28, 'space': 0.2, 'powertrain': 0.2, 'condition': 0.18, 'value_price': 0.14}; tiered_dmi_admission"
     },
     "ingest_status": "added",
-    "library_rank": 323,
+    "library_rank": 321,
     "display": false,
     "rank": null
   },
@@ -135326,7 +134941,7 @@
     "data_issues": [],
     "config_coverage": 0.8077,
     "energy_confidence": 0.55,
-    "library_rank": 324,
+    "library_rank": 322,
     "display": false,
     "cash_price_wan": 3.39,
     "cash_price_fen": 3390000,
@@ -135768,7 +135383,7 @@
       "note": "V3.2 SUV-first modern cabin buyer score_version=v3.2.0; weights={'config': 0.28, 'space': 0.2, 'powertrain': 0.2, 'condition': 0.18, 'value_price': 0.14}; tiered_dmi_admission"
     },
     "ingest_status": "added",
-    "library_rank": 325,
+    "library_rank": 323,
     "display": false,
     "rank": null
   },
@@ -136184,7 +135799,7 @@
       "note": "V3.2 SUV-first modern cabin buyer score_version=v3.2.0; weights={'config': 0.28, 'space': 0.2, 'powertrain': 0.2, 'condition': 0.18, 'value_price': 0.14}; tiered_dmi_admission"
     },
     "ingest_status": "added",
-    "library_rank": 326,
+    "library_rank": 324,
     "display": false,
     "rank": null
   },
@@ -136596,7 +136211,7 @@
       "note": "V3.2 SUV-first modern cabin buyer score_version=v3.2.0; weights={'config': 0.28, 'space': 0.2, 'powertrain': 0.2, 'condition': 0.18, 'value_price': 0.14}; tiered_dmi_admission"
     },
     "ingest_status": "added",
-    "library_rank": 327,
+    "library_rank": 325,
     "display": false,
     "rank": null
   },
@@ -136974,7 +136589,7 @@
       "age": 0.7,
       "space": 0.825
     },
-    "library_rank": 328,
+    "library_rank": 326,
     "is_local_wuhan": true,
     "shop_short_name": "武汉店",
     "logistics_fee_yuan": 0,
@@ -137367,7 +136982,7 @@
       "note": "V3.2 SUV-first modern cabin buyer score_version=v3.2.0; weights={'config': 0.28, 'space': 0.2, 'powertrain': 0.2, 'condition': 0.18, 'value_price': 0.14}; tiered_dmi_admission"
     },
     "ingest_status": "added",
-    "library_rank": 329,
+    "library_rank": 327,
     "display": false,
     "rank": null
   },
@@ -137784,7 +137399,7 @@
       "age": 0.7,
       "space": 0.825
     },
-    "library_rank": 330
+    "library_rank": 328
   },
   {
     "sku": "357263877",
@@ -138185,7 +137800,7 @@
     "data_issues": [],
     "config_coverage": 0.8173,
     "energy_confidence": 0.55,
-    "library_rank": 331,
+    "library_rank": 329,
     "display": false,
     "sale_status": "on_sale",
     "recommendation_gate": "PASS",
@@ -138623,7 +138238,7 @@
     "data_issues": [],
     "config_coverage": 0.8462,
     "energy_confidence": 0.55,
-    "library_rank": 332,
+    "library_rank": 330,
     "display": false,
     "sale_status": "on_sale",
     "recommendation_gate": "PASS",
@@ -139075,7 +138690,7 @@
     "data_issues": [],
     "config_coverage": 0.7885,
     "energy_confidence": 0.55,
-    "library_rank": 333,
+    "library_rank": 331,
     "display": false,
     "cash_price_wan": 5.59,
     "cash_price_fen": 5590000,
@@ -139526,7 +139141,7 @@
     "data_issues": [],
     "config_coverage": 0.7212,
     "energy_confidence": 0.55,
-    "library_rank": 334,
+    "library_rank": 332,
     "display": false,
     "cash_price_wan": 3.59,
     "cash_price_fen": 3590000,
@@ -139937,7 +139552,7 @@
       "recommendation_gate": "PASS"
     },
     "ingest_status": "added",
-    "library_rank": 335,
+    "library_rank": 333,
     "display": false,
     "rank": null,
     "sale_status": "on_sale",
@@ -140365,7 +139980,7 @@
       "note": "V3.2 SUV-first modern cabin buyer score_version=v3.2.0; weights={'config': 0.28, 'space': 0.2, 'powertrain': 0.2, 'condition': 0.18, 'value_price': 0.14}; tiered_dmi_admission"
     },
     "ingest_status": "added",
-    "library_rank": 336,
+    "library_rank": 334,
     "display": false,
     "rank": null
   },
@@ -140787,7 +140402,7 @@
       "note": "V3.2 SUV-first modern cabin buyer score_version=v3.2.0; weights={'config': 0.28, 'space': 0.2, 'powertrain': 0.2, 'condition': 0.18, 'value_price': 0.14}; tiered_dmi_admission"
     },
     "ingest_status": "added",
-    "library_rank": 337,
+    "library_rank": 335,
     "display": false,
     "rank": null
   },
@@ -141187,7 +140802,7 @@
     "data_issues": [],
     "config_coverage": 0.8173,
     "energy_confidence": 0.55,
-    "library_rank": 338,
+    "library_rank": 336,
     "display": false,
     "cash_price_wan": 1.46,
     "cash_price_fen": 1460000,
@@ -141629,7 +141244,7 @@
       "age": 0.7,
       "space": 0.825
     },
-    "library_rank": 339
+    "library_rank": 337
   },
   {
     "sku": "300018628",
@@ -142013,7 +141628,7 @@
       "note": "V3.2 SUV-first modern cabin buyer score_version=v3.2.0; weights={'config': 0.28, 'space': 0.2, 'powertrain': 0.2, 'condition': 0.18, 'value_price': 0.14}; tiered_dmi_admission"
     },
     "ingest_status": "added",
-    "library_rank": 340,
+    "library_rank": 338,
     "display": false,
     "rank": null
   },
@@ -142422,7 +142037,7 @@
       "note": "V3.2 SUV-first modern cabin buyer score_version=v3.2.0; weights={'config': 0.28, 'space': 0.2, 'powertrain': 0.2, 'condition': 0.18, 'value_price': 0.14}; tiered_dmi_admission"
     },
     "ingest_status": "added",
-    "library_rank": 341,
+    "library_rank": 339,
     "display": false,
     "rank": null
   },
@@ -142834,7 +142449,7 @@
       "note": "V3.2 SUV-first modern cabin buyer score_version=v3.2.0; weights={'config': 0.28, 'space': 0.2, 'powertrain': 0.2, 'condition': 0.18, 'value_price': 0.14}; tiered_dmi_admission"
     },
     "ingest_status": "added",
-    "library_rank": 342,
+    "library_rank": 340,
     "display": false,
     "rank": null
   },
@@ -143253,7 +142868,7 @@
       "age": 0.7,
       "space": 0.825
     },
-    "library_rank": 343
+    "library_rank": 341
   },
   {
     "sku": "300022115",
@@ -143663,7 +143278,7 @@
       "note": "V3.2 SUV-first modern cabin buyer score_version=v3.2.0; weights={'config': 0.28, 'space': 0.2, 'powertrain': 0.2, 'condition': 0.18, 'value_price': 0.14}; tiered_dmi_admission"
     },
     "ingest_status": "added",
-    "library_rank": 344,
+    "library_rank": 342,
     "display": false,
     "rank": null
   },
@@ -144119,28 +143734,26 @@
     "sku": "357250766",
     "title": "影豹 2023款 270T DCT J15版",
     "price": 4.99,
-    "price_type": "标价",
-    "prefix": "分期价",
+    "price_type": "现金价",
+    "prefix": "现金价",
     "extra": "领券优惠价",
     "extras": [
       "领券优惠价",
       "分期直减2000元"
     ],
-    "year": "2023年 / 7.50万公里 / 武汉",
+    "year": "2023年/7.50万公里",
     "plate_year": 2023,
     "model_year": 2023,
     "mileage_wan": 7.5,
     "city": "武汉",
     "tags": [
-      "性价比极佳",
-      "放心检7.4分",
-      "咨询飙升"
+      "0.5万首付"
     ],
     "badges": [
       "官方保",
       "直营"
     ],
-    "cover": "https://p9-dcd-sign.byteimg.com/tos-cn-i-f042mdwyw7/9aa6ba4bb9d14b3e9262c10928058e6e~tplv-resize:800:0.image?lk3s=416a877a&x-expires=1796200574&x-signature=PAGKgf%2F3bgxbeXkk9x40HJRPNR0%3D&psm=motor.sophon.product",
+    "cover": "https://p9-dcd-sign.byteimg.com/tos-cn-i-f042mdwyw7/9aa6ba4bb9d14b3e9262c10928058e6e~tplv-f042mdwyw7-auto-webp:480:0.jpg?rk3s=4892dee6&x-expires=1796521831&x-signature=uAwDiNtC1fjFIMnZtGdg1NepmpY%3D&psm=motor.sh.pack",
     "detail_url": "https://m.dcdapp.com/motor/feoffline/usedcar_detail/detail.html?sku_id=357250766&shop_id=118608",
     "shop_id": "118608",
     "image_file": "/workspace/dongchedi-wuhan-shop/images/357250766.jpg",
@@ -144148,26 +143761,29 @@
     "sort_scores": {
       "score_version": "v3.2.0",
       "total_score": 70.8,
+      "powertrain_score": 79.0,
       "config_score": 83.6,
-      "config_norm": 83.6,
-      "config_proxy": 83.6,
-      "is_suv": false,
-      "price": 4.99,
-      "effective_price_wan": 4.99,
-      "condition_gate": "PASS",
-      "note": "V3.2 SUV-first modern cabin buyer score_version=v3.2.0; weights={'config': 0.28, 'space': 0.2, 'powertrain': 0.2, 'condition': 0.18, 'value_price': 0.14}; tiered_dmi_admission",
+      "value_price_score": 70.48,
+      "condition_score": 58.75,
+      "space_score": 56.85,
       "price_score": 70.48,
       "operating_cost_score": 48.54,
-      "space_score": 56.85,
       "age_score": 91.0,
       "mileage_score": 41.0,
       "body_preference_score": 45.0,
       "data_quality_score": 95.0,
+      "config_norm": 83.6,
       "space_norm": 56.85,
       "fuel_norm": 48.54,
       "suv_score": 45.0,
+      "config_proxy": 83.6,
       "space_proxy": 56.85,
       "fuel_proxy": 48.54,
+      "is_suv": false,
+      "price": 4.99,
+      "effective_price_wan": 4.99,
+      "msrp_wan": 11.8,
+      "discount_fold": 4.2,
       "weights": {
         "config": 0.28,
         "space": 0.2,
@@ -144184,7 +143800,7 @@
         "scenario": "no_home_charging"
       },
       "confidence": {
-        "price": 0.9,
+        "price": 0.95,
         "config": 0.837,
         "energy": 0.65,
         "core_specs": 0.99,
@@ -144199,12 +143815,9 @@
       "warnings": [
         "年均里程约2.2万km偏高，重点排查高频使用磨损与非营运性质"
       ],
-      "powertrain_score": 79.0,
-      "value_price_score": 70.48,
-      "condition_score": 58.75,
-      "msrp_wan": 11.8,
-      "discount_fold": 4.2,
-      "recommendation_gate": "PASS"
+      "condition_gate": "PASS",
+      "recommendation_gate": "PASS",
+      "note": "V3.2 SUV-first modern cabin buyer score_version=v3.2.0; weights={'config': 0.28, 'space': 0.2, 'powertrain': 0.2, 'condition': 0.18, 'value_price': 0.14}; tiered_dmi_admission"
     },
     "brand": "传祺",
     "manufacturer": "广汽传祺",
@@ -144475,13 +144088,13 @@
     },
     "display_price_wan": 4.99,
     "effective_price_wan": 4.99,
-    "price_confidence": 0.9,
+    "price_confidence": 0.95,
     "needs_cash_quote": false,
-    "price_basis": "display",
+    "price_basis": "cash",
     "finance_reserve_wan": 0.5,
     "_age_years": 3.3333333333333335,
     "score_version": "v3.2.0",
-    "score_v1": 69.4,
+    "score_v1": null,
     "condition_gate": "PASS",
     "score_reasons": [
       "现金价 4.99 万（原指导价 11.80 万）",
@@ -144492,7 +144105,7 @@
       "年均里程约2.2万km偏高，重点排查高频使用磨损与非营运性质"
     ],
     "confidence": {
-      "price": 0.9,
+      "price": 0.95,
       "config": 0.837,
       "energy": 0.65,
       "core_specs": 0.99,
@@ -144523,9 +144136,9 @@
     "data_issues": [],
     "config_coverage": 0.8365,
     "energy_confidence": 0.65,
-    "library_rank": 46,
+    "library_rank": 72,
     "display": false,
-    "sale_status": "reserved",
+    "sale_status": "on_sale",
     "recommendation_gate": "PASS",
     "veto_reasons": [],
     "v3_profile": {
@@ -144561,9 +144174,9 @@
       "maintenance_estimate": "约 400-550 元/年",
       "reliability_notes": []
     },
-    "product_status": 5,
-    "status_modify_time": "1795198251",
-    "ingest_status": "reserved",
+    "product_status": 1,
+    "status_modify_time": "1795284657",
+    "ingest_status": "restored_on_sale",
     "is_local_wuhan": true,
     "shop_short_name": "武汉店",
     "logistics_fee_yuan": 0,
@@ -144572,7 +144185,19 @@
     "plate_fee_diff_yuan": 0,
     "landed_extra_yuan": 0,
     "landed_extra_wan": 0.0,
-    "landed_price_wan": 4.99
+    "landed_price_wan": 4.99,
+    "cash_price_wan": 4.99,
+    "cash_price_fen": 4990000,
+    "cash_price_str": "4.99",
+    "list_price_wan": 4.79,
+    "is_self_trade_car": true,
+    "source_type": "2",
+    "source_type_name": "自营-个人",
+    "fuel_form": "1",
+    "shop_name": "懂车帝汽车商城•武汉店",
+    "delivery_eta": "送达时间咨询顾问",
+    "first_registration_time": "1685289600",
+    "detail_shop_id": "118608"
   },
   {
     "sku": "357232005",
@@ -148411,7 +148036,7 @@
       "官方保",
       "直营"
     ],
-    "cover": "https://p9-dcd-sign.byteimg.com/tos-cn-i-f042mdwyw7/781d0a1edcc14142aed69ecd115f82bf~tplv-f042mdwyw7-auto-webp:480:0.jpg?rk3s=4892dee6&x-expires=1796176309&x-signature=qBzCWwKKhPZA6upalIgNqV%2B8F98%3D&psm=motor.sh.pack",
+    "cover": "https://p9-dcd-sign.byteimg.com/tos-cn-i-f042mdwyw7/781d0a1edcc14142aed69ecd115f82bf~tplv-f042mdwyw7-auto-webp:480:0.jpg?rk3s=4892dee6&x-expires=1796521821&x-signature=SgjU3cuV5ttecV7ELrjgEnZ1nes%3D&psm=motor.sh.pack",
     "detail_url": "https://m.dcdapp.com/motor/feoffline/usedcar_detail/detail.html?sku_id=357002835&shop_id=118608",
     "shop_id": "118608",
     "image_file": "/workspace/dongchedi-wuhan-shop/images/357002835.jpg",
@@ -148419,10 +148044,13 @@
     "sort_scores": {
       "score_version": "v3.2.0",
       "total_score": -1.0,
-      "price_score": 79.55,
+      "powertrain_score": 65.0,
       "config_score": 16.5,
-      "operating_cost_score": 92.5,
+      "value_price_score": 79.55,
+      "condition_score": 94.11,
       "space_score": 61.04,
+      "price_score": 79.55,
+      "operating_cost_score": 92.5,
       "age_score": 91.0,
       "mileage_score": 96.01,
       "body_preference_score": 74.0,
@@ -148437,6 +148065,8 @@
       "is_suv": true,
       "price": 3.99,
       "effective_price_wan": 3.99,
+      "msrp_wan": 6.98,
+      "discount_fold": 5.7,
       "weights": {
         "config": 0.28,
         "space": 0.2,
@@ -148467,13 +148097,8 @@
         "纯电车型（无固定家充且长期静置无法自发电补电，存在亏电风险）"
       ],
       "condition_gate": "PASS",
-      "note": "V3.2 SUV-first modern cabin buyer score_version=v3.2.0; weights={'config': 0.28, 'space': 0.2, 'powertrain': 0.2, 'condition': 0.18, 'value_price': 0.14}; tiered_dmi_admission",
-      "powertrain_score": 65.0,
-      "value_price_score": 79.55,
-      "condition_score": 94.11,
-      "msrp_wan": 6.98,
-      "discount_fold": 5.7,
-      "recommendation_gate": "VETO"
+      "recommendation_gate": "VETO",
+      "note": "V3.2 SUV-first modern cabin buyer score_version=v3.2.0; weights={'config': 0.28, 'space': 0.2, 'powertrain': 0.2, 'condition': 0.18, 'value_price': 0.14}; tiered_dmi_admission"
     },
     "brand": "几何",
     "manufacturer": "吉利汽车",
@@ -148738,7 +148363,7 @@
     "price_basis": "cash",
     "_age_years": 3.3333333333333335,
     "score_version": "v3.2.0",
-    "score_v1": -1.0,
+    "score_v1": null,
     "condition_gate": "PASS",
     "score_reasons": [
       "纯电车型（无固定家充且长期静置无法自发电补电，存在亏电风险）"
@@ -148791,8 +148416,8 @@
     "shop_name": "懂车帝汽车商城•武汉店",
     "first_registration_time": "1701964800",
     "detail_shop_id": "118608",
-    "ingest_status": "reserved",
-    "sale_status": "reserved",
+    "ingest_status": "restored_on_sale",
+    "sale_status": "on_sale",
     "recommendation_gate": "VETO",
     "veto_reasons": [
       "纯电车型（无固定家充且长期静置无法自发电补电，存在亏电风险）"
@@ -148823,8 +148448,8 @@
       "maintenance_estimate": "约 400-550 元/年",
       "reliability_notes": []
     },
-    "product_status": 5,
-    "status_modify_time": "1795262544",
+    "product_status": 1,
+    "status_modify_time": "1795267778",
     "is_local_wuhan": true,
     "shop_short_name": "武汉店",
     "logistics_fee_yuan": 0,
@@ -148833,7 +148458,8 @@
     "plate_fee_diff_yuan": 0,
     "landed_extra_yuan": 0,
     "landed_extra_wan": 0.0,
-    "landed_price_wan": 3.99
+    "landed_price_wan": 3.99,
+    "delivery_eta": "送达时间咨询顾问"
   },
   {
     "sku": "357542875",
@@ -174587,7 +174213,8 @@
     "year": "2019年/9.84万公里",
     "city": "郑州",
     "tags": [
-      "0.4万首付"
+      "0.3万首付",
+      "直降1100元"
     ],
     "badges": [
       "直营"
@@ -174596,16 +174223,16 @@
     "source_type": "2",
     "source_type_name": "自营-个人",
     "fuel_form": "1",
-    "cover": "https://p3-dcd-sign.byteimg.com/tos-cn-i-f042mdwyw7/380e9e142cc041628479465ff78db4f8~tplv-f042mdwyw7-auto-webp:480:0.jpg?rk3s=4892dee6&x-expires=1796476219&x-signature=nAjoj4Ewm1CZC7JLLohgt1XVqBI%3D&psm=motor.sh.pack",
+    "cover": "https://p3-dcd-sign.byteimg.com/tos-cn-i-f042mdwyw7/380e9e142cc041628479465ff78db4f8~tplv-f042mdwyw7-auto-webp:480:0.jpg?rk3s=4892dee6&x-expires=1796521889&x-signature=jVdjRTlrqN%2BD7jDhGi3Bnvs2WvE%3D&psm=motor.sh.pack",
     "detail_url": "https://m.dcdapp.com/motor/feoffline/usedcar_detail/detail.html?sku_id=300025758&shop_id=175870",
-    "list_price_wan": 1.99,
+    "list_price_wan": 1.58,
     "first_registration_time": "1546531200",
     "price_type": "现金价",
     "prefix": "现金价",
-    "cash_price_fen": 1990000,
-    "cash_price_str": "1.99",
-    "cash_price_wan": 1.99,
-    "price": 1.99,
+    "cash_price_fen": 1880000,
+    "cash_price_str": "1.88",
+    "cash_price_wan": 1.88,
+    "price": 1.88,
     "detail_shop_id": "175870",
     "sale_status": "on_sale",
     "product_status": 1,
@@ -174618,7 +174245,7 @@
     "landed_extra_yuan": 1700,
     "landed_extra_wan": 0.17,
     "delivery_eta": "1-3日送达",
-    "landed_price_wan": 2.16,
+    "landed_price_wan": 2.05,
     "specs": {
       "length_mm": 4600,
       "width_mm": 1869,
@@ -174829,8 +174456,8 @@
       "has_fixed_cruise": true,
       "live_spec_id": 35211
     },
-    "display_price_wan": 1.99,
-    "effective_price_wan": 2.16,
+    "display_price_wan": 1.88,
+    "effective_price_wan": 2.05,
     "price_confidence": 0.95,
     "needs_cash_quote": false,
     "price_basis": "cash_plus_landed",
@@ -174847,7 +174474,7 @@
     "energy_confidence": 0.55,
     "_age_years": 7.333333333333333,
     "score_version": "v3.2.0",
-    "score_v1": -1.0,
+    "score_v1": null,
     "total_score": -1.0,
     "condition_gate": "PASS",
     "recommendation_gate": "VETO",
@@ -174858,7 +174485,7 @@
       "archetype_badge": "均衡严选SUV",
       "msrp_wan": 17.49,
       "discount_fold": 1.2,
-      "saved_wan": 15.33,
+      "saved_wan": 15.44,
       "powertrain_summary": "1.6T 156马力 L4 · 6挡干式双离合 · 独立后悬 · 两驱 · 92#",
       "gearbox_tier": "WET_DCT",
       "gearbox_label": "6挡干式双离合",
@@ -174923,8 +174550,8 @@
       "space_proxy": 93.17,
       "fuel_proxy": 36.18,
       "is_suv": true,
-      "price": 1.99,
-      "effective_price_wan": 2.16,
+      "price": 1.88,
+      "effective_price_wan": 2.05,
       "msrp_wan": 17.49,
       "discount_fold": 1.2,
       "weights": {
@@ -174960,7 +174587,7 @@
       "recommendation_gate": "VETO",
       "note": "V3.2 SUV-first modern cabin buyer score_version=v3.2.0; weights={'config': 0.28, 'space': 0.2, 'powertrain': 0.2, 'condition': 0.18, 'value_price': 0.14}; tiered_dmi_admission"
     },
-    "ingest_status": "added",
+    "ingest_status": "updated_price",
     "display": false,
     "rank": null
   },
@@ -174978,7 +174605,8 @@
     "year": "2020年/6.25万公里",
     "city": "郑州",
     "tags": [
-      "0.5万首付"
+      "0.5万首付",
+      "直降1100元"
     ],
     "badges": [
       "直营"
@@ -174987,16 +174615,16 @@
     "source_type": "2",
     "source_type_name": "自营-个人",
     "fuel_form": "1",
-    "cover": "https://p9-dcd-sign.byteimg.com/tos-cn-i-f042mdwyw7/dd8a6b41c38144b5940549a3591cea7a~tplv-f042mdwyw7-auto-webp:480:0.jpg?rk3s=4892dee6&x-expires=1796476219&x-signature=qoVG7XK1Es%2BVllUwg%2BPqULGQ1UY%3D&psm=motor.sh.pack",
+    "cover": "https://p3-dcd-sign.byteimg.com/tos-cn-i-f042mdwyw7/dd8a6b41c38144b5940549a3591cea7a~tplv-f042mdwyw7-auto-webp:480:0.jpg?rk3s=4892dee6&x-expires=1796521889&x-signature=aqjmAoxBfSRnk71G63N27SSSTyY%3D&psm=motor.sh.pack",
     "detail_url": "https://m.dcdapp.com/motor/feoffline/usedcar_detail/detail.html?sku_id=300026152&shop_id=175870",
-    "list_price_wan": 2.59,
+    "list_price_wan": 2.48,
     "first_registration_time": "1578326400",
     "price_type": "现金价",
     "prefix": "现金价",
-    "cash_price_fen": 2890000,
-    "cash_price_str": "2.89",
-    "cash_price_wan": 2.89,
-    "price": 2.89,
+    "cash_price_fen": 2780000,
+    "cash_price_str": "2.78",
+    "cash_price_wan": 2.78,
+    "price": 2.78,
     "detail_shop_id": "175870",
     "sale_status": "on_sale",
     "product_status": 1,
@@ -175009,7 +174637,7 @@
     "landed_extra_yuan": 1700,
     "landed_extra_wan": 0.17,
     "delivery_eta": "1-3日送达",
-    "landed_price_wan": 3.06,
+    "landed_price_wan": 2.95,
     "specs": {
       "length_mm": 4609,
       "width_mm": 1798,
@@ -175222,8 +174850,8 @@
       "has_fixed_cruise": true,
       "live_spec_id": 38484
     },
-    "display_price_wan": 2.89,
-    "effective_price_wan": 3.06,
+    "display_price_wan": 2.78,
+    "effective_price_wan": 2.95,
     "price_confidence": 0.95,
     "needs_cash_quote": false,
     "price_basis": "cash_plus_landed",
@@ -175266,7 +174894,7 @@
     "energy_confidence": 0.55,
     "_age_years": 6.333333333333333,
     "score_version": "v3.2.0",
-    "score_v1": -1.0,
+    "score_v1": null,
     "total_score": -1.0,
     "condition_gate": "PASS",
     "recommendation_gate": "VETO",
@@ -175276,8 +174904,8 @@
     "v3_profile": {
       "archetype_badge": "高性价备选",
       "msrp_wan": 12.89,
-      "discount_fold": 2.4,
-      "saved_wan": 9.83,
+      "discount_fold": 2.3,
+      "saved_wan": 9.94,
       "powertrain_summary": "1.0T 125马力 L3 · 6挡湿式双离合 · 独立后悬 · 两驱 · 92#",
       "gearbox_tier": "WET_DCT",
       "gearbox_label": "6挡湿式双离合",
@@ -175322,10 +174950,10 @@
       "total_score": -1.0,
       "powertrain_score": 79.0,
       "config_score": 32.75,
-      "value_price_score": 94.42,
+      "value_price_score": 95.12,
       "condition_score": 59.48,
       "space_score": 51.2,
-      "price_score": 94.42,
+      "price_score": 95.12,
       "operating_cost_score": 52.82,
       "age_score": 60.67,
       "mileage_score": 58.75,
@@ -175339,10 +174967,10 @@
       "space_proxy": 51.2,
       "fuel_proxy": 52.82,
       "is_suv": false,
-      "price": 2.89,
-      "effective_price_wan": 3.06,
+      "price": 2.78,
+      "effective_price_wan": 2.95,
       "msrp_wan": 12.89,
-      "discount_fold": 2.4,
+      "discount_fold": 2.3,
       "weights": {
         "config": 0.28,
         "space": 0.2,
@@ -175376,7 +175004,7 @@
       "recommendation_gate": "VETO",
       "note": "V3.2 SUV-first modern cabin buyer score_version=v3.2.0; weights={'config': 0.28, 'space': 0.2, 'powertrain': 0.2, 'condition': 0.18, 'value_price': 0.14}; tiered_dmi_admission"
     },
-    "ingest_status": "added",
+    "ingest_status": "updated_price",
     "display": false,
     "rank": null
   },
