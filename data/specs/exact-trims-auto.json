@@ -8450,9 +8450,9 @@
       "core_specs": {
         "powertrain": "ice",
         "body_type": "紧凑型车",
-        "seats": 5,
-        "engine": "1.4T 160马力 L4",
-        "transmission": "7挡湿式双离合",
+        "seats": null,
+        "engine": "●",
+        "transmission": "湿式双离合变速箱(DCT)",
         "length_mm": 4730,
         "width_mm": 1820,
         "height_mm": 1505,
@@ -8483,7 +8483,7 @@
         "active_safety": {
           "esp": true,
           "aeb": false,
-          "fcw": null,
+          "fcw": false,
           "ldw": false,
           "lka": false,
           "lane_centering": null,
@@ -8506,8 +8506,8 @@
         },
         "comfort": {
           "sunroof": "single_openable",
-          "power_tailgate": null,
-          "hands_free_tailgate": null,
+          "power_tailgate": false,
+          "hands_free_tailgate": true,
           "keyless_entry": true,
           "keyless_start": true,
           "remote_start": null,
@@ -8536,26 +8536,26 @@
           "phone_link": true
         },
         "lighting": {
-          "headlights": "● LED",
+          "headlights": "LED",
           "auto_headlights": true,
           "adaptive_high_beam": false
         },
         "wheels": {
-          "front_tire": "● 205/60 R16",
-          "rear_tire": "● 205/60 R16"
+          "front_tire": "-",
+          "rear_tire": "-"
         },
         "optional_or_uncertain_features": []
       },
       "data_quality": {
         "core_confidence": 0.945,
         "feature_confidence": "high",
-        "verified_non_null_feature_leaf_count": 37,
+        "verified_non_null_feature_leaf_count": 40,
         "scoring_rule": "Only exact-trim standard features may score. null/optional features score 0.",
         "known_issues": [],
         "identity_source": "autohome_exact_trim",
         "series_match": 1.0,
         "trim_match": 0.9,
-        "source_snapshot": "live_param:2429:2023"
+        "source_snapshot": "live"
       },
       "sources": [
         {
@@ -8564,7 +8564,15 @@
           "authority_tier": 1,
           "series_id": 2429,
           "spec_id": 62910,
-          "parameter_source": "getParamConf"
+          "parameter_source": "live_page"
+        },
+        {
+          "url": "https://github.com/swoiow/autohome",
+          "source_type": "autohome_parameter_dataset",
+          "authority_tier": 3,
+          "snapshot": "identity_match_only",
+          "source_path": "live:config/spec/62910.html",
+          "note": "vault/main used for exact-trim identity; parameters from live page"
         }
       ],
       "trim_id": "trim_ah_f1d3a41620cc"
@@ -14627,8 +14635,8 @@
       "core_specs": {
         "powertrain": "ice",
         "body_type": "紧凑型车",
-        "seats": 5,
-        "engine": "1.5T 177马力 L4",
+        "seats": null,
+        "engine": "●",
         "transmission": "CVT无级变速",
         "length_mm": 4649,
         "width_mm": 1800,
@@ -14674,7 +14682,7 @@
           "front_parking_radar": false,
           "rear_parking_radar": true,
           "reverse_camera": true,
-          "surround_360": null,
+          "surround_360": false,
           "transparent_chassis_540": null,
           "cruise": "none",
           "adas_level": null,
@@ -14683,12 +14691,12 @@
         },
         "comfort": {
           "sunroof": "single_openable",
-          "power_tailgate": null,
-          "hands_free_tailgate": null,
+          "power_tailgate": false,
+          "hands_free_tailgate": false,
           "keyless_entry": true,
           "keyless_start": true,
-          "remote_start": true,
-          "hud": null,
+          "remote_start": false,
+          "hud": false,
           "wireless_phone_charging": false,
           "driver_power_seat": false,
           "passenger_power_seat": false,
@@ -14710,29 +14718,29 @@
           "voice_control": false,
           "full_lcd_cluster": false,
           "chip_8155": null,
-          "phone_link": null
+          "phone_link": true
         },
         "lighting": {
-          "headlights": "● 卤素",
+          "headlights": "卤素",
           "auto_headlights": false,
           "adaptive_high_beam": false
         },
         "wheels": {
-          "front_tire": "● 215/55 R16",
-          "rear_tire": "● 215/55 R16"
+          "front_tire": "-",
+          "rear_tire": "-"
         },
         "optional_or_uncertain_features": []
       },
       "data_quality": {
         "core_confidence": 0.99,
         "feature_confidence": "high",
-        "verified_non_null_feature_leaf_count": 37,
+        "verified_non_null_feature_leaf_count": 41,
         "scoring_rule": "Only exact-trim standard features may score. null/optional features score 0.",
         "known_issues": [],
         "identity_source": "autohome_exact_trim",
         "series_match": 1.0,
         "trim_match": 1.0,
-        "source_snapshot": "live_param:135:2016"
+        "source_snapshot": "live"
       },
       "sources": [
         {
@@ -14741,7 +14749,15 @@
           "authority_tier": 1,
           "series_id": 135,
           "spec_id": 25892,
-          "parameter_source": "getParamConf"
+          "parameter_source": "live_page"
+        },
+        {
+          "url": "https://github.com/swoiow/autohome",
+          "source_type": "autohome_parameter_dataset",
+          "authority_tier": 3,
+          "snapshot": "identity_match_only",
+          "source_path": "live:config/spec/25892.html",
+          "note": "vault/main used for exact-trim identity; parameters from live page"
         }
       ],
       "trim_id": "trim_ah_1e537ee5e9a5"
@@ -49584,7 +49600,7 @@
       "core_specs": {
         "powertrain": "bev",
         "body_type": "小型车",
-        "seats": 5,
+        "seats": null,
         "engine": null,
         "transmission": "固定齿比变速箱",
         "length_mm": 4125,
@@ -49639,11 +49655,11 @@
         },
         "comfort": {
           "sunroof": "panoramic_openable",
-          "power_tailgate": null,
+          "power_tailgate": false,
           "hands_free_tailgate": null,
           "keyless_entry": true,
           "keyless_start": true,
-          "remote_start": true,
+          "remote_start": false,
           "hud": null,
           "wireless_phone_charging": true,
           "driver_power_seat": true,
@@ -49669,26 +49685,26 @@
           "phone_link": false
         },
         "lighting": {
-          "headlights": "● LED",
+          "headlights": "LED",
           "auto_headlights": true,
           "adaptive_high_beam": false
         },
         "wheels": {
-          "front_tire": "● 195/60 R16",
-          "rear_tire": "● 195/60 R16"
+          "front_tire": "-",
+          "rear_tire": "-"
         },
         "optional_or_uncertain_features": []
       },
       "data_quality": {
         "core_confidence": 0.9,
         "feature_confidence": "high",
-        "verified_non_null_feature_leaf_count": 39,
+        "verified_non_null_feature_leaf_count": 40,
         "scoring_rule": "Only exact-trim standard features may score. null/optional features score 0.",
         "known_issues": [],
         "identity_source": "autohome_exact_trim",
         "series_match": 1.0,
         "trim_match": 0.8,
-        "source_snapshot": "live_param:6139:2023"
+        "source_snapshot": "live"
       },
       "sources": [
         {
@@ -49697,7 +49713,15 @@
           "authority_tier": 1,
           "series_id": 6139,
           "spec_id": 61095,
-          "parameter_source": "getParamConf"
+          "parameter_source": "live_page"
+        },
+        {
+          "url": "https://github.com/swoiow/autohome",
+          "source_type": "autohome_parameter_dataset",
+          "authority_tier": 3,
+          "snapshot": "identity_match_only",
+          "source_path": "live:config/spec/61095.html",
+          "note": "vault/main used for exact-trim identity; parameters from live page"
         }
       ],
       "trim_id": "trim_ah_4f71a630050c"
@@ -57429,6 +57453,1592 @@
         }
       ],
       "trim_id": "trim_ah_f3fe643a68a0"
+    },
+    "trim_ah_de72190ac692": {
+      "canonical_title": "星越S 2021款 2.0TD 自动两驱闪电版",
+      "msrp_wan": 15.77,
+      "core_specs": {
+        "powertrain": "ice",
+        "body_type": "紧凑型SUV",
+        "seats": null,
+        "engine": "●",
+        "transmission": "手自一体变速箱(AT)",
+        "length_mm": 4605,
+        "width_mm": 1878,
+        "height_mm": 1643,
+        "wheelbase_mm": 2700,
+        "fuel_grade": "95",
+        "official_fuel_l_100km": 7.5,
+        "official_standard": "NEDC",
+        "low_soc_fuel_l_100km": null,
+        "real_world_fuel_l_100km": null,
+        "real_world_sample_n": null,
+        "ev_range_km": null,
+        "ev_range_standard": null,
+        "electric_kwh_100km": null,
+        "ranking_energy": {
+          "type": "official_nedc_with_uncertainty",
+          "value": 7.5,
+          "unit": "L/100km",
+          "fallback_multiplier_recommended": 1.2
+        }
+      },
+      "features": {
+        "passive_safety": {
+          "front_airbags": true,
+          "front_side_airbags": true,
+          "curtain_airbags": true,
+          "tpms_display": true
+        },
+        "active_safety": {
+          "esp": true,
+          "aeb": true,
+          "fcw": true,
+          "ldw": true,
+          "lka": true,
+          "lane_centering": true,
+          "bsd": false,
+          "dow": false,
+          "rear_collision_warning": false,
+          "traffic_sign_recognition": true,
+          "fatigue_warning": false
+        },
+        "parking_adas": {
+          "front_parking_radar": true,
+          "rear_parking_radar": true,
+          "reverse_camera": null,
+          "surround_360": true,
+          "transparent_chassis_540": true,
+          "cruise": "full_speed_adaptive",
+          "adas_level": "L2",
+          "auto_park": false,
+          "remote_park": null
+        },
+        "comfort": {
+          "sunroof": "panoramic_openable",
+          "power_tailgate": true,
+          "hands_free_tailgate": false,
+          "keyless_entry": true,
+          "keyless_start": true,
+          "remote_start": false,
+          "hud": true,
+          "wireless_phone_charging": true,
+          "driver_power_seat": true,
+          "passenger_power_seat": true,
+          "front_seat_heating": true,
+          "front_seat_ventilation": null,
+          "rear_air_vents": true,
+          "climate_control": "automatic_dual_zone",
+          "leather_seats": false
+        },
+        "infotainment": {
+          "center_screen_inches": 12.3,
+          "instrument_screen_inches": 12.3,
+          "carplay": null,
+          "carlife": null,
+          "connected_car": true,
+          "ota": true,
+          "speaker_count": 12,
+          "branded_audio": "BOSE",
+          "voice_control": true,
+          "full_lcd_cluster": true,
+          "chip_8155": null,
+          "phone_link": false
+        },
+        "lighting": {
+          "headlights": "LED",
+          "auto_headlights": true,
+          "adaptive_high_beam": true
+        },
+        "wheels": {
+          "front_tire": "-",
+          "rear_tire": "-"
+        },
+        "optional_or_uncertain_features": []
+      },
+      "data_quality": {
+        "core_confidence": 0.99,
+        "feature_confidence": "high",
+        "verified_non_null_feature_leaf_count": 46,
+        "scoring_rule": "Only exact-trim standard features may score. null/optional features score 0.",
+        "known_issues": [],
+        "identity_source": "autohome_exact_trim",
+        "series_match": 1.0,
+        "trim_match": 1.0,
+        "source_snapshot": "live"
+      },
+      "sources": [
+        {
+          "url": "https://car.autohome.com.cn/config/spec/52058.html",
+          "source_type": "autohome_live_config",
+          "authority_tier": 1,
+          "series_id": 6275,
+          "spec_id": 52058,
+          "parameter_source": "live_page"
+        },
+        {
+          "url": "https://github.com/swoiow/autohome",
+          "source_type": "autohome_parameter_dataset",
+          "authority_tier": 3,
+          "snapshot": "identity_match_only",
+          "source_path": "live:config/spec/52058.html",
+          "note": "vault/main used for exact-trim identity; parameters from live page"
+        }
+      ],
+      "trim_id": "trim_ah_de72190ac692"
+    },
+    "trim_ah_41b747dd3210": {
+      "canonical_title": "马自达3 昂克赛拉 2020款 2.0L 自动质炫版",
+      "msrp_wan": 13.99,
+      "core_specs": {
+        "powertrain": "ice",
+        "body_type": "紧凑型车",
+        "seats": null,
+        "engine": "2.0L 158马力 L4",
+        "transmission": "6挡手自一体",
+        "length_mm": 4662,
+        "width_mm": 1797,
+        "height_mm": 1445,
+        "wheelbase_mm": 2726,
+        "fuel_grade": "92",
+        "official_fuel_l_100km": 5.8,
+        "official_standard": "NEDC",
+        "low_soc_fuel_l_100km": null,
+        "real_world_fuel_l_100km": null,
+        "real_world_sample_n": null,
+        "ev_range_km": null,
+        "ev_range_standard": null,
+        "electric_kwh_100km": null,
+        "ranking_energy": {
+          "type": "official_nedc_with_uncertainty",
+          "value": 5.8,
+          "unit": "L/100km",
+          "fallback_multiplier_recommended": 1.2
+        }
+      },
+      "features": {
+        "passive_safety": {
+          "front_airbags": true,
+          "front_side_airbags": true,
+          "curtain_airbags": true,
+          "tpms_display": true
+        },
+        "active_safety": {
+          "esp": true,
+          "aeb": null,
+          "fcw": false,
+          "ldw": null,
+          "lka": null,
+          "lane_centering": false,
+          "bsd": null,
+          "dow": null,
+          "rear_collision_warning": null,
+          "traffic_sign_recognition": null,
+          "fatigue_warning": false
+        },
+        "parking_adas": {
+          "front_parking_radar": false,
+          "rear_parking_radar": true,
+          "reverse_camera": null,
+          "surround_360": null,
+          "transparent_chassis_540": null,
+          "cruise": "adaptive",
+          "adas_level": "-",
+          "auto_park": false,
+          "remote_park": null
+        },
+        "comfort": {
+          "sunroof": "single_openable",
+          "power_tailgate": null,
+          "hands_free_tailgate": null,
+          "keyless_entry": true,
+          "keyless_start": true,
+          "remote_start": null,
+          "hud": false,
+          "wireless_phone_charging": false,
+          "driver_power_seat": false,
+          "passenger_power_seat": false,
+          "front_seat_heating": false,
+          "front_seat_ventilation": false,
+          "rear_air_vents": true,
+          "climate_control": "automatic_dual_zone",
+          "leather_seats": false
+        },
+        "infotainment": {
+          "center_screen_inches": 8.8,
+          "instrument_screen_inches": 7.0,
+          "carplay": true,
+          "carlife": true,
+          "connected_car": false,
+          "ota": false,
+          "speaker_count": 8,
+          "branded_audio": "-",
+          "voice_control": false,
+          "full_lcd_cluster": false,
+          "chip_8155": null,
+          "phone_link": true
+        },
+        "lighting": {
+          "headlights": "LED",
+          "auto_headlights": null,
+          "adaptive_high_beam": null
+        },
+        "wheels": {
+          "front_tire": "-",
+          "rear_tire": "-"
+        },
+        "optional_or_uncertain_features": []
+      },
+      "data_quality": {
+        "core_confidence": 0.99,
+        "feature_confidence": "high",
+        "verified_non_null_feature_leaf_count": 35,
+        "scoring_rule": "Only exact-trim standard features may score. null/optional features score 0.",
+        "known_issues": [],
+        "identity_source": "autohome_exact_trim",
+        "series_match": 1.0,
+        "trim_match": 1.0,
+        "source_snapshot": "live"
+      },
+      "sources": [
+        {
+          "url": "https://car.autohome.com.cn/config/spec/45059.html",
+          "source_type": "autohome_live_config",
+          "authority_tier": 1,
+          "series_id": 3294,
+          "spec_id": 45059,
+          "parameter_source": "live_page"
+        },
+        {
+          "url": "https://github.com/swoiow/autohome",
+          "source_type": "autohome_parameter_dataset",
+          "authority_tier": 3,
+          "snapshot": "identity_match_only",
+          "source_path": "live:config/spec/45059.html",
+          "note": "vault/main used for exact-trim identity; parameters from live page"
+        }
+      ],
+      "trim_id": "trim_ah_41b747dd3210"
+    },
+    "trim_ah_4e4608174fca": {
+      "canonical_title": "瑞虎5x 2023款 1.5L CVT时尚型",
+      "msrp_wan": 8.59,
+      "core_specs": {
+        "powertrain": "ice",
+        "body_type": "小型SUV",
+        "seats": null,
+        "engine": "●",
+        "transmission": "无级变速箱(CVT)",
+        "length_mm": 4358,
+        "width_mm": 1830,
+        "height_mm": 1670,
+        "wheelbase_mm": 2630,
+        "fuel_grade": "92",
+        "official_fuel_l_100km": 6.78,
+        "official_standard": "WLTC",
+        "low_soc_fuel_l_100km": null,
+        "real_world_fuel_l_100km": null,
+        "real_world_sample_n": null,
+        "ev_range_km": null,
+        "ev_range_standard": null,
+        "electric_kwh_100km": null,
+        "ranking_energy": {
+          "type": "official_wltc_with_uncertainty",
+          "value": 6.78,
+          "unit": "L/100km",
+          "fallback_multiplier_recommended": 1.15
+        }
+      },
+      "features": {
+        "passive_safety": {
+          "front_airbags": true,
+          "front_side_airbags": false,
+          "curtain_airbags": false,
+          "tpms_display": true
+        },
+        "active_safety": {
+          "esp": true,
+          "aeb": false,
+          "fcw": null,
+          "ldw": false,
+          "lka": false,
+          "lane_centering": null,
+          "bsd": false,
+          "dow": null,
+          "rear_collision_warning": null,
+          "traffic_sign_recognition": null,
+          "fatigue_warning": false
+        },
+        "parking_adas": {
+          "front_parking_radar": false,
+          "rear_parking_radar": true,
+          "reverse_camera": null,
+          "surround_360": null,
+          "transparent_chassis_540": null,
+          "cruise": "fixed",
+          "adas_level": null,
+          "auto_park": false,
+          "remote_park": null
+        },
+        "comfort": {
+          "sunroof": "single_openable",
+          "power_tailgate": false,
+          "hands_free_tailgate": null,
+          "keyless_entry": true,
+          "keyless_start": true,
+          "remote_start": false,
+          "hud": null,
+          "wireless_phone_charging": false,
+          "driver_power_seat": false,
+          "passenger_power_seat": false,
+          "front_seat_heating": false,
+          "front_seat_ventilation": false,
+          "rear_air_vents": true,
+          "climate_control": "manual",
+          "leather_seats": false
+        },
+        "infotainment": {
+          "center_screen_inches": 10.25,
+          "instrument_screen_inches": 3.5,
+          "carplay": true,
+          "carlife": true,
+          "connected_car": false,
+          "ota": false,
+          "speaker_count": 4,
+          "branded_audio": "-",
+          "voice_control": false,
+          "full_lcd_cluster": false,
+          "chip_8155": null,
+          "phone_link": true
+        },
+        "lighting": {
+          "headlights": "卤素",
+          "auto_headlights": true,
+          "adaptive_high_beam": false
+        },
+        "wheels": {
+          "front_tire": "-",
+          "rear_tire": "-"
+        },
+        "optional_or_uncertain_features": []
+      },
+      "data_quality": {
+        "core_confidence": 0.99,
+        "feature_confidence": "high",
+        "verified_non_null_feature_leaf_count": 39,
+        "scoring_rule": "Only exact-trim standard features may score. null/optional features score 0.",
+        "known_issues": [],
+        "identity_source": "autohome_exact_trim",
+        "series_match": 1.0,
+        "trim_match": 1.0,
+        "source_snapshot": "live"
+      },
+      "sources": [
+        {
+          "url": "https://car.autohome.com.cn/config/spec/62853.html",
+          "source_type": "autohome_live_config",
+          "authority_tier": 1,
+          "series_id": 4531,
+          "spec_id": 62853,
+          "parameter_source": "live_page"
+        },
+        {
+          "url": "https://github.com/swoiow/autohome",
+          "source_type": "autohome_parameter_dataset",
+          "authority_tier": 3,
+          "snapshot": "identity_match_only",
+          "source_path": "live:config/spec/62853.html",
+          "note": "vault/main used for exact-trim identity; parameters from live page"
+        }
+      ],
+      "trim_id": "trim_ah_4e4608174fca"
+    },
+    "trim_ah_5a7aae4886ea": {
+      "canonical_title": "长安UNI-T 2022款 1.5T 旗舰型",
+      "msrp_wan": 13.39,
+      "core_specs": {
+        "powertrain": "ice",
+        "body_type": "紧凑型SUV",
+        "seats": null,
+        "engine": "●",
+        "transmission": "湿式双离合变速箱(DCT)",
+        "length_mm": 4515,
+        "width_mm": 1870,
+        "height_mm": 1565,
+        "wheelbase_mm": 2710,
+        "fuel_grade": "92",
+        "official_fuel_l_100km": 6.1,
+        "official_standard": "NEDC",
+        "low_soc_fuel_l_100km": null,
+        "real_world_fuel_l_100km": null,
+        "real_world_sample_n": null,
+        "ev_range_km": null,
+        "ev_range_standard": null,
+        "electric_kwh_100km": null,
+        "ranking_energy": {
+          "type": "official_nedc_with_uncertainty",
+          "value": 6.1,
+          "unit": "L/100km",
+          "fallback_multiplier_recommended": 1.2
+        }
+      },
+      "features": {
+        "passive_safety": {
+          "front_airbags": true,
+          "front_side_airbags": true,
+          "curtain_airbags": true,
+          "tpms_display": true
+        },
+        "active_safety": {
+          "esp": true,
+          "aeb": true,
+          "fcw": true,
+          "ldw": true,
+          "lka": true,
+          "lane_centering": true,
+          "bsd": true,
+          "dow": true,
+          "rear_collision_warning": null,
+          "traffic_sign_recognition": true,
+          "fatigue_warning": true
+        },
+        "parking_adas": {
+          "front_parking_radar": true,
+          "rear_parking_radar": true,
+          "reverse_camera": null,
+          "surround_360": true,
+          "transparent_chassis_540": null,
+          "cruise": "full_speed_adaptive",
+          "adas_level": "L2",
+          "auto_park": true,
+          "remote_park": true
+        },
+        "comfort": {
+          "sunroof": "panoramic_openable",
+          "power_tailgate": true,
+          "hands_free_tailgate": false,
+          "keyless_entry": true,
+          "keyless_start": true,
+          "remote_start": false,
+          "hud": false,
+          "wireless_phone_charging": true,
+          "driver_power_seat": true,
+          "passenger_power_seat": true,
+          "front_seat_heating": true,
+          "front_seat_ventilation": null,
+          "rear_air_vents": true,
+          "climate_control": "automatic",
+          "leather_seats": false
+        },
+        "infotainment": {
+          "center_screen_inches": 12.3,
+          "instrument_screen_inches": 12.3,
+          "carplay": null,
+          "carlife": null,
+          "connected_car": true,
+          "ota": true,
+          "speaker_count": 11,
+          "branded_audio": "SONY索尼",
+          "voice_control": true,
+          "full_lcd_cluster": true,
+          "chip_8155": null,
+          "phone_link": false
+        },
+        "lighting": {
+          "headlights": "LED",
+          "auto_headlights": true,
+          "adaptive_high_beam": true
+        },
+        "wheels": {
+          "front_tire": "-",
+          "rear_tire": "-"
+        },
+        "optional_or_uncertain_features": []
+      },
+      "data_quality": {
+        "core_confidence": 0.99,
+        "feature_confidence": "high",
+        "verified_non_null_feature_leaf_count": 45,
+        "scoring_rule": "Only exact-trim standard features may score. null/optional features score 0.",
+        "known_issues": [],
+        "identity_source": "autohome_exact_trim",
+        "series_match": 1.0,
+        "trim_match": 1.0,
+        "source_snapshot": "live"
+      },
+      "sources": [
+        {
+          "url": "https://car.autohome.com.cn/config/spec/52301.html",
+          "source_type": "autohome_live_config",
+          "authority_tier": 1,
+          "series_id": 5565,
+          "spec_id": 52301,
+          "parameter_source": "live_page"
+        },
+        {
+          "url": "https://github.com/swoiow/autohome",
+          "source_type": "autohome_parameter_dataset",
+          "authority_tier": 3,
+          "snapshot": "identity_match_only",
+          "source_path": "live:config/spec/52301.html",
+          "note": "vault/main used for exact-trim identity; parameters from live page"
+        }
+      ],
+      "trim_id": "trim_ah_5a7aae4886ea"
+    },
+    "trim_ah_bd56ac042977": {
+      "canonical_title": "长安CS75PLUS 2020款 1.5T 自动豪华型",
+      "msrp_wan": 12.49,
+      "core_specs": {
+        "powertrain": "ice",
+        "body_type": "紧凑型SUV",
+        "seats": null,
+        "engine": "1.5T 178马力 L4",
+        "transmission": "6挡手自一体",
+        "length_mm": 4690,
+        "width_mm": 1865,
+        "height_mm": 1710,
+        "wheelbase_mm": 2710,
+        "fuel_grade": "92",
+        "official_fuel_l_100km": 6.7,
+        "official_standard": "NEDC",
+        "low_soc_fuel_l_100km": null,
+        "real_world_fuel_l_100km": null,
+        "real_world_sample_n": null,
+        "ev_range_km": null,
+        "ev_range_standard": null,
+        "electric_kwh_100km": null,
+        "ranking_energy": {
+          "type": "official_nedc_with_uncertainty",
+          "value": 6.7,
+          "unit": "L/100km",
+          "fallback_multiplier_recommended": 1.2
+        }
+      },
+      "features": {
+        "passive_safety": {
+          "front_airbags": true,
+          "front_side_airbags": true,
+          "curtain_airbags": true,
+          "tpms_display": true
+        },
+        "active_safety": {
+          "esp": true,
+          "aeb": false,
+          "fcw": null,
+          "ldw": false,
+          "lka": false,
+          "lane_centering": null,
+          "bsd": false,
+          "dow": null,
+          "rear_collision_warning": null,
+          "traffic_sign_recognition": false,
+          "fatigue_warning": true
+        },
+        "parking_adas": {
+          "front_parking_radar": false,
+          "rear_parking_radar": true,
+          "reverse_camera": null,
+          "surround_360": true,
+          "transparent_chassis_540": null,
+          "cruise": "fixed",
+          "adas_level": null,
+          "auto_park": false,
+          "remote_park": null
+        },
+        "comfort": {
+          "sunroof": "panoramic_openable",
+          "power_tailgate": false,
+          "hands_free_tailgate": null,
+          "keyless_entry": true,
+          "keyless_start": true,
+          "remote_start": false,
+          "hud": null,
+          "wireless_phone_charging": false,
+          "driver_power_seat": true,
+          "passenger_power_seat": true,
+          "front_seat_heating": false,
+          "front_seat_ventilation": false,
+          "rear_air_vents": true,
+          "climate_control": "automatic",
+          "leather_seats": false
+        },
+        "infotainment": {
+          "center_screen_inches": 12.3,
+          "instrument_screen_inches": 7.0,
+          "carplay": null,
+          "carlife": null,
+          "connected_car": true,
+          "ota": true,
+          "speaker_count": 6,
+          "branded_audio": "-",
+          "voice_control": true,
+          "full_lcd_cluster": true,
+          "chip_8155": null,
+          "phone_link": true
+        },
+        "lighting": {
+          "headlights": "LED",
+          "auto_headlights": true,
+          "adaptive_high_beam": false
+        },
+        "wheels": {
+          "front_tire": "-",
+          "rear_tire": "-"
+        },
+        "optional_or_uncertain_features": []
+      },
+      "data_quality": {
+        "core_confidence": 0.99,
+        "feature_confidence": "high",
+        "verified_non_null_feature_leaf_count": 39,
+        "scoring_rule": "Only exact-trim standard features may score. null/optional features score 0.",
+        "known_issues": [],
+        "identity_source": "autohome_exact_trim",
+        "series_match": 1.0,
+        "trim_match": 1.0,
+        "source_snapshot": "live"
+      },
+      "sources": [
+        {
+          "url": "https://car.autohome.com.cn/config/spec/41253.html",
+          "source_type": "autohome_live_config",
+          "authority_tier": 1,
+          "series_id": 5179,
+          "spec_id": 41253,
+          "parameter_source": "live_page"
+        },
+        {
+          "url": "https://github.com/swoiow/autohome",
+          "source_type": "autohome_parameter_dataset",
+          "authority_tier": 3,
+          "snapshot": "identity_match_only",
+          "source_path": "live:config/spec/41253.html",
+          "note": "vault/main used for exact-trim identity; parameters from live page"
+        }
+      ],
+      "trim_id": "trim_ah_bd56ac042977"
+    },
+    "trim_ah_5af811562502": {
+      "canonical_title": "长安欧尚X5 2022款 运动版 1.5T DCT旋风冲锋",
+      "msrp_wan": 10.09,
+      "core_specs": {
+        "powertrain": "ice",
+        "body_type": "紧凑型SUV",
+        "seats": null,
+        "engine": "●",
+        "transmission": "湿式双离合变速箱(DCT)",
+        "length_mm": 4490,
+        "width_mm": 1860,
+        "height_mm": 1580,
+        "wheelbase_mm": 2710,
+        "fuel_grade": "92",
+        "official_fuel_l_100km": 6.2,
+        "official_standard": "NEDC",
+        "low_soc_fuel_l_100km": null,
+        "real_world_fuel_l_100km": null,
+        "real_world_sample_n": null,
+        "ev_range_km": null,
+        "ev_range_standard": null,
+        "electric_kwh_100km": null,
+        "ranking_energy": {
+          "type": "official_nedc_with_uncertainty",
+          "value": 6.2,
+          "unit": "L/100km",
+          "fallback_multiplier_recommended": 1.2
+        }
+      },
+      "features": {
+        "passive_safety": {
+          "front_airbags": true,
+          "front_side_airbags": true,
+          "curtain_airbags": false,
+          "tpms_display": true
+        },
+        "active_safety": {
+          "esp": true,
+          "aeb": false,
+          "fcw": false,
+          "ldw": false,
+          "lka": false,
+          "lane_centering": null,
+          "bsd": false,
+          "dow": null,
+          "rear_collision_warning": null,
+          "traffic_sign_recognition": false,
+          "fatigue_warning": true
+        },
+        "parking_adas": {
+          "front_parking_radar": false,
+          "rear_parking_radar": true,
+          "reverse_camera": null,
+          "surround_360": null,
+          "transparent_chassis_540": null,
+          "cruise": "fixed",
+          "adas_level": null,
+          "auto_park": false,
+          "remote_park": null
+        },
+        "comfort": {
+          "sunroof": "panoramic_openable",
+          "power_tailgate": false,
+          "hands_free_tailgate": false,
+          "keyless_entry": true,
+          "keyless_start": true,
+          "remote_start": false,
+          "hud": false,
+          "wireless_phone_charging": true,
+          "driver_power_seat": false,
+          "passenger_power_seat": false,
+          "front_seat_heating": false,
+          "front_seat_ventilation": false,
+          "rear_air_vents": false,
+          "climate_control": "automatic",
+          "leather_seats": false
+        },
+        "infotainment": {
+          "center_screen_inches": 10.25,
+          "instrument_screen_inches": 7.0,
+          "carplay": null,
+          "carlife": null,
+          "connected_car": true,
+          "ota": true,
+          "speaker_count": 6,
+          "branded_audio": "-",
+          "voice_control": true,
+          "full_lcd_cluster": false,
+          "chip_8155": null,
+          "phone_link": true
+        },
+        "lighting": {
+          "headlights": "LED",
+          "auto_headlights": true,
+          "adaptive_high_beam": false
+        },
+        "wheels": {
+          "front_tire": "-",
+          "rear_tire": "-"
+        },
+        "optional_or_uncertain_features": []
+      },
+      "data_quality": {
+        "core_confidence": 0.99,
+        "feature_confidence": "high",
+        "verified_non_null_feature_leaf_count": 41,
+        "scoring_rule": "Only exact-trim standard features may score. null/optional features score 0.",
+        "known_issues": [],
+        "identity_source": "autohome_exact_trim",
+        "series_match": 1.0,
+        "trim_match": 1.0,
+        "source_snapshot": "live"
+      },
+      "sources": [
+        {
+          "url": "https://car.autohome.com.cn/config/spec/54663.html",
+          "source_type": "autohome_live_config",
+          "authority_tier": 1,
+          "series_id": 5748,
+          "spec_id": 54663,
+          "parameter_source": "live_page"
+        },
+        {
+          "url": "https://github.com/swoiow/autohome",
+          "source_type": "autohome_parameter_dataset",
+          "authority_tier": 3,
+          "snapshot": "identity_match_only",
+          "source_path": "live:config/spec/54663.html",
+          "note": "vault/main used for exact-trim identity; parameters from live page"
+        }
+      ],
+      "trim_id": "trim_ah_5af811562502"
+    },
+    "trim_ah_07332bb37768": {
+      "canonical_title": "长安CS95 2017款 2.0T 四驱智尊版",
+      "msrp_wan": 22.98,
+      "core_specs": {
+        "powertrain": "ice",
+        "body_type": "中大型SUV",
+        "seats": null,
+        "engine": "-",
+        "transmission": "6挡手自一体",
+        "length_mm": 4949,
+        "width_mm": 1930,
+        "height_mm": 1785,
+        "wheelbase_mm": 2810,
+        "fuel_grade": "92",
+        "official_fuel_l_100km": null,
+        "official_standard": null,
+        "low_soc_fuel_l_100km": null,
+        "real_world_fuel_l_100km": null,
+        "real_world_sample_n": null,
+        "ev_range_km": null,
+        "ev_range_standard": null,
+        "electric_kwh_100km": null,
+        "ranking_energy": null
+      },
+      "features": {
+        "passive_safety": {
+          "front_airbags": true,
+          "front_side_airbags": true,
+          "curtain_airbags": true,
+          "tpms_display": true
+        },
+        "active_safety": {
+          "esp": true,
+          "aeb": true,
+          "fcw": null,
+          "ldw": true,
+          "lka": false,
+          "lane_centering": null,
+          "bsd": true,
+          "dow": null,
+          "rear_collision_warning": null,
+          "traffic_sign_recognition": true,
+          "fatigue_warning": false
+        },
+        "parking_adas": {
+          "front_parking_radar": true,
+          "rear_parking_radar": true,
+          "reverse_camera": true,
+          "surround_360": true,
+          "transparent_chassis_540": null,
+          "cruise": "full_speed_adaptive",
+          "adas_level": null,
+          "auto_park": true,
+          "remote_park": null
+        },
+        "comfort": {
+          "sunroof": "panoramic_openable",
+          "power_tailgate": true,
+          "hands_free_tailgate": true,
+          "keyless_entry": true,
+          "keyless_start": true,
+          "remote_start": false,
+          "hud": false,
+          "wireless_phone_charging": false,
+          "driver_power_seat": true,
+          "passenger_power_seat": true,
+          "front_seat_heating": true,
+          "front_seat_ventilation": true,
+          "rear_air_vents": true,
+          "climate_control": "automatic_dual_zone",
+          "leather_seats": true
+        },
+        "infotainment": {
+          "center_screen_inches": 8.0,
+          "instrument_screen_inches": null,
+          "carplay": null,
+          "carlife": true,
+          "connected_car": true,
+          "ota": false,
+          "speaker_count": 10,
+          "branded_audio": "Pioneer先锋",
+          "voice_control": true,
+          "full_lcd_cluster": false,
+          "chip_8155": null,
+          "phone_link": true
+        },
+        "lighting": {
+          "headlights": "LED",
+          "auto_headlights": true,
+          "adaptive_high_beam": true
+        },
+        "wheels": {
+          "front_tire": "-",
+          "rear_tire": "-"
+        },
+        "optional_or_uncertain_features": []
+      },
+      "data_quality": {
+        "core_confidence": 0.99,
+        "feature_confidence": "high",
+        "verified_non_null_feature_leaf_count": 43,
+        "scoring_rule": "Only exact-trim standard features may score. null/optional features score 0.",
+        "known_issues": [],
+        "identity_source": "autohome_exact_trim",
+        "series_match": 1.0,
+        "trim_match": 1.0,
+        "source_snapshot": "live"
+      },
+      "sources": [
+        {
+          "url": "https://car.autohome.com.cn/config/spec/28493.html",
+          "source_type": "autohome_live_config",
+          "authority_tier": 1,
+          "series_id": 3121,
+          "spec_id": 28493,
+          "parameter_source": "live_page"
+        },
+        {
+          "url": "https://github.com/swoiow/autohome",
+          "source_type": "autohome_parameter_dataset",
+          "authority_tier": 3,
+          "snapshot": "identity_match_only",
+          "source_path": "live:config/spec/28493.html",
+          "note": "vault/main used for exact-trim identity; parameters from live page"
+        }
+      ],
+      "trim_id": "trim_ah_07332bb37768"
+    },
+    "trim_ah_dffd7b8e509d": {
+      "canonical_title": "荣威RX5 2021款 PLUS 330TGI 自动国潮智臻版",
+      "msrp_wan": 13.08,
+      "core_specs": {
+        "powertrain": "ice",
+        "body_type": "紧凑型SUV",
+        "seats": null,
+        "engine": "●",
+        "transmission": "湿式双离合变速箱(DCT)",
+        "length_mm": 4571,
+        "width_mm": 1855,
+        "height_mm": 1719,
+        "wheelbase_mm": 2708,
+        "fuel_grade": "92",
+        "official_fuel_l_100km": 7.45,
+        "official_standard": "WLTC",
+        "low_soc_fuel_l_100km": null,
+        "real_world_fuel_l_100km": null,
+        "real_world_sample_n": null,
+        "ev_range_km": null,
+        "ev_range_standard": null,
+        "electric_kwh_100km": null,
+        "ranking_energy": {
+          "type": "official_wltc_with_uncertainty",
+          "value": 7.45,
+          "unit": "L/100km",
+          "fallback_multiplier_recommended": 1.15
+        }
+      },
+      "features": {
+        "passive_safety": {
+          "front_airbags": true,
+          "front_side_airbags": true,
+          "curtain_airbags": false,
+          "tpms_display": true
+        },
+        "active_safety": {
+          "esp": true,
+          "aeb": true,
+          "fcw": true,
+          "ldw": true,
+          "lka": false,
+          "lane_centering": null,
+          "bsd": false,
+          "dow": null,
+          "rear_collision_warning": null,
+          "traffic_sign_recognition": false,
+          "fatigue_warning": false
+        },
+        "parking_adas": {
+          "front_parking_radar": false,
+          "rear_parking_radar": true,
+          "reverse_camera": null,
+          "surround_360": true,
+          "transparent_chassis_540": null,
+          "cruise": "full_speed_adaptive",
+          "adas_level": null,
+          "auto_park": false,
+          "remote_park": null
+        },
+        "comfort": {
+          "sunroof": "panoramic_openable",
+          "power_tailgate": true,
+          "hands_free_tailgate": false,
+          "keyless_entry": true,
+          "keyless_start": true,
+          "remote_start": false,
+          "hud": false,
+          "wireless_phone_charging": false,
+          "driver_power_seat": true,
+          "passenger_power_seat": true,
+          "front_seat_heating": true,
+          "front_seat_ventilation": null,
+          "rear_air_vents": true,
+          "climate_control": "automatic_dual_zone",
+          "leather_seats": false
+        },
+        "infotainment": {
+          "center_screen_inches": 14.1,
+          "instrument_screen_inches": 12.3,
+          "carplay": null,
+          "carlife": null,
+          "connected_car": true,
+          "ota": false,
+          "speaker_count": 6,
+          "branded_audio": "-",
+          "voice_control": true,
+          "full_lcd_cluster": true,
+          "chip_8155": null,
+          "phone_link": false
+        },
+        "lighting": {
+          "headlights": "LED",
+          "auto_headlights": true,
+          "adaptive_high_beam": true
+        },
+        "wheels": {
+          "front_tire": "-",
+          "rear_tire": "-"
+        },
+        "optional_or_uncertain_features": []
+      },
+      "data_quality": {
+        "core_confidence": 0.99,
+        "feature_confidence": "high",
+        "verified_non_null_feature_leaf_count": 41,
+        "scoring_rule": "Only exact-trim standard features may score. null/optional features score 0.",
+        "known_issues": [],
+        "identity_source": "autohome_exact_trim",
+        "series_match": 1.0,
+        "trim_match": 1.0,
+        "source_snapshot": "live"
+      },
+      "sources": [
+        {
+          "url": "https://car.autohome.com.cn/config/spec/51319.html",
+          "source_type": "autohome_live_config",
+          "authority_tier": 1,
+          "series_id": 4080,
+          "spec_id": 51319,
+          "parameter_source": "live_page"
+        },
+        {
+          "url": "https://github.com/swoiow/autohome",
+          "source_type": "autohome_parameter_dataset",
+          "authority_tier": 3,
+          "snapshot": "identity_match_only",
+          "source_path": "live:config/spec/51319.html",
+          "note": "vault/main used for exact-trim identity; parameters from live page"
+        }
+      ],
+      "trim_id": "trim_ah_dffd7b8e509d"
+    },
+    "trim_ah_6bdee2dcf73f": {
+      "canonical_title": "朗逸 2017款 1.6L 手动风尚版",
+      "msrp_wan": 10.79,
+      "core_specs": {
+        "powertrain": "ice",
+        "body_type": "紧凑型车",
+        "seats": null,
+        "engine": "-",
+        "transmission": "5挡手动",
+        "length_mm": 4605,
+        "width_mm": 1765,
+        "height_mm": 1460,
+        "wheelbase_mm": 2610,
+        "fuel_grade": "92",
+        "official_fuel_l_100km": null,
+        "official_standard": null,
+        "low_soc_fuel_l_100km": null,
+        "real_world_fuel_l_100km": null,
+        "real_world_sample_n": null,
+        "ev_range_km": null,
+        "ev_range_standard": null,
+        "electric_kwh_100km": null,
+        "ranking_energy": null
+      },
+      "features": {
+        "passive_safety": {
+          "front_airbags": true,
+          "front_side_airbags": false,
+          "curtain_airbags": false,
+          "tpms_display": true
+        },
+        "active_safety": {
+          "esp": true,
+          "aeb": false,
+          "fcw": null,
+          "ldw": false,
+          "lka": false,
+          "lane_centering": null,
+          "bsd": false,
+          "dow": null,
+          "rear_collision_warning": null,
+          "traffic_sign_recognition": null,
+          "fatigue_warning": false
+        },
+        "parking_adas": {
+          "front_parking_radar": false,
+          "rear_parking_radar": true,
+          "reverse_camera": false,
+          "surround_360": false,
+          "transparent_chassis_540": null,
+          "cruise": "none",
+          "adas_level": null,
+          "auto_park": false,
+          "remote_park": null
+        },
+        "comfort": {
+          "sunroof": "none",
+          "power_tailgate": false,
+          "hands_free_tailgate": false,
+          "keyless_entry": false,
+          "keyless_start": false,
+          "remote_start": false,
+          "hud": false,
+          "wireless_phone_charging": false,
+          "driver_power_seat": false,
+          "passenger_power_seat": false,
+          "front_seat_heating": false,
+          "front_seat_ventilation": false,
+          "rear_air_vents": false,
+          "climate_control": "manual",
+          "leather_seats": false
+        },
+        "infotainment": {
+          "center_screen_inches": null,
+          "instrument_screen_inches": null,
+          "carplay": null,
+          "carlife": null,
+          "connected_car": false,
+          "ota": false,
+          "speaker_count": 6,
+          "branded_audio": "-",
+          "voice_control": false,
+          "full_lcd_cluster": false,
+          "chip_8155": null,
+          "phone_link": false
+        },
+        "lighting": {
+          "headlights": "卤素",
+          "auto_headlights": false,
+          "adaptive_high_beam": false
+        },
+        "wheels": {
+          "front_tire": "-",
+          "rear_tire": "-"
+        },
+        "optional_or_uncertain_features": []
+      },
+      "data_quality": {
+        "core_confidence": 0.99,
+        "feature_confidence": "high",
+        "verified_non_null_feature_leaf_count": 39,
+        "scoring_rule": "Only exact-trim standard features may score. null/optional features score 0.",
+        "known_issues": [],
+        "identity_source": "autohome_exact_trim",
+        "series_match": 1.0,
+        "trim_match": 1.0,
+        "source_snapshot": "live"
+      },
+      "sources": [
+        {
+          "url": "https://car.autohome.com.cn/config/spec/29361.html",
+          "source_type": "autohome_live_config",
+          "authority_tier": 1,
+          "series_id": 614,
+          "spec_id": 29361,
+          "parameter_source": "live_page"
+        },
+        {
+          "url": "https://github.com/swoiow/autohome",
+          "source_type": "autohome_parameter_dataset",
+          "authority_tier": 3,
+          "snapshot": "identity_match_only",
+          "source_path": "live:config/spec/29361.html",
+          "note": "vault/main used for exact-trim identity; parameters from live page"
+        }
+      ],
+      "trim_id": "trim_ah_6bdee2dcf73f"
+    },
+    "trim_ah_84508a054d39": {
+      "canonical_title": "长安UNI-V 2023款 1.5T 尊贵型",
+      "msrp_wan": 11.69,
+      "core_specs": {
+        "powertrain": "ice",
+        "body_type": "紧凑型车",
+        "seats": null,
+        "engine": "●",
+        "transmission": "湿式双离合变速箱(DCT)",
+        "length_mm": 4680,
+        "width_mm": 1838,
+        "height_mm": 1430,
+        "wheelbase_mm": 2750,
+        "fuel_grade": "92",
+        "official_fuel_l_100km": 6.22,
+        "official_standard": "WLTC",
+        "low_soc_fuel_l_100km": null,
+        "real_world_fuel_l_100km": null,
+        "real_world_sample_n": null,
+        "ev_range_km": null,
+        "ev_range_standard": null,
+        "electric_kwh_100km": null,
+        "ranking_energy": {
+          "type": "official_wltc_with_uncertainty",
+          "value": 6.22,
+          "unit": "L/100km",
+          "fallback_multiplier_recommended": 1.15
+        }
+      },
+      "features": {
+        "passive_safety": {
+          "front_airbags": true,
+          "front_side_airbags": true,
+          "curtain_airbags": true,
+          "tpms_display": true
+        },
+        "active_safety": {
+          "esp": true,
+          "aeb": true,
+          "fcw": true,
+          "ldw": true,
+          "lka": true,
+          "lane_centering": true,
+          "bsd": false,
+          "dow": false,
+          "rear_collision_warning": null,
+          "traffic_sign_recognition": true,
+          "fatigue_warning": true
+        },
+        "parking_adas": {
+          "front_parking_radar": true,
+          "rear_parking_radar": true,
+          "reverse_camera": null,
+          "surround_360": true,
+          "transparent_chassis_540": true,
+          "cruise": "full_speed_adaptive",
+          "adas_level": "L2",
+          "auto_park": false,
+          "remote_park": false
+        },
+        "comfort": {
+          "sunroof": "panoramic_openable",
+          "power_tailgate": true,
+          "hands_free_tailgate": true,
+          "keyless_entry": true,
+          "keyless_start": true,
+          "remote_start": false,
+          "hud": null,
+          "wireless_phone_charging": true,
+          "driver_power_seat": true,
+          "passenger_power_seat": true,
+          "front_seat_heating": true,
+          "front_seat_ventilation": true,
+          "rear_air_vents": true,
+          "climate_control": "automatic",
+          "leather_seats": false
+        },
+        "infotainment": {
+          "center_screen_inches": 10.3,
+          "instrument_screen_inches": 10.3,
+          "carplay": null,
+          "carlife": null,
+          "connected_car": true,
+          "ota": true,
+          "speaker_count": 8,
+          "branded_audio": "SONY索尼:2",
+          "voice_control": true,
+          "full_lcd_cluster": true,
+          "chip_8155": false,
+          "phone_link": true
+        },
+        "lighting": {
+          "headlights": "LED",
+          "auto_headlights": true,
+          "adaptive_high_beam": true
+        },
+        "wheels": {
+          "front_tire": "-",
+          "rear_tire": "-"
+        },
+        "optional_or_uncertain_features": []
+      },
+      "data_quality": {
+        "core_confidence": 0.99,
+        "feature_confidence": "high",
+        "verified_non_null_feature_leaf_count": 46,
+        "scoring_rule": "Only exact-trim standard features may score. null/optional features score 0.",
+        "known_issues": [],
+        "identity_source": "autohome_exact_trim",
+        "series_match": 1.0,
+        "trim_match": 1.0,
+        "source_snapshot": "live"
+      },
+      "sources": [
+        {
+          "url": "https://car.autohome.com.cn/config/spec/62792.html",
+          "source_type": "autohome_live_config",
+          "authority_tier": 1,
+          "series_id": 6335,
+          "spec_id": 62792,
+          "parameter_source": "live_page"
+        },
+        {
+          "url": "https://github.com/swoiow/autohome",
+          "source_type": "autohome_parameter_dataset",
+          "authority_tier": 3,
+          "snapshot": "identity_match_only",
+          "source_path": "live:config/spec/62792.html",
+          "note": "vault/main used for exact-trim identity; parameters from live page"
+        }
+      ],
+      "trim_id": "trim_ah_84508a054d39"
+    },
+    "trim_ah_430c500d75c7": {
+      "canonical_title": "长安UNI-T 2020款 1.5T 尊贵型",
+      "msrp_wan": 12.39,
+      "core_specs": {
+        "powertrain": "ice",
+        "body_type": "紧凑型SUV",
+        "seats": null,
+        "engine": "1.5T 180马力 L4",
+        "transmission": "7挡湿式双离合",
+        "length_mm": 4515,
+        "width_mm": 1870,
+        "height_mm": 1565,
+        "wheelbase_mm": 2710,
+        "fuel_grade": "92",
+        "official_fuel_l_100km": 6.3,
+        "official_standard": "NEDC",
+        "low_soc_fuel_l_100km": null,
+        "real_world_fuel_l_100km": null,
+        "real_world_sample_n": null,
+        "ev_range_km": null,
+        "ev_range_standard": null,
+        "electric_kwh_100km": null,
+        "ranking_energy": {
+          "type": "official_nedc_with_uncertainty",
+          "value": 6.3,
+          "unit": "L/100km",
+          "fallback_multiplier_recommended": 1.2
+        }
+      },
+      "features": {
+        "passive_safety": {
+          "front_airbags": true,
+          "front_side_airbags": true,
+          "curtain_airbags": true,
+          "tpms_display": true
+        },
+        "active_safety": {
+          "esp": true,
+          "aeb": true,
+          "fcw": null,
+          "ldw": false,
+          "lka": false,
+          "lane_centering": null,
+          "bsd": false,
+          "dow": null,
+          "rear_collision_warning": null,
+          "traffic_sign_recognition": false,
+          "fatigue_warning": true
+        },
+        "parking_adas": {
+          "front_parking_radar": true,
+          "rear_parking_radar": true,
+          "reverse_camera": null,
+          "surround_360": true,
+          "transparent_chassis_540": null,
+          "cruise": "full_speed_adaptive",
+          "adas_level": null,
+          "auto_park": false,
+          "remote_park": null
+        },
+        "comfort": {
+          "sunroof": "panoramic_openable",
+          "power_tailgate": false,
+          "hands_free_tailgate": null,
+          "keyless_entry": true,
+          "keyless_start": true,
+          "remote_start": false,
+          "hud": null,
+          "wireless_phone_charging": false,
+          "driver_power_seat": true,
+          "passenger_power_seat": true,
+          "front_seat_heating": false,
+          "front_seat_ventilation": false,
+          "rear_air_vents": true,
+          "climate_control": "automatic",
+          "leather_seats": false
+        },
+        "infotainment": {
+          "center_screen_inches": 10.3,
+          "instrument_screen_inches": 10.3,
+          "carplay": null,
+          "carlife": null,
+          "connected_car": true,
+          "ota": true,
+          "speaker_count": 6,
+          "branded_audio": "-",
+          "voice_control": true,
+          "full_lcd_cluster": true,
+          "chip_8155": null,
+          "phone_link": false
+        },
+        "lighting": {
+          "headlights": "LED",
+          "auto_headlights": true,
+          "adaptive_high_beam": false
+        },
+        "wheels": {
+          "front_tire": "-",
+          "rear_tire": "-"
+        },
+        "optional_or_uncertain_features": []
+      },
+      "data_quality": {
+        "core_confidence": 0.99,
+        "feature_confidence": "high",
+        "verified_non_null_feature_leaf_count": 39,
+        "scoring_rule": "Only exact-trim standard features may score. null/optional features score 0.",
+        "known_issues": [],
+        "identity_source": "autohome_exact_trim",
+        "series_match": 1.0,
+        "trim_match": 1.0,
+        "source_snapshot": "live"
+      },
+      "sources": [
+        {
+          "url": "https://car.autohome.com.cn/config/spec/44913.html",
+          "source_type": "autohome_live_config",
+          "authority_tier": 1,
+          "series_id": 5565,
+          "spec_id": 44913,
+          "parameter_source": "live_page"
+        },
+        {
+          "url": "https://github.com/swoiow/autohome",
+          "source_type": "autohome_parameter_dataset",
+          "authority_tier": 3,
+          "snapshot": "identity_match_only",
+          "source_path": "live:config/spec/44913.html",
+          "note": "vault/main used for exact-trim identity; parameters from live page"
+        }
+      ],
+      "trim_id": "trim_ah_430c500d75c7"
+    },
+    "trim_ah_78c162dfa9db": {
+      "canonical_title": "长安UNI-T 2022款 1.5T 尊贵型",
+      "msrp_wan": 12.39,
+      "core_specs": {
+        "powertrain": "ice",
+        "body_type": "紧凑型SUV",
+        "seats": null,
+        "engine": "●",
+        "transmission": "湿式双离合变速箱(DCT)",
+        "length_mm": 4515,
+        "width_mm": 1870,
+        "height_mm": 1565,
+        "wheelbase_mm": 2710,
+        "fuel_grade": "92",
+        "official_fuel_l_100km": 6.1,
+        "official_standard": "NEDC",
+        "low_soc_fuel_l_100km": null,
+        "real_world_fuel_l_100km": null,
+        "real_world_sample_n": null,
+        "ev_range_km": null,
+        "ev_range_standard": null,
+        "electric_kwh_100km": null,
+        "ranking_energy": {
+          "type": "official_nedc_with_uncertainty",
+          "value": 6.1,
+          "unit": "L/100km",
+          "fallback_multiplier_recommended": 1.2
+        }
+      },
+      "features": {
+        "passive_safety": {
+          "front_airbags": true,
+          "front_side_airbags": true,
+          "curtain_airbags": true,
+          "tpms_display": true
+        },
+        "active_safety": {
+          "esp": true,
+          "aeb": true,
+          "fcw": true,
+          "ldw": true,
+          "lka": true,
+          "lane_centering": true,
+          "bsd": true,
+          "dow": true,
+          "rear_collision_warning": null,
+          "traffic_sign_recognition": true,
+          "fatigue_warning": true
+        },
+        "parking_adas": {
+          "front_parking_radar": true,
+          "rear_parking_radar": true,
+          "reverse_camera": null,
+          "surround_360": true,
+          "transparent_chassis_540": null,
+          "cruise": "full_speed_adaptive",
+          "adas_level": "L2",
+          "auto_park": false,
+          "remote_park": false
+        },
+        "comfort": {
+          "sunroof": "panoramic_openable",
+          "power_tailgate": false,
+          "hands_free_tailgate": false,
+          "keyless_entry": true,
+          "keyless_start": true,
+          "remote_start": false,
+          "hud": false,
+          "wireless_phone_charging": false,
+          "driver_power_seat": true,
+          "passenger_power_seat": true,
+          "front_seat_heating": false,
+          "front_seat_ventilation": false,
+          "rear_air_vents": true,
+          "climate_control": "automatic",
+          "leather_seats": false
+        },
+        "infotainment": {
+          "center_screen_inches": 10.3,
+          "instrument_screen_inches": 10.3,
+          "carplay": null,
+          "carlife": null,
+          "connected_car": true,
+          "ota": true,
+          "speaker_count": 8,
+          "branded_audio": "-",
+          "voice_control": true,
+          "full_lcd_cluster": true,
+          "chip_8155": null,
+          "phone_link": false
+        },
+        "lighting": {
+          "headlights": "LED",
+          "auto_headlights": true,
+          "adaptive_high_beam": true
+        },
+        "wheels": {
+          "front_tire": "-",
+          "rear_tire": "-"
+        },
+        "optional_or_uncertain_features": []
+      },
+      "data_quality": {
+        "core_confidence": 0.99,
+        "feature_confidence": "high",
+        "verified_non_null_feature_leaf_count": 46,
+        "scoring_rule": "Only exact-trim standard features may score. null/optional features score 0.",
+        "known_issues": [],
+        "identity_source": "autohome_exact_trim",
+        "series_match": 1.0,
+        "trim_match": 1.0,
+        "source_snapshot": "live"
+      },
+      "sources": [
+        {
+          "url": "https://car.autohome.com.cn/config/spec/52850.html",
+          "source_type": "autohome_live_config",
+          "authority_tier": 1,
+          "series_id": 5565,
+          "spec_id": 52850,
+          "parameter_source": "live_page"
+        },
+        {
+          "url": "https://github.com/swoiow/autohome",
+          "source_type": "autohome_parameter_dataset",
+          "authority_tier": 3,
+          "snapshot": "identity_match_only",
+          "source_path": "live:config/spec/52850.html",
+          "note": "vault/main used for exact-trim identity; parameters from live page"
+        }
+      ],
+      "trim_id": "trim_ah_78c162dfa9db"
     }
   },
   "configuration_policy": "new-full-config-only; AutoHome exact-trim parameters only; legacy shards/approximate config forbidden"

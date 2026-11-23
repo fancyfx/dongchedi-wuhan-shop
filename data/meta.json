@@ -52,7 +52,7 @@
   "sort_preference": "v3_2_suv_first_modern_cabin_with_dmi_top30",
   "notes": "算法版本 v3.2.0（华中7城直营 · 节假日低频用车买手严选）。7城直营在库 513 台（在售 508 / 锁单隐藏 5），四大铁律否决 110 台（新能源28/三缸49/干式双离合35），合格参评 344 台，严选展示 Top 30 台。",
   "sort_method": "ranking_v3_2_suv_cabin_and_tiered_hybrid",
-  "ranked_at": "2026-11-22T09:50:18+08:00",
+  "ranked_at": "2026-11-23T09:46:33+08:00",
   "ranked_count": 30,
   "sort_weights": {
     "config": 0.28,
@@ -167,7 +167,7 @@
   "bev_filter": "排除续航≤300km 的纯电，以及无法解析续航的微型/城市代步纯电（宏光MINIEV/Lumin/熊猫/之光EV/Air ev 等）；插混/增程与续航>300 纯电保留",
   "exclude_short_range_bev": true,
   "max_bev_range_km": 300,
-  "filtered_count": 512,
+  "filtered_count": 507,
   "excluded_short_range_bev_count": 0,
   "excluded_short_range_bev": [],
   "filter_pipeline": "华中7城官方直营 → 到汉可比总价≤6.0万 → 实时售出清理 & 锁单隐藏(5) → 四大铁律否决(110) → V3综合评分(344) → 严选 Top 30；source=513 filtered=513 data_issues=56",
@@ -200,7 +200,7 @@
   "excluded_over_budget_cash_count": 6,
   "excluded_over_budget_cash_file": "data/excluded-over-budget-cash.json",
   "price_refresh_file": "data/price-refresh-detail.json",
-  "data_issue_count": 56,
+  "data_issue_count": 55,
   "data_quality_policy": {
     "exact_trim_only": true,
     "min_config_coverage": 0.6,
@@ -212,15 +212,15 @@
   "configuration_refresh_mode": "local_only",
   "configuration_refresh_command": "python3 scripts/local_refresh.py",
   "legacy_configuration_compatible": false,
-  "library_scored_count": 456,
-  "below_display_count": 426,
+  "library_scored_count": 452,
+  "below_display_count": 422,
   "display_limit": 30,
-  "display_score_floor": 78.4,
+  "display_score_floor": 78.9,
   "ingest_score_threshold": 78.4,
-  "ingest_at": "2026-11-22T09:50:18+08:00",
-  "on_sale_count": 507,
-  "reserved_count": 5,
-  "vetoed_count": 110,
+  "ingest_at": "2026-11-23T09:46:33+08:00",
+  "on_sale_count": 500,
+  "reserved_count": 7,
+  "vetoed_count": 106,
   "veto_breakdown": {
     "ev_phev": 28,
     "bev": 26,
@@ -239,8 +239,8 @@
       "kind": "直营大店",
       "is_local": true,
       "logistics_fee_yuan": 0,
-      "inventory_count": 171,
-      "top_count": 9
+      "inventory_count": 165,
+      "top_count": 7
     },
     {
       "shop_id": "196923",
@@ -261,8 +261,8 @@
       "kind": "直营大店",
       "is_local": false,
       "logistics_fee_yuan": 840,
-      "inventory_count": 92,
-      "top_count": 4
+      "inventory_count": 99,
+      "top_count": 6
     },
     {
       "shop_id": "179450",
@@ -272,7 +272,7 @@
       "kind": "直营仓",
       "is_local": false,
       "logistics_fee_yuan": 1180,
-      "inventory_count": 28,
+      "inventory_count": 25,
       "top_count": 1
     },
     {
@@ -283,8 +283,8 @@
       "kind": "直营仓",
       "is_local": false,
       "logistics_fee_yuan": 1200,
-      "inventory_count": 57,
-      "top_count": 3
+      "inventory_count": 55,
+      "top_count": 2
     },
     {
       "shop_id": "225430",
@@ -294,8 +294,8 @@
       "kind": "直营大店",
       "is_local": false,
       "logistics_fee_yuan": 1300,
-      "inventory_count": 155,
-      "top_count": 13
+      "inventory_count": 154,
+      "top_count": 14
     },
     {
       "shop_id": "183004",
