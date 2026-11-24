@@ -50,9 +50,9 @@
   "viewport": "390x844",
   "user_agent": "WeChat MicroMessenger iPhone (API + attempted page emulation; CDP UA override blocked)",
   "sort_preference": "v3_2_suv_first_modern_cabin_with_dmi_top30",
-  "notes": "算法版本 v3.2.0（双榜独立严选 · 武汉榜 + 全国榜）。全国直营在库 513 台（在售 508 / 锁单隐藏 5），四大铁律否决 110 台（新能源28/三缸49/干式双离合35），合格参评 344 台（武汉本地 130 台），分别展示武汉榜 Top 30 与全国榜 Top 30。",
+  "notes": "算法版本 v3.2.0（双榜独立严选 · 武汉榜 + 全国榜）。全国直营在库 526 台（在售 516 / 锁单隐藏 10），四大铁律否决 112 台（新能源26/三缸49/干式双离合39），合格参评 352 台（武汉本地 126 台），分别展示武汉榜 Top 30 与全国榜 Top 30。",
   "sort_method": "ranking_v3_2_suv_cabin_and_tiered_hybrid",
-  "ranked_at": "2026-11-24T23:07:23+08:00",
+  "ranked_at": "2026-11-24T23:20:45+08:00",
   "ranked_count": 30,
   "sort_weights": {
     "config": 0.28,
@@ -167,10 +167,10 @@
   "bev_filter": "排除续航≤300km 的纯电，以及无法解析续航的微型/城市代步纯电（宏光MINIEV/Lumin/熊猫/之光EV/Air ev 等）；插混/增程与续航>300 纯电保留",
   "exclude_short_range_bev": true,
   "max_bev_range_km": 300,
-  "filtered_count": 513,
+  "filtered_count": 526,
   "excluded_short_range_bev_count": 0,
   "excluded_short_range_bev": [],
-  "filter_pipeline": "官方直营多店 → 到汉可比总价≤6.0万 → 实时售出清理 & 锁单隐藏(5) → 四大铁律否决(110) → V3综合评分(344) → 武汉榜 Top 30 / 全国榜 Top 30；source=513 filtered=513 data_issues=56",
+  "filter_pipeline": "官方直营多店 → 到汉可比总价≤6.0万 → 实时售出清理 & 锁单隐藏(10) → 四大铁律否决(112) → V3综合评分(352) → 武汉榜 Top 30 / 全国榜 Top 30；source=526 filtered=526 data_issues=56",
   "config_scoring": {
     "method": "exact_trim_full_parameters",
     "approximate_fallback": false,
@@ -194,7 +194,7 @@
   "energy_scenario": "no_home_charging",
   "finance_reserve_wan": 0.5,
   "verified_specs_file": "data/vehicle-specs-verified.json",
-  "verified_sku_count": 518,
+  "verified_sku_count": 560,
   "cash_price_source": "m.dcdapp.com/motor/ecom/sophon/guide/card/detail → sku_price.price (全款展示价)",
   "cash_price_note": "列表 product_price 常为分期券后价；看板与排序一律用详情 sku_price 现金价。原65辆分期+3辆券后已回写；现金价>6万的6辆已排除。",
   "excluded_over_budget_cash_count": 6,
@@ -212,21 +212,21 @@
   "configuration_refresh_mode": "local_only",
   "configuration_refresh_command": "python3 scripts/local_refresh.py",
   "legacy_configuration_compatible": false,
-  "library_scored_count": 344,
-  "below_display_count": 427,
+  "library_scored_count": 352,
+  "below_display_count": 440,
   "display_limit": 30,
-  "display_score_floor": 78.4,
-  "ingest_score_threshold": 76.4,
-  "ingest_at": "2026-11-21T21:09:26+08:00",
-  "on_sale_count": 508,
-  "reserved_count": 5,
-  "vetoed_count": 110,
+  "display_score_floor": 79.4,
+  "ingest_score_threshold": 78.9,
+  "ingest_at": "2026-11-24T09:43:55+08:00",
+  "on_sale_count": 516,
+  "reserved_count": 10,
+  "vetoed_count": 112,
   "veto_breakdown": {
-    "ev_phev": 28,
-    "bev": 26,
+    "ev_phev": 26,
+    "bev": 24,
     "risky_phev": 2,
     "three_cyl": 49,
-    "dry_dct": 35
+    "dry_dct": 39
   },
   "buyer_city": "武汉",
   "shop_scope": "plan_a_7_direct_shops",
@@ -239,8 +239,8 @@
       "kind": "直营大店",
       "is_local": true,
       "logistics_fee_yuan": 0,
-      "inventory_count": 172,
-      "top_count": 10
+      "inventory_count": 166,
+      "top_count": 8
     },
     {
       "shop_id": "196923",
@@ -261,8 +261,8 @@
       "kind": "直营大店",
       "is_local": false,
       "logistics_fee_yuan": 840,
-      "inventory_count": 92,
-      "top_count": 4
+      "inventory_count": 107,
+      "top_count": 7
     },
     {
       "shop_id": "179450",
@@ -283,7 +283,7 @@
       "kind": "直营仓",
       "is_local": false,
       "logistics_fee_yuan": 1200,
-      "inventory_count": 57,
+      "inventory_count": 56,
       "top_count": 2
     },
     {
@@ -294,8 +294,8 @@
       "kind": "直营大店",
       "is_local": false,
       "logistics_fee_yuan": 1300,
-      "inventory_count": 155,
-      "top_count": 13
+      "inventory_count": 160,
+      "top_count": 12
     },
     {
       "shop_id": "183004",
@@ -316,11 +316,11 @@
       "label": "武汉榜",
       "subtitle": "武汉本地直营 · 免物流直提",
       "data_file": "listings-ranked-wuhan.json",
-      "inventory_count": 172,
-      "on_sale_count": 167,
-      "reserved_count": 5,
+      "inventory_count": 166,
+      "on_sale_count": 165,
+      "reserved_count": 1,
       "vetoed_count": 35,
-      "eligible_count": 130,
+      "eligible_count": 126,
       "ranked_count": 30,
       "display_limit": 30,
       "display_score_floor": 71.1
@@ -330,17 +330,17 @@
       "label": "全国榜",
       "subtitle": "全国官方直营 · 到汉统一比价",
       "data_file": "listings-ranked.json",
-      "inventory_count": 513,
-      "on_sale_count": 508,
-      "reserved_count": 5,
-      "vetoed_count": 110,
-      "eligible_count": 344,
+      "inventory_count": 526,
+      "on_sale_count": 516,
+      "reserved_count": 10,
+      "vetoed_count": 112,
+      "eligible_count": 352,
       "ranked_count": 30,
       "display_limit": 30,
-      "display_score_floor": 78.4
+      "display_score_floor": 79.4
     }
   },
   "wuhan_ranked_count": 30,
-  "wuhan_eligible_count": 130,
+  "wuhan_eligible_count": 126,
   "wuhan_display_score_floor": 71.1
 }
