@@ -23,16 +23,18 @@ import {
   type TodayMode,
   type TodayUpdates,
 } from './today'
-import type { Listing, Meta, PresetKey, ShopScopeKey, SortKey } from './types'
+import type { BoardKey, Listing, Meta, PresetKey, ShopScopeKey, SortKey } from './types'
 
 const app = document.querySelector<HTMLDivElement>('#app')!
 
-let rankedListings: Listing[] = []
+let wuhanListings: Listing[] = []
+let nationalListings: Listing[] = []
 let meta: Meta | null = null
 let todayData: TodayUpdates = missingToday('尚未加载')
 let highlightSkus = new Set<string>()
 
 const state = {
+  board: 'wuhan' as BoardKey,
   preset: 'all' as PresetKey,
   shopScope: 'all' as ShopScopeKey,
   city: '',
@@ -43,6 +45,33 @@ const state = {
   drawerMode: null as null | 'detail' | 'today' | 'compare' | 'methodology' | 'filter',
   todayFilter: 'all' as TodayFilter,
   compareSkus: [] as string[],
+}
+
+function activeListings(): Listing[] {
+  return state.board === 'wuhan' ? wuhanListings : nationalListings
+}
+
+function findListingBySku(sku: string): Listing | undefined {
+  return activeListings().find((x) => x.sku === sku) || nationalListings.find((x) => x.sku === sku) || wuhanListings.find((x) => x.sku === sku)
+}
+
+function boardFromSearch(search: string): BoardKey {
+  const value = new URLSearchParams(search).get('board')
+  return value === 'national' ? 'national' : 'wuhan'
+}
+
+function setBoard(next: BoardKey) {
+  if (state.board === next) return
+  state.board = next
+  if (next === 'wuhan') {
+    state.shopScope = 'all'
+    state.city = ''
+    if (state.preset === 'wuhan') state.preset = 'all'
+  }
+  const url = new URL(location.href)
+  url.searchParams.set('board', next)
+  history.replaceState(null, '', `${url.pathname}${url.search}${url.hash}`)
+  renderApp()
 }
 
 function landedPrice(item: Listing): number {
@@ -116,6 +145,7 @@ function matchesPreset(item: Listing, preset: PresetKey): boolean {
 }
 
 function matchesShopScope(item: Listing): boolean {
+  if (state.board === 'wuhan') return true
   if (state.shopScope === 'wuhan') return isLocalWuhan(item)
   if (state.shopScope === 'low_freight') {
     return isLocalWuhan(item) || (item.logistics_fee_yuan ?? 9999) <= 1000
@@ -124,11 +154,12 @@ function matchesShopScope(item: Listing): boolean {
 }
 
 function filteredListings(): Listing[] {
+  const source = activeListings()
   const q = state.q.trim().toLowerCase()
   const pMax = state.priceMax === '' ? null : Number(state.priceMax)
-  let rows = rankedListings.filter((item) => {
+  let rows = source.filter((item) => {
     if (!matchesShopScope(item)) return false
-    if (state.city && (item.city || '') !== state.city) return false
+    if (state.board === 'national' && state.city && (item.city || '') !== state.city) return false
     if (!matchesPreset(item, state.preset)) return false
     if (pMax != null && !Number.isNaN(pMax) && landedPrice(item) > pMax) return false
     if (q) {
@@ -189,8 +220,8 @@ function filteredListings(): Listing[] {
 function isDefaultView(): boolean {
   return (
     state.preset === 'all' &&
-    state.shopScope === 'all' &&
-    !state.city &&
+    (state.board === 'wuhan' || state.shopScope === 'all') &&
+    (state.board === 'wuhan' || !state.city) &&
     state.sort === 'recommend' &&
     !state.q.trim() &&
     !state.priceMax
@@ -198,15 +229,16 @@ function isDefaultView(): boolean {
 }
 
 function presetCounts(): Record<PresetKey, number> {
+  const source = activeListings()
   return {
-    all: rankedListings.length,
-    wuhan: rankedListings.filter((x) => matchesPreset(x, 'wuhan')).length,
-    at: rankedListings.filter((x) => matchesPreset(x, 'at')).length,
-    under5: rankedListings.filter((x) => matchesPreset(x, 'under5')).length,
-    lowmile: rankedListings.filter((x) => matchesPreset(x, 'lowmile')).length,
-    suv: rankedListings.filter((x) => matchesPreset(x, 'suv')).length,
-    sedan_b: rankedListings.filter((x) => matchesPreset(x, 'sedan_b')).length,
-    l2: rankedListings.filter((x) => matchesPreset(x, 'l2')).length,
+    all: source.length,
+    wuhan: source.filter((x) => matchesPreset(x, 'wuhan')).length,
+    at: source.filter((x) => matchesPreset(x, 'at')).length,
+    under5: source.filter((x) => matchesPreset(x, 'under5')).length,
+    lowmile: source.filter((x) => matchesPreset(x, 'lowmile')).length,
+    suv: source.filter((x) => matchesPreset(x, 'suv')).length,
+    sedan_b: source.filter((x) => matchesPreset(x, 'sedan_b')).length,
+    l2: source.filter((x) => matchesPreset(x, 'l2')).length,
   }
 }
 
@@ -240,6 +272,14 @@ function cardInnerHtml(item: Listing, hero = false): string {
     : `<div class="cost-breakdown remote">裸车 ${bareWan.toFixed(2)}万 + 官方物流 ${logiYuan}元${pdiffYuan > 0 ? ` + 异地上牌差 ${pdiffYuan}元` : ''}</div>`
 
   const originBadgeText = local ? '武汉本地' : `${originLbl}${logiYuan > 0 ? ` · ${logiYuan}物流` : ''}`
+  const crossRankBadge =
+    state.board === 'wuhan'
+      ? item.national_rank
+        ? `<span class="cross-rank-chip">全国#${item.national_rank}</span>`
+        : ''
+      : item.wuhan_rank
+        ? `<span class="cross-rank-chip">武汉#${item.wuhan_rank}</span>`
+        : ''
 
   return `
     <article class="car-card ${hero ? 'hero-card' : ''} ${topClass} ${compared ? 'is-compared' : ''}" data-sku="${esc(item.sku)}">
@@ -247,6 +287,7 @@ function cardInnerHtml(item: Listing, hero = false): string {
         ${coverImgHtml(item)}
         <div class="media-top">
           <span class="rank-chip ${item.rank && item.rank <= 3 ? `top-${item.rank}` : ''}">#${rankNo}</span>
+          ${crossRankBadge}
           ${p?.archetype_badge ? `<span class="media-arch">${esc(p.archetype_badge)}</span>` : ''}
           ${isNewTop ? `<span class="today-new-chip">新进前10</span>` : ''}
           ${p?.discount_fold ? `<span class="fold-chip">${p.discount_fold}折</span>` : ''}
@@ -297,23 +338,38 @@ function cardInnerHtml(item: Listing, hero = false): string {
 }
 
 function mastheadHtml(): string {
-  const onSale = meta?.on_sale_count ?? '—'
-  const vetoed = meta?.vetoed_count ?? '—'
-  const reserved = meta?.reserved_count ?? 0
-  const rankedCnt = rankedListings.length
-  const localCnt = rankedListings.filter(isLocalWuhan).length
-  const remoteCnt = Math.max(0, rankedCnt - localCnt)
+  const isWuhan = state.board === 'wuhan'
+  const wuhanMeta = meta?.boards?.wuhan
+  const nationalMeta = meta?.boards?.national
+
+  const activeOnSale = isWuhan ? (wuhanMeta?.on_sale_count ?? '—') : (nationalMeta?.on_sale_count ?? meta?.on_sale_count ?? '—')
+  const activeVetoed = isWuhan ? (wuhanMeta?.vetoed_count ?? '—') : (nationalMeta?.vetoed_count ?? meta?.vetoed_count ?? '—')
+  const activeReserved = isWuhan ? (wuhanMeta?.reserved_count ?? 0) : (nationalMeta?.reserved_count ?? meta?.reserved_count ?? 0)
+  const activeEligible = isWuhan ? (wuhanMeta?.eligible_count ?? meta?.wuhan_eligible_count) : (nationalMeta?.eligible_count ?? meta?.library_scored_count)
+  const currentList = activeListings()
+  const rankedCnt = currentList.length
+  const localCntInNational = nationalListings.filter(isLocalWuhan).length
+  const remoteCntInNational = Math.max(0, nationalListings.length - localCntInNational)
+  const wuhanFloor = wuhanMeta?.display_score_floor ?? meta?.wuhan_display_score_floor
   const todayBadge = todayData.has_snapshot
     ? todayData.counts.added + todayData.counts.updated_price + todayData.counts.removed_sold
     : 0
+
+  const eyebrow = isWuhan
+    ? 'DONGCHEDI WUHAN · LOCAL DIRECT SHOP'
+    : 'DONGCHEDI NATIONAL · DIRECT SHOPS → WUHAN'
+  const heading = isWuhan ? `武汉榜 · 本地直提 Top ${rankedCnt || 30}` : `全国榜 · 直营到汉 Top ${rankedCnt || 30}`
+  const lead = isWuhan
+    ? '聚焦武汉官方直营店本地现车，免异地物流费、本地上牌标准，可随时到店实看试驾，独立执行 V3.2 严选排名。'
+    : '覆盖全国多城官方直营店仓（武汉/长沙/合肥/南京/郑州/重庆/成都），自动计入官方到汉物流费与异地上牌差额，统一以到汉总价≤6万横评。'
 
   return `
     <header class="masthead">
       <div class="masthead-top">
         <div class="brand-lockup">
-          <div class="eyebrow">DONGCHEDI CENTRAL · 7 DIRECT SHOPS → WUHAN</div>
-          <h1>到汉严选 · 7城直营 Top 30</h1>
-          <p class="lead">覆盖武汉、长沙、合肥、南京、郑州、重庆、成都官方直营店仓，已自动计入官方到汉物流费与异地上牌差额，统一以到汉总价≤6万进入 V3 严选比价。</p>
+          <div class="eyebrow">${eyebrow}</div>
+          <h1>${heading}</h1>
+          <p class="lead">${lead}</p>
         </div>
         <div class="masthead-actions">
           <button type="button" class="action-pill" id="btn-open-methodology">选车铁律</button>
@@ -323,41 +379,87 @@ function mastheadHtml(): string {
         </div>
       </div>
 
+      <nav class="board-switcher" role="tablist" aria-label="切换榜单">
+        <button
+          type="button"
+          role="tab"
+          aria-selected="${isWuhan ? 'true' : 'false'}"
+          class="board-tab ${isWuhan ? 'active' : ''}"
+          data-board="wuhan"
+        >
+          <span class="bt-main">
+            <strong>武汉榜</strong>
+            <span class="bt-count">Top ${wuhanListings.length}</span>
+          </span>
+          <span class="bt-sub">本地直提 · 免物流现车</span>
+        </button>
+        <button
+          type="button"
+          role="tab"
+          aria-selected="${!isWuhan ? 'true' : 'false'}"
+          class="board-tab ${!isWuhan ? 'active' : ''}"
+          data-board="national"
+        >
+          <span class="bt-main">
+            <strong>全国榜</strong>
+            <span class="bt-count">Top ${nationalListings.length}</span>
+          </span>
+          <span class="bt-sub">全国直营 · 含运费到汉比价</span>
+        </button>
+      </nav>
+
       <div class="funnel-strip" aria-label="数据清洗漏斗">
-        <span class="funnel-chip">7城在售 <b>${onSale}</b></span>
+        <span class="funnel-chip">${isWuhan ? '武汉在售' : '全国在售'} <b>${activeOnSale}</b></span>
         <span class="funnel-sep">→</span>
-        <span class="funnel-chip veto">铁律否决 <b>-${vetoed}</b></span>
-        ${reserved > 0 ? `<span class="funnel-sep">→</span><span class="funnel-chip muted">锁单藏 <b>${reserved}</b></span>` : ''}
+        <span class="funnel-chip veto">铁律否决 <b>-${activeVetoed}</b></span>
+        ${activeReserved > 0 ? `<span class="funnel-sep">→</span><span class="funnel-chip muted">锁单藏 <b>${activeReserved}</b></span>` : ''}
+        ${activeEligible != null ? `<span class="funnel-sep">→</span><span class="funnel-chip">参评 <b>${activeEligible}</b></span>` : ''}
         <span class="funnel-sep">→</span>
-        <span class="funnel-chip final">严选 <b>Top ${rankedCnt}</b>${rankedCnt ? `（汉${localCnt}/外${remoteCnt}）` : ''}</span>
+        <span class="funnel-chip final">${
+          isWuhan
+            ? `武汉榜 <b>Top ${rankedCnt}</b>${wuhanFloor != null ? `（≥${Number(wuhanFloor).toFixed(1)}分）` : ''}`
+            : `全国榜 <b>Top ${rankedCnt}</b>${rankedCnt ? `（汉${localCntInNational}/外${remoteCntInNational}）` : ''}`
+        }</span>
         <span class="funnel-time">更新 ${esc(fmtTime(meta?.ranked_at))}</span>
       </div>
     </header>`
 }
 
 function stickyBarHtml(shown: Listing[]): string {
+  const isWuhan = state.board === 'wuhan'
+  const source = activeListings()
   const counts = presetCounts()
-  const presets: [PresetKey, string][] = [
-    ['all', `全部 ${counts.all}`],
-    ['wuhan', `武汉本地 ${counts.wuhan}`],
-    ['suv', `SUV/四驱 ${counts.suv}`],
-    ['l2', `L2智驾 ${counts.l2}`],
-    ['lowmile', `4万km内 ${counts.lowmile}`],
-    ['under5', `5万内 ${counts.under5}`],
-    ['at', `AT/电混 ${counts.at}`],
-    ['sedan_b', `B级轿 ${counts.sedan_b}`],
-  ]
+  const presets: [PresetKey, string][] = isWuhan
+    ? [
+        ['all', `全部 ${counts.all}`],
+        ['suv', `SUV/四驱 ${counts.suv}`],
+        ['l2', `L2智驾 ${counts.l2}`],
+        ['lowmile', `4万km内 ${counts.lowmile}`],
+        ['under5', `5万内 ${counts.under5}`],
+        ['at', `AT/电混 ${counts.at}`],
+        ['sedan_b', `B级轿 ${counts.sedan_b}`],
+      ]
+    : [
+        ['all', `全部 ${counts.all}`],
+        ['wuhan', `武汉本地 ${counts.wuhan}`],
+        ['suv', `SUV/四驱 ${counts.suv}`],
+        ['l2', `L2智驾 ${counts.l2}`],
+        ['lowmile', `4万km内 ${counts.lowmile}`],
+        ['under5', `5万内 ${counts.under5}`],
+        ['at', `AT/电混 ${counts.at}`],
+        ['sedan_b', `B级轿 ${counts.sedan_b}`],
+      ]
   const avgPrice = shown.length ? (shown.reduce((a, b) => a + landedPrice(b), 0) / shown.length).toFixed(2) : '—'
   const activeFilterCount =
     (state.q.trim() ? 1 : 0) +
     (state.priceMax ? 1 : 0) +
-    (state.shopScope !== 'all' ? 1 : 0) +
-    (state.city ? 1 : 0)
+    (!isWuhan && state.shopScope !== 'all' ? 1 : 0) +
+    (!isWuhan && state.city ? 1 : 0)
 
   const scopeChip =
-    state.shopScope === 'wuhan'
+    !isWuhan && state.shopScope === 'wuhan'
       ? `<button type="button" class="active-chip" id="btn-clear-scope">仅武汉 ×</button>`
-      : state.shopScope === 'low_freight'
+      : !isWuhan && state.shopScope === 'low_freight'
         ? `<button type="button" class="active-chip" id="btn-clear-scope">运费≤1k ×</button>`
         : ''
 
@@ -373,17 +475,17 @@ function stickyBarHtml(shown: Listing[]): string {
       </div>
       <div class="bar-ctrl-row">
         <div class="bar-stats">
-          <strong>${shown.length}</strong><span class="bar-total">/${rankedListings.length}台</span>
-          <span class="bar-avg">到汉均 <b>${avgPrice}万</b></span>
+          <strong>${shown.length}</strong><span class="bar-total">/${source.length}台</span>
+          <span class="bar-avg">${isWuhan ? '全款均' : '到汉均'} <b>${avgPrice}万</b></span>
           ${scopeChip}
-          ${state.city ? `<button type="button" class="active-chip" id="btn-clear-city">${esc(state.city)} ×</button>` : ''}
+          ${!isWuhan && state.city ? `<button type="button" class="active-chip" id="btn-clear-city">${esc(state.city)} ×</button>` : ''}
           ${state.q.trim() ? `<button type="button" class="active-chip" id="btn-clear-q">${esc(state.q.trim())} ×</button>` : ''}
           ${state.priceMax ? `<button type="button" class="active-chip" id="btn-clear-pmax">≤${esc(state.priceMax)}万 ×</button>` : ''}
         </div>
 
         <div class="desktop-only-inputs">
-          <input id="ctrl-q" type="search" placeholder="搜车型 / 城市 / 品牌" value="${esc(state.q)}" />
-          <input id="ctrl-pmax" type="number" min="0" max="6" step="0.1" placeholder="到汉上限" value="${esc(state.priceMax)}" />
+          <input id="ctrl-q" type="search" placeholder="${isWuhan ? '搜车型 / 品牌' : '搜车型 / 城市 / 品牌'}" value="${esc(state.q)}" />
+          <input id="ctrl-pmax" type="number" min="0" max="6" step="0.1" placeholder="${isWuhan ? '现金上限' : '到汉上限'}" value="${esc(state.priceMax)}" />
         </div>
 
         <div class="bar-actions">
@@ -392,7 +494,7 @@ function stickyBarHtml(shown: Listing[]): string {
             <option value="powertrain" ${state.sort === 'powertrain' ? 'selected' : ''}>三大件稳</option>
             <option value="config" ${state.sort === 'config' ? 'selected' : ''}>高配优先</option>
             <option value="discount" ${state.sort === 'discount' ? 'selected' : ''}>折数最低</option>
-            <option value="price" ${state.sort === 'price' ? 'selected' : ''}>到汉总价</option>
+            <option value="price" ${state.sort === 'price' ? 'selected' : ''}>${isWuhan ? '现金价低' : '到汉总价'}</option>
             <option value="mileage" ${state.sort === 'mileage' ? 'selected' : ''}>里程最低</option>
           </select>
           <button type="button" class="filter-sheet-btn ${activeFilterCount > 0 ? 'has-active' : ''}" id="btn-open-filter">
@@ -406,7 +508,7 @@ function stickyBarHtml(shown: Listing[]): string {
 function compareBarHtml(): string {
   if (!state.compareSkus.length) return ''
   const selected = state.compareSkus
-    .map((sku) => rankedListings.find((x) => x.sku === sku))
+    .map((sku) => findListingBySku(sku))
     .filter((x): x is Listing => Boolean(x))
   return `
     <div class="compare-dock">
@@ -428,30 +530,33 @@ function drawerHostHtml(shownCount: number): string {
   let title = ''
   let body = ''
   let extraCls = ''
+  const source = activeListings()
 
   if (state.drawerMode === 'detail' && state.activeSku) {
-    const item = rankedListings.find((x) => x.sku === state.activeSku)
+    const item = findListingBySku(state.activeSku)
     if (item) {
-      title = `买手深度报告 · 严选 #${String(item.rank ?? '—').padStart(2, '0')}`
-      body = renderDetailDrawerBody(item)
+      const boardLbl = item.board_scope === 'wuhan' || (state.board === 'wuhan' && isLocalWuhan(item)) ? '武汉榜' : '全国榜'
+      title = `买手深度报告 · ${boardLbl} #${String(item.rank ?? '—').padStart(2, '0')}`
+      body = renderDetailDrawerBody(item, state.board)
       extraCls = 'wide'
     }
   } else if (state.drawerMode === 'compare') {
     const selected = state.compareSkus
-      .map((sku) => rankedListings.find((x) => x.sku === sku))
+      .map((sku) => findListingBySku(sku))
       .filter((x): x is Listing => Boolean(x))
     title = `严选车源横向对比（${selected.length} 台）`
     body = renderCompareDrawerBody(selected)
     extraCls = 'extra-wide'
   } else if (state.drawerMode === 'filter') {
     const cityMap = new Map<string, number>()
-    for (const item of rankedListings) {
+    for (const item of source) {
       const c = item.city || (isLocalWuhan(item) ? '武汉' : '')
       if (c) cityMap.set(c, (cityMap.get(c) || 0) + 1)
     }
     const cityCounts = [...cityMap.entries()].sort((a, b) => b[1] - a[1])
-    title = '门店范围、预算与排序'
+    title = state.board === 'wuhan' ? '武汉榜筛选、预算与排序' : '全国榜门店范围、预算与排序'
     body = renderFilterSheetBody({
+      board: state.board,
       q: state.q,
       priceMax: state.priceMax,
       sort: state.sort,
@@ -459,7 +564,7 @@ function drawerHostHtml(shownCount: number): string {
       city: state.city,
       cityCounts,
       shownCount,
-      totalCount: rankedListings.length,
+      totalCount: source.length,
     })
     extraCls = 'compact-sheet'
   } else if (state.drawerMode === 'methodology') {
@@ -467,12 +572,13 @@ function drawerHostHtml(shownCount: number): string {
     body = renderMethodologyModalBody()
     extraCls = 'wide'
   } else if (state.drawerMode === 'today') {
+    const allBoardSkus = new Set([...wuhanListings.map((x) => x.sku), ...nationalListings.map((x) => x.sku)])
     title = '每日库存与价格对账日志'
     body = renderTodayPanel({
       data: todayData,
       filter: state.todayFilter,
       fixtureMode: todayModeFromSearch(location.search) === 'fixture',
-      onBoard: new Set(rankedListings.map((item) => item.sku)),
+      onBoard: allBoardSkus,
       highlightCardsHtml: '',
     })
     extraCls = 'wide'
@@ -493,11 +599,14 @@ function drawerHostHtml(shownCount: number): string {
 }
 
 function renderCatalogSection(shown: Listing[]): string {
+  const isWuhan = state.board === 'wuhan'
+  const boardName = isWuhan ? '武汉榜' : '全国榜'
+  const totalInBoard = activeListings().length
   if (!shown.length) {
     return `
       <div class="empty-state">
-        <p>当前筛选条件下没有入围 Top 30 车源</p>
-        <button type="button" class="btn-report" id="btn-empty-reset">恢复全部 30 台</button>
+        <p>当前筛选条件下没有入围${boardName} Top ${totalInBoard || 30} 车源</p>
+        <button type="button" class="btn-report" id="btn-empty-reset">恢复${boardName}全部 ${totalInBoard} 台</button>
       </div>`
   }
   const usePodium = isDefaultView() && shown.length >= 3
@@ -510,8 +619,8 @@ function renderCatalogSection(shown: Listing[]): string {
   return `
     <section class="podium-section">
       <div class="sec-head">
-        <h2>买手头号三甲 · Top 3</h2>
-        <span>新世代高配 SUV 主导 × 三大件可靠 × 准新电混准入</span>
+        <h2>${isWuhan ? '武汉榜头号三甲 · 本地直提 Top 3' : '全国榜头号三甲 · 直营到汉 Top 3'}</h2>
+        <span>${isWuhan ? '武汉店现车免物流 × 新世代高配 SUV 主导' : '全国直营跨城横评 × 已计入到汉运费与上牌差'}</span>
       </div>
       <div class="podium-lead">${cardInnerHtml(top1, true)}</div>
       <div class="podium-runners">${top23.map((x) => cardInnerHtml(x, false)).join('')}</div>
@@ -521,7 +630,7 @@ function renderCatalogSection(shown: Listing[]): string {
         ? `
     <section class="catalog-section">
       <div class="sec-head">
-        <h2>严选阵容 · 第 4 – ${shown.length} 名</h2>
+        <h2>${boardName}严选阵容 · 第 4 – ${shown.length} 名</h2>
         <span>点卡片看针对性验车清单与真实口碑</span>
       </div>
       <div class="cards-grid">${rest.map((x) => cardInnerHtml(x, false)).join('')}</div>
@@ -540,9 +649,10 @@ function renderApp() {
       ${stickyBarHtml(shown)}
       <main id="catalog-main">${renderCatalogSection(shown)}</main>
       <footer class="site-footer">
-        <span>懂车帝华中7城官方直营（汉/长/合/宁/郑/渝/蓉）实时现金价 + 到汉官方物流费 + 汽车之家实测参配</span>
+        <span>懂车帝官方直营双榜严选（武汉榜本地直提 / 全国榜含到汉物流费横评）+ 汽车之家实测参配</span>
         <span class="footer-links">
-          <a href="/data/listings-ranked.json" target="_blank" rel="noopener noreferrer">Top 30 JSON</a>
+          <a href="/data/listings-ranked-wuhan.json" target="_blank" rel="noopener noreferrer">武汉榜 JSON</a>
+          <a href="/data/listings-ranked.json" target="_blank" rel="noopener noreferrer">全国榜 JSON</a>
           <a href="/data/meta.json" target="_blank" rel="noopener noreferrer">Meta</a>
           <a href="/data/today-updates.json" target="_blank" rel="noopener noreferrer">今日变动 JSON</a>
         </span>
@@ -566,6 +676,13 @@ function toggleCompare(sku: string) {
 }
 
 function bindEvents() {
+  document.querySelectorAll<HTMLButtonElement>('[data-board]').forEach((btn) => {
+    btn.addEventListener('click', () => {
+      const next = btn.dataset.board === 'national' ? 'national' : 'wuhan'
+      setBoard(next)
+    })
+  })
+
   document.querySelectorAll<HTMLButtonElement>('[data-preset]').forEach((btn) => {
     btn.addEventListener('click', () => {
       state.preset = (btn.dataset.preset as PresetKey) || 'all'
@@ -631,12 +748,13 @@ function bindEvents() {
   })
 
   // Filter Sheet bindings
+  const sheetBoardLbl = state.board === 'wuhan' ? '武汉榜' : '全国榜'
   const sheetQ = document.getElementById('sheet-q') as HTMLInputElement | null
   sheetQ?.addEventListener('input', () => {
     state.q = sheetQ.value
     const applyBtn = document.getElementById('btn-sheet-apply')
     if (applyBtn) {
-      applyBtn.textContent = `查看 ${filteredListings().length} / ${rankedListings.length} 台严选`
+      applyBtn.textContent = `查看 ${filteredListings().length} / ${activeListings().length} 台${sheetBoardLbl}`
     }
   })
   const sheetPmax = document.getElementById('sheet-pmax') as HTMLInputElement | null
@@ -644,7 +762,7 @@ function bindEvents() {
     state.priceMax = sheetPmax.value
     const applyBtn = document.getElementById('btn-sheet-apply')
     if (applyBtn) {
-      applyBtn.textContent = `查看 ${filteredListings().length} / ${rankedListings.length} 台严选`
+      applyBtn.textContent = `查看 ${filteredListings().length} / ${activeListings().length} 台${sheetBoardLbl}`
     }
   })
   document.querySelectorAll<HTMLButtonElement>('[data-sheet-kw]').forEach((btn) => {
@@ -795,7 +913,7 @@ async function pullToday(): Promise<TodayUpdates> {
 }
 
 function applyToday(next: TodayUpdates) {
-  todayData = reconcileToday(next, rankedListings, [])
+  todayData = reconcileToday(next, nationalListings, [])
   highlightSkus = new Set(todayData.highlights.map((item) => item.sku))
 }
 
@@ -820,18 +938,28 @@ async function boot() {
     await renderConfigPage(app)
     return
   }
-  app.innerHTML = `<div class="loading-screen">正在加载 Top 30 严选展厅…</div>`
+  app.innerHTML = `<div class="loading-screen">正在加载武汉榜 &amp; 全国榜 Top 30 严选展厅…</div>`
   try {
-    const tabParam = new URLSearchParams(location.search).get('tab')
+    const params = new URLSearchParams(location.search)
+    state.board = boardFromSearch(location.search)
+    const tabParam = params.get('tab')
     if (tabParam === 'today') state.drawerMode = 'today'
     const todayPromise = pullToday()
-    const [listRes, metaRes] = await Promise.all([
+    const [nationalRes, wuhanRes, metaRes] = await Promise.all([
       fetch('/data/listings-ranked.json'),
+      fetch('/data/listings-ranked-wuhan.json'),
       fetch('/data/meta.json'),
     ])
-    if (!listRes.ok) throw new Error(`listings-ranked.json HTTP ${listRes.status}`)
+    if (!nationalRes.ok) throw new Error(`listings-ranked.json HTTP ${nationalRes.status}`)
     if (!metaRes.ok) throw new Error(`meta.json HTTP ${metaRes.status}`)
-    rankedListings = (await listRes.json()).slice(0, 30)
+    nationalListings = (await nationalRes.json()).slice(0, 30)
+    if (wuhanRes.ok) {
+      wuhanListings = (await wuhanRes.json()).slice(0, 30)
+    } else {
+      wuhanListings = nationalListings
+        .filter(isLocalWuhan)
+        .map((item, idx) => ({ ...item, national_rank: item.rank, rank: idx + 1, board_scope: 'wuhan' }))
+    }
     meta = await metaRes.json()
     applyToday(await todayPromise)
     renderApp()

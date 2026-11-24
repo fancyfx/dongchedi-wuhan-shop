@@ -148,19 +148,23 @@ def validate_new_only_policy() -> None:
     assert int(report.get("newly_matched") or 0) == len(mapping), (report.get("newly_matched"), len(mapping))
 
     ranked = json.loads((ROOT / "data" / "listings-ranked.json").read_text(encoding="utf-8"))
+    ranked_wuhan = json.loads((ROOT / "data" / "listings-ranked-wuhan.json").read_text(encoding="utf-8"))
     issues = json.loads((ROOT / "data" / "data-issues.json").read_text(encoding="utf-8"))
     filtered = json.loads((ROOT / "data" / "listings-filtered.json").read_text(encoding="utf-8"))
     below_path = ROOT / "data" / "listings-below-display.json"
     below = json.loads(below_path.read_text(encoding="utf-8")) if below_path.exists() else []
     assert len(ranked) <= 30
+    assert len(ranked_wuhan) <= 30
     assert all(x.get("display") is not False for x in ranked)
+    assert all(x.get("display") is not False and (x.get("is_local_wuhan") is True or str(x.get("shop_id") or "") == "118608") for x in ranked_wuhan)
     assert len(filtered) == len(ranked) + len(below) + len(issues)
     assert all(x.get("score_eligible") is True for x in ranked)
+    assert all(x.get("score_eligible") is True for x in ranked_wuhan)
     assert all(x.get("score_eligible") is False for x in issues)
     assert all(x.get("score_eligible") is not False for x in below)
     print(
         f"validated new-only config: mapped={len(mapping)} ranked={len(ranked)} "
-        f"issues={len(issues)} filtered={len(filtered)}"
+        f"wuhan={len(ranked_wuhan)} issues={len(issues)} filtered={len(filtered)}"
     )
 
 

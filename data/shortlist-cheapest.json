@@ -276,7 +276,7 @@
     "energy_confidence": 0.55,
     "_age_years": 8.333333333333334,
     "score_version": "v3.2.0",
-    "score_v1": 82.4,
+    "score_v1": 81.8,
     "total_score": 81.8,
     "condition_gate": "PASS",
     "recommendation_gate": "PASS",
@@ -392,7 +392,10 @@
     "ingest_status": "added",
     "library_rank": 13,
     "display": true,
-    "rank": 13
+    "rank": 13,
+    "wuhan_library_rank": null,
+    "wuhan_display": false,
+    "wuhan_rank": null
   },
   {
     "sku": "357573760",
@@ -670,7 +673,7 @@
     "energy_confidence": 0.65,
     "_age_years": 5.333333333333333,
     "score_version": "v3.2.0",
-    "score_v1": 85.1,
+    "score_v1": 84.5,
     "total_score": 84.5,
     "condition_gate": "PASS",
     "recommendation_gate": "PASS",
@@ -788,7 +791,10 @@
     "ingest_status": "added",
     "library_rank": 6,
     "display": true,
-    "rank": 6
+    "rank": 6,
+    "wuhan_library_rank": null,
+    "wuhan_display": false,
+    "wuhan_rank": null
   },
   {
     "sku": "357479219",
@@ -1195,7 +1201,10 @@
     "plate_fee_diff_yuan": 0,
     "landed_extra_yuan": 0,
     "landed_extra_wan": 0.0,
-    "landed_price_wan": 3.99
+    "landed_price_wan": 3.99,
+    "wuhan_library_rank": 1,
+    "wuhan_display": true,
+    "wuhan_rank": 1
   },
   {
     "sku": "300023563",
@@ -1503,7 +1512,7 @@
     "energy_confidence": 0.55,
     "_age_years": 5.333333333333333,
     "score_version": "v3.2.0",
-    "score_v1": 83.1,
+    "score_v1": 81.3,
     "total_score": 81.3,
     "condition_gate": "PASS",
     "recommendation_gate": "PASS",
@@ -1620,7 +1629,10 @@
     "ingest_status": "added",
     "library_rank": 15,
     "display": true,
-    "rank": 15
+    "rank": 15,
+    "wuhan_library_rank": null,
+    "wuhan_display": false,
+    "wuhan_rank": null
   },
   {
     "sku": "357538551",
@@ -2053,7 +2065,10 @@
     "plate_fee_diff_yuan": 0,
     "landed_extra_yuan": 0,
     "landed_extra_wan": 0.0,
-    "landed_price_wan": 4.19
+    "landed_price_wan": 4.19,
+    "wuhan_library_rank": 2,
+    "wuhan_display": true,
+    "wuhan_rank": 2
   },
   {
     "sku": "357588788",
@@ -2334,7 +2349,7 @@
     "energy_confidence": 0.55,
     "_age_years": 4.333333333333333,
     "score_version": "v3.2.0",
-    "score_v1": 80.9,
+    "score_v1": 79.7,
     "total_score": 79.7,
     "condition_gate": "PASS",
     "evaluation": "紧凑型SUV，7挡湿式双离合+涡轮增压，独立后悬，配6气囊/360全景/手机互联。",
@@ -2459,7 +2474,10 @@
     "plate_fee_diff_yuan": 0,
     "landed_extra_yuan": 0,
     "landed_extra_wan": 0.0,
-    "landed_price_wan": 4.19
+    "landed_price_wan": 4.19,
+    "wuhan_library_rank": 6,
+    "wuhan_display": true,
+    "wuhan_rank": 6
   },
   {
     "sku": "357463780",
@@ -2740,7 +2758,7 @@
     "energy_confidence": 0.55,
     "_age_years": 5.333333333333333,
     "score_version": "v3.2.0",
-    "score_v1": 76.9,
+    "score_v1": 78.5,
     "total_score": 78.5,
     "condition_gate": "PASS",
     "evaluation": "紧凑型车，7挡湿式双离合+涡轮增压，独立后悬，配6气囊/全速ACC/AEB主动刹车。",
@@ -2865,7 +2883,10 @@
     "plate_fee_diff_yuan": 0,
     "landed_extra_yuan": 0,
     "landed_extra_wan": 0.0,
-    "landed_price_wan": 4.19
+    "landed_price_wan": 4.19,
+    "wuhan_library_rank": 9,
+    "wuhan_display": true,
+    "wuhan_rank": 9
   },
   {
     "sku": "300024509",
@@ -3259,7 +3280,10 @@
     "ingest_status": "added",
     "library_rank": 21,
     "display": true,
-    "rank": 21
+    "rank": 21,
+    "wuhan_library_rank": null,
+    "wuhan_display": false,
+    "wuhan_rank": null
   },
   {
     "sku": "357572116",
@@ -3537,7 +3561,7 @@
     "energy_confidence": 0.65,
     "_age_years": 4.333333333333333,
     "score_version": "v3.2.0",
-    "score_v1": 78.9,
+    "score_v1": 79.3,
     "total_score": 79.3,
     "condition_gate": "PASS",
     "recommendation_gate": "PASS",
@@ -3655,7 +3679,10 @@
     "ingest_status": "added",
     "library_rank": 25,
     "display": true,
-    "rank": 25
+    "rank": 25,
+    "wuhan_library_rank": null,
+    "wuhan_display": false,
+    "wuhan_rank": null
   },
   {
     "sku": "357014230",
@@ -4020,7 +4047,7 @@
     "price_basis": "cash",
     "_age_years": 3.3333333333333335,
     "score_version": "v3.2.0",
-    "score_v1": 78.9,
+    "score_v1": 80.5,
     "condition_gate": "PASS",
     "score_reasons": [
       "现金价 4.68 万（原指导价 10.79 万）",
@@ -4121,7 +4148,10 @@
     "plate_fee_diff_yuan": 0,
     "landed_extra_yuan": 0,
     "landed_extra_wan": 0.0,
-    "landed_price_wan": 4.68
+    "landed_price_wan": 4.68,
+    "wuhan_library_rank": 5,
+    "wuhan_display": true,
+    "wuhan_rank": 5
   },
   {
     "sku": "357211009",
@@ -4581,7 +4611,10 @@
     "plate_fee_diff_yuan": 0,
     "landed_extra_yuan": 0,
     "landed_extra_wan": 0.0,
-    "landed_price_wan": 4.69
+    "landed_price_wan": 4.69,
+    "wuhan_library_rank": 4,
+    "wuhan_display": true,
+    "wuhan_rank": 4
   },
   {
     "sku": "300019385",
@@ -4972,7 +5005,10 @@
     "ingest_status": "added",
     "library_rank": 28,
     "display": true,
-    "rank": 28
+    "rank": 28,
+    "wuhan_library_rank": null,
+    "wuhan_display": false,
+    "wuhan_rank": null
   },
   {
     "sku": "357513919",
@@ -5282,7 +5318,7 @@
     "energy_confidence": 0.55,
     "_age_years": 6.333333333333333,
     "score_version": "v3.2.0",
-    "score_v1": 82.2,
+    "score_v1": 81.1,
     "total_score": 81.1,
     "condition_gate": "PASS",
     "recommendation_gate": "PASS",
@@ -5404,7 +5440,10 @@
     "ingest_status": "added",
     "library_rank": 17,
     "display": true,
-    "rank": 17
+    "rank": 17,
+    "wuhan_library_rank": null,
+    "wuhan_display": false,
+    "wuhan_rank": null
   },
   {
     "sku": "357168649",
@@ -5758,7 +5797,7 @@
     "price_basis": "display",
     "_age_years": 5.333333333333333,
     "score_version": "v3.2.0",
-    "score_v1": 80.6,
+    "score_v1": 78.9,
     "condition_gate": "PASS",
     "score_reasons": [
       "现金价 4.99 万（原指导价 13.39 万）",
@@ -5848,7 +5887,10 @@
     "plate_fee_diff_yuan": 0,
     "landed_extra_yuan": 0,
     "landed_extra_wan": 0.0,
-    "landed_price_wan": 4.99
+    "landed_price_wan": 4.99,
+    "wuhan_library_rank": 8,
+    "wuhan_display": true,
+    "wuhan_rank": 8
   },
   {
     "sku": "357513917",
@@ -6274,7 +6316,10 @@
     "ingest_status": "added",
     "library_rank": 2,
     "display": true,
-    "rank": 2
+    "rank": 2,
+    "wuhan_library_rank": null,
+    "wuhan_display": false,
+    "wuhan_rank": null
   },
   {
     "sku": "357523332",
@@ -6582,7 +6627,7 @@
     "energy_confidence": 0.65,
     "_age_years": 5.333333333333333,
     "score_version": "v3.2.0",
-    "score_v1": 85.0,
+    "score_v1": 84.9,
     "total_score": 84.9,
     "condition_gate": "PASS",
     "recommendation_gate": "PASS",
@@ -6699,7 +6744,10 @@
     "ingest_status": "added",
     "library_rank": 4,
     "display": true,
-    "rank": 4
+    "rank": 4,
+    "wuhan_library_rank": null,
+    "wuhan_display": false,
+    "wuhan_rank": null
   },
   {
     "sku": "300026529",
@@ -7008,7 +7056,7 @@
     "energy_confidence": 0.55,
     "_age_years": 6.333333333333333,
     "score_version": "v3.2.0",
-    "score_v1": 84.4,
+    "score_v1": 83.3,
     "total_score": 83.3,
     "condition_gate": "PASS",
     "recommendation_gate": "PASS",
@@ -7132,7 +7180,10 @@
     "ingest_status": "added",
     "library_rank": 8,
     "display": true,
-    "rank": 8
+    "rank": 8,
+    "wuhan_library_rank": null,
+    "wuhan_display": false,
+    "wuhan_rank": null
   },
   {
     "sku": "356887638",
@@ -7528,7 +7579,10 @@
     "ingest_status": "added",
     "library_rank": 5,
     "display": true,
-    "rank": 5
+    "rank": 5,
+    "wuhan_library_rank": null,
+    "wuhan_display": false,
+    "wuhan_rank": null
   },
   {
     "sku": "357200988",
@@ -7837,7 +7891,7 @@
     "energy_confidence": 0.55,
     "_age_years": 5.333333333333333,
     "score_version": "v3.2.0",
-    "score_v1": 82.6,
+    "score_v1": 81.5,
     "total_score": 81.5,
     "condition_gate": "PASS",
     "recommendation_gate": "PASS",
@@ -7959,7 +8013,10 @@
     "ingest_status": "added",
     "library_rank": 14,
     "display": true,
-    "rank": 14
+    "rank": 14,
+    "wuhan_library_rank": null,
+    "wuhan_display": false,
+    "wuhan_rank": null
   },
   {
     "sku": "357247792",
@@ -8425,7 +8482,10 @@
     "landed_extra_yuan": 0,
     "landed_extra_wan": 0.0,
     "landed_price_wan": 5.21,
-    "delivery_eta": "送达时间咨询顾问"
+    "delivery_eta": "送达时间咨询顾问",
+    "wuhan_library_rank": 7,
+    "wuhan_display": true,
+    "wuhan_rank": 7
   },
   {
     "sku": "357454042",
@@ -8844,7 +8904,10 @@
     "plate_fee_diff_yuan": 0,
     "landed_extra_yuan": 0,
     "landed_extra_wan": 0.0,
-    "landed_price_wan": 5.39
+    "landed_price_wan": 5.39,
+    "wuhan_library_rank": 3,
+    "wuhan_display": true,
+    "wuhan_rank": 3
   },
   {
     "sku": "300026721",
@@ -9247,7 +9310,10 @@
     "ingest_status": "added",
     "library_rank": 3,
     "display": true,
-    "rank": 3
+    "rank": 3,
+    "wuhan_library_rank": null,
+    "wuhan_display": false,
+    "wuhan_rank": null
   },
   {
     "sku": "357281777",
@@ -9641,7 +9707,10 @@
     "ingest_status": "added",
     "library_rank": 9,
     "display": true,
-    "rank": 9
+    "rank": 9,
+    "wuhan_library_rank": null,
+    "wuhan_display": false,
+    "wuhan_rank": null
   },
   {
     "sku": "357491702",
@@ -10036,7 +10105,10 @@
     "ingest_status": "added",
     "library_rank": 19,
     "display": true,
-    "rank": 19
+    "rank": 19,
+    "wuhan_library_rank": null,
+    "wuhan_display": false,
+    "wuhan_rank": null
   },
   {
     "sku": "357574214",
@@ -10464,7 +10536,10 @@
     "ingest_status": "added",
     "library_rank": 20,
     "display": true,
-    "rank": 20
+    "rank": 20,
+    "wuhan_library_rank": null,
+    "wuhan_display": false,
+    "wuhan_rank": null
   },
   {
     "sku": "357219012",
@@ -10742,7 +10817,7 @@
     "energy_confidence": 0.55,
     "_age_years": 7.333333333333333,
     "score_version": "v3.2.0",
-    "score_v1": 80.0,
+    "score_v1": 79.5,
     "total_score": 79.5,
     "condition_gate": "PASS",
     "recommendation_gate": "PASS",
@@ -10864,7 +10939,10 @@
     "ingest_status": "added",
     "library_rank": 23,
     "display": true,
-    "rank": 23
+    "rank": 23,
+    "wuhan_library_rank": null,
+    "wuhan_display": false,
+    "wuhan_rank": null
   },
   {
     "sku": "357307964",
@@ -11168,7 +11246,7 @@
     "energy_confidence": 0.55,
     "_age_years": 5.333333333333333,
     "score_version": "v3.2.0",
-    "score_v1": 81.0,
+    "score_v1": 78.9,
     "total_score": 78.9,
     "condition_gate": "PASS",
     "recommendation_gate": "PASS",
@@ -11291,7 +11369,10 @@
     "ingest_status": "added",
     "library_rank": 26,
     "display": true,
-    "rank": 26
+    "rank": 26,
+    "wuhan_library_rank": null,
+    "wuhan_display": false,
+    "wuhan_rank": null
   },
   {
     "sku": "357127553",
@@ -11659,7 +11740,7 @@
     "finance_reserve_wan": 0.5,
     "_age_years": 6.333333333333333,
     "score_version": "v3.2.0",
-    "score_v1": 76.7,
+    "score_v1": 78.4,
     "condition_gate": "PASS",
     "score_reasons": [
       "现金价 5.79 万（原指导价 16.68 万）",
@@ -11752,7 +11833,10 @@
     "plate_fee_diff_yuan": 0,
     "landed_extra_yuan": 0,
     "landed_extra_wan": 0.0,
-    "landed_price_wan": 5.79
+    "landed_price_wan": 5.79,
+    "wuhan_library_rank": 10,
+    "wuhan_display": true,
+    "wuhan_rank": 10
   },
   {
     "sku": "300030103",
@@ -12154,7 +12238,10 @@
     "ingest_status": "added",
     "library_rank": 11,
     "display": true,
-    "rank": 11
+    "rank": 11,
+    "wuhan_library_rank": null,
+    "wuhan_display": false,
+    "wuhan_rank": null
   },
   {
     "sku": "357015083",
@@ -12580,6 +12667,9 @@
     "ingest_status": "added",
     "library_rank": 16,
     "display": true,
-    "rank": 16
+    "rank": 16,
+    "wuhan_library_rank": null,
+    "wuhan_display": false,
+    "wuhan_rank": null
   }
 ]

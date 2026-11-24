@@ -1,4 +1,4 @@
-import type { Listing, ShopScopeKey, SortKey } from './types'
+import type { BoardKey, Listing, ShopScopeKey, SortKey } from './types'
 
 function landedPrice(item: Listing): number {
   return Number(item.effective_price_wan ?? item.landed_price_wan ?? item.price)
@@ -106,6 +106,7 @@ export function scoreBarsHtml(item: Listing, compact = false): string {
 }
 
 export function renderFilterSheetBody(opts: {
+  board: BoardKey
   q: string
   priceMax: string
   sort: SortKey
@@ -115,9 +116,10 @@ export function renderFilterSheetBody(opts: {
   shownCount: number
   totalCount: number
 }): string {
-  const hotKeywords = ['领克03', '探界者', '君威', '迈锐宝XL', '奕泽', '伊兰特', '传祺GS4', '宝马']
+  const isWuhanBoard = opts.board === 'wuhan'
+  const hotKeywords = ['哈弗H6', '博越', '长安CS75', '传祺GS4', '探界者', '伊兰特', '领克03', '魏牌']
   const scopeOptions: [ShopScopeKey, string][] = [
-    ['all', '全部7城直营'],
+    ['all', '全部全国直营'],
     ['wuhan', '仅看武汉本地'],
     ['low_freight', '低运费≤1000元(汉·长·合)'],
   ]
@@ -133,13 +135,16 @@ export function renderFilterSheetBody(opts: {
     ['powertrain', '三大件最稳'],
     ['config', '配置最丰富'],
     ['discount', '折旧最狠(折数)'],
-    ['price', '到汉总价最低'],
+    ['price', isWuhanBoard ? '全款现金价最低' : '到汉总价最低'],
     ['mileage', '最低表显里程'],
   ]
 
   return `
     <div class="filter-sheet-body">
-      <div class="fs-group">
+      ${
+        isWuhanBoard
+          ? ''
+          : `<div class="fs-group">
         <div class="fs-label">直营门店范围（含到汉运费口径）</div>
         <div class="fs-scope-row">
           ${scopeOptions
@@ -162,11 +167,12 @@ export function renderFilterSheetBody(opts: {
         </div>`
             : ''
         }
-      </div>
+      </div>`
+      }
 
       <div class="fs-group">
-        <label class="fs-label" for="sheet-q">搜索车型 / 城市 / 品牌 / SKU</label>
-        <input id="sheet-q" class="fs-input" type="search" placeholder="输入关键词，如 君威、合肥、探界者…" value="${esc(opts.q)}" />
+        <label class="fs-label" for="sheet-q">${isWuhanBoard ? '搜索车型 / 品牌 / SKU' : '搜索车型 / 城市 / 品牌 / SKU'}</label>
+        <input id="sheet-q" class="fs-input" type="search" placeholder="${isWuhanBoard ? '输入关键词，如 哈弗H6、博越、探界者…' : '输入关键词，如 哈弗H6、重庆、合肥、探界者…'}" value="${esc(opts.q)}" />
         <div class="fs-chips">
           ${hotKeywords
             .map(
@@ -178,7 +184,7 @@ export function renderFilterSheetBody(opts: {
       </div>
 
       <div class="fs-group">
-        <label class="fs-label" for="sheet-pmax">到汉可比总价上限（含物流+上牌差，万）</label>
+        <label class="fs-label" for="sheet-pmax">${isWuhanBoard ? '全款现金价上限（武汉店直提，万）' : '到汉可比总价上限（含物流+上牌差，万）'}</label>
         <div class="fs-chips">
           ${budgetOptions
             .map(
@@ -204,12 +210,12 @@ export function renderFilterSheetBody(opts: {
 
       <div class="fs-footer">
         <button type="button" class="btn-secondary" id="btn-sheet-reset">重置条件</button>
-        <button type="button" class="btn-primary" id="btn-sheet-apply">查看 ${opts.shownCount} / ${opts.totalCount} 台严选</button>
+        <button type="button" class="btn-primary" id="btn-sheet-apply">查看 ${opts.shownCount} / ${opts.totalCount} 台${isWuhanBoard ? '武汉榜' : '全国榜'}</button>
       </div>
     </div>`
 }
 
-export function renderDetailDrawerBody(item: Listing): string {
+export function renderDetailDrawerBody(item: Listing, board: BoardKey = 'national'): string {
   const p = item.v3_profile
   const sp = item.specs || item.detailed_config || {}
   const feat = (sp.features || {}) as Record<string, unknown>
@@ -255,12 +261,23 @@ export function renderDetailDrawerBody(item: Listing): string {
   const pdiffYuan = Math.max(0, Math.round(item.plate_fee_diff_yuan ?? 0))
   const shopDisplay = item.shop_name || item.shop_short_name || (local ? '懂车帝汽车商城•武汉店' : `${item.city || ''}直营店`)
 
+  const isWuhanItemBoard = item.board_scope === 'wuhan' || (board === 'wuhan' && local)
+  const primaryBoardLabel = isWuhanItemBoard ? '武汉榜' : '全国榜'
+  const secondaryRankBadge = isWuhanItemBoard
+    ? item.national_rank
+      ? `<span class="cross-rank-pill">全国榜 #${String(item.national_rank).padStart(2, '0')}</span>`
+      : ''
+    : item.wuhan_rank
+      ? `<span class="cross-rank-pill">武汉榜 #${String(item.wuhan_rank).padStart(2, '0')}</span>`
+      : ''
+
   return `
     <div class="drawer-hero">
       <div class="drawer-cover">${coverImgHtml(item)}</div>
       <div class="drawer-head-info">
         <div class="drawer-badges">
-          <span class="rank-pill">严选 #${String(item.rank ?? '—').padStart(2, '0')}</span>
+          <span class="rank-pill">${primaryBoardLabel} #${String(item.rank ?? '—').padStart(2, '0')}</span>
+          ${secondaryRankBadge}
           <span class="origin-badge ${local ? 'local' : 'remote'}">${esc(item.shop_short_name || item.city || '武汉店')}</span>
           ${p?.archetype_badge ? `<span class="arch-pill">${esc(p.archetype_badge)}</span>` : ''}
           ${p?.gearbox_label ? `<span class="gb-pill ${gearboxClass(p.gearbox_tier)}">${esc(p.gearbox_label)}</span>` : ''}
@@ -346,8 +363,16 @@ export function renderCompareDrawerBody(items: Listing[]): string {
   const cols = items.length
   const rows: { label: string; render: (x: Listing) => string }[] = [
     {
-      label: '排名 / 定位',
-      render: (x) => `<b>#${x.rank ?? '—'}</b> · ${esc(x.v3_profile?.archetype_badge || '严选')}`,
+      label: '榜单排名 / 定位',
+      render: (x) => {
+        const rankBits: string[] = []
+        const natRank = x.board_scope === 'wuhan' ? x.national_rank : x.rank
+        const whRank = x.board_scope === 'wuhan' ? x.rank : x.wuhan_rank
+        if (whRank) rankBits.push(`武汉#${whRank}`)
+        if (natRank) rankBits.push(`全国#${natRank}`)
+        const rankLbl = rankBits.length ? rankBits.join(' / ') : `#${x.rank ?? '—'}`
+        return `<b>${esc(rankLbl)}</b> · ${esc(x.v3_profile?.archetype_badge || '严选')}`
+      },
     },
     {
       label: '来源门店',
@@ -475,9 +500,10 @@ export function renderMethodologyModalBody(): string {
         </div>
       </div>
       <div class="method-tips">
-        <h4>三、华中 7 城直营到汉比价口径 &amp; 提车必做</h4>
+        <h4>三、武汉榜 &amp; 全国榜双榜口径与提车必做</h4>
         <ol>
-          <li><strong>统一到汉可比价</strong>：拉取武汉、长沙、合肥、南京、郑州、重庆、成都 7 家懂车帝官方直营店/仓，自动计入到汉物流费与异地上牌差额（500 元），严格卡死<strong>到汉总价 ≤ 6.0 万</strong>。</li>
+          <li><strong>武汉榜（本地直提 Top 30）</strong>：仅筛选武汉直营店本地现车，免物流费、本地上牌标准（500 元），可随时到店实看试驾，独立排出本地 Top 30。</li>
+          <li><strong>全国榜（全国直营到汉 Top 30）</strong>：覆盖武汉、长沙、合肥、南京、郑州、重庆、成都等官方直营店/仓，自动计入到汉官方物流费与异地上牌差额（500 元），严格卡死<strong>到汉总价 ≤ 6.0 万</strong>统一横评。</li>
           <li><strong>燃油车测 12V 电瓶 / 插混查三电与强制保电</strong>：油车现场测蓄电池 SOH（&lt;60% 要求换新）；DM-i 核查非营运与 8年/15万km 法定三电质保，久停前强制保电至 50%–60% SOC。</li>
           <li><strong>排查常电与大保养节点</strong>：拆掉私接 24 小时常电记录仪；接近 6 万公里车源重点检查变速箱油与四驱分动箱油状态。</li>
         </ol>

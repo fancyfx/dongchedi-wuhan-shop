@@ -524,6 +524,41 @@ def test_plan_a_logistics_fees_and_fallback_chain():
     assert c_wuhan["is_local_wuhan"] is True and c_wuhan["landed_extra_yuan"] == 0
 
 
+def test_split_wuhan_and_national_boards():
+    inventory = [
+        _scored("cq1", 92.0, price=4.8, shop_id="225430", city="重庆", is_local_wuhan=False),
+        _scored("wh1", 89.0, price=4.5, shop_id="118608", city="武汉", is_local_wuhan=True),
+        _scored("hf1", 88.0, price=4.9, shop_id="64909", city="合肥", is_local_wuhan=False),
+        _scored("wh2", 85.0, price=4.2, shop_id="118608", city="武汉", is_local_wuhan=True),
+        _scored("wh3", 80.0, price=4.1, shop_id="118608", city="武汉", is_local_wuhan=True),
+        _scored("wh_res", 95.0, price=4.0, shop_id="118608", city="武汉", is_local_wuhan=True, sale_status="reserved"),
+    ]
+    res = apply_catalog_update(
+        inventory,
+        [],
+        incoming=[],
+        rejected_hard=[],
+        display_limit=2,
+        now="2026-11-24T22:00:00+08:00",
+    )
+    # National top-2: cq1 (#1), wh1 (#2)
+    assert [x["sku"] for x in res["ranked"]] == ["cq1", "wh1"]
+    assert [x["rank"] for x in res["ranked"]] == [1, 2]
+    # Wuhan top-2 independent of national cutoff: wh1 (#1, national #2), wh2 (#2, national None)
+    assert [x["sku"] for x in res["ranked_wuhan"]] == ["wh1", "wh2"]
+    assert [x["rank"] for x in res["ranked_wuhan"]] == [1, 2]
+    assert res["ranked_wuhan"][0]["national_rank"] == 2
+    assert res["ranked_wuhan"][1]["national_rank"] is None
+    assert res["ranked_wuhan"][0]["board_scope"] == "wuhan"
+    # National board's rank on inventory/ranked was not overwritten by Wuhan rank
+    wh1_national = next(x for x in res["ranked"] if x["sku"] == "wh1")
+    assert wh1_national["rank"] == 2
+    assert wh1_national["wuhan_rank"] == 1
+    # Reserved Wuhan car is excluded from both boards
+    assert "wh_res" not in {x["sku"] for x in res["ranked"]}
+    assert "wh_res" not in {x["sku"] for x in res["ranked_wuhan"]}
+
+
 def main() -> None:
     tests = [
         test_zhiying_maps_self_trade_and_rejects_marketing_copy,
@@ -537,6 +572,7 @@ def main() -> None:
         test_pipeline_snapshots_and_dry_run_do_not_touch_catalog,
         test_parse_sale_status_and_missing_reconcile,
         test_plan_a_logistics_fees_and_fallback_chain,
+        test_split_wuhan_and_national_boards,
     ]
     failed = 0
     for fn in tests:

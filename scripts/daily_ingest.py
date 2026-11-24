@@ -37,7 +37,9 @@ from dcd_fetch import (  # noqa: E402
 from display_gate import (  # noqa: E402
     DISPLAY_LIMIT,
     apply_display_flags,
+    build_wuhan_board,
     display_sort_key,
+    is_local_wuhan,
     numeric_score,
     ranked_threshold,
 )
@@ -394,7 +396,7 @@ def apply_catalog_update(
         by_sku[sku] = merged
         add(kind, merged, old, None)
 
-    def resplit() -> tuple[list[dict[str, Any]], set[str]]:
+    def resplit() -> tuple[list[dict[str, Any]], set[str], list[dict[str, Any]]]:
         scored = [
             by_sku[sku]
             for sku in order
@@ -402,9 +404,10 @@ def apply_catalog_update(
         ]
         scored.sort(key=display_sort_key)
         display, _below = apply_display_flags(scored, display_limit)
-        return display, {str(item["sku"]) for item in display}
+        wuhan_display = build_wuhan_board(scored, display_limit)
+        return display, {str(item["sku"]) for item in display}, wuhan_display
 
-    display, display_ids = resplit()
+    display, display_ids, wuhan_display = resplit()
     if not admit_below_threshold:
         rolled = [sku for sku in admitted_new if sku not in display_ids]
         if rolled:
@@ -416,12 +419,16 @@ def apply_catalog_update(
                 item = by_sku.pop(sku)
                 order = [existing for existing in order if existing != sku]
                 add("rejected_below_top100", item, None, "not_in_display_top100")
-            display, display_ids = resplit()
+            display, display_ids, wuhan_display = resplit()
 
+    wuhan_display_ids = {str(item["sku"]) for item in wuhan_display}
     for sku, item in by_sku.items():
         if sku not in display_ids:
             item["display"] = False
             item["rank"] = None
+        if sku not in wuhan_display_ids:
+            item["wuhan_display"] = False
+            item["wuhan_rank"] = None
 
     for sku in previous_display:
         if sku in display_ids or sku not in by_sku:
@@ -441,6 +448,7 @@ def apply_catalog_update(
     return {
         "inventory": inventory_out,
         "ranked": display,
+        "ranked_wuhan": wuhan_display,
         "below": below,
         "issues": issues,
         "changelog": changelog,
@@ -481,6 +489,8 @@ def write_catalog(
 ) -> None:
     dump_json(catalog / "listings-filtered.json", result["inventory"])
     dump_json(catalog / "listings-ranked.json", result["ranked"])
+    wuhan_display = result.get("ranked_wuhan") or []
+    dump_json(catalog / "listings-ranked-wuhan.json", wuhan_display)
     dump_json(catalog / "listings-below-display.json", result["below"])
     dump_json(catalog / "data-issues.json", result["issues"])
     display = result["ranked"]
@@ -525,15 +535,58 @@ def write_catalog(
             "top_count": top_counts.get(sid, 0),
         })
 
+    on_sale_count = sum(1 for x in inv if x.get("sale_status") != "reserved")
+    reserved_count = sum(1 for x in inv if x.get("sale_status") == "reserved")
+    vetoed_count = sum(1 for x in inv if x.get("recommendation_gate") == "VETO")
+    eligible_count = sum(1 for x in inv if numeric_score(x) is not None)
+    wuhan_inv = [x for x in inv if is_local_wuhan(x)]
+    wuhan_on_sale = sum(1 for x in wuhan_inv if x.get("sale_status") != "reserved")
+    wuhan_reserved = sum(1 for x in wuhan_inv if x.get("sale_status") == "reserved")
+    wuhan_vetoed = sum(1 for x in wuhan_inv if x.get("recommendation_gate") == "VETO")
+    wuhan_eligible = sum(1 for x in wuhan_inv if numeric_score(x) is not None)
+
     meta["buyer_city"] = BUYER_CITY
     meta["shop_scope"] = "plan_a_7_direct_shops"
     meta["shops"] = shops_summary
-    meta["on_sale_count"] = sum(1 for x in inv if x.get("sale_status") != "reserved")
-    meta["reserved_count"] = sum(1 for x in inv if x.get("sale_status") == "reserved")
-    meta["vetoed_count"] = sum(1 for x in inv if x.get("recommendation_gate") == "VETO")
+    meta["boards"] = {
+        "wuhan": {
+            "key": "wuhan",
+            "label": "武汉榜",
+            "subtitle": "武汉本地直营 · 免物流直提",
+            "data_file": "listings-ranked-wuhan.json",
+            "inventory_count": len(wuhan_inv),
+            "on_sale_count": wuhan_on_sale,
+            "reserved_count": wuhan_reserved,
+            "vetoed_count": wuhan_vetoed,
+            "eligible_count": wuhan_eligible,
+            "ranked_count": len(wuhan_display),
+            "display_limit": DISPLAY_LIMIT,
+            "display_score_floor": wuhan_display[-1].get("total_score") if wuhan_display else None,
+        },
+        "national": {
+            "key": "national",
+            "label": "全国榜",
+            "subtitle": "全国官方直营 · 到汉统一比价",
+            "data_file": "listings-ranked.json",
+            "inventory_count": len(inv),
+            "on_sale_count": on_sale_count,
+            "reserved_count": reserved_count,
+            "vetoed_count": vetoed_count,
+            "eligible_count": eligible_count,
+            "ranked_count": len(display),
+            "display_limit": DISPLAY_LIMIT,
+            "display_score_floor": display[-1].get("total_score") if display else None,
+        },
+    }
+    meta["wuhan_ranked_count"] = len(wuhan_display)
+    meta["wuhan_eligible_count"] = wuhan_eligible
+    meta["wuhan_display_score_floor"] = wuhan_display[-1].get("total_score") if wuhan_display else None
+    meta["on_sale_count"] = on_sale_count
+    meta["reserved_count"] = reserved_count
+    meta["vetoed_count"] = vetoed_count
     meta["ranked_at"] = now
     meta["ranked_count"] = len(display)
-    meta["library_scored_count"] = len(display) + len(result["below"])
+    meta["library_scored_count"] = eligible_count
     meta["below_display_count"] = len(result["below"])
     meta["data_issue_count"] = len(result["issues"])
     meta["filtered_count"] = len(inv)
@@ -545,6 +598,7 @@ def write_catalog(
     if catalog.resolve() == (ROOT / "data").resolve():
         for name in (
             "listings-ranked.json",
+            "listings-ranked-wuhan.json",
             "listings-filtered.json",
             "shortlist-ranked.json",
             "shortlist-cheapest.json",
@@ -556,6 +610,7 @@ def write_catalog(
         if dash.exists():
             for name in (
                 "listings-ranked.json",
+                "listings-ranked-wuhan.json",
                 "listings-filtered.json",
                 "shortlist-ranked.json",
                 "shortlist-cheapest.json",
@@ -972,6 +1027,7 @@ def run(argv: list[str] | None = None) -> dict[str, Any]:
         "threshold": result["threshold"],
         "changelog_counts": counts,
         "display_count": len(result["ranked"]),
+        "wuhan_display_count": len(result["ranked_wuhan"]),
         "below_display_count": len(result["below"]),
         "issue_count": len(result["issues"]),
         "inventory_count": len(result["inventory"]),

@@ -10,7 +10,13 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts"))
 
-from display_gate import DISPLAY_LIMIT, apply_display_flags, display_sort_key  # noqa: E402
+from display_gate import (  # noqa: E402
+    DISPLAY_LIMIT,
+    apply_display_flags,
+    build_wuhan_board,
+    display_sort_key,
+    is_local_wuhan,
+)
 from filters import FILTER_META, filter_listings  # noqa: E402
 from ranking_v2.apply_verified import apply_verified_to_listings, load_verified_by_sku  # noqa: E402
 from ranking_v2.config import ENERGY, FINANCE, SCORE_VERSION, WEIGHTS  # noqa: E402
@@ -221,6 +227,11 @@ def main() -> None:
 
     eligible_active.sort(key=display_sort_key)
     display, scored_below = apply_display_flags(eligible_active, DISPLAY_LIMIT)
+    wuhan_display = build_wuhan_board(eligible_active, DISPLAY_LIMIT)
+    for item in below_extra:
+        item["wuhan_library_rank"] = None
+        item["wuhan_display"] = False
+        item["wuhan_rank"] = None
     below = scored_below + below_extra
     ranked = eligible_active + below_extra
 
@@ -248,6 +259,12 @@ def main() -> None:
     vetoed_count = sum(1 for x in listings if x.get("recommendation_gate") == "VETO")
     on_sale_count = sum(1 for x in listings if x.get("sale_status") != "reserved")
     veto_bd = _veto_breakdown(listings)
+
+    wuhan_listings = [x for x in listings if is_local_wuhan(x)]
+    wuhan_on_sale_count = sum(1 for x in wuhan_listings if x.get("sale_status") != "reserved")
+    wuhan_reserved_count = sum(1 for x in wuhan_listings if x.get("sale_status") == "reserved")
+    wuhan_vetoed_count = sum(1 for x in wuhan_listings if x.get("recommendation_gate") == "VETO")
+    wuhan_eligible_count = sum(1 for x in eligible_active if is_local_wuhan(x))
 
     meta_path = ROOT / "data" / "meta.json"
     meta = json.loads(meta_path.read_text(encoding="utf-8")) if meta_path.exists() else {}
@@ -324,27 +341,66 @@ def main() -> None:
     meta["buyer_city"] = BUYER_CITY
     meta["shop_scope"] = "plan_a_7_direct_shops"
     meta["shops"] = shops_summary
+    meta["boards"] = {
+        "wuhan": {
+            "key": "wuhan",
+            "label": "武汉榜",
+            "subtitle": "武汉本地直营 · 免物流直提",
+            "data_file": "listings-ranked-wuhan.json",
+            "inventory_count": len(wuhan_listings),
+            "on_sale_count": wuhan_on_sale_count,
+            "reserved_count": wuhan_reserved_count,
+            "vetoed_count": wuhan_vetoed_count,
+            "eligible_count": wuhan_eligible_count,
+            "ranked_count": len(wuhan_display),
+            "display_limit": DISPLAY_LIMIT,
+            "display_score_floor": wuhan_display[-1]["total_score"] if wuhan_display else None,
+        },
+        "national": {
+            "key": "national",
+            "label": "全国榜",
+            "subtitle": "全国官方直营 · 到汉统一比价",
+            "data_file": "listings-ranked.json",
+            "inventory_count": len(listings),
+            "on_sale_count": on_sale_count,
+            "reserved_count": reserved_count,
+            "vetoed_count": vetoed_count,
+            "eligible_count": len(eligible_active),
+            "ranked_count": len(display),
+            "display_limit": DISPLAY_LIMIT,
+            "display_score_floor": display[-1]["total_score"] if display else None,
+        },
+    }
+    meta["wuhan_ranked_count"] = len(wuhan_display)
+    meta["wuhan_eligible_count"] = wuhan_eligible_count
+    meta["wuhan_display_score_floor"] = wuhan_display[-1]["total_score"] if wuhan_display else None
     meta["pricing_policy"] = (
         "到汉可比价 = 全款现金价 + 到汉官方物流费（card/detail实时获取，兜底+1000元）+ 异地上牌服务费差额（500元）"
     )
     meta["notes"] = (
-        f"算法版本 {SCORE_VERSION}（华中7城直营 · 节假日低频用车买手严选）。"
-        f"7城直营在库 {len(listings)} 台（在售 {on_sale_count} / 锁单隐藏 {reserved_count}），"
+        f"算法版本 {SCORE_VERSION}（双榜独立严选 · 武汉榜 + 全国榜）。"
+        f"全国直营在库 {len(listings)} 台（在售 {on_sale_count} / 锁单隐藏 {reserved_count}），"
         f"四大铁律否决 {vetoed_count} 台（新能源{veto_bd['ev_phev']}/三缸{veto_bd['three_cyl']}/干式双离合{veto_bd['dry_dct']}），"
-        f"合格参评 {len(eligible_active)} 台，严选展示 Top {len(display)} 台。"
+        f"合格参评 {len(eligible_active)} 台（武汉本地 {wuhan_eligible_count} 台），"
+        f"分别展示武汉榜 Top {len(wuhan_display)} 与全国榜 Top {len(display)}。"
     )
     meta["filter_pipeline"] = (
-        f"华中7城官方直营 → 到汉可比总价≤6.0万 → 实时售出清理 & 锁单隐藏({reserved_count}) → "
-        f"四大铁律否决({vetoed_count}) → V3综合评分({len(eligible_active)}) → 严选 Top {len(display)}；"
+        f"官方直营多店 → 到汉可比总价≤6.0万 → 实时售出清理 & 锁单隐藏({reserved_count}) → "
+        f"四大铁律否决({vetoed_count}) → V3综合评分({len(eligible_active)}) → 武汉榜 Top {len(wuhan_display)} / 全国榜 Top {len(display)}；"
         f"source={n_before} filtered={len(listings)} data_issues={len(data_issues)}"
     )
 
     for item in data_issues:
         item["display"] = False
         item["rank"] = None
+        item["wuhan_library_rank"] = None
+        item["wuhan_display"] = False
+        item["wuhan_rank"] = None
     all_filtered = ranked + data_issues
     for p in (ROOT / "listings-ranked.json", ROOT / "data" / "listings-ranked.json"):
         dump_json(p, display)
+    for p in (ROOT / "listings-ranked-wuhan.json", ROOT / "data" / "listings-ranked-wuhan.json"):
+        dump_json(p, wuhan_display)
     dump_json(ROOT / "data" / "listings-below-display.json", below)
     for p in (ROOT / "listings-filtered.json", ROOT / "data" / "listings-filtered.json"):
         dump_json(p, all_filtered)
@@ -360,6 +416,7 @@ def main() -> None:
     if dash.exists():
         for name in (
             "listings-ranked.json",
+            "listings-ranked-wuhan.json",
             "listings-filtered.json",
             "shortlist-ranked.json",
             "shortlist-cheapest.json",
@@ -375,7 +432,7 @@ def main() -> None:
     print(
         f"SCORE_VERSION {SCORE_VERSION} FILTERED {len(listings)} ON_SALE {on_sale_count} "
         f"RESERVED {reserved_count} VETOED {vetoed_count} ELIGIBLE {len(eligible_active)} "
-        f"DISPLAY {len(display)} BELOW {len(below)} DATA_ISSUES {len(data_issues)}"
+        f"DISPLAY_NATIONAL {len(display)} DISPLAY_WUHAN {len(wuhan_display)} BELOW {len(below)} DATA_ISSUES {len(data_issues)}"
     )
     print("TOP15")
     for x in display[:15]:

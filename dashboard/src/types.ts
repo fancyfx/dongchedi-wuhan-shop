@@ -128,6 +128,9 @@ export type Listing = {
   total_score?: number | null
   evaluation?: string
   rank?: number | null
+  wuhan_rank?: number | null
+  national_rank?: number | null
+  board_scope?: BoardKey | string
   sort_scores?: SortScores
   owner_reviews?: OwnerReviews
   specs?: Specs
@@ -157,12 +160,33 @@ export type ShopSummary = {
   top_count?: number
 }
 
+export type BoardKey = 'wuhan' | 'national'
+
+export type BoardMeta = {
+  key?: BoardKey
+  label?: string
+  subtitle?: string
+  data_file?: string
+  inventory_count?: number
+  on_sale_count?: number
+  reserved_count?: number
+  vetoed_count?: number
+  eligible_count?: number
+  ranked_count?: number
+  display_limit?: number
+  display_score_floor?: number | null
+}
+
 export type Meta = {
   shop_name?: string
   shop_id?: string
   buyer_city?: string
   shop_scope?: string
   shops?: ShopSummary[]
+  boards?: Partial<Record<BoardKey, BoardMeta>>
+  wuhan_ranked_count?: number
+  wuhan_eligible_count?: number
+  wuhan_display_score_floor?: number | null
   pricing_policy?: string
   captured_at?: string
   ranked_at?: string

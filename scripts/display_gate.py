@@ -8,6 +8,20 @@ from __future__ import annotations
 from typing import Any
 
 DISPLAY_LIMIT = 30
+WUHAN_SHOP_ID = "118608"
+WUHAN_CITY = "武汉"
+
+
+def is_local_wuhan(item: dict[str, Any] | None) -> bool:
+    if not item:
+        return False
+    flag = item.get("is_local_wuhan")
+    if isinstance(flag, bool):
+        return flag
+    sid = str(item.get("shop_id") or "").strip()
+    if sid:
+        return sid == WUHAN_SHOP_ID
+    return str(item.get("city") or "").strip() == WUHAN_CITY
 
 
 def numeric_score(item: dict[str, Any] | None) -> float | None:
@@ -63,3 +77,37 @@ def apply_display_flags(
     display = [item for item in scored_sorted if item.get("display")]
     below = [item for item in scored_sorted if not item.get("display")]
     return display, below
+
+
+def build_wuhan_board(
+    scored_sorted: list[dict[str, Any]],
+    limit: int = DISPLAY_LIMIT,
+) -> list[dict[str, Any]]:
+    """Build independent Wuhan local top-N board from an already best-first scored list.
+
+    Marks `wuhan_library_rank`, `wuhan_display`, and `wuhan_rank` on every item in place
+    without mutating the national board's `rank` / `display`, and returns shallow-copied
+    rows whose `rank` is the Wuhan board rank (1..limit) and `national_rank` preserves
+    the overall board rank.
+    """
+    wuhan_board: list[dict[str, Any]] = []
+    wuhan_index = 0
+    for item in scored_sorted:
+        if not is_local_wuhan(item):
+            item["wuhan_library_rank"] = None
+            item["wuhan_display"] = False
+            item["wuhan_rank"] = None
+            continue
+        wuhan_index += 1
+        shown = wuhan_index <= limit and numeric_score(item) is not None
+        item["wuhan_library_rank"] = wuhan_index
+        item["wuhan_display"] = shown
+        item["wuhan_rank"] = wuhan_index if shown else None
+        if shown:
+            row = dict(item)
+            row["national_rank"] = item.get("rank")
+            row["rank"] = wuhan_index
+            row["display"] = True
+            row["board_scope"] = "wuhan"
+            wuhan_board.append(row)
+    return wuhan_board

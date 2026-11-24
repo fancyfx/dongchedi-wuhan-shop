@@ -50,9 +50,9 @@
   "viewport": "390x844",
   "user_agent": "WeChat MicroMessenger iPhone (API + attempted page emulation; CDP UA override blocked)",
   "sort_preference": "v3_2_suv_first_modern_cabin_with_dmi_top30",
-  "notes": "算法版本 v3.2.0（华中7城直营 · 节假日低频用车买手严选）。7城直营在库 513 台（在售 508 / 锁单隐藏 5），四大铁律否决 110 台（新能源28/三缸49/干式双离合35），合格参评 344 台，严选展示 Top 30 台。",
+  "notes": "算法版本 v3.2.0（双榜独立严选 · 武汉榜 + 全国榜）。全国直营在库 513 台（在售 508 / 锁单隐藏 5），四大铁律否决 110 台（新能源28/三缸49/干式双离合35），合格参评 344 台（武汉本地 130 台），分别展示武汉榜 Top 30 与全国榜 Top 30。",
   "sort_method": "ranking_v3_2_suv_cabin_and_tiered_hybrid",
-  "ranked_at": "2026-11-21T23:51:28+08:00",
+  "ranked_at": "2026-11-24T23:07:23+08:00",
   "ranked_count": 30,
   "sort_weights": {
     "config": 0.28,
@@ -170,7 +170,7 @@
   "filtered_count": 513,
   "excluded_short_range_bev_count": 0,
   "excluded_short_range_bev": [],
-  "filter_pipeline": "华中7城官方直营 → 到汉可比总价≤6.0万 → 实时售出清理 & 锁单隐藏(5) → 四大铁律否决(110) → V3综合评分(344) → 严选 Top 30；source=513 filtered=513 data_issues=56",
+  "filter_pipeline": "官方直营多店 → 到汉可比总价≤6.0万 → 实时售出清理 & 锁单隐藏(5) → 四大铁律否决(110) → V3综合评分(344) → 武汉榜 Top 30 / 全国榜 Top 30；source=513 filtered=513 data_issues=56",
   "config_scoring": {
     "method": "exact_trim_full_parameters",
     "approximate_fallback": false,
@@ -309,5 +309,38 @@
       "top_count": 0
     }
   ],
-  "pricing_policy": "到汉可比价 = 全款现金价 + 到汉官方物流费（card/detail实时获取，兜底+1000元）+ 异地上牌服务费差额（500元）"
+  "pricing_policy": "到汉可比价 = 全款现金价 + 到汉官方物流费（card/detail实时获取，兜底+1000元）+ 异地上牌服务费差额（500元）",
+  "boards": {
+    "wuhan": {
+      "key": "wuhan",
+      "label": "武汉榜",
+      "subtitle": "武汉本地直营 · 免物流直提",
+      "data_file": "listings-ranked-wuhan.json",
+      "inventory_count": 172,
+      "on_sale_count": 167,
+      "reserved_count": 5,
+      "vetoed_count": 35,
+      "eligible_count": 130,
+      "ranked_count": 30,
+      "display_limit": 30,
+      "display_score_floor": 71.1
+    },
+    "national": {
+      "key": "national",
+      "label": "全国榜",
+      "subtitle": "全国官方直营 · 到汉统一比价",
+      "data_file": "listings-ranked.json",
+      "inventory_count": 513,
+      "on_sale_count": 508,
+      "reserved_count": 5,
+      "vetoed_count": 110,
+      "eligible_count": 344,
+      "ranked_count": 30,
+      "display_limit": 30,
+      "display_score_floor": 78.4
+    }
+  },
+  "wuhan_ranked_count": 30,
+  "wuhan_eligible_count": 130,
+  "wuhan_display_score_floor": 71.1
 }
