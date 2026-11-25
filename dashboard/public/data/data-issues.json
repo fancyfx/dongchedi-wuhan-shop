@@ -1,14 +1,14 @@
 [
   {
     "sku": "300031237",
-    "title": "福睿斯 2015款 1.5L 手动时尚型",
+    "title": "福睿斯 2017款 幸福版 1.5L 手动时尚型",
     "shop_id": "64909",
     "shop_name": "懂车帝汽车商城•合肥店",
     "shop_short_name": "合肥店",
     "series": "福睿斯",
     "brand": "福睿斯",
     "mileage_wan": 9.14,
-    "model_year": 2015,
+    "model_year": 2017,
     "plate_year": 2016,
     "year": "2016年/9.14万公里",
     "city": "合肥",
@@ -20,7 +20,7 @@
     "source_type": "2",
     "source_type_name": "自营-个人",
     "fuel_form": "1",
-    "cover": "https://p3-dcd-sign.byteimg.com/tos-cn-i-f042mdwyw7/d49a860a828f4383b67133d170e5fa03~tplv-f042mdwyw7-auto-webp:480:0.jpg?rk3s=4892dee6&x-expires=1796694282&x-signature=DE52EYZvVAdRl2CiwAbAvFtFHpg%3D&psm=motor.sh.pack",
+    "cover": "https://p3-dcd-sign.byteimg.com/tos-cn-i-f042mdwyw7/d49a860a828f4383b67133d170e5fa03~tplv-f042mdwyw7-auto-webp:480:0.jpg?rk3s=4892dee6&x-expires=1796780917&x-signature=SEnJ3mn3o5I4aWpap2hKqVMjZT4%3D&psm=motor.sh.pack",
     "detail_url": "https://m.dcdapp.com/motor/feoffline/usedcar_detail/detail.html?sku_id=300031237&shop_id=64909",
     "list_price_wan": 1.29,
     "first_registration_time": "1481040000",
@@ -33,7 +33,7 @@
     "detail_shop_id": "64909",
     "sale_status": "on_sale",
     "product_status": 1,
-    "status_modify_time": "1795398606",
+    "status_modify_time": "1795495366",
     "is_local_wuhan": false,
     "logistics_fee_yuan": 840,
     "logistics_fee_source": "api",
@@ -319,140 +319,7 @@
       "condition_gate": "DATA_ISSUE",
       "note": "数据不足，不参与评分"
     },
-    "ingest_status": "added",
-    "display": false,
-    "wuhan_library_rank": null,
-    "wuhan_display": false,
-    "wuhan_rank": null
-  },
-  {
-    "sku": "356934274",
-    "title": "MG ZS 2017款 1.5L 手动精英版",
-    "shop_id": "225430",
-    "shop_name": "懂车帝汽车商城•重庆旗舰店",
-    "shop_short_name": "重庆旗舰店",
-    "series": "MG ZS",
-    "brand": "名爵",
-    "mileage_wan": 7.11,
-    "model_year": 2017,
-    "plate_year": 2018,
-    "year": "2018年/7.11万公里",
-    "city": "重庆",
-    "tags": [
-      "直降2000元"
-    ],
-    "badges": [
-      "直营"
-    ],
-    "is_self_trade_car": true,
-    "source_type": "2",
-    "source_type_name": "自营-个人",
-    "fuel_form": "1",
-    "cover": "https://p3-dcd-sign.byteimg.com/tos-cn-i-f042mdwyw7/702378fdda5c4b459f01f71a086c953d~tplv-f042mdwyw7-auto-webp:480:0.jpg?rk3s=4892dee6&x-expires=1796694334&x-signature=GZrz%2B%2BmhTOmjV0Om2mRhKALSq8k%3D&psm=motor.sh.pack",
-    "detail_url": "https://m.dcdapp.com/motor/feoffline/usedcar_detail/detail.html?sku_id=356934274&shop_id=225430",
-    "list_price_wan": 1.33,
-    "first_registration_time": "1516118400",
-    "price_type": "现金价",
-    "prefix": "现金价",
-    "cash_price_fen": 1330000,
-    "cash_price_str": "1.33",
-    "cash_price_wan": 1.33,
-    "price": 1.33,
-    "detail_shop_id": "225430",
-    "sale_status": "on_sale",
-    "product_status": 1,
-    "status_modify_time": "1795418933",
-    "is_local_wuhan": false,
-    "logistics_fee_yuan": 1300,
-    "logistics_fee_source": "api",
-    "plate_service_fee_yuan": 1000,
-    "plate_fee_diff_yuan": 500,
-    "landed_extra_yuan": 1800,
-    "landed_extra_wan": 0.18,
-    "delivery_eta": "3-5日送达",
-    "landed_price_wan": 1.51,
-    "specs": {
-      "features": {},
-      "specs_found": false,
-      "specs_approx": false,
-      "verified": false,
-      "configuration_source": "unverified_v3",
-      "configuration_unverified": true,
-      "feature_confidence": 0.0,
-      "match_level": "unverified_config",
-      "verification_issues": [
-        "详细配置数据不足"
-      ]
-    },
-    "detailed_config": {
-      "features": {},
-      "specs_found": false,
-      "specs_approx": false,
-      "verified": false,
-      "configuration_source": "unverified_v3",
-      "configuration_unverified": true,
-      "feature_confidence": 0.0,
-      "match_level": "unverified_config",
-      "verification_issues": [
-        "详细配置数据不足"
-      ]
-    },
-    "display_price_wan": 1.33,
-    "effective_price_wan": 1.51,
-    "price_confidence": 0.95,
-    "needs_cash_quote": false,
-    "price_basis": "cash_plus_landed",
-    "manufacturer": "上汽集团",
-    "manufacturer_inferred": false,
-    "owner_reviews": {
-      "summary": "",
-      "sources": [],
-      "found": false
-    },
-    "score_eligible": false,
-    "data_issues": [
-      {
-        "code": "detailed_config_insufficient",
-        "message": "详细配置数据不足",
-        "severity": "blocking",
-        "field": "specs"
-      },
-      {
-        "code": "space_data_insufficient",
-        "message": "空间数据不足：缺少 length_mm",
-        "severity": "blocking",
-        "field": "length_mm"
-      }
-    ],
-    "config_coverage": 0.0,
-    "energy_confidence": 0.0,
-    "score_version": "v3.2.0",
-    "score_v1": null,
-    "total_score": null,
-    "rank": null,
-    "condition_gate": "DATA_ISSUE",
-    "recommendation_gate": "DATA_ISSUE",
-    "veto_reasons": [],
-    "v3_profile": null,
-    "evaluation": "详细配置数据不足；空间数据不足：缺少 length_mm，不参与评分。",
-    "score_reasons": [],
-    "score_warnings": [
-      "详细配置数据不足",
-      "空间数据不足：缺少 length_mm"
-    ],
-    "sort_scores": {
-      "score_version": "v3.2.0",
-      "total_score": null,
-      "config_score": null,
-      "config_norm": null,
-      "config_proxy": null,
-      "is_suv": false,
-      "price": 1.33,
-      "effective_price_wan": 1.51,
-      "condition_gate": "DATA_ISSUE",
-      "note": "数据不足，不参与评分"
-    },
-    "ingest_status": "restored_on_sale",
+    "ingest_status": "updated",
     "display": false,
     "wuhan_library_rank": null,
     "wuhan_display": false,
@@ -1612,9 +1479,9 @@
     "cash_price_wan": 3.29,
     "price": 3.29,
     "detail_shop_id": "225430",
-    "sale_status": "on_sale",
-    "product_status": 1,
-    "status_modify_time": "1794972913",
+    "sale_status": "reserved",
+    "product_status": 5,
+    "status_modify_time": "1795520497",
     "is_local_wuhan": false,
     "logistics_fee_yuan": 1300,
     "logistics_fee_source": "api",
@@ -1705,7 +1572,7 @@
       "condition_gate": "DATA_ISSUE",
       "note": "数据不足，不参与评分"
     },
-    "ingest_status": "added",
+    "ingest_status": "reserved",
     "display": false,
     "wuhan_library_rank": null,
     "wuhan_display": false,
@@ -3026,165 +2893,6 @@
     "wuhan_rank": null
   },
   {
-    "sku": "357600744",
-    "title": "荣威i5 2023款 1.5L CVT尊荣版",
-    "shop_id": "225430",
-    "shop_name": "懂车帝汽车商城•重庆旗舰店",
-    "shop_short_name": "重庆旗舰店",
-    "series": "荣威i5",
-    "brand": "荣威",
-    "mileage_wan": 1.8,
-    "model_year": 2023,
-    "plate_year": 2024,
-    "year": "2024年/1.80万公里",
-    "city": "重庆",
-    "tags": [
-      "0.4万首付"
-    ],
-    "badges": [
-      "直营"
-    ],
-    "is_self_trade_car": true,
-    "source_type": "2",
-    "source_type_name": "自营-个人",
-    "fuel_form": "1",
-    "cover": "https://p9-dcd-sign.byteimg.com/tos-cn-i-f042mdwyw7/948cd8f124d74c0db466dc35e9ffb839~tplv-f042mdwyw7-auto-webp:480:0.jpg?rk3s=4892dee6&x-expires=1796476241&x-signature=1giSGxYXI1K4K%2BAcCe2tpxhgD7o%3D&psm=motor.sh.pack",
-    "detail_url": "https://m.dcdapp.com/motor/feoffline/usedcar_detail/detail.html?sku_id=357600744&shop_id=225430",
-    "list_price_wan": 4.19,
-    "first_registration_time": "1733241600",
-    "price_type": "现金价",
-    "prefix": "现金价",
-    "cash_price_fen": 4190000,
-    "cash_price_str": "4.19",
-    "cash_price_wan": 4.19,
-    "price": 4.19,
-    "detail_shop_id": "225430",
-    "sale_status": "on_sale",
-    "product_status": 1,
-    "status_modify_time": "1795084109",
-    "is_local_wuhan": false,
-    "logistics_fee_yuan": 1300,
-    "logistics_fee_source": "api",
-    "plate_service_fee_yuan": 1000,
-    "plate_fee_diff_yuan": 500,
-    "landed_extra_yuan": 1800,
-    "landed_extra_wan": 0.18,
-    "delivery_eta": "3-5日送达",
-    "landed_price_wan": 4.37,
-    "specs": {
-      "features": {},
-      "specs_found": false,
-      "specs_approx": false,
-      "verified": false,
-      "configuration_source": "unverified_v3",
-      "configuration_unverified": true,
-      "feature_confidence": 0.0,
-      "match_level": "unverified_config",
-      "verification_issues": [
-        "详细配置数据不足"
-      ]
-    },
-    "detailed_config": {
-      "features": {},
-      "specs_found": false,
-      "specs_approx": false,
-      "verified": false,
-      "configuration_source": "unverified_v3",
-      "configuration_unverified": true,
-      "feature_confidence": 0.0,
-      "match_level": "unverified_config",
-      "verification_issues": [
-        "详细配置数据不足"
-      ]
-    },
-    "display_price_wan": 4.19,
-    "effective_price_wan": 4.37,
-    "price_confidence": 0.95,
-    "needs_cash_quote": false,
-    "price_basis": "cash_plus_landed",
-    "manufacturer": "上汽集团",
-    "manufacturer_inferred": false,
-    "owner_reviews": {
-      "summary": "家用三厢性价比取向。槽点：动力肉、隔音一般、配置因年款差异大、保值一般。",
-      "pros": [
-        "价格友好",
-        "家用空间够用"
-      ],
-      "cons": [
-        "动力肉",
-        "隔音一般",
-        "配置因年款差异大",
-        "保值一般"
-      ],
-      "drawbacks": [
-        "动力肉",
-        "隔音一般",
-        "配置因年款差异大",
-        "保值一般"
-      ],
-      "sources": [
-        {
-          "title": "荣威i5口碑检索（汽车之家）",
-          "url": "https://sou.autohome.com.cn/zonghe?q=%E8%8D%A3%E5%A8%81i5+%E5%8F%A3%E7%A2%91"
-        },
-        {
-          "title": "车质网i5检索",
-          "url": "https://www.12365auto.com/search?keyword=%E8%8D%A3%E5%A8%81i5"
-        }
-      ],
-      "found": true,
-      "cons_note": null
-    },
-    "score_eligible": false,
-    "data_issues": [
-      {
-        "code": "detailed_config_insufficient",
-        "message": "详细配置数据不足",
-        "severity": "blocking",
-        "field": "specs"
-      },
-      {
-        "code": "space_data_insufficient",
-        "message": "空间数据不足：缺少 length_mm",
-        "severity": "blocking",
-        "field": "length_mm"
-      }
-    ],
-    "config_coverage": 0.0,
-    "energy_confidence": 0.0,
-    "score_version": "v3.2.0",
-    "score_v1": null,
-    "total_score": null,
-    "rank": null,
-    "condition_gate": "DATA_ISSUE",
-    "recommendation_gate": "DATA_ISSUE",
-    "veto_reasons": [],
-    "v3_profile": null,
-    "evaluation": "详细配置数据不足；空间数据不足：缺少 length_mm，不参与评分。",
-    "score_reasons": [],
-    "score_warnings": [
-      "详细配置数据不足",
-      "空间数据不足：缺少 length_mm"
-    ],
-    "sort_scores": {
-      "score_version": "v3.2.0",
-      "total_score": null,
-      "config_score": null,
-      "config_norm": null,
-      "config_proxy": null,
-      "is_suv": false,
-      "price": 4.19,
-      "effective_price_wan": 4.37,
-      "condition_gate": "DATA_ISSUE",
-      "note": "数据不足，不参与评分"
-    },
-    "ingest_status": "added",
-    "display": false,
-    "wuhan_library_rank": null,
-    "wuhan_display": false,
-    "wuhan_rank": null
-  },
-  {
     "sku": "357000729",
     "title": "五菱佳辰 2022款 1.5T CVT智享豪华型",
     "shop_id": "225430",
@@ -3351,9 +3059,9 @@
     "cash_price_wan": 4.29,
     "price": 4.29,
     "detail_shop_id": "64909",
-    "sale_status": "on_sale",
-    "product_status": 1,
-    "status_modify_time": "1789800496",
+    "sale_status": "reserved",
+    "product_status": 5,
+    "status_modify_time": "1795556882",
     "is_local_wuhan": false,
     "logistics_fee_yuan": 840,
     "logistics_fee_source": "api",
@@ -3444,7 +3152,7 @@
       "condition_gate": "DATA_ISSUE",
       "note": "数据不足，不参与评分"
     },
-    "ingest_status": "added",
+    "ingest_status": "reserved",
     "display": false,
     "wuhan_library_rank": null,
     "wuhan_display": false,
@@ -5341,139 +5049,6 @@
       "note": "数据不足，不参与评分"
     },
     "ingest_status": "added",
-    "display": false,
-    "wuhan_library_rank": null,
-    "wuhan_display": false,
-    "wuhan_rank": null
-  },
-  {
-    "sku": "357154546",
-    "title": "五菱缤果 2025款 333KM 灵犀互联款",
-    "shop_id": "225430",
-    "shop_name": "懂车帝汽车商城•重庆旗舰店",
-    "shop_short_name": "重庆旗舰店",
-    "series": "五菱缤果",
-    "brand": "五菱",
-    "mileage_wan": 1.19,
-    "model_year": 2025,
-    "plate_year": 2025,
-    "year": "2025年/1.19万公里",
-    "city": "重庆",
-    "tags": [
-      "0.5万首付"
-    ],
-    "badges": [
-      "直营"
-    ],
-    "is_self_trade_car": true,
-    "source_type": "2",
-    "source_type_name": "自营-个人",
-    "fuel_form": "4",
-    "cover": "https://p9-dcd-sign.byteimg.com/tos-cn-i-f042mdwyw7/90db0e7d777d41d6a6e28bd3458cdcda~tplv-f042mdwyw7-auto-webp:480:0.jpg?rk3s=4892dee6&x-expires=1796476233&x-signature=qU5mKamSSCVIyR8Cx%2FtKWza9P0I%3D&psm=motor.sh.pack",
-    "detail_url": "https://m.dcdapp.com/motor/feoffline/usedcar_detail/detail.html?sku_id=357154546&shop_id=225430",
-    "list_price_wan": 4.69,
-    "first_registration_time": "1763568000",
-    "price_type": "现金价",
-    "prefix": "现金价",
-    "cash_price_fen": 4990000,
-    "cash_price_str": "4.99",
-    "cash_price_wan": 4.99,
-    "price": 4.99,
-    "detail_shop_id": "225430",
-    "sale_status": "reserved",
-    "product_status": 5,
-    "status_modify_time": "1795443594",
-    "is_local_wuhan": false,
-    "logistics_fee_yuan": 1300,
-    "logistics_fee_source": "api",
-    "plate_service_fee_yuan": 1000,
-    "plate_fee_diff_yuan": 500,
-    "landed_extra_yuan": 1800,
-    "landed_extra_wan": 0.18,
-    "delivery_eta": "3-5日送达",
-    "landed_price_wan": 5.17,
-    "specs": {
-      "features": {},
-      "specs_found": false,
-      "specs_approx": false,
-      "verified": false,
-      "configuration_source": "unverified_v3",
-      "configuration_unverified": true,
-      "feature_confidence": 0.0,
-      "match_level": "unverified_config",
-      "verification_issues": [
-        "详细配置数据不足"
-      ]
-    },
-    "detailed_config": {
-      "features": {},
-      "specs_found": false,
-      "specs_approx": false,
-      "verified": false,
-      "configuration_source": "unverified_v3",
-      "configuration_unverified": true,
-      "feature_confidence": 0.0,
-      "match_level": "unverified_config",
-      "verification_issues": [
-        "详细配置数据不足"
-      ]
-    },
-    "display_price_wan": 4.99,
-    "effective_price_wan": 5.17,
-    "price_confidence": 0.95,
-    "needs_cash_quote": false,
-    "price_basis": "cash_plus_landed",
-    "manufacturer": "上汽通用五菱",
-    "manufacturer_inferred": false,
-    "owner_reviews": {
-      "summary": "",
-      "sources": [],
-      "found": false
-    },
-    "score_eligible": false,
-    "data_issues": [
-      {
-        "code": "detailed_config_insufficient",
-        "message": "详细配置数据不足",
-        "severity": "blocking",
-        "field": "specs"
-      },
-      {
-        "code": "space_data_insufficient",
-        "message": "空间数据不足：缺少 length_mm",
-        "severity": "blocking",
-        "field": "length_mm"
-      }
-    ],
-    "config_coverage": 0.0,
-    "energy_confidence": 0.0,
-    "score_version": "v3.2.0",
-    "score_v1": null,
-    "total_score": null,
-    "rank": null,
-    "condition_gate": "DATA_ISSUE",
-    "recommendation_gate": "DATA_ISSUE",
-    "veto_reasons": [],
-    "v3_profile": null,
-    "evaluation": "详细配置数据不足；空间数据不足：缺少 length_mm，不参与评分。",
-    "score_reasons": [],
-    "score_warnings": [
-      "详细配置数据不足",
-      "空间数据不足：缺少 length_mm"
-    ],
-    "sort_scores": {
-      "score_version": "v3.2.0",
-      "total_score": null,
-      "config_score": null,
-      "config_norm": null,
-      "config_proxy": null,
-      "is_suv": false,
-      "price": 4.99,
-      "effective_price_wan": 5.17,
-      "condition_gate": "DATA_ISSUE",
-      "note": "数据不足，不参与评分"
-    },
-    "ingest_status": "reserved",
     "display": false,
     "wuhan_library_rank": null,
     "wuhan_display": false,
@@ -7575,166 +7150,6 @@
     "wuhan_rank": null
   },
   {
-    "sku": "357477127",
-    "title": "帝豪 2026款 400万纪念款 1.5L 手动超越型",
-    "shop_id": "225430",
-    "shop_name": "懂车帝汽车商城•重庆旗舰店",
-    "shop_short_name": "重庆旗舰店",
-    "series": "帝豪",
-    "brand": "吉利",
-    "mileage_wan": 0.47,
-    "model_year": 2026,
-    "plate_year": 2026,
-    "year": "2026年/0.47万公里",
-    "city": "重庆",
-    "tags": [
-      "0.5万首付"
-    ],
-    "badges": [
-      "直营"
-    ],
-    "is_self_trade_car": true,
-    "source_type": "2",
-    "source_type_name": "自营-个人",
-    "fuel_form": "1",
-    "cover": "https://p3-dcd-sign.byteimg.com/tos-cn-i-f042mdwyw7/6dd0d75834e442d1a132f34c08ad16b2~tplv-f042mdwyw7-auto-webp:480:0.jpg?rk3s=4892dee6&x-expires=1796476241&x-signature=TgQ47cIJd5rwwHRKE9fzthQ64eM%3D&psm=motor.sh.pack",
-    "detail_url": "https://m.dcdapp.com/motor/feoffline/usedcar_detail/detail.html?sku_id=357477127&shop_id=225430",
-    "list_price_wan": 5.29,
-    "first_registration_time": "1773417600",
-    "price_type": "现金价",
-    "prefix": "现金价",
-    "cash_price_fen": 5490000,
-    "cash_price_str": "5.49",
-    "cash_price_wan": 5.49,
-    "price": 5.49,
-    "detail_shop_id": "225430",
-    "sale_status": "on_sale",
-    "product_status": 1,
-    "status_modify_time": "1794290091",
-    "is_local_wuhan": false,
-    "logistics_fee_yuan": 1300,
-    "logistics_fee_source": "api",
-    "plate_service_fee_yuan": 1000,
-    "plate_fee_diff_yuan": 500,
-    "landed_extra_yuan": 1800,
-    "landed_extra_wan": 0.18,
-    "delivery_eta": "3-5日送达",
-    "landed_price_wan": 5.67,
-    "specs": {
-      "features": {},
-      "specs_found": false,
-      "specs_approx": false,
-      "verified": false,
-      "configuration_source": "unverified_v3",
-      "configuration_unverified": true,
-      "feature_confidence": 0.0,
-      "match_level": "unverified_config",
-      "verification_issues": [
-        "详细配置数据不足"
-      ]
-    },
-    "detailed_config": {
-      "features": {},
-      "specs_found": false,
-      "specs_approx": false,
-      "verified": false,
-      "configuration_source": "unverified_v3",
-      "configuration_unverified": true,
-      "feature_confidence": 0.0,
-      "match_level": "unverified_config",
-      "verification_issues": [
-        "详细配置数据不足"
-      ]
-    },
-    "display_price_wan": 5.49,
-    "effective_price_wan": 5.67,
-    "price_confidence": 0.95,
-    "needs_cash_quote": false,
-    "price_basis": "cash_plus_landed",
-    "manufacturer": "吉利汽车",
-    "manufacturer_inferred": false,
-    "owner_reviews": {
-      "summary": "自主家轿常青树，性价比与油耗认可（之家约4.5+）。槽点：动力肉、隔音一般、CVT声浪、配置中庸。",
-      "pros": [
-        "性价比高",
-        "家用耐造",
-        "油耗友好"
-      ],
-      "cons": [
-        "动力肉",
-        "隔音一般",
-        "CVT声浪",
-        "配置中庸"
-      ],
-      "drawbacks": [
-        "动力肉",
-        "隔音一般",
-        "CVT声浪",
-        "配置中庸"
-      ],
-      "sources": [
-        {
-          "title": "帝豪口碑检索（汽车之家）",
-          "url": "https://sou.autohome.com.cn/zonghe?q=%E5%B8%9D%E8%B1%AA+%E5%8F%A3%E7%A2%91"
-        },
-        {
-          "title": "紧凑型车口碑榜含帝豪（汽车之家）",
-          "url": "https://k.autohome.com.cn/a1/"
-        }
-      ],
-      "found": true,
-      "cons_note": null
-    },
-    "score_eligible": false,
-    "data_issues": [
-      {
-        "code": "detailed_config_insufficient",
-        "message": "详细配置数据不足",
-        "severity": "blocking",
-        "field": "specs"
-      },
-      {
-        "code": "space_data_insufficient",
-        "message": "空间数据不足：缺少 length_mm",
-        "severity": "blocking",
-        "field": "length_mm"
-      }
-    ],
-    "config_coverage": 0.0,
-    "energy_confidence": 0.0,
-    "score_version": "v3.2.0",
-    "score_v1": null,
-    "total_score": null,
-    "rank": null,
-    "condition_gate": "DATA_ISSUE",
-    "recommendation_gate": "DATA_ISSUE",
-    "veto_reasons": [],
-    "v3_profile": null,
-    "evaluation": "详细配置数据不足；空间数据不足：缺少 length_mm，不参与评分。",
-    "score_reasons": [],
-    "score_warnings": [
-      "详细配置数据不足",
-      "空间数据不足：缺少 length_mm"
-    ],
-    "sort_scores": {
-      "score_version": "v3.2.0",
-      "total_score": null,
-      "config_score": null,
-      "config_norm": null,
-      "config_proxy": null,
-      "is_suv": false,
-      "price": 5.49,
-      "effective_price_wan": 5.67,
-      "condition_gate": "DATA_ISSUE",
-      "note": "数据不足，不参与评分"
-    },
-    "ingest_status": "added",
-    "display": false,
-    "wuhan_library_rank": null,
-    "wuhan_display": false,
-    "wuhan_rank": null
-  },
-  {
     "sku": "357180360",
     "title": "本田XR-V 2019款 220 TURBO CVT舒适版 国VI",
     "shop_id": "225430",
@@ -8719,6 +8134,138 @@
     "landed_extra_wan": 0.0,
     "landed_price_wan": 5.99,
     "wuhan_library_rank": null,
+    "wuhan_display": false,
+    "wuhan_rank": null
+  },
+  {
+    "sku": "356768007",
+    "title": "捷途X90 PLUS 2024款 1.6TD DCT别墅PRO",
+    "shop_id": "64909",
+    "shop_name": "懂车帝汽车商城•合肥店",
+    "shop_short_name": "合肥店",
+    "series": "捷途X90 PLUS",
+    "brand": "捷途X90",
+    "mileage_wan": 2.73,
+    "model_year": 2024,
+    "plate_year": 2024,
+    "year": "2024年/2.73万公里",
+    "city": "合肥",
+    "tags": [
+      "0.6万首付"
+    ],
+    "badges": [
+      "直营"
+    ],
+    "is_self_trade_car": true,
+    "source_type": "2",
+    "source_type_name": "自营-个人",
+    "fuel_form": "1",
+    "cover": "https://p3-dcd-sign.byteimg.com/tos-cn-i-f042mdwyw7/093c7b6228864e6f85e7a530220d7dd8~tplv-f042mdwyw7-auto-webp:480:0.jpg?rk3s=4892dee6&x-expires=1796780913&x-signature=YvQCK4UwbQyFT9QTZH9GOxN2qFk%3D&psm=motor.sh.pack",
+    "detail_url": "https://m.dcdapp.com/motor/feoffline/usedcar_detail/detail.html?sku_id=356768007&shop_id=64909",
+    "list_price_wan": 5.59,
+    "first_registration_time": "1711900800",
+    "price_type": "现金价",
+    "prefix": "现金价",
+    "cash_price_fen": 5690000,
+    "cash_price_str": "5.69",
+    "cash_price_wan": 5.69,
+    "price": 5.69,
+    "detail_shop_id": "64909",
+    "sale_status": "on_sale",
+    "product_status": 1,
+    "status_modify_time": "1795059984",
+    "is_local_wuhan": false,
+    "logistics_fee_yuan": 840,
+    "logistics_fee_source": "api",
+    "plate_service_fee_yuan": 1000,
+    "plate_fee_diff_yuan": 500,
+    "landed_extra_yuan": 1340,
+    "landed_extra_wan": 0.134,
+    "delivery_eta": "1-3日送达",
+    "landed_price_wan": 5.82,
+    "specs": {
+      "features": {},
+      "specs_found": false,
+      "specs_approx": false,
+      "verified": false,
+      "configuration_source": "unverified_v3",
+      "configuration_unverified": true,
+      "feature_confidence": 0.0,
+      "match_level": "unverified_config",
+      "verification_issues": [
+        "详细配置数据不足"
+      ]
+    },
+    "detailed_config": {
+      "features": {},
+      "specs_found": false,
+      "specs_approx": false,
+      "verified": false,
+      "configuration_source": "unverified_v3",
+      "configuration_unverified": true,
+      "feature_confidence": 0.0,
+      "match_level": "unverified_config",
+      "verification_issues": [
+        "详细配置数据不足"
+      ]
+    },
+    "display_price_wan": 5.69,
+    "effective_price_wan": 5.82,
+    "price_confidence": 0.95,
+    "needs_cash_quote": false,
+    "price_basis": "cash_plus_landed",
+    "manufacturer": "捷途X90",
+    "manufacturer_inferred": true,
+    "owner_reviews": {
+      "summary": "",
+      "sources": [],
+      "found": false
+    },
+    "score_eligible": false,
+    "data_issues": [
+      {
+        "code": "detailed_config_insufficient",
+        "message": "详细配置数据不足",
+        "severity": "blocking",
+        "field": "specs"
+      },
+      {
+        "code": "space_data_insufficient",
+        "message": "空间数据不足：缺少 length_mm",
+        "severity": "blocking",
+        "field": "length_mm"
+      }
+    ],
+    "config_coverage": 0.0,
+    "energy_confidence": 0.0,
+    "score_version": "v3.2.0",
+    "score_v1": null,
+    "total_score": null,
+    "rank": null,
+    "condition_gate": "DATA_ISSUE",
+    "recommendation_gate": "DATA_ISSUE",
+    "veto_reasons": [],
+    "v3_profile": null,
+    "evaluation": "详细配置数据不足；空间数据不足：缺少 length_mm，不参与评分。",
+    "score_reasons": [],
+    "score_warnings": [
+      "详细配置数据不足",
+      "空间数据不足：缺少 length_mm"
+    ],
+    "sort_scores": {
+      "score_version": "v3.2.0",
+      "total_score": null,
+      "config_score": null,
+      "config_norm": null,
+      "config_proxy": null,
+      "is_suv": false,
+      "price": 5.69,
+      "effective_price_wan": 5.82,
+      "condition_gate": "DATA_ISSUE",
+      "note": "数据不足，不参与评分"
+    },
+    "ingest_status": "added",
+    "display": false,
     "wuhan_display": false,
     "wuhan_rank": null
   }
