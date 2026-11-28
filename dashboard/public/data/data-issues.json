@@ -1120,139 +1120,6 @@
     "wuhan_rank": null
   },
   {
-    "sku": "357000763",
-    "title": "瑞虎3x 2023款 1.5L 自动 前驱 5座 原厂定制版",
-    "shop_id": "225430",
-    "shop_name": "懂车帝汽车商城•重庆旗舰店",
-    "shop_short_name": "重庆旗舰店",
-    "series": "瑞虎3x",
-    "brand": "奇瑞",
-    "mileage_wan": 2.37,
-    "model_year": 2023,
-    "plate_year": 2024,
-    "year": "2024年/2.37万公里",
-    "city": "重庆",
-    "tags": [
-      "0.6万首付"
-    ],
-    "badges": [
-      "直营"
-    ],
-    "is_self_trade_car": true,
-    "source_type": "2",
-    "source_type_name": "自营-个人",
-    "fuel_form": "1",
-    "cover": "https://p9-dcd-sign.byteimg.com/tos-cn-i-f042mdwyw7/782b2780c9c549dfa09aefc7e5adba19~tplv-f042mdwyw7-auto-webp:480:0.jpg?rk3s=4892dee6&x-expires=1796954009&x-signature=HNPoqdWoxvRrImbq%2By35A%2Fnt2og%3D&psm=motor.sh.pack",
-    "detail_url": "https://m.dcdapp.com/motor/feoffline/usedcar_detail/detail.html?sku_id=357000763&shop_id=225430",
-    "list_price_wan": 2.78,
-    "first_registration_time": "1716134400",
-    "price_type": "现金价",
-    "prefix": "现金价",
-    "cash_price_fen": 3080000,
-    "cash_price_str": "3.08",
-    "cash_price_wan": 3.08,
-    "price": 3.08,
-    "detail_shop_id": "225430",
-    "sale_status": "on_sale",
-    "product_status": 1,
-    "status_modify_time": "1790505401",
-    "is_local_wuhan": false,
-    "logistics_fee_yuan": 1300,
-    "logistics_fee_source": "api",
-    "plate_service_fee_yuan": 1000,
-    "plate_fee_diff_yuan": 500,
-    "landed_extra_yuan": 1800,
-    "landed_extra_wan": 0.18,
-    "delivery_eta": "3-5日送达",
-    "landed_price_wan": 3.26,
-    "specs": {
-      "features": {},
-      "specs_found": false,
-      "specs_approx": false,
-      "verified": false,
-      "configuration_source": "unverified_v3",
-      "configuration_unverified": true,
-      "feature_confidence": 0.0,
-      "match_level": "unverified_config",
-      "verification_issues": [
-        "详细配置数据不足"
-      ]
-    },
-    "detailed_config": {
-      "features": {},
-      "specs_found": false,
-      "specs_approx": false,
-      "verified": false,
-      "configuration_source": "unverified_v3",
-      "configuration_unverified": true,
-      "feature_confidence": 0.0,
-      "match_level": "unverified_config",
-      "verification_issues": [
-        "详细配置数据不足"
-      ]
-    },
-    "display_price_wan": 3.08,
-    "effective_price_wan": 3.26,
-    "price_confidence": 0.95,
-    "needs_cash_quote": false,
-    "price_basis": "cash_plus_landed",
-    "manufacturer": "奇瑞汽车",
-    "manufacturer_inferred": false,
-    "owner_reviews": {
-      "summary": "",
-      "sources": [],
-      "found": false
-    },
-    "score_eligible": false,
-    "data_issues": [
-      {
-        "code": "detailed_config_insufficient",
-        "message": "详细配置数据不足",
-        "severity": "blocking",
-        "field": "specs"
-      },
-      {
-        "code": "space_data_insufficient",
-        "message": "空间数据不足：缺少 length_mm",
-        "severity": "blocking",
-        "field": "length_mm"
-      }
-    ],
-    "config_coverage": 0.0,
-    "energy_confidence": 0.0,
-    "score_version": "v3.2.0",
-    "score_v1": null,
-    "total_score": null,
-    "rank": null,
-    "condition_gate": "DATA_ISSUE",
-    "recommendation_gate": "DATA_ISSUE",
-    "veto_reasons": [],
-    "v3_profile": null,
-    "evaluation": "详细配置数据不足；空间数据不足：缺少 length_mm，不参与评分。",
-    "score_reasons": [],
-    "score_warnings": [
-      "详细配置数据不足",
-      "空间数据不足：缺少 length_mm"
-    ],
-    "sort_scores": {
-      "score_version": "v3.2.0",
-      "total_score": null,
-      "config_score": null,
-      "config_norm": null,
-      "config_proxy": null,
-      "is_suv": false,
-      "price": 3.08,
-      "effective_price_wan": 3.26,
-      "condition_gate": "DATA_ISSUE",
-      "note": "数据不足，不参与评分"
-    },
-    "ingest_status": "updated_price",
-    "display": false,
-    "wuhan_library_rank": null,
-    "wuhan_display": false,
-    "wuhan_rank": null
-  },
-  {
     "sku": "300016225",
     "title": "荣威i5 2022款 1.5L CVT安心版",
     "shop_id": "175870",
@@ -2603,139 +2470,6 @@
       "is_suv": false,
       "price": 4.58,
       "effective_price_wan": 4.71,
-      "condition_gate": "DATA_ISSUE",
-      "note": "数据不足，不参与评分"
-    },
-    "ingest_status": "added",
-    "display": false,
-    "wuhan_library_rank": null,
-    "wuhan_display": false,
-    "wuhan_rank": null
-  },
-  {
-    "sku": "357556557",
-    "title": "五菱佳辰 2022款 1.5T CVT尊享旗舰型",
-    "shop_id": "179450",
-    "shop_name": "懂车帝汽车商城•南京仓",
-    "shop_short_name": "南京仓",
-    "series": "五菱佳辰",
-    "brand": "五菱",
-    "mileage_wan": 5.21,
-    "model_year": 2022,
-    "plate_year": 2022,
-    "year": "2022年/5.21万公里",
-    "city": "南京",
-    "tags": [
-      "0.5万首付"
-    ],
-    "badges": [
-      "直营"
-    ],
-    "is_self_trade_car": true,
-    "source_type": "2",
-    "source_type_name": "自营-个人",
-    "fuel_form": "1",
-    "cover": "https://p3-dcd-sign.byteimg.com/tos-cn-i-f042mdwyw7/7ba524efbe744b1689117deccdf54117~tplv-f042mdwyw7-auto-webp:480:0.jpg?rk3s=4892dee6&x-expires=1796476211&x-signature=MIEz8qZxnXEIY3Q7W9bC9xdBVWs%3D&psm=motor.sh.pack",
-    "detail_url": "https://m.dcdapp.com/motor/feoffline/usedcar_detail/detail.html?sku_id=357556557&shop_id=179450",
-    "list_price_wan": 4.59,
-    "first_registration_time": "1670860800",
-    "price_type": "现金价",
-    "prefix": "现金价",
-    "cash_price_fen": 4590000,
-    "cash_price_str": "4.59",
-    "cash_price_wan": 4.59,
-    "price": 4.59,
-    "detail_shop_id": "179450",
-    "sale_status": "on_sale",
-    "product_status": 1,
-    "status_modify_time": "1795150394",
-    "is_local_wuhan": false,
-    "logistics_fee_yuan": 1180,
-    "logistics_fee_source": "api",
-    "plate_service_fee_yuan": 1000,
-    "plate_fee_diff_yuan": 500,
-    "landed_extra_yuan": 1680,
-    "landed_extra_wan": 0.168,
-    "delivery_eta": "1-3日送达",
-    "landed_price_wan": 4.76,
-    "specs": {
-      "features": {},
-      "specs_found": false,
-      "specs_approx": false,
-      "verified": false,
-      "configuration_source": "unverified_v3",
-      "configuration_unverified": true,
-      "feature_confidence": 0.0,
-      "match_level": "unverified_config",
-      "verification_issues": [
-        "详细配置数据不足"
-      ]
-    },
-    "detailed_config": {
-      "features": {},
-      "specs_found": false,
-      "specs_approx": false,
-      "verified": false,
-      "configuration_source": "unverified_v3",
-      "configuration_unverified": true,
-      "feature_confidence": 0.0,
-      "match_level": "unverified_config",
-      "verification_issues": [
-        "详细配置数据不足"
-      ]
-    },
-    "display_price_wan": 4.59,
-    "effective_price_wan": 4.76,
-    "price_confidence": 0.95,
-    "needs_cash_quote": false,
-    "price_basis": "cash_plus_landed",
-    "manufacturer": "上汽通用五菱",
-    "manufacturer_inferred": false,
-    "owner_reviews": {
-      "summary": "",
-      "sources": [],
-      "found": false
-    },
-    "score_eligible": false,
-    "data_issues": [
-      {
-        "code": "detailed_config_insufficient",
-        "message": "详细配置数据不足",
-        "severity": "blocking",
-        "field": "specs"
-      },
-      {
-        "code": "space_data_insufficient",
-        "message": "空间数据不足：缺少 length_mm",
-        "severity": "blocking",
-        "field": "length_mm"
-      }
-    ],
-    "config_coverage": 0.0,
-    "energy_confidence": 0.0,
-    "score_version": "v3.2.0",
-    "score_v1": null,
-    "total_score": null,
-    "rank": null,
-    "condition_gate": "DATA_ISSUE",
-    "recommendation_gate": "DATA_ISSUE",
-    "veto_reasons": [],
-    "v3_profile": null,
-    "evaluation": "详细配置数据不足；空间数据不足：缺少 length_mm，不参与评分。",
-    "score_reasons": [],
-    "score_warnings": [
-      "详细配置数据不足",
-      "空间数据不足：缺少 length_mm"
-    ],
-    "sort_scores": {
-      "score_version": "v3.2.0",
-      "total_score": null,
-      "config_score": null,
-      "config_norm": null,
-      "config_proxy": null,
-      "is_suv": false,
-      "price": 4.59,
-      "effective_price_wan": 4.76,
       "condition_gate": "DATA_ISSUE",
       "note": "数据不足，不参与评分"
     },
@@ -4113,272 +3847,6 @@
     "wuhan_rank": null
   },
   {
-    "sku": "357566117",
-    "title": "威朗 2023款 Pro 533T 乐享版",
-    "shop_id": "196923",
-    "shop_name": "懂车帝汽车商城•长沙仓",
-    "shop_short_name": "长沙仓",
-    "series": "威朗",
-    "brand": "威朗",
-    "mileage_wan": 2.3,
-    "model_year": 2023,
-    "plate_year": 2023,
-    "year": "2023年/2.30万公里",
-    "city": "长沙",
-    "tags": [
-      "0.5万首付"
-    ],
-    "badges": [
-      "直营"
-    ],
-    "is_self_trade_car": true,
-    "source_type": "2",
-    "source_type_name": "自营-个人",
-    "fuel_form": "1",
-    "cover": "https://p3-dcd-sign.byteimg.com/tos-cn-i-f042mdwyw7/b1730ad62b8f40c48a56a964b1494338~tplv-f042mdwyw7-auto-webp:480:0.jpg?rk3s=4892dee6&x-expires=1796476187&x-signature=0HgCmiqSXSteysJl9oDvgxSXETs%3D&psm=motor.sh.pack",
-    "detail_url": "https://m.dcdapp.com/motor/feoffline/usedcar_detail/detail.html?sku_id=357566117&shop_id=196923",
-    "list_price_wan": 5.09,
-    "first_registration_time": "1702569600",
-    "price_type": "现金价",
-    "prefix": "现金价",
-    "cash_price_fen": 5090000,
-    "cash_price_str": "5.09",
-    "cash_price_wan": 5.09,
-    "price": 5.09,
-    "detail_shop_id": "196923",
-    "sale_status": "on_sale",
-    "product_status": 1,
-    "status_modify_time": "1795245855",
-    "is_local_wuhan": false,
-    "logistics_fee_yuan": 750,
-    "logistics_fee_source": "api",
-    "plate_service_fee_yuan": 1000,
-    "plate_fee_diff_yuan": 500,
-    "landed_extra_yuan": 1250,
-    "landed_extra_wan": 0.125,
-    "delivery_eta": "1-3日送达",
-    "landed_price_wan": 5.21,
-    "specs": {
-      "features": {},
-      "specs_found": false,
-      "specs_approx": false,
-      "verified": false,
-      "configuration_source": "unverified_v3",
-      "configuration_unverified": true,
-      "feature_confidence": 0.0,
-      "match_level": "unverified_config",
-      "verification_issues": [
-        "详细配置数据不足"
-      ]
-    },
-    "detailed_config": {
-      "features": {},
-      "specs_found": false,
-      "specs_approx": false,
-      "verified": false,
-      "configuration_source": "unverified_v3",
-      "configuration_unverified": true,
-      "feature_confidence": 0.0,
-      "match_level": "unverified_config",
-      "verification_issues": [
-        "详细配置数据不足"
-      ]
-    },
-    "display_price_wan": 5.09,
-    "effective_price_wan": 5.21,
-    "price_confidence": 0.95,
-    "needs_cash_quote": false,
-    "price_basis": "cash_plus_landed",
-    "manufacturer": "威朗",
-    "manufacturer_inferred": true,
-    "owner_reviews": {
-      "summary": "",
-      "sources": [],
-      "found": false
-    },
-    "score_eligible": false,
-    "data_issues": [
-      {
-        "code": "detailed_config_insufficient",
-        "message": "详细配置数据不足",
-        "severity": "blocking",
-        "field": "specs"
-      },
-      {
-        "code": "space_data_insufficient",
-        "message": "空间数据不足：缺少 length_mm",
-        "severity": "blocking",
-        "field": "length_mm"
-      }
-    ],
-    "config_coverage": 0.0,
-    "energy_confidence": 0.0,
-    "score_version": "v3.2.0",
-    "score_v1": null,
-    "total_score": null,
-    "rank": null,
-    "condition_gate": "DATA_ISSUE",
-    "recommendation_gate": "DATA_ISSUE",
-    "veto_reasons": [],
-    "v3_profile": null,
-    "evaluation": "详细配置数据不足；空间数据不足：缺少 length_mm，不参与评分。",
-    "score_reasons": [],
-    "score_warnings": [
-      "详细配置数据不足",
-      "空间数据不足：缺少 length_mm"
-    ],
-    "sort_scores": {
-      "score_version": "v3.2.0",
-      "total_score": null,
-      "config_score": null,
-      "config_norm": null,
-      "config_proxy": null,
-      "is_suv": false,
-      "price": 5.09,
-      "effective_price_wan": 5.21,
-      "condition_gate": "DATA_ISSUE",
-      "note": "数据不足，不参与评分"
-    },
-    "ingest_status": "added",
-    "display": false,
-    "wuhan_library_rank": null,
-    "wuhan_display": false,
-    "wuhan_rank": null
-  },
-  {
-    "sku": "300028906",
-    "title": "威朗 2023款 Pro GS 猎风版",
-    "shop_id": "64909",
-    "shop_name": "懂车帝汽车商城•合肥店",
-    "shop_short_name": "合肥店",
-    "series": "威朗",
-    "brand": "威朗",
-    "mileage_wan": 4.4,
-    "model_year": 2023,
-    "plate_year": 2023,
-    "year": "2023年/4.40万公里",
-    "city": "合肥",
-    "tags": [
-      "0.5万首付"
-    ],
-    "badges": [
-      "直营"
-    ],
-    "is_self_trade_car": true,
-    "source_type": "2",
-    "source_type_name": "自营-个人",
-    "fuel_form": "1",
-    "cover": "https://p3-dcd-sign.byteimg.com/tos-cn-i-f042mdwyw7/5d34330aadca45a5b7cb3c427132fbd2~tplv-f042mdwyw7-auto-webp:480:0.jpg?rk3s=4892dee6&x-expires=1796476198&x-signature=Ui2ul5bD5iHO8iMEljKGFoFwIp4%3D&psm=motor.sh.pack",
-    "detail_url": "https://m.dcdapp.com/motor/feoffline/usedcar_detail/detail.html?sku_id=300028906&shop_id=64909",
-    "list_price_wan": 5.09,
-    "first_registration_time": "1700150400",
-    "price_type": "现金价",
-    "prefix": "现金价",
-    "cash_price_fen": 5090000,
-    "cash_price_str": "5.09",
-    "cash_price_wan": 5.09,
-    "price": 5.09,
-    "detail_shop_id": "64909",
-    "sale_status": "reserved",
-    "product_status": 5,
-    "status_modify_time": "1795320438",
-    "is_local_wuhan": false,
-    "logistics_fee_yuan": 840,
-    "logistics_fee_source": "api",
-    "plate_service_fee_yuan": 1000,
-    "plate_fee_diff_yuan": 500,
-    "landed_extra_yuan": 1340,
-    "landed_extra_wan": 0.134,
-    "delivery_eta": "1-3日送达",
-    "landed_price_wan": 5.22,
-    "specs": {
-      "features": {},
-      "specs_found": false,
-      "specs_approx": false,
-      "verified": false,
-      "configuration_source": "unverified_v3",
-      "configuration_unverified": true,
-      "feature_confidence": 0.0,
-      "match_level": "unverified_config",
-      "verification_issues": [
-        "详细配置数据不足"
-      ]
-    },
-    "detailed_config": {
-      "features": {},
-      "specs_found": false,
-      "specs_approx": false,
-      "verified": false,
-      "configuration_source": "unverified_v3",
-      "configuration_unverified": true,
-      "feature_confidence": 0.0,
-      "match_level": "unverified_config",
-      "verification_issues": [
-        "详细配置数据不足"
-      ]
-    },
-    "display_price_wan": 5.09,
-    "effective_price_wan": 5.22,
-    "price_confidence": 0.95,
-    "needs_cash_quote": false,
-    "price_basis": "cash_plus_landed",
-    "manufacturer": "威朗",
-    "manufacturer_inferred": true,
-    "owner_reviews": {
-      "summary": "",
-      "sources": [],
-      "found": false
-    },
-    "score_eligible": false,
-    "data_issues": [
-      {
-        "code": "detailed_config_insufficient",
-        "message": "详细配置数据不足",
-        "severity": "blocking",
-        "field": "specs"
-      },
-      {
-        "code": "space_data_insufficient",
-        "message": "空间数据不足：缺少 length_mm",
-        "severity": "blocking",
-        "field": "length_mm"
-      }
-    ],
-    "config_coverage": 0.0,
-    "energy_confidence": 0.0,
-    "score_version": "v3.2.0",
-    "score_v1": null,
-    "total_score": null,
-    "rank": null,
-    "condition_gate": "DATA_ISSUE",
-    "recommendation_gate": "DATA_ISSUE",
-    "veto_reasons": [],
-    "v3_profile": null,
-    "evaluation": "详细配置数据不足；空间数据不足：缺少 length_mm，不参与评分。",
-    "score_reasons": [],
-    "score_warnings": [
-      "详细配置数据不足",
-      "空间数据不足：缺少 length_mm"
-    ],
-    "sort_scores": {
-      "score_version": "v3.2.0",
-      "total_score": null,
-      "config_score": null,
-      "config_norm": null,
-      "config_proxy": null,
-      "is_suv": false,
-      "price": 5.09,
-      "effective_price_wan": 5.22,
-      "condition_gate": "DATA_ISSUE",
-      "note": "数据不足，不参与评分"
-    },
-    "ingest_status": "reserved",
-    "display": false,
-    "wuhan_library_rank": null,
-    "wuhan_display": false,
-    "wuhan_rank": null
-  },
-  {
     "sku": "357296089",
     "title": "奥迪A3 2019款 Sportback 35 TFSI 时尚型 国V",
     "price": 5.12,
@@ -4747,139 +4215,6 @@
     "product_status": 1,
     "status_modify_time": "1793263062",
     "ingest_status": "updated_price",
-    "wuhan_library_rank": null,
-    "wuhan_display": false,
-    "wuhan_rank": null
-  },
-  {
-    "sku": "357162137",
-    "title": "红旗HS5 2019款 2.0T 智联旗享版",
-    "shop_id": "225430",
-    "shop_name": "懂车帝汽车商城•重庆旗舰店",
-    "shop_short_name": "重庆旗舰店",
-    "series": "红旗HS5",
-    "brand": "红旗HS5",
-    "mileage_wan": 7.89,
-    "model_year": 2019,
-    "plate_year": 2021,
-    "year": "2021年/7.89万公里",
-    "city": "重庆",
-    "tags": [
-      "0.5万首付"
-    ],
-    "badges": [
-      "直营"
-    ],
-    "is_self_trade_car": true,
-    "source_type": "2",
-    "source_type_name": "自营-个人",
-    "fuel_form": "1",
-    "cover": "https://p9-dcd-sign.byteimg.com/tos-cn-i-f042mdwyw7/00c1921cf8b5496895e38d2b36be052c~tplv-f042mdwyw7-auto-webp:480:0.jpg?rk3s=4892dee6&x-expires=1796476230&x-signature=GGGvrk9plQT5IZcXTxUsNaBnSeI%3D&psm=motor.sh.pack",
-    "detail_url": "https://m.dcdapp.com/motor/feoffline/usedcar_detail/detail.html?sku_id=357162137&shop_id=225430",
-    "list_price_wan": 4.88,
-    "first_registration_time": "1618416000",
-    "price_type": "现金价",
-    "prefix": "现金价",
-    "cash_price_fen": 5180000,
-    "cash_price_str": "5.18",
-    "cash_price_wan": 5.18,
-    "price": 5.18,
-    "detail_shop_id": "225430",
-    "sale_status": "on_sale",
-    "product_status": 1,
-    "status_modify_time": "1791898222",
-    "is_local_wuhan": false,
-    "logistics_fee_yuan": 1300,
-    "logistics_fee_source": "api",
-    "plate_service_fee_yuan": 1000,
-    "plate_fee_diff_yuan": 500,
-    "landed_extra_yuan": 1800,
-    "landed_extra_wan": 0.18,
-    "delivery_eta": "3-5日送达",
-    "landed_price_wan": 5.36,
-    "specs": {
-      "features": {},
-      "specs_found": false,
-      "specs_approx": false,
-      "verified": false,
-      "configuration_source": "unverified_v3",
-      "configuration_unverified": true,
-      "feature_confidence": 0.0,
-      "match_level": "unverified_config",
-      "verification_issues": [
-        "详细配置数据不足"
-      ]
-    },
-    "detailed_config": {
-      "features": {},
-      "specs_found": false,
-      "specs_approx": false,
-      "verified": false,
-      "configuration_source": "unverified_v3",
-      "configuration_unverified": true,
-      "feature_confidence": 0.0,
-      "match_level": "unverified_config",
-      "verification_issues": [
-        "详细配置数据不足"
-      ]
-    },
-    "display_price_wan": 5.18,
-    "effective_price_wan": 5.36,
-    "price_confidence": 0.95,
-    "needs_cash_quote": false,
-    "price_basis": "cash_plus_landed",
-    "manufacturer": "红旗HS5",
-    "manufacturer_inferred": true,
-    "owner_reviews": {
-      "summary": "",
-      "sources": [],
-      "found": false
-    },
-    "score_eligible": false,
-    "data_issues": [
-      {
-        "code": "detailed_config_insufficient",
-        "message": "详细配置数据不足",
-        "severity": "blocking",
-        "field": "specs"
-      },
-      {
-        "code": "space_data_insufficient",
-        "message": "空间数据不足：缺少 length_mm",
-        "severity": "blocking",
-        "field": "length_mm"
-      }
-    ],
-    "config_coverage": 0.0,
-    "energy_confidence": 0.0,
-    "score_version": "v3.2.0",
-    "score_v1": null,
-    "total_score": null,
-    "rank": null,
-    "condition_gate": "DATA_ISSUE",
-    "recommendation_gate": "DATA_ISSUE",
-    "veto_reasons": [],
-    "v3_profile": null,
-    "evaluation": "详细配置数据不足；空间数据不足：缺少 length_mm，不参与评分。",
-    "score_reasons": [],
-    "score_warnings": [
-      "详细配置数据不足",
-      "空间数据不足：缺少 length_mm"
-    ],
-    "sort_scores": {
-      "score_version": "v3.2.0",
-      "total_score": null,
-      "config_score": null,
-      "config_norm": null,
-      "config_proxy": null,
-      "is_suv": false,
-      "price": 5.18,
-      "effective_price_wan": 5.36,
-      "condition_gate": "DATA_ISSUE",
-      "note": "数据不足，不参与评分"
-    },
-    "ingest_status": "added",
-    "display": false,
     "wuhan_library_rank": null,
     "wuhan_display": false,
     "wuhan_rank": null
@@ -6066,16 +5401,16 @@
     "source_type": "2",
     "source_type_name": "自营-个人",
     "fuel_form": "1",
-    "cover": "https://p3-dcd-sign.byteimg.com/tos-cn-i-f042mdwyw7/f981e0c3cf194cca9c047aa31e3d246e~tplv-f042mdwyw7-auto-webp:480:0.jpg?rk3s=4892dee6&x-expires=1796476230&x-signature=0ylo%2FHB8HQmdFJUBdFVMwJsVSbA%3D&psm=motor.sh.pack",
+    "cover": "https://p3-dcd-sign.byteimg.com/tos-cn-i-f042mdwyw7/f981e0c3cf194cca9c047aa31e3d246e~tplv-f042mdwyw7-auto-webp:480:0.jpg?rk3s=4892dee6&x-expires=1797040367&x-signature=hTYl5irBIgOojvNFBNS1sB%2Be2yw%3D&psm=motor.sh.pack",
     "detail_url": "https://m.dcdapp.com/motor/feoffline/usedcar_detail/detail.html?sku_id=357001828&shop_id=225430",
-    "list_price_wan": 5.38,
+    "list_price_wan": 5.18,
     "first_registration_time": "1552924800",
     "price_type": "现金价",
     "prefix": "现金价",
-    "cash_price_fen": 5680000,
-    "cash_price_str": "5.68",
-    "cash_price_wan": 5.68,
-    "price": 5.68,
+    "cash_price_fen": 5480000,
+    "cash_price_str": "5.48",
+    "cash_price_wan": 5.48,
+    "price": 5.48,
     "detail_shop_id": "225430",
     "sale_status": "on_sale",
     "product_status": 1,
@@ -6088,7 +5423,7 @@
     "landed_extra_yuan": 1800,
     "landed_extra_wan": 0.18,
     "delivery_eta": "3-5日送达",
-    "landed_price_wan": 5.86,
+    "landed_price_wan": 5.66,
     "specs": {
       "features": {},
       "specs_found": false,
@@ -6115,8 +5450,8 @@
         "详细配置数据不足"
       ]
     },
-    "display_price_wan": 5.68,
-    "effective_price_wan": 5.86,
+    "display_price_wan": 5.48,
+    "effective_price_wan": 5.66,
     "price_confidence": 0.95,
     "needs_cash_quote": false,
     "price_basis": "cash_plus_landed",
@@ -6165,12 +5500,12 @@
       "config_norm": null,
       "config_proxy": null,
       "is_suv": false,
-      "price": 5.68,
-      "effective_price_wan": 5.86,
+      "price": 5.48,
+      "effective_price_wan": 5.66,
       "condition_gate": "DATA_ISSUE",
       "note": "数据不足，不参与评分"
     },
-    "ingest_status": "added",
+    "ingest_status": "updated_price",
     "display": false,
     "wuhan_library_rank": null,
     "wuhan_display": false,
@@ -6463,170 +5798,6 @@
       "note": "数据不足，不参与评分"
     },
     "ingest_status": "added",
-    "display": false,
-    "wuhan_library_rank": null,
-    "wuhan_display": false,
-    "wuhan_rank": null
-  },
-  {
-    "sku": "357098085",
-    "title": "逸动 2025款 1.5T DCT 500Bar尊贵型",
-    "shop_id": "225430",
-    "shop_name": "懂车帝汽车商城•重庆旗舰店",
-    "shop_short_name": "重庆旗舰店",
-    "series": "逸动",
-    "brand": "长安",
-    "mileage_wan": 0.62,
-    "model_year": 2025,
-    "plate_year": 2026,
-    "year": "2026年/0.62万公里",
-    "city": "重庆",
-    "tags": [
-      "0.5万首付"
-    ],
-    "badges": [
-      "直营"
-    ],
-    "is_self_trade_car": true,
-    "source_type": "2",
-    "source_type_name": "自营-个人",
-    "fuel_form": "1",
-    "cover": "https://p3-dcd-sign.byteimg.com/tos-cn-i-f042mdwyw7/8b8de49df85e431891c1e68f44772fe6~tplv-f042mdwyw7-auto-webp:480:0.jpg?rk3s=4892dee6&x-expires=1796476230&x-signature=XHo2Eo4UxVg%2Fx9ukDpoqz%2FryLwY%3D&psm=motor.sh.pack",
-    "detail_url": "https://m.dcdapp.com/motor/feoffline/usedcar_detail/detail.html?sku_id=357098085&shop_id=225430",
-    "list_price_wan": 5.49,
-    "first_registration_time": "1769011200",
-    "price_type": "现金价",
-    "prefix": "现金价",
-    "cash_price_fen": 5790000,
-    "cash_price_str": "5.79",
-    "cash_price_wan": 5.79,
-    "price": 5.79,
-    "detail_shop_id": "225430",
-    "sale_status": "reserved",
-    "product_status": 5,
-    "status_modify_time": "1795669679",
-    "is_local_wuhan": false,
-    "logistics_fee_yuan": 1300,
-    "logistics_fee_source": "api",
-    "plate_service_fee_yuan": 1000,
-    "plate_fee_diff_yuan": 500,
-    "landed_extra_yuan": 1800,
-    "landed_extra_wan": 0.18,
-    "delivery_eta": "3-5日送达",
-    "landed_price_wan": 5.97,
-    "specs": {
-      "features": {},
-      "specs_found": false,
-      "specs_approx": false,
-      "verified": false,
-      "configuration_source": "unverified_v3",
-      "configuration_unverified": true,
-      "feature_confidence": 0.0,
-      "match_level": "unverified_config",
-      "verification_issues": [
-        "详细配置数据不足"
-      ]
-    },
-    "detailed_config": {
-      "features": {},
-      "specs_found": false,
-      "specs_approx": false,
-      "verified": false,
-      "configuration_source": "unverified_v3",
-      "configuration_unverified": true,
-      "feature_confidence": 0.0,
-      "match_level": "unverified_config",
-      "verification_issues": [
-        "详细配置数据不足"
-      ]
-    },
-    "display_price_wan": 5.79,
-    "effective_price_wan": 5.97,
-    "price_confidence": 0.95,
-    "needs_cash_quote": false,
-    "price_basis": "cash_plus_landed",
-    "manufacturer": "长安汽车",
-    "manufacturer_inferred": false,
-    "owner_reviews": {
-      "summary": "外观、空间、配置与1.4T动力认可度高，家用代步口碑稳定。主要槽点是7DCT低速顿挫、底盘偏硬、高速胎噪风噪；个别PLUS车主有变速箱传感器/漏油投诉需细查。",
-      "pros": [
-        "外观年轻",
-        "空间配置够用",
-        "1.4T日常动力够用"
-      ],
-      "cons": [
-        "双离合低速顿挫",
-        "底盘偏硬",
-        "高速胎噪/风噪",
-        "个别变速箱故障投诉"
-      ],
-      "drawbacks": [
-        "双离合低速顿挫",
-        "底盘偏硬",
-        "高速胎噪/风噪",
-        "个别变速箱故障投诉"
-      ],
-      "sources": [
-        {
-          "title": "逸动汽车之家口碑",
-          "url": "https://k.autohome.com.cn/2429/"
-        },
-        {
-          "title": "逸动PLUS车主问答（汽车之家）",
-          "url": "https://www.autohome.com.cn/ask/5438081.html"
-        },
-        {
-          "title": "逸动变速箱投诉（车质网）",
-          "url": "https://www.12365auto.com/zlts/20260603/1674704.shtml"
-        }
-      ],
-      "found": true,
-      "cons_note": null
-    },
-    "score_eligible": false,
-    "data_issues": [
-      {
-        "code": "detailed_config_insufficient",
-        "message": "详细配置数据不足",
-        "severity": "blocking",
-        "field": "specs"
-      },
-      {
-        "code": "space_data_insufficient",
-        "message": "空间数据不足：缺少 length_mm",
-        "severity": "blocking",
-        "field": "length_mm"
-      }
-    ],
-    "config_coverage": 0.0,
-    "energy_confidence": 0.0,
-    "score_version": "v3.2.0",
-    "score_v1": null,
-    "total_score": null,
-    "rank": null,
-    "condition_gate": "DATA_ISSUE",
-    "recommendation_gate": "DATA_ISSUE",
-    "veto_reasons": [],
-    "v3_profile": null,
-    "evaluation": "详细配置数据不足；空间数据不足：缺少 length_mm，不参与评分。",
-    "score_reasons": [],
-    "score_warnings": [
-      "详细配置数据不足",
-      "空间数据不足：缺少 length_mm"
-    ],
-    "sort_scores": {
-      "score_version": "v3.2.0",
-      "total_score": null,
-      "config_score": null,
-      "config_norm": null,
-      "config_proxy": null,
-      "is_suv": false,
-      "price": 5.79,
-      "effective_price_wan": 5.97,
-      "condition_gate": "DATA_ISSUE",
-      "note": "数据不足，不参与评分"
-    },
-    "ingest_status": "reserved",
     "display": false,
     "wuhan_library_rank": null,
     "wuhan_display": false,
@@ -7348,6 +6519,403 @@
       "is_suv": false,
       "price": 2.46,
       "effective_price_wan": 2.64,
+      "condition_gate": "DATA_ISSUE",
+      "note": "数据不足，不参与评分"
+    },
+    "ingest_status": "added",
+    "display": false,
+    "wuhan_display": false,
+    "wuhan_rank": null
+  },
+  {
+    "sku": "357667103",
+    "title": "北京BJ20 2016款 1.5T CVT豪华型",
+    "shop_id": "118608",
+    "shop_name": "懂车帝汽车商城•武汉店",
+    "shop_short_name": "武汉店",
+    "series": "北京BJ20",
+    "brand": "北京BJ20",
+    "mileage_wan": 5.98,
+    "model_year": 2016,
+    "plate_year": 2017,
+    "year": "2017年/5.98万公里",
+    "city": "武汉",
+    "tags": [
+      "0.5万首付"
+    ],
+    "badges": [
+      "直营"
+    ],
+    "is_self_trade_car": true,
+    "source_type": "2",
+    "source_type_name": "自营-个人",
+    "fuel_form": "1",
+    "cover": "https://p9-dcd-sign.byteimg.com/tos-cn-i-f042mdwyw7/71508dcaeec64ad5ad54a8070b8eb8d0~tplv-f042mdwyw7-auto-webp:480:0.jpg?rk3s=4892dee6&x-expires=1797040314&x-signature=oza0IBK%2FnKegg21ymIRHEZzQi50%3D&psm=motor.sh.pack",
+    "detail_url": "https://m.dcdapp.com/motor/feoffline/usedcar_detail/detail.html?sku_id=357667103&shop_id=118608",
+    "list_price_wan": 2.39,
+    "first_registration_time": "1496160000",
+    "price_type": "现金价",
+    "prefix": "现金价",
+    "cash_price_fen": 2390000,
+    "cash_price_str": "2.39",
+    "cash_price_wan": 2.39,
+    "price": 2.39,
+    "detail_shop_id": "118608",
+    "sale_status": "on_sale",
+    "product_status": 1,
+    "status_modify_time": "1795763498",
+    "is_local_wuhan": true,
+    "logistics_fee_yuan": 0,
+    "logistics_fee_source": "local_wuhan",
+    "plate_service_fee_yuan": 500,
+    "plate_fee_diff_yuan": 0,
+    "landed_extra_yuan": 0,
+    "landed_extra_wan": 0.0,
+    "delivery_eta": "送达时间咨询顾问",
+    "landed_price_wan": 2.39,
+    "specs": {
+      "features": {},
+      "specs_found": false,
+      "specs_approx": false,
+      "verified": false,
+      "configuration_source": "unverified_v3",
+      "configuration_unverified": true,
+      "feature_confidence": 0.0,
+      "match_level": "unverified_config",
+      "verification_issues": [
+        "详细配置数据不足"
+      ]
+    },
+    "detailed_config": {
+      "features": {},
+      "specs_found": false,
+      "specs_approx": false,
+      "verified": false,
+      "configuration_source": "unverified_v3",
+      "configuration_unverified": true,
+      "feature_confidence": 0.0,
+      "match_level": "unverified_config",
+      "verification_issues": [
+        "详细配置数据不足"
+      ]
+    },
+    "display_price_wan": 2.39,
+    "effective_price_wan": 2.39,
+    "price_confidence": 0.95,
+    "needs_cash_quote": false,
+    "price_basis": "cash",
+    "manufacturer": "北京BJ20",
+    "manufacturer_inferred": true,
+    "owner_reviews": {
+      "summary": "",
+      "sources": [],
+      "found": false
+    },
+    "score_eligible": false,
+    "data_issues": [
+      {
+        "code": "detailed_config_insufficient",
+        "message": "详细配置数据不足",
+        "severity": "blocking",
+        "field": "specs"
+      },
+      {
+        "code": "space_data_insufficient",
+        "message": "空间数据不足：缺少 length_mm",
+        "severity": "blocking",
+        "field": "length_mm"
+      }
+    ],
+    "config_coverage": 0.0,
+    "energy_confidence": 0.0,
+    "score_version": "v3.2.0",
+    "score_v1": null,
+    "total_score": null,
+    "rank": null,
+    "condition_gate": "DATA_ISSUE",
+    "recommendation_gate": "DATA_ISSUE",
+    "veto_reasons": [],
+    "v3_profile": null,
+    "evaluation": "详细配置数据不足；空间数据不足：缺少 length_mm，不参与评分。",
+    "score_reasons": [],
+    "score_warnings": [
+      "详细配置数据不足",
+      "空间数据不足：缺少 length_mm"
+    ],
+    "sort_scores": {
+      "score_version": "v3.2.0",
+      "total_score": null,
+      "config_score": null,
+      "config_norm": null,
+      "config_proxy": null,
+      "is_suv": false,
+      "price": 2.39,
+      "effective_price_wan": 2.39,
+      "condition_gate": "DATA_ISSUE",
+      "note": "数据不足，不参与评分"
+    },
+    "ingest_status": "added",
+    "display": false,
+    "wuhan_display": false,
+    "wuhan_rank": null
+  },
+  {
+    "sku": "357667141",
+    "title": "威朗 2023款 Pro 533T 乐享版",
+    "shop_id": "118608",
+    "shop_name": "懂车帝汽车商城•武汉店",
+    "shop_short_name": "武汉店",
+    "series": "威朗",
+    "brand": "威朗",
+    "mileage_wan": 2.3,
+    "model_year": 2023,
+    "plate_year": 2023,
+    "year": "2023年/2.30万公里",
+    "city": "武汉",
+    "tags": [
+      "0.5万首付"
+    ],
+    "badges": [
+      "直营"
+    ],
+    "is_self_trade_car": true,
+    "source_type": "2",
+    "source_type_name": "自营-个人",
+    "fuel_form": "1",
+    "cover": "https://p9-dcd-sign.byteimg.com/tos-cn-i-f042mdwyw7/b1730ad62b8f40c48a56a964b1494338~tplv-f042mdwyw7-auto-webp:480:0.jpg?rk3s=4892dee6&x-expires=1797040318&x-signature=%2BAWYQIw1C4Ma2kbaNpUitZJHNKs%3D&psm=motor.sh.pack",
+    "detail_url": "https://m.dcdapp.com/motor/feoffline/usedcar_detail/detail.html?sku_id=357667141&shop_id=118608",
+    "list_price_wan": 5.09,
+    "first_registration_time": "1702569600",
+    "price_type": "现金价",
+    "prefix": "现金价",
+    "cash_price_fen": 5090000,
+    "cash_price_str": "5.09",
+    "cash_price_wan": 5.09,
+    "price": 5.09,
+    "detail_shop_id": "118608",
+    "sale_status": "on_sale",
+    "product_status": 1,
+    "status_modify_time": "1795762769",
+    "is_local_wuhan": true,
+    "logistics_fee_yuan": 0,
+    "logistics_fee_source": "local_wuhan",
+    "plate_service_fee_yuan": 500,
+    "plate_fee_diff_yuan": 0,
+    "landed_extra_yuan": 0,
+    "landed_extra_wan": 0.0,
+    "delivery_eta": "送达时间咨询顾问",
+    "landed_price_wan": 5.09,
+    "specs": {
+      "features": {},
+      "specs_found": false,
+      "specs_approx": false,
+      "verified": false,
+      "configuration_source": "unverified_v3",
+      "configuration_unverified": true,
+      "feature_confidence": 0.0,
+      "match_level": "unverified_config",
+      "verification_issues": [
+        "详细配置数据不足"
+      ]
+    },
+    "detailed_config": {
+      "features": {},
+      "specs_found": false,
+      "specs_approx": false,
+      "verified": false,
+      "configuration_source": "unverified_v3",
+      "configuration_unverified": true,
+      "feature_confidence": 0.0,
+      "match_level": "unverified_config",
+      "verification_issues": [
+        "详细配置数据不足"
+      ]
+    },
+    "display_price_wan": 5.09,
+    "effective_price_wan": 5.09,
+    "price_confidence": 0.95,
+    "needs_cash_quote": false,
+    "price_basis": "cash",
+    "manufacturer": "威朗",
+    "manufacturer_inferred": true,
+    "owner_reviews": {
+      "summary": "",
+      "sources": [],
+      "found": false
+    },
+    "score_eligible": false,
+    "data_issues": [
+      {
+        "code": "detailed_config_insufficient",
+        "message": "详细配置数据不足",
+        "severity": "blocking",
+        "field": "specs"
+      },
+      {
+        "code": "space_data_insufficient",
+        "message": "空间数据不足：缺少 length_mm",
+        "severity": "blocking",
+        "field": "length_mm"
+      }
+    ],
+    "config_coverage": 0.0,
+    "energy_confidence": 0.0,
+    "score_version": "v3.2.0",
+    "score_v1": null,
+    "total_score": null,
+    "rank": null,
+    "condition_gate": "DATA_ISSUE",
+    "recommendation_gate": "DATA_ISSUE",
+    "veto_reasons": [],
+    "v3_profile": null,
+    "evaluation": "详细配置数据不足；空间数据不足：缺少 length_mm，不参与评分。",
+    "score_reasons": [],
+    "score_warnings": [
+      "详细配置数据不足",
+      "空间数据不足：缺少 length_mm"
+    ],
+    "sort_scores": {
+      "score_version": "v3.2.0",
+      "total_score": null,
+      "config_score": null,
+      "config_norm": null,
+      "config_proxy": null,
+      "is_suv": false,
+      "price": 5.09,
+      "effective_price_wan": 5.09,
+      "condition_gate": "DATA_ISSUE",
+      "note": "数据不足，不参与评分"
+    },
+    "ingest_status": "added",
+    "display": false,
+    "wuhan_display": false,
+    "wuhan_rank": null
+  },
+  {
+    "sku": "357432084",
+    "title": "宋Pro DM 2023款 DM-i 冠军版 71km 领先型",
+    "shop_id": "179450",
+    "shop_name": "懂车帝汽车商城•南京仓",
+    "shop_short_name": "南京仓",
+    "series": "宋Pro DM",
+    "brand": "宋",
+    "mileage_wan": 4.71,
+    "model_year": 2023,
+    "plate_year": 2024,
+    "year": "2024年/4.71万公里",
+    "city": "南京",
+    "tags": [
+      "0.6万首付",
+      "直降3000元"
+    ],
+    "badges": [
+      "直营"
+    ],
+    "is_self_trade_car": true,
+    "source_type": "2",
+    "source_type_name": "自营-个人",
+    "fuel_form": "6",
+    "cover": "https://p9-dcd-sign.byteimg.com/tos-cn-i-f042mdwyw7/1dce8acedc894d88884b8fea79d9015b~tplv-f042mdwyw7-auto-webp:480:0.jpg?rk3s=4892dee6&x-expires=1797040348&x-signature=ttZFAm%2Fr5sHQahCdpfvuQie3GZw%3D&psm=motor.sh.pack",
+    "detail_url": "https://m.dcdapp.com/motor/feoffline/usedcar_detail/detail.html?sku_id=357432084&shop_id=179450",
+    "list_price_wan": 5.59,
+    "first_registration_time": "1707321600",
+    "price_type": "现金价",
+    "prefix": "现金价",
+    "cash_price_fen": 5790000,
+    "cash_price_str": "5.79",
+    "cash_price_wan": 5.79,
+    "price": 5.79,
+    "detail_shop_id": "179450",
+    "sale_status": "on_sale",
+    "product_status": 1,
+    "status_modify_time": "1795596781",
+    "is_local_wuhan": false,
+    "logistics_fee_yuan": 1180,
+    "logistics_fee_source": "api",
+    "plate_service_fee_yuan": 1000,
+    "plate_fee_diff_yuan": 500,
+    "landed_extra_yuan": 1680,
+    "landed_extra_wan": 0.168,
+    "delivery_eta": "1-3日送达",
+    "landed_price_wan": 5.96,
+    "specs": {
+      "features": {},
+      "specs_found": false,
+      "specs_approx": false,
+      "verified": false,
+      "configuration_source": "unverified_v3",
+      "configuration_unverified": true,
+      "feature_confidence": 0.0,
+      "match_level": "unverified_config",
+      "verification_issues": [
+        "详细配置数据不足"
+      ]
+    },
+    "detailed_config": {
+      "features": {},
+      "specs_found": false,
+      "specs_approx": false,
+      "verified": false,
+      "configuration_source": "unverified_v3",
+      "configuration_unverified": true,
+      "feature_confidence": 0.0,
+      "match_level": "unverified_config",
+      "verification_issues": [
+        "详细配置数据不足"
+      ]
+    },
+    "display_price_wan": 5.79,
+    "effective_price_wan": 5.96,
+    "price_confidence": 0.95,
+    "needs_cash_quote": false,
+    "price_basis": "cash_plus_landed",
+    "manufacturer": "比亚迪",
+    "manufacturer_inferred": false,
+    "owner_reviews": {
+      "summary": "",
+      "sources": [],
+      "found": false
+    },
+    "score_eligible": false,
+    "data_issues": [
+      {
+        "code": "detailed_config_insufficient",
+        "message": "详细配置数据不足",
+        "severity": "blocking",
+        "field": "specs"
+      },
+      {
+        "code": "space_data_insufficient",
+        "message": "空间数据不足：缺少 length_mm",
+        "severity": "blocking",
+        "field": "length_mm"
+      }
+    ],
+    "config_coverage": 0.0,
+    "energy_confidence": 0.0,
+    "score_version": "v3.2.0",
+    "score_v1": null,
+    "total_score": null,
+    "rank": null,
+    "condition_gate": "DATA_ISSUE",
+    "recommendation_gate": "DATA_ISSUE",
+    "veto_reasons": [],
+    "v3_profile": null,
+    "evaluation": "详细配置数据不足；空间数据不足：缺少 length_mm，不参与评分。",
+    "score_reasons": [],
+    "score_warnings": [
+      "详细配置数据不足",
+      "空间数据不足：缺少 length_mm"
+    ],
+    "sort_scores": {
+      "score_version": "v3.2.0",
+      "total_score": null,
+      "config_score": null,
+      "config_norm": null,
+      "config_proxy": null,
+      "is_suv": false,
+      "price": 5.79,
+      "effective_price_wan": 5.96,
       "condition_gate": "DATA_ISSUE",
       "note": "数据不足，不参与评分"
     },

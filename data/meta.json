@@ -52,7 +52,7 @@
   "sort_preference": "v3_2_suv_first_modern_cabin_with_dmi_top30",
   "notes": "算法版本 v3.2.0（双榜独立严选 · 武汉榜 + 全国榜）。全国直营在库 526 台（在售 516 / 锁单隐藏 10），四大铁律否决 112 台（新能源26/三缸49/干式双离合39），合格参评 352 台（武汉本地 126 台），分别展示武汉榜 Top 30 与全国榜 Top 30。",
   "sort_method": "ranking_v3_2_suv_cabin_and_tiered_hybrid",
-  "ranked_at": "2026-11-27T09:52:04+08:00",
+  "ranked_at": "2026-11-28T09:51:42+08:00",
   "ranked_count": 30,
   "sort_weights": {
     "config": 0.28,
@@ -167,7 +167,7 @@
   "bev_filter": "排除续航≤300km 的纯电，以及无法解析续航的微型/城市代步纯电（宏光MINIEV/Lumin/熊猫/之光EV/Air ev 等）；插混/增程与续航>300 纯电保留",
   "exclude_short_range_bev": true,
   "max_bev_range_km": 300,
-  "filtered_count": 537,
+  "filtered_count": 553,
   "excluded_short_range_bev_count": 0,
   "excluded_short_range_bev": [],
   "filter_pipeline": "官方直营多店 → 到汉可比总价≤6.0万 → 实时售出清理 & 锁单隐藏(10) → 四大铁律否决(112) → V3综合评分(352) → 武汉榜 Top 30 / 全国榜 Top 30；source=526 filtered=526 data_issues=56",
@@ -200,7 +200,7 @@
   "excluded_over_budget_cash_count": 6,
   "excluded_over_budget_cash_file": "data/excluded-over-budget-cash.json",
   "price_refresh_file": "data/price-refresh-detail.json",
-  "data_issue_count": 48,
+  "data_issue_count": 45,
   "data_quality_policy": {
     "exact_trim_only": true,
     "min_config_coverage": 0.6,
@@ -212,15 +212,15 @@
   "configuration_refresh_mode": "local_only",
   "configuration_refresh_command": "python3 scripts/local_refresh.py",
   "legacy_configuration_compatible": false,
-  "library_scored_count": 364,
-  "below_display_count": 459,
+  "library_scored_count": 380,
+  "below_display_count": 478,
   "display_limit": 30,
   "display_score_floor": 79.7,
-  "ingest_score_threshold": 79.5,
-  "ingest_at": "2026-11-27T09:52:04+08:00",
-  "on_sale_count": 523,
-  "reserved_count": 14,
-  "vetoed_count": 118,
+  "ingest_score_threshold": 79.7,
+  "ingest_at": "2026-11-28T09:51:42+08:00",
+  "on_sale_count": 540,
+  "reserved_count": 13,
+  "vetoed_count": 119,
   "veto_breakdown": {
     "ev_phev": 26,
     "bev": 24,
@@ -239,8 +239,8 @@
       "kind": "直营大店",
       "is_local": true,
       "logistics_fee_yuan": 0,
-      "inventory_count": 176,
-      "top_count": 7
+      "inventory_count": 189,
+      "top_count": 6
     },
     {
       "shop_id": "196923",
@@ -250,7 +250,7 @@
       "kind": "直营仓",
       "is_local": false,
       "logistics_fee_yuan": 750,
-      "inventory_count": 11,
+      "inventory_count": 3,
       "top_count": 0
     },
     {
@@ -261,7 +261,7 @@
       "kind": "直营大店",
       "is_local": false,
       "logistics_fee_yuan": 840,
-      "inventory_count": 107,
+      "inventory_count": 108,
       "top_count": 6
     },
     {
@@ -272,8 +272,8 @@
       "kind": "直营仓",
       "is_local": false,
       "logistics_fee_yuan": 1180,
-      "inventory_count": 32,
-      "top_count": 1
+      "inventory_count": 35,
+      "top_count": 0
     },
     {
       "shop_id": "175870",
@@ -283,8 +283,8 @@
       "kind": "直营仓",
       "is_local": false,
       "logistics_fee_yuan": 1200,
-      "inventory_count": 57,
-      "top_count": 1
+      "inventory_count": 59,
+      "top_count": 2
     },
     {
       "shop_id": "225430",
@@ -294,8 +294,8 @@
       "kind": "直营大店",
       "is_local": false,
       "logistics_fee_yuan": 1300,
-      "inventory_count": 152,
-      "top_count": 15
+      "inventory_count": 157,
+      "top_count": 16
     },
     {
       "shop_id": "183004",
@@ -316,31 +316,31 @@
       "label": "武汉榜",
       "subtitle": "武汉本地直营 · 免物流直提",
       "data_file": "listings-ranked-wuhan.json",
-      "inventory_count": 176,
-      "on_sale_count": 172,
+      "inventory_count": 189,
+      "on_sale_count": 185,
       "reserved_count": 4,
-      "vetoed_count": 39,
-      "eligible_count": 131,
+      "vetoed_count": 42,
+      "eligible_count": 139,
       "ranked_count": 30,
       "display_limit": 30,
-      "display_score_floor": 71.1
+      "display_score_floor": 71.6
     },
     "national": {
       "key": "national",
       "label": "全国榜",
       "subtitle": "全国官方直营 · 到汉统一比价",
       "data_file": "listings-ranked.json",
-      "inventory_count": 537,
-      "on_sale_count": 523,
-      "reserved_count": 14,
-      "vetoed_count": 118,
-      "eligible_count": 364,
+      "inventory_count": 553,
+      "on_sale_count": 540,
+      "reserved_count": 13,
+      "vetoed_count": 119,
+      "eligible_count": 380,
       "ranked_count": 30,
       "display_limit": 30,
       "display_score_floor": 79.7
     }
   },
   "wuhan_ranked_count": 30,
-  "wuhan_eligible_count": 131,
-  "wuhan_display_score_floor": 71.1
+  "wuhan_eligible_count": 139,
+  "wuhan_display_score_floor": 71.6
 }
